@@ -7,7 +7,11 @@
 > *"The wound is where the light enters."*
 > — Drs. Ron and Mary Hulnick
 > Founders, University of Santa Monica
-> Soul-Centered Education · Santa Monica, California · est. 1976
+> Soul-Centered Education · Santa Monica, California
+>
+> *The two foundational practices of their Spiritual Psychology
+> Masters program: Compassionate Self-Forgiveness and Intention.*
+> *Brian McKinney, student, 1990s.*
 
 ---
 
