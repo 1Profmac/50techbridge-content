@@ -8,6 +8,56 @@
 
 ---
 
+## The Classroom
+
+Before the library, there was a classroom.
+
+It was 2016.
+
+I was standing in front of my class, teaching —
+doing the thing I had done enough times
+to know when a room was with me
+and when it wasn't.
+
+The room was with me.
+
+And somewhere in that moment —
+in the specific electricity of a room
+full of people learning something real,
+leaning forward, making connections,
+asking the questions that meant
+they were actually thinking —
+
+the idea arrived.
+
+Not as a plan. Not as a business model.
+As a recognition.
+
+*This. This is what's missing.*
+
+Not the content. Not the technology.
+Not the curriculum or the platform
+or the credentialed instructor
+standing at the front of the room.
+
+The room itself. The leaning forward.
+The questions that meant something.
+
+I didn't know yet what I was going to build.
+
+I knew I was going to build it.
+
+LearnMoreTechnologies was conceived
+in that classroom in 2016 —
+not at a whiteboard, not in a pitch meeting,
+not in response to a market gap analysis.
+
+In the act of teaching.
+
+Which is, I think, exactly right.
+
+---
+
 ## The Library
 
 It started with a library.
