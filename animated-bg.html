@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>50+TechBridge Short</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1920px;
+    overflow: hidden;
+    background: #080f1f;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+  }
+
+  .bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 25% 15%, #0d2255 0%, transparent 55%),
+      radial-gradient(ellipse at 80% 85%, #1a0a3d 0%, transparent 55%),
+      #080f1f;
+  }
+
+  .grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(200,160,40,0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(200,160,40,0.07) 1px, transparent 1px);
+    background-size: 90px 90px;
+  }
+
+  .orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(90px);
+    pointer-events: none;
+  }
+  .orb1 {
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(212,175,55,0.3), transparent 70%);
+    left: -150px; bottom: -150px;
+    animation: o1 12s ease-in-out infinite alternate;
+  }
+  .orb2 {
+    width: 350px; height: 350px;
+    background: radial-gradient(circle, rgba(80,120,255,0.22), transparent 70%);
+    right: -80px; top: 300px;
+    animation: o2 10s ease-in-out infinite alternate;
+  }
+  @keyframes o1 {
+    from { transform: translate(0,0); }
+    to   { transform: translate(80px,-100px); }
+  }
+  @keyframes o2 {
+    from { transform: translate(0,0); }
+    to   { transform: translate(-50px,80px); }
+  }
+
+  canvas {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  /* ── SCENES ── */
+  .scene {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 80px;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.05s;
+  }
+  .scene.active { opacity: 1; pointer-events: auto; }
+
+  /* shared typography */
+  .gold {
+    background: linear-gradient(135deg, #f0d060, #c8a028);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .white { color: #ffffff; }
+  .dim   { color: rgba(255,255,255,0.75); }
+
+  /* scene-specific styles */
+
+  /* Scene 1 — hook */
+  .s1-eyebrow {
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: rgba(212,175,55,0.8);
+    margin-bottom: 50px;
+  }
+  .s1-big {
+    font-size: 170px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -4px;
+  }
+  .s1-sub {
+    font-size: 46px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.8);
+    margin-top: 24px;
+    line-height: 1.4;
+  }
+
+  /* Scene 2 — contrast */
+  .s2-vs {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin: 30px 0;
+  }
+  .s2-big {
+    font-size: 140px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -3px;
+  }
+  .s2-sub {
+    font-size: 44px;
+    color: rgba(255,255,255,0.8);
+    margin-top: 20px;
+    line-height: 1.4;
+  }
+
+  /* Scene 3 — verdict */
+  .s3-line1 {
+    font-size: 68px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 20px;
+  }
+  .s3-line2 {
+    font-size: 110px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -2px;
+  }
+  .s3-bar {
+    width: 180px;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, #c8a028, transparent);
+    margin: 50px auto;
+  }
+  .s3-line3 {
+    font-size: 68px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.7);
+  }
+  .s3-line4 {
+    font-size: 100px;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1;
+  }
+
+  /* Scene 4 — brand */
+  .s4-logo {
+    font-size: 88px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+  .s4-exists {
+    font-size: 52px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 70px;
+  }
+  .s4-list {
+    list-style: none;
+    margin-bottom: 80px;
+  }
+  .s4-list li {
+    font-size: 46px;
+    color: rgba(255,255,255,0.85);
+    line-height: 1;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(212,175,55,0.15);
+  }
+  .s4-list li:last-child { border-bottom: none; }
+  .s4-list li span {
+    color: #c8a028;
+    margin-right: 16px;
+  }
+
+  /* Scene 5 — CTA */
+  .s5-tagline {
+    font-size: 64px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.25;
+    margin-bottom: 70px;
+  }
+  .s5-tagline em {
+    font-style: normal;
+  }
+  .s5-cta {
+    background: linear-gradient(135deg, #c8a028, #f0d060);
+    color: #080f1f;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 36px 72px;
+    border-radius: 100px;
+    margin-bottom: 60px;
+    box-shadow: 0 0 60px rgba(212,175,55,0.5);
+    animation: ctaBeat 1.8s ease-in-out infinite;
+  }
+  @keyframes ctaBeat {
+    0%,100% { transform: scale(1);    box-shadow: 0 0 60px rgba(212,175,55,0.5); }
+    50%     { transform: scale(1.04); box-shadow: 0 0 90px rgba(212,175,55,0.75); }
+  }
+  .s5-tags {
+    font-size: 30px;
+    color: rgba(212,175,55,0.55);
+    line-height: 2;
+  }
+
+  /* ── per-element animation classes ── */
+  .anim {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .anim.in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .anim.pop {
+    transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.175,0.885,0.32,1.4);
+  }
+
+  /* progress bar */
+  .progress {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 8px;
+    background: linear-gradient(90deg, #c8a028, #f0d060);
+    width: 0%;
+    transition: width 0.1s linear;
+    z-index: 100;
+  }
+</style>
+</head>
+<body>
+
+<div class="bg"></div>
+<div class="grid"></div>
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+<canvas id="particles"></canvas>
+
+<!-- SCENE 1: The stat -->
+<div class="scene" id="s1">
+  <div class="s1-eyebrow anim">The ad industry thinks...</div>
+  <div class="s1-big gold anim pop">5%</div>
+  <div class="s1-sub anim">of ad dollars are spent<br>targeting adults 50+</div>
+</div>
+
+<!-- SCENE 2: The contrast -->
+<div class="scene" id="s2">
+  <div class="s2-big gold anim pop">$76T</div>
+  <div class="s2-sub anim">in wealth<br>controlled by adults 50+</div>
+  <div class="s2-vs anim">↑ ↑ ↑</div>
+  <div class="s2-sub anim" style="font-size:38px; color:rgba(255,255,255,0.5);">They're ignoring this.</div>
+</div>
+
+<!-- SCENE 3: Verdict -->
+<div class="scene" id="s3">
+  <div class="s3-line1 anim">That's not a gap.</div>
+  <div class="s3-line2 gold anim pop">That's<br>ageism.</div>
+  <div class="s3-bar anim"></div>
+  <div class="s3-line3 anim">And it ends</div>
+  <div class="s3-line4 anim pop">here.</div>
+</div>
+
+<!-- SCENE 4: Brand -->
+<div class="scene" id="s4">
+  <div class="s4-logo anim"><span class="gold">50+TechBridge</span></div>
+  <div class="s4-exists anim">exists to close the gap.</div>
+  <ul class="s4-list">
+    <li class="anim"><span>✦</span>Free AgeTech training</li>
+    <li class="anim"><span>✦</span>Real community</li>
+    <li class="anim"><span>✦</span>Proven results</li>
+  </ul>
+</div>
+
+<!-- SCENE 5: CTA -->
+<div class="scene" id="s5">
+  <div class="s5-tagline anim">
+    You're not done yet —<br>
+    and <em class="gold">we're not done<br>fighting for you.</em>
+  </div>
+  <div class="s5-cta anim pop">👉 Join Now</div>
+  <div class="s5-tags anim">
+    learnmoretechnologies.com/join-now/<br><br>
+    #AgeTech &nbsp;#YoureNotDoneYet<br>
+    #50Plus &nbsp;#50TechBridge
+  </div>
+</div>
+
+<div class="progress" id="progress"></div>
+
+<script>
+/* ── Particles ── */
+const canvas = document.getElementById('particles');
+const ctx = canvas.getContext('2d');
+canvas.width = 1080;
+canvas.height = 1920;
+
+const pts = Array.from({length: 100}, () => ({
+  x: Math.random() * 1080,
+  y: Math.random() * 1920,
+  r: Math.random() * 2 + 0.5,
+  speed: Math.random() * 0.5 + 0.2,
+  op: Math.random() * 0.5 + 0.1,
+  gold: Math.random() > 0.45,
+  drift: (Math.random() - 0.5) * 0.25,
+}));
+
+function drawParticles() {
+  ctx.clearRect(0, 0, 1080, 1920);
+  pts.forEach(p => {
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    ctx.fillStyle = p.gold
+      ? `rgba(212,175,55,${p.op})`
+      : `rgba(140,170,255,${p.op * 0.55})`;
+    ctx.fill();
+    p.y -= p.speed;
+    p.x += p.drift;
+    p.op += (Math.random() - 0.5) * 0.015;
+    p.op = Math.max(0.05, Math.min(0.75, p.op));
+    if (p.y < -10) { p.y = 1930; p.x = Math.random() * 1080; }
+    if (p.x < 0) p.x = 1080;
+    if (p.x > 1080) p.x = 0;
+  });
+  requestAnimationFrame(drawParticles);
+}
+drawParticles();
+
+/* ── Scene sequencer ── */
+// Each scene: [sceneId, [ [delay_ms, selector], ... ], duration_ms ]
+const timeline = [
+  ['s1', [
+    [0,   '.s1-eyebrow'],
+    [400, '.s1-big'],
+    [900, '.s1-sub'],
+  ], 4000],
+
+  ['s2', [
+    [0,   '.s2-big'],
+    [500, '.s2-sub:nth-child(2)'],
+    [900, '.s2-vs'],
+    [1200,'.s2-sub:nth-child(4)'],
+  ], 4500],
+
+  ['s3', [
+    [0,   '.s3-line1'],
+    [500, '.s3-line2'],
+    [1200,'.s3-bar'],
+    [1700,'.s3-line3'],
+    [2100,'.s3-line4'],
+  ], 5000],
+
+  ['s4', [
+    [0,   '.s4-logo'],
+    [500, '.s4-exists'],
+    [1000,'.s4-list li:nth-child(1)'],
+    [1400,'.s4-list li:nth-child(2)'],
+    [1800,'.s4-list li:nth-child(3)'],
+  ], 5000],
+
+  ['s5', [
+    [0,   '.s5-tagline'],
+    [800, '.s5-cta'],
+    [1400,'.s5-tags'],
+  ], 6000],
+];
+
+const totalMs = timeline.reduce((a, t) => a + t[2], 0);
+const progressEl = document.getElementById('progress');
+let startTime = null;
+
+function showScene(index) {
+  // hide all
+  document.querySelectorAll('.scene').forEach(s => {
+    s.classList.remove('active');
+    s.querySelectorAll('.anim').forEach(el => el.classList.remove('in'));
+  });
+
+  if (index >= timeline.length) return;
+
+  const [sceneId, items, duration] = timeline[index];
+  const scene = document.getElementById(sceneId);
+  scene.classList.add('active');
+
+  items.forEach(([delay, sel]) => {
+    setTimeout(() => {
+      scene.querySelectorAll(sel).forEach(el => el.classList.add('in'));
+    }, delay);
+  });
+
+  setTimeout(() => showScene(index + 1), duration);
+}
+
+// progress bar
+function updateProgress(ts) {
+  if (!startTime) startTime = ts;
+  const elapsed = ts - startTime;
+  const pct = Math.min(100, (elapsed / totalMs) * 100);
+  progressEl.style.width = pct + '%';
+  if (elapsed < totalMs) requestAnimationFrame(updateProgress);
+}
+
+// Start
+requestAnimationFrame(updateProgress);
+showScene(0);
+</script>
+</body>
+</html>

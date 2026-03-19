@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>50+TechBridge Ticker BG</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1920px;
+    overflow: hidden;
+    background: #080f1f;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+  }
+
+  /* ── BACKGROUND ── */
+  .bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 20% 15%, #0d2255 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 40%, #1a0a3d 0%, transparent 45%),
+      #080f1f;
+  }
+
+  .grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(200,160,40,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(200,160,40,0.05) 1px, transparent 1px);
+    background-size: 80px 80px;
+  }
+
+  /* ── UPPER CONTENT AREA (above avatar) ── */
+  /* Avatar occupies bottom 680px — content lives in top 1240px */
+
+  .upper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1080px;
+    height: 1240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    z-index: 5;
+  }
+
+  .breaking-label {
+    background: #cc2200;
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 900;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    padding: 16px 52px;
+    border-radius: 4px;
+    margin-bottom: 60px;
+    box-shadow: 0 0 40px rgba(204,34,0,0.5);
+    animation: blink 1.4s step-start infinite;
+  }
+  @keyframes blink {
+    0%,100% { opacity: 1; }
+    50%      { opacity: 0.6; }
+  }
+
+  .hero-stat {
+    font-size: 260px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -6px;
+    background: linear-gradient(135deg, #f0d060, #c8a028);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+  }
+
+  .hero-label {
+    font-size: 46px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 70px;
+    letter-spacing: 1px;
+  }
+
+  .divider {
+    width: 900px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #c8a028, transparent);
+    margin-bottom: 70px;
+  }
+
+  .verdict {
+    font-size: 72px;
+    font-weight: 900;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: -1px;
+  }
+  .verdict em {
+    font-style: normal;
+    background: linear-gradient(135deg, #f0d060, #c8a028);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* ── TICKER ROWS ── */
+  /* Ticker 1: sits just above avatar zone */
+  .ticker-zone {
+    position: absolute;
+    left: 0;
+    width: 1080px;
+    z-index: 20;
+  }
+
+  .ticker1 { top: 1228px; }  /* right above avatar */
+  .ticker2 { top: 1360px; }  /* mid avatar zone — scrolls behind avatar */
+
+  .ticker-bar {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .ticker-bar.gold-bar {
+    background: linear-gradient(90deg, #b8900a, #d4a820, #b8900a);
+    padding: 22px 0;
+    border-top: 2px solid #f0d060;
+    border-bottom: 2px solid #f0d060;
+  }
+
+  .ticker-bar.dark-bar {
+    background: rgba(8,15,31,0.85);
+    border-top: 2px solid rgba(212,175,55,0.3);
+    border-bottom: 2px solid rgba(212,175,55,0.3);
+    padding: 18px 0;
+  }
+
+  .ticker-track {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollLeft linear infinite;
+  }
+  .ticker-track.rev {
+    animation-name: scrollRight;
+  }
+
+  @keyframes scrollLeft {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+  @keyframes scrollRight {
+    from { transform: translateX(-50%); }
+    to   { transform: translateX(0); }
+  }
+
+  .gold-bar .ticker-track span {
+    font-size: 38px;
+    font-weight: 900;
+    color: #080f1f;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 0 50px;
+  }
+  .gold-bar .ticker-track .sep {
+    color: rgba(8,15,31,0.4);
+    padding: 0 10px;
+  }
+
+  .dark-bar .ticker-track span {
+    font-size: 32px;
+    font-weight: 700;
+    color: rgba(212,175,55,0.85);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0 40px;
+  }
+  .dark-bar .ticker-track .sep {
+    color: rgba(212,175,55,0.3);
+    padding: 0 8px;
+  }
+
+  /* ── AVATAR ZONE (bottom 680px) ── */
+  /* This is where you place your HeyGen avatar in Canva */
+  /* We add a very subtle gradient fade so avatar blends in */
+  .avatar-fade {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1080px;
+    height: 680px;
+    background: linear-gradient(to bottom,
+      rgba(8,15,31,0) 0%,
+      rgba(8,15,31,0.15) 40%,
+      rgba(8,15,31,0.5) 100%
+    );
+    z-index: 15;
+    pointer-events: none;
+  }
+
+  /* Avatar zone placeholder guide (invisible in final — just for reference) */
+  .avatar-guide {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 680px;
+    border: 2px dashed rgba(212,175,55,0.15);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .avatar-guide span {
+    color: rgba(212,175,55,0.2);
+    font-size: 28px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  /* ── NETWORK BUG (top-left corner branding) ── */
+  .network-bug {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .bug-name {
+    font-size: 44px;
+    font-weight: 900;
+    background: linear-gradient(135deg, #f0d060, #c8a028);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+  .bug-sub {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+
+  /* Live dot */
+  .live-dot {
+    position: absolute;
+    top: 68px;
+    right: 60px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 30;
+  }
+  .dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #cc2200;
+    animation: pulse 1s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%,100% { transform: scale(1);   box-shadow: 0 0 0 0 rgba(204,34,0,0.6); }
+    50%      { transform: scale(1.2); box-shadow: 0 0 0 8px rgba(204,34,0,0); }
+  }
+  .live-text {
+    font-size: 32px;
+    font-weight: 900;
+    color: #cc2200;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="bg"></div>
+<div class="grid"></div>
+
+<!-- Network branding -->
+<div class="network-bug">
+  <div class="bug-name">50+TechBridge</div>
+  <div class="bug-sub">AgeTech Report</div>
+</div>
+<div class="live-dot">
+  <div class="dot"></div>
+  <div class="live-text">Live</div>
+</div>
+
+<!-- Upper content: hero stat + verdict -->
+<div class="upper">
+  <div class="breaking-label">⚠ Breaking</div>
+  <div class="hero-stat">$76T</div>
+  <div class="hero-label">controlled by adults 50+ — ignored by advertisers</div>
+  <div class="divider"></div>
+  <div class="verdict">
+    5% of ad spend.<br>
+    <em>$76 Trillion</em> in wealth.<br>
+    That's not a gap.<br>
+    That's <em>ageism.</em>
+  </div>
+</div>
+
+<!-- TICKER 1 — gold bar, right above avatar -->
+<div class="ticker-zone ticker1">
+  <div class="ticker-bar gold-bar">
+    <div class="ticker-track" style="animation-duration:18s;">
+      <span>5% AD SPEND</span><span class="sep">◆</span>
+      <span>$76 TRILLION WEALTH</span><span class="sep">◆</span>
+      <span>THAT'S AGEISM</span><span class="sep">◆</span>
+      <span>50+TECHBRIDGE</span><span class="sep">◆</span>
+      <span>YOU'RE NOT DONE YET</span><span class="sep">◆</span>
+      <span>FREE AGETECH TRAINING</span><span class="sep">◆</span>
+      <span>5% AD SPEND</span><span class="sep">◆</span>
+      <span>$76 TRILLION WEALTH</span><span class="sep">◆</span>
+      <span>THAT'S AGEISM</span><span class="sep">◆</span>
+      <span>50+TECHBRIDGE</span><span class="sep">◆</span>
+      <span>YOU'RE NOT DONE YET</span><span class="sep">◆</span>
+      <span>FREE AGETECH TRAINING</span><span class="sep">◆</span>
+    </div>
+  </div>
+</div>
+
+<!-- TICKER 2 — dark bar, scrolls behind avatar -->
+<div class="ticker-zone ticker2">
+  <div class="ticker-bar dark-bar">
+    <div class="ticker-track rev" style="animation-duration:24s;">
+      <span>AGEISM IS ECONOMIC DISCRIMINATION</span><span class="sep">▸</span>
+      <span>ADULTS 50+ CONTROL THE WEALTH</span><span class="sep">▸</span>
+      <span>JOIN NOW AT LEARNMORETECHNOLOGIES.COM</span><span class="sep">▸</span>
+      <span>NOT INVISIBLE. NOT IRRELEVANT.</span><span class="sep">▸</span>
+      <span>AGEISM IS ECONOMIC DISCRIMINATION</span><span class="sep">▸</span>
+      <span>ADULTS 50+ CONTROL THE WEALTH</span><span class="sep">▸</span>
+      <span>JOIN NOW AT LEARNMORETECHNOLOGIES.COM</span><span class="sep">▸</span>
+      <span>NOT INVISIBLE. NOT IRRELEVANT.</span><span class="sep">▸</span>
+    </div>
+  </div>
+</div>
+
+<!-- Avatar zone blend + guide -->
+<div class="avatar-fade"></div>
+<div class="avatar-guide"><span>← Avatar Here →</span></div>
+
+</body>
+</html>
