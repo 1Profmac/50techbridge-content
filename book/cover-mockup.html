@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>50+TechBridge Book Cover Mockup</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #1a1a2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Georgia', serif;
+    padding: 40px;
+  }
+
+  /* Book wrapper — standard 6x9 ratio */
+  .book {
+    width: 600px;
+    height: 900px;
+    position: relative;
+    border-radius: 4px 12px 12px 4px;
+    overflow: hidden;
+    box-shadow:
+      -8px 8px 30px rgba(0,0,0,0.8),
+      0 0 60px rgba(212,175,55,0.15);
+  }
+
+  /* Background layers */
+  .bg-base {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      160deg,
+      #0a0f2e 0%,
+      #0d1f4a 30%,
+      #080f1f 65%,
+      #0a1628 100%
+    );
+  }
+
+  /* Globe/world grid overlay */
+  .globe-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(ellipse at 50% 60%, rgba(212,175,55,0.06) 0%, transparent 65%),
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 48px,
+        rgba(212,175,55,0.04) 48px,
+        rgba(212,175,55,0.04) 50px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 48px,
+        rgba(212,175,55,0.04) 48px,
+        rgba(212,175,55,0.04) 50px
+      );
+  }
+
+  /* Gold glow top */
+  .glow-top {
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 300px;
+    background: radial-gradient(ellipse, rgba(212,175,55,0.18) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  /* Gold glow bottom */
+  .glow-bottom {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 250px;
+    background: radial-gradient(ellipse, rgba(80,120,255,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  /* Bridge SVG area */
+  .bridge-area {
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    width: 100%;
+    height: 360px;
+    opacity: 0.85;
+  }
+
+  /* Particle dots */
+  .particles {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+  .particle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(212,175,55,0.4);
+    animation: float 6s ease-in-out infinite;
+  }
+  @keyframes float {
+    0%,100% { transform: translateY(0); opacity: 0.4; }
+    50%      { transform: translateY(-20px); opacity: 0.8; }
+  }
+
+  /* ── CONTENT ── */
+  .content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
+  }
+
+  /* Top badge */
+  .top-badge {
+    margin-top: 32px;
+    background: linear-gradient(135deg, #c8a028, #f0d060);
+    color: #080f1f;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 8px 28px;
+    border-radius: 40px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  /* Main title */
+  .title-block {
+    margin-top: 28px;
+    text-align: center;
+  }
+
+  .title-num {
+    font-size: 110px;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 0.9;
+    font-family: 'Georgia', serif;
+    text-shadow:
+      0 0 40px rgba(212,175,55,0.6),
+      0 0 80px rgba(212,175,55,0.3);
+    letter-spacing: -2px;
+  }
+
+  .title-word {
+    font-size: 72px;
+    font-weight: 900;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #f0d060, #c8a028, #f0d060);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    line-height: 1;
+    display: block;
+    text-shadow: none;
+  }
+
+  .title-pioneers {
+    font-size: 32px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 6px;
+  }
+
+  /* Subtitle */
+  .subtitle {
+    margin-top: 22px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.75);
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.5;
+    max-width: 420px;
+    letter-spacing: 0.3px;
+  }
+
+  /* Gold rule */
+  .rule {
+    width: 200px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #c8a028, transparent);
+    margin: 20px auto 0;
+  }
+
+  /* Bridge visual — CSS art */
+  .bridge-visual {
+    position: absolute;
+    bottom: 185px;
+    left: 0;
+    width: 100%;
+    height: 320px;
+  }
+
+  /* World arc */
+  .world-arc {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 350px;
+    border-radius: 50%;
+    border: 1px solid rgba(212,175,55,0.12);
+    border-bottom: none;
+  }
+  .world-arc-2 {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 550px;
+    height: 275px;
+    border-radius: 50%;
+    border: 1px solid rgba(212,175,55,0.08);
+    border-bottom: none;
+  }
+
+  /* Connection dots on arc */
+  .conn-dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #c8a028;
+    box-shadow: 0 0 10px rgba(212,175,55,0.8);
+  }
+
+  /* Lines from center outward */
+  .conn-lines {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 200px;
+  }
+
+  /* Bottom author area */
+  .author-area {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 180px;
+    background: linear-gradient(to bottom,
+      transparent 0%,
+      rgba(0,0,0,0.7) 40%,
+      rgba(0,0,0,0.9) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 28px;
+    gap: 10px;
+  }
+
+  .author-primary {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .author-divider {
+    font-size: 14px;
+    color: rgba(212,175,55,0.6);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .author-ai {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .author-ai .claude {
+    background: linear-gradient(135deg, #f0d060, #c8a028);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+  }
+
+  .author-ai .anthro {
+    color: rgba(255,255,255,0.5);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    display: block;
+    margin-top: 2px;
+  }
+
+  /* Pioneer badge bottom right */
+  .pioneer-stamp {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+    border: 2px solid rgba(212,175,55,0.4);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+    background: rgba(0,0,0,0.4);
+  }
+  .pioneer-stamp .ps-top {
+    font-size: 8px;
+    letter-spacing: 2px;
+    color: rgba(212,175,55,0.7);
+    text-transform: uppercase;
+  }
+  .pioneer-stamp .ps-main {
+    font-size: 11px;
+    font-weight: 700;
+    color: #f0d060;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 1.2;
+  }
+</style>
+</head>
+<body>
+<div class="book">
+  <div class="bg-base"></div>
+  <div class="globe-grid"></div>
+  <div class="glow-top"></div>
+  <div class="glow-bottom"></div>
+
+  <!-- World arc lines -->
+  <div class="bridge-visual">
+    <div class="world-arc"></div>
+    <div class="world-arc-2"></div>
+
+    <!-- SVG bridge + connections -->
+    <svg style="position:absolute;bottom:0;left:0;width:100%;height:100%;" viewBox="0 0 600 320" preserveAspectRatio="xMidYMax meet">
+
+      <!-- Global connection lines radiating outward -->
+      <g opacity="0.25" stroke="#c8a028" stroke-width="0.8">
+        <line x1="300" y1="220" x2="60" y2="80"/>
+        <line x1="300" y1="220" x2="140" y2="40"/>
+        <line x1="300" y1="220" x2="220" y2="20"/>
+        <line x1="300" y1="220" x2="380" y2="20"/>
+        <line x1="300" y1="220" x2="460" y2="40"/>
+        <line x1="300" y1="220" x2="540" y2="80"/>
+        <line x1="300" y1="220" x2="560" y2="160"/>
+        <line x1="300" y1="220" x2="40" y2="160"/>
+      </g>
+
+      <!-- Connection nodes -->
+      <g fill="#c8a028">
+        <circle cx="60"  cy="80"  r="4" opacity="0.9"/>
+        <circle cx="140" cy="40"  r="3" opacity="0.8"/>
+        <circle cx="220" cy="20"  r="3" opacity="0.7"/>
+        <circle cx="380" cy="20"  r="3" opacity="0.7"/>
+        <circle cx="460" cy="40"  r="3" opacity="0.8"/>
+        <circle cx="540" cy="80"  r="4" opacity="0.9"/>
+        <circle cx="560" cy="160" r="3" opacity="0.7"/>
+        <circle cx="40"  cy="160" r="3" opacity="0.7"/>
+        <circle cx="300" cy="220" r="8" opacity="1"/>
+        <circle cx="300" cy="220" r="14" opacity="0.2"/>
+        <circle cx="300" cy="220" r="22" opacity="0.1"/>
+      </g>
+
+      <!-- Bridge structure — analog side (warm) -->
+      <g opacity="0.7">
+        <!-- Left tower -->
+        <line x1="170" y1="320" x2="170" y2="160" stroke="#c8a028" stroke-width="3"/>
+        <line x1="155" y1="320" x2="155" y2="170" stroke="#c8a028" stroke-width="1.5"/>
+        <line x1="185" y1="320" x2="185" y2="170" stroke="#c8a028" stroke-width="1.5"/>
+        <!-- Left tower cross -->
+        <line x1="148" y1="195" x2="192" y2="195" stroke="#c8a028" stroke-width="2"/>
+        <line x1="148" y1="215" x2="192" y2="215" stroke="#c8a028" stroke-width="1.5"/>
+        <!-- Left cables -->
+        <line x1="170" y1="162" x2="60"  y2="290" stroke="#c8a028" stroke-width="1" opacity="0.8"/>
+        <line x1="170" y1="162" x2="100" y2="290" stroke="#c8a028" stroke-width="1" opacity="0.8"/>
+        <line x1="170" y1="162" x2="140" y2="290" stroke="#c8a028" stroke-width="1" opacity="0.8"/>
+        <line x1="170" y1="162" x2="230" y2="290" stroke="#c8a028" stroke-width="1" opacity="0.8"/>
+        <line x1="170" y1="162" x2="260" y2="290" stroke="#c8a028" stroke-width="1" opacity="0.8"/>
+        <!-- Deck left -->
+        <line x1="50"  y1="290" x2="280" y2="290" stroke="#c8a028" stroke-width="2.5"/>
+      </g>
+
+      <!-- Bridge structure — digital side (cool blue) -->
+      <g opacity="0.7">
+        <!-- Right tower -->
+        <line x1="430" y1="320" x2="430" y2="160" stroke="#6090ff" stroke-width="3"/>
+        <line x1="415" y1="320" x2="415" y2="170" stroke="#6090ff" stroke-width="1.5"/>
+        <line x1="445" y1="320" x2="445" y2="170" stroke="#6090ff" stroke-width="1.5"/>
+        <!-- Right tower cross -->
+        <line x1="408" y1="195" x2="452" y2="195" stroke="#6090ff" stroke-width="2"/>
+        <line x1="408" y1="215" x2="452" y2="215" stroke="#6090ff" stroke-width="1.5"/>
+        <!-- Circuit dots on right tower -->
+        <circle cx="430" cy="175" r="3" fill="#6090ff" opacity="0.9"/>
+        <circle cx="430" cy="230" r="2" fill="#6090ff" opacity="0.7"/>
+        <circle cx="415" cy="250" r="2" fill="#6090ff" opacity="0.6"/>
+        <circle cx="445" cy="260" r="2" fill="#6090ff" opacity="0.6"/>
+        <!-- Right cables -->
+        <line x1="430" y1="162" x2="540" y2="290" stroke="#6090ff" stroke-width="1" opacity="0.8"/>
+        <line x1="430" y1="162" x2="500" y2="290" stroke="#6090ff" stroke-width="1" opacity="0.8"/>
+        <line x1="430" y1="162" x2="460" y2="290" stroke="#6090ff" stroke-width="1" opacity="0.8"/>
+        <line x1="430" y1="162" x2="370" y2="290" stroke="#6090ff" stroke-width="1" opacity="0.8"/>
+        <line x1="430" y1="162" x2="340" y2="290" stroke="#6090ff" stroke-width="1" opacity="0.8"/>
+        <!-- Deck right -->
+        <line x1="320" y1="290" x2="550" y2="290" stroke="#6090ff" stroke-width="2.5"/>
+      </g>
+
+      <!-- Center meeting point GLOW -->
+      <ellipse cx="300" cy="290" rx="30" ry="8" fill="rgba(212,175,55,0.3)"/>
+      <circle cx="300" cy="290" r="5" fill="#f0d060"/>
+
+      <!-- Circuit traces around right tower -->
+      <g stroke="#6090ff" stroke-width="0.8" fill="none" opacity="0.4">
+        <polyline points="460,200 480,200 480,220 500,220"/>
+        <polyline points="460,240 475,240 475,255 490,255"/>
+        <circle cx="480" cy="200" r="2" fill="#6090ff"/>
+        <circle cx="500" cy="220" r="2" fill="#6090ff"/>
+        <circle cx="490" cy="255" r="2" fill="#6090ff"/>
+      </g>
+
+      <!-- People silhouettes on bridge -->
+      <g fill="rgba(255,255,255,0.15)">
+        <ellipse cx="200" cy="286" rx="5" ry="8"/>
+        <ellipse cx="220" cy="286" rx="5" ry="8"/>
+        <ellipse cx="240" cy="286" rx="5" ry="8"/>
+        <ellipse cx="360" cy="286" rx="5" ry="8"/>
+        <ellipse cx="380" cy="286" rx="5" ry="8"/>
+        <ellipse cx="400" cy="286" rx="5" ry="8"/>
+      </g>
+
+    </svg>
+  </div>
+
+  <!-- Floating particles -->
+  <div class="particles">
+    <div class="particle" style="width:3px;height:3px;top:15%;left:10%;animation-delay:0s;"></div>
+    <div class="particle" style="width:2px;height:2px;top:25%;left:85%;animation-delay:1s;"></div>
+    <div class="particle" style="width:4px;height:4px;top:35%;left:20%;animation-delay:2s;"></div>
+    <div class="particle" style="width:2px;height:2px;top:45%;left:75%;animation-delay:0.5s;"></div>
+    <div class="particle" style="width:3px;height:3px;top:55%;left:90%;animation-delay:1.5s;"></div>
+    <div class="particle" style="width:2px;height:2px;top:20%;left:50%;animation-delay:3s;"></div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="content">
+    <div class="top-badge">A Global Movement · 50+ Community</div>
+
+    <div class="title-block">
+      <div class="title-num">50+</div>
+      <span class="title-word">TechBridge</span>
+      <div class="title-pioneers">Pioneers</div>
+    </div>
+
+    <div class="rule"></div>
+
+    <div class="subtitle">
+      How We Built a Global Community,<br>
+      Mastered the Tools of the Future,<br>
+      and Claimed Our Second Act After 50
+    </div>
+  </div>
+
+  <!-- AUTHOR AREA -->
+  <div class="author-area">
+    <div class="author-primary">Professor Brian McKinney</div>
+    <div class="author-divider">with</div>
+    <div class="author-ai">
+      <span class="claude">Claude</span>
+      <span class="anthro">Anthropic AI · Co-Author</span>
+    </div>
+  </div>
+
+  <!-- Pioneer stamp -->
+  <div class="pioneer-stamp">
+    <div class="ps-top">First</div>
+    <div class="ps-main">AI<br>Co-<br>Auth</div>
+  </div>
+
+</div>
+</body>
+</html>
