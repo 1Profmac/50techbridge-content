@@ -75,7 +75,7 @@ Examples:
 | CTA URL | learnmoretechnologies.com/join-now/ |
 | Key stat | $76 trillion wealth held by adults 50+ |
 | Key gap | 5% of ad spend targets adults 50+ |
-| Proof points | 1,200+ trained members, 45 partner organizations |
+| Proof points | 347+ trained members, 23 partner organizations |
 | Colors | Gold #F0D060 / #C8A028, Navy #080F1F |
 | Font | Montserrat Black |
 

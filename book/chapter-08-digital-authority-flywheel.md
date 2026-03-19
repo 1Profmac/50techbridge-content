@@ -307,11 +307,11 @@ built from recent memory of confusion.
 Ninety seconds. The single most powerful moment
 from the interview. Her voice.
 Her face. Her specific, real breakthrough.
-The caption: *This is what 85% looks like.*
+The caption: *This is what 3X looks like.*
 
 **The LinkedIn post:**
 Three paragraphs. The data context first
-(10% industry completion rate, 85% ours).
+(10% industry completion rate — ours is 3X that).
 Her story as evidence. The close:
 *This is the model. We're looking for
 organizations ready to bring it to their community.*

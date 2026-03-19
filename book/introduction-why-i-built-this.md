@@ -247,8 +247,8 @@ version of who they are.
 
 That's what 50+TechBridge is.
 
-It is 1,200 members who decided not to take it.
-It is 45 partner organizations who saw the gap and chose to close it.
+It is 347 Pioneers who decided not to take it.
+It is 23 partner organizations who saw the gap and chose to close it.
 It is every person who learned to build a website at 67,
 launched a business at 71,
 pivoted a career at 58,

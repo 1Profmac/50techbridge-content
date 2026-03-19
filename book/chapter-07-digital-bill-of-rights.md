@@ -284,7 +284,7 @@ how it went, no community that expects them
 back and is better for having them —
 the skills don't stick.
 
-The 85% completion rate at 50+TechBridge
+The 3X the industry completion rate at 50+TechBridge
 is not primarily a curriculum achievement.
 
 It is a community achievement.

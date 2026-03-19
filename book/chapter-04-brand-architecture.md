@@ -107,7 +107,7 @@ together that none of them could build alone.
 
 It was a training program. Curriculum.
 Instructors. Completion certificates.
-An 85% completion rate that the industry
+An 3X the industry completion rate that the industry
 said was impossible.
 
 It was a technology platform. An AI-native
@@ -236,7 +236,7 @@ They have missions that align with ours.
 They have communities that overlap with ours.
 And they are paying, right now, for programs
 that are producing 10% completion rates —
-when we are producing 85%.
+when we are producing 3X the industry rate.
 
 We called the model **Funded and Accessible.**
 

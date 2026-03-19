@@ -340,7 +340,7 @@ I want to come home from those stages
 to the community I have built here —
 the TechBridge Heroes who turned around
 and taught the person behind them,
-the 1,200 trained adults who became 12,000
+the 347 Pioneers who became 12,000
 who became 120,000 —
 
 and find the work still running,

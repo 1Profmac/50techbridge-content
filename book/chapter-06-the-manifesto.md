@@ -118,7 +118,7 @@ Less human contact. Less community. Less peer support.
 
 More scale. Less learning.
 
-The 85% completion rate we built at 50+TechBridge
+The 3X the industry completion rate we built at 50+TechBridge
 was not built on technology.
 
 It was built on people sitting in rooms with other people.
@@ -184,7 +184,7 @@ Here is what the data from 50+TechBridge shows.
 Not slightly better. Not measurably better.
 Dramatically better.
 
-85% completion versus 10%.
+3X the industry average — 30% versus 10%.
 
 The mechanism is not mysterious.
 When a learner is taught by someone who recently
@@ -269,7 +269,7 @@ have budgets for exactly this purpose.
 They are spending those budgets on programs
 that produce 10% completion rates.
 
-They will pay more for programs that produce 85%.
+They will pay more for programs that produce 3X the industry average.
 
 The learner pays nothing.
 The organization gets outcomes.
@@ -431,7 +431,7 @@ evaluations come back and someone explains,
 carefully, why 12% is actually pretty good
 for this demographic.
 
-I am here to tell you that 85% is possible.
+I am here to tell you that 3X the industry rate is possible.
 
 Not as a theoretical ceiling.
 As a documented, repeatable result,

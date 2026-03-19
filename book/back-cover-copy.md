@@ -21,8 +21,8 @@ of the world's largest advocacy organizations for older adults
 
 So he left. And built something new.
 
-50+TechBridge is now a global community of 1,200+ trained
-adults, 45 partner organizations, and an 85% completion rate
+50+TechBridge is now a global community of 347+ trained
+adults, 23 partner organizations, and an 3X the industry completion rate
 that the industry said was impossible.
 
 This book is that journey — told in public, built in real time,
@@ -155,5 +155,5 @@ learnmoretechnologies.com/join-now/
 ## Social Proof Bar (for cover or inside front)
 
 ```
-1,200+ TRAINED  ·  45 PARTNERS  ·  85% COMPLETION  ·  GLOBAL COMMUNITY
+347+ TRAINED  ·  23 PARTNERS  ·  3X COMPLETION  ·  GLOBAL COMMUNITY
 ```

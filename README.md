@@ -33,7 +33,7 @@
 |---|---|---|---|
 | 1 | part-1-the-number.md | The $76T stat | *"Now you can't say you didn't know."* |
 | 2 | part-2-the-blind-spot.md | How the gap happened | *"Are you?"* |
-| 3 | part-3-the-people.md | Real member stories | *"The opportunity is real."* |
+| 3 | part-3-the-people.md | Real Pioneer stories | *"The opportunity is real."* |
 | 4 | part-4-the-playbook.md | How to reach this market | *"Come learn it."* |
 | 5 | part-5-the-invitation.md | The close | *"Come be part of what happens next."* |
 
@@ -98,7 +98,7 @@ Still valid for community-facing social content and rally contexts.
 | Gold primary | `#F0D060` / `#C8A028` |
 | Background | `#080F1F` |
 | Font | Montserrat Black |
-| Members | 1,200+ trained |
+| Pioneers | 347+ trained |
 | Partners | 45 organizations |
 | CTA | learnmoretechnologies.com/join-now/ |
 

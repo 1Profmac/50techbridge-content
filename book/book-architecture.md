@@ -219,7 +219,7 @@ Profiles span:
 - The pedagogy: why conventional tech training misses this audience
 - Community-first design: why belonging is the product
 - The zero-condescension principle in practice
-- Results: 1,200+ trained adults, 45 partner organizations,
+- Results: 347+ Pioneers, 23 partner organizations,
   measurable outcomes
 - **Closes with:** "This is one model. The principles
   behind it are transferable to any organization in any sector."

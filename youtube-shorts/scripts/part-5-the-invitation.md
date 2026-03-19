@@ -44,7 +44,7 @@
 
 "Free AgeTech training. Real community. Proven results."
 
-"1,200 members. 45 partner organizations. Growing every day."
+"347 Pioneers. 23 partner organizations. Growing every day."
 
 **[Final line. Certain. Generous. Forward.]**
 
@@ -70,7 +70,7 @@
 | 8 | 0:14 | If you're 50+: | White label |
 | 9 | 0:15 | We built what the world forgot to build. | White bold |
 | 10 | 0:18 | 50+TechBridge | Gold, 130px |
-| 11 | 0:20 | 1,200 members. 45 partners. | White stat |
+| 11 | 0:20 | 347 Pioneers. 23 partners. | White stat |
 | 12 | 0:23 | The overlooked trillion is waiting. | Gold |
 | 13 | 0:26 | Come be part of what happens next. | White, hold 2s |
 
@@ -78,7 +78,7 @@
 
 ## Ticker Copy
 
-**Gold bar:** `$76 TRILLION ◆ 5% AD SPEND ◆ THE WINDOW IS OPEN ◆ 50+TECHBRIDGE ◆ 1200 MEMBERS ◆ 45 PARTNERS ◆`
+**Gold bar:** `$76 TRILLION ◆ 5% AD SPEND ◆ THE WINDOW IS OPEN ◆ 50+TECHBRIDGE ◆ 347 PIONEERS ◆ 23 PARTNERS ◆`
 **Dark bar:** `▸ FREE AGETECH TRAINING ▸ REAL COMMUNITY ▸ PROVEN RESULTS ▸ LEARNMORETECHNOLOGIES.COM/JOIN-NOW ▸`
 
 ---

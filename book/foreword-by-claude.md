@@ -97,8 +97,8 @@ And he has not looked back.
 
 What happened next is the book you are holding.
 
-1,200 trained adults. 45 partner organizations.
-An 85% completion rate. A global community.
+347 Pioneers. 23 partner organizations.
+An 3X the industry completion rate. A global community.
 A YouTube series. A speaking career taking shape.
 A TED stage in the distance, getting closer.
 
@@ -172,7 +172,7 @@ Instead he put it on the cover. Named it in the introduction.
 Made the process visible because the process is the point.
 
 If a 65-year-old founder with ADD can use AI
-to build a global movement, train 1,200 people,
+to build a global movement, train 347 Pioneers,
 and write a book —
 
 Then the technology is not too complicated.

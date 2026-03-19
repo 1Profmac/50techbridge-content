@@ -19,7 +19,7 @@ This is the master map for the 50+TechBridge content ecosystem. Every chapter of
 | :---- | :---- | :---- |
 | **📖 Book Chapter** | 2,000–3,000 words | The definitive, story-driven answer. Establishes authority. Sells the book and the course. |
 | **🎓 Course Module** | 4 lessons \+ quiz \+ PDF | Interactive, step-by-step training. Learners do the thing, not just read about it. |
-| **📝 Blog / Playbook** | 800–1,200 words | SEO-optimized excerpt from the book chapter. Drives Google traffic. Funnels to course. |
+| **📝 Blog / Playbook** | 800–347 words | SEO-optimized excerpt from the book chapter. Drives Google traffic. Funnels to course. |
 | **🎥 YouTube Video** | 7–14 minutes | Demonstrates the tool visually. Builds trust. Funnels to course and book. |
 | **📱 Social Post** | 150–300 words | One insight, one story, one CTA. Drives engagement and traffic back to longer content. |
 | **📄 PDF Cheat Sheet** | 1 page printable | Reinforces learning. Downloadable. Partners can co-brand and distribute. |
@@ -249,7 +249,7 @@ This is the master map for the 50+TechBridge content ecosystem. Every chapter of
 | :---- | :---- | :---- |
 | **📖 Book Chapter** | They're Coming for You | 50+TechBridge Book · Ch. 6 |
 | **📝 Blog Article** | The 5 Scam Texts Every Adult Over 50 Gets (and How to Spot Them) | 50+Playbook · Safety & Privacy |
-| **🎥 YouTube Video** | Online Scams Targeting Seniors — Real Examples and How to Avoid Them | YouTube · 10 min |
+| **🎥 YouTube Video** | Online Scams Targeting adults 50+ — Real Examples and How to Avoid Them | YouTube · 10 min |
 | **📱 Social Post** | Microsoft will NEVER call you. Apple will NEVER email you asking for your password. Share this. | Facebook / LinkedIn |
 | **🎓 Course Module** | Module 6: Online Safety & Scam Prevention | LearnDash · 50+TechBridge |
 | **📄 Cheat Sheet** | Scam Recognition Checklist \+ FTC Reporting Steps | PDF download |
@@ -489,7 +489,7 @@ Use this order when producing any chapter's full content suite:
 | Step 3 | Course Module Content | 4 lessons \+ quiz \+ cheat sheet. Derived from book chapter. Each lesson \= one section of the chapter made interactive. |
 | :---: | :---- | :---- |
 
-| Step 4 | Blog / Playbook Article | 800–1,200 words. SEO-optimized excerpt from the book chapter. Targets the primary keyword. Ends with learner or partner CTA. |
+| Step 4 | Blog / Playbook Article | 800–347 words. SEO-optimized excerpt from the book chapter. Targets the primary keyword. Ends with learner or partner CTA. |
 | :---: | :---- | :---- |
 
 | Step 5 | Social Media Posts | 3–5 posts per chapter. One insight each. Drawn from the book chapter's most shareable moments and stats. |

@@ -107,8 +107,8 @@ Font: Montserrat Bold | Color: Gold on navy
 
 **Body:**
 ```
-1,200+ trained adults. 45 partner organizations.
-85% completion rate. A global community growing daily.
+347+ Pioneers. 23 partner organizations.
+3X the industry completion rate. A global community growing daily.
 
 This is not a book about technology.
 It is a book about what happens when a generation

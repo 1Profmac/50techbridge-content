@@ -268,11 +268,11 @@ the first number came back wrong.
 
 That was my assumption. There had to be an error.
 
-*Eighty-five percent.*
+*Three times the industry average.*
 
-Not 85% enrollment. Not 85% attendance.
+Not 3X enrollment. Not 3X attendance.
 
-85% of the people who started a 50+TechBridge
+Three times the industry average of the people who started a 50+TechBridge
 program finished it.
 
 In an industry where 10% is considered good.
@@ -317,7 +317,7 @@ Every time.
 
 ## What the Data Revealed
 
-The 85% completion rate did more than prove the model worked.
+The 3X the industry completion rate did more than prove the model worked.
 
 It forced a question I had been circling for years
 but hadn't yet asked with enough precision:
@@ -507,7 +507,7 @@ largely unchallenged assumption that older
 people are past their productive peak
 and not worth the investment.
 
-The 85% completion rate didn't just
+The 3X the industry completion rate didn't just
 prove the model worked.
 
 It broke the loop.
@@ -591,9 +591,9 @@ the goodwill of partners who donated space —
 was creating real impact and running
 on borrowed time.
 
-The 85% completion rate was extraordinary.
-The 45 partners who came on board were real.
-The 1,200 people trained were changed.
+The 3X the industry completion rate was extraordinary.
+The 23 partners who came on board were real.
+The 347 Pioneers were changed.
 
 And none of that paid the rent.
 

@@ -46,7 +46,7 @@
 
 **[Warm close.]**
 
-"50+TechBridge has done this with 1,200 members and 45 partner organizations."
+"50+TechBridge has done this with 347 Pioneers and 23 partner organizations."
 
 "We know what works."
 
@@ -74,7 +74,7 @@
 | 8 | 0:13 | COMMUNITY SECOND. | Gold, 150px |
 | 9 | 0:15 | Buys through relationship + reputation. | White |
 | 10 | 0:17 | Your customers become your marketing. | White bold |
-| 11 | 0:20 | 1,200 members. 45 partners. | Gold, stat style |
+| 11 | 0:20 | 347 Pioneers. 23 partners. | Gold, stat style |
 | 12 | 0:23 | We know what works. | White |
 | 13 | 0:25 | The playbook exists. | Gold |
 | 14 | 0:27 | Come learn it. | White, hold 2s |
@@ -83,7 +83,7 @@
 
 ## Ticker Copy
 
-**Gold bar:** `RESPECT FIRST ◆ COMMUNITY SECOND ◆ 1200+ MEMBERS ◆ 45 PARTNERS ◆ THE PLAYBOOK EXISTS ◆`
+**Gold bar:** `RESPECT FIRST ◆ COMMUNITY SECOND ◆ 347+ PIONEERS ◆ 23 PARTNERS ◆ THE PLAYBOOK EXISTS ◆`
 **Dark bar:** `▸ MOST EXPERIENCED CONSUMER ON EARTH ▸ BUYS THROUGH TRUST ▸ 50+TECHBRIDGE ▸ LEARNMORETECHNOLOGIES.COM ▸`
 
 ---
@@ -91,4 +91,4 @@
 ## YouTube Title Options
 1. `Stop using smaller fonts. Here's what actually works with the 50+ market.` 🥇
 2. `The 50+ consumer has seen every marketing trick. Here's how you earn their trust.`
-3. `1,200 members. 45 partners. Here's the playbook for the $76T market.`
+3. `347 Pioneers. 23 partners. Here's the playbook for the $76T market.`

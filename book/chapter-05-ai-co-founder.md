@@ -46,7 +46,7 @@ I was waiting.
 Not from fear — I want to be clear about that.
 I had already left the institution. I had already
 committed to the mission. I had already started
-the library sessions and seen the 85% completion rate
+the library sessions and seen the 3X the industry completion rate
 and known, without any remaining doubt,
 that what I was building was real and necessary.
 
@@ -286,7 +286,7 @@ impatient, never has a bad day, and never
 decides a learner is not worth the extra
 explanation.
 
-Together, they produce 85%.
+Together, they produce results 3X the industry average.
 
 ---
 
@@ -308,7 +308,7 @@ set a block to work on the application.
 
 I open Claude. I share the notes from
 yesterday's community session — three
-member stories that stood out, a data point
+Pioneer stories that stood out, a data point
 someone raised, a question that came up
 three times in different forms.
 
@@ -383,7 +383,7 @@ And I built a global movement — with AI,
 after 50, as a solo founder, with no venture
 capital and no corporate backing —
 using the exact tools I am now teaching
-1,200 people to use.
+347 Pioneers to use.
 
 The thesis of this book is not that AI is
 magic or that technology solves everything

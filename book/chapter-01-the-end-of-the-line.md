@@ -236,9 +236,9 @@ And I started building.
 ## What Came Next
 
 I will tell you the whole story of what I built —
-the training model that achieved an 85% completion
+the training model that achieved a 3X industry completion
 rate in an industry where 10% is considered good,
-the 45 partner organizations, the 1,200 members,
+the 23 partner organizations, the 347 Pioneers,
 the AI co-founder, the global community still growing —
 in the chapters that follow.
 

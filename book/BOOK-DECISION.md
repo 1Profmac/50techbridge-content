@@ -49,7 +49,7 @@
 | 12 | You Made It. Now Build Your Future. |
 
 **Best for:**
-- Amazon sales (people searching for "tech for seniors")
+- Amazon sales (people searching for "tech for adults 50+")
 - Community building — every chapter feeds course enrollment
 - SEO content engine — blog, YouTube, social posts all derived from chapters
 - Partner distribution — libraries, nonprofits, healthcare systems
