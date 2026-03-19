@@ -1,4 +1,4 @@
-# The Pioneers Podcast
+# AI After 50 — The Pioneers Podcast
 ## Concept, Format & Episode 1
 *50+TechBridge · learnmoretechnologies.com*
 
@@ -6,16 +6,16 @@
 
 ## The Concept
 
-**Name:** The Pioneers Podcast
+**Name:** AI After 50 — The Pioneers Podcast
 
-**Tagline:** *Real answers for adults 50+ who are done waiting.*
+**Tagline:** *Real answers about AI, business, and work for adults 50+ who are done waiting.
 
 **One-liner:** Every episode answers one question that adults 50+ are actually asking — about AI, online business, digital skills, and building something new in the second half of life.
 
 **Why this podcast:**
 The most Googled question in this space is *"Is it too late?"*
 Nobody is answering it with data, story, and specificity.
-Every episode of The Pioneers Podcast is the answer to one real question — asked by a real person — that deserves a real answer.
+Every episode of AI After 50 — The Pioneers Podcast is the answer to one real question — asked by a real person — that deserves a real answer.
 
 ---
 
@@ -96,7 +96,7 @@ Every episode title is a real question adults 50+ are asking.
 >
 > *That's the first brick.*
 >
-> *I'm Brian McKinney. This is The Pioneers Podcast.*
+> *I'm Brian McKinney. This is AI After 50 — The Pioneers Podcast.*
 >
 > *You're not done yet."*
 
