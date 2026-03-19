@@ -1,4 +1,4 @@
-# Chapter 9 — The Nomadic Dream
+# Chapter 10 — The Nomadic Dream
 **Part 3: The Movement**
 *Draft 1 — Brian McKinney with Claude, Anthropic AI*
 
@@ -360,13 +360,13 @@ And we are just getting started.
 
 ---
 
-**→ Chapter 10: Your Turn to Build the Bridge**
+**→ Chapter 11: Your Turn to Build the Bridge**
 
 *In which Brian hands the tools to the reader. The invitation. The first step. The movement waiting to be joined.*
 
 ---
 
-*Chapter 9 · Draft 1 · Word count: ~1,500*
+*Chapter 10 · Draft 1 · Word count: ~1,500*
 *Status: Ready for Brian's review*
 
 **Revision notes:**

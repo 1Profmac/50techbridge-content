@@ -1,4 +1,4 @@
-# Chapter 7 — The Digital Bill of Rights
+# Chapter 8 — The Digital Bill of Rights
 **Part 3: The Movement**
 *Draft 1 — Brian McKinney with Claude, Anthropic AI*
 
@@ -472,13 +472,13 @@ And we are just getting started.
 
 ---
 
-**→ Chapter 8: The Digital Authority Flywheel**
+**→ Chapter 9: The Digital Authority Flywheel**
 
 *In which Brian reveals how a book, a YouTube channel, a LinkedIn presence, and a speaking platform become a self-reinforcing system — and how you can build one too.*
 
 ---
 
-*Chapter 7 · Draft 1 · Word count: ~1,900*
+*Chapter 8 · Draft 1 · Word count: ~1,900*
 *Status: Ready for Brian's review*
 
 **Revision notes:**

@@ -1,4 +1,4 @@
-# Chapter 6 — The Manifesto: Why the Old Ways Don't Work
+# Chapter 7 — The Manifesto: Why the Old Ways Don't Work
 **Part 2: Building the Bridge**
 *Draft 1 — Brian McKinney with Claude, Anthropic AI*
 
@@ -511,13 +511,13 @@ That is the manifesto.
 
 ---
 
-**→ Chapter 7: The Digital Bill of Rights**
+**→ Chapter 8: The Digital Bill of Rights**
 
 *In which the movement gets specific. The rights every person over 50 is owed in the digital economy — and the organizations, institutions, and policymakers who have the power to guarantee them.*
 
 ---
 
-*Chapter 6 · Draft 1 · Word count: ~2,000*
+*Chapter 7 · Draft 1 · Word count: ~2,000*
 *Status: Ready for Brian's review*
 
 **Revision notes:**

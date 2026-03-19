@@ -1,4 +1,4 @@
-# Chapter 8 — The Digital Authority Flywheel
+# Chapter 9 — The Digital Authority Flywheel
 **Part 3: The Movement**
 *Draft 1 — Brian McKinney with Claude, Anthropic AI*
 
@@ -447,13 +447,13 @@ and then spin it.
 
 ---
 
-**→ Chapter 9: The Nomadic Dream**
+**→ Chapter 10: The Nomadic Dream**
 
 *In which Brian describes the life the flywheel makes possible — running a global enterprise from anywhere, staying close to the community, building something that does not require you to be in one place to keep it alive.*
 
 ---
 
-*Chapter 8 · Draft 1 · Word count: ~1,800*
+*Chapter 9 · Draft 1 · Word count: ~1,800*
 *Status: Ready for Brian's review*
 
 **Revision notes:**
