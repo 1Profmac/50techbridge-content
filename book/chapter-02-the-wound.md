@@ -89,7 +89,7 @@ It was how to answer it.
 
 ## Ron and Mary Hulnick
 
-In 2017, I sat in a classroom at the University
+In the 1990s, I sat in a classroom at the University
 of Santa Monica and heard something that
 reorganized the way I understood my own life.
 
@@ -340,7 +340,7 @@ Everything else in this book comes after it.
 *Status: Ready for Brian's review*
 
 **Revision notes:**
-- [ ] Confirm USM founding date — sources vary between 1976 and later. Brian to verify from his own program materials.
+- [x] Brian attended USM in the 1990s — confirmed. Text updated.
 - [ ] Brian to review the Compassionate Self-Forgiveness section — confirm the specific statements ring true to his practice
 - [ ] The childhood section — Brian to review and adjust the level of detail he's comfortable sharing
 - [ ] Confirm Ron and Mary Hulnick attribution is accurate to how Brian learned it
