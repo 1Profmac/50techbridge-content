@@ -76,7 +76,7 @@ THIS FILE WINS. Update the conflicting document immediately.
 | CTA | URL |
 |---|---|
 | Individual — Start Free / I'm Not Done Yet | https://learnmoretechnologies.com/join-now/ |
-| Organization — Deploy / Work With Us | https://learnmoretechnologies.com/for-partners/ |
+| Organization — Deploy / Work With Us | https://learnmoretechnologies.com/workforce/ |
 | Speak — Book a Keynote | https://learnmoretechnologies.com/speak/ |
 | Book Brian (Calendly) | https://calendly.com/brianmckinney/new-meeting |
 | Email | hello@learnmoretechnologies.com |
