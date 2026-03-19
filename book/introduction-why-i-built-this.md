@@ -27,6 +27,77 @@ That's why I built this.
 
 ---
 
+## The Brain They Said Was Broken
+
+I was 20 years old when a doctor told me I had ADD.
+
+Attention Deficit Disorder. In 1980, that diagnosis didn't come
+with a roadmap. It came with a label.
+
+What it actually came with — though nobody framed it this way —
+was an explanation.
+
+It explained why the conventional paths never fit right.
+Why law school, the corporate ladder, the straight line from
+here to there felt like wearing someone else's clothes.
+Why my brain lit up for color, shape, texture, and story
+in ways that a courtroom or a spreadsheet never could.
+
+ADD didn't limit me. It aimed me.
+
+It aimed me toward creativity.
+
+I spent the next ten years in the clothing and manufacturing industry
+in Los Angeles — working as a technical designer for companies
+like Guess, Patagonia, Nike, and Cole of California.
+Learning the craft. Learning the business. Learning how things
+get made, from concept to floor.
+
+And the whole time, I was watching. Filing it away.
+Because I always knew I was going to build something of my own.
+
+I just didn't know when.
+
+What I did know — from a childhood that included more trauma
+and violence than any child should carry —
+was how to keep my head down and work.
+
+16-hour days. Sometimes 20.
+Not because someone told me to.
+Because that's what survival had taught me.
+
+Keep moving. Keep building. Keep your head down.
+
+I didn't fully understand it at the time —
+but I was proving something.
+
+Not to investors. Not to a board.
+To every version of the world that had looked at me —
+the kid from the hard neighborhood,
+the young man with the "broken" brain,
+the Black designer in rooms that didn't expect him —
+and quietly decided I wasn't going to make it.
+
+I built a design company.
+From my garage.
+With the same ADD brain the world had handed a label.
+And I exited it successfully.
+
+I tell that story now not to impress anyone
+but because it is the same story I see in every
+50+TechBridge member who walks through the door.
+
+A person who was handed a verdict.
+Who ignored it.
+Who built anyway.
+
+The diagnosis changes. The garage changes.
+The industry changes.
+
+The refusal to accept the verdict never does.
+
+---
+
 ## I Saw It From the Inside
 
 Before I built 50+TechBridge, I worked at AARP.
