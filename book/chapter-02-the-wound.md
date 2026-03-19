@@ -176,6 +176,93 @@ organized around the hurt.
 
 That version can build things.
 
+But forgiveness alone is not a destination.
+It is a clearing.
+
+What you do with the cleared space is the next question.
+And that is where the second great teaching from
+Ron and Mary comes in.
+
+---
+
+## Intention — Setting It and Keeping It
+
+Ron and Mary Hulnick returned to intention
+constantly throughout the Masters program.
+
+Not as a productivity concept. Not as goal-setting.
+As a spiritual practice.
+
+The difference matters.
+
+Setting a goal is an intellectual exercise.
+You identify what you want, you write it down,
+you build a plan. The goal lives in your head.
+
+Setting an intention is something deeper.
+
+An intention lives in your body.
+It is a commitment made not just to what you want
+to accomplish but to who you are committed to being
+while you accomplish it.
+
+Ron and Mary would ask:
+
+*What is your intention for this?*
+
+Not what do you want to achieve.
+What are you intending — in your character,
+in your conduct, in how you will treat the people
+around you, in the quality of presence you will
+bring to the work?
+
+And then — this is the harder part:
+
+*Are you keeping it?*
+
+Not periodically checking in. Not reviewing your
+quarterly goals. Keeping it.
+
+In the room. In the conversation.
+In the moment when things get hard and
+the easy path is to cut a corner or
+dismiss someone's concern or
+let the momentum of busyness
+carry you past the thing that actually matters.
+
+*Are you keeping your intention right now?*
+
+I have asked myself that question ten thousand times
+in the building of 50+TechBridge.
+
+When I was exhausted and the grant application
+was due and the training session needed prep
+and the community needed attention and the
+technology wasn't working — am I keeping my intention?
+
+The intention was never to build a successful business.
+
+The intention was to show up for a generation
+that had been waiting for someone to show up for them.
+
+Those are not the same thing.
+The first one can be faked. The second one cannot.
+
+When I kept the intention — when I came back to it
+in the hard moments, the way Ron and Mary taught —
+the work had a quality it didn't have otherwise.
+
+People felt it.
+
+That is not mystical. It is practical.
+When you are doing something because you genuinely
+intend it — not for the outcome, not for the
+validation, but because you are committed to the
+person you are being in service of something that
+matters — the work is different.
+
+And people can tell.
+
 ---
 
 ## What the Wounds Were For
@@ -324,9 +411,32 @@ to someone you love.
 
 *"I forgive myself for believing I was done."*
 
-That is the first tool.
+Then — once you've said it and meant it —
+do the second thing.
 
-Everything else in this book comes after it.
+Set your intention.
+
+Not your goal. Not your plan.
+Your intention.
+
+Ask yourself:
+
+*Who am I committed to being as I build this next chapter?*
+
+Write it down if you can. One sentence.
+Something you can return to when the work gets hard —
+and it will get hard — and ask yourself:
+am I keeping this?
+
+That is the practice Ron and Mary taught.
+
+Forgiveness clears the ground.
+Intention builds on it.
+
+Those two things together are more powerful
+than any technology in this book.
+
+And this book has a lot of technology in it.
 
 ---
 
