@@ -13,7 +13,7 @@
 | Facebook (Personal) | Brian McKinney | facebook.com/mckinneymedia1 | 62 friends | Privacy locked, banner updated |
 | Facebook (Page 2) | 50Plustechbridge | TBD | TBD | Needs audit |
 | Instagram | @50plustechbridge | instagram.com/50plustechbridge | 10 | Renamed, needs full setup |
-| YouTube | TBD | TBD | TBD | Not started |
+| YouTube | Learn More Technologies @LearnMoreTechnologies | youtube.com/c/LearnMoreTechnologies | 517 | Fully set up, branded, links updated |
 | X / Twitter | TBD | TBD | TBD | Not started |
 
 ---
