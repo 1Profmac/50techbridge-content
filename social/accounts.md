@@ -69,7 +69,7 @@
 
 | Tool | Purpose | Status |
 |------|---------|--------|
-| Metricool | Analytics — connect all 5 platforms | NOT CONNECTED |
+| Metricool | Analytics — connect all 5 platforms | Instagram + YouTube connected, LinkedIn pending |
 | Buffer | Scheduling (SAGE agent) | NOT CONNECTED |
 | Brand24 | Mention monitoring | NOT CONNECTED |
 
