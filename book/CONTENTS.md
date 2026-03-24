@@ -51,7 +51,7 @@
 - One-liner: **"Ageism is the problem. AgeTech is the solution. We're the bridge."**
 - Website: **learnmoretechnologies.com**
 - CTA (individual): learnmoretechnologies.com/join-now/
-- CTA (organizations): learnmoretechnologies.com/for-partners/
+- CTA (organizations): learnmoretechnologies.com/workforce/
 
 ---
 

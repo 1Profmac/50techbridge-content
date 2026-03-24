@@ -226,7 +226,7 @@ what protects our Pioneers. We meet or exceed GDPR — the strongest global stan
 | Scheduling tool | Buffer |
 | Analytics tool | Metricool |
 | Mention monitoring | Brand24 |
-| All CTAs route to | learnmoretechnologies.com/join-now/ or /for-partners/ |
+| All CTAs route to | learnmoretechnologies.com/join-now/ or /workforce/ |
 | Data export | Weekly CSV — our account — we own it |
 
 ---
