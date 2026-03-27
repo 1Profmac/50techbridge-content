@@ -166,9 +166,23 @@ Add this to your config.json to customize the YouTube package:
 4. Copy `example-config.json` and edit slides + youtube section
 5. Run `python lmt-video-overlay.py your-config.json`
 6. Review the output video in FINISHED/YOUTUBE/
-7. Open studio.youtube.com — upload video, paste title/description/tags from .txt files
-8. Copy YouTube URL — add to config's linkedin.youtube_url — rerun script
-9. Open linkedin.com — paste from LINKEDIN-POST.txt
-10. Done — video published + cross-posted
+7. **YouTube upload:**
+   - Open studio.youtube.com → Create → Upload video
+   - Drag .mp4 from FINISHED/YOUTUBE/
+   - Copy/paste title, description (with chapters), tags from .txt files
+   - Upload thumbnail PNG
+   - Add subtitles (click Add — YouTube auto-generates)
+   - Add end screen (click Add — pick Subscribe + Best for viewer template)
+   - Skip cards and quiz
+   - Set visibility: Public (or Schedule per content calendar)
+   - Category: Education | Language: English | Made for kids: No
+8. **LinkedIn native video post (DO NOT post YouTube link — native video gets 3-5x more reach):**
+   - Open linkedin.com → Start a post → click Video
+   - Upload the same .mp4 directly (native upload, not YouTube link)
+   - Paste from LINKEDIN-POST.txt (no YouTube URL needed for native)
+   - Post
+9. Done — video published on YouTube + cross-posted as native video on LinkedIn
+
+**Important:** LinkedIn suppresses posts with external links. Always upload the video natively to LinkedIn — never just paste a YouTube link. Use YouTube for search/SEO and LinkedIn native for feed engagement.
 
 Each video takes: ~15 min HeyGen recording + ~10 min config writing + ~2 min render = under 30 minutes total.
