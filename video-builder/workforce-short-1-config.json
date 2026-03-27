@@ -1,0 +1,142 @@
+{
+  "_comment": "YouTube Short — Article 1: Your 50+ Workforce Is Your Biggest Untapped Asset",
+  "_instructions": "Record a 50-second VERTICAL (1080x1920) clean HeyGen video of Brian reading the script. No text overlays. Export as MP4.",
+  "input_video": "C:/Users/Jordyn/Desktop/test-video-input.mp4",
+  "output_video": "C:/Users/Jordyn/Desktop/SHORT-workforce-article-1.mp4",
+  "format": "short",
+  "show_header": true,
+  "show_lower_third": true,
+  "youtube": {
+    "title": "Your 50+ workers are NOT the problem. The training is.",
+    "description": "Every organization says they can't find good people. Meanwhile, 38 million experienced workers are sitting right in front of them.\n\n52.3 percent of U.S. businesses are owned by people 55+. They control $76 trillion in wealth. And most organizations are sending them to AI workshops designed for 25-year-olds.\n\n50+TechBridge: AI training built for adults 50+. 3X the industry completion rate.\n\nLearn more: https://learnmoretechnologies.com/workforce/",
+    "thumbnail_time": 8,
+    "hashtags": "#Shorts #WorkforceDevelopment #Adults50Plus #AgeTech #AITraining #DigitalInclusion #WIOA #FutureOfWork #50PlusTechBridge #LearnMoreTechnologies",
+    "tags": "shorts, workforce development, AI training, adults 50+, agetech, digital inclusion, 50+ TechBridge, experienced workers, Brian McKinney"
+  },
+  "linkedin": {
+    "youtube_url": "https://youtu.be/YOUR-SHORT-ID",
+    "post": "Every organization says they can't find good people.\n\nMeanwhile, 38 million experienced workers are sitting right in front of them.\n\n52.3 percent of U.S. businesses are owned by people 55+.\nThey control $76 trillion in wealth.\n\nAnd most organizations are sending them to AI workshops designed for 25-year-olds.\n\nWe built AI training specifically for adults 50+.\n3X the industry completion rate.\n\nYour experienced workers are not the problem.\nThe training is.\n\nlearnmoretechnologies.com/workforce\n\n#Adults50Plus #AgeTech #AITraining #WorkforceDevelopment #DigitalInclusion #WIOA #FutureOfWork #50PlusTechBridge #LearnMoreTechnologies"
+  },
+  "slides": [
+    {
+      "start": 0,
+      "end": 3,
+      "x": 60,
+      "y": 200,
+      "font_size": 42,
+      "color": "#FFFFFF",
+      "no_bullet": true,
+      "chapter_label": "Hook",
+      "bullets": [
+        "Every organization says",
+        "they can't find good people."
+      ]
+    },
+    {
+      "start": 3,
+      "end": 12,
+      "x": 60,
+      "y": 200,
+      "font_size": 42,
+      "color": "#FFFFFF",
+      "no_bullet": true,
+      "chapter_label": "The overlooked generation",
+      "bullets": [
+        "An entire generation of",
+        "experienced workers --",
+        "and they stopped investing."
+      ]
+    },
+    {
+      "start": 12,
+      "end": 17,
+      "x": 60,
+      "y": 200,
+      "font_size": 42,
+      "color": "#FFFFFF",
+      "chapter_label": "38 million",
+      "bullets": [
+        "38 million adults 50+",
+        "in the workforce right now"
+      ]
+    },
+    {
+      "start": 17,
+      "end": 22,
+      "x": 60,
+      "y": 200,
+      "font_size": 42,
+      "color": "#FFFFFF",
+      "chapter_label": "52.3 percent",
+      "bullets": [
+        "52.3 percent of U.S.",
+        "businesses owned by 55+"
+      ]
+    },
+    {
+      "start": 22,
+      "end": 27,
+      "x": 60,
+      "y": 200,
+      "font_size": 42,
+      "color": "#FFFFFF",
+      "chapter_label": "$76 trillion",
+      "bullets": [
+        "$76 trillion in wealth"
+      ]
+    },
+    {
+      "start": 27,
+      "end": 36,
+      "x": 60,
+      "y": 200,
+      "font_size": 42,
+      "color": "#FFFFFF",
+      "no_bullet": true,
+      "chapter_label": "The wrong training",
+      "bullets": [
+        "Sending them to AI workshops",
+        "designed for 25-year-olds.",
+        "",
+        "Then wondering why they",
+        "are not keeping up."
+      ]
+    },
+    {
+      "start": 36,
+      "end": 45,
+      "x": 60,
+      "y": 200,
+      "font_size": 42,
+      "color": "#FFFFFF",
+      "chapter_label": "3X completion",
+      "bullets": [
+        "3X the industry",
+        "completion rate.",
+        "",
+        "The problem is not",
+        "your experienced workers.",
+        "",
+        "It is the training."
+      ]
+    },
+    {
+      "start": 45,
+      "end": 55,
+      "x": 60,
+      "y": 200,
+      "font_size": 42,
+      "color": "#C8942E",
+      "fade": 1.0,
+      "no_bullet": true,
+      "chapter_label": "CTA",
+      "bullets": [
+        "Learn More Technologies",
+        "learnmoretechnologies.com",
+        "/workforce",
+        "",
+        "Link in bio"
+      ]
+    }
+  ]
+}

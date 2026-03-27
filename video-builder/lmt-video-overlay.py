@@ -41,52 +41,75 @@ def build_drawtext_filters(config):
     """Build FFmpeg drawtext filter chain from config."""
     filters = []
     duration = config.get("duration", 300)
+    fmt = config.get("format", "landscape")  # "landscape" (1920x1080) or "short" (1080x1920)
+
+    # Size presets based on format
+    if fmt == "short":
+        header_size = 44
+        header_y = 60
+        sub_size = 24
+        sub_y = 112
+        line_top_y = 50
+        line_bot_y = 140
+        lower_size = 24
+        lower_bar_h = 50
+        lower_text_y_offset = 38
+    else:
+        header_size = 64
+        header_y = 40
+        sub_size = 36
+        sub_y = 115
+        line_top_y = 30
+        line_bot_y = 158
+        lower_size = 32
+        lower_bar_h = 65
+        lower_text_y_offset = 52
 
     # Persistent header (if enabled)
     if config.get("show_header", True):
         # Gold line top
         filters.append(
-            f"drawbox=x=iw*0.10:y=30:w=iw*0.80:h=3:color=0x{BRAND['gold']}:t=fill:"
+            f"drawbox=x=iw*0.10:y={line_top_y}:w=iw*0.80:h=3:color=0x{BRAND['gold']}:t=fill:"
             f"enable='between(t,0,{duration})'"
         )
         # Header text
         filters.append(
             f"drawtext=fontfile={FONT_HEADING}:"
             f"text='LEARN MORE TECHNOLOGIES':"
-            f"fontsize=64:fontcolor=0x{BRAND['gold']}:"
-            f"x=(w-text_w)/2:y=40:"
+            f"fontsize={header_size}:fontcolor=0x{BRAND['gold']}:"
+            f"x=(w-text_w)/2:y={header_y}:"
             f"enable='between(t,0,{duration})'"
         )
         # Subheading
         filters.append(
             f"drawtext=fontfile={FONT_BODY}:"
             f"text='50+TechBridge':"
-            f"fontsize=36:fontcolor=0x{BRAND['orange']}:"
-            f"x=(w-text_w)/2:y=115:"
+            f"fontsize={sub_size}:fontcolor=0x{BRAND['orange']}:"
+            f"x=(w-text_w)/2:y={sub_y}:"
             f"enable='between(t,0,{duration})'"
         )
         # Gold line bottom
         filters.append(
-            f"drawbox=x=iw*0.10:y=158:w=iw*0.80:h=3:color=0x{BRAND['gold']}:t=fill:"
+            f"drawbox=x=iw*0.10:y={line_bot_y}:w=iw*0.80:h=3:color=0x{BRAND['gold']}:t=fill:"
             f"enable='between(t,0,{duration})'"
         )
 
     # Persistent lower third (if enabled)
     if config.get("show_lower_third", True):
         filters.append(
-            f"drawbox=x=0:y=ih-65:w=iw:h=65:color=0x{BRAND['bg_mid']}@0.9:t=fill:"
+            f"drawbox=x=0:y=ih-{lower_bar_h}:w=iw:h={lower_bar_h}:color=0x{BRAND['bg_mid']}@0.9:t=fill:"
             f"enable='between(t,0,{duration})'"
         )
         filters.append(
-            f"drawbox=x=0:y=ih-67:w=iw:h=3:color=0x{BRAND['gold']}:t=fill:"
+            f"drawbox=x=0:y=ih-{lower_bar_h + 2}:w=iw:h=3:color=0x{BRAND['gold']}:t=fill:"
             f"enable='between(t,0,{duration})'"
         )
         lower_text = config.get("lower_third_text", "Subscribe   |   Like   |   Share")
         filters.append(
             f"drawtext=fontfile={FONT_BODY}:"
             f"text='{lower_text}':"
-            f"fontsize=32:fontcolor=0x{BRAND['gold']}:"
-            f"x=(w-text_w)/2:y=h-52:"
+            f"fontsize={lower_size}:fontcolor=0x{BRAND['gold']}:"
+            f"x=(w-text_w)/2:y=h-{lower_text_y_offset}:"
             f"enable='between(t,0,{duration})'"
         )
 

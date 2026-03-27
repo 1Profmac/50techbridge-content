@@ -84,6 +84,53 @@ python lmt-video-overlay.py my-new-video-config.json
 **Highlight slides** — key statements, `no_bullet: true`
 **End card** — last 30 seconds, `no_bullet: true`, contact info with empty lines for spacing
 
+## YouTube Shorts (60 seconds, vertical)
+
+Same script, same process — just add `"format": "short"` to your config.
+
+### How to Build a Short
+
+1. **Record in HeyGen** — 50 seconds, **vertical 1080x1920 (9:16)**, clean, no text
+2. **Copy** `workforce-short-1-config.json` and edit for your content
+3. **Run** `python lmt-video-overlay.py your-short-config.json`
+4. **Upload to YouTube** — under 60 seconds + vertical = auto-detected as Short
+
+### Short Config Differences
+
+```json
+{
+  "format": "short",
+  "slides": [
+    {
+      "x": 60,
+      "y": 200,
+      "font_size": 42
+    }
+  ]
+}
+```
+
+| Setting | Long Video | Short |
+|---|---|---|
+| Format | `"landscape"` (default) | `"short"` |
+| Resolution | 1920x1080 (16:9) | 1080x1920 (9:16) |
+| Duration | 3-5 minutes | Under 60 seconds |
+| Slides | 10-12 | 5-8 |
+| Font size | 46pt | 42pt |
+| x position | 80 | 60 |
+| y position | 250 | 200 |
+| Header | 64pt | 44pt (auto-scaled) |
+| Lower third | 32pt | 24pt (auto-scaled) |
+
+### Visual Shorts (with stock footage)
+
+For Shorts with visuals instead of Brian talking:
+1. Find 8 stock video clips in Canva (search: "mature professional", "experienced worker", "older adult technology")
+2. Save to `PRE-PRODUCTION/short-1-images/`
+3. Record voiceover in ElevenLabs (save to `PRE-PRODUCTION/eleven-labs/`)
+4. Build in Canva: 1080x1920, one clip per page, voiceover on audio track, text overlays
+5. Export MP4 → upload as Short
+
 ## Important Notes
 
 - Do NOT use the % symbol in bullet text — spell out "percent" instead (FFmpeg limitation)

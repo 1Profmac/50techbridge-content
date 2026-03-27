@@ -11,6 +11,8 @@
   ],
   "input_video": "C:/Users/Jordyn/Desktop/your-clean-heygen-video.mp4",
   "output_video": "C:/Users/Jordyn/Desktop/your-output-folder/FINISHED/your-finished-video.mp4",
+  "format": "landscape",
+  "_format_options": "landscape (1920x1080) or short (1080x1920 vertical, under 60s)",
   "show_header": true,
   "show_lower_third": true,
   "youtube": {
