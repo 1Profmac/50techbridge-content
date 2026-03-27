@@ -110,17 +110,24 @@ Same script, same process — just add `"format": "short"` to your config.
 }
 ```
 
-| Setting | Long Video | Short |
-|---|---|---|
-| Format | `"landscape"` (default) | `"short"` |
-| Resolution | 1920x1080 (16:9) | 1080x1920 (9:16) |
-| Duration | 3-5 minutes | Under 60 seconds |
-| Slides | 10-12 | 5-8 |
-| Font size | 46pt | 42pt |
-| x position | 80 | 60 |
-| y position | 250 | 200 |
-| Header | 64pt | 44pt (auto-scaled) |
-| Lower third | 32pt | 24pt (auto-scaled) |
+| Setting | Long Video | Short | Training Movie |
+|---|---|---|---|
+| Format | `"landscape"` (default) | `"short"` | `"training"` |
+| Resolution | 1920x1080 (16:9) | 1080x1920 (9:16) | 1080x1920 (9:16) |
+| Duration | 3-5 minutes | Under 60 seconds | 2-10 minutes |
+| Slides | 10-12 | 5-8 | 3-6 per lesson |
+| Font size | 46pt | 42pt | 52pt (ADA) |
+| x position | 80 | 60 | 60 |
+| Header | 64pt single line | 44pt single line | 90pt split (two lines) |
+| Header area | ~15% of screen | ~15% of screen | 25% of screen (1/4) |
+| Lower third | 32pt | 24pt | 32pt |
+| Use case | YouTube/LinkedIn articles | YouTube Shorts/Reels | LearnDash course lessons |
+
+### Training Movie Format
+
+Same HeyGen talking head video (Brian on dark blue). Same script. Add `"format": "training"` to config.
+Header fills top 1/4 of screen. Content text at 52pt (ADA readable for 50+ adults).
+Works for YouTube, Reels, TikTok, and embedded in LearnDash lessons.
 
 ### Visual Shorts (with stock footage)
 

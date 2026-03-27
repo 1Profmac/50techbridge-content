@@ -19,7 +19,7 @@ import os
 import subprocess
 
 # FFmpeg path — update if installed elsewhere
-FFMPEG = "C:/Users/Jordyn/Desktop/ffmpeg-8.1-essentials_build/bin/ffmpeg.exe"
+FFMPEG = "C:/tools/ffmpeg-8.1-essentials_build/bin/ffmpeg.exe"
 
 # Brand constants
 BRAND = {
@@ -44,8 +44,24 @@ def build_drawtext_filters(config):
     fmt = config.get("format", "landscape")  # "landscape" (1920x1080) or "short" (1080x1920)
 
     # Size presets based on format
-    if fmt == "short":
+    if fmt == "training":
+        # Training movie — vertical, large header (1/4 screen), Brian PIP bottom-right
+        # Header is split into two lines for vertical format
+        header_size = 90
+        header_split = True  # "LEARN MORE" + "TECHNOLOGIES" on two lines
+        header_y = 70
+        header_y2 = 170
+        sub_size = 52
+        sub_y = 290
+        line_top_y = 40
+        line_bot_y = 360
+        lower_size = 32
+        lower_bar_h = 50
+        lower_text_y_offset = 38
+        content_y = 500  # text starts here — same area as slide images
+    elif fmt == "short":
         header_size = 44
+        header_split = False
         header_y = 60
         sub_size = 24
         sub_y = 112
@@ -54,8 +70,10 @@ def build_drawtext_filters(config):
         lower_size = 24
         lower_bar_h = 50
         lower_text_y_offset = 38
+        content_y = 200
     else:
         header_size = 64
+        header_split = False
         header_y = 40
         sub_size = 36
         sub_y = 115
@@ -64,22 +82,39 @@ def build_drawtext_filters(config):
         lower_size = 32
         lower_bar_h = 65
         lower_text_y_offset = 52
+        content_y = 250
 
     # Persistent header (if enabled)
     if config.get("show_header", True):
         # Gold line top
         filters.append(
-            f"drawbox=x=iw*0.10:y={line_top_y}:w=iw*0.80:h=3:color=0x{BRAND['gold']}:t=fill:"
+            f"drawbox=x=iw*0.05:y={line_top_y}:w=iw*0.90:h=4:color=0x{BRAND['gold']}:t=fill:"
             f"enable='between(t,0,{duration})'"
         )
-        # Header text
-        filters.append(
-            f"drawtext=fontfile={FONT_HEADING}:"
-            f"text='LEARN MORE TECHNOLOGIES':"
-            f"fontsize={header_size}:fontcolor=0x{BRAND['gold']}:"
-            f"x=(w-text_w)/2:y={header_y}:"
-            f"enable='between(t,0,{duration})'"
-        )
+        # Header text — split or single line
+        if header_split:
+            filters.append(
+                f"drawtext=fontfile={FONT_HEADING}:"
+                f"text='LEARN MORE':"
+                f"fontsize={header_size}:fontcolor=0x{BRAND['gold']}:"
+                f"x=(w-text_w)/2:y={header_y}:"
+                f"enable='between(t,0,{duration})'"
+            )
+            filters.append(
+                f"drawtext=fontfile={FONT_HEADING}:"
+                f"text='TECHNOLOGIES':"
+                f"fontsize={header_size}:fontcolor=0x{BRAND['gold']}:"
+                f"x=(w-text_w)/2:y={header_y2}:"
+                f"enable='between(t,0,{duration})'"
+            )
+        else:
+            filters.append(
+                f"drawtext=fontfile={FONT_HEADING}:"
+                f"text='LEARN MORE TECHNOLOGIES':"
+                f"fontsize={header_size}:fontcolor=0x{BRAND['gold']}:"
+                f"x=(w-text_w)/2:y={header_y}:"
+                f"enable='between(t,0,{duration})'"
+            )
         # Subheading
         filters.append(
             f"drawtext=fontfile={FONT_BODY}:"
@@ -90,7 +125,7 @@ def build_drawtext_filters(config):
         )
         # Gold line bottom
         filters.append(
-            f"drawbox=x=iw*0.10:y={line_bot_y}:w=iw*0.80:h=3:color=0x{BRAND['gold']}:t=fill:"
+            f"drawbox=x=iw*0.05:y={line_bot_y}:w=iw*0.90:h=4:color=0x{BRAND['gold']}:t=fill:"
             f"enable='between(t,0,{duration})'"
         )
 
@@ -118,9 +153,10 @@ def build_drawtext_filters(config):
         start = slide["start"]
         end = slide["end"]
         color = slide.get("color", "#FFFFFF").replace("#", "")
-        font_size = slide.get("font_size", 46)
-        x = slide.get("x", 80)
-        y = slide.get("y", 250)
+        default_font = 52 if fmt == "training" else 46
+        font_size = slide.get("font_size", default_font)
+        x = slide.get("x", 60 if fmt in ["short", "training"] else 80)
+        y = slide.get("y", content_y)
         fade = slide.get("fade", 0.5)
         no_bullet = slide.get("no_bullet", False)
 
