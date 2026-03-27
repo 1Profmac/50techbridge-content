@@ -20,6 +20,11 @@
     "hashtags": "#WorkforceDevelopment #Adults50Plus #AgeTech #AITraining #DigitalInclusion #WIOA #FutureOfWork #MBECertified #50PlusTechBridge #LearnMoreTechnologies",
     "tags": "workforce development, AI training, adults 50+, agetech, digital inclusion, WIOA, 50+ TechBridge, Learn More Technologies, Brian McKinney"
   },
+  "linkedin": {
+    "_comment": "Set youtube_url AFTER uploading to YouTube, then rerun to generate the LinkedIn post",
+    "youtube_url": "https://youtu.be/YOUR-VIDEO-ID",
+    "post": "Your most experienced workers are your greatest asset.\n\nSo why are most organizations leaving them out of AI training?\n\nKey stat or insight from the article here.\n\nWatch the full video: https://youtu.be/YOUR-VIDEO-ID\n\nlearnmoretechnologies.com/workforce\n\n#WorkforceDevelopment #Adults50Plus #AgeTech #AITraining #DigitalInclusion #WIOA #FutureOfWork #MBECertified #50PlusTechBridge #LearnMoreTechnologies"
+  },
   "slides": [
     {
       "_comment": "TITLE SLIDE — no bullets, larger font, 10-12 seconds",

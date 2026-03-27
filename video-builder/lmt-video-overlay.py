@@ -300,15 +300,72 @@ def generate_youtube_package(config, video_path):
                     import shutil
                     shutil.copy2(src, dst)
 
+    # Generate LinkedIn post
+    linkedin_post = generate_linkedin_post(config, yt_video)
+    linkedin_path = os.path.join(youtube_dir, "LINKEDIN-POST.txt")
+    with open(linkedin_path, "w", encoding="utf-8") as f:
+        f.write(linkedin_post)
+    print(f"LinkedIn post: {linkedin_path}")
+
     print(f"\nYouTube package ready at: {youtube_dir}")
-    print("Upload steps:")
+    print("")
+    print("YOUTUBE UPLOAD:")
     print("  1. Open studio.youtube.com")
     print("  2. Create -> Upload video")
     print("  3. Drag the .mp4 from YOUTUBE folder")
     print("  4. Copy/paste title, description, and tags from the .txt files")
     print("  5. Upload thumbnail PNG")
     print("  6. Set visibility to Public")
+    print("")
+    print("LINKEDIN CROSS-POST:")
+    print("  1. Open linkedin.com -> Start a post")
+    print("  2. Copy/paste from LINKEDIN-POST.txt")
+    print("  3. YouTube link auto-embeds as video preview")
+    print("  4. Post")
     return youtube_dir
+
+
+def generate_linkedin_post(config, video_path):
+    """Generate a LinkedIn post that cross-promotes the YouTube video."""
+    yt = config.get("youtube", {})
+    linkedin = config.get("linkedin", {})
+
+    # Get YouTube URL from config or placeholder
+    yt_url = linkedin.get("youtube_url", "https://youtu.be/YOUR-VIDEO-ID")
+
+    # Build post from config or auto-generate from slides
+    if "post" in linkedin:
+        post = linkedin["post"]
+    else:
+        # Auto-generate from slide content
+        title = yt.get("title", "")
+        lines = []
+
+        # Opening hook from first content slide
+        if len(config["slides"]) > 1:
+            first_bullets = config["slides"][1].get("bullets", [])
+            if first_bullets:
+                lines.append(first_bullets[0])
+                lines.append("")
+
+        # Key stats from data slides
+        for slide in config["slides"]:
+            for bullet in slide.get("bullets", []):
+                if any(word in bullet.lower() for word in ["million", "trillion", "percent", "billion", "pioneers", "3x", "organizations"]):
+                    lines.append(bullet.replace("-  ", ""))
+
+        lines.append("")
+        lines.append(f"Watch the full video: {yt_url}")
+        lines.append("")
+        lines.append("learnmoretechnologies.com/workforce")
+        lines.append("")
+
+        hashtags = yt.get("hashtags", "#WorkforceDevelopment #Adults50Plus #AgeTech #AITraining #DigitalInclusion #WIOA #FutureOfWork #MBECertified #50PlusTechBridge #LearnMoreTechnologies")
+        lines.append(hashtags)
+
+        post = "\n".join(lines)
+
+    return post
 
 
 def main():

@@ -123,7 +123,8 @@ your-output-folder/FINISHED/
 │   ├── THUMBNAIL-your-video.png    — 1280x720 YouTube thumbnail
 │   ├── YOUTUBE-TITLE.txt           — copy/paste into YouTube Studio
 │   ├── YOUTUBE-DESCRIPTION.txt     — copy/paste (includes chapters)
-│   └── YOUTUBE-TAGS.txt            — copy/paste tags
+│   ├── YOUTUBE-TAGS.txt            — copy/paste tags
+│   └── LINKEDIN-POST.txt          — copy/paste into LinkedIn
 ├── article.md                      — original article
 ├── article-SEO.md                  — SEO version
 └── article-PLAINTEXT.txt           — HeyGen script version
@@ -146,6 +147,17 @@ Add this to your config.json to customize the YouTube package:
 - `thumbnail_time` — which second of the video to screenshot for the thumbnail
 - `chapter_label` on each slide — auto-generates YouTube chapters in the description
 
+## LinkedIn Config Section
+
+```json
+"linkedin": {
+  "youtube_url": "https://youtu.be/YOUR-VIDEO-ID",
+  "post": "Your LinkedIn post text here. Include the YouTube URL and it auto-embeds."
+}
+```
+
+**Workflow:** Run the script once to build the video. Upload to YouTube. Copy the YouTube URL. Add it to the config's `linkedin.youtube_url`. Run the script again — it regenerates the LinkedIn post with the real URL. Copy/paste into LinkedIn.
+
 ## Workflow for 30 Videos in 30 Days
 
 1. Write the article (SEO version in TRACK-1 or TRACK-2)
@@ -155,6 +167,8 @@ Add this to your config.json to customize the YouTube package:
 5. Run `python lmt-video-overlay.py your-config.json`
 6. Review the output video in FINISHED/YOUTUBE/
 7. Open studio.youtube.com — upload video, paste title/description/tags from .txt files
-8. Done
+8. Copy YouTube URL — add to config's linkedin.youtube_url — rerun script
+9. Open linkedin.com — paste from LINKEDIN-POST.txt
+10. Done — video published + cross-posted
 
 Each video takes: ~15 min HeyGen recording + ~10 min config writing + ~2 min render = under 30 minutes total.
