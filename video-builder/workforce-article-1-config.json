@@ -1,0 +1,181 @@
+{
+  "input_video": "C:/Users/Jordyn/Desktop/test-video-input.mp4",
+  "output_video": "C:/Users/Jordyn/Desktop/test-video-v3.mp4",
+  "show_header": true,
+  "show_lower_third": true,
+  "slides": [
+    {
+      "start": 0,
+      "end": 12,
+      "x": 80,
+      "y": 250,
+      "font_size": 48,
+      "color": "#FFFFFF",
+      "fade": 0.8,
+      "no_bullet": true,
+      "bullets": [
+        "Your 50+ Workforce Is Your",
+        "Biggest Untapped Asset for AI Training"
+      ]
+    },
+    {
+      "start": 12,
+      "end": 40,
+      "x": 80,
+      "y": 250,
+      "font_size": 46,
+      "color": "#FFFFFF",
+      "bullets": [
+        "AI training for adults 50+ is not charity -- it is smart business",
+        "Most companies overlook their most experienced workers",
+        "Learning AI is adding a powerful tool to decades of knowledge"
+      ]
+    },
+    {
+      "start": 40,
+      "end": 75,
+      "x": 80,
+      "y": 250,
+      "font_size": 46,
+      "color": "#FFFFFF",
+      "bullets": [
+        "38 million adults 50+ employed in the U.S.",
+        "52.3 percent of all business owners in the country",
+        "$76 trillion in accumulated wealth",
+        "Institutional knowledge no algorithm can replace"
+      ],
+      "source": "Source: MIT / Kellogg / AARP"
+    },
+    {
+      "start": 75,
+      "end": 95,
+      "x": 80,
+      "y": 250,
+      "font_size": 46,
+      "color": "#FFFFFF",
+      "bullets": [
+        "Age discrimination costs $850 billion every year",
+        "Replacing one experienced worker costs $30,000+",
+        "That assumption is flat wrong -- and expensive"
+      ],
+      "source": "Source: AARP / Oxford Economics"
+    },
+    {
+      "start": 95,
+      "end": 130,
+      "x": 80,
+      "y": 250,
+      "font_size": 46,
+      "color": "#FFFFFF",
+      "bullets": [
+        "Judgment built from decades of real decisions",
+        "Relationship skills that hold teams and clients together",
+        "Crisis management instincts sharpened over careers",
+        "Institutional memory no database can hold"
+      ]
+    },
+    {
+      "start": 130,
+      "end": 150,
+      "x": 80,
+      "y": 250,
+      "font_size": 46,
+      "color": "#FFFFFF",
+      "bullets": [
+        "You are not teaching someone from scratch",
+        "You are upgrading a professional",
+        "who already knows how your business works"
+      ]
+    },
+    {
+      "start": 150,
+      "end": 175,
+      "x": 80,
+      "y": 250,
+      "font_size": 46,
+      "color": "#FFFFFF",
+      "bullets": [
+        "347+ Pioneers trained and counting",
+        "3X completion rate vs industry standard",
+        "74 percent confidence boost in using AI tools",
+        "23 organizations served"
+      ]
+    },
+    {
+      "start": 175,
+      "end": 195,
+      "x": 80,
+      "y": 250,
+      "font_size": 46,
+      "color": "#FFFFFF",
+      "bullets": [
+        "Most training was not designed for experienced workers",
+        "Different comfort levels with technology",
+        "Need to see how AI applies to their actual work",
+        "Inclusive programs produce higher retention for all ages"
+      ],
+      "source": "Source: SHRM"
+    },
+    {
+      "start": 195,
+      "end": 220,
+      "x": 80,
+      "y": 250,
+      "font_size": 46,
+      "color": "#FFFFFF",
+      "bullets": [
+        "Peer instructors -- adults 50+ teach adults 50+",
+        "Project-based learning -- real tools used immediately",
+        "Cohort support -- accountability and community",
+        "Measurable outcomes -- tracked and verified"
+      ]
+    },
+    {
+      "start": 220,
+      "end": 240,
+      "x": 80,
+      "y": 250,
+      "font_size": 46,
+      "color": "#FFFFFF",
+      "bullets": [
+        "$850 billion per year in age discrimination costs",
+        "$30,000 per worker to replace experienced talent",
+        "Generic training completion sits under 10 percent",
+        "The cost of doing nothing dwarfs doing it right"
+      ]
+    },
+    {
+      "start": 240,
+      "end": 258,
+      "x": 80,
+      "y": 250,
+      "font_size": 46,
+      "color": "#FFFFFF",
+      "bullets": [
+        "Your experienced workers are waiting",
+        "They want to learn",
+        "It is never too early to stop leaving talent on the table"
+      ]
+    },
+    {
+      "start": 258,
+      "end": 288,
+      "x": 80,
+      "y": 250,
+      "font_size": 46,
+      "color": "#FFFFFF",
+      "fade": 1.0,
+      "no_bullet": true,
+      "bullets": [
+        "Learn More Technologies",
+        "learnmoretechnologies.com/workforce",
+        "",
+        "Schedule a free consult:",
+        "calendly.com/brianmckinney/new-meeting",
+        "",
+        "Brian McKinney | MBE Certified | Former AARP Insider",
+        "347+ Pioneers | 3X Completion | 23 Organizations"
+      ]
+    }
+  ]
+}

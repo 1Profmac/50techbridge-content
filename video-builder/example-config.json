@@ -1,0 +1,82 @@
+{
+  "_comment": "LMT Video Overlay Builder — Example Config",
+  "_instructions": [
+    "1. Export a CLEAN HeyGen video (Brian talking, no text overlays)",
+    "2. Copy this file and rename it for your video",
+    "3. Set input_video to your clean HeyGen MP4 path",
+    "4. Set output_video to where you want the finished video",
+    "5. Edit the slides array — each slide is a set of bullet points",
+    "6. Run: python lmt-video-overlay.py your-config.json",
+    "7. Renders in under 2 minutes with Intel QSV GPU"
+  ],
+  "input_video": "C:/Users/Jordyn/Desktop/your-clean-heygen-video.mp4",
+  "output_video": "C:/Users/Jordyn/Desktop/your-finished-video.mp4",
+  "show_header": true,
+  "show_lower_third": true,
+  "slides": [
+    {
+      "_comment": "TITLE SLIDE — no bullets, larger font",
+      "start": 0,
+      "end": 12,
+      "x": 80,
+      "y": 250,
+      "font_size": 48,
+      "color": "#FFFFFF",
+      "fade": 0.8,
+      "no_bullet": true,
+      "bullets": [
+        "Your Title Goes Here",
+        "Subtitle or Second Line"
+      ]
+    },
+    {
+      "_comment": "CONTENT SLIDE — bullets, white text, standard size",
+      "start": 12,
+      "end": 40,
+      "x": 80,
+      "y": 250,
+      "font_size": 46,
+      "color": "#FFFFFF",
+      "bullets": [
+        "First point goes here",
+        "Second point goes here",
+        "Third point goes here"
+      ]
+    },
+    {
+      "_comment": "DATA SLIDE — with source reference",
+      "start": 40,
+      "end": 70,
+      "x": 80,
+      "y": 250,
+      "font_size": 46,
+      "color": "#FFFFFF",
+      "bullets": [
+        "38 million adults 50+ employed",
+        "52.3 percent of business owners are 55+",
+        "$76 trillion in wealth"
+      ],
+      "source": "Source: MIT / Kellogg / AARP"
+    },
+    {
+      "_comment": "END CARD — contact info, 30 seconds, no bullets",
+      "start": 250,
+      "end": 288,
+      "x": 80,
+      "y": 250,
+      "font_size": 46,
+      "color": "#FFFFFF",
+      "fade": 1.0,
+      "no_bullet": true,
+      "bullets": [
+        "Learn More Technologies",
+        "learnmoretechnologies.com/workforce",
+        "",
+        "Schedule a free consult:",
+        "calendly.com/brianmckinney/new-meeting",
+        "",
+        "Brian McKinney | MBE Certified | Former AARP Insider"
+      ]
+    }
+  ]
+}
