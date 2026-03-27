@@ -112,15 +112,49 @@ python lmt-video-overlay.py my-new-video-config.json
 | `workforce-article-1-config.json` | Working config for Article 1 (tested, verified) |
 | `README.md` | This file |
 
+## What the Script Produces
+
+One command generates everything you need:
+
+```
+your-output-folder/FINISHED/
+├── YOUTUBE/
+│   ├── your-finished-video.mp4     — the video
+│   ├── THUMBNAIL-your-video.png    — 1280x720 YouTube thumbnail
+│   ├── YOUTUBE-TITLE.txt           — copy/paste into YouTube Studio
+│   ├── YOUTUBE-DESCRIPTION.txt     — copy/paste (includes chapters)
+│   └── YOUTUBE-TAGS.txt            — copy/paste tags
+├── article.md                      — original article
+├── article-SEO.md                  — SEO version
+└── article-PLAINTEXT.txt           — HeyGen script version
+```
+
+## YouTube Config Section
+
+Add this to your config.json to customize the YouTube package:
+
+```json
+"youtube": {
+  "title": "Your Video Title (under 70 chars)",
+  "description": "2-3 sentence summary for YouTube search",
+  "thumbnail_time": 51,
+  "hashtags": "#WorkforceDevelopment #Adults50Plus ...",
+  "tags": "workforce development, AI training, adults 50+ ..."
+}
+```
+
+- `thumbnail_time` — which second of the video to screenshot for the thumbnail
+- `chapter_label` on each slide — auto-generates YouTube chapters in the description
+
 ## Workflow for 30 Videos in 30 Days
 
 1. Write the article (SEO version in TRACK-1 or TRACK-2)
 2. Record Brian in HeyGen reading the PLAINTEXT version — clean, no overlays
 3. Export clean MP4
-4. Copy `example-config.json` and edit the slides to match the article
+4. Copy `example-config.json` and edit slides + youtube section
 5. Run `python lmt-video-overlay.py your-config.json`
-6. Review the output video
-7. Upload to YouTube
-8. Move config to the article folder for the record
+6. Review the output video in FINISHED/YOUTUBE/
+7. Open studio.youtube.com — upload video, paste title/description/tags from .txt files
+8. Done
 
 Each video takes: ~15 min HeyGen recording + ~10 min config writing + ~2 min render = under 30 minutes total.

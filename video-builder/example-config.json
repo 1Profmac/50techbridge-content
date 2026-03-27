@@ -1,21 +1,28 @@
 {
-  "_comment": "LMT Video Overlay Builder — Example Config",
   "_instructions": [
     "1. Export a CLEAN HeyGen video (Brian talking, no text overlays)",
     "2. Copy this file and rename it for your video",
-    "3. Set input_video to your clean HeyGen MP4 path",
-    "4. Set output_video to where you want the finished video",
-    "5. Edit the slides array — each slide is a set of bullet points",
+    "3. Set input_video and output_video paths",
+    "4. Edit the slides array (text, timing)",
+    "5. Edit the youtube section (title, description)",
     "6. Run: python lmt-video-overlay.py your-config.json",
-    "7. Renders in under 2 minutes with Intel QSV GPU"
+    "7. Script renders video + generates YouTube upload package",
+    "8. Upload from the YOUTUBE folder to studio.youtube.com"
   ],
   "input_video": "C:/Users/Jordyn/Desktop/your-clean-heygen-video.mp4",
-  "output_video": "C:/Users/Jordyn/Desktop/your-finished-video.mp4",
+  "output_video": "C:/Users/Jordyn/Desktop/your-output-folder/FINISHED/your-finished-video.mp4",
   "show_header": true,
   "show_lower_third": true,
+  "youtube": {
+    "title": "Your Video Title Here (under 70 characters)",
+    "description": "Your video description here. 2-3 sentences summarizing the content for YouTube search.",
+    "thumbnail_time": 51,
+    "hashtags": "#WorkforceDevelopment #Adults50Plus #AgeTech #AITraining #DigitalInclusion #WIOA #FutureOfWork #MBECertified #50PlusTechBridge #LearnMoreTechnologies",
+    "tags": "workforce development, AI training, adults 50+, agetech, digital inclusion, WIOA, 50+ TechBridge, Learn More Technologies, Brian McKinney"
+  },
   "slides": [
     {
-      "_comment": "TITLE SLIDE — no bullets, larger font",
+      "_comment": "TITLE SLIDE — no bullets, larger font, 10-12 seconds",
       "start": 0,
       "end": 12,
       "x": 80,
@@ -24,23 +31,25 @@
       "color": "#FFFFFF",
       "fade": 0.8,
       "no_bullet": true,
+      "chapter_label": "Introduction",
       "bullets": [
         "Your Title Goes Here",
         "Subtitle or Second Line"
       ]
     },
     {
-      "_comment": "CONTENT SLIDE — bullets, white text, standard size",
+      "_comment": "CONTENT SLIDE — bullets, white, 20-30 seconds each",
       "start": 12,
       "end": 40,
       "x": 80,
       "y": 250,
       "font_size": 46,
       "color": "#FFFFFF",
+      "chapter_label": "First topic",
       "bullets": [
-        "First point goes here",
-        "Second point goes here",
-        "Third point goes here"
+        "First point — keep under 50 characters",
+        "Second point",
+        "Third point"
       ]
     },
     {
@@ -51,6 +60,7 @@
       "y": 250,
       "font_size": 46,
       "color": "#FFFFFF",
+      "chapter_label": "The numbers",
       "bullets": [
         "38 million adults 50+ employed",
         "52.3 percent of business owners are 55+",
@@ -59,7 +69,7 @@
       "source": "Source: MIT / Kellogg / AARP"
     },
     {
-      "_comment": "END CARD — contact info, 30 seconds, no bullets",
+      "_comment": "END CARD — contact info, last 30 seconds, no bullets",
       "start": 250,
       "end": 288,
       "x": 80,
@@ -68,6 +78,7 @@
       "color": "#FFFFFF",
       "fade": 1.0,
       "no_bullet": true,
+      "chapter_label": "Contact and next steps",
       "bullets": [
         "Learn More Technologies",
         "learnmoretechnologies.com/workforce",

@@ -207,6 +207,110 @@ def build_video(config):
     return output_video
 
 
+def generate_youtube_package(config, video_path):
+    """Generate YouTube upload package: thumbnail, title, description, tags."""
+    output_dir = os.path.dirname(video_path)
+    youtube_dir = os.path.join(output_dir, "YOUTUBE")
+    os.makedirs(youtube_dir, exist_ok=True)
+
+    video_name = os.path.splitext(os.path.basename(video_path))[0]
+    yt = config.get("youtube", {})
+
+    # Move video to YOUTUBE folder
+    yt_video = os.path.join(youtube_dir, os.path.basename(video_path))
+    if video_path != yt_video:
+        import shutil
+        shutil.move(video_path, yt_video)
+        print(f"Video moved to: {yt_video}")
+
+    # Extract thumbnail from the thumbnail_time or default to 51s
+    thumb_time = yt.get("thumbnail_time", 51)
+    thumb_path = os.path.join(youtube_dir, f"THUMBNAIL-{video_name}.png")
+    ffprobe = FFMPEG.replace("ffmpeg.exe", "ffprobe.exe")
+    thumb_cmd = [
+        FFMPEG, "-y",
+        "-ss", str(thumb_time),
+        "-i", yt_video,
+        "-vframes", "1",
+        "-s", "1280x720",
+        "-update", "1",
+        thumb_path,
+    ]
+    subprocess.run(thumb_cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
+    print(f"Thumbnail: {thumb_path}")
+
+    # Generate title
+    title = yt.get("title", config["slides"][0]["bullets"][0] if config["slides"] else "Untitled")
+    title_path = os.path.join(youtube_dir, "YOUTUBE-TITLE.txt")
+    with open(title_path, "w", encoding="utf-8") as f:
+        f.write(title)
+    print(f"Title: {title}")
+
+    # Generate chapters from slides
+    chapters = []
+    for slide in config["slides"]:
+        start = slide["start"]
+        mins = int(start // 60)
+        secs = int(start % 60)
+        timestamp = f"{mins}:{secs:02d}"
+        label = slide.get("chapter_label", slide["bullets"][0] if slide["bullets"] and slide["bullets"][0] else "")
+        if label:
+            chapters.append(f"{timestamp} {label}")
+
+    # Generate description
+    desc_lines = []
+    if "description" in yt:
+        desc_lines.append(yt["description"])
+    else:
+        desc_lines.append(title)
+    desc_lines.append("")
+    desc_lines.append("Learn more: https://learnmoretechnologies.com/workforce/")
+    desc_lines.append("Schedule a free consult: https://calendly.com/brianmckinney/new-meeting")
+    desc_lines.append("")
+    desc_lines.append("Brian McKinney | Founder, Learn More Technologies | MBE Certified | Former AARP Insider")
+    desc_lines.append("")
+    if chapters:
+        desc_lines.append("CHAPTERS:")
+        desc_lines.extend(chapters)
+        desc_lines.append("")
+    # Hashtags
+    tags = yt.get("hashtags", "#WorkforceDevelopment #Adults50Plus #AgeTech #AITraining #DigitalInclusion #WIOA #FutureOfWork #MBECertified #50PlusTechBridge #LearnMoreTechnologies")
+    desc_lines.append(tags)
+
+    desc_path = os.path.join(youtube_dir, "YOUTUBE-DESCRIPTION.txt")
+    with open(desc_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(desc_lines))
+    print(f"Description: {desc_path}")
+
+    # Generate tags
+    tag_list = yt.get("tags", "workforce development, AI training, adults 50+, agetech, digital inclusion, WIOA, 50+ TechBridge, Learn More Technologies, age discrimination, experienced workers, AI skills training, workforce training ROI, MBE certified, Brian McKinney, digital skills, older workers, peer instructors, project based learning")
+    tags_path = os.path.join(youtube_dir, "YOUTUBE-TAGS.txt")
+    with open(tags_path, "w", encoding="utf-8") as f:
+        f.write(tag_list)
+    print(f"Tags: {tags_path}")
+
+    # Copy article files into FINISHED folder if they exist
+    article_dir = os.path.dirname(output_dir) if os.path.basename(output_dir) == "FINISHED" else output_dir
+    for ext in [".md", "-SEO.md", "-PLAINTEXT.txt"]:
+        for f_name in os.listdir(article_dir):
+            if f_name.endswith(ext) and not f_name.startswith("YOUTUBE") and not f_name.startswith("THUMBNAIL"):
+                src = os.path.join(article_dir, f_name)
+                dst = os.path.join(output_dir, f_name)
+                if src != dst and not os.path.exists(dst):
+                    import shutil
+                    shutil.copy2(src, dst)
+
+    print(f"\nYouTube package ready at: {youtube_dir}")
+    print("Upload steps:")
+    print("  1. Open studio.youtube.com")
+    print("  2. Create -> Upload video")
+    print("  3. Drag the .mp4 from YOUTUBE folder")
+    print("  4. Copy/paste title, description, and tags from the .txt files")
+    print("  5. Upload thumbnail PNG")
+    print("  6. Set visibility to Public")
+    return youtube_dir
+
+
 def main():
     if len(sys.argv) < 2:
         print("Usage: python lmt-video-overlay.py <config.json>")
@@ -225,7 +329,9 @@ def main():
         print(f"Input video not found: {config['input_video']}")
         sys.exit(1)
 
-    build_video(config)
+    video_path = build_video(config)
+    if video_path:
+        generate_youtube_package(config, video_path)
 
 
 if __name__ == "__main__":
