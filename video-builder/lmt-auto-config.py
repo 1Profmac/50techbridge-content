@@ -78,18 +78,47 @@ def parse_article(article_path):
     filtered = []
     for s in sections:
         text_lower = (s["title"] + s["raw_text"]).lower()
-        if any(skip in text_lower for skip in ["type:", "audience:", "cta:", "author:", "#workforce", "#adults"]):
+        if any(skip in text_lower for skip in ["type:", "audience:", "cta:", "author:", "#workforce", "#adults", "seo", "meta description", "primary keyword", "target audience"]):
             continue
         if s["bullets"] or len(s["raw_text"].strip()) > 30:
             filtered.append(s)
 
-    return filtered
+    # Consolidate: merge small sections into their parent header sections
+    # Target: 8-12 sections max
+    consolidated = []
+    current = None
+
+    for s in filtered:
+        if s["title"]:
+            # New header section — save previous and start new
+            if current:
+                consolidated.append(current)
+            current = {"title": s["title"], "bullets": list(s["bullets"]), "raw_text": s["raw_text"]}
+        else:
+            # No title — merge into current section
+            if current:
+                current["bullets"].extend(s["bullets"])
+                current["raw_text"] += " " + s["raw_text"]
+            else:
+                current = {"title": "", "bullets": list(s["bullets"]), "raw_text": s["raw_text"]}
+
+    if current:
+        consolidated.append(current)
+
+    # If still too many, keep only the ones with headers + first/last
+    if len(consolidated) > 12:
+        consolidated = consolidated[:11] + [consolidated[-1]]
+
+    return consolidated
 
 
 def sections_to_slides(sections, total_duration):
     """Convert article sections into timed slides."""
     # Reserve 12s for title, 30s for end card
     content_duration = total_duration - 42
+    # Minimum 20 seconds per slide for readability
+    max_slides = int(content_duration / 20)
+    sections = sections[:max_slides]
     time_per_section = content_duration / max(len(sections), 1)
 
     slides = []
