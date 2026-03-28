@@ -427,6 +427,133 @@ def generate_linkedin_post(config, video_path):
     return post
 
 
+def auto_resize(source_video, output_dir):
+    """Generate all 4 platform formats from one source video.
+
+    From landscape (16:9): creates vertical (9:16) and square (1:1)
+    From vertical (9:16): creates landscape (16:9) and square (1:1)
+    Always creates thumbnail (1280x720)
+    """
+    import shutil
+
+    name = os.path.splitext(os.path.basename(source_video))[0]
+    resize_dir = os.path.join(output_dir, "ALL-FORMATS")
+    os.makedirs(resize_dir, exist_ok=True)
+
+    # Detect source format
+    ffprobe = FFMPEG.replace("ffmpeg.exe", "ffprobe.exe")
+    cmd = [ffprobe, "-v", "quiet", "-print_format", "json", "-show_streams", source_video]
+    result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
+    width, height = 1920, 1080
+    if result.returncode == 0:
+        info = json.loads(result.stdout)
+        for s in info.get("streams", []):
+            if s.get("codec_type") == "video":
+                width = int(s.get("width", 1920))
+                height = int(s.get("height", 1080))
+                break
+
+    is_landscape = width > height
+    print(f"\nAuto-resize: {width}x{height} ({'landscape' if is_landscape else 'vertical'})")
+
+    formats = {}
+
+    if is_landscape:
+        # Source is landscape — copy as YouTube/LinkedIn
+        formats["YOUTUBE-LANDSCAPE-1920x1080"] = None  # already exists
+        shutil.copy2(source_video, os.path.join(resize_dir, f"{name}-LANDSCAPE-1920x1080.mp4"))
+        print(f"  Copied: LANDSCAPE 1920x1080 (YouTube, LinkedIn, Facebook)")
+
+        # Create vertical (9:16) — crop center
+        vert_path = os.path.join(resize_dir, f"{name}-VERTICAL-1080x1920.mp4")
+        cmd = [
+            FFMPEG, "-y", "-i", source_video,
+            "-vf", f"crop=ih*9/16:ih:iw/2-ih*9/32:0,scale=1080:1920",
+            "-c:v", "h264_qsv", "-preset", "fast", "-b:v", "5M",
+            "-c:a", "aac", "-b:a", "128k", vert_path
+        ]
+        result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
+        if result.returncode != 0:
+            cmd[cmd.index("h264_qsv")] = "libx264"
+            cmd[cmd.index("fast")] = "medium"
+            subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
+        print(f"  Created: VERTICAL 1080x1920 (Shorts, Reels, TikTok)")
+
+        # Create square (1:1) — crop center
+        sq_path = os.path.join(resize_dir, f"{name}-SQUARE-1080x1080.mp4")
+        cmd = [
+            FFMPEG, "-y", "-i", source_video,
+            "-vf", "crop=ih:ih:iw/2-ih/2:0,scale=1080:1080",
+            "-c:v", "h264_qsv", "-preset", "fast", "-b:v", "5M",
+            "-c:a", "aac", "-b:a", "128k", sq_path
+        ]
+        result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
+        if result.returncode != 0:
+            cmd[cmd.index("h264_qsv")] = "libx264"
+            cmd[cmd.index("fast")] = "medium"
+            subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
+        print(f"  Created: SQUARE 1080x1080 (Instagram Feed, Facebook Feed)")
+
+    else:
+        # Source is vertical — copy as Shorts/Reels
+        shutil.copy2(source_video, os.path.join(resize_dir, f"{name}-VERTICAL-1080x1920.mp4"))
+        print(f"  Copied: VERTICAL 1080x1920 (Shorts, Reels, TikTok)")
+
+        # Create landscape (16:9) — pad with navy background
+        land_path = os.path.join(resize_dir, f"{name}-LANDSCAPE-1920x1080.mp4")
+        cmd = [
+            FFMPEG, "-y", "-i", source_video,
+            "-vf", f"scale=-1:1080,pad=1920:1080:(ow-iw)/2:0:color=0x0E1C2F",
+            "-c:v", "h264_qsv", "-preset", "fast", "-b:v", "5M",
+            "-c:a", "aac", "-b:a", "128k", land_path
+        ]
+        result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
+        if result.returncode != 0:
+            cmd[cmd.index("h264_qsv")] = "libx264"
+            cmd[cmd.index("fast")] = "medium"
+            subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
+        print(f"  Created: LANDSCAPE 1920x1080 (YouTube, LinkedIn)")
+
+        # Create square (1:1) — crop center of vertical
+        sq_path = os.path.join(resize_dir, f"{name}-SQUARE-1080x1080.mp4")
+        cmd = [
+            FFMPEG, "-y", "-i", source_video,
+            "-vf", "crop=iw:iw:0:ih/2-iw/2,scale=1080:1080",
+            "-c:v", "h264_qsv", "-preset", "fast", "-b:v", "5M",
+            "-c:a", "aac", "-b:a", "128k", sq_path
+        ]
+        result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
+        if result.returncode != 0:
+            cmd[cmd.index("h264_qsv")] = "libx264"
+            cmd[cmd.index("fast")] = "medium"
+            subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
+        print(f"  Created: SQUARE 1080x1080 (Instagram Feed, Facebook Feed)")
+
+    # Thumbnail
+    thumb_path = os.path.join(resize_dir, f"{name}-THUMBNAIL-1280x720.png")
+    cmd = [
+        FFMPEG, "-y", "-ss", "5", "-i", source_video,
+        "-vframes", "1", "-s", "1280x720", "-update", "1", thumb_path
+    ]
+    subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
+    print(f"  Created: THUMBNAIL 1280x720")
+
+    print(f"\nAll formats saved to: {resize_dir}")
+    print("")
+    print("PLATFORM GUIDE:")
+    print(f"  YouTube Long:     {name}-LANDSCAPE-1920x1080.mp4")
+    print(f"  YouTube Short:    {name}-VERTICAL-1080x1920.mp4")
+    print(f"  Instagram Reel:   {name}-VERTICAL-1080x1920.mp4 (same file)")
+    print(f"  TikTok:           {name}-VERTICAL-1080x1920.mp4 (same file)")
+    print(f"  Instagram Feed:   {name}-SQUARE-1080x1080.mp4")
+    print(f"  Facebook Feed:    {name}-SQUARE-1080x1080.mp4 (same file)")
+    print(f"  LinkedIn Native:  {name}-LANDSCAPE-1920x1080.mp4")
+    print(f"  Website Hero:     {name}-LANDSCAPE-1920x1080.mp4")
+    print(f"  Thumbnail:        {name}-THUMBNAIL-1280x720.png")
+
+    return resize_dir
+
+
 def main():
     if len(sys.argv) < 2:
         print("Usage: python lmt-video-overlay.py <config.json>")
@@ -447,7 +574,11 @@ def main():
 
     video_path = build_video(config)
     if video_path:
-        generate_youtube_package(config, video_path)
+        yt_dir = generate_youtube_package(config, video_path)
+        # Auto-resize to all platform formats
+        yt_video = os.path.join(yt_dir, os.path.basename(video_path))
+        if os.path.exists(yt_video):
+            auto_resize(yt_video, yt_dir)
 
 
 if __name__ == "__main__":
