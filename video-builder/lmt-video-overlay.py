@@ -243,8 +243,12 @@ def build_video(config):
     print(f"Input:  {input_video}")
     print(f"Output: {output_video}")
 
-    # Get actual duration
+    # Get actual duration — extend if slides go beyond video length (e.g. end card)
     duration = get_video_duration(input_video)
+    max_slide_end = max((s.get("end", 0) for s in config.get("slides", [{}])), default=0)
+    if max_slide_end > duration:
+        duration = max_slide_end
+        print(f"Duration extended to {duration:.1f}s for end card")
     config["duration"] = duration
     print(f"Duration: {duration:.1f}s ({duration/60:.1f} min)")
 
@@ -270,10 +274,9 @@ def build_video(config):
             out_w, out_h = 1920, 1080
 
         # Brian PIP size and position (lower-right corner)
-        # Brian's source is 9:16 vertical — always maintain that ratio
         pip = config.get("brian_pip", {})
         pip_w = pip.get("width", 250)
-        pip_h = int(pip_w * 16 / 9)  # 9:16 portrait ratio
+        pip_h = pip.get("height", int(pip_w * 9 / 16))  # default 16:9 landscape ratio
         pip_margin = pip.get("margin", 20)
         pip_x = out_w - pip_w - pip_margin
         pip_y = out_h - pip_h - pip_margin - 55  # above lower third bar
@@ -291,10 +294,18 @@ def build_video(config):
             print(f"WARNING: bg_image not found: {bg_image}, falling back to color")
             bg_image = None
 
+        # Chrome layer (header + footer transparent PNG)
+        chrome_image = config.get("chrome_image",
+            os.path.join(os.path.dirname(os.path.abspath(__file__)), "layers", "chrome", "header-footer-1920x1080.png"))
+        has_chrome = os.path.exists(chrome_image)
+        if has_chrome:
+            print(f"Chrome layer: {os.path.basename(chrome_image)}")
+
         # Build input args:
         # [0] = static background image (looped)
         # [1] = brian talking head video (audio + video for PIP)
-        # [2..N+1] = galaxy clips
+        # [2] = chrome layer (if exists)
+        # [3..N] = galaxy clips
         input_args = []
         if bg_image:
             input_args.extend(["-loop", "1", "-i", bg_image])
@@ -302,32 +313,52 @@ def build_video(config):
             input_args.extend(["-f", "lavfi", "-i",
                 f"color=c=0x{BRAND['navy']}:s={out_w}x{out_h}:d={duration}"])
         input_args.extend(["-i", input_video])
+        chrome_idx = None
+        if has_chrome:
+            input_args.extend(["-loop", "1", "-i", chrome_image])
+            chrome_idx = 2
+            clip_offset = 3
+        else:
+            clip_offset = 2
         for clip in clips:
             input_args.extend(["-i", clip["file"]])
 
         # Build filter_complex chain
         fc_parts = []
 
-        # Brian PIP: scale talking head video to PIP size with gold border
+        # Brian: chromakey white background, overlay at FULL SIZE (no scaling)
+        # Brian's video is already 1920x1080 with him positioned correctly
+        chromakey_filter = ""
+        if pip_chromakey:
+            # Green screen chromakey — clean keying, no fringe
+            chromakey_filter = (
+                "chromakey=color=0x00FF00:similarity=0.30:blend=0.08,"
+            )
+
+        pip_show_start = pip.get("show_start", 8)
+        pip_show_end = pip.get("show_end", duration - 8)
+
         fc_parts.append(
-            f"[1:v]scale={pip_w}:{pip_h},"
-            f"pad={pip_w + pip_border*2}:{pip_h + pip_border*2}:{pip_border}:{pip_border}:"
-            f"color=0x{BRAND['gold']}[brian_pip]"
+            f"[1:v]{chromakey_filter}format=rgba[brian_layer]"
         )
 
-        # Scale each Galaxy clip to full screen and delay with tpad
+        # Scale each Galaxy clip to full screen, trim to exact duration, delay with tpad
         for i, clip in enumerate(clips):
-            input_idx = i + 2  # offset by bg + brian
+            input_idx = i + clip_offset
             start = clip["start"]
+            clip_dur = clip["end"] - clip["start"]
             fc_parts.append(
                 f"[{input_idx}:v]scale={out_w}:{out_h}:force_original_aspect_ratio=increase,"
                 f"crop={out_w}:{out_h},"
+                f"trim=start=0:end={clip_dur},setpts=PTS-STARTPTS,"
                 f"tpad=start_duration={start}:start_mode=add:color=black@0"
                 f"[clip{i}]"
             )
 
-        # Start with background, overlay Galaxy clips (tpad handles timing)
+        # Layer stack: background -> clips -> brian (full size) -> chrome -> text
         prev = "0:v"
+
+        # Overlay Galaxy clips on background (tpad handles timing)
         for i, clip in enumerate(clips):
             out_label = f"v{i}"
             fc_parts.append(
@@ -336,17 +367,27 @@ def build_video(config):
             )
             prev = out_label
 
-        # Brian PIP in lower-right — always visible
-        pip_out = "vpip"
-        pip_x_adj = pip_x - pip_border
-        pip_y_adj = pip_y - pip_border
+        # Brian full-size overlay — visible during teaching, hidden during intro/end card
         fc_parts.append(
-            f"[{prev}][brian_pip]overlay={pip_x_adj}:{pip_y_adj}:"
-            f"eof_action=pass[{pip_out}]"
+            f"[{prev}][brian_layer]overlay=0:0:"
+            f"eof_action=pass:format=auto:"
+            f"enable='between(t,{pip_show_start},{pip_show_end})'[vpip]"
         )
+        prev = "vpip"
 
-        # Apply drawtext filters on top (text slides only, no header/footer)
-        fc_parts.append(f"[{pip_out}]{vf}[vout]")
+        # Chrome layer on top (header + footer)
+        if has_chrome:
+            fc_parts.append(
+                f"[{prev}][{chrome_idx}:v]overlay=0:0:eof_action=pass:format=auto[vchrome]"
+            )
+            prev = "vchrome"
+
+        # Apply drawtext filters on top of everything (text slides)
+        if vf:
+            fc_parts.append(f"[{prev}]{vf}[vout]")
+            map_label = "[vout]"
+        else:
+            map_label = f"[{prev}]"
 
         filter_complex = ";".join(fc_parts)
 
@@ -354,7 +395,7 @@ def build_video(config):
             FFMPEG, "-y",
             *input_args,
             "-filter_complex", filter_complex,
-            "-map", "[vout]",
+            "-map", map_label,
             "-map", "1:a",
             "-c:v", "h264_qsv",
             "-preset", "fast",
