@@ -1,7 +1,7 @@
 {
   "_comment": "LinkedIn Short — AI Is Already Here — article companion video",
   "input_video": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/brian/linkedin-ai-article-brian.mp4",
-  "output_video": "C:/Users/Jordyn/Desktop/LINKEDIN-SHORT/FINISHED/linkedin-ai-short.mp4",
+  "output_video": "C:/Users/Jordyn/Desktop/LMT-CONTENT/02-LINKEDIN/ai-article-short/FINISHED/linkedin-ai-short.mp4",
   "format": "landscape",
   "show_header": false,
   "show_lower_third": false,
@@ -14,7 +14,7 @@
     "border": 0,
     "chromakey": true,
     "show_start": 0,
-    "show_end": 50
+    "show_end": 63
   },
   "youtube": {
     "title": "AI Is Already In Your Life. Here Is How To Use It. | 50+TechBridge",
@@ -29,25 +29,34 @@
   },
   "clips": [
     {
-      "_comment": "Reuse lesson 1 clips as B-roll",
-      "file": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/clips/lesson-1/clip-02-couple-tablet.mp4",
-      "start": 8,
-      "end": 20
+      "_comment": "50+ woman with tablet",
+      "file": "C:/Users/Jordyn/Desktop/LMT-CONTENT/02-LINKEDIN/ai-article-short/clips/clip-01-woman-tablet.mp4",
+      "start": 6,
+      "end": 18
     },
     {
-      "file": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/clips/lesson-1/clip-03-health-app.mp4",
-      "start": 20,
+      "_comment": "Workforce training in modern office",
+      "file": "C:/Users/Jordyn/Desktop/LMT-CONTENT/02-LINKEDIN/ai-article-short/clips/clip-02-workforce-training.mp4",
+      "start": 18,
       "end": 32
     },
     {
-      "file": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/clips/lesson-1/clip-05-peer-teaching.mp4",
+      "_comment": "Grant manager reviewing program data",
+      "file": "C:/Users/Jordyn/Desktop/LMT-CONTENT/02-LINKEDIN/ai-article-short/clips/clip-03-grant-manager-data.mp4",
       "start": 32,
       "end": 44
     },
     {
-      "file": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/clips/lesson-1/clip-04-woman-laptop-learning.mp4",
+      "_comment": "Workforce development team collaborating",
+      "file": "C:/Users/Jordyn/Desktop/LMT-CONTENT/02-LINKEDIN/ai-article-short/clips/clip-04-workforce-team.mp4",
       "start": 44,
-      "end": 50
+      "end": 55
+    },
+    {
+      "_comment": "50+ executive leading virtual meeting",
+      "file": "C:/Users/Jordyn/Desktop/LMT-CONTENT/02-LINKEDIN/ai-article-short/clips/clip-05-exec-virtual-meeting.mp4",
+      "start": 55,
+      "end": 63
     }
   ],
   "slides": [
@@ -67,8 +76,8 @@
       ]
     },
     {
-      "start": 50,
-      "end": 58,
+      "start": 63,
+      "end": 71,
       "y": 250,
       "font_size": 84,
       "color": "#FFFFFF",

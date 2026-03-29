@@ -59,14 +59,41 @@ branded, platform-ready videos with text overlays, voiceover, and upload package
 
 | File | What It Does |
 |---|---|
-| `lmt-video-overlay.py` | Workforce article videos + Shorts + Lesson videos |
-| `lmt-movie-studio.py` | Training lesson movies |
-| `lesson-template.png` | Lesson video base template — navy bg, Brian lower right, header, lower third, no text |
-| `example-config.json` | Template config (copy for each new video) |
-| `lesson1-config.json` | Lesson 1 config with Galaxy B-roll clips |
-| `workforce-article-1-config.json` | Tested config for Article 1 |
-| `workforce-short-1-config.json` | Tested config for Short 1 |
-| `galaxy-prompts/GALAXY-PROMPTS-LESSON-1.md` | Galaxy AI scene prompts for Lesson 1 |
+| `lmt-video-overlay.py` | All video rendering — lessons, LinkedIn, Shorts |
+| `lmt-movie-studio.py` | Training lesson movies (vertical format) |
+| `lesson1-config.json` | Lesson 1 config — tested and approved |
+| `linkedin-ai-article-config.json` | LinkedIn AI article video — tested and approved |
+| `example-config.json` | Template config (copy for new videos) |
+| `workforce-article-1-config.json` | Workforce Article 1 config |
+| `workforce-short-1-config.json` | Workforce Short 1 config |
+| `galaxy-prompts/GALAXY-PROMPTS-ALL-LESSONS.md` | Canva/Galaxy scene prompts for all 3 lessons |
+
+### Layer Assets (Photoshop-style)
+
+| Layer | File | Purpose |
+|---|---|---|
+| Base | `layers/base/navy-1920x1080.png` | Navy background — never changes |
+| Chrome | `layers/chrome/header-footer-1920x1080.png` | Solid navy bars + outlined gold text — never changes |
+| Brian | `layers/brian/lesson-X-brian-nobg.mp4` | HeyGen talking head with GREEN SCREEN — per video |
+| Clips | `layers/clips/lesson-X/` | B-roll clips (Canva Magic Media or Pexels) — per video |
+
+### B-Roll Sources (ranked by preference)
+
+| Source | Cost | Quality | Best For |
+|---|---|---|---|
+| Canva Magic Media | Free (Pro plan) | Good — modern, AI-generated | Custom scenes, 50+ adults in modern settings |
+| Pexels API | Free | Good — real footage | Workforce/office scenes when Canva quality isn't enough |
+| Galaxy AI (Sora 2 Pro) | $20/batch | Excellent | Only when budget allows, best quality |
+
+### Key Technical Decisions
+
+- **Brian: GREEN SCREEN export from HeyGen** (white bg causes fringe/opacity issues)
+- **Chromakey:** `chromakey=color=0x00FF00:similarity=0.30:blend=0.08`
+- **Brian overlay:** Full 1920x1080, no scaling — positioned correctly in HeyGen export
+- **Brian hidden:** During intro card and end card (configurable via show_start/show_end)
+- **Clips trimmed:** To exact duration, no frozen frames
+- **Chrome:** Solid opaque navy bars (not semi-transparent), black-outlined gold text
+- **Audio:** Brian's HeyGen audio only — clip audio is ignored
 
 ---
 
