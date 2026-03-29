@@ -1,0 +1,190 @@
+{
+  "_comment": "Lesson 1 — Full lesson video — Brian talking head dark blue bg + Galaxy B-roll + centered text",
+  "input_video": "C:/Users/Jordyn/Desktop/Desktop → LMT-Brain/_NEW-SESSION-TEMPLATE/heygen-lessons/Lesson-1-HeyGen-Brian.mp4",
+  "output_video": "C:/Users/Jordyn/Desktop/LESSON-1-VIDEO/FINISHED/lesson1-full.mp4",
+  "format": "landscape",
+  "show_header": false,
+  "show_lower_third": false,
+  "bg_image": "C:/Users/Jordyn/50techbridge-content/video-builder/lesson-bg.png",
+  "brian_pip": {
+    "width": 250,
+    "margin": 20,
+    "border": 3
+  },
+  "youtube": {
+    "title": "Introduction to Digital Skills & AgeTech | 50+TechBridge Lesson 1",
+    "description": "Lesson 1 of 50+TechBridge — Introduction to Digital Skills & AgeTech.\n\nYou are not behind. You are not too old. And there is nothing wrong with you.\n\nAdults 50+ control $76 trillion in wealth and 70% of all disposable income — yet 90% say they feel invisible when it comes to technology. That is not a skills gap. That is a teaching gap.\n\n347 Pioneers have completed this program. 3X the industry completion rate.\n\nYour life experience is your single greatest advantage with technology.\n\nStart free: https://learnmoretechnologies.com/join-now/\n\nBrian McKinney | Founder, Learn More Technologies",
+    "thumbnail_time": 8,
+    "hashtags": "#50PlusTechBridge #AgeTech #DigitalSkills #Over50 #DigitalInclusion #TechForSeniors #LearnMoreTechnologies #BrianMcKinney #Lesson1",
+    "tags": "agetech, digital skills for seniors, 50+ techbridge, adults over 50, technology education, Brian McKinney, Learn More Technologies, digital inclusion, ageism, $76 trillion, senior tech training, digital literacy, lesson 1, introduction"
+  },
+  "linkedin": {
+    "youtube_url": "https://youtu.be/YOUR-VIDEO-ID",
+    "post": "$76 trillion in wealth.\n70% of all disposable income.\n5% of tech industry attention.\n\nAdults over 50 are the most powerful economic force in this country — and the most ignored by the technology industry.\n\n90% say they feel invisible when it comes to tech. Not because they can't learn. Because no one built instruction that respected what they already know.\n\n50+TechBridge Lesson 1 is live. 347 Pioneers. 3X completion rate.\n\nYour life experience is your single greatest advantage with technology.\n\nlearnmoretechnologies.com/join-now/\n\n#AgeTech #DigitalInclusion #Over50 #50PlusTechBridge #LearnMoreTechnologies"
+  },
+  "clips": [
+    {
+      "file": "C:/Users/Jordyn/Desktop/Desktop → LMT-Brain/20260328 LessonsVideos/Old styleTalking HeadVideo/260801 Galexy Video/260801 senior inteacting with AI.mp4",
+      "start": 14,
+      "end": 22,
+      "fade": 0.5
+    },
+    {
+      "file": "C:/Users/Jordyn/Desktop/Desktop → LMT-Brain/20260328 LessonsVideos/Old styleTalking HeadVideo/260801 Galexy Video/AfroAmerFemale Smart watch.mp4",
+      "start": 35,
+      "end": 43,
+      "fade": 0.5
+    },
+    {
+      "file": "C:/Users/Jordyn/Desktop/Desktop → LMT-Brain/20260328 LessonsVideos/Old styleTalking HeadVideo/260801 Galexy Video/male50+Mobile device.mp4",
+      "start": 55,
+      "end": 63,
+      "fade": 0.5
+    },
+    {
+      "file": "C:/Users/Jordyn/Desktop/Desktop → LMT-Brain/20260328 LessonsVideos/Old styleTalking HeadVideo/260801 Galexy Video/BloodPressureMonitor.mp4",
+      "start": 80,
+      "end": 88,
+      "fade": 0.5
+    },
+    {
+      "file": "C:/Users/Jordyn/Desktop/Desktop → LMT-Brain/20260328 LessonsVideos/Old styleTalking HeadVideo/260801 Galexy Video/260801Galaxy_Video_Generator R1.mp4",
+      "start": 100,
+      "end": 108,
+      "fade": 0.5
+    }
+  ],
+  "slides": [
+    {
+      "start": 0,
+      "end": 5,
+      "y": 250,
+      "font_size": 84,
+      "color": "#FFFFFF",
+      "no_bullet": true,
+      "fade": 0,
+      "center": true,
+      "chapter_label": "Welcome",
+      "bullets": [
+        "Introduction to",
+        "Digital Skills & AgeTech",
+        "",
+        "Module 1"
+      ]
+    },
+    {
+      "start": 5,
+      "end": 14,
+      "y": 250,
+      "font_size": 84,
+      "color": "#FFFFFF",
+      "no_bullet": true,
+      "fade": 0,
+      "center": true,
+      "chapter_label": "You are not behind",
+      "bullets": [
+        "You are not behind.",
+        "You are not too old.",
+        "There is nothing",
+        "wrong with you."
+      ]
+    },
+    {
+      "start": 22,
+      "end": 35,
+      "y": 250,
+      "font_size": 84,
+      "color": "#FFFFFF",
+      "fade": 0,
+      "center": true,
+      "chapter_label": "What you will learn",
+      "bullets": [
+        "What AgeTech means",
+        "Which device does what",
+        "Why your experience",
+        "is your advantage"
+      ]
+    },
+    {
+      "start": 43,
+      "end": 55,
+      "y": 250,
+      "font_size": 84,
+      "color": "#FFFFFF",
+      "no_bullet": true,
+      "fade": 0,
+      "center": true,
+      "chapter_label": "What is AgeTech",
+      "bullets": [
+        "AgeTech is technology",
+        "designed to help",
+        "adults 50+ live more",
+        "independently."
+      ]
+    },
+    {
+      "start": 63,
+      "end": 80,
+      "y": 250,
+      "font_size": 84,
+      "color": "#FFFFFF",
+      "fade": 0,
+      "center": true,
+      "chapter_label": "The numbers",
+      "bullets": [
+        "$76 trillion in wealth",
+        "70%% disposable income",
+        "90%% feel invisible"
+      ],
+      "source": "Source: AARP / Longevity Economy"
+    },
+    {
+      "start": 88,
+      "end": 100,
+      "y": 250,
+      "font_size": 84,
+      "color": "#FFFFFF",
+      "fade": 0,
+      "center": true,
+      "chapter_label": "347 Pioneers",
+      "bullets": [
+        "347 Pioneers completed",
+        "3X completion rate",
+        "",
+        "Built from experience."
+      ]
+    },
+    {
+      "start": 108,
+      "end": 120,
+      "y": 250,
+      "font_size": 84,
+      "color": "#FFFFFF",
+      "no_bullet": true,
+      "fade": 0,
+      "center": true,
+      "chapter_label": "Your advantage",
+      "bullets": [
+        "Your life experience is",
+        "your single greatest",
+        "advantage with technology."
+      ]
+    },
+    {
+      "start": 120,
+      "end": 126,
+      "y": 300,
+      "font_size": 84,
+      "color": "#C8942E",
+      "fade": 0,
+      "no_bullet": true,
+      "center": true,
+      "chapter_label": "Start Lesson 1",
+      "bullets": [
+        "Learn More Technologies",
+        "learnmoretechnologies.com",
+        "/join-now"
+      ]
+    }
+  ]
+}

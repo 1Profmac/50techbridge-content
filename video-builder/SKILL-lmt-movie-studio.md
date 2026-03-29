@@ -26,8 +26,9 @@ branded, platform-ready videos with text overlays, voiceover, and upload package
 | Format | Tool | Use Case | Output |
 |---|---|---|---|
 | Landscape | `lmt-video-overlay.py` | Workforce article videos | 1920x1080 YouTube/LinkedIn |
+| Lesson | `lmt-video-overlay.py` | Course lesson videos with Galaxy B-roll | 1920x1080 landscape, Brian PIP + clips |
 | Short | `lmt-video-overlay.py` | YouTube Shorts, Reels, TikTok | 1080x1920 vertical, under 60s |
-| Training | `lmt-movie-studio.py` | LearnDash course lessons | 1080x1920 vertical, 2-10 min |
+| Training | `lmt-movie-studio.py` | LearnDash course lessons (vertical) | 1080x1920 vertical, 2-10 min |
 
 ---
 
@@ -58,9 +59,11 @@ branded, platform-ready videos with text overlays, voiceover, and upload package
 
 | File | What It Does |
 |---|---|
-| `lmt-video-overlay.py` | Workforce article videos + Shorts |
+| `lmt-video-overlay.py` | Workforce article videos + Shorts + Lesson videos |
 | `lmt-movie-studio.py` | Training lesson movies |
+| `lesson-template.png` | Lesson video base template — navy bg, Brian lower right, header, lower third, no text |
 | `example-config.json` | Template config (copy for each new video) |
+| `lesson1-config.json` | Lesson 1 config with Galaxy B-roll clips |
 | `workforce-article-1-config.json` | Tested config for Article 1 |
 | `workforce-short-1-config.json` | Tested config for Short 1 |
 | `galaxy-prompts/GALAXY-PROMPTS-LESSON-1.md` | Galaxy AI scene prompts for Lesson 1 |
@@ -145,7 +148,107 @@ FINISHED/YOUTUBE/
 
 ---
 
-## WORKFLOW 3: TRAINING LESSON MOVIE
+## WORKFLOW 3: LESSON VIDEO (with Galaxy B-roll)
+
+### Layer System (Photoshop-style)
+Assets are separated into layers — swap any file to change the look without code changes.
+
+```
+layers/
+├── base/                              LAYER 0 — Background
+│   └── navy-1920x1080.png             Solid navy #0E1C2F
+│
+├── chrome/                            LAYER 1 — Header + Footer
+│   └── header-footer-1920x1080.png    Transparent PNG, gold titles + subscribe bar
+│
+├── brian/                             LAYER 2 — Talking Head Video
+│   └── lesson-1-brian-nobg.mp4        Brian from HeyGen, NO background (white/transparent)
+│   └── lesson-2-brian-nobg.mp4
+│   └── lesson-3-brian-nobg.mp4
+│
+├── clips/                             LAYER 3+ — B-Roll Video Clips
+│   ├── lesson-1/                      Galaxy AI clips, ~1.5 min each
+│   │   ├── clip-01-videocall-grandkids.mp4
+│   │   ├── clip-02-couple-tablet.mp4
+│   │   └── ...
+│   ├── lesson-2/
+│   └── lesson-3/
+```
+
+### Layout (1920x1080 landscape)
+```
+┌──────────────────────────────────────────┐
+│  ──── LEARN MORE TECHNOLOGIES ────       │  CHROME layer (top)
+│           50+TechBridge                  │
+│──────────────────────────────────────────│
+│                                          │
+│   [Text overlays]              [Brian]   │  BRIAN layer (always visible,
+│   Center-justified, 84pt      [talking]  │  lower right, no background)
+│   Full opacity, no fade       [ head ]   │
+│                                          │
+│   [Galaxy clips play FULL SCREEN]        │  CLIPS layer (timed)
+│   [on top of BASE, behind Brian]         │
+│                                          │
+│  Subscribe   |   Like   |   Share        │  CHROME layer (bottom)
+└──────────────────────────────────────────┘
+
+BASE layer: navy-1920x1080.png (always, underneath everything)
+```
+
+### How It Works
+1. **Base** (`layers/base/`) — Navy background, always visible
+2. **Clips** (`layers/clips/lesson-X/`) — Galaxy B-roll, full screen at timed moments
+3. **Brian** (`layers/brian/`) — Talking head with no background, lower right, always visible
+4. **Chrome** (`layers/chrome/`) — Header + footer baked into transparent PNG, always on top
+5. **Text** (config.json) — Center-justified overlays rendered at runtime
+
+### Input
+- Brian talking head with NO background (`layers/brian/lesson-X-brian-nobg.mp4`)
+- Galaxy AI clips (`layers/clips/lesson-X/`)
+- Layer assets (`layers/base/`, `layers/chrome/`)
+
+### Steps
+1. Drop Brian's no-bg video into `layers/brian/`
+2. Drop Galaxy clips into `layers/clips/lesson-X/`
+3. Copy `lesson1-config.json` and set clip timing + text slides
+4. Run: `python lmt-video-overlay.py lesson-X-config.json`
+5. Output: finished video + YouTube package + all platform formats
+
+### Config Format
+```json
+{
+  "format": "landscape",
+  "input_video": "layers/brian/lesson-1-brian-nobg.mp4",
+  "output_video": "path/to/FINISHED/lesson-1.mp4",
+  "bg_image": "layers/base/navy-1920x1080.png",
+  "show_header": false,
+  "show_lower_third": false,
+  "clips": [
+    {"file": "layers/clips/lesson-1/clip-01-videocall-grandkids.mp4", "start": 14, "end": 104}
+  ],
+  "slides": [
+    {
+      "start": 0, "end": 10,
+      "y": 250, "font_size": 84,
+      "color": "#FFFFFF", "fade": 0, "center": true,
+      "no_bullet": true,
+      "bullets": ["Line 1", "Line 2"]
+    }
+  ]
+}
+```
+
+### Slide Rules for Lessons
+- Font size: `84pt` (doubled for readability)
+- Center-justified: `"center": true`
+- Full opacity: `"fade": 0`
+- No bullets for statements: `"no_bullet": true`
+- CTA end card in gold: `"color": "#C8942E"`
+- Galaxy clips are ~1.5 min each, fill gaps between text slides
+
+---
+
+## WORKFLOW 4: TRAINING LESSON MOVIE
 
 ### Input
 - HeyGen lesson video of Brian talking (from `heygen-lessons/`)

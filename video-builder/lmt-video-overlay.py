@@ -30,6 +30,7 @@ BRAND = {
     "body_text": "C4CDD9",
     "muted": "A8B8CC",
     "bg_mid": "162640",
+    "navy": "0E1C2F",
 }
 
 # Font paths (Windows)
@@ -59,7 +60,7 @@ def build_drawtext_filters(config):
         lower_bar_h = 50
         lower_text_y_offset = 38
         content_y = 500  # text starts here — same area as slide images
-    elif fmt == "short":
+    elif fmt in ("short", "vertical"):
         header_size = 44
         header_split = False
         header_y = 60
@@ -155,7 +156,9 @@ def build_drawtext_filters(config):
         color = slide.get("color", "#FFFFFF").replace("#", "")
         default_font = 52 if fmt == "training" else 46
         font_size = slide.get("font_size", default_font)
-        x = slide.get("x", 60 if fmt in ["short", "training"] else 80)
+        # Center justify: use x=(w-text_w)/2 unless explicit x is set with center=false
+        center = slide.get("center", True)
+        x = "(w-text_w)/2" if center else slide.get("x", 60 if fmt in ["short", "training"] else 80)
         y = slide.get("y", content_y)
         fade = slide.get("fade", 0.5)
         no_bullet = slide.get("no_bullet", False)
@@ -169,14 +172,19 @@ def build_drawtext_filters(config):
             prefix = "" if no_bullet else "-  "
             safe_text = (prefix + bullet).replace("%", "%%").replace("'", "\u2019").replace(":", "\\:")
 
-            filters.append(
+            dt = (
                 f"drawtext=fontfile={FONT_BODY}:"
                 f"text='{safe_text}':"
                 f"fontsize={font_size}:fontcolor=0x{color}:"
                 f"x={x}:y={line_y}:"
-                f"enable='between(t,{start},{end})':"
-                f"alpha='if(lt(t-{start},{fade}),(t-{start})/{fade},if(lt({end}-t,{fade}),({end}-t)/{fade},1))'"
+                f"enable='between(t,{start},{end})'"
             )
+            if fade > 0:
+                dt += (
+                    f":"
+                    f"alpha='if(lt(t-{start},{fade}),(t-{start})/{fade},if(lt({end}-t,{fade}),({end}-t)/{fade},1))'"
+                )
+            filters.append(dt)
 
         # Source reference
         if "source" in slide:
@@ -217,7 +225,18 @@ def get_video_duration(input_video):
 
 
 def build_video(config):
-    """Build the video using FFmpeg with Intel QSV (GPU) or libx264 (CPU) fallback."""
+    """Build the video using FFmpeg with Intel QSV (GPU) or libx264 (CPU) fallback.
+
+    Supports optional 'clips' array for B-roll video overlays.
+    When clips are present, Galaxy/B-roll videos play full-screen behind Brian
+    at specified times (e.g. between text slides). Brian's audio always continues.
+
+    Config clips format:
+        "clips": [
+            {"file": "path/to/clip.mp4", "start": 5, "end": 12},
+            {"file": "path/to/clip2.mp4", "start": 25, "end": 33}
+        ]
+    """
     input_video = config["input_video"]
     output_video = config["output_video"]
 
@@ -229,31 +248,153 @@ def build_video(config):
     config["duration"] = duration
     print(f"Duration: {duration:.1f}s ({duration/60:.1f} min)")
 
-    # Build filter chain
+    # Build drawtext filter chain
     print("Building overlay filters...")
     vf = build_drawtext_filters(config)
     print(f"Filters: {len(config['slides'])} slides")
 
-    # Try Intel QSV (GPU) first
-    cmd = [
-        FFMPEG, "-y",
-        "-i", input_video,
-        "-vf", vf,
-        "-c:v", "h264_qsv",
-        "-preset", "fast",
-        "-b:v", "5M",
-        "-c:a", "aac",
-        "-b:a", "128k",
-        output_video,
-    ]
+    clips = config.get("clips", [])
+
+    if clips:
+        # --- FILTER_COMPLEX MODE ---
+        # Navy background base + Galaxy clips full screen + Brian PIP lower-right + text
+        print(f"B-roll clips: {len(clips)}")
+        for c in clips:
+            print(f"  {os.path.basename(c['file'])} ({c['start']}s - {c['end']}s)")
+
+        # Detect format dimensions
+        fmt = config.get("format", "landscape")
+        if fmt in ("short", "vertical", "training"):
+            out_w, out_h = 1080, 1920
+        else:
+            out_w, out_h = 1920, 1080
+
+        # Brian PIP size and position (lower-right corner)
+        # Brian's source is 9:16 vertical — always maintain that ratio
+        pip = config.get("brian_pip", {})
+        pip_w = pip.get("width", 250)
+        pip_h = int(pip_w * 16 / 9)  # 9:16 portrait ratio
+        pip_margin = pip.get("margin", 20)
+        pip_x = out_w - pip_w - pip_margin
+        pip_y = out_h - pip_h - pip_margin - 55  # above lower third bar
+        pip_border = pip.get("border", 3)
+        pip_chromakey = pip.get("chromakey", True)  # remove dark bg by default
+
+        print(f"Brian PIP: {pip_w}x{pip_h} at ({pip_x},{pip_y}) chromakey={pip_chromakey}")
+
+        # Use static background image (lesson-bg.png) as base plate
+        # This has header + lower third baked in — no need to render them
+        bg_image = config.get("bg_image",
+            os.path.join(os.path.dirname(os.path.abspath(__file__)), "lesson-bg.png"))
+
+        if not os.path.exists(bg_image):
+            print(f"WARNING: bg_image not found: {bg_image}, falling back to color")
+            bg_image = None
+
+        # Build input args:
+        # [0] = static background image (looped)
+        # [1] = brian talking head video (audio + video for PIP)
+        # [2..N+1] = galaxy clips
+        input_args = []
+        if bg_image:
+            input_args.extend(["-loop", "1", "-i", bg_image])
+        else:
+            input_args.extend(["-f", "lavfi", "-i",
+                f"color=c=0x{BRAND['navy']}:s={out_w}x{out_h}:d={duration}"])
+        input_args.extend(["-i", input_video])
+        for clip in clips:
+            input_args.extend(["-i", clip["file"]])
+
+        # Build filter_complex chain
+        fc_parts = []
+
+        # Brian PIP: scale talking head video to PIP size with gold border
+        fc_parts.append(
+            f"[1:v]scale={pip_w}:{pip_h},"
+            f"pad={pip_w + pip_border*2}:{pip_h + pip_border*2}:{pip_border}:{pip_border}:"
+            f"color=0x{BRAND['gold']}[brian_pip]"
+        )
+
+        # Scale each Galaxy clip to full screen and delay with tpad
+        for i, clip in enumerate(clips):
+            input_idx = i + 2  # offset by bg + brian
+            start = clip["start"]
+            fc_parts.append(
+                f"[{input_idx}:v]scale={out_w}:{out_h}:force_original_aspect_ratio=increase,"
+                f"crop={out_w}:{out_h},"
+                f"tpad=start_duration={start}:start_mode=add:color=black@0"
+                f"[clip{i}]"
+            )
+
+        # Start with background, overlay Galaxy clips (tpad handles timing)
+        prev = "0:v"
+        for i, clip in enumerate(clips):
+            out_label = f"v{i}"
+            fc_parts.append(
+                f"[{prev}][clip{i}]overlay=0:0:"
+                f"eof_action=pass:format=auto[{out_label}]"
+            )
+            prev = out_label
+
+        # Brian PIP in lower-right — always visible
+        pip_out = "vpip"
+        pip_x_adj = pip_x - pip_border
+        pip_y_adj = pip_y - pip_border
+        fc_parts.append(
+            f"[{prev}][brian_pip]overlay={pip_x_adj}:{pip_y_adj}:"
+            f"eof_action=pass[{pip_out}]"
+        )
+
+        # Apply drawtext filters on top (text slides only, no header/footer)
+        fc_parts.append(f"[{pip_out}]{vf}[vout]")
+
+        filter_complex = ";".join(fc_parts)
+
+        cmd = [
+            FFMPEG, "-y",
+            *input_args,
+            "-filter_complex", filter_complex,
+            "-map", "[vout]",
+            "-map", "1:a",
+            "-c:v", "h264_qsv",
+            "-preset", "fast",
+            "-b:v", "5M",
+            "-c:a", "aac",
+            "-b:a", "128k",
+            "-t", str(duration),
+            output_video,
+        ]
+    else:
+        # --- SIMPLE MODE: text overlays only (original behavior) ---
+        cmd = [
+            FFMPEG, "-y",
+            "-i", input_video,
+            "-vf", vf,
+            "-c:v", "h264_qsv",
+            "-preset", "fast",
+            "-b:v", "5M",
+            "-c:a", "aac",
+            "-b:a", "128k",
+            output_video,
+        ]
 
     print("Rendering (Intel QSV GPU)...")
     result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
 
     if result.returncode != 0:
         print("QSV unavailable, using libx264 (CPU)...")
-        cmd[cmd.index("h264_qsv")] = "libx264"
-        cmd[cmd.index("fast")] = "medium"
+        # Replace codec in command
+        try:
+            idx = cmd.index("h264_qsv")
+            cmd[idx] = "libx264"
+        except ValueError:
+            pass
+        try:
+            idx = cmd.index("fast")
+            if idx > 0 and cmd[idx - 1] == "-preset":
+                cmd[idx] = "medium"
+        except ValueError:
+            pass
         result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
 
         if result.returncode != 0:
