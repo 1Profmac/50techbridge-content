@@ -1,0 +1,89 @@
+{
+  "_comment": "LinkedIn Short — AI Is Already Here — article companion video",
+  "input_video": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/brian/linkedin-ai-article-brian.mp4",
+  "output_video": "C:/Users/Jordyn/Desktop/LINKEDIN-SHORT/FINISHED/linkedin-ai-short.mp4",
+  "format": "landscape",
+  "show_header": false,
+  "show_lower_third": false,
+  "bg_image": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/base/navy-1920x1080.png",
+  "chrome_image": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/chrome/header-footer-1920x1080.png",
+  "brian_pip": {
+    "width": 800,
+    "height": 450,
+    "margin": 20,
+    "border": 0,
+    "chromakey": true,
+    "show_start": 0,
+    "show_end": 50
+  },
+  "youtube": {
+    "title": "AI Is Already In Your Life. Here Is How To Use It. | 50+TechBridge",
+    "description": "AI is already woven into your daily life — texting, streaming, banking. For adults 50+, change can feel overwhelming. But adaptability matters more than age.\n\n50+TechBridge: Free lessons. Hands-on learning. A community that meets you where you are.\n\nJoin us: https://learnmoretechnologies.com/join-now/\n\nBrian McKinney | Founder, Learn More Technologies",
+    "thumbnail_time": 5,
+    "hashtags": "#50PlusTechBridge #AgeTech #AI #DigitalSkills #Over50 #DigitalInclusion #LearnMoreTechnologies #BrianMcKinney #FutureOfWork #LifelongLearning",
+    "tags": "AI, agetech, adults over 50, digital skills, technology education, Brian McKinney, Learn More Technologies, digital inclusion, future of work, lifelong learning, 50+ techbridge"
+  },
+  "linkedin": {
+    "youtube_url": "https://youtu.be/YOUR-VIDEO-ID",
+    "post": "AI is already in your daily life.\n\nWhen you text a friend, stream a movie, or check your bank balance — AI is working behind the scenes.\n\nAt a recent networking event, I counted 30 out of 50 businesses in industries being disrupted right now. Real estate. Legal. Web development. Change is not coming. It is here.\n\nBut adaptability matters more than age. Your experience is not a weakness. It is your advantage.\n\nThat is why we built 50+TechBridge. Free lessons. Hands-on learning. A community that meets you where you are.\n\nYou are not behind. You are just getting started.\n\nlearnmoretechnologies.com/join-now\n\n#AgeTech #AI #DigitalInclusion #Over50 #50PlusTechBridge #LearnMoreTechnologies #FutureOfWork #LifelongLearning"
+  },
+  "clips": [
+    {
+      "_comment": "Reuse lesson 1 clips as B-roll",
+      "file": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/clips/lesson-1/clip-02-couple-tablet.mp4",
+      "start": 8,
+      "end": 20
+    },
+    {
+      "file": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/clips/lesson-1/clip-03-health-app.mp4",
+      "start": 20,
+      "end": 32
+    },
+    {
+      "file": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/clips/lesson-1/clip-05-peer-teaching.mp4",
+      "start": 32,
+      "end": 44
+    },
+    {
+      "file": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/clips/lesson-1/clip-04-woman-laptop-learning.mp4",
+      "start": 44,
+      "end": 50
+    }
+  ],
+  "slides": [
+    {
+      "start": 0,
+      "end": 6,
+      "y": 300,
+      "font_size": 84,
+      "color": "#FFFFFF",
+      "no_bullet": true,
+      "fade": 0,
+      "center": true,
+      "chapter_label": "Hook",
+      "bullets": [
+        "AI Is Already",
+        "In Your Life"
+      ]
+    },
+    {
+      "start": 50,
+      "end": 58,
+      "y": 250,
+      "font_size": 84,
+      "color": "#FFFFFF",
+      "fade": 0,
+      "no_bullet": true,
+      "center": true,
+      "chapter_label": "CTA",
+      "bullets": [
+        "Learn More Technologies",
+        "",
+        "learnmoretechnologies.com",
+        "/join-now",
+        "",
+        "It is never too late to learn."
+      ]
+    }
+  ]
+}
