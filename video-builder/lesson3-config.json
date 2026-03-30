@@ -1,0 +1,99 @@
+{
+  "_comment": "Lesson 3 — Technology for Independent Living",
+  "input_video": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/brian/lesson-3-brian-nobg.mp4",
+  "output_video": "C:/Users/Jordyn/Desktop/LMT-CONTENT/01-LESSONS/LESSON-3/lesson3-LANDSCAPE.mp4",
+  "format": "landscape",
+  "show_header": false,
+  "show_lower_third": false,
+  "bg_image": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/base/navy-1920x1080.png",
+  "chrome_image": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/chrome/header-footer-1920x1080.png",
+  "brian_pip": {
+    "width": 800,
+    "height": 450,
+    "margin": 20,
+    "border": 0,
+    "chromakey": true,
+    "show_start": 8,
+    "show_end": 189
+  },
+  "brian_position": {
+    "x": 0,
+    "y": 0
+  },
+  "youtube": {
+    "title": "Technology for Independent Living | 50+TechBridge Lesson 3",
+    "description": "Lesson 3 of 50+TechBridge — Technology for Independent Living.\n\nVoice assistants, telehealth, prescription management, and online safety. Technology in service of the life you want to keep living.\n\n347 Pioneers have completed this program. 3X the industry completion rate.\n\nStart free: https://learnmoretechnologies.com/join-now/\n\nBrian McKinney | Founder, Learn More Technologies | MBE Certified | Former AARP Insider\n\n#50PlusTechBridge #AgeTech #DigitalSkills #Over50 #DigitalInclusion #TechForSeniors #LearnMoreTechnologies #BrianMcKinney #Lesson3",
+    "thumbnail_time": 8,
+    "hashtags": "#50PlusTechBridge #AgeTech #DigitalSkills #Over50 #DigitalInclusion #TechForSeniors #LearnMoreTechnologies #BrianMcKinney #Lesson3",
+    "tags": "agetech, digital skills for seniors, 50+ techbridge, adults over 50, technology education, Brian McKinney, Learn More Technologies, digital inclusion, independent living, voice assistant, telehealth, medication management, online safety, lesson 3"
+  },
+  "linkedin": {
+    "youtube_url": "https://youtu.be/YOUR-VIDEO-ID",
+    "post": "Gloria is 72. She lives alone.\n\nHer daughter wanted her to move into assisted living. Gloria refused.\n\nToday she manages her health, her finances, and her prescriptions — all from her tablet, in her kitchen, before her morning coffee is finished.\n\nLesson 3 of 50+TechBridge: Technology for Independent Living.\n\nVoice assistants. Telehealth. Prescription management. Online safety.\n\nNot technology for technology's sake. Technology in service of the life you want to keep living.\n\nlearnmoretechnologies.com/join-now\n\n#AgeTech #DigitalInclusion #Over50 #50PlusTechBridge #LearnMoreTechnologies #IndependentLiving"
+  },
+  "clips": [
+    {
+      "file": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/clips/lesson-3/clip-01-gloria-tablet.mp4",
+      "start": 10,
+      "end": 33
+    },
+    {
+      "file": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/clips/lesson-3/clip-02-voice-assistant.mp4",
+      "start": 45,
+      "end": 68
+    },
+    {
+      "file": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/clips/lesson-3/clip-03-telehealth-visit.mp4",
+      "start": 80,
+      "end": 103
+    },
+    {
+      "file": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/clips/lesson-3/clip-04-medication-management.mp4",
+      "start": 115,
+      "end": 138
+    },
+    {
+      "file": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/clips/lesson-3/clip-05-online-safety.mp4",
+      "start": 150,
+      "end": 173
+    }
+  ],
+  "slides": [
+    {
+      "start": 0,
+      "end": 8,
+      "y": 300,
+      "font_size": 84,
+      "color": "#FFFFFF",
+      "no_bullet": true,
+      "fade": 0,
+      "center": true,
+      "chapter_label": "Welcome",
+      "bullets": [
+        "Technology for",
+        "Independent Living",
+        "",
+        "Module 3"
+      ]
+    },
+    {
+      "start": 189,
+      "end": 197,
+      "y": 300,
+      "font_size": 84,
+      "color": "#FFFFFF",
+      "fade": 0,
+      "no_bullet": true,
+      "center": true,
+      "chapter_label": "End Card",
+      "bullets": [
+        "Learn More Technologies",
+        "",
+        "learnmoretechnologies.com",
+        "/join-now",
+        "",
+        "It is never too late to learn."
+      ]
+    }
+  ]
+}

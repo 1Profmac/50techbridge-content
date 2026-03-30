@@ -1,0 +1,100 @@
+{
+  "_comment": "Lesson 2 — Using Mobile Devices & Accessing Online Services",
+  "input_video": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/brian/lesson-2-brian-nobg.mp4",
+  "output_video": "C:/Users/Jordyn/Desktop/LMT-CONTENT/01-LESSONS/LESSON-2/lesson2-LANDSCAPE.mp4",
+  "format": "landscape",
+  "show_header": false,
+  "show_lower_third": false,
+  "bg_image": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/base/navy-1920x1080.png",
+  "chrome_image": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/chrome/header-footer-1920x1080.png",
+  "brian_pip": {
+    "width": 800,
+    "height": 450,
+    "margin": 20,
+    "border": 0,
+    "chromakey": true,
+    "show_start": 8,
+    "show_end": 189
+  },
+  "brian_position": {
+    "x": 0,
+    "y": 0
+  },
+  "youtube": {
+    "title": "Using Mobile Devices & Accessing Online Services | 50+TechBridge Lesson 2",
+    "description": "Lesson 2 of 50+TechBridge — Using Mobile Devices & Accessing Online Services.\n\nLearn the six essential touch gestures. Access healthcare, banking, and government services safely. Recognize and avoid scams.\n\n347 Pioneers have completed this program. 3X the industry completion rate.\n\nStart free: https://learnmoretechnologies.com/join-now/\n\nBrian McKinney | Founder, Learn More Technologies | MBE Certified | Former AARP Insider\n\n#50PlusTechBridge #AgeTech #DigitalSkills #Over50 #DigitalInclusion #TechForSeniors #LearnMoreTechnologies #BrianMcKinney #Lesson2",
+    "thumbnail_time": 8,
+    "hashtags": "#50PlusTechBridge #AgeTech #DigitalSkills #Over50 #DigitalInclusion #TechForSeniors #LearnMoreTechnologies #BrianMcKinney #Lesson2",
+    "tags": "agetech, digital skills for seniors, 50+ techbridge, adults over 50, technology education, Brian McKinney, Learn More Technologies, digital inclusion, mobile devices, online services, touchscreen, scam safety, lesson 2"
+  },
+  "linkedin": {
+    "youtube_url": "https://youtu.be/YOUR-VIDEO-ID",
+    "post": "Your smartphone is the most powerful tool ever built.\n\nIt is a phone, a camera, a library, a bank, and a connection to every person you love — all in one place.\n\nBut most adults 50+ were never shown how to use it in a way that made sense.\n\nLesson 2 of 50+TechBridge is live. Six essential gestures. Healthcare, banking, and government services — safely and on your own.\n\n347 Pioneers. 3X completion rate.\n\nlearnmoretechnologies.com/join-now\n\n#AgeTech #DigitalInclusion #Over50 #50PlusTechBridge #LearnMoreTechnologies"
+  },
+  "clips": [
+    {
+      "file": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/clips/lesson-2/clip-01-robert-smartphone.mp4",
+      "start": 10,
+      "end": 33
+    },
+    {
+      "file": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/clips/lesson-2/clip-02-touch-gestures.mp4",
+      "start": 45,
+      "end": 68
+    },
+    {
+      "file": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/clips/lesson-2/clip-03-patient-portal.mp4",
+      "start": 80,
+      "end": 103
+    },
+    {
+      "file": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/clips/lesson-2/clip-04-scam-safety.mp4",
+      "start": 115,
+      "end": 138
+    },
+    {
+      "file": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/clips/lesson-2/clip-05-first-video-call.mp4",
+      "start": 150,
+      "end": 173
+    }
+  ],
+  "slides": [
+    {
+      "start": 0,
+      "end": 8,
+      "y": 300,
+      "font_size": 84,
+      "color": "#FFFFFF",
+      "no_bullet": true,
+      "fade": 0,
+      "center": true,
+      "chapter_label": "Welcome",
+      "bullets": [
+        "Using Mobile Devices",
+        "& Accessing",
+        "Online Services",
+        "",
+        "Module 2"
+      ]
+    },
+    {
+      "start": 189,
+      "end": 197,
+      "y": 300,
+      "font_size": 84,
+      "color": "#FFFFFF",
+      "fade": 0,
+      "no_bullet": true,
+      "center": true,
+      "chapter_label": "End Card",
+      "bullets": [
+        "Learn More Technologies",
+        "",
+        "learnmoretechnologies.com",
+        "/join-now",
+        "",
+        "It is never too late to learn."
+      ]
+    }
+  ]
+}
