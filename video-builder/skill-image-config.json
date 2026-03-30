@@ -1,0 +1,13 @@
+{
+  "_comment": "Clean skill image — navy bg + header + Brian lower right + lower third — NO content text",
+  "input_video": "C:/Users/Jordyn/Desktop/Desktop → LMT-Brain/_NEW-SESSION-TEMPLATE/heygen-lessons/Lesson-1-HeyGen-Brian.mp4",
+  "output_video": "C:/Users/Jordyn/Desktop/LESSON-1-VIDEO/skill-image-render.mp4",
+  "format": "landscape",
+  "show_header": true,
+  "show_lower_third": true,
+  "youtube": {
+    "title": "skill-image",
+    "thumbnail_time": 1
+  },
+  "slides": []
+}

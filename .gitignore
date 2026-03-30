@@ -1,0 +1,4 @@
+# Large video files — stored locally, not in git
+video-builder/layers/brian/*.mp4
+video-builder/layers/clips/**/*.mp4
+*.mp4.lnk
