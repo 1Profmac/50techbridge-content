@@ -8,9 +8,9 @@
   "bg_image": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/base/navy-1920x1080.png",
   "chrome_image": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/chrome/header-footer-1920x1080.png",
   "brian_pip": {
-    "width": 800,
-    "height": 450,
-    "margin": 20,
+    "width": 1920,
+    "height": 1080,
+    "margin": 0,
     "border": 0,
     "chromakey": true,
     "show_start": 8,
@@ -74,6 +74,86 @@
         "Independent Living",
         "",
         "Module 3"
+      ]
+    },
+    {
+      "start": 33,
+      "end": 45,
+      "y": 280,
+      "font_size": 52,
+      "color": "#FFFFFF",
+      "no_bullet": false,
+      "fade": 0.5,
+      "center": true,
+      "chapter_label": "Independence",
+      "bullets": [
+        "Not tech for tech's sake.",
+        "Technology in service of your life.",
+        "Three tools. Real independence."
+      ]
+    },
+    {
+      "start": 68,
+      "end": 80,
+      "y": 280,
+      "font_size": 52,
+      "color": "#FFFFFF",
+      "no_bullet": false,
+      "fade": 0.5,
+      "center": true,
+      "chapter_label": "Telehealth",
+      "bullets": [
+        "See your doctor from home.",
+        "No driving. No waiting room.",
+        "Faster, more convenient, equally effective."
+      ]
+    },
+    {
+      "start": 103,
+      "end": 115,
+      "y": 280,
+      "font_size": 52,
+      "color": "#FFFFFF",
+      "no_bullet": false,
+      "fade": 0.5,
+      "center": true,
+      "chapter_label": "Prescriptions",
+      "bullets": [
+        "Refill prescriptions from your phone.",
+        "Set up automatic refills.",
+        "Home delivery. Never miss a refill."
+      ]
+    },
+    {
+      "start": 138,
+      "end": 150,
+      "y": 280,
+      "font_size": 52,
+      "color": "#FFFFFF",
+      "no_bullet": false,
+      "fade": 0.5,
+      "center": true,
+      "chapter_label": "Online Safety",
+      "bullets": [
+        "Look for https:// and the lock icon.",
+        "Never use public WiFi for banking or health.",
+        "Always log out when finished."
+      ]
+    },
+    {
+      "start": 173,
+      "end": 189,
+      "y": 280,
+      "font_size": 52,
+      "color": "#FFFFFF",
+      "no_bullet": false,
+      "fade": 0.5,
+      "center": true,
+      "chapter_label": "Proof",
+      "bullets": [
+        "23 organizations trust 50+TechBridge.",
+        "347 Pioneers walked this path before you.",
+        "You are not done yet."
       ]
     },
     {

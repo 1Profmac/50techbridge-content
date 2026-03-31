@@ -338,8 +338,13 @@ def build_video(config):
         pip_show_start = pip.get("show_start", 8)
         pip_show_end = pip.get("show_end", duration - 8)
 
+        # Scale Brian if pip dimensions differ from source
+        brian_scale_filter = ""
+        if pip_w != out_w or pip_h != out_h:
+            brian_scale_filter = f"scale={pip_w}:{pip_h},"
+
         fc_parts.append(
-            f"[1:v]{chromakey_filter}format=rgba[brian_layer]"
+            f"[1:v]{chromakey_filter}{brian_scale_filter}format=rgba[brian_layer]"
         )
 
         # Scale each Galaxy clip to full screen, trim to exact duration, delay with tpad
@@ -367,9 +372,16 @@ def build_video(config):
             )
             prev = out_label
 
-        # Brian full-size overlay — visible during teaching, hidden during intro/end card
+        # Brian overlay — position from config or default to 0:0 (full frame)
+        brian_pos = config.get("brian_position", {"x": 0, "y": 0})
+        brian_x = brian_pos.get("x", 0)
+        brian_y = brian_pos.get("y", 0)
+
+        # Scale Brian to fit the output dimensions if needed
+        brian_scale = f"scale={pip_w}:{pip_h}," if pip_w != out_w or pip_h != out_h else ""
+
         fc_parts.append(
-            f"[{prev}][brian_layer]overlay=0:0:"
+            f"[{prev}][brian_layer]overlay={brian_x}:{brian_y}:"
             f"eof_action=pass:format=auto:"
             f"enable='between(t,{pip_show_start},{pip_show_end})'[vpip]"
         )

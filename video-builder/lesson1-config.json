@@ -1,18 +1,24 @@
 {
   "_comment": "Lesson 1 — Layer-based render: base + clips + brian PIP + chrome + text",
   "input_video": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/brian/lesson-1-brian-nobg.mp4",
-  "output_video": "C:/Users/Jordyn/Desktop/LESSON-1-VIDEO/FINISHED/lesson1-full.mp4",
+  "output_video": "C:/Users/Jordyn/Desktop/LMT-CONTENT/01-LESSONS/LESSON-1/lesson1-LANDSCAPE.mp4",
   "format": "landscape",
   "show_header": false,
   "show_lower_third": false,
   "bg_image": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/base/navy-1920x1080.png",
   "chrome_image": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/chrome/header-footer-1920x1080.png",
   "brian_pip": {
-    "width": 800,
-    "height": 450,
-    "margin": 20,
+    "width": 1920,
+    "height": 1080,
+    "margin": 0,
     "border": 0,
-    "chromakey": true
+    "chromakey": true,
+    "show_start": 8,
+    "show_end": 189
+  },
+  "brian_position": {
+    "x": 0,
+    "y": 0
   },
   "youtube": {
     "title": "Introduction to Digital Skills & AgeTech | 50+TechBridge Lesson 1",
@@ -29,32 +35,27 @@
     {
       "file": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/clips/lesson-1/clip-01-videocall-grandkids.mp4",
       "start": 10,
-      "end": 30
+      "end": 33
     },
     {
       "file": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/clips/lesson-1/clip-02-couple-tablet.mp4",
-      "start": 30,
-      "end": 50
+      "start": 45,
+      "end": 68
     },
     {
       "file": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/clips/lesson-1/clip-03-health-app.mp4",
-      "start": 50,
-      "end": 70
+      "start": 80,
+      "end": 103
     },
     {
       "file": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/clips/lesson-1/clip-04-woman-laptop-learning.mp4",
-      "start": 70,
-      "end": 90
+      "start": 115,
+      "end": 138
     },
     {
       "file": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/clips/lesson-1/clip-05-peer-teaching.mp4",
-      "start": 90,
-      "end": 100
-    },
-    {
-      "file": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/clips/lesson-1/clip-06-doctor-patient-portal.mp4",
-      "start": 95,
-      "end": 105
+      "start": 150,
+      "end": 173
     }
   ],
   "slides": [
@@ -76,9 +77,89 @@
       ]
     },
     {
-      "start": 106,
-      "end": 114,
-      "y": 250,
+      "start": 33,
+      "end": 45,
+      "y": 280,
+      "font_size": 52,
+      "color": "#FFFFFF",
+      "no_bullet": false,
+      "fade": 0.5,
+      "center": true,
+      "chapter_label": "Not Behind",
+      "bullets": [
+        "You are not behind.",
+        "You are not too old.",
+        "There is nothing wrong with you."
+      ]
+    },
+    {
+      "start": 68,
+      "end": 80,
+      "y": 280,
+      "font_size": 52,
+      "color": "#FFFFFF",
+      "no_bullet": false,
+      "fade": 0.5,
+      "center": true,
+      "chapter_label": "AgeTech",
+      "bullets": [
+        "AgeTech: technology built for you.",
+        "Voice assistants. Telehealth. Online banking.",
+        "Technology in service of your life."
+      ]
+    },
+    {
+      "start": 103,
+      "end": 115,
+      "y": 280,
+      "font_size": 52,
+      "color": "#FFFFFF",
+      "no_bullet": false,
+      "fade": 0.5,
+      "center": true,
+      "chapter_label": "The Gap",
+      "bullets": [
+        "Adults 50+ control $76 trillion.",
+        "70% of all disposable income.",
+        "Yet 90% feel invisible in tech."
+      ]
+    },
+    {
+      "start": 138,
+      "end": 150,
+      "y": 280,
+      "font_size": 52,
+      "color": "#FFFFFF",
+      "no_bullet": false,
+      "fade": 0.5,
+      "center": true,
+      "chapter_label": "Your Advantage",
+      "bullets": [
+        "Your life experience is your advantage.",
+        "Not a barrier. Never a barrier.",
+        "You already have the instincts."
+      ]
+    },
+    {
+      "start": 173,
+      "end": 189,
+      "y": 280,
+      "font_size": 52,
+      "color": "#FFFFFF",
+      "no_bullet": false,
+      "fade": 0.5,
+      "center": true,
+      "chapter_label": "Proof",
+      "bullets": [
+        "347 Pioneers completed this program.",
+        "3X the industry completion rate.",
+        "You are next."
+      ]
+    },
+    {
+      "start": 189,
+      "end": 197,
+      "y": 300,
       "font_size": 84,
       "color": "#FFFFFF",
       "fade": 0,
@@ -88,7 +169,8 @@
       "bullets": [
         "Learn More Technologies",
         "",
-        "learnmoretechnologies.com/join-now",
+        "learnmoretechnologies.com",
+        "/join-now",
         "",
         "It is never too late to learn."
       ]
