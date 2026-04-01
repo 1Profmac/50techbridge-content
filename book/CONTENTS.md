@@ -20,6 +20,7 @@
 | `chapter-08-digital-bill-of-rights.md` | 6 Articles. Direct address to tech, healthcare, employers, government. |
 | `chapter-09-digital-authority-flywheel.md` | Book + YouTube + LinkedIn + Stage. One input → six outputs. |
 | `chapter-10-the-nomadic-dream.md` | Run the mission from anywhere. Father. Global mandate. |
+| `chapter-10b-your-ai-business-team.md` | **NEW** — For the Pioneer. Build, organize, operate your own business with free AI tools. Margaret's story. |
 | `chapter-11-your-turn.md` | The closing letter. First step. Three asks. "You're not done yet." |
 | `back-cover-copy.md` | Print copy, Amazon description, author bios, spine |
 | `cover-canva-spec.md` | Full Canva production spec — 1800×2700px, all layers |
