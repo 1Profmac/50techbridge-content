@@ -117,20 +117,21 @@ If you can buy a coffee, you can afford to build with AI.
 
 | Tool | Monthly | Annual | Billing | Coffees/mo | What You Get |
 |---|---|---|---|---|---|
-| Claude Code | $100.00 | $1,200 | Monthly | 16.0 | Your builder — software, automation, video |
-| Google Workspace Enterprise | $29.00 | $348 | Monthly | 4.6 | Your business headquarters — Gmail, Drive, Docs, Meet, Calendar |
-| HeyGen | $24.00 | $288 | Monthly | 3.8 | Your avatar — professional talking head videos |
 | Adobe Creative Cloud Education | $20.83 | $250 | **Annual** | 3.3 | Premiere Pro, Photoshop, Illustrator, Acrobat |
-| Claude Pro | $20.00 | $240 | Monthly | 3.2 | Your advisor — writing, research, strategy |
-| Manus Pro | $20.00 | $240 | Monthly | 3.2 | Your autonomous agent — research, long-form planning, book outlines |
-| LearnDash | $18.67 | $224 | **Annual** | 3.0 | Your course platform — lessons, quizzes, Pioneer enrollment. Renews Nov 2, 2026 |
-| ElevenLabs Creator | $18.33 | $220 | **Annual** | 2.9 | Your voice — podcast episodes, video voiceover. 100k credits/mo |
 | BuddyBoss | $16.67 | $200 | **Annual** | 2.7 | Your community platform — Pioneer community and profiles. Renews Nov 2, 2026 |
-| Mailchimp Starter | $13.00 | $156 | Monthly | 2.1 | Your email list — automations, sequences, Pioneer onboarding |
 | Canva Pro | $13.00 | $156 | Monthly | 2.1 | Your designer — graphics, video clips, thumbnails |
+| Claude Code | $100.00 | $1,200 | Monthly | 16.0 | Your builder — software, automation, video |
+| Claude Pro | $20.00 | $240 | Monthly | 3.2 | Your advisor — writing, research, strategy |
+| ElevenLabs Creator | $18.33 | $220 | **Annual** | 2.9 | Your voice — podcast episodes, video voiceover. 100k credits/mo |
+| Google Workspace Enterprise | $29.00 | $348 | Monthly | 4.6 | Your business headquarters — Gmail, Drive, Docs, Meet, Calendar |
 | Grammarly Premium | $12.00 | $144 | Monthly | 1.9 | Your editor — polished communication |
 | Hermes | $0 | $0 | Free | 0 | Your free AI assistant |
-| **TOTAL** | **$305.50** | **$3,666** | | **48.9 coffees** | **A complete AI-powered business team** |
+| HeyGen | $24.00 | $288 | Monthly | 3.8 | Your avatar — professional talking head videos |
+| LearnDash | $18.67 | $224 | **Annual** | 3.0 | Your course platform — lessons, quizzes, Pioneer enrollment. Renews Nov 2, 2026 |
+| Mailchimp Starter | $13.00 | $156 | Monthly | 2.1 | Your email list — automations, sequences, Pioneer onboarding |
+| Manus Pro | $20.00 | $240 | Monthly | 3.2 | Your autonomous agent — research, long-form planning, book outlines |
+| Snagit | $16.58 | $199 | **Annual** | 2.7 | Screenshots, screen recording, visual documentation |
+| **TOTAL** | **$322.08** | **$3,865** | | **51.6 coffees** | **A complete AI-powered business team** |
 
 **Annual payments — budget ahead:**
 
@@ -138,9 +139,10 @@ If you can buy a coffee, you can afford to build with AI.
 |---|---|---|
 | Adobe Creative Cloud Education | $250 | Annual |
 | ElevenLabs Creator | $220 | Annual (upgraded April 2026) |
+| Snagit | $199 | Annual |
 | LearnDash | $224 | Nov 2, 2026 |
 | BuddyBoss | $200 | Nov 2, 2026 |
-| **Total annual lump payments** | **$894** | |
+| **Total annual lump payments** | **$1,093** | |
 
 ### What That $305/Month Replaces
 
