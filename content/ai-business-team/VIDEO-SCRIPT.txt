@@ -1,0 +1,260 @@
+VIDEO SCRIPT — "You Already Have a Business. You Just Don't Know It Yet."
+Source: Book Chapter 10b — Your AI Business Team
+Format: YouTube / LinkedIn Video | Target length: 8–10 minutes
+---
+
+[HOOK — first 15 seconds, no title card yet]
+
+"Three months ago, a woman named Margaret came up to me after one of my free
+tech talks at a senior center in Austin.
+
+She said five words that I haven't been able to stop thinking about.
+
+She said: 'Is there a way to get paid for this?'
+
+Stay with me. Because her answer changed her life —
+and it might change yours."
+
+---
+
+[TITLE CARD: You Already Have a Business. You Just Don't Know It Yet.]
+[Lower third: Brian McKinney | 50+TechBridge | learnmoretechnologies.com]
+
+---
+
+[SEGMENT 1 — THE STORY | ~90 seconds]
+
+"Margaret is 61 years old. She spent six years as the full-time caregiver
+for her mother — managing medications, coordinating multiple doctors,
+translating medical language for the family, handling insurance paperwork.
+
+When her mother passed, Margaret came to one of our Lunch and Learn sessions.
+And after the session, she found me and asked that question.
+
+'I've been doing this my whole life — taking care of people, managing
+complicated situations, solving problems nobody else wanted to touch.
+Is there a way to actually get paid for this?'
+
+I looked at her and said: yes. The answer is yes.
+And the reason the answer is yes now, more than ever before in history,
+is AI."
+
+---
+
+[SEGMENT 2 — THE REFRAME | ~60 seconds]
+
+"Here's what most people over 50 don't realize:
+
+You don't need to learn technology to use AI for your business.
+
+You need to know what question to ask.
+
+You have spent fifty-plus years learning to ask the right questions —
+in the operating room, on the construction site, in the classroom,
+in the boardroom, in the kitchen, at the bedside.
+
+That's the skill. AI is just the new tool.
+
+You don't need to understand how it works.
+You need to understand what you know —
+and trust that the world will pay for it.
+
+So let me show you exactly how. Seven steps.
+All free. Starting today."
+
+---
+
+[SEGMENT 3 — STEP 1 | ~45 seconds]
+[GRAPHIC: "Step 1: Name What You Know"]
+
+"Before you open any app, grab a piece of paper.
+Write down five things you've done in your life that other people
+found hard or confusing.
+
+Not things you were paid for.
+Things you just DID — because you knew how.
+Because someone needed it done.
+Because you were the person in the room who understood it.
+
+That list? That's your business.
+Everything else we're going to talk about today
+is just the infrastructure to deliver it."
+
+---
+
+[SEGMENT 4 — STEP 2 | ~60 seconds]
+[GRAPHIC: "Step 2: Build Your Business Plan in 30 Minutes"]
+[SCREEN SHARE or B-ROLL: ChatGPT / Claude interface]
+
+"Open ChatGPT — free at chat.openai.com — or Claude at claude.ai.
+Both are free. Both work on your phone.
+
+Type this exact sentence:
+
+'I want to start a small business helping [what you do].
+My customers are [who needs this].
+Help me build a simple one-page business plan.'
+
+That's it.
+
+In five minutes you will have a business plan
+that would have cost a consultant two weeks and several thousand dollars.
+
+It gives you your service name, your pricing, your target customer,
+your first five marketing ideas.
+
+Print it. Put it on the wall.
+You are now a business owner."
+
+---
+
+[SEGMENT 5 — STEPS 3 & 4 | ~60 seconds]
+[GRAPHIC: "Step 3: Name Your Business | Step 4: Get Online — Free"]
+
+"Same AI tool, next prompt:
+
+'Help me come up with five names for my business
+and write a one-sentence description of what I offer.'
+
+Then ask it to write your professional bio.
+
+For your website — go to Wix.com or Squarespace.com.
+Both have free plans. Both have templates you fill in like a form.
+Ask the AI to write every word.
+
+For Google — go to business.google.com and create a free profile.
+This puts you on Google Maps and Google Search.
+
+Website and Google presence.
+Cost: zero dollars.
+Time: one afternoon."
+
+---
+
+[SEGMENT 6 — STEP 5 | ~45 seconds]
+[GRAPHIC: "Step 5: Find Your First Client"]
+
+"This is the step most people skip, and it's the most important one.
+
+The fastest path to your first paying client is not an ad.
+It's a list of ten people who already know you.
+
+Ask the AI:
+'Help me write a short message to send to friends and family
+introducing my new business. Personal, not salesy.'
+
+Send it to ten people.
+
+One of those ten knows someone who needs exactly what you do.
+
+That's your first client. I promise you."
+
+---
+
+[SEGMENT 7 — STEP 6 | ~45 seconds]
+[GRAPHIC: "Step 6: The Free Business Stack"]
+
+"Once you have clients, here's how you stay organized —
+all free, all on your phone or computer:
+
+Google Calendar — your schedule.
+Gmail — your professional email.
+Google Docs — your proposals, contracts, notes.
+Wave.com — free invoicing and accounting.
+Canva — business cards, flyers, social graphics.
+ChatGPT or Claude — your writer and strategist.
+
+Monthly cost: zero dollars.
+
+That's a complete business infrastructure.
+For free."
+
+---
+
+[SEGMENT 8 — STEP 7 | ~45 seconds]
+[GRAPHIC: "Step 7: The Daily Habit"]
+
+"Every morning, before you start work, open your AI tool and ask one question.
+
+'I have a client meeting today. What should I ask to understand their needs?'
+
+Or: 'Help me write a follow-up email that's professional and not pushy.'
+
+Or: 'How should I price this project? Here's what's involved.'
+
+The AI gives you a starting point. A first draft.
+Something to react to rather than create from scratch.
+
+One conversation. Every morning.
+That's the habit that runs the business."
+
+---
+
+[SEGMENT 9 — MARGARET'S OUTCOME | ~45 seconds]
+
+"Here's what happened with Margaret.
+
+Three months after that coffee conversation,
+she launched Care Navigator Consulting.
+
+She helps families of adults with complex medical needs
+do exactly what she spent six years doing for her mother.
+
+She charges $75 an hour. She has four clients.
+She works twenty hours a week. From home.
+
+She is not a tech person.
+
+She's a person who spent fifty years becoming expert at something
+the world desperately needs —
+and who finally found the tools to turn that expertise into income.
+
+'I did it after 50,' she told me last month.
+'I kept hearing you say that. I decided to believe you.'"
+
+---
+
+[CLOSE | ~45 seconds]
+[Return to Brian on camera]
+
+"Here's what I want you to hear before you close this video.
+
+The business you're looking for is not somewhere else.
+
+It's in the decades behind you.
+In the problems you've already solved.
+In the skills you built without calling them skills.
+
+AI builds the documents.
+Free tools build the systems.
+Your expertise builds the relationships.
+Your relationships build the business.
+
+Open one conversation.
+Type one question.
+Take one step.
+
+I did it after 50. And so did Margaret.
+
+So can you."
+
+---
+
+[CTA CARD]
+
+"Start with our free course at learnmoretechnologies.com.
+No signup fees. No credit card. Just start.
+
+And if you want to talk about what business YOUR expertise could build —
+drop a comment below and tell me what you know how to do.
+I read every one."
+
+---
+
+PRODUCTION NOTES:
+- Record Brian on camera throughout (green screen or clean background)
+- B-roll: ChatGPT/Claude on screen, phone in hand, senior at laptop
+- Graphics: each Step gets a title card (use Canva — navy/gold brand colors)
+- Length target: 8–10 minutes
+- CTA card at end: learnmoretechnologies.com
+- Add to: YouTube, LinkedIn video, Facebook
