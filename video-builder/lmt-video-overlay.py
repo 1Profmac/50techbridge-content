@@ -4,7 +4,7 @@ LMT Video Overlay Builder
 Adds branded text overlays to HeyGen talking-head videos.
 Produces finished YouTube/LinkedIn videos from a simple JSON config.
 
-Requires: FFmpeg installed (with Intel QSV for GPU acceleration)
+Requires: FFmpeg installed (with NVIDIA NVENC for GPU acceleration)
 Brand: Learn More Technologies / 50+TechBridge
 
 Usage:
@@ -18,8 +18,8 @@ import sys
 import os
 import subprocess
 
-# FFmpeg path — update if installed elsewhere
-FFMPEG = "C:/tools/ffmpeg-8.1-essentials_build/bin/ffmpeg.exe"
+# FFmpeg path — BtbN GPL build with NVENC support
+FFMPEG = "C:/Users/USER/AppData/Local/Microsoft/WinGet/Packages/BtbN.FFmpeg.GPL.8.1_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-n8.1-7-ga3475e2554-win64-gpl-8.1/bin/ffmpeg.exe"
 
 # Brand constants
 BRAND = {
@@ -225,7 +225,7 @@ def get_video_duration(input_video):
 
 
 def build_video(config):
-    """Build the video using FFmpeg with Intel QSV (GPU) or libx264 (CPU) fallback.
+    """Build the video using FFmpeg with NVIDIA NVENC (GPU) or libx264 (CPU) fallback.
 
     Supports optional 'clips' array for B-roll video overlays.
     When clips are present, Galaxy/B-roll videos play full-screen behind Brian
@@ -404,16 +404,15 @@ def build_video(config):
 
         filter_complex = ";".join(fc_parts)
 
-        # filter_complex uses software filters (chromakey, overlay, drawtext)
-        # QSV cannot encode software frames — go straight to libx264, skip failed attempt
+        # NVENC GPU encoding — much faster than CPU libx264
         cmd = [
             FFMPEG, "-y",
             *input_args,
             "-filter_complex", filter_complex,
             "-map", map_label,
             "-map", "1:a",
-            "-c:v", "libx264",
-            "-preset", "fast",
+            "-c:v", "h264_nvenc",
+            "-preset", "p4",
             "-b:v", "5M",
             "-c:a", "aac",
             "-b:a", "128k",
@@ -437,15 +436,15 @@ def build_video(config):
                 map_label = "[vout]"
             else:
                 map_label = "[comp]"
-            # filter_complex with software filters — skip QSV, go straight to libx264
+            # NVENC GPU encoding for chromakey composites
             cmd = [
                 FFMPEG, "-y",
                 "-i", input_video,
                 "-filter_complex", fc,
                 "-map", map_label,
                 "-map", "0:a",
-                "-c:v", "libx264",
-                "-preset", "fast",
+                "-c:v", "h264_nvenc",
+                "-preset", "p4",
                 "-b:v", "5M",
                 "-c:a", "aac",
                 "-b:a", "128k",
@@ -456,30 +455,29 @@ def build_video(config):
                 FFMPEG, "-y",
                 "-i", input_video,
                 "-vf", vf,
-                "-c:v", "h264_qsv",
-                "-preset", "fast",
+                "-c:v", "h264_nvenc",
+                "-preset", "p4",
                 "-b:v", "5M",
                 "-c:a", "aac",
                 "-b:a", "128k",
                 output_video,
             ]
 
-    using_qsv = "-c:v" in cmd and "h264_qsv" in cmd
-    print(f"Rendering ({'Intel QSV GPU' if using_qsv else 'CPU libx264'})...")
+    using_nvenc = "h264_nvenc" in cmd
+    print(f"Rendering ({'NVIDIA NVENC GPU' if using_nvenc else 'CPU libx264'})...")
     result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
 
-    if result.returncode != 0:
-        print("QSV unavailable, using libx264 (CPU)...")
-        # Replace codec in command
+    if result.returncode != 0 and using_nvenc:
+        print("NVENC unavailable, falling back to libx264 (CPU)...")
         try:
-            idx = cmd.index("h264_qsv")
+            idx = cmd.index("h264_nvenc")
             cmd[idx] = "libx264"
         except ValueError:
             pass
         try:
-            idx = cmd.index("fast")
+            idx = cmd.index("p4")
             if idx > 0 and cmd[idx - 1] == "-preset":
-                cmd[idx] = "medium"
+                cmd[idx] = "fast"
         except ValueError:
             pass
         result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
@@ -697,13 +695,12 @@ def auto_resize(source_video, output_dir):
         cmd = [
             FFMPEG, "-y", "-i", source_video,
             "-vf", f"crop=ih*9/16:ih:iw/2-ih*9/32:0,scale=1080:1920",
-            "-c:v", "h264_qsv", "-preset", "fast", "-b:v", "5M",
+            "-c:v", "h264_nvenc", "-preset", "fast", "-b:v", "5M",
             "-c:a", "aac", "-b:a", "128k", vert_path
         ]
         result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
         if result.returncode != 0:
-            cmd[cmd.index("h264_qsv")] = "libx264"
-            cmd[cmd.index("fast")] = "medium"
+            cmd[cmd.index("h264_nvenc")] = "libx264"
             subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
         print(f"  Created: VERTICAL 1080x1920 (Shorts, Reels, TikTok)")
 
@@ -712,13 +709,12 @@ def auto_resize(source_video, output_dir):
         cmd = [
             FFMPEG, "-y", "-i", source_video,
             "-vf", "crop=ih:ih:iw/2-ih/2:0,scale=1080:1080",
-            "-c:v", "h264_qsv", "-preset", "fast", "-b:v", "5M",
+            "-c:v", "h264_nvenc", "-preset", "fast", "-b:v", "5M",
             "-c:a", "aac", "-b:a", "128k", sq_path
         ]
         result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
         if result.returncode != 0:
-            cmd[cmd.index("h264_qsv")] = "libx264"
-            cmd[cmd.index("fast")] = "medium"
+            cmd[cmd.index("h264_nvenc")] = "libx264"
             subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
         print(f"  Created: SQUARE 1080x1080 (Instagram Feed, Facebook Feed)")
 
@@ -732,13 +728,12 @@ def auto_resize(source_video, output_dir):
         cmd = [
             FFMPEG, "-y", "-i", source_video,
             "-vf", f"scale=-1:1080,pad=1920:1080:(ow-iw)/2:0:color=0x0E1C2F",
-            "-c:v", "h264_qsv", "-preset", "fast", "-b:v", "5M",
+            "-c:v", "h264_nvenc", "-preset", "fast", "-b:v", "5M",
             "-c:a", "aac", "-b:a", "128k", land_path
         ]
         result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
         if result.returncode != 0:
-            cmd[cmd.index("h264_qsv")] = "libx264"
-            cmd[cmd.index("fast")] = "medium"
+            cmd[cmd.index("h264_nvenc")] = "libx264"
             subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
         print(f"  Created: LANDSCAPE 1920x1080 (YouTube, LinkedIn)")
 
@@ -747,13 +742,12 @@ def auto_resize(source_video, output_dir):
         cmd = [
             FFMPEG, "-y", "-i", source_video,
             "-vf", "crop=iw:iw:0:ih/2-iw/2,scale=1080:1080",
-            "-c:v", "h264_qsv", "-preset", "fast", "-b:v", "5M",
+            "-c:v", "h264_nvenc", "-preset", "fast", "-b:v", "5M",
             "-c:a", "aac", "-b:a", "128k", sq_path
         ]
         result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
         if result.returncode != 0:
-            cmd[cmd.index("h264_qsv")] = "libx264"
-            cmd[cmd.index("fast")] = "medium"
+            cmd[cmd.index("h264_nvenc")] = "libx264"
             subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
         print(f"  Created: SQUARE 1080x1080 (Instagram Feed, Facebook Feed)")
 
