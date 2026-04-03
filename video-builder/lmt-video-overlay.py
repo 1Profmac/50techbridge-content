@@ -404,13 +404,15 @@ def build_video(config):
 
         filter_complex = ";".join(fc_parts)
 
+        # filter_complex uses software filters (chromakey, overlay, drawtext)
+        # QSV cannot encode software frames — go straight to libx264, skip failed attempt
         cmd = [
             FFMPEG, "-y",
             *input_args,
             "-filter_complex", filter_complex,
             "-map", map_label,
             "-map", "1:a",
-            "-c:v", "h264_qsv",
+            "-c:v", "libx264",
             "-preset", "fast",
             "-b:v", "5M",
             "-c:a", "aac",
@@ -435,13 +437,14 @@ def build_video(config):
                 map_label = "[vout]"
             else:
                 map_label = "[comp]"
+            # filter_complex with software filters — skip QSV, go straight to libx264
             cmd = [
                 FFMPEG, "-y",
                 "-i", input_video,
                 "-filter_complex", fc,
                 "-map", map_label,
                 "-map", "0:a",
-                "-c:v", "h264_qsv",
+                "-c:v", "libx264",
                 "-preset", "fast",
                 "-b:v", "5M",
                 "-c:a", "aac",
@@ -461,7 +464,8 @@ def build_video(config):
                 output_video,
             ]
 
-    print("Rendering (Intel QSV GPU)...")
+    using_qsv = "-c:v" in cmd and "h264_qsv" in cmd
+    print(f"Rendering ({'Intel QSV GPU' if using_qsv else 'CPU libx264'})...")
     result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
 
     if result.returncode != 0:
