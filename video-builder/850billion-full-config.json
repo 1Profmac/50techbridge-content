@@ -1,8 +1,8 @@
 {
   "_comment": "YouTube Full Video — $850 Billion | The Cost of Ignoring Experienced Workers",
   "format": "landscape",
-  "input_video": "C:/Users/Jordyn/Desktop/LMT-CONTENT/02-LINKEDIN/articles/850-billion-cost/broll-clips/brian-greenscreen-850billion.mp4",
-  "output_video": "C:/Users/Jordyn/Desktop/LMT-CONTENT/02-LINKEDIN/articles/850-billion-cost/FINISHED-FULL.mp4",
+  "input_video": "C:/Users/USER/Documents/LMT-Video-Assets/850-billion-cost/broll-clips/brian-greenscreen-850billion.mp4",
+  "output_video": "C:/Users/USER/Documents/LMT-Video-Assets/850-billion-cost/FINISHED-FULL.mp4",
   "show_header": false,
   "show_lower_third": false,
   "brian_pip": {
@@ -15,12 +15,7 @@
     "show_end": 675
   },
   "clips": [
-    {"file": "C:/Users/Jordyn/Desktop/LMT-CONTENT/02-LINKEDIN/articles/850-billion-cost/broll-clips/stat-01-850billion.mp4", "start": 0, "end": 15},
-    {"file": "C:/Users/Jordyn/Desktop/LMT-CONTENT/02-LINKEDIN/articles/850-billion-cost/broll-clips/stat-02-disposable-income.mp4", "start": 45, "end": 90},
-    {"file": "C:/Users/Jordyn/Desktop/LMT-CONTENT/02-LINKEDIN/articles/850-billion-cost/broll-clips/stat-03-investment-gap.mp4", "start": 90, "end": 150},
-    {"file": "C:/Users/Jordyn/Desktop/LMT-CONTENT/02-LINKEDIN/articles/850-billion-cost/broll-clips/stat-04-completion-gap.mp4", "start": 150, "end": 240},
-    {"file": "C:/Users/Jordyn/Desktop/LMT-CONTENT/02-LINKEDIN/articles/850-billion-cost/broll-clips/stat-05-our-proof.mp4", "start": 240, "end": 360},
-    {"file": "C:/Users/Jordyn/Desktop/LMT-CONTENT/02-LINKEDIN/articles/850-billion-cost/broll-clips/stat-06-urgency.mp4", "start": 360, "end": 450}
+    {"file": "C:/Users/USER/Documents/LMT-Video-Assets/850-billion-cost/broll-full-canva.mp4", "start": 0, "end": 65}
   ],
   "slides": [
     {
