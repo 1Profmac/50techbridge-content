@@ -34,12 +34,13 @@ branded, platform-ready videos with text overlays, voiceover, and upload package
 
 ## TRIGGER PHRASES
 
+- "New full video — here's my HeyGen recording [path] and my Canva clips [paths]. Use TEMPLATE-FULL-VIDEO."
+- "New Short — here's my HeyGen recording [path]. Use TEMPLATE-SHORT-VIDEO."
+- "Re-render [config name] — nothing has changed."
 - "Make a video for article X"
 - "Build a YouTube Short"
 - "Create a training movie for lesson X"
-- "Generate Galaxy clips for lesson X"
 - "Build a workforce video"
-- "Make a lesson video"
 
 ---
 
@@ -55,15 +56,25 @@ branded, platform-ready videos with text overlays, voiceover, and upload package
 
 ---
 
+## RULE — CHECK GIT FIRST
+
+Before building any new video config from scratch, ALWAYS run:
+`git log --oneline -10` in `50techbridge-content/`
+
+Find the last working config for that format. Copy it. Swap inputs. Never reinvent.
+
+---
+
 ## FILES
 
 | File | What It Does |
 |---|---|
+| `TEMPLATE-FULL-VIDEO.json` | **START HERE for full videos** — proven pattern, fill in REPLACE fields |
+| `TEMPLATE-SHORT-VIDEO.json` | **START HERE for Shorts** — proven pattern, fill in REPLACE fields |
 | `lmt-video-overlay.py` | All video rendering — lessons, LinkedIn, Shorts |
 | `lmt-movie-studio.py` | Training lesson movies (vertical format) |
-| `lesson1-config.json` | Lesson 1 config — tested and approved |
+| `lesson1-config.json` | Lesson 1 config — tested and approved reference |
 | `linkedin-ai-article-config.json` | LinkedIn AI article video — tested and approved |
-| `example-config.json` | Template config (copy for new videos) |
 | `workforce-article-1-config.json` | Workforce Article 1 config |
 | `workforce-short-1-config.json` | Workforce Short 1 config |
 | `galaxy-prompts/GALAXY-PROMPTS-ALL-LESSONS.md` | Canva/Galaxy scene prompts for all 3 lessons |
@@ -88,8 +99,13 @@ branded, platform-ready videos with text overlays, voiceover, and upload package
 ### Key Technical Decisions
 
 - **Brian: GREEN SCREEN export from HeyGen** (white bg causes fringe/opacity issues)
+- **HeyGen layout: ORIGINAL** (not Circle — Circle makes him a small avatar)
 - **Chromakey:** `chromakey=color=0x00FF00:similarity=0.30:blend=0.08`
-- **Brian overlay:** Full 1920x1080, no scaling — positioned correctly in HeyGen export
+- **Brian PIP for full video:** `width:1920, height:1080, margin:0` — full frame, green keyed out, B-roll shows behind
+- **Brian PIP for Short:** Brian IS the main video (no PIP), text slides overlay at y=900
+- **B-roll clips for full video:** Must be clean — NO text, NO headers baked in from Canva
+- **B-roll clips for Short:** Not needed — Brian carries the Short
+- **lesson-bg.png:** Only used for landscape/full video — never for short/vertical format
 - **Brian hidden:** During intro card and end card (configurable via show_start/show_end)
 - **Clips trimmed:** To exact duration, no frozen frames
 - **Chrome:** Solid opaque navy bars (not semi-transparent), black-outlined gold text

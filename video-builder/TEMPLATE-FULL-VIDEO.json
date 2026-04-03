@@ -1,0 +1,87 @@
+{
+  "_comment": "TEMPLATE — FULL VIDEO. Copy this file, rename it for your video, fill in the 4 REPLACE fields.",
+  "_instructions": [
+    "1. Copy this file and rename it: e.g. 850billion-full-config.json",
+    "2. Replace INPUT_VIDEO with your HeyGen green screen .mp4 path",
+    "3. Replace OUTPUT_VIDEO with where you want the finished file",
+    "4. Replace each clip file path with your Canva B-roll clips",
+    "5. Replace slides bullets with your script stat points",
+    "6. Replace YouTube title/description/tags",
+    "7. Run: python lmt-video-overlay.py your-config.json"
+  ],
+  "format": "landscape",
+  "input_video": "REPLACE — path to HeyGen green screen .mp4",
+  "output_video": "REPLACE — path to FINISHED-FULL.mp4",
+  "show_header": false,
+  "show_lower_third": false,
+  "bg_image": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/base/navy-1920x1080.png",
+  "chrome_image": "C:/Users/Jordyn/50techbridge-content/video-builder/layers/chrome/header-footer-1920x1080.png",
+  "brian_pip": {
+    "width": 1920,
+    "height": 1080,
+    "margin": 0,
+    "border": 0,
+    "chromakey": true,
+    "show_start": 8,
+    "show_end": 999
+  },
+  "brian_position": {"x": 0, "y": 0},
+  "clips": [
+    {"file": "REPLACE — path to Canva B-roll clip 1", "start": 10, "end": 33},
+    {"file": "REPLACE — path to Canva B-roll clip 2", "start": 45, "end": 68},
+    {"file": "REPLACE — path to Canva B-roll clip 3", "start": 80, "end": 103},
+    {"file": "REPLACE — path to Canva B-roll clip 4", "start": 115, "end": 138},
+    {"file": "REPLACE — path to Canva B-roll clip 5", "start": 150, "end": 173},
+    {"file": "REPLACE — path to Canva B-roll clip 6", "start": 185, "end": 208}
+  ],
+  "slides": [
+    {
+      "start": 0, "end": 8,
+      "y": 280, "font_size": 52, "color": "#C8942E",
+      "no_bullet": true, "center": true,
+      "bullets": ["REPLACE — Opening title line 1", "REPLACE — line 2"]
+    },
+    {
+      "start": 33, "end": 45,
+      "y": 280, "font_size": 52, "color": "#FFFFFF",
+      "no_bullet": false, "center": true,
+      "bullets": ["REPLACE — stat or point", "REPLACE — line 2", "REPLACE — line 3"]
+    },
+    {
+      "start": 68, "end": 80,
+      "y": 280, "font_size": 52, "color": "#FFFFFF",
+      "no_bullet": false, "center": true,
+      "bullets": ["REPLACE — stat or point", "REPLACE — line 2", "REPLACE — line 3"]
+    },
+    {
+      "start": 103, "end": 115,
+      "y": 280, "font_size": 52, "color": "#FFFFFF",
+      "no_bullet": false, "center": true,
+      "bullets": ["REPLACE — stat or point", "REPLACE — line 2", "REPLACE — line 3"]
+    },
+    {
+      "start": 138, "end": 150,
+      "y": 280, "font_size": 52, "color": "#FFFFFF",
+      "no_bullet": false, "center": true,
+      "bullets": ["REPLACE — stat or point", "REPLACE — line 2", "REPLACE — line 3"]
+    },
+    {
+      "start": 173, "end": 185,
+      "y": 280, "font_size": 52, "color": "#FFFFFF",
+      "no_bullet": false, "center": true,
+      "bullets": ["REPLACE — stat or point", "REPLACE — line 2", "REPLACE — line 3"]
+    },
+    {
+      "start": 208, "end": 220,
+      "y": 280, "font_size": 52, "color": "#C8942E",
+      "no_bullet": true, "center": true,
+      "bullets": ["learnmoretechnologies.com", "/workforce/", "", "Link in description"]
+    }
+  ],
+  "youtube": {
+    "title": "REPLACE — YouTube title",
+    "description": "REPLACE — Full description with stats, CTA, hashtags",
+    "tags": "REPLACE — comma separated tags",
+    "thumbnail_time": 51
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "_comment": "TEMPLATE — YOUTUBE SHORT. Copy this file, rename it for your video, fill in the REPLACE fields.",
+  "_instructions": [
+    "1. Copy this file and rename it: e.g. 850billion-short-config.json",
+    "2. Replace INPUT_VIDEO with your HeyGen vertical green screen .mp4 (recorded in Original layout, not Circle)",
+    "3. Replace OUTPUT_VIDEO with where you want the finished file",
+    "4. Slides show at the bottom of the frame (y=900) timed to your script",
+    "5. Run: python lmt-video-overlay.py your-config.json"
+  ],
+  "format": "short",
+  "input_video": "REPLACE — path to HeyGen SHORT vertical green screen .mp4",
+  "output_video": "REPLACE — path to FINISHED-SHORT.mp4",
+  "show_header": false,
+  "show_lower_third": false,
+  "slides": [
+    {
+      "start": 0, "end": 6,
+      "x": 60, "y": 900, "font_size": 52, "color": "#C8942E",
+      "no_bullet": true,
+      "bullets": ["REPLACE — opening stat", "REPLACE — line 2", "Source: AARP"]
+    },
+    {
+      "start": 6, "end": 14,
+      "x": 60, "y": 900, "font_size": 52, "color": "#FFFFFF",
+      "no_bullet": true,
+      "bullets": ["REPLACE — point 2", "REPLACE — line 2", "REPLACE — line 3"]
+    },
+    {
+      "start": 14, "end": 25,
+      "x": 60, "y": 900, "font_size": 52, "color": "#FFFFFF",
+      "no_bullet": true,
+      "bullets": ["REPLACE — point 3", "REPLACE — line 2", "REPLACE — line 3"]
+    },
+    {
+      "start": 25, "end": 36,
+      "x": 60, "y": 900, "font_size": 52, "color": "#FFFFFF",
+      "no_bullet": true,
+      "bullets": ["REPLACE — point 4", "REPLACE — line 2"]
+    },
+    {
+      "start": 36, "end": 45,
+      "x": 60, "y": 900, "font_size": 52, "color": "#FFFFFF",
+      "no_bullet": true,
+      "bullets": ["REPLACE — point 5", "REPLACE — line 2"]
+    },
+    {
+      "start": 45, "end": 55,
+      "x": 60, "y": 900, "font_size": 52, "color": "#FFFFFF",
+      "no_bullet": true,
+      "bullets": ["REPLACE — closing line 1", "REPLACE — closing line 2"]
+    },
+    {
+      "start": 55, "end": 65,
+      "x": 60, "y": 900, "font_size": 46, "color": "#C8942E",
+      "no_bullet": true,
+      "bullets": ["learnmoretechnologies.com", "/workforce/"]
+    }
+  ],
+  "youtube": {
+    "title": "REPLACE — Short title (scroll-stopping, under 60 chars)",
+    "description": "REPLACE — Description with stats, CTA, hashtags",
+    "tags": "REPLACE — comma separated tags"
+  }
+}

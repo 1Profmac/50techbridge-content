@@ -1,0 +1,60 @@
+{
+  "_comment": "YouTube Short — $850 Billion | The Cost of Ignoring Experienced Workers",
+  "format": "short",
+  "input_video": "C:/Users/Jordyn/Desktop/LMT-CONTENT/02-LINKEDIN/articles/850-billion-cost/broll-clips/brian-greenscreen-SHORT.mp4",
+  "output_video": "C:/Users/Jordyn/Desktop/LMT-CONTENT/02-LINKEDIN/articles/850-billion-cost/FINISHED-SHORT.mp4",
+  "show_header": false,
+  "show_lower_third": false,
+  "clips": [
+    {"file": "C:/Users/Jordyn/Desktop/LMT-CONTENT/02-LINKEDIN/articles/850-billion-cost/broll-clips/stat-01-850billion.mp4", "start": 0, "end": 6}
+  ],
+  "slides": [
+    {
+      "start": 0, "end": 6,
+      "x": 60, "y": 900, "font_size": 52, "color": "#C8942E",
+      "no_bullet": true,
+      "bullets": ["$850 Billion", "Lost every year", "Source: AARP"]
+    },
+    {
+      "start": 6, "end": 14,
+      "x": 60, "y": 900, "font_size": 52, "color": "#FFFFFF",
+      "no_bullet": true,
+      "bullets": ["Adults 50+ control", "70% of U.S.", "disposable income"]
+    },
+    {
+      "start": 14, "end": 25,
+      "x": 60, "y": 900, "font_size": 52, "color": "#FFFFFF",
+      "no_bullet": true,
+      "bullets": ["Only 21% of workers 55+", "get employer training", "vs 35% younger workers"]
+    },
+    {
+      "start": 25, "end": 36,
+      "x": 60, "y": 900, "font_size": 52, "color": "#FFFFFF",
+      "no_bullet": true,
+      "bullets": ["Industry avg: 10-15%", "Our rate: 3X that"]
+    },
+    {
+      "start": 36, "end": 45,
+      "x": 60, "y": 900, "font_size": 52, "color": "#FFFFFF",
+      "no_bullet": true,
+      "bullets": ["74% more confident", "with technology"]
+    },
+    {
+      "start": 45, "end": 55,
+      "x": 60, "y": 900, "font_size": 52, "color": "#FFFFFF",
+      "no_bullet": true,
+      "bullets": ["Not a capability gap.", "An investment gap."]
+    },
+    {
+      "start": 55, "end": 65,
+      "x": 60, "y": 900, "font_size": 46, "color": "#C8942E",
+      "no_bullet": true,
+      "bullets": ["learnmoretechnologies.com", "/workforce/"]
+    }
+  ],
+  "youtube": {
+    "title": "$850 Billion Lost. The Reason Will Make You Angry.",
+    "description": "$850 billion. Every year. Gone.\n\nNot because of bad strategy. Not because of market conditions.\nBecause of one assumption nobody questions:\n'Older workers can't keep up with technology.'\n\nAdults 50+ control 70% of U.S. disposable income.\nOnly 21% receive employer training vs 35% of younger workers.\nOur completion rate with adults 50+: 3X the industry average.\n74% feel more confident with technology after training.\n\nThe technology gap is not a capability gap.\nIt is an investment gap.\n\nYour experienced workers are not the problem. The training is.\n\n👉 learnmoretechnologies.com/workforce/\n\n#Ageism #WorkforceDevelopment #50PlusTechBridge #DigitalSkills #FutureOfWork",
+    "tags": "ageism, age discrimination, workforce development, adults over 50, digital skills, AI training, 50 plus tech, older workers, reskilling, upskilling, workforce strategy, HR leadership, future of work, experienced workers, 50+TechBridge, LearnMoreTechnologies, Brian McKinney, tech skills, investment gap, workplace bias"
+  }
+}

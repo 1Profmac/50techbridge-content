@@ -285,19 +285,21 @@ def build_video(config):
 
         print(f"Brian PIP: {pip_w}x{pip_h} at ({pip_x},{pip_y}) chromakey={pip_chromakey}")
 
-        # Use static background image (lesson-bg.png) as base plate
-        # This has header + lower third baked in — no need to render them
-        bg_image = config.get("bg_image",
-            os.path.join(os.path.dirname(os.path.abspath(__file__)), "lesson-bg.png"))
-
-        if not os.path.exists(bg_image):
-            print(f"WARNING: bg_image not found: {bg_image}, falling back to color")
+        # Use static background image (lesson-bg.png) as base plate — landscape only
+        # For vertical/short format, always use navy color background
+        if fmt in ("short", "vertical", "training"):
             bg_image = None
+        else:
+            bg_image = config.get("bg_image",
+                os.path.join(os.path.dirname(os.path.abspath(__file__)), "lesson-bg.png"))
+            if bg_image and not os.path.exists(bg_image):
+                print(f"WARNING: bg_image not found: {bg_image}, falling back to color")
+                bg_image = None
 
         # Chrome layer (header + footer transparent PNG)
         chrome_image = config.get("chrome_image",
             os.path.join(os.path.dirname(os.path.abspath(__file__)), "layers", "chrome", "header-footer-1920x1080.png"))
-        has_chrome = os.path.exists(chrome_image)
+        has_chrome = os.path.exists(chrome_image) and config.get("show_header", True)
         if has_chrome:
             print(f"Chrome layer: {os.path.basename(chrome_image)}")
 
@@ -372,10 +374,9 @@ def build_video(config):
             )
             prev = out_label
 
-        # Brian overlay — position from config or default to 0:0 (full frame)
-        brian_pos = config.get("brian_position", {"x": 0, "y": 0})
-        brian_x = brian_pos.get("x", 0)
-        brian_y = brian_pos.get("y", 0)
+        # Brian overlay — use calculated pip position
+        brian_x = pip_x
+        brian_y = pip_y
 
         # Scale Brian to fit the output dimensions if needed
         brian_scale = f"scale={pip_w}:{pip_h}," if pip_w != out_w or pip_h != out_h else ""
@@ -418,18 +419,47 @@ def build_video(config):
             output_video,
         ]
     else:
-        # --- SIMPLE MODE: text overlays only (original behavior) ---
-        cmd = [
-            FFMPEG, "-y",
-            "-i", input_video,
-            "-vf", vf,
-            "-c:v", "h264_qsv",
-            "-preset", "fast",
-            "-b:v", "5M",
-            "-c:a", "aac",
-            "-b:a", "128k",
-            output_video,
-        ]
+        # --- SIMPLE MODE: text overlays, with optional chromakey ---
+        fmt = config.get("format", "landscape")
+        out_w, out_h = (1080, 1920) if fmt in ("short", "vertical", "training") else (1920, 1080)
+
+        if config.get("chromakey", False):
+            # Composite Brian over navy background, then apply text slides
+            fc = (
+                f"color=c=0x{BRAND['navy']}:s={out_w}x{out_h}[bg];"
+                f"[0:v]chromakey=color=0x00FF00:similarity=0.30:blend=0.08[keyed];"
+                f"[bg][keyed]overlay=0:0:format=auto[comp]"
+            )
+            if vf:
+                fc += f";[comp]{vf}[vout]"
+                map_label = "[vout]"
+            else:
+                map_label = "[comp]"
+            cmd = [
+                FFMPEG, "-y",
+                "-i", input_video,
+                "-filter_complex", fc,
+                "-map", map_label,
+                "-map", "0:a",
+                "-c:v", "h264_qsv",
+                "-preset", "fast",
+                "-b:v", "5M",
+                "-c:a", "aac",
+                "-b:a", "128k",
+                output_video,
+            ]
+        else:
+            cmd = [
+                FFMPEG, "-y",
+                "-i", input_video,
+                "-vf", vf,
+                "-c:v", "h264_qsv",
+                "-preset", "fast",
+                "-b:v", "5M",
+                "-c:a", "aac",
+                "-b:a", "128k",
+                output_video,
+            ]
 
     print("Rendering (Intel QSV GPU)...")
     result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
