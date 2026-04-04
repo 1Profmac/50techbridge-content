@@ -49,7 +49,7 @@ branded, platform-ready videos with text overlays, voiceover, and upload package
 | Tool | Location | Purpose |
 |---|---|---|
 | Python 3.10+ | System | Runs scripts |
-| FFmpeg + Intel QSV | `C:/tools/ffmpeg-8.1-essentials_build/bin/` | GPU video rendering |
+| FFmpeg + NVIDIA NVENC | System PATH | GPU video rendering |
 | ElevenLabs API | `.env` file (ELEVENLABS_API_KEY) | Brian's voice clone |
 | Galaxy AI | Samsung device or Galaxy app | AI video clip generation |
 | HeyGen | app.heygen.com | Brian talking head recordings |
@@ -98,18 +98,20 @@ Find the last working config for that format. Copy it. Swap inputs. Never reinve
 
 ### Key Technical Decisions
 
-- **Brian: GREEN SCREEN export from HeyGen** (white bg causes fringe/opacity issues)
+- **Brian: NAVY BACKGROUND (#0E1C2F) from HeyGen** (no green screen, no chromakey — proven workflow)
 - **HeyGen layout: ORIGINAL** (not Circle — Circle makes him a small avatar)
-- **Chromakey:** `chromakey=color=0x00FF00:similarity=0.30:blend=0.08`
-- **Brian PIP for full video:** `width:1920, height:1080, margin:0` — full frame, green keyed out, B-roll shows behind
-- **Brian PIP for Short:** Brian IS the main video (no PIP), text slides overlay at y=900
-- **B-roll clips for full video:** Must be clean — NO text, NO headers baked in from Canva
+- **No chromakey** — simple overlay method, text renders directly on Brian + navy bg
+- **Brian PIP for full video:** `width:1920, height:1080, margin:0` — full frame, Brian is the base layer
+- **Brian PIP for Short:** Brian IS the main video (no PIP), text slides overlay at y=200
+- **B-roll clips for full video:** Optional Canva clips overlay on top of Brian at timed intervals
 - **B-roll clips for Short:** Not needed — Brian carries the Short
-- **lesson-bg.png:** Only used for landscape/full video — never for short/vertical format
+- **Text:** Left justified, font_size 84, gold #C8942E, x=80, y=280
+- **Line spacing:** font_size + 16 (100px at size 84) — tight, even, prominent
 - **Brian hidden:** During intro card and end card (configurable via show_start/show_end)
 - **Clips trimmed:** To exact duration, no frozen frames
 - **Chrome:** Solid opaque navy bars (not semi-transparent), black-outlined gold text
 - **Audio:** Brian's HeyGen audio only — clip audio is ignored
+- **GPU:** NVIDIA NVENC (not Intel QSV)
 
 ---
 
@@ -138,12 +140,13 @@ Find the last working config for that format. Copy it. Swap inputs. Never reinve
 ```
 
 ### Slide Rules
-- All text: `#FFFFFF` white (ADA readable)
-- Font size: `46pt` for content
-- Title slide: `48pt`, `no_bullet: true`
-- End card: last 30 seconds, `no_bullet: true`, contact info
+- All text: `#C8942E` gold (prominent, on-brand)
+- Font size: `84pt` for all slides
+- Left justified: `"center": false, "x": 80, "y": 280`
+- Line spacing: `font_size + 16` (100px gap between lines)
+- End card: last 90 seconds, `no_bullet: true`, contact info + CTA
 - No percent symbol — spell out "percent"
-- x: 80, y: 250 for landscape
+- Blank `""` entries in bullets are ignored (not rendered, no spacing impact)
 
 ### Output Package
 ```
@@ -505,8 +508,8 @@ ASSETS/03-video/
 | Short (50 sec) | ~50 seconds | Under 30 seconds |
 | Training (3 min) | ~170 seconds | Under 2 minutes |
 
-All renders use Intel QSV GPU acceleration via FFmpeg.
-Falls back to CPU (libx264) if QSV unavailable — 10-15x slower.
+All renders use NVIDIA NVENC GPU acceleration via FFmpeg.
+Falls back to CPU (libx264) if NVENC unavailable — 10-15x slower.
 
 ---
 

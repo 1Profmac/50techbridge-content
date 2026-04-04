@@ -164,10 +164,12 @@ def build_drawtext_filters(config):
         no_bullet = slide.get("no_bullet", False)
 
         bullets = slide["bullets"]
+        visible_line = 0
         for j, bullet in enumerate(bullets):
             if not bullet:
                 continue
-            line_y = y + (j * (font_size + 35))
+            line_y = y + (visible_line * (font_size + 16))
+            visible_line += 1
 
             prefix = "" if no_bullet else "-  "
             safe_text = (prefix + bullet).replace("%", "%%").replace("'", "\u2019").replace(":", "\\:")
@@ -188,7 +190,7 @@ def build_drawtext_filters(config):
 
         # Source reference
         if "source" in slide:
-            source_y = y + (len(bullets) * (font_size + 35)) + 20
+            source_y = y + (visible_line * (font_size + 16)) + 20
             safe_source = slide["source"].replace("'", "\u2019").replace(":", "\\:").replace("%", "%%")
             filters.append(
                 f"drawtext=fontfile={FONT_BODY}:"
@@ -200,7 +202,7 @@ def build_drawtext_filters(config):
 
         # Badge
         if "badge" in slide:
-            badge_y = y + (len(bullets) * (font_size + 35)) + 20
+            badge_y = y + (visible_line * (font_size + 35)) + 20
             safe_badge = slide["badge"].replace("'", "\u2019").replace(":", "\\:").replace("%", "%%")
             filters.append(
                 f"drawtext=fontfile={FONT_BODY}:"
