@@ -85,8 +85,10 @@ def build_drawtext_filters(config):
         lower_text_y_offset = 52
         content_y = 250
 
-    # Persistent header (if enabled)
-    if config.get("show_header", True):
+    # Persistent header (if enabled) — skip if chrome_image is used (chrome PNG has header baked in)
+    chrome_image_path = config.get("chrome_image", "")
+    has_chrome_image = chrome_image_path and os.path.exists(chrome_image_path)
+    if config.get("show_header", True) and not has_chrome_image:
         # Gold line top
         filters.append(
             f"drawbox=x=iw*0.05:y={line_top_y}:w=iw*0.90:h=4:color=0x{BRAND['gold']}:t=fill:"
@@ -130,8 +132,8 @@ def build_drawtext_filters(config):
             f"enable='between(t,0,{duration})'"
         )
 
-    # Persistent lower third (if enabled)
-    if config.get("show_lower_third", True):
+    # Persistent lower third (if enabled) — skip if chrome_image has it
+    if config.get("show_lower_third", True) and not has_chrome_image:
         filters.append(
             f"drawbox=x=0:y=ih-{lower_bar_h}:w=iw:h={lower_bar_h}:color=0x{BRAND['bg_mid']}@0.9:t=fill:"
             f"enable='between(t,0,{duration})'"
@@ -263,7 +265,6 @@ def build_video(config):
 
     if clips:
         # --- FILTER_COMPLEX MODE ---
-        # Navy background base + Galaxy clips full screen + Brian PIP lower-right + text
         print(f"B-roll clips: {len(clips)}")
         for c in clips:
             print(f"  {os.path.basename(c['file'])} ({c['start']}s - {c['end']}s)")
@@ -275,127 +276,174 @@ def build_video(config):
         else:
             out_w, out_h = 1920, 1080
 
-        # Brian PIP size and position (lower-right corner)
+        # Brian PIP config
         pip = config.get("brian_pip", {})
         pip_w = pip.get("width", 250)
-        pip_h = pip.get("height", int(pip_w * 9 / 16))  # default 16:9 landscape ratio
+        pip_h = pip.get("height", int(pip_w * 9 / 16))
         pip_margin = pip.get("margin", 20)
-        pip_x = out_w - pip_w - pip_margin
-        pip_y = out_h - pip_h - pip_margin - 55  # above lower third bar
         pip_border = pip.get("border", 3)
-        pip_chromakey = pip.get("chromakey", True)  # remove dark bg by default
-
-        print(f"Brian PIP: {pip_w}x{pip_h} at ({pip_x},{pip_y}) chromakey={pip_chromakey}")
-
-        # Use static background image (lesson-bg.png) as base plate — landscape only
-        # For vertical/short format, always use navy color background
-        if fmt in ("short", "vertical", "training"):
-            bg_image = None
-        else:
-            bg_image = config.get("bg_image",
-                os.path.join(os.path.dirname(os.path.abspath(__file__)), "lesson-bg.png"))
-            if bg_image and not os.path.exists(bg_image):
-                print(f"WARNING: bg_image not found: {bg_image}, falling back to color")
-                bg_image = None
-
-        # Chrome layer (header + footer transparent PNG)
-        chrome_image = config.get("chrome_image",
-            os.path.join(os.path.dirname(os.path.abspath(__file__)), "layers", "chrome", "header-footer-1920x1080.png"))
-        has_chrome = os.path.exists(chrome_image) and config.get("show_header", True)
-        if has_chrome:
-            print(f"Chrome layer: {os.path.basename(chrome_image)}")
-
-        # Build input args:
-        # [0] = static background image (looped)
-        # [1] = brian talking head video (audio + video for PIP)
-        # [2] = chrome layer (if exists)
-        # [3..N] = galaxy clips
-        input_args = []
-        if bg_image:
-            input_args.extend(["-loop", "1", "-i", bg_image])
-        else:
-            input_args.extend(["-f", "lavfi", "-i",
-                f"color=c=0x{BRAND['navy']}:s={out_w}x{out_h}:d={duration}"])
-        input_args.extend(["-i", input_video])
-        chrome_idx = None
-        if has_chrome:
-            input_args.extend(["-loop", "1", "-i", chrome_image])
-            chrome_idx = 2
-            clip_offset = 3
-        else:
-            clip_offset = 2
-        for clip in clips:
-            input_args.extend(["-i", clip["file"]])
-
-        # Build filter_complex chain
-        fc_parts = []
-
-        # Brian: chromakey white background, overlay at FULL SIZE (no scaling)
-        # Brian's video is already 1920x1080 with him positioned correctly
-        chromakey_filter = ""
-        if pip_chromakey:
-            # Green screen chromakey — clean keying, no fringe
-            chromakey_filter = (
-                "chromakey=color=0x00FF00:similarity=0.30:blend=0.08,"
-            )
-
+        pip_chromakey = pip.get("chromakey", True)
         pip_show_start = pip.get("show_start", 8)
         pip_show_end = pip.get("show_end", duration - 8)
 
-        # Scale Brian if pip dimensions differ from source
-        brian_scale_filter = ""
-        if pip_w != out_w or pip_h != out_h:
-            brian_scale_filter = f"scale={pip_w}:{pip_h},"
+        # Determine mode: Brian-as-base (navy bg, no chromakey) or PIP (green screen)
+        brian_is_base = (pip_w == out_w and pip_h == out_h and not pip_chromakey)
 
-        fc_parts.append(
-            f"[1:v]{chromakey_filter}{brian_scale_filter}format=rgba[brian_layer]"
-        )
+        if brian_is_base:
+            # --- BRIAN-AS-BASE MODE ---
+            # Brian's video IS the base layer. Clips overlay full screen at timed intervals.
+            # Layer order: Brian (base) -> clips on top (timed) -> text on top
+            print(f"Mode: Brian-as-base (clips overlay on Brian)")
 
-        # Scale each Galaxy clip to full screen, trim to exact duration, delay with tpad
-        for i, clip in enumerate(clips):
-            input_idx = i + clip_offset
-            start = clip["start"]
-            clip_dur = clip["end"] - clip["start"]
+            # Chrome layer
+            chrome_image = config.get("chrome_image", "")
+            has_chrome = chrome_image and os.path.exists(chrome_image) and config.get("show_header", False)
+            if has_chrome:
+                print(f"Chrome layer: {os.path.basename(chrome_image)}")
+
+            # Input args: [0] = Brian video, [1] = chrome (optional), [2..N] = clips
+            input_args = ["-i", input_video]
+            chrome_idx = None
+            if has_chrome:
+                input_args.extend(["-loop", "1", "-i", chrome_image])
+                chrome_idx = 1
+                clip_offset = 2
+            else:
+                clip_offset = 1
+            for clip in clips:
+                input_args.extend(["-i", clip["file"]])
+
+            # Build filter_complex
+            fc_parts = []
+
+            # Scale and time each clip for full-screen overlay on Brian
+            for i, clip in enumerate(clips):
+                input_idx = i + clip_offset
+                start = clip["start"]
+                clip_dur = clip["end"] - clip["start"]
+                fc_parts.append(
+                    f"[{input_idx}:v]scale={out_w}:{out_h}:force_original_aspect_ratio=increase,"
+                    f"crop={out_w}:{out_h},"
+                    f"trim=start=0:end={clip_dur},setpts=PTS-STARTPTS,"
+                    f"tpad=start_duration={start}:start_mode=add:color=black@0"
+                    f"[clip{i}]"
+                )
+
+            # Layer stack: Brian -> clips on top (timed)
+            prev = "0:v"
+            for i, clip in enumerate(clips):
+                out_label = f"v{i}"
+                fc_parts.append(
+                    f"[{prev}][clip{i}]overlay=0:0:"
+                    f"eof_action=pass:format=auto[{out_label}]"
+                )
+                prev = out_label
+
+            # Chrome on top if needed
+            if has_chrome:
+                fc_parts.append(
+                    f"[{prev}][{chrome_idx}:v]overlay=0:0:eof_action=pass:format=auto[vchrome]"
+                )
+                prev = "vchrome"
+
+        else:
+            # --- PIP MODE (original lesson pipeline) ---
+            # Green screen Brian as PIP over background + clips
+            print(f"Mode: PIP (green screen Brian over clips)")
+
+            pip_x = out_w - pip_w - pip_margin
+            pip_y = out_h - pip_h - pip_margin - 55
+            print(f"Brian PIP: {pip_w}x{pip_h} at ({pip_x},{pip_y}) chromakey={pip_chromakey}")
+
+            # Background image
+            if fmt in ("short", "vertical", "training"):
+                bg_image = None
+            else:
+                bg_image = config.get("bg_image",
+                    os.path.join(os.path.dirname(os.path.abspath(__file__)), "lesson-bg.png"))
+                if bg_image and not os.path.exists(bg_image):
+                    print(f"WARNING: bg_image not found: {bg_image}, falling back to color")
+                    bg_image = None
+
+            # Chrome layer
+            chrome_image = config.get("chrome_image",
+                os.path.join(os.path.dirname(os.path.abspath(__file__)), "layers", "chrome", "header-footer-1920x1080.png"))
+            has_chrome = os.path.exists(chrome_image) and config.get("show_header", True)
+            if has_chrome:
+                print(f"Chrome layer: {os.path.basename(chrome_image)}")
+
+            # Input args: [0] = bg, [1] = Brian, [2] = chrome (optional), [3..N] = clips
+            input_args = []
+            if bg_image:
+                input_args.extend(["-loop", "1", "-i", bg_image])
+            else:
+                input_args.extend(["-f", "lavfi", "-i",
+                    f"color=c=0x{BRAND['navy']}:s={out_w}x{out_h}:d={duration}"])
+            input_args.extend(["-i", input_video])
+            chrome_idx = None
+            if has_chrome:
+                input_args.extend(["-loop", "1", "-i", chrome_image])
+                chrome_idx = 2
+                clip_offset = 3
+            else:
+                clip_offset = 2
+            for clip in clips:
+                input_args.extend(["-i", clip["file"]])
+
+            # Build filter_complex
+            fc_parts = []
+
+            # Brian chromakey + scale
+            chromakey_filter = ""
+            if pip_chromakey:
+                chromakey_filter = "chromakey=color=0x00FF00:similarity=0.30:blend=0.08,"
+            brian_scale_filter = ""
+            if pip_w != out_w or pip_h != out_h:
+                brian_scale_filter = f"scale={pip_w}:{pip_h},"
             fc_parts.append(
-                f"[{input_idx}:v]scale={out_w}:{out_h}:force_original_aspect_ratio=increase,"
-                f"crop={out_w}:{out_h},"
-                f"trim=start=0:end={clip_dur},setpts=PTS-STARTPTS,"
-                f"tpad=start_duration={start}:start_mode=add:color=black@0"
-                f"[clip{i}]"
+                f"[1:v]{chromakey_filter}{brian_scale_filter}format=rgba[brian_layer]"
             )
 
-        # Layer stack: background -> clips -> brian (full size) -> chrome -> text
-        prev = "0:v"
+            # Scale and time clips
+            for i, clip in enumerate(clips):
+                input_idx = i + clip_offset
+                start = clip["start"]
+                clip_dur = clip["end"] - clip["start"]
+                fc_parts.append(
+                    f"[{input_idx}:v]scale={out_w}:{out_h}:force_original_aspect_ratio=increase,"
+                    f"crop={out_w}:{out_h},"
+                    f"trim=start=0:end={clip_dur},setpts=PTS-STARTPTS,"
+                    f"tpad=start_duration={start}:start_mode=add:color=black@0"
+                    f"[clip{i}]"
+                )
 
-        # Overlay Galaxy clips on background (tpad handles timing)
-        for i, clip in enumerate(clips):
-            out_label = f"v{i}"
+            # Layer stack: bg -> clips -> Brian PIP -> chrome
+            prev = "0:v"
+            for i, clip in enumerate(clips):
+                out_label = f"v{i}"
+                fc_parts.append(
+                    f"[{prev}][clip{i}]overlay=0:0:"
+                    f"eof_action=pass:format=auto[{out_label}]"
+                )
+                prev = out_label
+
+            # Brian PIP overlay
+            brian_pos = config.get("brian_position", {"x": pip_x, "y": pip_y})
+            brian_x = brian_pos.get("x", pip_x)
+            brian_y = brian_pos.get("y", pip_y)
             fc_parts.append(
-                f"[{prev}][clip{i}]overlay=0:0:"
-                f"eof_action=pass:format=auto[{out_label}]"
+                f"[{prev}][brian_layer]overlay={brian_x}:{brian_y}:"
+                f"eof_action=pass:format=auto:"
+                f"enable='between(t,{pip_show_start},{pip_show_end})'[vpip]"
             )
-            prev = out_label
+            prev = "vpip"
 
-        # Brian overlay — use calculated pip position
-        brian_x = pip_x
-        brian_y = pip_y
-
-        # Scale Brian to fit the output dimensions if needed
-        brian_scale = f"scale={pip_w}:{pip_h}," if pip_w != out_w or pip_h != out_h else ""
-
-        fc_parts.append(
-            f"[{prev}][brian_layer]overlay={brian_x}:{brian_y}:"
-            f"eof_action=pass:format=auto:"
-            f"enable='between(t,{pip_show_start},{pip_show_end})'[vpip]"
-        )
-        prev = "vpip"
-
-        # Chrome layer on top (header + footer)
-        if has_chrome:
-            fc_parts.append(
-                f"[{prev}][{chrome_idx}:v]overlay=0:0:eof_action=pass:format=auto[vchrome]"
-            )
-            prev = "vchrome"
+            # Chrome on top
+            if has_chrome:
+                fc_parts.append(
+                    f"[{prev}][{chrome_idx}:v]overlay=0:0:eof_action=pass:format=auto[vchrome]"
+                )
+                prev = "vchrome"
 
         # Apply drawtext filters on top of everything (text slides)
         if vf:
@@ -406,13 +454,16 @@ def build_video(config):
 
         filter_complex = ";".join(fc_parts)
 
+        # Audio source: Brian is input 0 in base mode, input 1 in PIP mode
+        audio_map = "0:a" if brian_is_base else "1:a"
+
         # NVENC GPU encoding — much faster than CPU libx264
         cmd = [
             FFMPEG, "-y",
             *input_args,
             "-filter_complex", filter_complex,
             "-map", map_label,
-            "-map", "1:a",
+            "-map", audio_map,
             "-c:v", "h264_nvenc",
             "-preset", "p4",
             "-b:v", "5M",
