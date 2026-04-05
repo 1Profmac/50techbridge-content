@@ -68,24 +68,53 @@ Find the last approved config. Copy it. Swap inputs. Never reinvent.
 ### Step 2: Confirm Standard Render Specs
 Every config MUST use these values unless Brian explicitly overrides:
 
+**Brian Talking Head:**
 | Setting | Standard Value |
 |---------|---------------|
-| Text color | `#FFFFFF` (white) — NEVER gold on video |
-| Font size (content) | `70pt` |
-| Font size (title/end card) | `84pt` |
-| Center text | `true` |
-| y position (content) | `280` |
-| y position (title/end) | `300` |
+| HeyGen background | **FULL GREEN SCREEN** — never navy, never white, never partial |
 | Brian PIP width | `1920` |
 | Brian PIP height | `1080` |
 | Brian PIP position | `x: 0, y: 0` (full frame) |
 | Brian PIP margin | `0` |
 | Brian PIP border | `0` |
-| Show header | `false` |
-| Show lower third | `false` |
+| Chromakey | `true` (green 0x00FF00) |
+| Brian show_start | `0` (always visible) |
+| Brian show_end | Full duration (always visible) |
+
+**Text Overlays:**
+| Setting | Standard Value |
+|---------|---------------|
+| Text color | `#FFFFFF` (white) — NEVER gold on video |
+| Font size (content) | `70pt` |
+| Font size (title/end card) | `84pt` |
+| Justify | Left, `x: 80` |
+| Center | `false` |
+| y position (content) | `280` |
+| y position (title/end) | `300` |
 | Line spacing | `font_size + 16` |
 | no_bullet | `true` |
+
+**Layers and Chrome:**
+| Setting | Standard Value |
+|---------|---------------|
+| bg_image | `layers/base/navy-1920x1080.png` |
+| chrome_image | `layers/chrome/header-footer-1920x1080.png` |
+| Show header | `true` (chrome PNG handles it — drawtext header auto-skips) |
+| Show lower third | `true` (chrome PNG handles it) |
+
+**B-Roll Clips:**
+| Setting | Standard Value |
+|---------|---------------|
+| Clip source | `broll-clips/` only — NEVER use `stat-clips/` (text baked in) |
+| Clip position | Full screen, BEHIND Brian (Brian is keyed on top) |
+| Clip timing | Between text slides, no overlap |
+| Brian visibility | ALWAYS visible — clips play behind him, never replace him |
+
+**Rendering:**
+| Setting | Standard Value |
+|---------|---------------|
 | GPU | NVIDIA NVENC |
+| Pipeline | PIP mode (green screen Brian over navy bg + clips) |
 
 ### Step 3: Confirm with Brian
 Show the config summary and get approval BEFORE running the render.
@@ -126,22 +155,23 @@ Brian had to correct render settings multiple times because specs drifted from t
 | Pexels API | Free | Good — real footage | Workforce/office scenes when Canva quality isn't enough |
 | Galaxy AI (Sora 2 Pro) | $20/batch | Excellent | Only when budget allows, best quality |
 
-### Key Technical Decisions
+### Key Technical Decisions (Proven — Do Not Change)
 
-- **Brian: NAVY BACKGROUND (#0E1C2F) from HeyGen** (no green screen, no chromakey — proven workflow)
+- **Brian: FULL GREEN SCREEN from HeyGen** — no navy, no white, no partial green. Full green keys cleanly.
 - **HeyGen layout: ORIGINAL** (not Circle — Circle makes him a small avatar)
-- **No chromakey** — simple overlay method, text renders directly on Brian + navy bg
-- **Brian PIP for full video:** `width:1920, height:1080, margin:0` — full frame, Brian is the base layer
+- **HeyGen content: NO titles, NO text baked in** — all branding comes from chrome PNG + text overlays
+- **Chromakey:** `chromakey=color=0x00FF00:similarity=0.30:blend=0.08` — green screen removal
+- **Brian PIP for full video:** `width:1920, height:1080, margin:0` — full frame, keyed over clips + navy bg
+- **Brian ALWAYS visible** — show_start=0, show_end=full duration. Never hidden.
+- **Clips play BEHIND Brian** — layer order: navy bg → clips (timed) → Brian (keyed) → chrome → text
+- **B-roll clips only** — NEVER use stat-clips (they have text baked in that conflicts with our overlays)
 - **Brian PIP for Short:** Brian IS the main video (no PIP), text slides overlay at y=200
-- **B-roll clips for full video:** Optional Canva clips overlay on top of Brian at timed intervals
-- **B-roll clips for Short:** Not needed — Brian carries the Short
-- **Text:** Centered, font_size 70 (content) / 84 (titles), white #FFFFFF, y=280 (content) / y=300 (titles)
-- **Line spacing:** font_size + 16 — tight, even, prominent
-- **Brian hidden:** During intro card and end card (configurable via show_start/show_end)
+- **Text:** Left justified x=80, font_size 70 (content) / 84 (titles), white #FFFFFF, y=280 / y=300
+- **Line spacing:** font_size + 16
+- **Chrome PNG:** `layers/chrome/header-footer-1920x1080.png` — contains header + footer. When chrome is used, drawtext header/footer auto-skips (no double header).
 - **Clips trimmed:** To exact duration, no frozen frames
-- **Chrome:** Solid opaque navy bars (not semi-transparent), black-outlined gold text
 - **Audio:** Brian's HeyGen audio only — clip audio is ignored
-- **GPU:** NVIDIA NVENC (not Intel QSV)
+- **GPU:** NVIDIA NVENC
 
 ---
 
@@ -172,11 +202,15 @@ Brian had to correct render settings multiple times because specs drifted from t
 ### Slide Rules
 - All text: `#FFFFFF` white — NEVER gold over video (unreadable)
 - Font size: `70pt` for content, `84pt` for title and end card
-- Centered: `"center": true, "y": 280` (content) / `"y": 300` (title/end)
+- Left justified: `"center": false, "x": 80`
+- y position: `280` (content) / `300` (title/end)
 - Line spacing: `font_size + 16`
-- End card: last 30 seconds, `no_bullet: true`, contact info + CTA
+- Slide timing: NEVER overlap — each slide must end before the next begins
+- Slide timing: NEVER overlap with clip timing — slides show between or during clips, not conflicting
+- End card: last 20 seconds, `no_bullet: true`, contact info + CTA
 - No percent symbol — spell out "percent"
 - Blank `""` entries in bullets are ignored (not rendered, no spacing impact)
+- NEVER use stat-clips — they have text baked in that conflicts with overlay text
 
 ### Output Package
 ```

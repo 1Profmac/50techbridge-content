@@ -22,13 +22,11 @@
     "y": 0
   },
   "clips": [
-    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/stat-clips/stat-01-850billion.mp4", "start": 0, "end": 20},
-    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-01-woman-tablet.mp4", "start": 35, "end": 58},
-    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-02-workforce-training.mp4", "start": 75, "end": 98},
-    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/stat-clips/stat-03-investment-gap.mp4", "start": 120, "end": 150},
-    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-03-grant-manager-data.mp4", "start": 165, "end": 188},
-    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-05-exec-virtual-meeting.mp4", "start": 210, "end": 233},
-    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-04-workforce-team.mp4", "start": 240, "end": 255}
+    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-01-woman-tablet.mp4", "start": 10, "end": 33},
+    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-02-workforce-training.mp4", "start": 60, "end": 83},
+    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-03-grant-manager-data.mp4", "start": 120, "end": 143},
+    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-04-workforce-team.mp4", "start": 170, "end": 193},
+    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-05-exec-virtual-meeting.mp4", "start": 215, "end": 238}
   ],
   "slides": [
     {
