@@ -56,12 +56,42 @@ branded, platform-ready videos with text overlays, voiceover, and upload package
 
 ---
 
-## RULE — CHECK GIT FIRST
+## RULE — MANDATORY PRE-RENDER CHECKLIST (NEVER SKIP)
 
-Before building any new video config from scratch, ALWAYS run:
-`git log --oneline -10` in `50techbridge-content/`
+**This checklist runs EVERY TIME a render is requested. No exceptions.**
+**Do NOT generate a config or run a render until every item is confirmed.**
 
-Find the last working config for that format. Copy it. Swap inputs. Never reinvent.
+### Step 1: Check Git
+Run `git log --oneline -10` in `50techbridge-content/`
+Find the last approved config. Copy it. Swap inputs. Never reinvent.
+
+### Step 2: Confirm Standard Render Specs
+Every config MUST use these values unless Brian explicitly overrides:
+
+| Setting | Standard Value |
+|---------|---------------|
+| Text color | `#FFFFFF` (white) — NEVER gold on video |
+| Font size (content) | `70pt` |
+| Font size (title/end card) | `84pt` |
+| Center text | `true` |
+| y position (content) | `280` |
+| y position (title/end) | `300` |
+| Brian PIP width | `1920` |
+| Brian PIP height | `1080` |
+| Brian PIP position | `x: 0, y: 0` (full frame) |
+| Brian PIP margin | `0` |
+| Brian PIP border | `0` |
+| Show header | `false` |
+| Show lower third | `false` |
+| Line spacing | `font_size + 16` |
+| no_bullet | `true` |
+| GPU | NVIDIA NVENC |
+
+### Step 3: Confirm with Brian
+Show the config summary and get approval BEFORE running the render.
+
+### Why This Exists
+Brian had to correct render settings multiple times because specs drifted from the approved lesson configs. This checklist prevents that. These are the proven, approved values from commit `9b0130a` (lesson configs) updated with Brian's font size preference (70pt).
 
 ---
 
@@ -105,8 +135,8 @@ Find the last working config for that format. Copy it. Swap inputs. Never reinve
 - **Brian PIP for Short:** Brian IS the main video (no PIP), text slides overlay at y=200
 - **B-roll clips for full video:** Optional Canva clips overlay on top of Brian at timed intervals
 - **B-roll clips for Short:** Not needed — Brian carries the Short
-- **Text:** Left justified, font_size 84, gold #C8942E, x=80, y=280
-- **Line spacing:** font_size + 16 (100px at size 84) — tight, even, prominent
+- **Text:** Centered, font_size 70 (content) / 84 (titles), white #FFFFFF, y=280 (content) / y=300 (titles)
+- **Line spacing:** font_size + 16 — tight, even, prominent
 - **Brian hidden:** During intro card and end card (configurable via show_start/show_end)
 - **Clips trimmed:** To exact duration, no frozen frames
 - **Chrome:** Solid opaque navy bars (not semi-transparent), black-outlined gold text
@@ -140,11 +170,11 @@ Find the last working config for that format. Copy it. Swap inputs. Never reinve
 ```
 
 ### Slide Rules
-- All text: `#C8942E` gold (prominent, on-brand)
-- Font size: `84pt` for all slides
-- Left justified: `"center": false, "x": 80, "y": 280`
-- Line spacing: `font_size + 16` (100px gap between lines)
-- End card: last 90 seconds, `no_bullet: true`, contact info + CTA
+- All text: `#FFFFFF` white — NEVER gold over video (unreadable)
+- Font size: `70pt` for content, `84pt` for title and end card
+- Centered: `"center": true, "y": 280` (content) / `"y": 300` (title/end)
+- Line spacing: `font_size + 16`
+- End card: last 30 seconds, `no_bullet: true`, contact info + CTA
 - No percent symbol — spell out "percent"
 - Blank `""` entries in bullets are ignored (not rendered, no spacing impact)
 

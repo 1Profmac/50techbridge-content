@@ -1,0 +1,92 @@
+{
+  "_comment": "$850 Billion Series — Part 1: The $850 Billion Problem Nobody Sees",
+  "_method": "Brian full frame on navy + b-roll clips + white text overlays. Specs from approved lesson config (9b0130a).",
+  "format": "landscape",
+  "input_video": "C:/Users/USER/Desktop/LMT/The $850 Billion Cost of Ignoring Experienced Workers 0E1C2F_1080p.mp4",
+  "output_video": "C:/Users/USER/Desktop/LMT/850-Billion-Series/PART-1-FINISHED.mp4",
+  "show_header": false,
+  "show_lower_third": false,
+  "brian_pip": {
+    "width": 1920,
+    "height": 1080,
+    "margin": 0,
+    "border": 0,
+    "chromakey": false,
+    "show_start": 0,
+    "show_end": 296
+  },
+  "brian_position": {
+    "x": 0,
+    "y": 0
+  },
+  "clips": [
+    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/stat-clips/stat-01-850billion.mp4", "start": 0, "end": 20},
+    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-01-woman-tablet.mp4", "start": 35, "end": 58},
+    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-02-workforce-training.mp4", "start": 75, "end": 98},
+    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/stat-clips/stat-03-investment-gap.mp4", "start": 120, "end": 150},
+    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-03-grant-manager-data.mp4", "start": 165, "end": 188},
+    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-05-exec-virtual-meeting.mp4", "start": 210, "end": 233},
+    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-04-workforce-team.mp4", "start": 255, "end": 278}
+  ],
+  "slides": [
+    {
+      "start": 0, "end": 20,
+      "y": 300, "font_size": 84, "color": "#FFFFFF",
+      "no_bullet": true, "center": true, "fade": 0.8,
+      "bullets": ["$850,000,000,000", "Lost every year"]
+    },
+    {
+      "start": 20, "end": 50,
+      "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": true,
+      "bullets": ["Not bad strategy.", "Not market conditions.", "A bias nobody sees."]
+    },
+    {
+      "start": 60, "end": 90,
+      "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": true,
+      "bullets": ["A folding table.", "A public library.", "A belief that 50+ deserves better."]
+    },
+    {
+      "start": 100, "end": 130,
+      "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": true,
+      "bullets": ["Surpasses GDP of 170+ countries", "Rivals the U.S. Defense budget"]
+    },
+    {
+      "start": 135, "end": 165,
+      "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": true,
+      "bullets": ["EEOC v. iTutorGroup", "$365,000 settlement", "AI rejected every applicant over 55"]
+    },
+    {
+      "start": 170, "end": 200,
+      "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": true,
+      "bullets": ["Workers 55+ receive training", "at HALF the rate of workers under 35"]
+    },
+    {
+      "start": 205, "end": 235,
+      "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": true,
+      "bullets": ["Only 18 percent of digital", "transformation plans", "consider workforce age"]
+    },
+    {
+      "start": 240, "end": 275,
+      "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": true,
+      "bullets": ["Cisco: 74 percent completion (50+)", "vs 68 percent (18-25)", "It's not capability. It's investment."]
+    },
+    {
+      "start": 278, "end": 296,
+      "y": 300, "font_size": 84, "color": "#FFFFFF",
+      "no_bullet": true, "center": true, "fade": 1.0,
+      "bullets": ["Part 1 of 4", "learnmoretechnologies.com/workforce", "Watch Part 2"]
+    }
+  ],
+  "youtube": {
+    "title": "The $850 Billion Problem Nobody Sees | Part 1 of 4",
+    "description": "Did you know U.S. businesses lose $850 billion every year by sidelining experienced workers over 50?\n\nThis is Part 1 of a 4-part series on the real cost of age discrimination in the workforce.\n\nAARP estimates $850 billion in lost GDP annually from age discrimination. An AI hiring system paid $365,000 after rejecting every applicant over 55. Workers 55+ get training at half the rate of workers under 35. Yet Cisco found learners over 50 complete IT courses at 74% — higher than 18-25 year olds.\n\nIt's not capability. It's investment.\n\nWatch the full series:\nPart 1: The $850 Billion Problem Nobody Sees\nPart 2: The Real Cost of Ignoring Your Best People\nPart 3: What Winning Organizations Do Differently\nPart 4: The Decision on Your Desk Right Now\n\nTry our free Lesson 1: learnmoretechnologies.com/join-now\nSchedule a consult: calendly.com/brianmckinney/new-meeting\n\nBrian McKinney | Founder, Learn More Technologies | MBE Certified\n\n#WorkforceDevelopment #Ageism #50PlusTechBridge #DigitalSkills #FutureOfWork #HRLeadership",
+    "tags": "ageism, age discrimination, workforce development, adults over 50, digital skills, AI training, 50 plus tech, older workers, reskilling, upskilling, workforce strategy, HR leadership, future of work, experienced workers, 50+TechBridge, LearnMoreTechnologies, Brian McKinney, AARP, investment gap, workplace bias"
+  }
+}
