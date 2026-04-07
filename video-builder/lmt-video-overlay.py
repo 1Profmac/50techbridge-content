@@ -549,6 +549,11 @@ def generate_youtube_package(config, video_path):
     """Generate YouTube upload package: thumbnail, title, description, tags."""
     output_dir = os.path.dirname(video_path)
     youtube_dir = os.path.join(output_dir, "YOUTUBE")
+    # If video name starts with PART-N, drop outputs into YOUTUBE/PART-N/ subfolder
+    import re as _re
+    _part_match = _re.match(r"(PART-\d+)", os.path.basename(video_path), _re.IGNORECASE)
+    if _part_match:
+        youtube_dir = os.path.join(youtube_dir, _part_match.group(1).upper())
     os.makedirs(youtube_dir, exist_ok=True)
 
     video_name = os.path.splitext(os.path.basename(video_path))[0]
