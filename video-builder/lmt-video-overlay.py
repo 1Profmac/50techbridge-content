@@ -554,11 +554,19 @@ def generate_youtube_package(config, video_path):
     video_name = os.path.splitext(os.path.basename(video_path))[0]
     yt = config.get("youtube", {})
 
-    # Move video to YOUTUBE folder
+    # Copy video to YOUTUBE folder (copy+delete avoids Windows file lock from shutil.move)
     yt_video = os.path.join(youtube_dir, os.path.basename(video_path))
     if video_path != yt_video:
         import shutil
-        shutil.move(video_path, yt_video)
+        import time as _time
+        shutil.copy2(video_path, yt_video)
+        # Try to remove original — retry once if file still locked
+        for attempt in range(3):
+            try:
+                os.remove(video_path)
+                break
+            except PermissionError:
+                _time.sleep(1)
         print(f"Video moved to: {yt_video}")
 
     # Extract thumbnail from the thumbnail_time or default to 51s

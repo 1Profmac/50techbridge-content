@@ -22,11 +22,11 @@
     "y": 0
   },
   "clips": [
-    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-01-woman-tablet.mp4", "start": 10, "end": 33},
-    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-02-workforce-training.mp4", "start": 60, "end": 83},
-    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-03-grant-manager-data.mp4", "start": 120, "end": 143},
-    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-04-workforce-team.mp4", "start": 170, "end": 193},
-    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-05-exec-virtual-meeting.mp4", "start": 215, "end": 238}
+    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-01-woman-tablet.mp4", "start": 22, "end": 45},
+    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-02-workforce-training.mp4", "start": 76, "end": 99},
+    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-03-grant-manager-data.mp4", "start": 130, "end": 150},
+    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-04-workforce-team.mp4", "start": 175, "end": 195},
+    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-05-exec-virtual-meeting.mp4", "start": 220, "end": 240}
   ],
   "slides": [
     {
@@ -36,40 +36,34 @@
       "bullets": ["$850,000,000,000", "Lost every year"]
     },
     {
-      "start": 22, "end": 34,
+      "start": 47, "end": 74,
       "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
       "no_bullet": true, "center": false,
       "bullets": ["Not bad strategy.", "Not market conditions.", "A bias nobody sees."]
     },
     {
-      "start": 60, "end": 74,
+      "start": 101, "end": 128,
       "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
       "no_bullet": true, "center": false,
       "bullets": ["A folding table.", "A public library.", "A belief that 50+ deserves better."]
     },
     {
-      "start": 100, "end": 119,
+      "start": 152, "end": 173,
       "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
       "no_bullet": true, "center": false,
       "bullets": ["Surpasses GDP of 170+ countries", "Rivals the U.S. Defense budget"]
     },
     {
-      "start": 152, "end": 164,
+      "start": 197, "end": 218,
       "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
       "no_bullet": true, "center": false,
       "bullets": ["EEOC v. iTutorGroup", "$365,000 settlement", "AI rejected every applicant over 55"]
     },
     {
-      "start": 190, "end": 209,
+      "start": 242, "end": 255,
       "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
       "no_bullet": true, "center": false,
-      "bullets": ["Workers 55+ receive training", "at HALF the rate of workers under 35"]
-    },
-    {
-      "start": 235, "end": 254,
-      "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
-      "no_bullet": true, "center": false,
-      "bullets": ["Cisco: 74 percent completion (50+)", "vs 68 percent (18-25)", "It's not capability. It's investment."]
+      "bullets": ["It's not capability.", "It's investment."]
     },
     {
       "start": 257, "end": 275,

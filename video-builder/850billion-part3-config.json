@@ -1,0 +1,79 @@
+{
+  "_comment": "$850 Billion Series — Part 3: What Winning Organizations Do Differently",
+  "format": "landscape",
+  "input_video": "C:/Users/USER/Desktop/LMT/850-Billion-Series/CHUNK-3-of-4-fullGreen.mp4",
+  "output_video": "C:/Users/USER/Desktop/LMT/850-Billion-Series/PART-3-FINISHED.mp4",
+  "bg_image": "C:/Users/USER/Documents/50techbridge-content/video-builder/layers/base/navy-1920x1080.png",
+  "chrome_image": "C:/Users/USER/Documents/50techbridge-content/video-builder/layers/chrome/header-footer-1920x1080.png",
+  "show_header": true,
+  "show_lower_third": true,
+  "brian_pip": {
+    "width": 1920,
+    "height": 1080,
+    "margin": 0,
+    "border": 0,
+    "chromakey": true,
+    "show_start": 0,
+    "show_end": 286
+  },
+  "brian_position": {
+    "x": 0,
+    "y": 0
+  },
+  "clips": [
+    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-02-workforce-training.mp4", "start": 18, "end": 38},
+    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-04-workforce-team.mp4", "start": 70, "end": 90},
+    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-01-woman-tablet.mp4", "start": 125, "end": 145},
+    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-03-grant-manager-data.mp4", "start": 185, "end": 205},
+    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-05-exec-virtual-meeting.mp4", "start": 240, "end": 260}
+  ],
+  "slides": [
+    {
+      "start": 0, "end": 16,
+      "x": 80, "y": 300, "font_size": 84, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.8,
+      "bullets": ["Part 3 of 4", "What Winners Do Differently"]
+    },
+    {
+      "start": 40, "end": 68,
+      "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false,
+      "bullets": ["19% higher innovation revenue", "from age-diverse teams."]
+    },
+    {
+      "start": 92, "end": 123,
+      "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false,
+      "bullets": ["Completion rates jump", "from 35% to 68%", "with the right design."]
+    },
+    {
+      "start": 147, "end": 183,
+      "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false,
+      "bullets": ["BMW: productivity parity in 1 year.", "CVS: 40% lower turnover.", "12% productivity boost over 2 years."]
+    },
+    {
+      "start": 207, "end": 238,
+      "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false,
+      "bullets": ["By 2030, one in five Americans", "will be over 65.", "10,000 Boomers turn 65 every day."]
+    },
+    {
+      "start": 262, "end": 278,
+      "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false,
+      "bullets": ["Organizations that act now are", "2X as likely to exceed financial goals."]
+    },
+    {
+      "start": 278, "end": 286,
+      "x": 80, "y": 300, "font_size": 84, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 1.0,
+      "bullets": ["Part 3 of 4", "learnmoretechnologies.com/workforce"]
+    }
+  ],
+  "youtube": {
+    "title": "What Winning Organizations Do Differently | $850 Billion Series Part 3 of 4",
+    "description": "Companies with above-median age diversity generate 19% higher innovation revenue.\n\nBMW achieved productivity parity in one year. CVS saw 40% lower turnover. Multigenerational workforce programs deliver a 12% productivity boost.\n\nBy 2030, one in five Americans will be over 65. Organizations that act now are 2X as likely to exceed their financial goals.\n\nThis is Part 3 of a 4-part series on the $850 billion cost of age discrimination in the workforce.\n\nWatch the full series:\nPart 1: The $850 Billion Problem Nobody Sees\nPart 2: What You're Really Losing\nPart 3: What Winning Organizations Do Differently\nPart 4: The Decision on Your Desk Right Now\n\nTry our free Lesson 1: learnmoretechnologies.com/join-now\nSchedule a consult: calendly.com/brianmckinney/new-meeting\n\nBrian McKinney | Founder, Learn More Technologies | MBE Certified",
+    "tags": "ageism, age discrimination, workforce development, adults over 50, digital skills, BMW older workers, CVS turnover, age diversity innovation, older workers, reskilling, upskilling, workforce strategy, HR leadership, future of work, experienced workers, 50+TechBridge, LearnMoreTechnologies, Brian McKinney, retirement age, baby boomers"
+  }
+}
