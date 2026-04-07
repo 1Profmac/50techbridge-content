@@ -756,11 +756,11 @@ def auto_resize(source_video, output_dir):
         shutil.copy2(source_video, os.path.join(resize_dir, f"{name}-LANDSCAPE-1920x1080.mp4"))
         print(f"  Copied: LANDSCAPE 1920x1080 (YouTube, LinkedIn, Facebook)")
 
-        # Create vertical (9:16) — crop center
+        # Create vertical (9:16) — fit landscape with navy pad (no crop, nothing lost)
         vert_path = os.path.join(resize_dir, f"{name}-VERTICAL-1080x1920.mp4")
         cmd = [
             FFMPEG, "-y", "-i", source_video,
-            "-vf", f"crop=ih*9/16:ih:iw/2-ih*9/32:0,scale=1080:1920",
+            "-vf", "scale=1080:-2,pad=1080:1920:0:(oh-ih)/2:color=0x0E1C2F",
             "-c:v", "h264_nvenc", "-preset", "fast", "-b:v", "5M",
             "-c:a", "aac", "-b:a", "128k", vert_path
         ]
@@ -768,13 +768,13 @@ def auto_resize(source_video, output_dir):
         if result.returncode != 0:
             cmd[cmd.index("h264_nvenc")] = "libx264"
             subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
-        print(f"  Created: VERTICAL 1080x1920 (Shorts, Reels, TikTok)")
+        print(f"  Created: VERTICAL 1080x1920 (Shorts, Reels, TikTok) — letterboxed")
 
-        # Create square (1:1) — crop center
+        # Create square (1:1) — fit landscape with navy pad (no crop, nothing lost)
         sq_path = os.path.join(resize_dir, f"{name}-SQUARE-1080x1080.mp4")
         cmd = [
             FFMPEG, "-y", "-i", source_video,
-            "-vf", "crop=ih:ih:iw/2-ih/2:0,scale=1080:1080",
+            "-vf", "scale=1080:-2,pad=1080:1080:0:(oh-ih)/2:color=0x0E1C2F",
             "-c:v", "h264_nvenc", "-preset", "fast", "-b:v", "5M",
             "-c:a", "aac", "-b:a", "128k", sq_path
         ]
