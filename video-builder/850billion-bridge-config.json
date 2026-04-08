@@ -1,0 +1,166 @@
+{
+  "_comment": "$850 Billion Series — Bridge Episode: It's Not About the Data. It Never Was. Lives between Part 3 and Part 4 as a manifesto/founder-voice piece (~90s).",
+  "_method": "Simple overlay — text on Brian, NO chromakey, NO clips. Same method as 850billion-full-config.json. Brian must be rendered in HeyGen on navy bg #0E1C2F (NOT green) with a LIGHT shirt (gray/white/charcoal) for contrast against the navy.",
+  "_input_requirements": "HeyGen avatar render: 1920x1080, navy #0E1C2F background, Brian in light-colored shirt for contrast, narration from bridge-video-script.md (~98 sec at HeyGen pace, trim to ~90 sec).",
+  "format": "landscape",
+  "input_video": "C:/Users/USER/Desktop/LMT/850-Billion-Series/BRIDGE/Bridge-Brian-onNavy-1080p.mp4",
+  "output_video": "C:/Users/USER/Desktop/LMT/850-Billion-Series/BRIDGE/BRIDGE-FINISHED.mp4",
+  "show_header": true,
+  "show_lower_third": true,
+  "slides": [
+    {
+      "_segment": "01 · Cold open — Brian alone, no text",
+      "start": 0, "end": 6,
+      "x": 0, "y": 0, "font_size": 1, "color": "#0E1C2F",
+      "no_bullet": true, "center": false,
+      "bullets": [""]
+    },
+    {
+      "_segment": "02 · Numbers wash — stats appear then visually drain",
+      "start": 6, "end": 18,
+      "x": 80, "y": 240, "font_size": 56, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": [
+        "$850 BILLION",
+        "19% INNOVATION LIFT",
+        "60-YEAR-OLDS OUTPERFORMING 25-YEAR-OLDS",
+        "UNITED HEALTH · CISCO · BMW · CVS"
+      ]
+    },
+    {
+      "_segment": "03 · The pivot — BUT (large italic gold accent)",
+      "start": 18, "end": 24,
+      "x": 80, "y": 320, "font_size": 96, "color": "#C8942E",
+      "no_bullet": true, "center": false, "fade": 0.8,
+      "bullets": [
+        "But the data was never the point."
+      ]
+    },
+    {
+      "_segment": "04 · Founder line — Brian on screen, lower-third handles brand",
+      "start": 24, "end": 32,
+      "x": 0, "y": 0, "font_size": 1, "color": "#0E1C2F",
+      "no_bullet": true, "center": false,
+      "bullets": [""]
+    },
+    {
+      "_segment": "05 · The metaphor — THE DATA IS THE DOOR / The room.",
+      "start": 32, "end": 38,
+      "x": 80, "y": 260, "font_size": 84, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.8,
+      "bullets": [
+        "THE DATA IS THE DOOR.",
+        "",
+        "It is not the room."
+      ]
+    },
+    {
+      "_segment": "06 · INTENTION",
+      "start": 38, "end": 44,
+      "x": 80, "y": 260, "font_size": 72, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": [
+        "01 · INTENTION",
+        "",
+        "Stop apologizing for being experienced."
+      ]
+    },
+    {
+      "_segment": "07 · ACTION (347 Pioneers, 3X completion)",
+      "start": 44, "end": 50,
+      "x": 80, "y": 260, "font_size": 72, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": [
+        "02 · ACTION",
+        "",
+        "347 Pioneers. 3X completion rate."
+      ]
+    },
+    {
+      "_segment": "08 · INVITATION",
+      "start": 50, "end": 56,
+      "x": 80, "y": 260, "font_size": 64, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": [
+        "03 · INVITATION",
+        "",
+        "A safe place to learn — built for adults 50+."
+      ]
+    },
+    {
+      "_segment": "09 · COMMUNITY",
+      "start": 56, "end": 62,
+      "x": 80, "y": 260, "font_size": 72, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": [
+        "04 · COMMUNITY",
+        "",
+        "Bidirectional mentorship. Buddies. People."
+      ]
+    },
+    {
+      "_segment": "10 · INDEPENDENCE",
+      "start": 62, "end": 70,
+      "x": 80, "y": 260, "font_size": 60, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": [
+        "05 · INDEPENDENCE",
+        "",
+        "Devices that stop being ornaments",
+        "and start being assistants."
+      ]
+    },
+    {
+      "_segment": "11 · SECURITY",
+      "start": 70, "end": 76,
+      "x": 80, "y": 260, "font_size": 64, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": [
+        "06 · SECURITY",
+        "",
+        "Dignity is the foundation,",
+        "not the afterthought."
+      ]
+    },
+    {
+      "_segment": "12 · Challenge line — Brian on screen, single line text",
+      "start": 76, "end": 84,
+      "x": 80, "y": 320, "font_size": 56, "color": "#A8B8CC",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": [
+        "Remember the numbers.",
+        "Then remember the room."
+      ]
+    },
+    {
+      "_segment": "13 · Closing card — THE DATA IS THE DOOR / The room is open.",
+      "start": 84, "end": 92,
+      "x": 80, "y": 240, "font_size": 96, "color": "#C8942E",
+      "no_bullet": true, "center": true, "fade": 1.0,
+      "bullets": [
+        "THE DATA IS THE DOOR.",
+        "",
+        "The room is open."
+      ]
+    },
+    {
+      "_segment": "14 · End card — LMT brand lockup + CTA",
+      "start": 92, "end": 98,
+      "x": 80, "y": 280, "font_size": 64, "color": "#C8942E",
+      "no_bullet": true, "center": true, "fade": 1.0,
+      "bullets": [
+        "LEARN MORE TECHNOLOGIES",
+        "50+TechBridge",
+        "",
+        "learnmoretechnologies.com/join-now",
+        "",
+        "Watch the full $850 Billion Series →"
+      ]
+    }
+  ],
+  "youtube": {
+    "title": "It's Not About the Data | $850 Billion Series — Bridge Episode",
+    "description": "People keep asking me about the numbers.\n\n$850 billion lost every year. 19% higher innovation revenue. 60-year-olds outperforming 25-year-olds. United Health. Cisco. BMW. CVS.\n\nThe numbers are real. But the data was never the point.\n\nI built Learn More Technologies because I got tired of watching the most experienced people in every room get talked about like a problem to be managed.\n\nThe data is the door. It is not the room.\n\nBehind the door is intention, action, invitation, community, independence, and security.\n\nThe data is the door. The room is open.\n\nThis is the bridge episode of the $850 Billion Cost of Ignoring Experienced Workers series — between Part 3 (What Winning Organizations Do Differently) and Part 4 (The Decision on Your Desk Right Now).\n\nFree Lesson 1: learnmoretechnologies.com/join-now\nWorkforce consult: learnmoretechnologies.com/workforce\n\nBrian McKinney | Founder, Learn More Technologies | MBE Certified\n347+ Pioneers | 3X Completion Rate | 74% Feel More Confident",
+    "tags": "ageism, age discrimination, workforce development, adults over 50, digital skills, AI training, 50 plus tech, older workers, reskilling, upskilling, workforce strategy, HR leadership, future of work, experienced workers, 50+TechBridge, LearnMoreTechnologies, Brian McKinney, MBE Certified, manifesto, founder voice, independent living"
+  }
+}
