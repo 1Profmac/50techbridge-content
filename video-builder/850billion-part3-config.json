@@ -1,7 +1,7 @@
 {
   "_comment": "$850 Billion Series — Part 3: What Winning Organizations Do Differently",
   "format": "landscape",
-  "input_video": "C:/Users/USER/Desktop/LMT/850-Billion-Series/CHUNK-3-of-4-fullGreen.mp4",
+  "input_video": "C:/Users/USER/Desktop/LMT/850-Billion-Series/B-Roll/Part2 Canva Chunks/CHUNK-3-of-4-fullGreen.mp4",
   "output_video": "C:/Users/USER/Desktop/LMT/850-Billion-Series/PART-3-FINISHED.mp4",
   "bg_image": "C:/Users/USER/Documents/50techbridge-content/video-builder/layers/base/navy-1920x1080.png",
   "chrome_image": "C:/Users/USER/Documents/50techbridge-content/video-builder/layers/chrome/header-footer-1920x1080.png",
@@ -21,11 +21,10 @@
     "y": 0
   },
   "clips": [
-    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-02-workforce-training.mp4", "start": 18, "end": 38},
-    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-04-workforce-team.mp4", "start": 70, "end": 90},
-    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-01-woman-tablet.mp4", "start": 125, "end": 145},
-    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-03-grant-manager-data.mp4", "start": 185, "end": 205},
-    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/broll-clips/clip-05-exec-virtual-meeting.mp4", "start": 240, "end": 260}
+    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/YOUTUBE/PART-3/SEGMENT 4 B-ROLL.mp4", "start": 18, "end": 38},
+    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/YOUTUBE/PART-3/Segment 1-B-Roll.mp4", "start": 70, "end": 90},
+    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/YOUTUBE/PART-3/SEGMENT 2 B-Roll.mp4", "start": 125, "end": 145},
+    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/YOUTUBE/PART-3/SEGMENT 3 B-Roll.mp4", "start": 185, "end": 205}
   ],
   "slides": [
     {
