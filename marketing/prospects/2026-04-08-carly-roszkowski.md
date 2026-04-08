@@ -61,7 +61,9 @@
 
 ## 3 Personalization Hooks
 
-1. **Her February 2026 survey: "Retirement on Pause."** *"Carly — your February 5 survey on older Americans returning to work because of basic expenses is exactly the data underlying the $850 Billion series I just shipped on YouTube. Part 3 went live yesterday — it walks through what winning organizations do differently with the same cohort your survey identified. I'd love your read on it."* — She'll appreciate that someone actually used her data instead of just reading the press release.
+> **UPDATED 2026-04-08 PM:** Hooks now reference the **Valuing the Invaluable 2026** report (published March 2026 by Carly's adjacent team at AARP Public Policy Institute under SVP **Alan Weil**) which Brian downloaded today. These numbers are FRESHER than her "Retirement on Pause" survey and demonstrate Brian read the actual PDF, not just the press release.
+
+1. **The Valuing the Invaluable 2026 Medicaid comparison.** *"Carly — I read Valuing the Invaluable 2026 cover to cover this morning after seeing your repost. The line that stopped me: family caregiving's $1.01 trillion economic value now exceeds total federal+state+local Medicaid spending ($932 billion). One in six full-time-equivalent American jobs is now unpaid caregiving, and Texas alone has 2.2 million caregivers averaging $18.11/hour in invisible labor. I run Learn More Technologies (50+TechBridge) here in Austin — MBE-certified AI fluency for adults 50+ — and we're hitting 3X the industry completion rate. Would value 15 minutes."*
 
 2. **Her Charter Workplace Summit 2025 talk: "Multigenerational Teams."** *"Your Charter Workplace Summit talk on multigenerational teams as untapped power was the most honest framing I've heard from any workforce leader. I run an MBE-certified AI fluency program (50+TechBridge) built specifically for the cohort you described. 347 Pioneers trained at 3X industry completion. I'd value 15 minutes to learn how AARP Foundation evaluates new community partners."*
 
