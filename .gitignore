@@ -5,3 +5,5 @@ video-builder/layers/clips/**/*.mp4
 
 # API keys
 .env
+marketing/wioa-etpl-forms/*.xlsx
+video-builder/__pycache__/
