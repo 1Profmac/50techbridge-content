@@ -21,10 +21,10 @@
     "y": 0
   },
   "clips": [
-    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/YOUTUBE/PART-3/SEGMENT 4 B-ROLL.mp4", "start": 18, "end": 38},
-    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/YOUTUBE/PART-3/Segment 1-B-Roll.mp4", "start": 70, "end": 90},
-    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/YOUTUBE/PART-3/SEGMENT 2 B-Roll.mp4", "start": 125, "end": 145},
-    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/YOUTUBE/PART-3/SEGMENT 3 B-Roll.mp4", "start": 185, "end": 205}
+    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Part-3/B-Roll/SEGMENT 4 B-ROLL.mp4", "start": 18, "end": 38},
+    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Part-3/B-Roll/Segment 1-B-Roll.mp4", "start": 70, "end": 90},
+    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Part-3/B-Roll/SEGMENT 2 B-Roll.mp4", "start": 125, "end": 145},
+    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Part-3/B-Roll/SEGMENT 3 B-Roll.mp4", "start": 185, "end": 205}
   ],
   "slides": [
     {

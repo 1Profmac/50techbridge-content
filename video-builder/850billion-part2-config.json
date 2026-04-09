@@ -12,7 +12,7 @@
     "height": 1080,
     "margin": 0,
     "border": 0,
-    "chromakey": false,
+    "chromakey": true,
     "show_start": 0,
     "show_end": 216
   },
@@ -21,11 +21,11 @@
     "y": 0
   },
   "clips": [
-    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/CHUNK2 broll-clips/Video 1 The Retention Reality.mp4", "start": 18, "end": 38},
-    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/CHUNK2 broll-clips/Video 2 Appreciating Assets.mp4", "start": 65, "end": 85},
-    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/CHUNK2 broll-clips/Video 3 The Performance Myth.mp4", "start": 110, "end": 130},
-    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/CHUNK2 broll-clips/Video 4 The Math of Upskilling.mp4", "start": 155, "end": 175},
-    {"file": "C:/Users/USER/Desktop/LMT/04-ASSETS/CHUNK2 broll-clips/Video 5 the solution.mp4", "start": 190, "end": 208}
+    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Part-2/B-Roll/Video 1 The Retention Reality.mp4", "start": 18, "end": 38},
+    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Part-2/B-Roll/Video 2 Appreciating Assets.mp4", "start": 65, "end": 85},
+    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Part-2/B-Roll/Video 3 The Performance Myth.mp4", "start": 110, "end": 130},
+    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Part-2/B-Roll/Video 4 The Math of Upskilling.mp4", "start": 155, "end": 175},
+    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Part-2/B-Roll/Video 5 the solution.mp4", "start": 190, "end": 208}
   ],
   "slides": [
     {
