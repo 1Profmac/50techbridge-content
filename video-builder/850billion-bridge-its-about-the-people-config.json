@@ -21,15 +21,16 @@
     "x": 0,
     "y": 0
   },
-  "_timeline_rules": "STRICT NON-OVERLAP. Clips and slides NEVER play at the same time. 2-second gaps between every element. Covers the full 110s runtime (no black tail). Modeled on 850billion-part1-config.json interleaving pattern.",
+  "_timeline_rules": "STRICT NON-OVERLAP. Clips and slides NEVER play at the same time. 2-second gaps between every element. Covers the full 110s runtime (no black tail). 3 DISTINCT b-roll clips (each ~9.8s, split from the original 29.4s b-roll source) so viewers see new footage each time instead of repetition. Modeled on 850billion-part1-config.json interleaving pattern.",
   "clips": [
-    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Bridge-Its-About-the-People/B-Roll/Its-About-the-People_b-Roll.mp4", "start": 20, "end": 48},
-    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Bridge-Its-About-the-People/B-Roll/Its-About-the-People_b-Roll.mp4", "start": 66, "end": 92}
+    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Bridge-Its-About-the-People/B-Roll/Its-About-the-People_b-Roll-01.mp4", "start": 16, "end": 26},
+    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Bridge-Its-About-the-People/B-Roll/Its-About-the-People_b-Roll-02.mp4", "start": 44, "end": 54},
+    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Bridge-Its-About-the-People/B-Roll/Its-About-the-People_b-Roll-03.mp4", "start": 72, "end": 82}
   ],
   "slides": [
     {
-      "_segment": "1. Numbers wash (4-18s) — stats on screen, NO b-roll",
-      "start": 4, "end": 18,
+      "_segment": "1. Numbers wash (4-14s) — stats on screen, NO b-roll",
+      "start": 4, "end": 14,
       "x": 80, "y": 240, "font_size": 56, "color": "#FFFFFF",
       "no_bullet": true, "center": false, "fade": 0.8,
       "bullets": [
@@ -40,8 +41,19 @@
       ]
     },
     {
-      "_segment": "2. The Metaphor (50-64s) — plays AFTER b-roll ends at 48s, 2s gap",
-      "start": 50, "end": 64,
+      "_segment": "2. Pivot + metaphor (28-42s) — plays AFTER b-roll #1 ends at 26s, 2s gap",
+      "start": 28, "end": 42,
+      "x": 80, "y": 260, "font_size": 72, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.8,
+      "bullets": [
+        "The numbers are real.",
+        "",
+        "But the data was never the point."
+      ]
+    },
+    {
+      "_segment": "3. The metaphor (56-70s) — plays AFTER b-roll #2 ends at 54s, 2s gap",
+      "start": 56, "end": 70,
       "x": 80, "y": 260, "font_size": 84, "color": "#FFFFFF",
       "no_bullet": true, "center": false, "fade": 0.8,
       "bullets": [
@@ -51,8 +63,8 @@
       ]
     },
     {
-      "_segment": "3. Themed summary (94-104s) — plays AFTER 2nd b-roll ends at 92s, 2s gap",
-      "start": 94, "end": 104,
+      "_segment": "4. Six pillars summary (84-98s) — plays AFTER b-roll #3 ends at 82s, 2s gap",
+      "start": 84, "end": 98,
       "x": 80, "y": 220, "font_size": 48, "color": "#FFFFFF",
       "no_bullet": true, "center": false, "fade": 0.6,
       "bullets": [
@@ -63,8 +75,8 @@
       ]
     },
     {
-      "_segment": "4. End card HOLD (104-110s) — brand lockup, runs to end of source",
-      "start": 104, "end": 110,
+      "_segment": "5. End card HOLD (100-110s) — brand lockup, runs to end of source",
+      "start": 100, "end": 110,
       "x": 80, "y": 280, "font_size": 64, "color": "#C8942E",
       "no_bullet": true, "center": true, "fade": 1.0,
       "bullets": [
