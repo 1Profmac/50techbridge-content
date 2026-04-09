@@ -15,28 +15,23 @@
     "border": 0,
     "chromakey": true,
     "show_start": 0,
-    "show_end": 98
+    "show_end": 110
   },
   "brian_position": {
     "x": 0,
     "y": 0
   },
+  "_timeline_rules": "STRICT NON-OVERLAP. Clips and slides NEVER play at the same time. 2-second gaps between every element. Covers the full 110s runtime (no black tail). Modeled on 850billion-part1-config.json interleaving pattern.",
   "clips": [
-    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Bridge-Its-About-the-People/B-Roll/Its-About-the-People_b-Roll.mp4", "start": 6, "end": 90}
+    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Bridge-Its-About-the-People/B-Roll/Its-About-the-People_b-Roll.mp4", "start": 20, "end": 48},
+    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Bridge-Its-About-the-People/B-Roll/Its-About-the-People_b-Roll.mp4", "start": 66, "end": 92}
   ],
   "slides": [
     {
-      "_segment": "01 Cold open",
-      "start": 0, "end": 6,
-      "x": 80, "y": 300, "font_size": 84, "color": "#FFFFFF",
-      "no_bullet": true, "center": false, "fade": 0.8,
-      "bullets": [""]
-    },
-    {
-      "_segment": "02 Numbers wash",
-      "start": 6, "end": 18,
+      "_segment": "1. Numbers wash (4-18s) — stats on screen, NO b-roll",
+      "start": 4, "end": 18,
       "x": 80, "y": 240, "font_size": 56, "color": "#FFFFFF",
-      "no_bullet": true, "center": false, "fade": 0.6,
+      "no_bullet": true, "center": false, "fade": 0.8,
       "bullets": [
         "$850 BILLION",
         "19% INNOVATION LIFT",
@@ -45,87 +40,37 @@
       ]
     },
     {
-      "_segment": "03 The pivot",
-      "start": 18, "end": 24,
-      "x": 80, "y": 320, "font_size": 70, "color": "#C8942E",
-      "no_bullet": true, "center": false, "fade": 0.8,
-      "bullets": ["But the data was never the point."]
-    },
-    {
-      "_segment": "05 The metaphor",
-      "start": 32, "end": 38,
+      "_segment": "2. The Metaphor (50-64s) — plays AFTER b-roll ends at 48s, 2s gap",
+      "start": 50, "end": 64,
       "x": 80, "y": 260, "font_size": 84, "color": "#FFFFFF",
       "no_bullet": true, "center": false, "fade": 0.8,
-      "bullets": ["THE DATA IS THE DOOR.", "", "It is not the room."]
+      "bullets": [
+        "THE DATA IS THE DOOR.",
+        "",
+        "It is not the room."
+      ]
     },
     {
-      "_segment": "06 INTENTION",
-      "start": 38, "end": 44,
-      "x": 80, "y": 260, "font_size": 70, "color": "#FFFFFF",
+      "_segment": "3. Themed summary (94-104s) — plays AFTER 2nd b-roll ends at 92s, 2s gap",
+      "start": 94, "end": 104,
+      "x": 80, "y": 220, "font_size": 48, "color": "#FFFFFF",
       "no_bullet": true, "center": false, "fade": 0.6,
-      "bullets": ["01 · INTENTION", "", "Stop apologizing for being experienced."]
+      "bullets": [
+        "Intention. Action. Invitation.",
+        "Community. Independence. Security.",
+        "",
+        "It's about the people."
+      ]
     },
     {
-      "_segment": "07 ACTION",
-      "start": 44, "end": 50,
-      "x": 80, "y": 260, "font_size": 70, "color": "#FFFFFF",
-      "no_bullet": true, "center": false, "fade": 0.6,
-      "bullets": ["02 · ACTION", "", "347 Pioneers. 3X completion rate."]
-    },
-    {
-      "_segment": "08 INVITATION",
-      "start": 50, "end": 56,
-      "x": 80, "y": 260, "font_size": 64, "color": "#FFFFFF",
-      "no_bullet": true, "center": false, "fade": 0.6,
-      "bullets": ["03 · INVITATION", "", "A safe place to learn — built for adults 50+."]
-    },
-    {
-      "_segment": "09 COMMUNITY",
-      "start": 56, "end": 62,
-      "x": 80, "y": 260, "font_size": 70, "color": "#FFFFFF",
-      "no_bullet": true, "center": false, "fade": 0.6,
-      "bullets": ["04 · COMMUNITY", "", "Bidirectional mentorship. Buddies. People."]
-    },
-    {
-      "_segment": "10 INDEPENDENCE",
-      "start": 62, "end": 70,
-      "x": 80, "y": 260, "font_size": 60, "color": "#FFFFFF",
-      "no_bullet": true, "center": false, "fade": 0.6,
-      "bullets": ["05 · INDEPENDENCE", "", "Devices that stop being ornaments", "and start being assistants."]
-    },
-    {
-      "_segment": "11 SECURITY",
-      "start": 70, "end": 76,
-      "x": 80, "y": 260, "font_size": 64, "color": "#FFFFFF",
-      "no_bullet": true, "center": false, "fade": 0.6,
-      "bullets": ["06 · SECURITY", "", "Dignity is the foundation,", "not the afterthought."]
-    },
-    {
-      "_segment": "12 Challenge line",
-      "start": 76, "end": 84,
-      "x": 80, "y": 320, "font_size": 56, "color": "#A8B8CC",
-      "no_bullet": true, "center": false, "fade": 0.6,
-      "bullets": ["Remember the numbers.", "Then remember the room."]
-    },
-    {
-      "_segment": "13 Closing card THE HOLD",
-      "start": 84, "end": 92,
-      "x": 80, "y": 240, "font_size": 84, "color": "#C8942E",
-      "no_bullet": true, "center": true, "fade": 1.0,
-      "bullets": ["THE DATA IS THE DOOR.", "", "The room is open."]
-    },
-    {
-      "_segment": "14 End card",
-      "start": 92, "end": 98,
+      "_segment": "4. End card HOLD (104-110s) — brand lockup, runs to end of source",
+      "start": 104, "end": 110,
       "x": 80, "y": 280, "font_size": 64, "color": "#C8942E",
       "no_bullet": true, "center": true, "fade": 1.0,
       "bullets": [
         "LEARN MORE TECHNOLOGIES",
         "50+TechBridge",
-        "",
-        "learnmoretechnologies.com/join-now",
-        "",
-        "It's About the People."
+        "learnmoretechnologies.com/join-now"
       ]
     }
   ],
