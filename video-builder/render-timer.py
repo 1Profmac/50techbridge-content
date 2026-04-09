@@ -21,6 +21,15 @@ def format_time(seconds):
     return f"{m}m {s:02d}s"
 
 def main():
+    # Force stdout to UTF-8 with error replacement so Windows cp1252 console
+    # doesn't crash on Unicode characters (like U+FFFD) from ffmpeg output.
+    # Without this, render succeeds but the wrapper crashes on its final print
+    # and Claude sees the render as "failed" even though the mp4 is written.
+    try:
+        sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+    except Exception:
+        pass  # older Python versions may not have reconfigure
+
     if len(sys.argv) < 2:
         print("Usage: python render-timer.py <config.json>")
         sys.exit(1)
