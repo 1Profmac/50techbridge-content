@@ -1,0 +1,137 @@
+{
+  "_comment": "$850 Billion Series — Bridge Episode: It's About the People. Lives between Parts 3 and 4 as a manifesto/founder-voice piece. HeyGen avatar on green composited over navy with b-roll inserts and 14 text slides. Modeled on 850billion-part3-config.json (the working Part 3 pipeline that rendered successfully 2026-04-07).",
+  "_method": "Lesson pipeline: navy bg + Brian (chromakey green) + clips behind Brian + chrome + white text slides",
+  "format": "landscape",
+  "input_video": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Bridge-Its-About-the-People/B-Roll/Its-About-the-People_fullGreen_1080p.mp4",
+  "output_video": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Bridge-Its-About-the-People/ALL-FORMATS/Its-About-the-People-FINISHED.mp4",
+  "bg_image": "C:/Users/USER/Documents/50techbridge-content/video-builder/layers/base/navy-1920x1080.png",
+  "chrome_image": "C:/Users/USER/Documents/50techbridge-content/video-builder/layers/chrome/header-footer-1920x1080.png",
+  "show_header": true,
+  "show_lower_third": true,
+  "brian_pip": {
+    "width": 1920,
+    "height": 1080,
+    "margin": 0,
+    "border": 0,
+    "chromakey": true,
+    "show_start": 0,
+    "show_end": 98
+  },
+  "brian_position": {
+    "x": 0,
+    "y": 0
+  },
+  "clips": [
+    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Bridge-Its-About-the-People/B-Roll/Its-About-the-People_b-Roll.mp4", "start": 6, "end": 90}
+  ],
+  "slides": [
+    {
+      "_segment": "01 Cold open",
+      "start": 0, "end": 6,
+      "x": 80, "y": 300, "font_size": 84, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.8,
+      "bullets": [""]
+    },
+    {
+      "_segment": "02 Numbers wash",
+      "start": 6, "end": 18,
+      "x": 80, "y": 240, "font_size": 56, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": [
+        "$850 BILLION",
+        "19% INNOVATION LIFT",
+        "60-YEAR-OLDS OUTPERFORMING 25-YEAR-OLDS",
+        "UNITED HEALTH · CISCO · BMW · CVS"
+      ]
+    },
+    {
+      "_segment": "03 The pivot",
+      "start": 18, "end": 24,
+      "x": 80, "y": 320, "font_size": 70, "color": "#C8942E",
+      "no_bullet": true, "center": false, "fade": 0.8,
+      "bullets": ["But the data was never the point."]
+    },
+    {
+      "_segment": "05 The metaphor",
+      "start": 32, "end": 38,
+      "x": 80, "y": 260, "font_size": 84, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.8,
+      "bullets": ["THE DATA IS THE DOOR.", "", "It is not the room."]
+    },
+    {
+      "_segment": "06 INTENTION",
+      "start": 38, "end": 44,
+      "x": 80, "y": 260, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": ["01 · INTENTION", "", "Stop apologizing for being experienced."]
+    },
+    {
+      "_segment": "07 ACTION",
+      "start": 44, "end": 50,
+      "x": 80, "y": 260, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": ["02 · ACTION", "", "347 Pioneers. 3X completion rate."]
+    },
+    {
+      "_segment": "08 INVITATION",
+      "start": 50, "end": 56,
+      "x": 80, "y": 260, "font_size": 64, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": ["03 · INVITATION", "", "A safe place to learn — built for adults 50+."]
+    },
+    {
+      "_segment": "09 COMMUNITY",
+      "start": 56, "end": 62,
+      "x": 80, "y": 260, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": ["04 · COMMUNITY", "", "Bidirectional mentorship. Buddies. People."]
+    },
+    {
+      "_segment": "10 INDEPENDENCE",
+      "start": 62, "end": 70,
+      "x": 80, "y": 260, "font_size": 60, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": ["05 · INDEPENDENCE", "", "Devices that stop being ornaments", "and start being assistants."]
+    },
+    {
+      "_segment": "11 SECURITY",
+      "start": 70, "end": 76,
+      "x": 80, "y": 260, "font_size": 64, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": ["06 · SECURITY", "", "Dignity is the foundation,", "not the afterthought."]
+    },
+    {
+      "_segment": "12 Challenge line",
+      "start": 76, "end": 84,
+      "x": 80, "y": 320, "font_size": 56, "color": "#A8B8CC",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": ["Remember the numbers.", "Then remember the room."]
+    },
+    {
+      "_segment": "13 Closing card THE HOLD",
+      "start": 84, "end": 92,
+      "x": 80, "y": 240, "font_size": 84, "color": "#C8942E",
+      "no_bullet": true, "center": true, "fade": 1.0,
+      "bullets": ["THE DATA IS THE DOOR.", "", "The room is open."]
+    },
+    {
+      "_segment": "14 End card",
+      "start": 92, "end": 98,
+      "x": 80, "y": 280, "font_size": 64, "color": "#C8942E",
+      "no_bullet": true, "center": true, "fade": 1.0,
+      "bullets": [
+        "LEARN MORE TECHNOLOGIES",
+        "50+TechBridge",
+        "",
+        "learnmoretechnologies.com/join-now",
+        "",
+        "It's About the People."
+      ]
+    }
+  ],
+  "youtube": {
+    "title": "It's About the People | $850 Billion Series — Bridge Episode",
+    "description": "People keep asking me about the numbers.\n\n$850 billion lost every year. 19 percent higher innovation revenue. 60-year-olds outperforming 25-year-olds. United Health. Cisco. BMW. CVS.\n\nThe numbers are real. But the data was never the point.\n\nI built Learn More Technologies because I got tired of watching the most experienced people in every room get talked about like a problem to be managed.\n\nThe data is the door. It is not the room.\n\nBehind the door is intention, action, invitation, community, independence, and security.\n\nThe data is the door. The room is open.\n\nIt's about the people.\n\nThis is the bridge episode of the $850 Billion Cost of Ignoring Experienced Workers series — between Part 3 (What Winning Organizations Do Differently) and Part 4 (The Decision on Your Desk Right Now).\n\nFree Lesson 1: learnmoretechnologies.com/join-now\nWorkforce consult: learnmoretechnologies.com/workforce\n\nBrian McKinney | Founder, Learn More Technologies | MBE Certified\n347+ Pioneers | 3X Completion Rate | 74% Feel More Confident",
+    "tags": "ageism, age discrimination, workforce development, adults over 50, digital skills, AI training, 50 plus tech, older workers, reskilling, upskilling, workforce strategy, HR leadership, future of work, experienced workers, 50+TechBridge, LearnMoreTechnologies, Brian McKinney, MBE Certified, manifesto, founder voice, independent living, its about the people"
+  }
+}
