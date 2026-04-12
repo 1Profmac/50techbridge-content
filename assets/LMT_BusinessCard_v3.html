@@ -357,6 +357,14 @@
     margin-bottom: 14px;
   }
 
+  .back-bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+  }
+
   .back-socials {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -378,13 +386,10 @@
   }
 
   .back-qr {
-    position: absolute;
-    bottom: 18px;
-    right: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 4;
+    flex-shrink: 0;
   }
 
   .back-qr img {
@@ -589,17 +594,18 @@
       <div class="back-tagline">AI Training for the 50+ Workforce</div>
       <div class="back-tagline-rule"></div>
       <div class="back-rule"></div>
-      <div class="back-socials">
-        <div class="back-social"><span class="platform">LinkedIn</span><span class="handle">/brianmckinneylmt</span></div>
-        <div class="back-social"><span class="platform">YouTube</span><span class="handle">@LearnMoreTechnologies</span></div>
-        <div class="back-social"><span class="platform">Facebook</span><span class="handle">/learnmoretechnologies</span></div>
-        <div class="back-social"><span class="platform">Instagram</span><span class="handle">@50plustechbridge</span></div>
-        <div class="back-social"><span class="platform">Podcast</span><span class="handle">#AGENTIC50</span></div>
-      </div>
-      <!-- QR Code — links to learnmoretechnologies.com/speak -->
-      <div class="back-qr">
-        <img src="qr-code-speak.png" alt="Scan to book — learnmoretechnologies.com/speak" />
-        <span class="qr-label">Scan to book</span>
+      <div class="back-bottom">
+        <div class="back-socials">
+          <div class="back-social"><span class="platform">LinkedIn</span><span class="handle">/brianmckinneylmt</span></div>
+          <div class="back-social"><span class="platform">YouTube</span><span class="handle">@LearnMoreTechnologies</span></div>
+          <div class="back-social"><span class="platform">Facebook</span><span class="handle">/learnmoretechnologies</span></div>
+          <div class="back-social"><span class="platform">Instagram</span><span class="handle">@50plustechbridge</span></div>
+          <div class="back-social"><span class="platform">Podcast</span><span class="handle">#AGENTIC50</span></div>
+        </div>
+        <div class="back-qr">
+          <img src="qr-code-speak.png" alt="Scan to book — learnmoretechnologies.com/speak" />
+          <span class="qr-label">Scan to book</span>
+        </div>
       </div>
     </div>
   </div>
