@@ -1,0 +1,287 @@
+# #AGENTIC50 — The Pioneers Podcast
+## Episode 2: "Where Do I Even Start?"
+### The First Conversation with AI
+
+**Host:** Professor Brian McKinney, CEO & Founder, LearnMore Technologies | MBE Certified | Austin, Texas
+**Format:** Solo episode
+**Target Length:** 20-25 minutes (~3,200 words spoken)
+**Community:** 50+TechBridge
+
+---
+
+## [COLD OPEN — 0:00]
+
+The number one thing I hear after "Is it too late?" is "Where do I even start?"
+
+[PAUSE]
+
+And I get it. You open your browser, you type "learn AI," and suddenly you're drowning in a hundred tools, a thousand YouTube videos, and a million opinions from people half your age who assume you already know what a prompt is.
+
+Today I'm going to show you exactly where to start. Not where the internet says. Not where some twenty-three-year-old influencer says. Where I, as someone who has walked hundreds of professionals over fifty through this exact moment, say you should start.
+
+[PAUSE]
+
+And it's simpler than you think.
+
+---
+
+## [INTRO — 0:30]
+
+Welcome to #AGENTIC50 — The Pioneers Podcast. I'm Professor Brian McKinney, CEO and Founder of LearnMore Technologies, right here in Austin, Texas, and this is the show for professionals over fifty who are done watching from the sidelines and ready to lead with AI.
+
+This is our community. 50+TechBridge. We're not catching up. We're not behind. We are exactly where we need to be, because we bring something to AI that no bootcamp can teach — decades of real-world judgment, domain expertise, and the kind of problem-solving instincts you only earn by living.
+
+[PAUSE]
+
+If you caught Episode One, you heard me tackle the big question: "Is it too late?" Spoiler — it's not even close. But today we're moving from mindset to action. Because knowing it's not too late doesn't help if you're still staring at your screen wondering what to do next.
+
+So let's fix that. Right now.
+
+---
+
+## [THE QUESTION — 1:30]
+
+Here's what happens. You decide you're going to learn AI. You're motivated. You're ready. And then you sit down at your computer, and you freeze.
+
+[PAUSE]
+
+Not because you're not smart enough. You ran departments. You raised families. You built careers. You navigated every technology shift from fax machines to smartphones. You are more than capable.
+
+You freeze because the world of AI has been designed, marketed, and explained by people who forgot what it's like to not already know this stuff.
+
+[PAUSE]
+
+Think about it. Most AI tutorials start with assumptions. They assume you know what a large language model is. They assume you know the difference between ChatGPT and Claude and Gemini and Copilot. They assume you already have accounts set up. They assume you're comfortable with interfaces that look like a developer's workbench.
+
+And the advice? "Just start prompting!" Great. Prompting what? How? About what?
+
+[PAUSE]
+
+That's the paralysis. It's not a lack of intelligence. It's a lack of a clear first step. And when every article, every video, every course gives you a different first step, you end up taking none of them.
+
+I've seen this pattern a hundred times. Brilliant people — retired executives, veteran educators, seasoned healthcare professionals — stuck at the starting line because nobody bothered to draw them a map.
+
+Well, today I'm drawing you that map.
+
+---
+
+## [THE DATA — 3:30]
+
+And let me tell you, you're not alone in this. Not even a little bit.
+
+[PAUSE]
+
+Pew Research found that seventy-three percent of adults over fifty say they want to learn AI but don't know where to begin. Seventy-three percent. That's not a personal failing. That's an industry failing. When nearly three out of four people in your demographic are saying the same thing, the problem isn't the people. The problem is the onboarding.
+
+[PAUSE]
+
+Here's another number for you. The average person tries three different AI tools before they find one that actually works for them. Three. That means most people's first and second experience with AI is frustration. They try something, it doesn't click, and they walk away thinking, "Maybe this isn't for me." But it was never about them. It was about the tool.
+
+And here's the one that really gets me. Most online courses — the ones that promise to teach you AI in thirty days or make you an expert in a weekend — have a completion rate of less than fifteen percent. Less than fifteen. That means eighty-five percent of the people who sign up never finish.
+
+[PAUSE]
+
+Now, is that because eighty-five percent of people are lazy? No. It's because those courses are built wrong. They're too long. They're too abstract. They start with theory when they should start with practice. They teach you about AI when they should be teaching you to talk to AI.
+
+[PAUSE]
+
+Let me say that again because it's important. The problem is not your intelligence. The problem is interface design and assumptions. The tools are getting easier every single day. The tutorials are slowly getting better. But right now, in this moment, most of the AI world is still built by thirty-year-old engineers for thirty-year-old engineers. And that leaves a gap.
+
+That gap is exactly why 50+TechBridge exists. That gap is exactly why this podcast exists. And that gap is exactly what we're going to close today.
+
+---
+
+## [THE PIONEER STORY — 8:30]
+
+Let me tell you about someone. I'm going to call her Linda. Linda is a composite — she's built from the real stories of dozens of people I've worked with, but her journey is one I've seen play out over and over again.
+
+[PAUSE]
+
+Linda is sixty-two. She retired from teaching high school English three years ago. Thirty-one years in the classroom. Thirty-one years of shaping young minds, grading papers until midnight, adapting to new curricula, learning new classroom technology every time the district rolled out another initiative. This is not a woman who is afraid of learning. This is a woman who has been learning her entire professional life.
+
+So when she started hearing about AI — about ChatGPT and all the rest — she was curious. Genuinely curious. Not scared. Curious.
+
+[PAUSE]
+
+She did what most of us do. She went to YouTube. She typed in "AI for beginners." And she got hit with a wall of content. Videos with titles like "Master AI in Ten Minutes" that were actually forty-five minutes long. Tutorials that started with "First, open your terminal" — and Linda doesn't have a terminal, and she doesn't know what one is, and she shouldn't need to.
+
+She tried ChatGPT. She opened it up, and she saw that blinking cursor, and she typed: "Hello." And it said hello back. And then she sat there thinking, "Now what?"
+
+[PAUSE]
+
+Because nobody told her what to do next. Nobody told her that the magic isn't in the tool — it's in the conversation. Nobody told her that the single best thing she could do was treat this AI not like a search engine, not like a computer program, but like a new colleague who just joined her team and needs to know who she is and what she's working on.
+
+She tried a couple of online courses. The first one was all theory — the history of neural networks, the architecture of transformer models. Fascinating stuff if you're getting a computer science degree. Completely useless if you're a retired English teacher who wants to do something practical. She dropped out in week two.
+
+The second course moved too fast. It assumed she already knew terminology she'd never encountered. She felt stupid, which made her angry, which made her quit. And I don't blame her one bit.
+
+[PAUSE]
+
+Then Linda found 50+TechBridge.
+
+And here's what changed. We didn't start by teaching her about AI. We started by asking her a question: "What do you wish existed?"
+
+[PAUSE]
+
+And Linda, being Linda — being a thirty-one-year veteran of public education — said, "I wish there was a way to connect retired teachers with students who need tutoring. Not a big fancy platform. Just a simple way to match people up."
+
+So we said, "Great. Let's build that. And let's have AI help us."
+
+[PAUSE]
+
+She opened Claude. And instead of staring at a blinking cursor, she typed something like this:
+
+"I'm a retired high school English teacher with thirty-one years of experience. I want to create a simple system that matches retired teachers with students who need tutoring, based on subject, location, and availability. I don't know how to code. Can you help me think through this?"
+
+[PAUSE]
+
+And Claude didn't give her a coding tutorial. It asked her questions. What subjects should the system cover? How would teachers sign up? What information would students need to provide? How would you handle scheduling?
+
+It was a conversation. A real, productive, back-and-forth conversation. The kind Linda had been having her entire career — just with a new kind of colleague.
+
+[PAUSE]
+
+Within an hour, she had a complete outline for her matching service. Within a week, with some guidance from our community, she had a working prototype — a simple spreadsheet-based system that Claude helped her design and organize. Nothing fancy. Nothing that required a single line of code. But it worked.
+
+Today, Linda's tutoring network has matched over forty retired teachers with students in her community. Forty teachers who were sitting at home with decades of knowledge and nothing to do with it. Students who couldn't afford private tutoring getting help from some of the most experienced educators in their city.
+
+[PAUSE]
+
+And here's the thing Linda said that I will never forget. She said:
+
+"I realized AI isn't a computer. It's a colleague."
+
+[PAUSE]
+
+That's the breakthrough. That's the moment everything changes. When you stop thinking of AI as a technology you need to master and start thinking of it as a partner you need to talk to, the entire game shifts.
+
+Linda didn't learn to code. She didn't master prompt engineering. She didn't take a twelve-week course. She had a conversation. And that conversation changed her retirement, changed her community, and changed how she sees herself in the world.
+
+That's what's possible. And it starts with one conversation.
+
+---
+
+## [THE PRACTICAL ANSWER — 18:30]
+
+All right. Let's get concrete. You want to know where to start? Here it is. Three steps. That's all.
+
+[PAUSE]
+
+**Step One: Pick one tool.**
+
+One. Not three. Not five. One.
+
+I recommend Claude. I'll be honest about that. I recommend it because its conversational style is natural, it's patient, it asks clarifying questions, and it doesn't try to show off. But if you already have ChatGPT open, that's fine too. The tool matters less than the action.
+
+Go to claude.ai. Create a free account. It takes two minutes. You don't need to pay for anything. You don't need the pro version. The free version is more than enough to start.
+
+[PAUSE]
+
+**Step Two: Start with a conversation, not a project.**
+
+This is where everyone goes wrong. They open AI and immediately try to make it do something. Write a business plan. Create a marketing strategy. Build a website.
+
+No. Slow down.
+
+[PAUSE]
+
+Your first interaction with AI should be an introduction. You're meeting a new colleague. So introduce yourself.
+
+Here's exactly what I want you to type. And I mean exactly:
+
+"Hi. My name is [your name]. I'm [your age], and I'm [retired from / currently working in] [your field]. I have [number] years of experience in [what you know best]. I'm new to AI and I want to explore how it might help me [one thing you're curious about]. Can you start by asking me a few questions so you understand what I'm looking for?"
+
+[PAUSE]
+
+That's it. That's your first prompt. Read that back to yourself. Does that sound like computer programming to you? Does that require a degree? Does that require any technical knowledge whatsoever?
+
+No. It requires the same skill you've used your entire career — the ability to communicate who you are and what you need.
+
+[PAUSE]
+
+And then — and this is the key — just talk to it. Answer its questions. Ask your own questions. Push back if something doesn't make sense. Say "explain that more simply" if it gets too technical. Say "that's not quite what I meant" if it goes in the wrong direction.
+
+You're having a conversation. That's all this is.
+
+[PAUSE]
+
+**Step Three: Ask it to help you build something small.**
+
+Not a business. Not an app. Something small.
+
+A checklist for a project you've been putting off. A draft of a letter you've been meaning to write. An outline for a talk you want to give at your community center. A comparison of three options you've been weighing for months.
+
+Something real. Something that matters to you. Something where, at the end of fifteen minutes, you can look at your screen and say, "I made that. With help, but I made that."
+
+[PAUSE]
+
+Let me walk you through what this actually looks like. Say you're a retired project manager and you've been thinking about starting a consulting practice but you don't know where to begin.
+
+You open Claude. You type:
+
+"Hi, I'm David. I'm fifty-eight, and I just retired from twenty-five years as a project manager in the construction industry. I'm thinking about starting a small consulting business to help local contractors with project planning, but I'm not sure where to start. Can you ask me some questions to help me think this through?"
+
+Claude might come back with: "That sounds like a great use of your experience. Let me ask you a few things to help us map this out. First, when you say local contractors, what size projects are you thinking about — residential, commercial, or both?"
+
+And now you're off. You're having a conversation about your expertise, your goals, your market. Within twenty minutes you might have a rough business model, a list of first steps, and a draft of how you'd describe your services to a potential client.
+
+[PAUSE]
+
+No code. No technical jargon. No twelve-week course. Just a conversation between you and a tool that's designed to help you think.
+
+And here's what I want you to notice after that first conversation. Notice how you feel. Because almost everyone I've walked through this process says the same thing: "That's it? That's all it is?"
+
+[PAUSE]
+
+Yes. That's all it is. The starting line was never as far away as you thought. It was right there the whole time. You just needed someone to point at it and say, "There. Step there."
+
+---
+
+## [THE CLOSE — 26:30]
+
+So let me bring this home.
+
+[PAUSE]
+
+The starting line isn't a course. It's not a book. It's not a bootcamp. It's not a certification. It's not a YouTube playlist with four hundred videos.
+
+The starting line is a conversation.
+
+[PAUSE]
+
+Open Claude or ChatGPT right now. Today. Not tomorrow. Not next week. Not when you "have more time." Right now.
+
+Tell it who you are. Tell it what you know. Tell it what you want to build. Then ask it to help you think.
+
+That's it. That's the start.
+
+[PAUSE]
+
+You have spent decades becoming an expert in something. You have knowledge that no AI will ever have on its own — the lived, earned, hard-won knowledge of someone who has done the work. AI doesn't replace that. AI amplifies it. But only if you sit down and start the conversation.
+
+[PAUSE]
+
+You are not behind. You are not too old. You are not too late. And now, you are not too stuck to start.
+
+The door is open. Walk through it.
+
+---
+
+## [CTA — 28:30]
+
+If this episode helped you, here are two things you can do right now.
+
+First — if you want to talk about how AI fits into your specific career, your specific goals, your specific chapter of life, go to learnmoretechnologies.com/speak. Book a conversation with me or my team. It's real people, real talk, no sales pitch.
+
+Second — if you're ready to be part of a community of professionals over fifty who are building with AI, not just reading about it, go to learnmoretechnologies.com/join-now. That's where 50+TechBridge lives, and that's where people like Linda found their breakthrough.
+
+[PAUSE]
+
+I'm Professor Brian McKinney. This has been #AGENTIC50 — The Pioneers Podcast. Go start that conversation. I'll see you in Episode Three.
+
+[END]
+
+---
+
+*Produced by LearnMore Technologies | learnmoretechnologies.com*
+*50+TechBridge Community | #AGENTIC50*
