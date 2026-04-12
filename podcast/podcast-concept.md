@@ -33,7 +33,8 @@ Every episode of #AGENTIC50 — The Pioneers Podcast is the answer to one real q
 **Solo episodes:** Brian answers the question directly
 **Interview episodes:** Brian + a Pioneer or expert who has lived the answer
 
-**Platforms:** Apple Podcasts · Spotify · YouTube (video version) · Amazon Music
+**Host:** Buzzsprout (buzzsprout.com/2609853)
+**Platforms:** Spotify · Apple Podcasts · Amazon Music · YouTube (video version) · Google Podcasts — all via Buzzsprout RSS
 
 ---
 
@@ -112,7 +113,7 @@ Every episode title is a real question adults 50+ are asking.
 **Recording setup:** Existing video/audio setup (HeyGen avatar for YouTube version if needed)
 **Show notes:** Each episode gets a blog post with the key stats, the Pioneer story summary, and the one action item
 **Repurposing:** Each episode → 1 YouTube Short (the data section) + 1 LinkedIn post + 1 email newsletter
-**Distribution:** Submit to Apple Podcasts, Spotify, Amazon Music on launch
+**Distribution:** Buzzsprout auto-distributes to all platforms via RSS
 
 ---
 

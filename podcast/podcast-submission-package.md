@@ -140,42 +140,41 @@ And neither are you."
 
 ---
 
-## SUBMISSION CHECKLIST
+## HOSTING & DISTRIBUTION
 
-### Spotify for Podcasters (podcasters.spotify.com)
-- [ ] Create account at podcasters.spotify.com
-- [ ] Click "Add a podcast" → "Start a new podcast"
-- [ ] Enter show title: `#AGENTIC50 — The Pioneers Podcast`
-- [ ] Enter short description (500 char version above)
-- [ ] Upload artwork (3000×3000px)
-- [ ] Record and upload trailer (60-sec script above)
-- [ ] Set category: Business & Technology
-- [ ] Publish → name is secured on Spotify immediately
+**Primary host:** Buzzsprout (buzzsprout.com/2609853)
+**Buzzsprout auto-distributes to:** Spotify, Apple Podcasts, Amazon Music, Google Podcasts, iHeartRadio, and 15+ directories via RSS
 
-### Apple Podcasts Connect (podcasters.apple.com)
-- [ ] Sign in with Apple ID at podcasters.apple.com
-- [ ] Click "+" → Add Show → "Add show with RSS feed"
-- [ ] Paste RSS feed URL from Spotify for Podcasters
-- [ ] Verify show details auto-populate from RSS
-- [ ] Submit for review
-- [ ] Apple approves in 24–72 hours → name secured on Apple Podcasts
+### Setup Status (April 12, 2026)
+- [x] Buzzsprout account created
+- [x] Show name: `#AGENTIC50 — The Pioneers Podcast`
+- [x] Creator: Professor Brian McKinney · 50+TechBridge
+- [x] Cover art uploaded (AGENTIC50 logo stamp)
+- [x] Description added
+- [x] Category: Business
+- [x] Email verified: brian@learnmo.com
+- [x] Episode 1 published: The $850 Billion Cost of Ignoring Experienced Workers
+- [x] Episode 2 published: The Investment Gap — Where the Money Isn't Going
+- [x] Episode 3 published: The Pioneers Who Crossed First
+- [x] Episode 4 published: It's About the People
+- [ ] Connect directories (Buzzsprout → Directories tab)
 
-### Amazon Music / Audible
-- [ ] Go to music.amazon.com/podcasters
-- [ ] Submit same RSS feed from Spotify for Podcasters
-- [ ] Auto-populates from RSS — approve and submit
+### Directory Connections (do in Buzzsprout Directories tab)
+- [ ] Spotify — connect via Buzzsprout
+- [ ] Apple Podcasts — connect via Buzzsprout
+- [ ] Amazon Music — connect via Buzzsprout
+- [ ] Google Podcasts — connect via Buzzsprout
 
 ---
 
-## AFTER SUBMISSION — Episode 1 Priority
+## FUTURE EPISODES
 
-Once the show is live, publish Episode 1 within 7 days to signal activity to the algorithm.
+Full-length 20-25 min episodes (scripts ready in `podcast/episodes/`):
+- EP05: "Is It Too Late?" — `EP01-Is-It-Too-Late.md`
+- EP06: "Where Do I Even Start?" — `EP02-Where-Do-I-Start.md`
+- EP07: "How Much Does It Cost?" — `EP03-How-Much-Does-It-Cost.md`
 
-**Episode 1:** "Is It Too Late?"
-Full outline in: `podcast/podcast-concept.md`
-
-Target length: 20–25 minutes
-Record → upload to Spotify for Podcasters → auto-distributes to Apple + Amazon
+Production: ElevenLabs voiceover → upload MP3 to Buzzsprout → auto-distributes everywhere
 
 ---
 
