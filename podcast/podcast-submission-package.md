@@ -100,30 +100,43 @@ And neither are you."
 
 **Required by Apple and Spotify:** Minimum 3000×3000px, JPG or PNG, under 500KB, RGB color mode
 
-### Design Direction
+**Full production spec:** See `podcast/podcast-cover-canva-spec.md`
+
+### Design Direction — matches #AGENTIC50 circular logo stamp
 
 | Element | Spec |
 |---------|------|
 | Canvas size | 3000 × 3000 px |
-| Background | Navy #0E1C2F (brand primary) |
-| Primary text | **#AGENTIC50** — Playfair Display Bold, Gold #C8942E, large |
-| Secondary text | THE PIONEERS PODCAST — DM Sans, White #FFFFFF, smaller |
-| Accent | Gold horizontal rule or bridge graphic element |
-| Bottom bar | 50+TechBridge · learnmoretechnologies.com — DM Sans, muted #A8B8CC, small |
-| Optional | Subtle gold network/bridge graphic behind text |
+| Background | Navy `#0E1C2F` with radial glow `#162640` |
+| Gold rings | Outer 2200px + inner 1900px circles, gold `#C8942E` |
+| Diamonds | 4 cardinal point accents, gold |
+| Microphone | RCA 77-DX style, gold, center-upper |
+| "#" | Montserrat Black 140px, gold |
+| "AGENTIC" | Montserrat Black 280px, white |
+| "50" | Montserrat Black 400px, gold with glow |
+| Subtitle | THE PIONEERS PODCAST — DM Sans 90px, gold 60% |
+| Byline | with Professor Brian McKinney — DM Sans 64px, gold 50% |
+| Bottom | 50+TechBridge · learnmoretechnologies.com/speak — muted |
 
-### Text Hierarchy
+### Visual Hierarchy (top to bottom)
 ```
-[large gold]     #AGENTIC50
-[medium white]   THE PIONEERS PODCAST
-[small gold]     with Professor Brian McKinney
-[bottom small]   50+TechBridge · learnmoretechnologies.com
+        ◆ (diamond)
+    ╭── gold ring ──╮
+    │   RCA MIC     │
+    ╰───────────────╯
+          #
+       AGENTIC        ← white, largest
+    ───    50    ───   ← gold, with glow
+  THE PIONEERS PODCAST
+  with Professor Brian McKinney
+  50+TechBridge · .com/speak
+        ◆ (diamond)
 ```
 
-### What NOT to include
-- No headshot (artwork reads small on phone — text clarity is more important)
-- No clutter — podcast art is seen at 55px on a phone screen
-- Keep it 3 elements max: background, "#AGENTIC50", "THE PIONEERS PODCAST"
+### Thumbnail test — must be readable at 55px
+1. Microphone silhouette recognizable
+2. "AGENTIC" readable in white
+3. "50" readable in gold
 
 ---
 
