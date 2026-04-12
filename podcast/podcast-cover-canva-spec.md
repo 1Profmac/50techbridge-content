@@ -1,4 +1,4 @@
-# AI After 50 — The Pioneers Podcast
+# #AGENTIC50 — The Pioneers Podcast
 ## Cover Art — Full Canva Production Spec
 *Apple Podcasts + Spotify compliant · March 2026*
 
@@ -71,9 +71,9 @@
 
 ---
 
-### Layer 4 — "AI AFTER 50" (primary headline)
+### Layer 4 — "#AGENTIC50" (primary headline)
 - **Type:** Text
-- **Content:** `AI AFTER 50`
+- **Content:** `#AGENTIC50`
 - **Font:** Playfair Display Bold
 - **Size:** 320 px
 - **Color:** `#C8942E` (Gold)
@@ -146,7 +146,7 @@
 │                                     │
 │                                     │
 │                                     │
-│         AI AFTER 50                 │  ← Gold, Playfair Bold 320px (Layer 4)
+│         #AGENTIC50                 │  ← Gold, Playfair Bold 320px (Layer 4)
 │                                     │
 │  ─────────────────────────────      │  ← Gold divider (Layer 5)
 │                                     │
@@ -169,7 +169,7 @@
 2. **Background:** Click background → set color `#0E1C2F`
 3. **Add elements → Shapes → Circle** → resize to 2200×2200, color `#162640`, opacity 60%, center it
 4. **Add elements → Lines** → draw horizontal line, resize to 2400px wide, 6px tall, color `#C8942E`, position at Y:480
-5. **Add text** → type `AI AFTER 50` → font: Playfair Display Bold → size 320 → color `#C8942E` → center → Y:1200
+5. **Add text** → type `#AGENTIC50` → font: Playfair Display Bold → size 320 → color `#C8942E` → center → Y:1200
 6. **Add line** → 1800px wide, 4px, `#C8942E`, opacity 60%, Y:1420
 7. **Add text** → `THE PIONEERS PODCAST` → DM Sans Medium → 120px → White → center → Y:1580
 8. **Add text** → `with Professor Brian McKinney` → DM Sans Regular → 72px → `#C8942E` → center → Y:1780
@@ -184,19 +184,19 @@
 - [ ] Canvas is exactly 3000 × 3000 px
 - [ ] Exported as JPG (not PNG — smaller file size)
 - [ ] File size is under 500KB
-- [ ] "AI AFTER 50" is legible at thumbnail size (drag window small to test)
+- [ ] "#AGENTIC50" is legible at thumbnail size (drag window small to test)
 - [ ] No white background showing through
-- [ ] Saved as: `ai-after-50-podcast-cover.jpg`
+- [ ] Saved as: `agentic-50-podcast-cover.jpg`
 
 ---
 
 ## THUMBNAIL TEST
 
 Before uploading, zoom your browser to see the image at ~55px wide.
-If "AI AFTER 50" is readable at that size — it's ready.
+If "#AGENTIC50" is readable at that size — it's ready.
 If it's not — increase font size or reduce letter spacing.
 
 ---
 
-*Cover art spec for AI After 50 — The Pioneers Podcast*
+*Cover art spec for #AGENTIC50 — The Pioneers Podcast*
 *Brand compliant: brand-constants.md · March 17, 2026*

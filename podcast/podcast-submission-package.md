@@ -1,4 +1,4 @@
-# AI After 50 — The Pioneers Podcast
+# #AGENTIC50 — The Pioneers Podcast
 ## Submission Package — Apple Podcasts + Spotify
 *Ready to submit — March 2026*
 
@@ -7,7 +7,7 @@
 ## SHOW INFORMATION (copy-paste exact text below)
 
 **Show Title:**
-AI After 50 — The Pioneers Podcast
+#AGENTIC50 — The Pioneers Podcast
 
 **Author/Artist Name:**
 Professor Brian McKinney · 50+TechBridge
@@ -15,7 +15,7 @@ Professor Brian McKinney · 50+TechBridge
 **Show Description (Apple Podcasts — up to 4,000 characters):**
 A 50-year-old founder is 2.8 times more likely to succeed than a 25-year-old. That's not motivation — that's MIT analyzing 2.7 million founders.
 
-AI After 50 — The Pioneers Podcast is the show that answers the questions adults 50+ are actually asking about AI, online business, and building something new in the second half of life.
+#AGENTIC50 — The Pioneers Podcast is the show that answers the questions adults 50+ are actually asking about AI, online business, and building something new in the second half of life.
 
 Every week, host Professor Brian McKinney — founder of 50+TechBridge, LearnMoreTechnologies, and the AI learning platform SecureStep.ai — takes one real question from a real person and answers it completely. With data. With a Pioneer story. With the specific first step you can take today.
 
@@ -79,7 +79,7 @@ How much does it cost?
 Can I really do this if I'm not tech-savvy?
 Is it too late?
 
-Every week on AI After 50 — The Pioneers Podcast —
+Every week on #AGENTIC50 — The Pioneers Podcast —
 I answer one of those questions completely.
 Data. A real Pioneer story. One step you can take today.
 
@@ -106,7 +106,7 @@ And neither are you."
 |---------|------|
 | Canvas size | 3000 × 3000 px |
 | Background | Navy #0E1C2F (brand primary) |
-| Primary text | **AI AFTER 50** — Playfair Display Bold, Gold #C8942E, large |
+| Primary text | **#AGENTIC50** — Playfair Display Bold, Gold #C8942E, large |
 | Secondary text | THE PIONEERS PODCAST — DM Sans, White #FFFFFF, smaller |
 | Accent | Gold horizontal rule or bridge graphic element |
 | Bottom bar | 50+TechBridge · learnmoretechnologies.com — DM Sans, muted #A8B8CC, small |
@@ -114,7 +114,7 @@ And neither are you."
 
 ### Text Hierarchy
 ```
-[large gold]     AI AFTER 50
+[large gold]     #AGENTIC50
 [medium white]   THE PIONEERS PODCAST
 [small gold]     with Professor Brian McKinney
 [bottom small]   50+TechBridge · learnmoretechnologies.com
@@ -123,7 +123,7 @@ And neither are you."
 ### What NOT to include
 - No headshot (artwork reads small on phone — text clarity is more important)
 - No clutter — podcast art is seen at 55px on a phone screen
-- Keep it 3 elements max: background, "AI AFTER 50", "THE PIONEERS PODCAST"
+- Keep it 3 elements max: background, "#AGENTIC50", "THE PIONEERS PODCAST"
 
 ---
 
@@ -132,7 +132,7 @@ And neither are you."
 ### Spotify for Podcasters (podcasters.spotify.com)
 - [ ] Create account at podcasters.spotify.com
 - [ ] Click "Add a podcast" → "Start a new podcast"
-- [ ] Enter show title: `AI After 50 — The Pioneers Podcast`
+- [ ] Enter show title: `#AGENTIC50 — The Pioneers Podcast`
 - [ ] Enter short description (500 char version above)
 - [ ] Upload artwork (3000×3000px)
 - [ ] Record and upload trailer (60-sec script above)
@@ -167,3 +167,4 @@ Record → upload to Spotify for Podcasters → auto-distributes to Apple + Amaz
 ---
 
 *Submission package compliant with brand-constants.md March 17, 2026*
+*Rebranded: AI After 50 → #AGENTIC50 — April 12, 2026*

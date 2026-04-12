@@ -1,4 +1,4 @@
-# AI After 50 — The Pioneers Podcast
+# #AGENTIC50 — The Pioneers Podcast
 ## Concept, Format & Episode 1
 *50+TechBridge · learnmoretechnologies.com*
 
@@ -6,7 +6,7 @@
 
 ## The Concept
 
-**Name:** AI After 50 — The Pioneers Podcast
+**Name:** #AGENTIC50 — The Pioneers Podcast
 
 **Tagline:** *Real answers about AI, business, and work for adults 50+ who are done waiting.
 
@@ -15,7 +15,7 @@
 **Why this podcast:**
 The most Googled question in this space is *"Is it too late?"*
 Nobody is answering it with data, story, and specificity.
-Every episode of AI After 50 — The Pioneers Podcast is the answer to one real question — asked by a real person — that deserves a real answer.
+Every episode of #AGENTIC50 — The Pioneers Podcast is the answer to one real question — asked by a real person — that deserves a real answer.
 
 ---
 
@@ -96,7 +96,7 @@ Every episode title is a real question adults 50+ are asking.
 >
 > *That's the first brick.*
 >
-> *I'm Brian McKinney. This is AI After 50 — The Pioneers Podcast.*
+> *I'm Brian McKinney. This is #AGENTIC50 — The Pioneers Podcast.*
 >
 > *You're not done yet."*
 
@@ -126,4 +126,5 @@ Every episode title is a real question adults 50+ are asking.
 ---
 
 *Podcast concept compliant with brand-constants.md March 17, 2026*
+*Rebranded: AI After 50 → #AGENTIC50 — April 12, 2026*
 *All stats sourced in linkedin/research-brief.md*
