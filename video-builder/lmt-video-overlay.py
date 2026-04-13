@@ -38,6 +38,91 @@ FONT_HEADING = "'C\\:/Windows/Fonts/georgiab.ttf'"
 FONT_BODY = "'C\\:/Windows/Fonts/arial.ttf'"
 
 
+def build_chiron_filters(config):
+    """Build FFmpeg drawtext filters for cycling chiron headlines/sublines.
+
+    Config format:
+        "chiron": {
+            "titles": [
+                {"headline": "WORKFORCE REPORT", "subline": "78,557 TECH WORKERS LAID OFF"},
+                {"headline": "CFO SURVEY", "subline": "AI LAYOFFS 9X HIGHER"}
+            ],
+            "duration_per_title": 5,
+            "headline_x": 230,
+            "headline_y": 920,
+            "subline_x": 230,
+            "subline_y": 960
+        }
+    """
+    chiron = config.get("chiron")
+    if not chiron:
+        return []
+
+    titles = chiron.get("titles", [])
+    if not titles:
+        return []
+
+    filters = []
+    dur_per = chiron.get("duration_per_title", 5)
+    total_dur = config.get("duration", 300)
+    headline_x = chiron.get("headline_x", 230)
+    headline_y = chiron.get("headline_y", 918)
+    subline_x = chiron.get("subline_x", 230)
+    subline_y = chiron.get("subline_y", 958)
+    headline_size = chiron.get("headline_font_size", 30)
+    subline_size = chiron.get("subline_font_size", 20)
+    fade = chiron.get("fade", 0.4)
+
+    # Cycle through titles for the full video duration
+    t = 0
+    while t < total_dur:
+        for title in titles:
+            if t >= total_dur:
+                break
+            start = t
+            end = min(t + dur_per, total_dur)
+
+            headline = title.get("headline", "")
+            subline = title.get("subline", "")
+
+            if headline:
+                safe_h = headline.replace("%", "%%").replace("'", "\u2019").replace(":", "\\:")
+                dt_h = (
+                    f"drawtext=fontfile={FONT_HEADING}:"
+                    f"text='{safe_h}':"
+                    f"fontsize={headline_size}:fontcolor=0x000000:"
+                    f"x={headline_x}:y={headline_y}:"
+                    f"enable='between(t,{start},{end})'"
+                )
+                if fade > 0:
+                    dt_h += (
+                        f":"
+                        f"alpha='if(lt(t-{start},{fade}),(t-{start})/{fade},if(lt({end}-t,{fade}),({end}-t)/{fade},1))'"
+                    )
+                filters.append(dt_h)
+
+            if subline:
+                safe_s = subline.replace("%", "%%").replace("'", "\u2019").replace(":", "\\:")
+                dt_s = (
+                    f"drawtext=fontfile={FONT_BODY}:"
+                    f"text='{safe_s}':"
+                    f"fontsize={subline_size}:fontcolor=0xFFFFFF:"
+                    f"x={subline_x}:y={subline_y}:"
+                    f"enable='between(t,{start},{end})'"
+                )
+                if fade > 0:
+                    dt_s += (
+                        f":"
+                        f"alpha='if(lt(t-{start},{fade}),(t-{start})/{fade},if(lt({end}-t,{fade}),({end}-t)/{fade},1))'"
+                    )
+                filters.append(dt_s)
+
+            t += dur_per
+
+    print(f"Chiron: {len(titles)} titles x {dur_per}s each, looping over {total_dur:.0f}s")
+    return filters
+
+
 def build_drawtext_filters(config):
     """Build FFmpeg drawtext filter chain from config."""
     filters = []
@@ -259,7 +344,14 @@ def build_video(config):
     # Build drawtext filter chain
     print("Building overlay filters...")
     vf = build_drawtext_filters(config)
-    print(f"Filters: {len(config['slides'])} slides")
+    # Append chiron text filters if present
+    chiron_filters = build_chiron_filters(config)
+    if chiron_filters:
+        if vf:
+            vf = vf + "," + ",".join(chiron_filters)
+        else:
+            vf = ",".join(chiron_filters)
+    print(f"Filters: {len(config.get('slides', []))} slides" + (f" + {len(config.get('chiron', {}).get('titles', []))} chiron titles" if chiron_filters else ""))
 
     clips = config.get("clips", [])
 
@@ -289,6 +381,12 @@ def build_video(config):
         # Determine mode: Brian-as-base (navy bg, no chromakey) or PIP (green screen)
         brian_is_base = (pip_w == out_w and pip_h == out_h and not pip_chromakey)
 
+        # Chiron image layer (lower-third news graphic)
+        chiron_image = config.get("chiron_image", "")
+        has_chiron_image = chiron_image and os.path.exists(chiron_image)
+        if has_chiron_image:
+            print(f"Chiron layer: {os.path.basename(chiron_image)}")
+
         if brian_is_base:
             # --- BRIAN-AS-BASE MODE ---
             # Brian's video IS the base layer. Clips overlay full screen at timed intervals.
@@ -301,15 +399,20 @@ def build_video(config):
             if has_chrome:
                 print(f"Chrome layer: {os.path.basename(chrome_image)}")
 
-            # Input args: [0] = Brian video, [1] = chrome (optional), [2..N] = clips
+            # Input args: [0] = Brian video, [1] = chrome (optional), [next] = chiron (optional), [next..N] = clips
             input_args = ["-i", input_video]
+            next_idx = 1
             chrome_idx = None
+            chiron_idx = None
             if has_chrome:
                 input_args.extend(["-loop", "1", "-i", chrome_image])
-                chrome_idx = 1
-                clip_offset = 2
-            else:
-                clip_offset = 1
+                chrome_idx = next_idx
+                next_idx += 1
+            if has_chiron_image:
+                input_args.extend(["-loop", "1", "-i", chiron_image])
+                chiron_idx = next_idx
+                next_idx += 1
+            clip_offset = next_idx
             for clip in clips:
                 input_args.extend(["-i", clip["file"]])
 
@@ -346,6 +449,13 @@ def build_video(config):
                 )
                 prev = "vchrome"
 
+            # Chiron image overlay (lower third) on top of chrome
+            if has_chiron_image and chiron_idx is not None:
+                fc_parts.append(
+                    f"[{prev}][{chiron_idx}:v]overlay=0:0:eof_action=pass:format=auto[vchiron]"
+                )
+                prev = "vchiron"
+
         else:
             # --- PIP MODE (original lesson pipeline) ---
             # Green screen Brian as PIP over background + clips
@@ -372,7 +482,7 @@ def build_video(config):
             if has_chrome:
                 print(f"Chrome layer: {os.path.basename(chrome_image)}")
 
-            # Input args: [0] = bg, [1] = Brian, [2] = chrome (optional), [3..N] = clips
+            # Input args: [0] = bg, [1] = Brian, [2] = chrome (optional), [next] = chiron (optional), [next..N] = clips
             input_args = []
             if bg_image:
                 input_args.extend(["-loop", "1", "-i", bg_image])
@@ -380,13 +490,18 @@ def build_video(config):
                 input_args.extend(["-f", "lavfi", "-i",
                     f"color=c=0x{BRAND['navy']}:s={out_w}x{out_h}:d={duration}"])
             input_args.extend(["-i", input_video])
+            next_idx = 2
             chrome_idx = None
+            chiron_idx = None
             if has_chrome:
                 input_args.extend(["-loop", "1", "-i", chrome_image])
-                chrome_idx = 2
-                clip_offset = 3
-            else:
-                clip_offset = 2
+                chrome_idx = next_idx
+                next_idx += 1
+            if has_chiron_image:
+                input_args.extend(["-loop", "1", "-i", chiron_image])
+                chiron_idx = next_idx
+                next_idx += 1
+            clip_offset = next_idx
             for clip in clips:
                 input_args.extend(["-i", clip["file"]])
 
@@ -404,7 +519,7 @@ def build_video(config):
                 f"[1:v]{chromakey_filter}{brian_scale_filter}format=rgba[brian_layer]"
             )
 
-            # Scale and time clips
+            # Scale and time clips (format=rgba so tpad transparency works)
             for i, clip in enumerate(clips):
                 input_idx = i + clip_offset
                 start = clip["start"]
@@ -413,21 +528,15 @@ def build_video(config):
                     f"[{input_idx}:v]scale={out_w}:{out_h}:force_original_aspect_ratio=increase,"
                     f"crop={out_w}:{out_h},"
                     f"trim=start=0:end={clip_dur},setpts=PTS-STARTPTS,"
+                    f"format=rgba,"
                     f"tpad=start_duration={start}:start_mode=add:color=black@0"
                     f"[clip{i}]"
                 )
 
-            # Layer stack: bg -> clips -> Brian PIP -> chrome
+            # Layer stack: bg -> Brian PIP -> clips on top -> chrome
             prev = "0:v"
-            for i, clip in enumerate(clips):
-                out_label = f"v{i}"
-                fc_parts.append(
-                    f"[{prev}][clip{i}]overlay=0:0:"
-                    f"eof_action=pass:format=auto[{out_label}]"
-                )
-                prev = out_label
 
-            # Brian PIP overlay
+            # Brian PIP overlay first (behind clips)
             brian_pos = config.get("brian_position", {"x": pip_x, "y": pip_y})
             brian_x = brian_pos.get("x", pip_x)
             brian_y = brian_pos.get("y", pip_y)
@@ -438,12 +547,28 @@ def build_video(config):
             )
             prev = "vpip"
 
+            # Clips on top of Brian (B-Roll replaces Brian during clip windows)
+            for i, clip in enumerate(clips):
+                out_label = f"v{i}"
+                fc_parts.append(
+                    f"[{prev}][clip{i}]overlay=0:0:"
+                    f"eof_action=pass:format=auto[{out_label}]"
+                )
+                prev = out_label
+
             # Chrome on top
             if has_chrome:
                 fc_parts.append(
                     f"[{prev}][{chrome_idx}:v]overlay=0:0:eof_action=pass:format=auto[vchrome]"
                 )
                 prev = "vchrome"
+
+            # Chiron image overlay (lower third) on top of chrome
+            if has_chiron_image and chiron_idx is not None:
+                fc_parts.append(
+                    f"[{prev}][{chiron_idx}:v]overlay=0:0:eof_action=pass:format=auto[vchiron]"
+                )
+                prev = "vchiron"
 
         # Apply drawtext filters on top of everything (text slides)
         if vf:
@@ -477,22 +602,46 @@ def build_video(config):
         fmt = config.get("format", "landscape")
         out_w, out_h = (1080, 1920) if fmt in ("short", "vertical", "training") else (1920, 1080)
 
+        # Chiron image in simple mode
+        chiron_image = config.get("chiron_image", "")
+        has_chiron_image = chiron_image and os.path.exists(chiron_image)
+
         if config.get("chromakey", False):
-            # Composite Brian over navy background, then apply text slides
-            fc = (
-                f"color=c=0x{BRAND['navy']}:s={out_w}x{out_h}[bg];"
-                f"[0:v]chromakey=color=0x00FF00:similarity=0.30:blend=0.08[keyed];"
-                f"[bg][keyed]overlay=0:0:format=auto[comp]"
-            )
+            # Composite Brian over navy background, then chiron overlay, then text slides
+            input_args = ["-i", input_video]
+            if has_chiron_image:
+                input_args.extend(["-loop", "1", "-i", chiron_image])
+                comp_label = "comp2"
+                print(f"Chiron layer: {os.path.basename(chiron_image)}")
+            else:
+                comp_label = "comp"
+
+            if has_chiron_image:
+                # Layer order: bg -> chiron -> Brian (Brian in front of everything)
+                chiron_overlay_first = (
+                    f";[bg][1:v]overlay=0:0:eof_action=pass:format=auto[bgchiron];"
+                    f"[0:v]chromakey=color=0x00FF00:similarity=0.30:blend=0.08[keyed];"
+                    f"[bgchiron][keyed]overlay=0:0:format=auto[{comp_label}]"
+                )
+                fc = (
+                    f"color=c=0x{BRAND['navy']}:s={out_w}x{out_h}[bg]"
+                    f"{chiron_overlay_first}"
+                )
+            else:
+                fc = (
+                    f"color=c=0x{BRAND['navy']}:s={out_w}x{out_h}[bg];"
+                    f"[0:v]chromakey=color=0x00FF00:similarity=0.30:blend=0.08[keyed];"
+                    f"[bg][keyed]overlay=0:0:format=auto[{comp_label}]"
+                )
             if vf:
-                fc += f";[comp]{vf}[vout]"
+                fc += f";[{comp_label}]{vf}[vout]"
                 map_label = "[vout]"
             else:
-                map_label = "[comp]"
+                map_label = f"[{comp_label}]"
             # NVENC GPU encoding for chromakey composites
             cmd = [
                 FFMPEG, "-y",
-                "-i", input_video,
+                *input_args,
                 "-filter_complex", fc,
                 "-map", map_label,
                 "-map", "0:a",
@@ -501,6 +650,7 @@ def build_video(config):
                 "-b:v", "5M",
                 "-c:a", "aac",
                 "-b:a", "128k",
+                "-t", "60",
                 output_video,
             ]
         else:
@@ -515,6 +665,21 @@ def build_video(config):
                 "-b:a", "128k",
                 output_video,
             ]
+
+    # If filter_complex is too long for Windows command line, write to a temp file
+    fc_file = None
+    try:
+        fc_idx = cmd.index("-filter_complex")
+        fc_value = cmd[fc_idx + 1]
+        if len(fc_value) > 8000:
+            import tempfile
+            fc_file = tempfile.NamedTemporaryFile(mode="w", suffix=".txt", delete=False, encoding="utf-8")
+            fc_file.write(fc_value)
+            fc_file.close()
+            cmd[fc_idx] = "-filter_complex_script"
+            cmd[fc_idx + 1] = fc_file.name
+    except ValueError:
+        pass
 
     using_nvenc = "h264_nvenc" in cmd
     print(f"Rendering ({'NVIDIA NVENC GPU' if using_nvenc else 'CPU libx264'})...")
@@ -539,6 +704,10 @@ def build_video(config):
             print("BUILD FAILED:")
             print(result.stderr[-2000:])
             return None
+
+    # Clean up temp filter file
+    if fc_file and os.path.exists(fc_file.name):
+        os.unlink(fc_file.name)
 
     file_size = os.path.getsize(output_video)
     print(f"DONE! {file_size / 1024 / 1024:.1f} MB -> {output_video}")

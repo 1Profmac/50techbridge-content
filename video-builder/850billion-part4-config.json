@@ -21,33 +21,41 @@
     "y": 0
   },
   "clips": [
-    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Part-4/B-Roll/clip-01-woman-tablet.mp4", "start": 20, "end": 40},
-    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Part-4/B-Roll/clip-03-grant-manager-data.mp4", "start": 70, "end": 90},
-    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Part-4/B-Roll/clip-02-workforce-training.mp4", "start": 130, "end": 150},
-    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Part-4/B-Roll/clip-05-exec-virtual-meeting.mp4", "start": 190, "end": 210},
-    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Part-4/B-Roll/clip-04-workforce-team.mp4", "start": 240, "end": 260}
+    {"file": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Part-4/B-Roll/part4 B RoLL.mp4", "start": 22, "end": 50}
   ],
   "slides": [
     {
-      "start": 0, "end": 18,
+      "start": 0, "end": 20,
       "x": 80, "y": 300, "font_size": 84, "color": "#FFFFFF",
       "no_bullet": true, "center": false, "fade": 0.8,
       "bullets": ["Part 4 of 4", "The Decision on Your Desk"]
     },
     {
-      "start": 42, "end": 68,
+      "start": 52, "end": 78,
       "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
       "no_bullet": true, "center": false,
       "bullets": ["92% of jobs require digital skills.", "22 million older adults lack broadband."]
     },
     {
-      "start": 92, "end": 128,
+      "start": 80, "end": 110,
+      "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false,
+      "bullets": ["AI adoption over 50 tripled.", "9% to 30% in two years.", "The challenge isn't demand. It's access."]
+    },
+    {
+      "start": 112, "end": 145,
       "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
       "no_bullet": true, "center": false,
       "bullets": ["Employment rates tripled.", "14% to 40% in two months.", "One digital skill: +23% earnings."]
     },
     {
-      "start": 152, "end": 188,
+      "start": 147, "end": 178,
+      "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false,
+      "bullets": ["That program was defunded.", "Since 2000, workforce funding", "cut in half."]
+    },
+    {
+      "start": 180, "end": 210,
       "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
       "no_bullet": true, "center": false,
       "bullets": ["347 Pioneers. 3X completion rate.", "74% increase in confidence.", "23 organizations invited us in."]
@@ -59,10 +67,10 @@
       "bullets": ["Every quarter you delay,", "institutional knowledge walks out.", "Every week, 70,000 more turn 65."]
     },
     {
-      "start": 262, "end": 288,
+      "start": 244, "end": 288,
       "x": 80, "y": 300, "font_size": 70, "color": "#FFFFFF",
       "no_bullet": true, "center": false, "fade": 1.0,
-      "bullets": ["learnmoretechnologies.com/workforce", "", "Free Lesson 1: /join-now", "Book a consult: calendly.com"]
+      "bullets": ["learnmoretechnologies.com/speak", "", "Free Lesson 1: /join-now", "Book a consult: calendly.com"]
     }
   ],
   "youtube": {

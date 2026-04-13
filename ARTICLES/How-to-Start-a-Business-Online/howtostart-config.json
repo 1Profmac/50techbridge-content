@@ -1,0 +1,121 @@
+{
+  "_comment": "How to Start a Business Online After 50 — LinkedIn Article Video",
+  "format": "landscape",
+  "input_video": "C:/Users/USER/Desktop/LMT/How to Start a Business Online/How_to_Start_a_Business_Online_After_50.mp4",
+  "output_video": "C:/Users/USER/Desktop/LMT/How to Start a Business Online/How-To-Start-A-Business-Online-After-50-FINISHED.mp4",
+  "bg_image": "C:/Users/USER/Documents/50techbridge-content/video-builder/layers/base/navy-1920x1080.png",
+  "chrome_image": "C:/Users/USER/Documents/50techbridge-content/video-builder/layers/chrome/header-footer-1920x1080.png",
+  "show_header": true,
+  "show_lower_third": true,
+  "chiron_image": "C:/Users/USER/Documents/50techbridge-content/video-builder/layers/chrome/chiron-agentic50-1920x1080.png",
+  "chiron": {
+    "duration_per_title": 5,
+    "headline_x": 310,
+    "headline_y": 895,
+    "headline_font_size": 28,
+    "subline_x": 310,
+    "subline_y": 935,
+    "subline_font_size": 16,
+    "fade": 0.4,
+    "titles": [
+      {"headline": "MIT / HARVARD — 2.7 MILLION FOUNDERS STUDIED", "subline": "FOUNDERS OVER 50 ARE 2.8X MORE LIKELY TO BUILD A TOP COMPANY"},
+      {"headline": "WORKFORCE REPORT — APRIL 2026", "subline": "78,557 TECH WORKERS LAID OFF IN Q1 2026 — 48 PERCENT DUE TO AI"},
+      {"headline": "CFO SURVEY — FORTUNE, MARCH 2026", "subline": "AI LAYOFFS EXPECTED TO BE 9X HIGHER THIS YEAR THAN 2025"},
+      {"headline": "GOLDMAN SACHS — APRIL 2026", "subline": "AI IS CUTTING 16,000 U.S. JOBS EVERY MONTH"},
+      {"headline": "AARP WORKFORCE SURVEY — 2026", "subline": "64 PERCENT OF WORKERS 50+ HAVE EXPERIENCED AGE DISCRIMINATION"},
+      {"headline": "U.S. CENSUS BUREAU — 2022", "subline": "52.3 PERCENT OF U.S. BUSINESSES ARE OWNED BY PEOPLE 55 AND OLDER"},
+      {"headline": "GUSTO SURVEY / CLARIFY CAPITAL — 2025", "subline": "1 IN 4 ENTREPRENEURS 55+ STARTED BECAUSE THEY WERE PUSHED OUT"},
+      {"headline": "SCORE — 2023", "subline": "70 PERCENT OF 50+ BUSINESSES SURVIVE 5 YEARS VS 24 PERCENT YOUNGER"},
+      {"headline": "CNBC — MARCH 2026", "subline": "AMERICANS ARE QUITTING BEFORE AI CAN TAKE THEIR JOBS"},
+      {"headline": "AGENTIC 50 — LEARNMORETECHNOLOGIES.COM", "subline": "YOUR EXPERIENCE IS NOT A HURDLE — IT IS YOUR LAUNCHPAD"}
+    ]
+  },
+  "brian_pip": {
+    "width": 1920,
+    "height": 1080,
+    "margin": 0,
+    "border": 0,
+    "chromakey": true,
+    "show_start": 0,
+    "show_end": 292
+  },
+  "brian_position": {"x": 0, "y": 0},
+  "clips": [
+    {"file": "C:/Users/USER/Desktop/LMT/How to Start a Business Online/Section 1 The Opening Data (MITHarvard stat).mp4", "start": 10, "end": 27},
+    {"file": "C:/Users/USER/Desktop/LMT/How to Start a Business Online/Section 2 Why This Cannot Wait.mp4", "start": 38, "end": 61},
+    {"file": "C:/Users/USER/Desktop/LMT/How to Start a Business Online/Section 3 Carmen's Story.mp4", "start": 72, "end": 89},
+    {"file": "C:/Users/USER/Desktop/LMT/How to Start a Business Online/Section 4 The World Changed In Your Favor.mp4", "start": 100, "end": 117},
+    {"file": "C:/Users/USER/Desktop/LMT/How to Start a Business Online/Section 5 What You Actually Need (the stack).mp4", "start": 128, "end": 145},
+    {"file": "C:/Users/USER/Desktop/LMT/How to Start a Business Online/Section 6 The 5 Advantages After 50.mp4", "start": 156, "end": 173},
+    {"file": "C:/Users/USER/Desktop/LMT/How to Start a Business Online/Section 7 The Mindset Shift.mp4", "start": 184, "end": 201},
+    {"file": "C:/Users/USER/Desktop/LMT/How to Start a Business Online/Section 8 Your First Week (Day 1-7 plan).mp4", "start": 212, "end": 247},
+    {"file": "C:/Users/USER/Desktop/LMT/How to Start a Business Online/Section 9 Closing Call to Action.mp4", "start": 258, "end": 275}
+  ],
+  "slides": [
+    {
+      "start": 0, "end": 8,
+      "x": 80, "y": 300, "font_size": 84, "color": "#C8942E",
+      "no_bullet": true, "center": false, "fade": 0.8,
+      "bullets": ["How to Start a Business", "Online After 50"]
+    },
+    {
+      "start": 29, "end": 36,
+      "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false,
+      "bullets": ["MIT / Harvard:", "50-year-old founders are", "2.8X more likely to succeed"]
+    },
+    {
+      "start": 63, "end": 70,
+      "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false,
+      "bullets": ["78,557 tech workers laid off in Q1 2026", "48% due to AI and automation"]
+    },
+    {
+      "start": 91, "end": 98,
+      "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false,
+      "bullets": ["The same AI tools they use to cut", "are the tools you use to build"]
+    },
+    {
+      "start": 119, "end": 126,
+      "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false,
+      "bullets": ["The key skill is orchestration.", "Not programming."]
+    },
+    {
+      "start": 147, "end": 154,
+      "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false,
+      "bullets": ["5 tools. $200/month.", "One experienced person."]
+    },
+    {
+      "start": 175, "end": 182,
+      "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false,
+      "bullets": ["70% still in business after 5 years", "vs. 24% for younger founders"]
+    },
+    {
+      "start": 203, "end": 210,
+      "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false,
+      "bullets": ["The real shift:", "Permission to be a beginner again"]
+    },
+    {
+      "start": 249, "end": 256,
+      "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false,
+      "bullets": ["Day 1: Your problem to solve", "Day 2: AI builds your first offer", "Day 3-7: Launch on LinkedIn"]
+    },
+    {
+      "start": 277, "end": 292,
+      "x": 80, "y": 300, "font_size": 84, "color": "#C8942E",
+      "no_bullet": true, "center": false, "fade": 1.0,
+      "bullets": ["#Agentic50", "learnmoretechnologies.com/join-now"]
+    }
+  ],
+  "youtube": {
+    "title": "How to Start a Business Online After 50 | The Agentic 50",
+    "description": "A 50-year-old founder is 2.8 times more likely to build a top-performing company than a 25-year-old. That's peer-reviewed data from MIT and Harvard.\n\nIn this video, Brian McKinney breaks down exactly how to start an online business after 50 — the tools, the mindset, and the step-by-step first week plan.\n\n78,557 tech workers were laid off in Q1 2026. Nearly half because of AI. The companies are not waiting. Neither should you.\n\n52.3% of U.S. businesses are owned by people 55 and older.\n\nFree course — Lesson 1 AI Foundations: learnmoretechnologies.com/join-now\nFree strategy session: calendly.com/brianmckinney/new-meeting\n\nBrian McKinney | Founder, Learn More Technologies & 50+TechBridge | MBE Certified\n\n#Agentic50 #StartABusiness #Over50 #AITools #Entrepreneurship #WorkforceDevelopment #50PlusTechBridge #OnlineBusiness #DigitalSkills #FutureOfWork",
+    "tags": "start a business after 50, online business over 50, entrepreneurship, AI tools, agentic 50, 50 plus tech bridge, older entrepreneurs, digital skills, workforce development, startup founder, MIT Harvard founders, learn more technologies, Brian McKinney, AARP, experienced workers, age discrimination, career change, side hustle over 50"
+  }
+}

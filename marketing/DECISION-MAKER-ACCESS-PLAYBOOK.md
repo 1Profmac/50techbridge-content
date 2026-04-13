@@ -52,30 +52,7 @@ By the time you ask for the meeting, the decision maker should already recognize
 
 **Action:** Pick one Tier 1 person every Friday and do this. Make a list, work the list.
 
-#### 5. LinkedIn Premium Prospecting (activated April 11, 2026)
-- **Daily (2 min):** Check "Profile viewers" — anyone who viewed your profile is a warm lead. If they're a workforce director, HR leader, or org decision-maker, send them an InMail same day.
-- **Weekly (15 min):** Search LinkedIn for prospects by title. Use Premium's unlimited search with these queries:
-  - `"workforce director" Austin OR "San Antonio"`
-  - `"WIOA" Texas`
-  - `"HR director" "adults 50" OR "older workers"`
-  - `"workforce development board" Texas`
-  - `"digital skills" "workforce" Austin`
-- **InMail template (customize per person):**
-  ```
-  Hi [Name] — I saw your work with [org]. I run 50+TechBridge, a digital skills training program for adults 50+ with a 3X industry completion rate. 23 organizations have deployed it. If workforce digital skills ever crosses your desk, I'd welcome 20 minutes — no pitch, just a real conversation. — Brian McKinney, learnmoretechnologies.com/workforce
-  ```
-- **After every InMail:** Add the prospect to PROSPECTS-INDEX.md with status "InMail sent [date]"
-- **Profile viewer → prospect pipeline:** If a viewer matches your target audience:
-  1. View their profile back (they get notified)
-  2. Send InMail within 24 hours
-  3. If they respond → schedule Calendly consult
-  4. Add to PROSPECTS-INDEX.md
-- **Monthly review:** Check InMail credits remaining (usually 15/month). Prioritize Tier-1 prospects.
-- **Cancel reminder:** Premium trial ends May 11, 2026. Cancel by May 8 if not keeping.
-
-**Action:** Check profile viewers daily. Send 2-3 InMails per week to high-value prospects.
-
-#### 6. Op-eds in local publications
+#### 5. Op-eds in local publications
 - **Austin American-Statesman** — Opinion section. They publish workforce/business op-eds. 600-800 words.
 - **Austin Business Journal** — Workforce/HR coverage. Pitch them story ideas.
 - **Texas Tribune** — Workforce policy angle. They love data-driven contrarian takes.
@@ -86,7 +63,7 @@ By the time you ask for the meeting, the decision maker should already recognize
 
 ### Tier B — Medium leverage, medium cost
 
-#### 7. Speaking circuit (the long game)
+#### 6. Speaking circuit (the long game)
 - **Apply to speak at:** Austin Tech Council, AustinCC events, Texas SHRM, ATD Austin, Texas Workforce Symposium, Texas Conference for Women, AARP events, MBE Roundtable, Greater Austin Black Chamber, Austin Asian American Chamber.
 - **Strategy:** Speak free at small events (Rotary, Lions, Kiwanis, Chamber breakfasts) to build the reel. Each free talk = 2-3 high-value contacts in the room. Within 6 months, charge $1-2K. Within 12, $5K+.
 

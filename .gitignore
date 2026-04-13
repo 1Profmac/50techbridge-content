@@ -1,9 +1,33 @@
-# Large video files — stored locally, not in git
+# Large media files — stored on Google Drive, not Git
+*.mp4
+*.mp3
+*.wav
+*.m4a
+*.mov
+*.avi
+*.mkv
+
+# Large images (keep small ones like thumbnails)
+# *.png  — allowing PNGs for thumbnails and logos
+# *.jpg
+*.psd
+*.ai
+
+# Binary files
+*.xlsx
+*.csv
+*.pdf
+*.zip
+*.tar.gz
+
+# System
+.env
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Old paths
 video-builder/layers/brian/*.mp4
 video-builder/layers/clips/**/*.mp4
 *.mp4.lnk
-
-# API keys
-.env
-marketing/wioa-etpl-forms/*.xlsx
-video-builder/__pycache__/
