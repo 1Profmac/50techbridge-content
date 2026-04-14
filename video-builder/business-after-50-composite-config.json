@@ -1,0 +1,81 @@
+{
+  "_comment": "YouTube Short — Business After 50 — Brian green screen OVER B-Roll",
+  "_instructions": "Run: python lmt-video-overlay.py business-after-50-composite-config.json",
+  "format": "short",
+  "input_video": "C:/Users/USER/Desktop/LMT/youtube-shorts/Business After 50_1080p.mp4",
+  "output_video": "C:/Users/USER/Desktop/LMT/youtube-shorts/BUSINESS-AFTER-50-FINISHED.mp4",
+  "show_header": false,
+  "show_lower_third": false,
+  "brian_pip": {
+    "width": 1080,
+    "height": 1920,
+    "margin": 0,
+    "border": 0,
+    "chromakey": true,
+    "show_start": 0,
+    "show_end": 59
+  },
+  "brian_position": {
+    "x": 0,
+    "y": 0
+  },
+  "clips": [
+    {"file": "C:/Users/USER/Desktop/LMT/youtube-shorts/B-Roll.mp4", "start": 0, "end": 59}
+  ],
+  "slides": [
+    {
+      "start": 0, "end": 7,
+      "x": 60, "y": 1500, "font_size": 48, "color": "#C8942E",
+      "no_bullet": true,
+      "bullets": ["2.8X MORE LIKELY", "TO SUCCEED — MIT"]
+    },
+    {
+      "start": 7, "end": 12,
+      "x": 60, "y": 1500, "font_size": 44, "color": "#C8942E",
+      "no_bullet": true,
+      "bullets": ["52 percent of U.S.", "businesses owned by 55+"]
+    },
+    {
+      "start": 12, "end": 18,
+      "x": 60, "y": 1500, "font_size": 44, "color": "#C8942E",
+      "no_bullet": true,
+      "bullets": ["Average top founder age: 45"]
+    },
+    {
+      "start": 18, "end": 23,
+      "x": 60, "y": 1500, "font_size": 44, "color": "#FFFFFF",
+      "no_bullet": true,
+      "bullets": ["The data says", "you are right on time."]
+    },
+    {
+      "start": 23, "end": 33,
+      "x": 60, "y": 1500, "font_size": 44, "color": "#FFFFFF",
+      "no_bullet": true,
+      "bullets": ["$7,000-$13,000/mo", "in people alone"]
+    },
+    {
+      "start": 33, "end": 40,
+      "x": 60, "y": 1500, "font_size": 48, "color": "#C8942E",
+      "no_bullet": true,
+      "bullets": ["Under $300/mo with AI", "96 percent reduction"]
+    },
+    {
+      "start": 40, "end": 48,
+      "x": 60, "y": 1500, "font_size": 44, "color": "#FFFFFF",
+      "no_bullet": true,
+      "bullets": ["Your experience is the edge.", "AI amplifies your strengths."]
+    },
+    {
+      "start": 48, "end": 59,
+      "x": 60, "y": 1500, "font_size": 44, "color": "#C8942E",
+      "fade": 1.0,
+      "no_bullet": true,
+      "bullets": ["learnmoretechnologies.com", "", "YOU ARE NOT DONE YET."]
+    }
+  ],
+  "youtube": {
+    "title": "Is It Too Late to Start a Business After 50? MIT Says No.",
+    "description": "A 50-year-old founder is 2.8 times more likely to build a top-performing company than a 25-year-old. That is not motivation. That is MIT.\n\nRunning an online business used to cost $7,000 to $13,000 a month in people alone. Today, one person with AI can handle all of it for under $300 a month. A 96 percent reduction.\n\nYour decades of experience give you an edge. AI simply amplifies your strengths.\n\n347 Pioneers have already started. We are building toward 50,000.\n\nStart your free lessons: https://learnmoretechnologies.com/join-now\n\n#Shorts #Adults50Plus #Entrepreneurship #AIAfter50 #StartupOver50 #AgeTech #YoureNotDoneYet #76TrillionOpportunity #LearnMoreTechnologies #50PlusTechBridge",
+    "tags": "business after 50, start business over 50, entrepreneur over 50, MIT startup data, 50 year old founder, adults 50 plus, AI training, agetech, experienced entrepreneur, second career, encore entrepreneur, Brian McKinney, Learn More Technologies, 76 trillion opportunity"
+  }
+}
