@@ -79,43 +79,43 @@ all_clips.append(make_title_card("THE $850 BILLION PROBLEM", 2, "title-00"))
 all_clips.append(extract_clip(P1, 0, 10, "01-hook"))
 
 # Title card
-all_clips.append(make_title_card("THE CAUSE", 1.5, "title-01"))
+all_clips.append(make_title_card("THE CAUSE", 2, "title-01"))
 
 # Clip 2: The Cause
 all_clips.append(extract_clip(P1, 47, 55, "02-cause"))
 
 # Title card
-all_clips.append(make_title_card("THE ORIGIN", 1.5, "title-02"))
+all_clips.append(make_title_card("THE ORIGIN", 2, "title-02"))
 
 # Clip 3: The Origin
 all_clips.append(extract_clip(P1, 101, 115, "03-origin"))
 
 # Title card
-all_clips.append(make_title_card("THE DATA", 1.5, "title-03"))
+all_clips.append(make_title_card("THE DATA", 2, "title-03"))
 
 # Clip 4: The Data
 all_clips.append(extract_clip(P2, 87, 100, "04-data"))
 
 # Title card
-all_clips.append(make_title_card("THE PROOF", 1.5, "title-04"))
+all_clips.append(make_title_card("THE PROOF", 2, "title-04"))
 
 # Clip 5: The Proof
 all_clips.append(extract_clip(P3, 40, 55, "05-proof"))
 
 # Title card
-all_clips.append(make_title_card("THE RESULTS", 1.5, "title-05"))
+all_clips.append(make_title_card("THE RESULTS", 2, "title-05"))
 
 # Clip 6: The Results
 all_clips.append(extract_clip(P4, 180, 200, "06-results"))
 
 # Title card
-all_clips.append(make_title_card("THE URGENCY", 1.5, "title-06"))
+all_clips.append(make_title_card("THE URGENCY", 2, "title-06"))
 
 # Clip 7: The Urgency
 all_clips.append(extract_clip(P4, 212, 232, "07-urgency"))
 
 # Title card
-all_clips.append(make_title_card("THE THESIS", 1.5, "title-07"))
+all_clips.append(make_title_card("THE THESIS", 2, "title-07"))
 
 # Clip 8: The Statement
 all_clips.append(extract_clip(P1, 242, 252, "08-statement"))
