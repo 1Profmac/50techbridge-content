@@ -1044,10 +1044,31 @@ def main():
     video_path = build_video(config)
     if video_path:
         yt_dir = generate_youtube_package(config, video_path)
-        # Auto-resize to all platform formats
-        yt_video = os.path.join(yt_dir, os.path.basename(video_path))
-        if os.path.exists(yt_video):
-            auto_resize(yt_video, yt_dir)
+        # Auto-resize — but ONLY for native vertical/Short format videos
+        # Landscape videos with branded overlays look broken when auto-cropped to vertical
+        fmt = config.get("format", "landscape")
+        if fmt in ("short", "vertical", "training"):
+            # Source is already vertical — safe to create landscape + square from it
+            yt_video = os.path.join(yt_dir, os.path.basename(video_path))
+            if os.path.exists(yt_video):
+                auto_resize(yt_video, yt_dir)
+        else:
+            # Source is landscape — only create thumbnail, NO vertical/square auto-crop
+            yt_video = os.path.join(yt_dir, os.path.basename(video_path))
+            if os.path.exists(yt_video):
+                resize_dir = os.path.join(yt_dir, "ALL-FORMATS")
+                os.makedirs(resize_dir, exist_ok=True)
+                name = os.path.splitext(os.path.basename(yt_video))[0]
+                import shutil
+                shutil.copy2(yt_video, os.path.join(resize_dir, f"{name}-LANDSCAPE-1920x1080.mp4"))
+                # Thumbnail only — no vertical, no square
+                thumb_path = os.path.join(resize_dir, f"{name}-THUMBNAIL-1280x720.png")
+                cmd = [FFMPEG, "-y", "-ss", "5", "-i", yt_video, "-frames:v", "1", "-update", "1", thumb_path]
+                subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
+                print(f"\nAuto-resize: LANDSCAPE ONLY (no vertical/square — branded overlays would break)")
+                print(f"  Copied: LANDSCAPE 1920x1080")
+                print(f"  Created: THUMBNAIL 1280x720")
+                print(f"\n  NOTE: To make a YouTube Short from this video, build it in Canva with full-screen B-Roll.")
 
 
 if __name__ == "__main__":
