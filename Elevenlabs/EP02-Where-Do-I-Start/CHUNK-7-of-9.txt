@@ -1,0 +1,25 @@
+All right. Let's get concrete. You want to know where to start? Here it is. Three steps. That's all.
+
+Step One: Pick one tool.
+
+One. Not three. Not five. One.
+
+I recommend Claude. I'll be honest about that. I recommend it because its conversational style is natural, it's patient, it asks clarifying questions, and it doesn't try to show off. But if you already have ChatGPT open, that's fine too. The tool matters less than the action.
+
+Go to claude dot ai. Create a free account. It takes two minutes. You don't need to pay for anything. You don't need the pro version. The free version is more than enough to start.
+
+Step Two: Start with a conversation, not a project.
+
+This is where everyone goes wrong. They open AI and immediately try to make it do something. Write a business plan. Create a marketing strategy. Build a website.
+
+No. Slow down.
+
+Your first interaction with AI should be an introduction. You're meeting a new colleague. So introduce yourself.
+
+Here's exactly what I want you to type. And I mean exactly:
+
+"Hi. My name is, and then your name. I'm, and then your age, and I'm retired from or currently working in, and then your field. I have, and then the number of years of experience in what you know best. I'm new to AI and I want to explore how it might help me, and then one thing you're curious about. Can you start by asking me a few questions so you understand what I'm looking for?"
+
+That's it. That's your first prompt. Read that back to yourself. Does that sound like computer programming to you? Does that require a degree? Does that require any technical knowledge whatsoever?
+
+No. It requires the same skill you've used your entire career, the ability to communicate who you are and what you need.

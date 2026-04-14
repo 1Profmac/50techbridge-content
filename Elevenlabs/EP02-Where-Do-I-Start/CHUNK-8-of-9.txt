@@ -1,0 +1,27 @@
+And then, and this is the key, just talk to it. Answer its questions. Ask your own questions. Push back if something doesn't make sense. Say "explain that more simply" if it gets too technical. Say "that's not quite what I meant" if it goes in the wrong direction.
+
+You're having a conversation. That's all this is.
+
+Step Three: Ask it to help you build something small.
+
+Not a business. Not an app. Something small.
+
+A checklist for a project you've been putting off. A draft of a letter you've been meaning to write. An outline for a talk you want to give at your community center. A comparison of three options you've been weighing for months.
+
+Something real. Something that matters to you. Something where, at the end of fifteen minutes, you can look at your screen and say, "I made that. With help, but I made that."
+
+Let me walk you through what this actually looks like. Say you're a retired project manager and you've been thinking about starting a consulting practice but you don't know where to begin.
+
+You open Claude. You type:
+
+"Hi, I'm David. I'm fifty-eight, and I just retired from twenty-five years as a project manager in the construction industry. I'm thinking about starting a small consulting business to help local contractors with project planning, but I'm not sure where to start. Can you ask me some questions to help me think this through?"
+
+Claude might come back with: "That sounds like a great use of your experience. Let me ask you a few things to help us map this out. First, when you say local contractors, what size projects are you thinking about, residential, commercial, or both?"
+
+And now you're off. You're having a conversation about your expertise, your goals, your market. Within twenty minutes you might have a rough business model, a list of first steps, and a draft of how you'd describe your services to a potential client.
+
+No code. No technical jargon. No twelve-week course. Just a conversation between you and a tool that's designed to help you think.
+
+And here's what I want you to notice after that first conversation. Notice how you feel. Because almost everyone I've walked through this process says the same thing: "That's it? That's all it is?"
+
+Yes. That's all it is. The starting line was never as far away as you thought. It was right there the whole time. You just needed someone to point at it and say, "There. Step there."

@@ -1,0 +1,24 @@
+ELEVENLABS VOICE SETTINGS — Brian McKinney
+============================================
+DO NOT CHANGE THESE BETWEEN RENDERS
+
+Voice:              Brian McKinney (custom clone)
+Voice ID:           uAs0vN0GLLpz7FM7JVkz
+Model:              Eleven Multilingual v2
+Speed:              Center (default)
+Stability:          50% (center)
+Similarity:         75% (3/4 right)
+Style Exaggeration: 0 (all the way left — NONE)
+Language Override:   OFF
+Speaker Boost:      ON
+Output Format:      MP3 192kbps or higher
+
+RULES:
+- Never use Eleven v3 or Flash v2.5 — only Multilingual v2
+- Never move Style Exaggeration above 0
+- Never click "Reset values"
+- If switching voices and switching back, re-check all settings
+- Use ELEVENLABS-RENDER-READY.txt (no citations, symbols spelled out)
+- For long scripts, paste in sections or use Projects mode
+
+Last verified: 2026-04-04

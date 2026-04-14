@@ -1,0 +1,15 @@
+Here's what happens. You decide you're going to learn AI. You're motivated. You're ready. And then you sit down at your computer, and you freeze.
+
+Not because you're not smart enough. You ran departments. You raised families. You built careers. You navigated every technology shift from fax machines to smartphones. You are more than capable.
+
+You freeze because the world of AI has been designed, marketed, and explained by people who forgot what it's like to not already know this stuff.
+
+Think about it. Most AI tutorials start with assumptions. They assume you know what a large language model is. They assume you know the difference between ChatGPT and Claude and Gemini and Copilot. They assume you already have accounts set up. They assume you're comfortable with interfaces that look like a developer's workbench.
+
+And the advice? "Just start prompting!" Great. Prompting what? How? About what?
+
+That's the paralysis. It's not a lack of intelligence. It's a lack of a clear first step. And when every article, every video, every course gives you a different first step, you end up taking none of them.
+
+I've seen this pattern a hundred times. Brilliant people, retired executives, veteran educators, seasoned healthcare professionals, stuck at the starting line because nobody bothered to draw them a map.
+
+Well, today I'm drawing you that map.

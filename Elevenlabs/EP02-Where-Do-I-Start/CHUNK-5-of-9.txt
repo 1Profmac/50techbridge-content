@@ -1,0 +1,19 @@
+She tried a couple of online courses. The first one was all theory, the history of neural networks, the architecture of transformer models. Fascinating stuff if you're getting a computer science degree. Completely useless if you're a retired English teacher who wants to do something practical. She dropped out in week two.
+
+The second course moved too fast. It assumed she already knew terminology she'd never encountered. She felt stupid, which made her angry, which made her quit. And I don't blame her one bit.
+
+Then Linda found Fifty Plus TechBridge.
+
+And here's what changed. We didn't start by teaching her about AI. We started by asking her a question: "What do you wish existed?"
+
+And Linda, being Linda, being a thirty-one-year veteran of public education, said, "I wish there was a way to connect retired teachers with students who need tutoring. Not a big fancy platform. Just a simple way to match people up."
+
+So we said, "Great. Let's build that. And let's have AI help us."
+
+She opened Claude. And instead of staring at a blinking cursor, she typed something like this:
+
+"I'm a retired high school English teacher with thirty-one years of experience. I want to create a simple system that matches retired teachers with students who need tutoring, based on subject, location, and availability. I don't know how to code. Can you help me think through this?"
+
+And Claude didn't give her a coding tutorial. It asked her questions. What subjects should the system cover? How would teachers sign up? What information would students need to provide? How would you handle scheduling?
+
+It was a conversation. A real, productive, back-and-forth conversation. The kind Linda had been having her entire career, just with a new kind of colleague.

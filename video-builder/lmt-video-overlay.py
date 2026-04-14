@@ -607,8 +607,14 @@ def build_video(config):
         has_chiron_image = chiron_image and os.path.exists(chiron_image)
 
         if config.get("chromakey", False):
-            # Composite Brian over navy background, then chiron overlay, then text slides
+            # Composite Brian over background (navy color or bg_video), then chiron overlay, then text slides
+            bg_video = config.get("bg_video", "")
+            has_bg_video = bg_video and os.path.exists(bg_video)
             input_args = ["-i", input_video]
+            if has_bg_video:
+                input_args.extend(["-i", bg_video])
+                print(f"Background video: {os.path.basename(bg_video)}")
+            chiron_input_offset = 2 if has_bg_video else 1
             if has_chiron_image:
                 input_args.extend(["-loop", "1", "-i", chiron_image])
                 comp_label = "comp2"
@@ -616,20 +622,26 @@ def build_video(config):
             else:
                 comp_label = "comp"
 
+            # Build background source
+            if has_bg_video:
+                bg_source = f"[1:v]scale={out_w}:{out_h}:force_original_aspect_ratio=increase,crop={out_w}:{out_h},setpts=PTS-STARTPTS[bg]"
+            else:
+                bg_source = f"color=c=0x{BRAND['navy']}:s={out_w}x{out_h}[bg]"
+
             if has_chiron_image:
                 # Layer order: bg -> chiron -> Brian (Brian in front of everything)
                 chiron_overlay_first = (
-                    f";[bg][1:v]overlay=0:0:eof_action=pass:format=auto[bgchiron];"
+                    f";[bg][{chiron_input_offset}:v]overlay=0:0:eof_action=pass:format=auto[bgchiron];"
                     f"[0:v]chromakey=color=0x00FF00:similarity=0.30:blend=0.08[keyed];"
                     f"[bgchiron][keyed]overlay=0:0:format=auto[{comp_label}]"
                 )
                 fc = (
-                    f"color=c=0x{BRAND['navy']}:s={out_w}x{out_h}[bg]"
+                    f"{bg_source}"
                     f"{chiron_overlay_first}"
                 )
             else:
                 fc = (
-                    f"color=c=0x{BRAND['navy']}:s={out_w}x{out_h}[bg];"
+                    f"{bg_source};"
                     f"[0:v]chromakey=color=0x00FF00:similarity=0.30:blend=0.08[keyed];"
                     f"[bg][keyed]overlay=0:0:format=auto[{comp_label}]"
                 )

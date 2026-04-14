@@ -1,0 +1,89 @@
+# REDIRECT RULES FOR LEARNMORETECHNOLOGIES.COM
+# Fix 51 broken 404 pages
+# Install "Redirection" plugin first, then paste these rules
+#
+# WordPress → Plugins → Add New → Search "Redirection" by John Godley → Install → Activate
+# Then go to: Tools → Redirection → Add New
+#
+# For each rule below:
+#   Source URL = left side
+#   Target URL = right side
+#   Match = URL only
+#   Action = Redirect to URL
+#   Group = Redirections
+#   HTTP Code = 301 (Moved Permanently)
+
+# ============================================
+# OLD BLOG POSTS → /courses/
+# ============================================
+/online-sales-strategy/(.*)  →  /courses/
+/digital-skills-foundations/(.*)  →  /courses/
+/category/digital-skills-foundations/(.*)  →  /courses/
+/category/online-sales-strategy/(.*)  →  /courses/
+
+# ============================================
+# OLD COMMUNITY/GROUP PAGES → homepage
+# ============================================
+/groups/at-friends/(.*)  →  /
+/groups/(.*)  →  /
+/community1/(.*)  →  /
+
+# ============================================
+# OLD /temp PAGES → homepage
+# ============================================
+/news/temp  →  /
+/privacy-policy/temp  →  /privacy-policy/
+/(.*)/temp  →  /
+
+# ============================================
+# OLD PAGES → correct pages
+# ============================================
+/terms-of-service  →  /privacy-policy/
+/tags/(.*)  →  /
+
+# ============================================
+# CATCH-ALL 404 → homepage (optional, add last)
+# ============================================
+# This catches anything else that 404s
+# Only add this if you want ALL 404s to go to homepage
+# /(.*)  →  /
+
+
+# ============================================
+# HOW TO ADD IN REDIRECTION PLUGIN:
+# ============================================
+#
+# OPTION A — Add one by one (tedious but precise):
+#   1. Tools → Redirection
+#   2. Click "Add New"
+#   3. Source URL: paste the left side (e.g., /online-sales-strategy/(.*) )
+#   4. Check "Regex" box for any rule with (.*)
+#   5. Target URL: paste the right side (e.g., /courses/)
+#   6. Click "Add Redirect"
+#   7. Repeat for each rule
+#
+# OPTION B — Import CSV (faster):
+#   1. Tools → Redirection → Import/Export tab
+#   2. Upload the CSV file (see below)
+#
+# OPTION C — Add to .htaccess directly (fastest, advanced):
+#   1. Go to Tools → Redirection → Site tab
+#   2. Or edit .htaccess via Bluehost File Manager
+#   3. Paste the Apache rules below
+
+
+# ============================================
+# APACHE .HTACCESS VERSION (paste in .htaccess)
+# ============================================
+# Add BEFORE the WordPress rewrite rules
+#
+# RewriteEngine On
+# RewriteRule ^online-sales-strategy/.* /courses/ [R=301,L]
+# RewriteRule ^digital-skills-foundations/.* /courses/ [R=301,L]
+# RewriteRule ^category/digital-skills-foundations/.* /courses/ [R=301,L]
+# RewriteRule ^category/online-sales-strategy/.* /courses/ [R=301,L]
+# RewriteRule ^groups/.* / [R=301,L]
+# RewriteRule ^community1/.* / [R=301,L]
+# RewriteRule ^terms-of-service$ /privacy-policy/ [R=301,L]
+# RewriteRule ^tags/.* / [R=301,L]
+# RewriteRule ^(.*)/temp$ / [R=301,L]

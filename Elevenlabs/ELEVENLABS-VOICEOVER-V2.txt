@@ -1,0 +1,143 @@
+The $850 Billion Cost of Ignoring Experienced Workers
+
+Every year, U.S. businesses leave $850 billion on the table.
+
+Not because of bad strategy. Not because of market conditions. Not because of rising costs or supply chain disruptions or global competition.
+
+Because of a bias so normalized, so baked into hiring and training culture, that most organizations don't even see it operating.
+
+The bias against experienced workers over 50.
+
+I spent years inside one of the largest advocacy organizations for older Americans. I watched the gap between the policy conversations happening in boardrooms and the reality playing out in break rooms, community centers, and unemployment offices. I left that world to do something about it directly — starting with a folding table at a public library and a belief that adults 50 and older deserve better than what the system has been offering them.
+
+What I've learned since then has confirmed what the data has been saying for years. We are not dealing with a workforce capability problem. We are dealing with a workforce investment problem. And the cost of that problem is staggering.
+
+The Number That Should Stop Every HR Leader Cold
+
+AARP's research, produced with the Economist Intelligence Unit, puts the annual economic cost of age discrimination in the U.S. workforce at $850 billion in lost GDP (AARP/Economist Intelligence Unit, "The Economic Impact of Age Discrimination," 2020). That figure accounts for lost productivity, premature exits from the labor force, underemployment of qualified workers, and the downstream effects on consumer spending and tax revenue when experienced workers are pushed out of the economy before they're ready to leave.
+
+Eight hundred and fifty billion dollars. Every year.
+
+To put that in context: $850 billion surpasses the GDP of more than 170 countries. It rivals the entire annual U.S. Department of Defense budget. It is not a rounding error. It is a fundamental failure hiding in plain sight.
+
+And yet most organizations treat age discrimination as a legal compliance issue rather than an economic one. The conversation tends to start and end with "don't say anything in an interview that could get us sued." The deeper question — what are we losing by not investing in this population? — rarely gets asked.
+
+I'm asking it. And the answer should change how every workforce development leader, HR director, and organizational decision-maker thinks about their talent strategy.
+
+The Myth That Built the Gap
+
+The single most expensive lie in workforce development is this: older workers can't keep up with technology.
+
+I hear it constantly. Sometimes it's said directly. More often it operates as an unspoken assumption that shapes hiring decisions, training investments, and promotion conversations.
+
+An AI hiring system paid $365,000 in an EEOC settlement after automatically rejecting every applicant over 55 (EEOC v. iTutorGroup, 2023). Harvard Business School found that 88 percent of employers admit their automated screening filters out qualified candidates — and age is one of the biggest drivers (Harvard Business School, "Hidden Workers: Untapped Talent," 2021).
+
+The training gap is just as stark. Workers 55 and older receive employer-sponsored training at half the rate of workers under 35 (OECD Employment Outlook, 2019). Seventy-six percent of workers over 50 say their employer offers them fewer opportunities to learn (AARP, 2022).
+
+And when organizations launch digital transformation initiatives, only 18 percent even consider the age of their workforce in the planning (McKinsey Global Survey on Digital Transformation, 2023). The people with the deepest institutional knowledge are the last ones brought into the conversation.
+
+This assumption is not just wrong. Cisco found that learners over 50 complete IT certification courses at 74 percent — higher than 18-to-25-year-olds at 68 percent (Cisco Networking Academy, 2023). A six-year Finnish study found no significant difference in tech proficiency between workers 55 and older and those in their 30s after six months of training (University of Jyväskylä, 2021).
+
+The data is not ambiguous. The gap is not capability. It is investment.
+
+These are not exceptional people. They are not a self-selected group of unusually tech-savvy adults. They are nurses and construction supervisors and retired teachers and former caregivers and people who spent 30 years building skills that the economy now seems determined to ignore.
+
+They are not the problem. The assumption is the problem.
+
+What You're Actually Losing
+
+When an organization fails to invest in its experienced workforce, the losses compound across three categories that rarely appear on any budget line.
+
+Institutional knowledge. The 55-year-old operations manager who's leaving in 18 months is not just taking her salary with her. She's taking 25 years of relationship intelligence, institutional memory, regulatory knowledge, and hard-won process understanding that cannot be documented in an offboarding checklist. Organizations that fail to invest in retaining and upskilling experienced workers are not managing an orderly transition. They are hemorrhaging tacit knowledge that took decades to accumulate.
+
+Mentorship infrastructure. The most effective training programs in any organization are not the formal ones. They are the informal mentorship networks that develop when experienced workers are invested in, valued, and given the tools to grow alongside newer colleagues. When those workers are pushed out, marginalized, or ignored, the mentorship infrastructure collapses with them. What remains is a workforce of technically capable people with no institutional compass.
+
+Consumer alignment. Adults 50 and older control more than 70 percent of U.S. disposable income and account for $7.6 trillion in annual consumer spending (AARP/Oxford Economics, 2019). They are not a niche demographic. They are the primary consumer base for healthcare, financial services, housing, travel, retail, and an increasing share of technology products. Organizations that don't employ, train, and retain people who understand this population from the inside are building products and services for a market they fundamentally don't understand.
+
+The Investment Gap Is Not an Accident
+
+The U.S. spends half as much on training workers over 55 as it does on workers under 35 (OECD Employment Outlook, 2019). The assumption is that younger workers will deliver a longer return on investment. But companies rarely measure training ROI for any age group — making this a rationalization, not a calculation (Cappelli & Novelli, Harvard Business Press, 2010).
+
+The irony is that workers 55 to 64 stay a median of 10.1 years. Workers 25 to 34 stay 3.0 years (Bureau of Labor Statistics, 2024). Workers under 30 quit at three times the rate of workers over 50 (BLS JOLTS, 2023). The 29-year-old you invested in walks out the door before the training pays off. The 54-year-old you overlooked would have stayed a decade.
+
+And upskilling an existing employee costs six times less than hiring externally for the same capability (Bersin/Deloitte, 2019). Replacing a worker costs 50 to 200 percent of their annual salary (Gallup, 2019). Training costs $1,220 a year (Association for Talent Development, 2023). The math is not close.
+
+A meta-analysis of 380 studies found that age has essentially zero correlation with job performance (Ng & Feldman, Journal of Applied Psychology, 2008). Older workers show up more — their absence rate is 2.7 percent compared to 3.3 percent for workers 25 to 54 (Bureau of Labor Statistics, 2023). They are more engaged — 35 percent engagement for workers over 50 versus 29 percent for workers under 35 (Gallup, 2023). And 77 percent of employers rate their performance as good or better than younger workers. Only 3 percent say worse (Transamerica Center for Retirement Studies, 2017).
+
+Nobel laureate Gary Becker's own human capital theory says firm-specific knowledge increases with tenure. Wharton's Peter Cappelli called the depreciating-asset metaphor economically illiterate. London Business School researchers reframed older workers as appreciating assets — because that is what the data shows (Scott & Gratton, "The New Long Life," 2020).
+
+They are not a depreciating asset. They are an underfunded one.
+
+What Smart Organizations Are Doing Differently
+
+The organizations winning the talent competition are doing something simple: treating experienced workers as an asset class that deserves the same development investment as every other talent segment. And the data backs them up — companies with above-median age diversity generate 19 percent higher innovation revenue (Aegon Center for Longevity/NIH, 2018).
+
+They are building digital upskilling pathways designed specifically for adults who did not grow up with smartphones. Not watered-down versions of programs built for 25-year-olds. When training programs accommodate different learning speeds and build on existing experience, completion rates for workers over 45 jump from 35 percent to 68 percent (Lumina Foundation/OECD, 2019). Seventy-one percent of workers over 50 learn best through hands-on practice, and retention is 40 percent higher when new skills are framed as upgrades to what they already know (AARP, 2018; Wolfson & Cavanagh, Journal of Workplace Learning, 2019).
+
+They are restructuring mentorship programs to be bidirectional. Experienced workers mentor newer colleagues on institutional knowledge, relationship management, and professional judgment. Newer colleagues mentor experienced workers on digital tools, emerging technology, and platform fluency. At United Health Group, participants in bidirectional mentorship were 49 percent less likely to leave the company (Harvard Business Review, 2019). At Cisco, mentor retention rose 25 percent (Cisco People Report, 2019). Both directions produce measurable value.
+
+They are rethinking the return-on-investment timeline. A 56-year-old who completes a six-month digital upskilling program is not two years from retirement. The average retirement age is now 62 and rising — up from 57 in 1991 (Gallup, 2024). Fifty-five percent of workers plan to work past 65 or never retire at all (Transamerica, 2023). That 56-year-old has nine years ahead of her, and the average upskilling program pays for itself in 12 to 18 months (Mercer, 2022).
+
+And they are measuring what they have been ignoring. BMW redesigned a production line for its older workforce and matched the productivity of its younger line within one year — with defect rates 2 percent lower (Harvard Business Review, 2010). CVS found that stores with more workers over 50 had 40 percent lower turnover and higher customer satisfaction (CVS Corporate Responsibility Report). Companies that invested in multigenerational workforce programs saw a 12 percent improvement in productivity over two years (Deloitte/Manufacturing Institute, 2022).
+
+The organizations asking these questions are finding answers that make the business case obvious.
+
+The Urgency Is Not Going Away
+
+By 2030, one in five Americans will be over 65 — roughly 73 million people. That is not a projection anyone is debating. It comes directly from the U.S. Census Bureau (2020). Ten thousand Baby Boomers are turning 65 every single day, and that continues through 2029 (Pew Research Center).
+
+The workforce cliff is already here. 2.1 million manufacturing jobs are projected to go unfilled by 2030 (Deloitte/Manufacturing Institute, 2021). The physician shortage could reach 124,000 by 2034 (Association of American Medical Colleges). Half of all utility workers are eligible to retire within five years (Center for Energy Workforce Development). Thirty percent of federal employees will be retirement-eligible by 2026 (Government Accountability Office). These are not future problems. They are current ones accelerating.
+
+The organizations that wait until urgency becomes a crisis will face it at scale — without the infrastructure, programs, or time to build them. The organizations that act now will be two times more likely to meet or exceed their financial targets (Deloitte Global Human Capital Trends, 2020) and will hold a workforce advantage that their competitors cannot replicate quickly.
+
+This is not a diversity initiative. This is not a feel-good program. Adults over 50 control 70 percent of U.S. disposable income and account for $7.6 trillion in annual consumer spending (AARP/Oxford Economics, 2019). Organizations without age-diverse workforces are building products and services for a market they do not understand from the inside. That is not a social issue. That is a revenue problem.
+
+The OECD estimates that closing employment gaps for older workers could increase U.S. GDP by $1.3 trillion annually (OECD, 2020). AARP puts the current cost of age discrimination at $850 billion in lost GDP every year — and that number scales as the population ages. By 2050, the economic contribution of workers over 50 is projected to reach $28.2 trillion (AARP/Oxford Economics, 2019).
+
+The cost of inaction is not measured in thousands. It is measured in trillions.
+
+What I'm Seeing on the Ground
+
+Ninety-two percent of jobs now require digital skills (National Skills Coalition, 2023). Yet 22 million older adults lack broadband access at home (Benton Institute), and one in three U.S. workers lack foundational digital skills — with the gap disproportionately larger for older workers (National Skills Coalition, 2023). AI adoption among adults over 50 has tripled in two years, from 9 percent to 30 percent (AARP Tech Trends, 2025). The demand is not the problem. The access is the problem.
+
+In libraries, senior centers, and faith communities across Austin, I watch adults over 50 learn to use AI tools, navigate digital platforms, and build the confidence to apply those skills in their professional and personal lives. I watch people who were written off by the workforce become competitive again — not because we did anything miraculous, but because we invested in them.
+
+The data says that investment works. RAND studied a digital literacy program and found that employment rates nearly tripled — from 14 percent to 40 percent — within two months of completion. A single digital skill increases earnings by 23 percent, roughly $8,000 a year. Three or more digital skills increase wages by 45 percent (National Skills Coalition, 2023; RAND, 2024).
+
+And yet that program — the one RAND studied, the one that tripled employment rates — closed its doors in 2024. RAND published a commentary asking the question directly: "This digital skills training tripled job rates. Why didn't it survive?" (RAND, 2025). WIOA workforce funding has been cut in half since 2000 when adjusted for inflation (Jobs for the Future). That is the pattern. Pilot it. Prove it. Defund it.
+
+Twenty-three organizations have invited us in because they saw what happens when someone actually commits to this population. Not a pilot. Not a quarter. Committed.
+
+The results are the 3X completion rate — in an industry where the average is 10 to 15 percent (Open Praxis, 2024). The 74 percent confidence increase — consistent with every published study showing statistically significant gains after structured technology training for older adults (JMIR Aging, 2024). The 347 Pioneers who proved the myth wrong, one lesson at a time.
+
+The Solution Is Already Built
+
+The $850 billion cost is not abstract. It is built from decisions being made in your organization right now — the resume your AI screened out this morning, the training budget that skipped your most experienced team, the digital transformation plan that left out the people who built your company.
+
+Every quarter you delay, institutional knowledge walks out the door. Every month without a plan, your competitors who acted first pull further ahead. Every week, 70,000 more Baby Boomers turn 65.
+
+The question is not whether you can afford to invest in your experienced workers.
+
+The question is how much more you are willing to lose before you do.
+
+Here is what we are offering. Not a pilot. Not a study. Not a conversation that leads to another conversation.
+
+Learn More Technologies and 50+TechBridge will build a digital upskilling program for your experienced workforce — the same methodology behind our 3X industry completion rate, 74 percent confidence increase, and 347 Pioneers across 23 organizations.
+
+We bring the curriculum. The methodology. The track record. You bring the workforce that has been waiting for someone to invest in them.
+
+Three steps. That is all this takes.
+
+One. See it for yourself. Take our free Lesson 1 — AI Foundations — at learnmoretechnologies.com/join-now. The same LearnDash program your workforce will experience. See why our completion rate is 3X the industry.
+
+Two. Schedule a free 30-minute consult at calendly.com/brianmckinney/new-meeting. Not a sales call. A strategy session — we will show you exactly where the gap is in your organization and what it is costing you.
+
+Three. Bring your team to the table. This is an exploration meeting — no contracts, no commitments. Just a candid look at what the data says about your workforce and what a solution could look like for your organization.
+
+The organizations that moved first are already seeing the results. The ones that wait will be building from scratch while their competitors are scaling.
+
+This is Brian McKinney. Founder, Learn More Technologies and 50+TechBridge. MBE Certified. Former AARP Community Development Manager. Austin, Texas.
+
+The workforce you are overlooking is the advantage you have been looking for. Let's build it together.
+
+learnmoretechnologies.com/workforce

@@ -1,0 +1,13 @@
+Alright, let's get into real numbers. Not motivational poster numbers. Real, sourced, verifiable numbers.
+
+According to the Small Business Administration, the SBA, the average cost to start an online business in twenty twenty-six ranges from zero to five hundred dollars. Zero to five hundred. That's the SBA's own data. Not mine. Not some influencer on TikTok. The United States government.
+
+Now, the traditional number they cite for all small businesses, including brick-and-mortar, is two thousand to five thousand for a microbusiness. But for an online, service-based business? The floor is literally zero.
+
+Why is it so low? Because of what has changed in the last eighteen months.
+
+Let me walk you through what AI tools have eliminated from the startup cost equation.
+
+Web developers. A custom website used to run you anywhere from five thousand to fifty thousand dollars, depending on complexity. In twenty twenty-four, even a basic WordPress site built by a freelancer was two to five thousand.
+
+Today? You can build a professional, mobile-responsive website with AI assistance in an afternoon. The AI writes your copy, suggests your layout, generates your images, and walks you through the technical setup. I've watched people do it in three hours.

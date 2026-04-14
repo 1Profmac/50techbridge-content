@@ -1,0 +1,56 @@
+{
+  "_comment": "TEMPLATE — VIDEO WITH CHIRON LOWER THIRD. Copy, rename, fill in REPLACE fields.",
+  "_instructions": [
+    "1. Copy this file and rename it for your video",
+    "2. Replace input_video with your HeyGen green screen .mp4",
+    "3. Replace output_video with where you want the finished file",
+    "4. Chiron titles cycle automatically every 5 seconds, looping for the full video",
+    "5. Adjust headline_x/y and subline_x/y to position text on the chiron graphic",
+    "6. Run: python lmt-video-overlay.py your-config.json"
+  ],
+  "format": "landscape",
+  "input_video": "REPLACE — path to HeyGen green screen .mp4",
+  "output_video": "REPLACE — path to FINISHED.mp4",
+  "bg_image": "layers/base/navy-1920x1080.png",
+  "chrome_image": "layers/chrome/header-footer-1920x1080.png",
+  "chiron_image": "layers/chrome/chiron-agentic50-1920x1080.png",
+  "show_header": true,
+  "show_lower_third": true,
+  "brian_pip": {
+    "width": 1920,
+    "height": 1080,
+    "margin": 0,
+    "chromakey": true,
+    "show_start": 0,
+    "show_end": 9999
+  },
+  "brian_position": {"x": 0, "y": 0},
+  "chiron": {
+    "duration_per_title": 5,
+    "headline_x": 230,
+    "headline_y": 918,
+    "headline_font_size": 30,
+    "subline_x": 230,
+    "subline_y": 958,
+    "subline_font_size": 18,
+    "fade": 0.4,
+    "titles": [
+      {"headline": "WORKFORCE REPORT — APRIL 2026", "subline": "78,557 TECH WORKERS LAID OFF IN Q1 2026 — 48 PERCENT DUE TO AI"},
+      {"headline": "CFO SURVEY — FORTUNE, MARCH 2026", "subline": "AI LAYOFFS EXPECTED TO BE 9X HIGHER THIS YEAR THAN 2025"},
+      {"headline": "GOLDMAN SACHS — APRIL 2026", "subline": "AI IS CUTTING 16,000 U.S. JOBS EVERY MONTH"},
+      {"headline": "AARP WORKFORCE SURVEY — 2026", "subline": "64 PERCENT OF WORKERS 50+ HAVE EXPERIENCED AGE DISCRIMINATION"},
+      {"headline": "MIT / HARVARD — 2.7 MILLION FOUNDERS STUDIED", "subline": "FOUNDERS OVER 50 ARE 2.8X MORE LIKELY TO BUILD A TOP COMPANY"},
+      {"headline": "U.S. CENSUS BUREAU — 2022", "subline": "52.3 PERCENT OF U.S. BUSINESSES ARE OWNED BY PEOPLE 55 AND OLDER"},
+      {"headline": "GUSTO SURVEY / CLARIFY CAPITAL — 2025", "subline": "1 IN 4 ENTREPRENEURS 55+ STARTED BECAUSE THEY WERE PUSHED OUT"},
+      {"headline": "CNBC — MARCH 2026", "subline": "AMERICANS ARE QUITTING BEFORE AI CAN TAKE THEIR JOBS"},
+      {"headline": "AARP / OXFORD ECONOMICS — 2019", "subline": "ADULTS 50+ CONTROL 70 PERCENT OF U.S. DISPOSABLE INCOME"},
+      {"headline": "AGENTIC 50 — LEARNMORETECHNOLOGIES.COM", "subline": "YOUR EXPERIENCE IS NOT A HURDLE — IT IS YOUR LAUNCHPAD"}
+    ]
+  },
+  "slides": [],
+  "youtube": {
+    "title": "REPLACE — YouTube title",
+    "description": "REPLACE — YouTube description",
+    "tags": "REPLACE — comma separated tags"
+  }
+}

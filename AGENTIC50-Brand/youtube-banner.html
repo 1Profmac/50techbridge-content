@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html><head><style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:2560px; height:1440px; background:#0E1C2F; display:flex; align-items:center; justify-content:center; font-family:'Montserrat',sans-serif; position:relative; overflow:hidden; }
+
+/* Subtle texture */
+body::after { content:''; position:absolute; inset:0; opacity:0.02; background-image:url("data:image/svg+xml,%3Csvg width='4' height='4' viewBox='0 0 4 4' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3h1v1H1V3zm2-2h1v1H3V1z' fill='%23ffffff'/%3E%3C/svg%3E"); pointer-events:none; }
+
+/* Gold accent lines */
+.line-top { position:absolute; top:80px; left:200px; right:200px; height:1px; background:linear-gradient(90deg, transparent, rgba(200,148,46,0.3), transparent); }
+.line-bottom { position:absolute; bottom:80px; left:200px; right:200px; height:1px; background:linear-gradient(90deg, transparent, rgba(200,148,46,0.3), transparent); }
+
+.content { display:flex; align-items:center; gap:80px; z-index:1; }
+
+.logo-area { display:flex; flex-direction:column; align-items:center; }
+.logo-area svg { width:280px; height:280px; filter:drop-shadow(0 4px 20px rgba(200,148,46,0.2)); }
+
+.text-area { display:flex; flex-direction:column; gap:16px; }
+.brand { font-size:52px; font-weight:800; color:#C8942E; letter-spacing:6px; text-transform:uppercase; }
+.tagline { font-size:28px; font-weight:500; color:rgba(255,255,255,0.6); font-style:italic; }
+.sub { font-size:22px; font-weight:600; color:rgba(200,148,46,0.5); letter-spacing:3px; }
+.stats { font-size:20px; font-weight:500; color:rgba(255,255,255,0.4); letter-spacing:1px; margin-top:8px; }
+.url { font-size:24px; font-weight:700; color:#C8942E; letter-spacing:1px; margin-top:12px; }
+</style></head>
+<body>
+<div class="line-top"></div>
+<div class="line-bottom"></div>
+<div class="content">
+  <div class="logo-area">
+    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="g1" x1="250" y1="30" x2="250" y2="470" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#E8C55A"/><stop offset="50%" stop-color="#C8942E"/><stop offset="100%" stop-color="#A07020"/>
+        </linearGradient>
+        <linearGradient id="mB" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#A07020"/><stop offset="20%" stop-color="#E8C55A"/><stop offset="45%" stop-color="#C8942E"/><stop offset="70%" stop-color="#E0B84E"/><stop offset="100%" stop-color="#9A6A1C"/>
+        </linearGradient>
+        <linearGradient id="mY" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#8A6018"/><stop offset="50%" stop-color="#C8942E"/><stop offset="100%" stop-color="#8A6018"/>
+        </linearGradient>
+        <linearGradient id="mS" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#C8942E"/><stop offset="100%" stop-color="#7A5515"/>
+        </linearGradient>
+        <filter id="glow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <circle cx="250" cy="250" r="230" fill="none" stroke="url(#g1)" stroke-width="2.5"/>
+      <circle cx="250" cy="250" r="210" fill="none" stroke="url(#g1)" stroke-width="0.5" opacity="0.2"/>
+      <circle cx="250" cy="250" r="190" fill="none" stroke="url(#g1)" stroke-width="1.5" opacity="0.6"/>
+      <polygon points="250,14 256,22 250,30 244,22" fill="#C8942E" filter="url(#glow)"/>
+      <polygon points="250,470 256,478 250,486 244,478" fill="#C8942E" filter="url(#glow)"/>
+      <polygon points="14,250 22,244 30,250 22,256" fill="#C8942E" filter="url(#glow)"/>
+      <polygon points="470,250 478,244 486,250 478,256" fill="#C8942E" filter="url(#glow)"/>
+      <path id="tP" d="M 55,250 A 195,195 0 0,1 445,250" fill="none"/>
+      <text font-family="Montserrat,sans-serif" fill="#C8942E" font-size="13" font-weight="600" letter-spacing="8" opacity="0.7"><textPath href="#tP" startOffset="50%" text-anchor="middle">THE PIONEERS PODCAST</textPath></text>
+      <path id="bP" d="M 445,250 A 195,195 0 0,1 55,250" fill="none"/>
+      <text font-family="Montserrat,sans-serif" fill="#C8942E" font-size="13" font-weight="600" letter-spacing="8" opacity="0.7"><textPath href="#bP" startOffset="50%" text-anchor="middle">50+TECHBRIDGE · LMT</textPath></text>
+      <g transform="translate(250,185) scale(0.65)">
+        <rect x="-32" y="-75" width="64" height="110" rx="20" fill="url(#mB)"/>
+        <rect x="-26" y="-67" width="52" height="94" rx="14" fill="#0E1C2F" opacity="0.5"/>
+        <line x1="-16" y1="-57" x2="-16" y2="17" stroke="#C8942E" stroke-width="1.2" opacity="0.5"/>
+        <line x1="-10" y1="-60" x2="-10" y2="20" stroke="#C8942E" stroke-width="1.2" opacity="0.5"/>
+        <line x1="-4" y1="-61" x2="-4" y2="21" stroke="#C8942E" stroke-width="1.2" opacity="0.6"/>
+        <line x1="0" y1="-62" x2="0" y2="22" stroke="#E0B84E" stroke-width="1.5" opacity="0.7"/>
+        <line x1="4" y1="-61" x2="4" y2="21" stroke="#C8942E" stroke-width="1.2" opacity="0.6"/>
+        <line x1="10" y1="-60" x2="10" y2="20" stroke="#C8942E" stroke-width="1.2" opacity="0.5"/>
+        <line x1="16" y1="-57" x2="16" y2="17" stroke="#C8942E" stroke-width="1.2" opacity="0.5"/>
+        <rect x="-30" y="27" width="60" height="6" rx="2" fill="url(#mB)" opacity="0.9"/>
+        <path d="M-36,-35 L-36,40 Q-36,47 -30,47" fill="none" stroke="url(#mY)" stroke-width="4" stroke-linecap="round"/>
+        <path d="M36,-35 L36,40 Q36,47 30,47" fill="none" stroke="url(#mY)" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="-36" cy="-35" r="3.5" fill="#C8942E" stroke="#8A6018" stroke-width="1"/>
+        <circle cx="36" cy="-35" r="3.5" fill="#C8942E" stroke="#8A6018" stroke-width="1"/>
+        <rect x="-5" y="45" width="10" height="22" rx="5" fill="url(#mS)"/>
+        <rect x="-8" y="45" width="16" height="5" rx="2.5" fill="url(#mB)"/>
+      </g>
+      <text x="250" y="295" text-anchor="middle" font-family="Montserrat,sans-serif" fill="#ffffff" font-size="44" font-weight="900" letter-spacing="5"><tspan fill="#C8942E">#</tspan>AGENTIC</text>
+      <line x1="165" y1="310" x2="215" y2="310" stroke="#C8942E" stroke-width="0.8" opacity="0.4"/>
+      <line x1="285" y1="310" x2="335" y2="310" stroke="#C8942E" stroke-width="0.8" opacity="0.4"/>
+      <text x="250" y="358" text-anchor="middle" font-family="Montserrat,sans-serif" fill="#C8942E" font-size="58" font-weight="900" letter-spacing="12" filter="url(#glow)">50</text>
+    </svg>
+  </div>
+  <div class="text-area">
+    <div class="brand">Learn More Technologies</div>
+    <div class="tagline">AI Training for the 50+ Workforce</div>
+    <div class="sub">Professor Brian McKinney · MBE Certified · Austin TX</div>
+    <div class="stats">347 Pioneers · 23 Organizations · 3X Completion Rate</div>
+    <div class="url">learnmoretechnologies.com/speak</div>
+  </div>
+</div>
+</body></html>

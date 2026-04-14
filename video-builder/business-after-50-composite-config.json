@@ -1,27 +1,13 @@
 {
-  "_comment": "YouTube Short — Business After 50 — Brian green screen OVER B-Roll",
+  "_comment": "YouTube Short — Business After 50 — Brian green screen OVER B-Roll (simple chromakey mode)",
   "_instructions": "Run: python lmt-video-overlay.py business-after-50-composite-config.json",
   "format": "short",
   "input_video": "C:/Users/USER/Desktop/LMT/youtube-shorts/Business After 50_1080p.mp4",
   "output_video": "C:/Users/USER/Desktop/LMT/youtube-shorts/BUSINESS-AFTER-50-FINISHED.mp4",
   "show_header": false,
   "show_lower_third": false,
-  "brian_pip": {
-    "width": 1080,
-    "height": 1920,
-    "margin": 0,
-    "border": 0,
-    "chromakey": true,
-    "show_start": 0,
-    "show_end": 59
-  },
-  "brian_position": {
-    "x": 0,
-    "y": 0
-  },
-  "clips": [
-    {"file": "C:/Users/USER/Desktop/LMT/youtube-shorts/B-Roll.mp4", "start": 0, "end": 59}
-  ],
+  "chromakey": true,
+  "bg_video": "C:/Users/USER/Desktop/LMT/youtube-shorts/B-Roll.mp4",
   "slides": [
     {
       "start": 0, "end": 7,

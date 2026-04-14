@@ -1,0 +1,45 @@
+{
+  "_comment": "$850 Billion Series — Part 2 SHORT (vertical 1080x1920) — Retention Reality. Uses native vertical Brian source on green, simple chromakey overlay, no clips. Modeled on workforce-short-1-config.json (commit 67dbff5).",
+  "_instructions": "Brian source must be vertical 1080x1920 on green. Pipeline keys him onto navy and overlays text.",
+  "format": "short",
+  "input_video": "C:/Users/USER/Desktop/youtube shorts template_1080p.mp4",
+  "output_video": "C:/Users/USER/Desktop/LMT/850-Billion-Series/PART-2-SHORT-FINISHED.mp4",
+  "chromakey": true,
+  "show_header": true,
+  "show_lower_third": true,
+  "slides": [
+    {
+      "start": 0, "end": 4,
+      "x": 60, "y": 200, "font_size": 42, "color": "#C8942E",
+      "no_bullet": true, "fade": 0.6,
+      "chapter_label": "Hook",
+      "bullets": ["The Math", "of Loyalty"]
+    },
+    {
+      "start": 4, "end": 14,
+      "x": 60, "y": 200, "font_size": 42, "color": "#FFFFFF",
+      "no_bullet": true,
+      "chapter_label": "55-64 stat",
+      "bullets": ["Workers 55-64", "stay 10.1 years."]
+    },
+    {
+      "start": 14, "end": 22,
+      "x": 60, "y": 200, "font_size": 42, "color": "#FFFFFF",
+      "no_bullet": true,
+      "chapter_label": "25-34 stat",
+      "bullets": ["Workers 25-34", "stay 3 years."]
+    },
+    {
+      "start": 22, "end": 30,
+      "x": 60, "y": 200, "font_size": 42, "color": "#C8942E",
+      "no_bullet": true, "fade": 1.0,
+      "chapter_label": "CTA",
+      "bullets": ["Watch the full", "$850B Series.", "", "Link in bio."]
+    }
+  ],
+  "youtube": {
+    "title": "Workers Over 55 Stay 3X Longer. Why Are We Still Cutting Them?",
+    "description": "Workers 55-64 stay 10.1 years. Workers 25-34 stay 3 years.\n\nUpskilling costs 6X less than hiring externally — yet we spend half as much training workers over 55.\n\nFull series: $850 Billion | The Cost of Ignoring Experienced Workers\n\nlearnmoretechnologies.com/workforce\n\n#Shorts #WorkforceDevelopment #Ageism #50PlusTechBridge",
+    "tags": "shorts, ageism, workforce development, retention, older workers, upskilling, 50+TechBridge, LearnMoreTechnologies, Brian McKinney, age discrimination, HR leadership"
+  }
+}
