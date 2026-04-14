@@ -9,23 +9,23 @@
 - **Organizer:** Tosan Arueyingho, Founder & President (NASPRIL Intertrade)
 - **Organizer LinkedIn:** https://www.linkedin.com/in/tosan-arueyingho/
 - **Speaker Management Director:** Michelle Jackson
-- **Founder Email:** tosan@blackistech.org / tosan@naspril.com
+- **Founder Email:** tosan@blackistechconference.com / tosan@naspril.com
 - **Organizer Phone:** +1 (832) 744-8466
 - **Speaker Application Form:** https://blackistechconference.com/pages/speakers/ (form at bottom of page)
 - **Official Site:** https://blackistechconference.com
 - **Social:** @blackistechteam (Instagram) | @BlackIsTechCon (X/Twitter)
 
 > **ACTION ITEMS:**
-> 1. Send the email below — TO: Michelle Jackson (Speaker Management Director), CC: tosan@blackistech.org
+> 1. Send the email below — TO: Michelle Jackson (Speaker Management Director), CC: tosan@blackistechconference.com
 > 2. Also fill out the official speaker form at the URL above
 > 3. Follow @blackistechteam on IG and engage before sending
-> NOTE: Michelle's email not publicly listed — send to tosan@blackistech.org and ask him to loop in Michelle, OR find her via LinkedIn
+> NOTE: Michelle's email not publicly listed — send to tosan@blackistechconference.com and ask him to loop in Michelle, OR find her via LinkedIn
 
 ---
 
 ## Email Draft
 
-**To:** tosan@blackistech.org
+**To:** tosan@blackistechconference.com
 **Subject:** Speaker Pitch: The $76 Trillion Opportunity -- AI + Adults 50+
 
 ---
