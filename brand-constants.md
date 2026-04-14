@@ -125,6 +125,7 @@ THIS FILE WINS. Update the conflicting document immediately.
 | Module 1 · Lesson 2 | 1PqkgJtleRo | LearnDash M1L2 | ✅ Unlisted |
 | Module 1 · Lesson 3 | pZLCzFLQW1I | LearnDash M1L3 | ✅ Unlisted |
 | Program Introduction Video | PENDING | Train page mid-section | 🔴 In Production |
+| Speaking Sizzle Reel | EVoRJJJf1Ds | /speak page hero + LinkedIn | ✅ Public |
 
 ---
 
