@@ -1,0 +1,116 @@
+{
+  "_comment": "YouTube Short — Business After 50: Is It Too Late? | The $76 Trillion Opportunity",
+  "_instructions": "Record 90-second VERTICAL (1080x1920) clean HeyGen video. No text overlays. Export as MP4. Then run: python lmt-video-overlay.py business-after-50-short-config.json",
+  "input_video": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Shorts/business-after-50-CLEAN.mp4",
+  "output_video": "C:/Users/USER/Desktop/LMT/850-Billion-Series/Shorts/FINISHED/business-after-50-SHORT.mp4",
+  "format": "short",
+  "show_header": true,
+  "show_lower_third": true,
+  "slides": [
+    {
+      "start": 0, "end": 8,
+      "x": 60, "y": 200, "font_size": 48, "color": "#C8942E",
+      "no_bullet": true,
+      "chapter_label": "Hook",
+      "bullets": [
+        "2.8X MORE LIKELY",
+        "TO SUCCEED",
+        "Source: MIT"
+      ]
+    },
+    {
+      "start": 8, "end": 20,
+      "x": 60, "y": 200, "font_size": 42, "color": "#FFFFFF",
+      "no_bullet": true,
+      "chapter_label": "The friend",
+      "bullets": [
+        "She tried to take her",
+        "business online for years.",
+        "",
+        "I started from my map.",
+        "Not hers."
+      ]
+    },
+    {
+      "start": 20, "end": 28,
+      "x": 60, "y": 200, "font_size": 42, "color": "#C8942E",
+      "no_bullet": true,
+      "chapter_label": "52 percent",
+      "bullets": [
+        "52 percent of U.S.",
+        "businesses owned by 55+"
+      ]
+    },
+    {
+      "start": 28, "end": 34,
+      "x": 60, "y": 200, "font_size": 42, "color": "#C8942E",
+      "no_bullet": true,
+      "chapter_label": "Average founder",
+      "bullets": [
+        "Average age of a",
+        "top startup founder: 45"
+      ]
+    },
+    {
+      "start": 34, "end": 40,
+      "x": 60, "y": 200, "font_size": 42, "color": "#FFFFFF",
+      "no_bullet": true,
+      "chapter_label": "94 percent",
+      "bullets": [
+        "94 percent of adults 50+",
+        "who started businesses",
+        "chose to."
+      ]
+    },
+    {
+      "start": 40, "end": 55,
+      "x": 60, "y": 200, "font_size": 42, "color": "#FFFFFF",
+      "no_bullet": true,
+      "chapter_label": "AI changes everything",
+      "bullets": [
+        "AI changes everything.",
+        "",
+        "One person with AI",
+        "can do the work of five.",
+        "",
+        "Your experience is",
+        "the advantage."
+      ]
+    },
+    {
+      "start": 55, "end": 65,
+      "x": 60, "y": 200, "font_size": 42, "color": "#C8942E",
+      "no_bullet": true,
+      "chapter_label": "347 Pioneers",
+      "bullets": [
+        "347 Pioneers have",
+        "already crossed.",
+        "",
+        "Building toward 50,000."
+      ]
+    },
+    {
+      "start": 65, "end": 80,
+      "x": 60, "y": 200, "font_size": 42, "color": "#C8942E",
+      "fade": 1.0,
+      "no_bullet": true,
+      "chapter_label": "CTA",
+      "bullets": [
+        "learnmoretechnologies.com",
+        "",
+        "YOU ARE NOT DONE YET.",
+        "",
+        "Link in bio"
+      ]
+    }
+  ],
+  "youtube": {
+    "title": "Is It Too Late to Start a Business After 50? MIT Says No.",
+    "description": "A 50-year-old founder is 2.8x more likely to build a successful startup than a 25-year-old. That is not motivation. That is MIT.\n\n52 percent of all U.S. businesses are owned by people 55+.\nThe average age of a top startup founder is 45.\n94 percent of adults 50+ who started businesses chose to.\n\nAI changes the equation. The tools that used to require a team of five? One person with AI can do that work.\n\nYour decades of experience are the advantage. AI is the amplifier.\n\n347 Pioneers have already crossed. We are building toward 50,000.\n\nlearnmoretechnologies.com\nYou are not done yet.\n\n#Shorts #Adults50Plus #Entrepreneurship #AIAfter50 #StartupOver50 #AgeTech #YoureNotDoneYet #76TrillionOpportunity #LearnMoreTechnologies #50PlusTechBridge",
+    "tags": "business after 50, start business over 50, entrepreneur over 50, MIT startup data, 50 year old founder, adults 50 plus, AI training, agetech, experienced entrepreneur, second career, encore entrepreneur, Brian McKinney, Learn More Technologies, 50 Plus TechBridge, agentic business, 76 trillion opportunity"
+  },
+  "linkedin": {
+    "youtube_url": "https://youtu.be/YOUR-SHORT-ID",
+    "post": "The question I get asked most:\n\nIs it too late to start a business at 50?\n\nThe answer from MIT, analyzing 2.7 million founders:\nA 50-year-old is 2.8x more likely to succeed than a 25-year-old.\n\n52 percent of all U.S. businesses are owned by people 55+.\nThe average top startup founder is 45.\n94 percent chose entrepreneurship voluntarily.\n\nThe lane is not closing. It is opening.\n\nAnd now AI gives experienced adults the tools to build faster, smarter, and with less overhead than ever.\n\n347 Pioneers have already crossed.\nWe are building toward 50,000.\n\nlearnmoretechnologies.com/speak\n\n#Adults50Plus #Entrepreneurship #AIAfter50 #76TrillionOpportunity #YoureNotDoneYet"
+  }
+}
