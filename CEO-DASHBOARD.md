@@ -205,17 +205,17 @@ Full calendar: [Events Calendar](marketing/EVENTS-CALENDAR-2026.md)
 
 | Resource | Location |
 |----------|----------|
+| **FUNDING TARGETS + DIRECT PIPELINE** | **[ops/FUNDING-TARGETS-AND-DIRECT-PIPELINE.md](ops/FUNDING-TARGETS-AND-DIRECT-PIPELINE.md)** |
+| **TWC Chapter 132 + ETPL checklist** | **[ops/TWC-EXEMPTION-AND-ETPL-CHECKLIST.md](ops/TWC-EXEMPTION-AND-ETPL-CHECKLIST.md)** |
+| **SCSEP Host Agency application** | **[ops/SCSEP-HOST-AGENCY-APPLICATION-GUIDE.md](ops/SCSEP-HOST-AGENCY-APPLICATION-GUIDE.md)** |
 | Brand constants (stats, voice, colors) | [brand-constants.md](brand-constants.md) |
 | Prospect dossiers | [marketing/prospects/](marketing/prospects/) |
 | Decision maker search strings | [DECISION-MAKER-TARGET-LIST.md](marketing/DECISION-MAKER-TARGET-LIST.md) |
-| Connection note templates | [DECISION-MAKER-TARGET-LIST.md](marketing/DECISION-MAKER-TARGET-LIST.md#how-to-connect) |
 | Book chapters | [book/](book/) |
-| Book content engine | [BOOK-CONTENT-ENGINE.md](book/BOOK-CONTENT-ENGINE.md) |
+| Book status tracker | [book/BOOK-STATUS.md](book/BOOK-STATUS.md) |
 | Video production | [850-Billion-Series/PRODUCTION-PLAN.md](850-Billion-Series/PRODUCTION-PLAN.md) |
-| 90-day authority plan | [90_Day_Agentic50_Authority_Plan.txt](90_Day_Agentic50_Authority_Plan.txt) |
 | Reframed strategy (tiers) | [REFRAMED-STRATEGY.md](AGENTIC50-Brand/REFRAMED-STRATEGY.md) |
 | WIOA authorization playbook | [WIOA-AUTHORIZATION-PLAYBOOK.md](AGENTIC50-Brand/WIOA-AUTHORIZATION-PLAYBOOK.md) |
-| COO agent prompt | [ops/COO-Maya-system-prompt-UPDATED.md](ops/COO-Maya-system-prompt-UPDATED.md) |
 
 ---
 
