@@ -139,10 +139,48 @@
 |------|---------|
 | `BusinessCard-FRONT-2100x1200.png` | Front card — high-res PNG (3x scale) |
 | `BusinessCard-BACK-2100x1200.png` | Back card — high-res PNG (3x scale) |
+| `SpotUV-MASK-FRONT.html` | Spot UV mask — front (open in browser, screenshot as PNG) |
+| `SpotUV-MASK-BACK.html` | Spot UV mask — back (open in browser, screenshot as PNG) |
 | `BusinessCard-SOURCE.html` | Editable source — open in browser for exact render |
 | `AGENTIC50-logo.svg` | Vector logo stamp — scalable, lossless |
 | `qr-code-speak.png` | QR code image — links to learnmoretechnologies.com/speak |
 | `PRINT-INSTRUCTIONS.md` | This file |
+
+---
+
+## SPOT UV MASK INSTRUCTIONS
+
+The spot UV mask tells the printer exactly which elements get the glossy raised finish.
+- **Black areas = glossy spot UV** (gold text, logo stamp, borders, social handles, QR frame)
+- **White areas = matte only** (navy background, white text — no gloss)
+
+To create the mask PNGs:
+1. Open `SpotUV-MASK-FRONT.html` in Chrome
+2. Right-click → Inspect → Device toolbar → set to 2100x1200
+3. Screenshot (or use Snagit) → save as `SpotUV-MASK-FRONT-2100x1200.png`
+4. Repeat for `SpotUV-MASK-BACK.html`
+
+Or send the HTML files directly to 4over — their prepress team can extract the mask.
+
+---
+
+## RECOMMENDED PRINTER: 4over.com
+
+| Spec | Selection |
+|------|-----------|
+| Product | Business Cards — 16pt C2S |
+| Lamination | Soft Touch Matte (both sides) |
+| Spot UV | Front + Back (upload mask files) |
+| Corners | Rounded (1/8" radius) |
+| Quantity | 250 or 500 |
+| Estimated cost | $60-80 (250) / $80-110 (500) |
+
+**Upload checklist for 4over:**
+1. Front print file: `BusinessCard-FRONT-2100x1200.png`
+2. Back print file: `BusinessCard-BACK-2100x1200.png`
+3. Front UV mask: `SpotUV-MASK-FRONT-2100x1200.png`
+4. Back UV mask: `SpotUV-MASK-BACK-2100x1200.png`
+5. Request press proof before full run — verify navy depth and gold warmth
 
 ---
 

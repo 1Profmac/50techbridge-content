@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Spot UV Mask — FRONT</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Montserrat:wght@500;600;700;900&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .card {
+    width: 700px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+  }
+  /* Gold inset border — spot UV */
+  .card::before {
+    content: '';
+    position: absolute;
+    inset: 7px;
+    border: 1.5px solid #000000;
+    border-radius: 14px;
+    pointer-events: none;
+    z-index: 2;
+  }
+  .front-left {
+    width: 260px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  /* Divider line */
+  .front-left::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50px;
+    bottom: 50px;
+    width: 1px;
+    background: #000000;
+  }
+  .front-stamp svg {
+    width: 200px;
+    height: 200px;
+  }
+  .front-right {
+    flex: 1;
+    padding: 42px 44px 38px 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+  }
+  .brand-name {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+  .header-rule {
+    width: 50px;
+    height: 2px;
+    background: #000000;
+    margin-top: 8px;
+  }
+  .front-person { margin-top: auto; }
+  /* Person name is WHITE text — NO spot UV */
+  .person-name { display: none; }
+  .person-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 44px;
+  }
+  .gold-rule {
+    width: 40px;
+    height: 1px;
+    background: #000000;
+    margin: 20px 0 16px 0;
+  }
+  /* White text elements — NO spot UV */
+  .person-credential, .person-location, .front-contact { display: none; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="front-left">
+    <div class="front-stamp">
+      <!-- Entire logo stamp gets spot UV — render as solid black -->
+      <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+        <!-- Rings -->
+        <circle cx="250" cy="250" r="230" fill="none" stroke="#000" stroke-width="2.5"/>
+        <circle cx="250" cy="250" r="210" fill="none" stroke="#000" stroke-width="0.5" opacity="0.5"/>
+        <circle cx="250" cy="250" r="190" fill="none" stroke="#000" stroke-width="1.5"/>
+        <!-- Diamonds -->
+        <polygon points="250,14 256,22 250,30 244,22" fill="#000"/>
+        <polygon points="250,470 256,478 250,486 244,478" fill="#000"/>
+        <polygon points="14,250 22,244 30,250 22,256" fill="#000"/>
+        <polygon points="470,250 478,244 486,250 478,256" fill="#000"/>
+        <!-- Dots -->
+        <circle cx="413" cy="87" r="2.5" fill="#000"/>
+        <circle cx="87" cy="87" r="2.5" fill="#000"/>
+        <circle cx="413" cy="413" r="2.5" fill="#000"/>
+        <circle cx="87" cy="413" r="2.5" fill="#000"/>
+        <!-- Curved text top -->
+        <path id="cTP" d="M 55,250 A 195,195 0 0,1 445,250" fill="none"/>
+        <text font-family="Montserrat, sans-serif" fill="#000" font-size="13" font-weight="600" letter-spacing="8">
+          <textPath href="#cTP" startOffset="50%" text-anchor="middle">THE PIONEERS PODCAST</textPath>
+        </text>
+        <!-- Curved text bottom -->
+        <path id="cBP" d="M 445,250 A 195,195 0 0,1 55,250" fill="none"/>
+        <text font-family="Montserrat, sans-serif" fill="#000" font-size="13" font-weight="600" letter-spacing="8">
+          <textPath href="#cBP" startOffset="50%" text-anchor="middle">50+TECHBRIDGE  ·  LMT</textPath>
+        </text>
+        <!-- Mic -->
+        <g transform="translate(250, 185) scale(0.65)">
+          <rect x="-32" y="-75" width="64" height="110" rx="20" fill="#000"/>
+          <rect x="-26" y="-67" width="52" height="94" rx="14" fill="#fff" opacity="0.5"/>
+          <line x1="-16" y1="-57" x2="-16" y2="17" stroke="#000" stroke-width="1.2"/>
+          <line x1="-10" y1="-60" x2="-10" y2="20" stroke="#000" stroke-width="1.2"/>
+          <line x1="-4" y1="-61" x2="-4" y2="21" stroke="#000" stroke-width="1.2"/>
+          <line x1="0" y1="-62" x2="0" y2="22" stroke="#000" stroke-width="1.5"/>
+          <line x1="4" y1="-61" x2="4" y2="21" stroke="#000" stroke-width="1.2"/>
+          <line x1="10" y1="-60" x2="10" y2="20" stroke="#000" stroke-width="1.2"/>
+          <line x1="16" y1="-57" x2="16" y2="17" stroke="#000" stroke-width="1.2"/>
+          <path d="M-12,-73 Q0,-79 12,-73" fill="none" stroke="#000" stroke-width="1"/>
+          <rect x="-30" y="27" width="60" height="6" rx="2" fill="#000"/>
+          <path d="M-36,-35 L-36,40 Q-36,47 -30,47" fill="none" stroke="#000" stroke-width="4" stroke-linecap="round"/>
+          <path d="M36,-35 L36,40 Q36,47 30,47" fill="none" stroke="#000" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="-36" cy="-35" r="3.5" fill="#000"/>
+          <circle cx="36" cy="-35" r="3.5" fill="#000"/>
+          <rect x="-5" y="45" width="10" height="22" rx="5" fill="#000"/>
+          <rect x="-8" y="45" width="16" height="5" rx="2.5" fill="#000"/>
+        </g>
+        <!-- #AGENTIC -->
+        <text x="250" y="295" text-anchor="middle" font-family="Montserrat, sans-serif" fill="#000" font-size="44" font-weight="900" letter-spacing="5">#AGENTIC</text>
+        <!-- Rules -->
+        <line x1="165" y1="310" x2="215" y2="310" stroke="#000" stroke-width="0.8"/>
+        <line x1="285" y1="310" x2="335" y2="310" stroke="#000" stroke-width="0.8"/>
+        <!-- 50 -->
+        <text x="250" y="358" text-anchor="middle" font-family="Montserrat, sans-serif" fill="#000" font-size="58" font-weight="900" letter-spacing="12">50</text>
+      </svg>
+    </div>
+  </div>
+  <div class="front-right">
+    <div>
+      <span class="brand-name">LearnMore Technologies</span>
+      <div class="header-rule"></div>
+    </div>
+    <div class="front-person">
+      <div class="person-title">CEO &amp; Founder</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
