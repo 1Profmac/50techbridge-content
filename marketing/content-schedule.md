@@ -1,128 +1,165 @@
-# LMT Content Publishing Schedule
-## Starting Week of 2026-03-24
-### Owner: Brian McKinney
+# LMT Content + Sales Schedule
+## The $76 Trillion Opportunity — Weekly Rhythm
+### Updated: April 14, 2026
+### Rule: Sales activity FIRST. Content supports sales — it does not replace sales.
 
 ---
 
-## Week 1 (Mar 24-28)
+## DAILY NON-NEGOTIABLES (15 min — before anything else)
 
-| Day | Platform | Content | File |
-|-----|----------|---------|------|
-| Mon | YouTube | Film Short: part-1-the-number | youtube-shorts/scripts/part-1-the-number.md |
-| Tue | LinkedIn | Post: Post 1 — The 2.8x Fact (short post) | linkedin/linkedin-series-the-overlooked-workforce.md |
-| Wed | YouTube | Film Short: part-2-the-blind-spot | youtube-shorts/scripts/part-2-the-blind-spot.md |
-| Thu | LinkedIn | Post: Post 2 — They Chose This (short post) | linkedin/linkedin-series-the-overlooked-workforce.md |
-| Fri | Instagram/Facebook | Share Short 1 as Reel + cross-post LinkedIn article | — |
-| Fri | Gmail | Fix Email 5 price ($99 → $98) in Mailchimp UI | — |
-| Fri | Social | Circle back: FB + IG name change issues | — |
+| Task | Time | Tool |
+|---|---|---|
+| Send 5-10 LinkedIn connection requests to decision makers | 5 min | LinkedIn search strings from marketing/DECISION-MAKER-TARGET-LIST.md |
+| Comment on 3 posts from target connections | 5 min | LinkedIn feed — targets only, no scrolling |
+| Check messages — respond to warm leads, book Calendly calls | 5 min | LinkedIn messaging |
+
+**If you skip this, nothing else matters.**
 
 ---
 
-## Week 2 (Mar 31 - Apr 4)
+## WEEKLY CONTENT SCHEDULE
 
-| Day | Platform | Content | File |
-|-----|----------|---------|------|
-| Mon | YouTube | Film Short: part-3-the-people | youtube-shorts/scripts/part-3-the-people.md |
-| Tue | LinkedIn | Post: Post 3 — The Question Nobody Answered (short post) | linkedin/linkedin-series-the-overlooked-workforce.md |
-| Wed | YouTube | Film Short: part-4-the-playbook | youtube-shorts/scripts/part-4-the-playbook.md |
-| Thu | LinkedIn | Post: Post 4 — AI Is Not Taking Your Job (short post) | linkedin/linkedin-series-the-overlooked-workforce.md |
-| Fri | Instagram/Facebook | Share Shorts 2-3 as Reels | — |
+### Monday — VIDEO DAY
+| Task | Platform | Time | How |
+|---|---|---|---|
+| Record 1 YouTube Short (60 sec) | Phone | 15 min | Phone + Canva edit |
+| Upload Short to YouTube | YouTube | 5 min | From FINISHED-VIDEOS/Shorts/ |
+| Upload same video natively to LinkedIn | LinkedIn | 5 min | Upload MP4 directly, not YouTube link |
 
----
+### Tuesday — WRITING DAY
+| Task | Platform | Time | How |
+|---|---|---|---|
+| Post 1 LinkedIn article or teaching post | LinkedIn | 20 min | Extract from book chapter or use workshop-marketing-assets.md |
+| Cross-post to blog (/the-playbook) | WordPress | 10 min | Same content, add CTA to /speak |
 
-## Week 3 (Apr 7-11)
+### Wednesday — OUTREACH DAY
+| Task | Platform | Time | How |
+|---|---|---|---|
+| Follow up on pending LinkedIn conversations | LinkedIn | 15 min | Move warm leads to Calendly |
+| Send 1 pitch email to conference or organization | Email | 15 min | Use templates from workshop-marketing-assets.md |
 
-| Day | Platform | Content | File |
-|-----|----------|---------|------|
-| Mon | YouTube | Film Short: part-5-the-invitation | youtube-shorts/scripts/part-5-the-invitation.md |
-| Tue | LinkedIn | Post: Post 5 — The $850 Billion Problem (short post) | linkedin/linkedin-series-the-overlooked-workforce.md |
-| Wed | YouTube | Film Short: business-after-50-short | youtube-shorts/scripts/business-after-50-short.md |
-| Thu | LinkedIn | Post: Post 6 — What 3X Actually Means (short post) | linkedin/linkedin-series-the-overlooked-workforce.md |
-| Fri | Instagram/Facebook | Share Shorts 4-5 as Reels | — |
+### Thursday — SHORT DAY
+| Task | Platform | Time | How |
+|---|---|---|---|
+| Record 1 YouTube Short (60 sec) | Phone | 15 min | Different topic than Monday |
+| Upload to YouTube + LinkedIn + Instagram Reel | All | 10 min | Same file everywhere |
 
----
-
-## Week 4 (Apr 14-18)
-
-| Day | Platform | Content | File |
-|-----|----------|---------|------|
-| Tue | LinkedIn | Post: Post 7 — AI After 50: The Real Story (short post) | linkedin/linkedin-series-the-overlooked-workforce.md |
-| Thu | LinkedIn | Post: Post 8 — The Invitation (short post, series close) | linkedin/linkedin-series-the-overlooked-workforce.md |
-| Fri | Instagram/Facebook | Share Short 6 as Reel | — |
-
----
-
-## Week 5 (Apr 21-25) — Start Long Articles + Workforce Shorts
-
-| Day | Platform | Content | File |
-|-----|----------|---------|------|
-| Mon | YouTube | Film: workforce-short-1-untapped-asset | youtube-shorts/scripts/workforce-short-1-untapped-asset.md |
-| Tue | LinkedIn | Publish Article 1: Untapped Asset (long article) | linkedin/workforce-article-1-untapped-asset.md |
-| Thu | LinkedIn | Send new connection messages (weekly routine) | social/linkedin-message-templates.md |
-| Fri | Instagram/Facebook | Share workforce short 1 as Reel | — |
+### Friday — REVIEW + BOOK
+| Task | Platform | Time | How |
+|---|---|---|---|
+| Check analytics (YouTube Studio, LinkedIn) | All | 10 min | What got views? What got engagement? |
+| Work on book chapter (voice memo or review Claude draft) | Book | 30 min | Use Book Content Engine process |
+| Cross-post week's Shorts to Facebook + Instagram | FB/IG | 10 min | Same files |
 
 ---
 
-## Week 6 (Apr 28 - May 2)
+## MONTHLY CONTENT OUTPUT
 
-| Day | Platform | Content | File |
-|-----|----------|---------|------|
-| Mon | YouTube | Film: workforce-short-2-wioa-funds | youtube-shorts/scripts/workforce-short-2-wioa-funds.md |
-| Tue | LinkedIn | Publish Article 2: WIOA Funds (long article) | linkedin/workforce-article-2-wioa-funds.md |
-| Fri | Instagram/Facebook | Share workforce short 2 as Reel | — |
-
----
-
-## Week 7 (May 5-9)
-
-| Day | Platform | Content | File |
-|-----|----------|---------|------|
-| Mon | YouTube | Film: workforce-short-3-23-organizations | youtube-shorts/scripts/workforce-short-3-23-organizations.md |
-| Tue | LinkedIn | Publish Article 3: 23 Organizations (long article) | linkedin/workforce-article-3-23-organizations.md |
-| Fri | Instagram/Facebook | Share workforce short 3 as Reel | — |
+| Content Type | Quantity | Platform | Source |
+|---|---|---|---|
+| YouTube Shorts | 8/month (2/week) | YouTube, LinkedIn, IG, FB, X | Phone + Canva |
+| LinkedIn posts/articles | 4-5/month | LinkedIn | Book chapters, workshop content |
+| Blog posts | 4/month | /the-playbook | Extracted from LinkedIn articles |
+| Long-form YouTube video | 1/month | YouTube | HeyGen + render script |
+| Podcast episode | 1/month | Buzzsprout → Spotify/Apple | Record on mic |
+| Pitch emails | 4/month (1/week) | Email | Conference organizers, workforce boards |
+| Book chapter | 1 every 3 weeks | Leanpub + GitHub | Voice memo → Claude → review |
 
 ---
 
-## Week 8 (May 12-16)
+## CONTENT SOURCE: THE BOOK FEEDS EVERYTHING
 
-| Day | Platform | Content | File |
-|-----|----------|---------|------|
-| Mon | YouTube | Film: workforce-short-4-850b-cost | youtube-shorts/scripts/workforce-short-4-850b-cost.md |
-| Tue | LinkedIn | Publish Article 4: $850B Cost (long article) | linkedin/workforce-article-4-850b-cost.md |
-| Fri | Instagram/Facebook | Share workforce short 4 as Reel | — |
+Each book chapter (written every 3 weeks) automatically generates:
 
----
+| Extraction | Quantity | Covers |
+|---|---|---|
+| LinkedIn posts | 5 per chapter | 2.5 weeks of Tuesday posts |
+| Blog posts | 4 per chapter | 1 month of blog content |
+| Short scripts | 3-4 per chapter | 2 weeks of Monday/Thursday Shorts |
+| Long-form video script | 1 per chapter | Monthly YouTube video |
+| Podcast episode script | 1 per chapter | Monthly podcast |
 
-## Week 9 (May 19-23)
-
-| Day | Platform | Content | File |
-|-----|----------|---------|------|
-| Mon | YouTube | Film: workforce-short-5-deploy-this-quarter | youtube-shorts/scripts/workforce-short-5-deploy-this-quarter.md |
-| Tue | LinkedIn | Publish Article 5: Deploy This Quarter (long article) | linkedin/workforce-article-5-deploy-this-quarter.md |
-| Fri | Instagram/Facebook | Share workforce short 5 as Reel | — |
+**12 chapters = 12 months of content. You never run out.**
 
 ---
 
-## Ongoing Weekly Tasks (Every Week)
+## CONTENT CALENDAR — APRIL 14 - MAY 9, 2026
 
-| Day | Task | Time |
-|-----|------|------|
-| Monday | Film 1 YouTube Short | 30 min |
-| Monday | Check LinkedIn new connections → send templates | 5 min |
-| Tuesday | Publish LinkedIn post or article | 10 min |
-| Friday | Cross-post shorts to IG Reels + FB Reels | 10 min |
-| Friday | Check Metricool analytics | 5 min |
-| Friday | Review and decline non-business friend/follow requests | 5 min |
+### Week of April 14 (current week — remaining days)
+
+| Day | Task | Status |
+|---|---|---|
+| Mon Apr 14 | Business After 50 Short uploaded to YouTube | DONE |
+| Mon Apr 14 | Sizzle reel re-uploaded to YouTube (Svb6LtzS070) | DONE |
+| Mon Apr 14 | LinkedIn native video posted | DONE |
+| Mon Apr 14 | 5 LinkedIn connection requests sent | DONE |
+| Tue Apr 15 | Post LinkedIn article: "It Used to Take a Team of Five" | Ready — linkedin-article-ai-amplifies.md |
+| Tue Apr 15 | Cross-post to /the-playbook blog | Same content |
+| Wed Apr 16 | Follow up on Larry Williams message | Check LinkedIn |
+| Wed Apr 16 | Send 1 pitch email (pick from target list) | Use workshop-marketing-assets.md Template B or C |
+| Thu Apr 17 | Record + upload Short #2 (pick a stat — $850B or 52.3%) | Phone + Canva |
+| Fri Apr 18 | Check analytics | YouTube Studio + LinkedIn |
+| Fri Apr 18 | Voice memo for Chapter 1 expansion | 15 min on phone |
+
+### Week of April 21 (Black Is Tech Conference week)
+
+| Day | Task |
+|---|---|
+| Mon Apr 21 | Record + upload Short #3 |
+| Tue Apr 22 | LinkedIn post (from workshop-marketing-assets.md Post 2 — $76T thought piece) |
+| Wed Apr 23 | Follow up on LinkedIn conversations + 1 pitch email |
+| Thu Apr 24 | Record + upload Short #4 |
+| Fri Apr 25 | Review analytics + book chapter work |
+| ALL WEEK | If attending Black Is Tech: film B-Roll, connect with speakers, hand out cards |
+
+### Week of April 28
+
+| Day | Task |
+|---|---|
+| Mon Apr 28 | Record + upload Short #5 |
+| Tue Apr 29 | LinkedIn post (from workshop-marketing-assets.md Post 3 — origin story) |
+| Wed Apr 30 | Follow up + pitch email |
+| Thu May 1 | Record + upload Short #6 |
+| Fri May 2 | Review + book chapter |
+
+### Week of May 5
+
+| Day | Task |
+|---|---|
+| Mon May 5 | Record + upload Short #7 |
+| Tue May 6 | LinkedIn article (extracted from expanded Chapter 1) |
+| Wed May 7 | Follow up + pitch email (target: NMSDC conference July speaker app) |
+| Thu May 8 | Record + upload Short #8 |
+| Fri May 9 | Review analytics + publish Chapter 1 on Leanpub |
 
 ---
 
-## Still To Do (Not Scheduled Yet)
+## PIPELINE TRACKING
 
-- [ ] Gmail signature update
-- [ ] Gmail mobile notifications for LMT labels
-- [ ] Empty Gmail Trash
-- [ ] X/Twitter account creation
-- [ ] Podcast recording (after shorts are done)
-- [ ] Update live WordPress pages to match Git (/workforce/ CTAs)
-- [ ] Set up Buffer when posting volume justifies it
-- [ ] Workforce email sequence (build in Mailchimp)
+Update this weekly:
+
+| Contact | Organization | Date Connected | Status | Next Step | Expected Value |
+|---|---|---|---|---|---|
+| Kelley Lingle | Workforce Board, St. Louis | Apr 14 | Pending accept | Wait for accept → message | TBD |
+| Megan Fortson | Austin Infrastructure Academy | Apr 14 | Pending accept | Wait for accept → message | TBD |
+| Anthony Segura | Economic Dev, Austin | Apr 14 | Pending accept | Wait for accept → message | TBD |
+| Larry Williams | Gov contracting connector, Austin | Apr 14 | Message sent | Wait for reply → book call | Referrals |
+| Tosan Arueyingho | Black Is Tech Conference | Apr 13 | Email sent | Wait for reply | Speaking slot |
+| Yael Lawson | Workforce Solutions Capital Area | Apr 14 | LOCKED 3 weeks | Reconnect May 5 | WIOA contract |
+
+---
+
+## WHAT NOT TO DO
+
+- Don't create content without checking: "who is this for and how does it lead to a contract?"
+- Don't attend events without a target connection and pre-work done
+- Don't spend more than 30 min/day on content — the rest goes to sales
+- Don't post YouTube links on LinkedIn — upload video natively
+- Don't auto-crop landscape videos into Shorts — build fresh in Canva
+- Don't volunteer for free unless it produces B-Roll or puts you in front of a buyer
+- Don't scroll LinkedIn feed — connect with targets only
+
+---
+
+*The $76 Trillion Opportunity — Learn More Technologies*
+*"Your decades of experience give you an edge — AI simply amplifies your strengths."*
