@@ -87,17 +87,18 @@
 
 ## PIPELINE — Who Can Write a Check?
 
-### Tier 1: WORKFORCE BOARDS (WIOA money — call these people)
+### Tier 1: WORKFORCE / WIOA (call these people)
 
 | Name | Title | Org | Phone/Email | Action | Status |
 |------|-------|-----|-------------|--------|--------|
-| ETP Coordinator | ETP Coordinator | WS Capital Area (Austin) | 512-597-7191 | CALL — start ETPL process | Not called |
+| **David Goldstein** | Workforce Business Services Supervisor | **C2GPS Austin** | linkedin.com/in/dgoldst | **TWC REFERRED YOU TO HIM.** Call or connect NOW. | **Warm referral — called WIOA cert line 512-597-7253 last week, got sent to David** |
+| **Jason Helmick** | Deputy Dir Business Services | C2GPS Austin | LinkedIn | Connect — David's colleague, same contractor | Not contacted |
+| Crystal Oliver | Admin | WS Capital Area | 512-597-7191 | Got routed to children's ed — wrong dept | Called Apr 15 — wrong department |
+| WIOA Cert Line | — | TWC | 512-597-7253 | Already called — referred to David Goldstein | Called last week |
 | Yael Lawson | CEO | WS Capital Area (Austin) | LinkedIn + meeting request | Connect + ask for 15 min | Not contacted |
 | Adrian Lopez | CEO | WS Alamo (San Antonio) | 210-224-4357 / etp@wsalamo.org | CALL — start ETPL process | Not called |
 | Juliet Stipeche | Executive Director | WS Gulf Coast (Houston) | juliet.stipeche@wrksolutions.net | Email + LinkedIn | Not contacted |
 | Laura Ward | President/CEO | WS Greater Dallas | wfsdallas.com/contact | Call main line | Not contacted |
-| Jason Helmick | Deputy Dir Business Services | C2GPS Austin | LinkedIn | Connect — he's the WIOA operations guy | Not contacted |
-| David Goldstein | Workforce Business Services Supervisor | C2GPS Austin | LinkedIn | Connect | Not contacted |
 
 ### Tier 2: SUBCONTRACTOR PARTNERS (fastest path to revenue)
 
