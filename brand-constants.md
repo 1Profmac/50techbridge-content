@@ -200,7 +200,7 @@ what protects our Pioneers. We meet or exceed GDPR — the strongest global stan
 |---|---|---|
 | Pioneer profiles | Name, email, progress, completion, badges, referrals | LearnDash + BuddyBoss (self-hosted) |
 | Community activity | Posts, connections, engagement, groups | BuddyBoss (self-hosted) |
-| Email list | Every Pioneer, partner, prospect — segmented | ConvertKit — weekly CSV backup |
+| Email list | Every Pioneer, partner, prospect — segmented | Mailchimp Starter ($13/mo) — migrate to ConvertKit when list outgrows plan |
 | Course data | Progress, completion, quiz results | LearnDash (self-hosted) |
 | Social analytics | Reach, engagement, clicks | Metricool — CSV export weekly |
 | Website analytics | All visitor data | Plausible (privacy-first, no Google) |
