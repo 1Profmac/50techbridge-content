@@ -1,71 +1,105 @@
 # OWN THE AGENTIC 50+ SPACE
 ## Content Domination Strategy — Learn More Technologies
-### Updated: April 19, 2026
-### Rule: Every piece of content serves two masters — SEO authority and pipeline revenue.
+### Updated: April 19, 2026 (60-Day Revisions Applied)
+
+---
+
+## NORTH STAR METRIC: Calendly Calls Booked
+
+If this number moves, the strategy works. Everything else is a leading indicator.
 
 ---
 
 ## THE SYSTEM
 
-One article becomes 10 assets across 6 platforms. Nothing gets created once and forgotten. Every article feeds LinkedIn, YouTube, Shorts, Podcast, and Email. Every connection request carries a link. Every call references published content.
+One article becomes 10 assets across 6 platforms. Every connection request carries a link. Every call references published content.
 
 ```
 ARTICLE (SEO Machine)
   ├── WordPress blog post (SEO — Google finds you)
   ├── LinkedIn article (credibility — buyers see you)
   ├── LinkedIn feed post (reach — network grows)
-  ├── YouTube video script (authority — long-form depth)
   ├── YouTube Short script (discovery — algorithm feeds you)
   ├── Podcast episode script (intimacy — voice builds trust)
   ├── ElevenLabs voiceover (audio version of article)
   ├── Email newsletter (nurture — Mailchimp to list)
   ├── PPT deck (speaking — pitch to workforce boards)
+  ├── YouTube video script (authority — long-form, monthly)
   └── Text invite (conversion — drive to /join-now)
 ```
 
 ---
 
-## DAILY RHYTHM — 60 MINUTES TOTAL
+## DAILY RHYTHM — 2 BLOCKS + FLEX
 
-### BLOCK 1: Morning Hunt (25 min) — 7:00 AM
+### BLOCK 1: Morning Hunt (30 min) — 7:00 AM
+
 | Task | Time | Details |
 |---|---|---|
+| **HUNT CALL** — pick 1 target, call them | 5 min | Before anything else. Voicemail counts. Log in pipeline. |
 | Send 15-20 LinkedIn connection requests | 15 min | Each request includes link to most relevant article |
 | Send 3-5 DM follow-ups | 5 min | Reference published content in every message |
 | Check messages — respond to warm leads | 5 min | Book Calendly calls immediately |
 
 **Connection Request → Article Matching:**
-| Target Audience | Send This Article |
+| Target Audience | Send This Article | Audience Tag |
+|---|---|---|
+| Workforce board director | #11 ETPL or #17 WIOA Proposal | Leader |
+| HR leader / VP People | #14 AI Training Older Workers | Leader |
+| Event planner / conference | #12 Hire Keynote Speaker | Leader |
+| AARP / aging org contact | #13 What Is AgeTech | Leader |
+| Employer / CEO | #09 $850B Cost FLAGSHIP | Leader |
+| Individual 50+ | #10 Digital Skills Guide or #25 Free Course | Individual |
+| Training provider | #11 ETPL or #02 WIOA Funds | Leader |
+
+### BLOCK 2: Evening Ship (30 min) — 5:00 PM
+
+| Task | Time | Details |
+|---|---|---|
+| Publish 1 LinkedIn post | 10 min | Pull 3 stats from a published article |
+| Comment on 2 target connections' posts | 10 min | Add genuine insight, not "great post" |
+| Tag 1-2 pipeline contacts | 5 min | Only relevant people |
+| Log metrics + prep tomorrow's hunt target | 5 min | Track views, reactions, comments |
+
+### FLEX BLOCK: Content Production (15-30 min) — Production Days Only
+
+| Day | Task | Time |
+|---|---|---|
+| Mon | Record 1 YouTube Short (60 sec) | 15 min |
+| Tue | Publish article to WordPress | 15 min |
+| Wed | Record podcast segment OR outreach call | 15-30 min |
+| Thu | Record 1 YouTube Short (different topic) | 15 min |
+| Fri | Friday Review (5 questions below) | 15 min |
+
+---
+
+## NON-NEGOTIABLE vs. FLEX
+
+| NON-NEGOTIABLE (every week) | FLEX (cut first on bad weeks) |
 |---|---|
-| Workforce board director | #11 What Is ETPL or #17 WIOA Proposal |
-| HR leader / VP People | #14 AI Training for Older Workers |
-| Event planner / conference | #12 Hire Keynote Speaker |
-| AARP / aging org contact | #13 What Is AgeTech |
-| Employer / CEO | #09 $850B Cost FLAGSHIP |
-| Individual 50+ | #10 Digital Skills Complete Guide |
-| Training provider | #11 ETPL or #02 WIOA Funds |
+| 1 hunt call per day | YouTube Shorts |
+| 15-20 connection requests per day | Podcast episodes |
+| 1 LinkedIn post per day | Email newsletter |
+| 1 article published per week | Long-form YouTube video |
+| Friday Review | PPT decks |
 
-### BLOCK 2: Midday Signal (10 min) — 12:00 PM
-| Task | Time | Details |
-|---|---|---|
-| Comment on 3 target connections' posts | 7 min | Add genuine insight, not "great post" |
-| Drop 1 article link in relevant conversation | 3 min | Only where it genuinely helps |
+### WHEN THE WEEK FALLS APART
 
-### BLOCK 3: Evening Ship (10 min) — 5:00 PM
-| Task | Time | Details |
-|---|---|---|
-| Publish 1 LinkedIn post | 7 min | Pull 3 stats from a published article |
-| Tag 1-2 pipeline contacts | 2 min | Only relevant people |
-| Log metrics | 1 min | Track views, reactions, comments |
+Minimum viable week: **50 connection requests + 1 LinkedIn post + 0 new content.**
 
-### BLOCK 4: Content Production (15 min) — Flex
-| Task | Time | Details |
-|---|---|---|
-| Mon: Record 1 YouTube Short (60 sec) | 15 min | Phone camera, hook-first, no intro |
-| Tue: Publish article to WordPress | 15 min | Next from priority list, review + hit Publish |
-| Wed: Record podcast segment or outreach call | 15 min | Use podcast script from article package |
-| Thu: Record 1 YouTube Short (different topic) | 15 min | Different article than Monday |
-| Fri: Review analytics + plan next week | 15 min | What got views? What moves pipeline? |
+Missing 2 days is not a failure. Restart with the next scheduled task, not Monday.
+
+---
+
+## FRIDAY REVIEW — 5 QUESTIONS
+
+Answer these in CEO Dashboard notes every Friday:
+
+1. What got the most engagement this week?
+2. Which connection request template converted best?
+3. Which article drove the most profile views?
+4. What's the one thing I'll do differently next week?
+5. Am I on track for 4 Calendly calls booked this sprint?
 
 ---
 
@@ -73,68 +107,152 @@ ARTICLE (SEO Machine)
 
 | Day | Blog | LinkedIn | YouTube | Podcast | Email |
 |---|---|---|---|---|---|
-| **Mon** | — | Feed post (stats from article) | Upload Short #1 | — | — |
-| **Tue** | Publish 1 article | Article version + feed post | — | — | — |
-| **Wed** | — | 3 comments (signal) | — | Record episode | Send newsletter |
-| **Thu** | — | Feed post (Overlooked Workforce series) | Upload Short #2 | — | — |
-| **Fri** | — | Weekly roundup post | — | Upload episode | — |
+| **Mon** | — | Feed post (stats) | Upload Short | — | — |
+| **Tue** | Publish 1 article | Article + feed post | — | — | — |
+| **Wed** | — | 2 comments | — | Record episode (every 2 weeks) | Send newsletter (every 2 weeks) |
+| **Thu** | — | Feed post (Overlooked Workforce) | Upload Short | — | — |
+| **Fri** | — | Weekly roundup | — | Upload episode (every 2 weeks) | — |
 
-### Monthly Output Target
-| Content Type | Qty/Month | Platform | Source |
-|---|---|---|---|
-| Blog articles published | 4-8 | WordPress | SEO Machine drafts |
-| LinkedIn articles | 4-8 | LinkedIn | Clean version of blog articles |
-| LinkedIn feed posts | 20 | LinkedIn | Stats/hooks from articles |
-| YouTube Shorts | 8 | YouTube + LinkedIn + IG | Short scripts from article packages |
-| YouTube long-form | 2 | YouTube | Video scripts from article packages |
-| Podcast episodes | 4 | Buzzsprout → Spotify/Apple | Podcast scripts from article packages |
-| Email newsletters | 4 | Mailchimp | Article summaries + CTAs |
-| Connection requests | 300-400 | LinkedIn | Each with article link |
+### Realistic Monthly Output
+| Content Type | Qty/Month | Platform |
+|---|---|---|
+| Blog articles published | 4 | WordPress |
+| LinkedIn feed posts | 20 | LinkedIn |
+| YouTube Shorts (produced + published) | 4 | YouTube + LinkedIn + IG |
+| Podcast episodes (produced + published) | 2 | Buzzsprout → Spotify/Apple |
+| Email newsletters | 2 | Mailchimp |
+| Connection requests | 300-400 | LinkedIn |
+| Hunt calls | 20 | Phone |
 
 ---
 
 ## ARTICLE PRIORITY LIST — PUBLISH ORDER
 
+**Audience tags: L = Leader (workforce boards, employers, event planners) / I = Individual 50+ / B = Both**
+
 ### Tier 1: Revenue Drivers (Publish First)
-| Priority | # | Article | Revenue Path |
-|---|---|---|---|
-| 1 | 12 | Hire Keynote Speaker on Ageism and AI | Speaking bookings $2.5K-$7.5K |
-| 2 | 14 | AI Training for Older Workers: Employers | Workshop sales $1.5K-$5K |
-| 3 | 09 | $850 Billion Cost FLAGSHIP | Signature piece, drives all traffic |
+| Priority | # | Article | Audience | Revenue Path |
+|---|---|---|---|---|
+| 1 | 12 | Hire Keynote Speaker on Ageism and AI | L | Speaking $2.5K-$7.5K |
+| 2 | 14 | AI Training for Older Workers: Employers | L | Workshop $1.5K-$5K |
+| 3 | 09 | $850 Billion Cost FLAGSHIP | B | Signature piece |
 
 ### Tier 2: SEO Pillars (Own Page 1)
-| Priority | # | Article | SEO Target |
-|---|---|---|---|
-| 4 | 13 | What Is AgeTech | Define the lane |
-| 5 | 15 | Digital Divide Adults Over 50 | Foundational pillar |
-| 6 | 10 | Digital Skills Complete Guide | Broadest keyword |
+| Priority | # | Article | Audience | SEO Target |
+|---|---|---|---|---|
+| 4 | 13 | What Is AgeTech | B | Define the lane |
+| 5 | 15 | Digital Divide Adults Over 50 | B | Foundational pillar |
+| 6 | 10 | Digital Skills Complete Guide | I | Broadest keyword |
 
 ### Tier 3: Authority Builders
+| Priority | # | Article | Audience | Target |
+|---|---|---|---|---|
+| 7 | 11 | What Is ETPL | L | Workforce boards |
+| 8 | 17 | WIOA Training Proposal | L | Workforce boards |
+| 9 | 02 | WIOA Funds AI Training | L | Boards + employers |
+
+### Tier 4: Content Depth (publish from existing drafts)
 | Priority | # | Article | Audience |
 |---|---|---|---|
-| 7 | 11 | What Is ETPL | Workforce boards |
-| 8 | 17 | WIOA Training Proposal | Workforce boards |
-| 9 | 02 | WIOA Funds AI Training | Boards + employers |
+| 10 | 16 | Best AI Tools for Adults 50+ | I |
+| 11 | 01 | 50+ Workforce Untapped Asset | L |
+| 12 | 07 | Start Business Online After 50 | I |
+| 13 | 20 | The Confidence Gap | L |
+| 14 | 21 | Agentic AI and the 50+ Workforce | B |
+| 15 | 22 | Why 50-Year-Old Founders Outperform | I |
+| 16 | 23 | The $76 Trillion Blind Spot | L |
+| 17 | 18 | Corporate AI Workshops ROI | L |
+| 18 | 19 | MBE Certification Workforce Contracts | L |
+| 19 | 25 | Free AI Course Preview | I |
+| 20 | 24 | Pioneer Stories | B |
+| 21-25 | 03-06, 08 | Supporting articles | B |
 
-### Tier 4: Content Depth
-| Priority | # | Article | Purpose |
-|---|---|---|---|
-| 10 | 16 | Best AI Tools for Adults 50+ | Enrollment driver |
-| 11 | 01 | 50+ Workforce Untapped Asset | Employer pitch |
-| 12 | 07 | Start Business Online After 50 | Individual signups |
-| 13-17 | 03-06, 08 | Supporting articles | Internal links + depth |
+**All 25 articles are written and in WordPress as drafts. The sprint publishes existing articles — no new writing required.**
 
-### Tier 5: To Write (Articles 18-25)
-| # | Article | Target Keyword | Status |
+---
+
+## 4-WEEK SPRINT TO OWN THE SPACE
+
+### Week 1 (Apr 21-25): Revenue Articles — Leader Week
+| Day | Publish | Produce | LinkedIn |
 |---|---|---|---|
-| 18 | Corporate AI Workshops ROI Guide | AI workshops experienced employees | Not written |
-| 19 | MBE Certification Workforce Contracts | MBE certification workforce | Not written |
-| 20 | The Confidence Gap: Why AI Training Fails 50+ | AI confidence gap older workers | Not written |
-| 21 | Agentic AI and the 50+ Workforce | agentic AI older workers | Not written |
-| 22 | Why 50-Year-Old Founders Outperform (MIT Data) | older founders success rate | Not written |
-| 23 | The $76 Trillion Blind Spot | marketing to adults over 50 | Not written |
-| 24 | Pioneer Stories: Real Results | 50+TechBridge results | Not written |
-| 25 | Free AI Course Preview: Lesson 1 | free AI course adults over 50 | Not written |
+| Mon | — | Short: $850B stat | 15-20 requests + feed post |
+| Tue | #12 Keynote Speaker (L) | — | Article + feed post |
+| Wed | — | Outreach calls | 2 comments + newsletter |
+| Thu | #14 AI Training Employers (L) | Short: 2.8X founder | Feed post |
+| Fri | — | — | Roundup + Friday Review |
+
+### Week 2 (Apr 28-May 2): SEO Pillars — Both Week
+| Day | Publish | Produce | LinkedIn |
+|---|---|---|---|
+| Mon | — | Short: AgeTech market | 15-20 requests |
+| Tue | #09 FLAGSHIP $850B (B) | — | Article + feed post |
+| Wed | — | Podcast: $850B episode | 2 comments |
+| Thu | #13 What Is AgeTech (B) | Short: Confidence gap | Feed post |
+| Fri | — | — | Roundup + Friday Review |
+
+### Week 3 (May 5-9): Authority — Leader Week
+| Day | Publish | Produce | LinkedIn |
+|---|---|---|---|
+| Mon | — | Short: WIOA funding | 15-20 requests |
+| Tue | #15 Digital Divide (B) | — | Article + feed post |
+| Wed | — | Podcast: AgeTech episode | 2 comments + newsletter |
+| Thu | #10 Complete Guide (I) | Short: Best AI tool | Feed post |
+| Fri | — | — | Roundup + Friday Review |
+
+### Week 4 (May 12-16): Depth — Individual Week
+| Day | Publish | Produce | LinkedIn |
+|---|---|---|---|
+| Mon | — | Short: Digital divide | 15-20 requests |
+| Tue | #11 ETPL Guide (L) | — | Article + feed post |
+| Wed | — | Outreach calls | 2 comments |
+| Thu | #17 WIOA Proposal (L) | Short: 3X completion | Feed post |
+| Fri | — | — | Roundup + Friday Review |
+
+### After 4 Weeks:
+- 8 articles published and indexed by Google
+- 4 YouTube Shorts posted
+- 2 podcast episodes live
+- 2 email newsletters sent
+- 300+ new LinkedIn connections (each with article link)
+- 20+ hunt calls made
+- North star check: How many Calendly calls booked?
+
+---
+
+## MONTH 2 (May 19 - Jun 13): DEPTH + DATA
+
+### Writing Goal
+2 new articles per week from Tier 4 backlog. No new topics — publish what exists.
+
+### Data-Driven Adjustments
+- Re-tier article priority based on 4 weeks of real data
+- Which articles drove profile views? Promote them.
+- Which articles drove Calendly calls? Write more like those.
+- Demote articles that didn't perform.
+
+### Blog-Split Decision (by end of Month 2)
+Review audience data and pick one:
+- **Option A:** One blog, two visual tracks (/individuals + /leaders)
+- **Option B:** Two separate blogs, shared infrastructure
+- **Option C:** Two separate brands
+Document decision in this file.
+
+### Evergreen Email-Capture Asset
+Build ONE lead magnet that runs without you:
+- "Is Your Workforce Ready for AI? 10-Question Assessment"
+- Gated report → email capture → Mailchimp nurture sequence
+- Embed on every article, LinkedIn bio, YouTube description
+
+---
+
+## CONTENT RESERVE BANK
+
+Keep 3 ready-to-ship assets at all times in `Desktop/LMT-CONTENT/reserve/`:
+- [ ] 2 pre-written LinkedIn feed posts (evergreen stats)
+- [ ] 1 pre-recorded YouTube Short
+
+Pull from reserve on bad days. Refill within 14 days.
 
 ---
 
@@ -142,184 +260,27 @@ ARTICLE (SEO Machine)
 
 ### For Each Article Published:
 
-**Step 1 — SEO Machine writes article** (already done for 1-17)
-```
-cd C:\Users\USER\seomachine
-/write [topic] OR manual write → drafts/
-/publish-draft [file] → WordPress draft + Yoast SEO
-```
+**Step 1 — Article already in WordPress** (all 25 done)
+Go to Posts → find article → review → Publish
 
-**Step 2 — Build full content package** (7 assets)
-```
-"build the content" OR "full build for [article]"
-```
-Produces in `Desktop/LMT-CONTENT/02-LINKEDIN/articles/[slug]/`:
-- ARTICLE.md (blog version)
-- ARTICLE-LINKEDIN.md (clean paste version)
-- ELEVENLABS-VOICEOVER.txt (audio narration)
-- VIDEO-SCRIPT.txt (8-10 min YouTube)
-- YOUTUBE-SHORT-SCRIPT.txt (60 sec)
-- PODCAST-SCRIPT.txt (20-25 min episode)
-- PPT-Presentation.html (10-slide deck)
-- TEXT-INVITE.txt (SMS/text)
+**Step 2 — Build full content package** (on production days)
+Say "full build for [article]" in Claude → creates 7 assets
 
 **Step 3 — Produce video + audio**
 | Asset | Tool | Time |
 |---|---|---|
 | YouTube Short | Phone camera + Canva edit | 15 min |
-| YouTube long-form | HeyGen talking head OR Canva slides + ElevenLabs | 30-60 min |
-| Podcast episode | Mic recording OR ElevenLabs voice clone | 20 min |
-| LinkedIn native video | Same as Short, upload directly | 5 min |
+| Podcast episode | Mic recording OR ElevenLabs | 20 min |
+| YouTube long-form | HeyGen or Canva + ElevenLabs | 30-60 min (monthly) |
 
 **Step 4 — Distribute**
-| Platform | What to Post | When |
+| Platform | What | When |
 |---|---|---|
-| WordPress | Article (auto-shares to LinkedIn) | Tue or Thu |
-| LinkedIn | Article + feed post | Same day |
-| YouTube | Short (Mon/Thu) + Long-form (monthly) | Mon + Thu |
-| Podcast | Episode to Buzzsprout → auto-distributes | Fri |
-| Mailchimp | Newsletter with article summary | Wed |
-| Instagram/Facebook | Short as Reel + feed post | Thu |
-
-**Step 5 — Git commit**
-```
-cp -r [article folder] seomachine/articles/
-git add articles/
-git commit -m "Add [article name] — full content package"
-```
-
----
-
-## YOUTUBE STRATEGY
-
-### Shorts (Discovery — Algorithm Feeds You)
-- 2 per week (Mon + Thu)
-- 55-60 seconds MAX
-- Hook in first 3 seconds — start with the stat, not "hey everyone"
-- Film on phone, vertical 9:16
-- Text overlays for stats
-- End with CTA: "Link in bio" or "learnmoretechnologies.com"
-- Post natively to: YouTube Shorts, LinkedIn, Instagram Reels
-
-### Top Short Topics (from articles):
-| Short | Hook | Source Article |
-|---|---|---|
-| $850B stat | "American businesses lose $850 billion every year ignoring workers over 50" | #09 |
-| 2.8X founder | "A 50-year-old founder is 2.8 times more likely to succeed than a 25-year-old" | #09, #22 |
-| 3X completion | "We trained 347 adults 50+ with a 3X industry completion rate. Here's how." | #03 |
-| Confidence gap | "AI usage among Boomers is up 100%. Confidence is down 35%. That's a training problem." | #20 |
-| WIOA funding | "There's federal money to train your workforce in AI. Most employers don't know it exists." | #02 |
-| AgeTech market | "There's a $2 trillion market you've never heard of. It's called AgeTech." | #13 |
-| Digital divide | "83% of Gen Z uses AI. 52% of Boomers do. That gap costs $850 billion." | #15 |
-| Best AI tool | "I've trained 347 adults 50+ in AI. Here's the one tool I tell everyone to start with." | #16 |
-
-### Long-Form Videos (Authority — YouTube SEO)
-- 1-2 per month
-- 8-10 minutes
-- Use video script from content package
-- HeyGen talking head or Canva slides + ElevenLabs voiceover
-- Thumbnail: Brian's face + stat text + navy/gold brand
-- Post to YouTube channel, embed on relevant blog post
-
----
-
-## PODCAST STRATEGY
-
-### #AGENTIC50 — The Pioneers Podcast
-- 1 episode per week (record Wed, publish Fri)
-- 20-25 minutes solo host
-- Use podcast script from content package
-- Record with mic OR generate with ElevenLabs voice clone
-- Publish to Buzzsprout → auto-distributes to Spotify, Apple, Amazon
-- **Buzzsprout trial ends July 11** — upgrade to $19/mo or episodes disappear
-
-### Episode Schedule (matches article priority):
-| Week | Episode Topic | Source Article |
-|---|---|---|
-| Week 1 | The $850 Billion Cost Nobody Talks About | #09 FLAGSHIP |
-| Week 2 | What Is AgeTech and Why Should You Care | #13 |
-| Week 3 | AI Training for Workers Over 50: What's Actually Working | #14 |
-| Week 4 | I Trained 347 People Over 50 in AI. Here's What I Learned. | #03 |
-| Week 5 | The Digital Divide Is Getting Worse. Here's the Data. | #15 |
-| Week 6 | How to Get WIOA Funding for AI Training | #02 |
-| Week 7 | The Best AI Tools for Adults Over 50 | #16 |
-| Week 8 | Why 50-Year-Old Founders Beat 25-Year-Olds (MIT Data) | #22 |
-
----
-
-## 4-WEEK SPRINT TO OWN THE SPACE
-
-### Week 1 (Apr 21-25): Revenue Articles
-| Day | Publish | Produce | LinkedIn |
-|---|---|---|---|
-| Mon | — | Short: $850B stat | 15-20 requests + feed post |
-| Tue | #12 Keynote Speaker | — | Article + feed post |
-| Wed | — | Podcast: $850B episode | 3 comments + newsletter |
-| Thu | #14 AI Training Employers | Short: 2.8X founder | Article + feed post |
-| Fri | — | — | Weekly roundup + analytics |
-
-### Week 2 (Apr 28-May 2): SEO Pillars
-| Day | Publish | Produce | LinkedIn |
-|---|---|---|---|
-| Mon | — | Short: AgeTech market | 15-20 requests |
-| Tue | #09 FLAGSHIP $850B | — | Article + feed post |
-| Wed | — | Podcast: AgeTech episode | Newsletter |
-| Thu | #13 What Is AgeTech | Short: Confidence gap | Article + feed post |
-| Fri | — | — | Roundup + analytics |
-
-### Week 3 (May 5-9): Authority
-| Day | Publish | Produce | LinkedIn |
-|---|---|---|---|
-| Mon | — | Short: WIOA funding | 15-20 requests |
-| Tue | #15 Digital Divide | — | Article + feed post |
-| Wed | — | Podcast: AI Training | Newsletter |
-| Thu | #10 Complete Guide | Short: Best AI tool | Article + feed post |
-| Fri | — | — | Roundup + analytics |
-
-### Week 4 (May 12-16): Depth + Write New
-| Day | Publish | Produce | LinkedIn |
-|---|---|---|---|
-| Mon | — | Short: Digital divide | 15-20 requests |
-| Tue | #11 ETPL Guide | — | Article + feed post |
-| Wed | — | Podcast: WIOA Funding | Newsletter |
-| Thu | #17 WIOA Proposal | Short: 3X completion | Article + feed post |
-| Fri | — | Write articles #18-21 | Roundup + analytics |
-
-### After 4 Weeks:
-- 8 articles published and indexed by Google
-- 8 YouTube Shorts posted
-- 4 podcast episodes live
-- 4 email newsletters sent
-- 300+ new LinkedIn connections (each with article link)
-- Full content packages for top 8 articles in git
-
----
-
-## COMPETITIVE LANDSCAPE
-
-| Competitor | What They Do | What They DON'T Do |
-|---|---|---|
-| AARP Foundation | Digital Skills Ready@50+ | No AI training. No B2B. Free only. No SEO content |
-| Senior Planet | Classes for seniors | Consumer-only. No workforce play. No podcast |
-| NCOA + AT&T | Digital literacy basics | Partnership model. No proprietary curriculum |
-| AgeTech startups | Devices, health, fintech | None do AI workforce training |
-| AI speakers | Keynotes on AI | None focus on 50+. No training program behind the talk |
-
-**Nobody occupies your exact position.** AI training + adults 50+ + B2B workforce contracts + proven data + WIOA eligible + content machine. The lane is empty. This strategy fills it.
-
----
-
-## METRICS — TRACK WEEKLY
-
-| Metric | Target (4 weeks) | Track In |
-|---|---|---|
-| Articles published | 8+ | WordPress Posts |
-| LinkedIn connections | +300 | LinkedIn |
-| YouTube Shorts posted | 8 | YouTube Studio |
-| Podcast episodes live | 4 | Buzzsprout |
-| Calendly calls booked | 4+ | Calendly |
-| Pipeline value | $25K+ | CEO Dashboard |
-| Revenue | $5K+ (1 workshop) | CEO Dashboard |
+| WordPress | Article (auto-shares to LinkedIn) | Tue |
+| LinkedIn | Feed post | Daily |
+| YouTube | Short | Mon + Thu |
+| Podcast | Episode | Every 2 weeks |
+| Mailchimp | Newsletter | Every 2 weeks |
 
 ---
 
@@ -328,35 +289,145 @@ git commit -m "Add [article name] — full content package"
 > Don't wait for RFPs. Don't wait for inbound. Don't wait for the algorithm.
 > Hunt them. Find the opportunity. Create the conversation.
 
-### Daily Hunt (5 min — BEFORE connection requests)
+### Daily Hunt (5 min — FIRST thing in Morning Block)
 
-1. **Pick 1 target organization** from pipeline (workforce board, employer, conference)
-2. **Find the person who can say yes** — director, CEO, VP — not a coordinator
-3. **Pick the article that solves THEIR problem** — not yours, theirs
-4. **Call them.** If voicemail: send article + 2-line DM or email
+1. **Pick 1 target organization** from pipeline
+2. **Find the person who can say yes** — director, CEO, VP
+3. **Pick the article that solves THEIR problem**
+4. **Call them.** If voicemail: send article + 2-line DM
 5. **Log the contact** in CEO Dashboard pipeline
 
-### Proactive Plays — Create Opportunities That Don't Exist
+### Proactive Plays
 
 | Play | How | Revenue |
 |---|---|---|
-| **Free Lunch & Learn for board STAFF** | Call workforce board, offer 60-min free session for their internal team. They see it, they refer clients. | Pipeline to subcontract |
-| **Unsolicited employer proposal** | Find 5 Austin companies with 200+ employees. Send 1-page proposal: "90-min AI workshop, $1,500, I bring everything." | $1,500-$5,000 per gig |
-| **Guest on workforce/HR podcasts** | Search LinkedIn for podcasts. Pitch with $850B stat + sizzle reel. | Credibility + inbound |
-| **Co-brand pilot with workforce board** | "Run it under your brand, I deliver, we split credit. You hit WIOA metrics, I get data." | ETPL fast-track |
-| **Write the scope for them** | Some boards don't know what to ask for. Help them write the SOW. You become the obvious provider. | Sole-source contract |
-| **Conference speaker before call-for-speakers** | Email organizer now with sizzle reel + $850B stat. Don't wait for the application period. | $2,500-$7,500 per gig |
+| **Free Lunch & Learn for board STAFF** | Call workforce board, offer 60-min free session for their team | Pipeline to subcontract |
+| **Unsolicited employer proposal** | 5 Austin companies, 200+ employees, 1-page proposal | $1,500-$5,000 per gig |
+| **Guest on workforce/HR podcasts** | Pitch with $850B stat + sizzle reel | Credibility + inbound |
+| **Co-brand pilot with workforce board** | "Your brand, my delivery, we split credit" | ETPL fast-track |
+| **Write the scope for them** | Help boards write the SOW. Become the obvious provider. | Sole-source contract |
+| **Conference speaker pre-apply** | Email organizer now with reel. Don't wait for CFP. | $2,500-$7,500 per gig |
 
-### The Connection Request Is a Sales Tool
+### Connection Request Templates
 
-Every request includes:
-- Who you are (1 line)
-- What you built (347 Pioneers, 3X rate)
-- The article that solves their specific problem (link)
-- A specific ask ("Can we talk for 15 minutes?")
+Store in: `Desktop/LMT/marketing/templates/connection-requests.md`
+Track acceptance rate by template for 30 days.
 
-**Not:** "I'd love to connect and learn from you."
-**Yes:** "I train adults 50+ in AI — 347 completions, 3X industry rate. I wrote this for workforce boards like yours: [article link]. Worth a 15-min call?"
+| Template | Target | Core Message |
+|---|---|---|
+| A | Workforce board director | "I train adults 50+ in AI — 347 completions, 3X rate. I wrote this for boards like yours: [ETPL article]. Worth 15 min?" |
+| B | HR leader / VP People | "Your experienced employees are your highest-ROI training investment. Here's the data: [AI Training article]. Can we talk?" |
+| C | Event planner / conference | "I keynote on ageism + AI. 347 trained, 3X rate, data-driven. Sizzle reel: [link]. Booking for Q3-Q4." |
+| D | Employer / CEO | "$850B lost to workforce ageism annually. I train the workforce everyone else ignores. [FLAGSHIP article]. 15 min?" |
+| E | Individual 50+ | "I built a free AI course for adults 50+. 347 people completed it at 3X the industry rate. Try Lesson 1: [link]" |
+
+---
+
+## YOUTUBE STRATEGY
+
+### Shorts (Discovery — 1/week, produced + published)
+- 55-60 seconds MAX
+- Hook in first 3 seconds — start with the stat
+- Film on phone, vertical 9:16
+- Text overlays for stats
+- Post natively to: YouTube Shorts, LinkedIn, Instagram Reels
+
+### Top Short Topics:
+| Short | Hook | Source |
+|---|---|---|
+| $850B stat | "American businesses lose $850 billion every year ignoring workers over 50" | #09 |
+| 2.8X founder | "A 50-year-old founder is 2.8X more likely to succeed" | #22 |
+| 3X completion | "We trained 347 adults 50+ with a 3X industry completion rate" | #03 |
+| Confidence gap | "AI usage among Boomers is up 100%. Confidence is down 35%." | #20 |
+| WIOA funding | "There's federal money to train your workforce in AI" | #02 |
+| AgeTech market | "There's a $2 trillion market you've never heard of" | #13 |
+| Digital divide | "83% of Gen Z uses AI. 52% of Boomers do." | #15 |
+| Best AI tool | "I've trained 347 adults 50+ in AI. Start with this one tool." | #16 |
+
+### Long-Form (Authority — 1/month)
+- 8-10 min, from content package video script
+- HeyGen or Canva slides + ElevenLabs
+- Post to YouTube, embed on blog post
+
+---
+
+## PODCAST STRATEGY
+
+### #AGENTIC50 — The Pioneers Podcast
+- 1 episode every 2 weeks (record Wed, publish Fri)
+- 20-25 minutes solo host
+- Record with mic OR ElevenLabs voice clone
+- Buzzsprout → Spotify, Apple, Amazon
+- **Buzzsprout trial ends July 11** — upgrade to $19/mo or episodes disappear
+
+### Episode Schedule:
+| Episode | Topic | Source |
+|---|---|---|
+| 1 | The $850 Billion Cost Nobody Talks About | #09 |
+| 2 | What Is AgeTech and Why Should You Care | #13 |
+| 3 | AI Training for Workers Over 50: What's Working | #14 |
+| 4 | I Trained 347 People Over 50 in AI | #03 |
+| 5 | The Digital Divide Is Getting Worse | #15 |
+| 6 | How to Get WIOA Funding for AI Training | #02 |
+| 7 | The Best AI Tools for Adults Over 50 | #16 |
+| 8 | Why 50-Year-Old Founders Beat 25-Year-Olds | #22 |
+
+---
+
+## PIPELINE-TO-CONTENT FEEDBACK LOOP
+
+After every Calendly call, log in CEO Dashboard: "What did this prospect ask about?"
+
+Monthly review: Did 3+ prospects ask about the same topic? That's the next article.
+Label these "demand-driven articles" in the priority list.
+
+---
+
+## COMPETITIVE LANDSCAPE
+
+| Competitor | What They Do | What They DON'T Do |
+|---|---|---|
+| AARP Foundation | Digital Skills Ready@50+ | No AI training. No B2B. No SEO content |
+| Senior Planet | Classes for seniors | Consumer-only. No workforce play |
+| NCOA + AT&T | Digital literacy basics | Partnership model. No proprietary curriculum |
+| AgeTech startups | Devices, health, fintech | None do AI workforce training |
+| AI speakers | Keynotes on AI | None focus on 50+. No program behind the talk |
+
+**Nobody occupies your exact position.** The lane is empty.
+
+---
+
+## METRICS — TRACK WEEKLY
+
+| Metric | Target (4 weeks) | Leading or Lagging |
+|---|---|---|
+| **Calendly calls booked** | **4+** | **NORTH STAR** |
+| Hunt calls made | 20 | Leading |
+| Connection requests sent | 300+ | Leading |
+| Articles published | 8 | Leading |
+| LinkedIn post engagement | Trending up | Leading |
+| Pipeline value | $25K+ | Lagging |
+| Revenue | $5K+ (1 workshop) | Lagging |
+
+---
+
+## OWNERSHIP AUDIT (Phase 1 — Do First)
+
+- [ ] WHOIS on learnmoretechnologies.com — document registrant, registrar, expiration
+- [ ] WHOIS on learnmo.com — same
+- [ ] LinkedIn company page — confirm Super Admin status
+- [ ] Pull all vendor contracts/invoices into `Desktop/LMT/legal/vendor-dispute/`
+- [ ] Do NOT confront anyone — just document
+
+---
+
+## HIRING RULES (When the Time Comes)
+
+- Hire VA for [specific task] when [specific metric hits threshold]
+- Hire video editor when [threshold]
+- Hire sales appointment-setter when [threshold]
+- **Vetting:** No vendors from cold LinkedIn DMs. Referrals only, or Upwork with milestones.
+- **Contract rule:** All brand assets (domains, social handles, logos) registered under MY email, not the vendor's.
 
 ---
 
@@ -370,26 +441,26 @@ Every request includes:
 
 ---
 
-## TOOL INDEX — Where Everything Lives
+## TOOL INDEX
 
-| Tool | Location | When to Use |
+| Tool | Location | When |
 |---|---|---|
-| **CEO Dashboard** | Desktop/LMT/CEO-DASHBOARD.md | Every session. Pipeline, scoreboard, priorities |
-| **OWN THE SPACE** (this file) | Desktop/LMT/OWN-THE-SPACE.md | Monday planning. Strategy, calendar, article priority |
-| **Content Schedule** | Desktop/LMT/marketing/strategy/content-schedule.md | Daily execution. Rhythm, calendar, pipeline tracker |
-| **Content Production Skill** | Documents/lmt-claude-brain/skills/SKILL-lmt-content-production.md | Say "full build" — creates 7 assets from 1 article |
-| **Repurpose Skill** | Desktop/LMT/skills/repurpose-content.md | After video/article done — cross-posts to all platforms |
-| **SEO Machine** | seomachine/ (separate workspace) | Research + write + publish articles. Run from seomachine dir |
-| **Article Source Files** | seomachine/articles/ | Git-tracked. All 17 articles for repurposing |
-| **Page Templates** | Desktop/LMT/AGENTIC50-Brand/pages/ | All 7 website page HTML files |
-| **Additional CSS** | Desktop/LMT/COMPLETE-Additional-CSS.css | Master CSS for all pages + mobile fixes |
-| **Decision Maker Targets** | Desktop/LMT/marketing/DECISION-MAKER-TARGET-LIST.md | LinkedIn search strings for connection requests |
-| **Prospects Index** | Desktop/LMT/marketing/PROSPECTS-INDEX.md | Full dossiers on pipeline contacts |
-| **Brand Constants** | Desktop/LMT/brand-constants.md | Stats, voice, colors, banned words |
+| **CEO Dashboard** | Desktop/LMT/CEO-DASHBOARD.md | Every session |
+| **OWN THE SPACE** (this file) | Desktop/LMT/OWN-THE-SPACE.md | Monday planning |
+| **Content Schedule** | Desktop/LMT/marketing/strategy/content-schedule.md | Daily rhythm |
+| **Content Production Skill** | Documents/lmt-claude-brain/skills/SKILL-lmt-content-production.md | "full build" |
+| **Repurpose Skill** | Desktop/LMT/skills/repurpose-content.md | After video/article |
+| **SEO Machine** | seomachine/ | Write + publish articles |
+| **Article Source Files** | seomachine/articles/ | All 25 articles |
+| **Connection Templates** | Desktop/LMT/marketing/templates/connection-requests.md | Morning Hunt |
+| **Page Templates** | Desktop/LMT/AGENTIC50-Brand/pages/ | Website pages |
+| **Decision Maker Targets** | Desktop/LMT/marketing/DECISION-MAKER-TARGET-LIST.md | LinkedIn search |
+| **Prospects Index** | Desktop/LMT/marketing/PROSPECTS-INDEX.md | Pipeline dossiers |
+| **Brand Constants** | Desktop/LMT/brand-constants.md | Stats, voice, colors |
+| **60-Day Revisions** | Desktop/OWN-THE-SPACE-60-DAY-REVISIONS.md | Phase checklist |
 
 ---
 
-*This file is the operational playbook for content domination.*
-*Update weekly. Commit to git after every update.*
-*All article source files: seomachine/articles/*
-*All content packages: Desktop/LMT-CONTENT/02-LINKEDIN/articles/*
+*The job is to make the current plan real and sustainable — not to expand it.*
+*North star: Calendly calls booked.*
+*All 25 articles are written. Publish, don't create.*
