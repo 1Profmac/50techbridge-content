@@ -323,13 +323,69 @@ git commit -m "Add [article name] — full content package"
 
 ---
 
+## THE HUNT — PROACTIVE, NOT REACTIVE
+
+> Don't wait for RFPs. Don't wait for inbound. Don't wait for the algorithm.
+> Hunt them. Find the opportunity. Create the conversation.
+
+### Daily Hunt (5 min — BEFORE connection requests)
+
+1. **Pick 1 target organization** from pipeline (workforce board, employer, conference)
+2. **Find the person who can say yes** — director, CEO, VP — not a coordinator
+3. **Pick the article that solves THEIR problem** — not yours, theirs
+4. **Call them.** If voicemail: send article + 2-line DM or email
+5. **Log the contact** in CEO Dashboard pipeline
+
+### Proactive Plays — Create Opportunities That Don't Exist
+
+| Play | How | Revenue |
+|---|---|---|
+| **Free Lunch & Learn for board STAFF** | Call workforce board, offer 60-min free session for their internal team. They see it, they refer clients. | Pipeline to subcontract |
+| **Unsolicited employer proposal** | Find 5 Austin companies with 200+ employees. Send 1-page proposal: "90-min AI workshop, $1,500, I bring everything." | $1,500-$5,000 per gig |
+| **Guest on workforce/HR podcasts** | Search LinkedIn for podcasts. Pitch with $850B stat + sizzle reel. | Credibility + inbound |
+| **Co-brand pilot with workforce board** | "Run it under your brand, I deliver, we split credit. You hit WIOA metrics, I get data." | ETPL fast-track |
+| **Write the scope for them** | Some boards don't know what to ask for. Help them write the SOW. You become the obvious provider. | Sole-source contract |
+| **Conference speaker before call-for-speakers** | Email organizer now with sizzle reel + $850B stat. Don't wait for the application period. | $2,500-$7,500 per gig |
+
+### The Connection Request Is a Sales Tool
+
+Every request includes:
+- Who you are (1 line)
+- What you built (347 Pioneers, 3X rate)
+- The article that solves their specific problem (link)
+- A specific ask ("Can we talk for 15 minutes?")
+
+**Not:** "I'd love to connect and learn from you."
+**Yes:** "I train adults 50+ in AI — 347 completions, 3X industry rate. I wrote this for workforce boards like yours: [article link]. Worth a 15-min call?"
+
+---
+
 ## THE RULE
 
-> **Calls first. Connections second. Content third.**
-> Content without connections is a blog nobody reads.
+> **Hunt first. Connect second. Content third.**
+> Content without hunting is a blog nobody reads.
 > Connections without calls is a network that never pays.
 > Calls without content is a pitch with no proof.
 > All three, every day, is how you own the space.
+
+---
+
+## TOOL INDEX — Where Everything Lives
+
+| Tool | Location | When to Use |
+|---|---|---|
+| **CEO Dashboard** | Desktop/LMT/CEO-DASHBOARD.md | Every session. Pipeline, scoreboard, priorities |
+| **OWN THE SPACE** (this file) | Desktop/LMT/OWN-THE-SPACE.md | Monday planning. Strategy, calendar, article priority |
+| **Content Schedule** | Desktop/LMT/marketing/strategy/content-schedule.md | Daily execution. Rhythm, calendar, pipeline tracker |
+| **Content Production Skill** | Documents/lmt-claude-brain/skills/SKILL-lmt-content-production.md | Say "full build" — creates 7 assets from 1 article |
+| **Repurpose Skill** | Desktop/LMT/skills/repurpose-content.md | After video/article done — cross-posts to all platforms |
+| **SEO Machine** | seomachine/ (separate workspace) | Research + write + publish articles. Run from seomachine dir |
+| **Article Source Files** | seomachine/articles/ | Git-tracked. All 17 articles for repurposing |
+| **Page Templates** | Desktop/LMT/AGENTIC50-Brand/pages/ | All 7 website page HTML files |
+| **Additional CSS** | Desktop/LMT/COMPLETE-Additional-CSS.css | Master CSS for all pages + mobile fixes |
+| **Decision Maker Targets** | Desktop/LMT/marketing/DECISION-MAKER-TARGET-LIST.md | LinkedIn search strings for connection requests |
+| **Prospects Index** | Desktop/LMT/marketing/PROSPECTS-INDEX.md | Full dossiers on pipeline contacts |
+| **Brand Constants** | Desktop/LMT/brand-constants.md | Stats, voice, colors, banned words |
 
 ---
 
