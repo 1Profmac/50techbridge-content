@@ -446,7 +446,7 @@ Label these "demand-driven articles" in the priority list.
 | Tool | Location | When |
 |---|---|---|
 | **CEO Dashboard** | Desktop/LMT/CEO-DASHBOARD.md | Every session |
-| **OWN THE SPACE** (this file) | Desktop/LMT/OWN-THE-SPACE.md | Monday planning |
+| **OWN THE SPACE** (this file) | Desktop/LMT/own-the-space/OWN-THE-SPACE.md | Monday planning |
 | **Content Schedule** | Desktop/LMT/marketing/strategy/content-schedule.md | Daily rhythm |
 | **Content Production Skill** | Documents/lmt-claude-brain/skills/SKILL-lmt-content-production.md | "full build" |
 | **Repurpose Skill** | Desktop/LMT/skills/repurpose-content.md | After video/article |

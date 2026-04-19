@@ -1,7 +1,7 @@
 # LMT Brand Constants
 ## Single Source of Truth — Learn More Technologies
-### Last Updated: March 17, 2026
-### Owner: Maya, COO Agent
+### Last Updated: April 16, 2026
+### Owner: Brian McKinney (CEO) · Operated via Claude CLI triggers
 
 ---
 

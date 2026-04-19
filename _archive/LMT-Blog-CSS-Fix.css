@@ -1,0 +1,667 @@
+/* ═══════════════════════════════════════════════
+   LMT BLOG PAGE — FINAL UNIFIED CSS
+   REPLACES all previous body.blog rules
+   Paste into: Appearance > Customize > Additional CSS
+   DELETE all old body.blog CSS first
+   Last Updated: April 18, 2026 — 10:45am FINAL
+   ═══════════════════════════════════════════════
+
+   BuddyBoss overrides confirmed against:
+   - theme.min.css v2.19.0
+   - .first .post-inner-wrap { flex-flow: row-reverse }
+   - .lg-grid-2-3 { flex: 0 0 66.66%; max-width: 66.66% }
+   - .post-grid .first .ratio-wrap { width: 42.417% }
+   - .bb-grid { margin-left:-10px; margin-right:-10px }
+   - .bb-grid-cell { padding-left:10px; padding-right:10px }
+   - .content-area { padding-top: 1.875rem }
+   - body .widget-area:not(.widget-area-secondary) { padding-top: 1.875rem }
+   - .post-grid .hentry { margin-bottom: 20px }
+   ═══════════════════════════════════════════════ */
+
+/* ── Blog page background ── */
+body.blog,
+body.blog .site,
+body.blog #page,
+body.blog #content.site-content,
+body.blog .container,
+body.blog .bb-grid.site-content-grid,
+body.blog #primary.content-area,
+body.blog #main.site-main,
+body.blog .post-grid.bb-grid,
+body.blog #secondary.widget-area {
+  background-color: #0E1C2F !important;
+}
+
+/* ── Hide default page title ── */
+body.blog .page-header,
+body.blog .page-title {
+  display: none !important;
+}
+
+/* ── Kill gap between nav and content ── */
+body.blog #content.site-content {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* ── Container — tight padding ── */
+body.blog #content.site-content > .container {
+  max-width: 1180px !important;
+  margin: 0 auto !important;
+  padding: 16px 16px 32px 16px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* ══════════════════════════════════════════
+   LAYOUT: posts + sidebar, TOPS ALIGNED
+   Kills: .bb-grid margins, .content-area padding,
+   widget-area padding-top
+══════════════════════════════════════════ */
+
+/* Kill BuddyBoss .bb-grid negative margins */
+body.blog .bb-grid.site-content-grid {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  gap: 20px !important;
+  align-items: flex-start !important;
+  width: 100% !important;
+  margin: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 0 !important;
+}
+
+/* Kill BuddyBoss .content-area { padding-top: 1.875rem } */
+body.blog #primary,
+body.blog #primary.content-area,
+body.blog div#primary,
+body.blog .content-area {
+  flex: 1 !important;
+  min-width: 0 !important;
+  width: auto !important;
+  max-width: none !important;
+  float: none !important;
+  padding: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin: 0 !important;
+}
+
+/* Kill BuddyBoss .bb-grid-cell padding */
+body.blog .bb-grid.site-content-grid > * {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+body.blog #main,
+body.blog #main.site-main,
+body.blog .site-main {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* ══════════════════════════════════════════
+   POST GRID — uniform 2-col cards
+   Kills: .bb-grid flex, .bb-grid-cell flex sizing
+══════════════════════════════════════════ */
+body.blog .post-grid.bb-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 16px !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Kill ALL BuddyBoss grid cell sizing:
+   .lg-grid-2-3 { flex: 0 0 66.66%; max-width: 66.66% }
+   .lg-grid-1-3 { flex: 0 0 33.33%; max-width: 33.33% }
+   .bb-grid-cell { padding-left:10px; padding-right:10px }
+*/
+body.blog .post-grid .bb-grid-cell,
+body.blog .post-grid article.lg-grid-2-3,
+body.blog .post-grid article.lg-grid-1-3,
+body.blog .post-grid article.lg-grid-1-2,
+body.blog .post-grid article.md-grid-1-2,
+body.blog .post-grid article.md-grid-1-1,
+body.blog .post-grid article.sm-grid-1-1,
+body.blog .post-grid article.first {
+  width: 100% !important;
+  max-width: 100% !important;
+  flex: none !important;
+  padding: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin: 0 !important;
+}
+
+/* Kill BuddyBoss .post-grid .hentry { margin-bottom: 20px } */
+body.blog .post-grid .hentry,
+body.blog .post-grid article {
+  margin-bottom: 0 !important;
+}
+
+/* ══════════════════════════════════════════
+   KILL BUDDYBOSS .first HORIZONTAL LAYOUT
+   Kills: .first .post-inner-wrap { flex-flow: row-reverse }
+   Kills: .post-grid .first .ratio-wrap { width: 42.417% }
+══════════════════════════════════════════ */
+body.blog .first .post-inner-wrap,
+body.blog .post-grid .first .post-inner-wrap,
+body.blog .post-grid article.first .post-inner-wrap,
+body.blog .hentry.first .post-inner-wrap {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-flow: column !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+  -ms-flex-flow: column !important;
+  -ms-flex-direction: column !important;
+}
+
+body.blog .first .post-inner-wrap .entry-content-wrap,
+body.blog .post-grid .first .post-inner-wrap .entry-content-wrap {
+  flex: none !important;
+  padding: 12px 16px !important;
+}
+
+body.blog .first .post-inner-wrap .entry-title,
+body.blog .post-grid .first .post-inner-wrap .entry-title {
+  font-size: clamp(18px, 2vw, 22px) !important;
+  line-height: 1.3 !important;
+}
+
+body.blog .post-grid .first .ratio-wrap,
+body.blog .first .ratio-wrap {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* ══════════════════════════════════════════
+   POST CARDS — all cards vertical
+   Kills: .post-inner-wrap built-in bg/border
+══════════════════════════════════════════ */
+
+/* Card wrapper */
+body.blog .post-grid article,
+body.blog .post-grid article.post,
+body.blog .post-grid .hentry,
+body.blog .post-grid .type-post {
+  background: rgba(255,255,255,.03) !important;
+  background-color: rgba(255,255,255,.03) !important;
+  border: 1px solid rgba(255,255,255,.07) !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: all .28s ease !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+body.blog .post-grid article:hover,
+body.blog .post-grid article.post:hover {
+  border-color: rgba(200,148,46,.35) !important;
+  transform: translateY(-4px) !important;
+  box-shadow: 0 16px 48px rgba(0,0,0,.3) !important;
+}
+
+/* Kill BuddyBoss .post-inner-wrap bg/border/shadow */
+body.blog .post-grid article .post-inner-wrap,
+body.blog .post-grid .lg-grid-1-3 .post-inner-wrap {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  display: flex !important;
+  flex-direction: column !important;
+  height: auto !important;
+}
+
+body.blog .post-grid article .post-inner-wrap:hover {
+  box-shadow: none !important;
+}
+
+/* Transparent children inside cards */
+body.blog .post-grid article *,
+body.blog .post-grid article.post * {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Posts without featured image — gold top border */
+body.blog .post-grid article:not(.has-post-thumbnail) {
+  border-top: 3px solid #C8942E !important;
+}
+
+/* ── Featured image ── */
+body.blog .post-grid article .entry-media,
+body.blog .post-grid article .entry-img,
+body.blog .post-grid article .ratio-wrap {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+body.blog .post-grid article .entry-img {
+  display: block !important;
+  height: 160px !important;
+  padding-top: 0 !important;
+}
+
+/* Kill BuddyBoss .first .ratio-wrap .entry-img { padding-top: 55.27%; height: 100% } */
+body.blog .post-grid .first .ratio-wrap .entry-img,
+body.blog .post-grid article .ratio-wrap .entry-img {
+  padding-top: 0 !important;
+  height: 160px !important;
+}
+
+body.blog .post-grid article .entry-media img,
+body.blog .post-grid article .entry-img img,
+body.blog .post-grid article .wp-post-image {
+  width: 100% !important;
+  height: 160px !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* ── Post inner content ── */
+body.blog .post-grid article .entry-header {
+  padding: 12px 16px 0 16px !important;
+  margin: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Kill BuddyBoss .post-grid .entry-header { margin-bottom: 1.25rem } */
+body.blog .post-grid .entry-header {
+  margin-bottom: 8px !important;
+}
+
+body.blog .post-grid article .entry-content,
+body.blog .post-grid article .entry-summary {
+  padding: 0 16px 12px 16px !important;
+  margin: 0 !important;
+  flex: 1 !important;
+  float: none !important;
+  position: relative !important;
+  display: block !important;
+  width: auto !important;
+}
+
+body.blog .post-grid article .entry-footer {
+  padding: 0 16px 12px 16px !important;
+}
+
+/* ── Post titles ── */
+body.blog .post-grid article .entry-title,
+body.blog .post-grid article .entry-title a {
+  font-family: 'Playfair Display', serif !important;
+  font-size: clamp(18px, 2vw, 22px) !important;
+  font-weight: 700 !important;
+  color: #FFFFFF !important;
+  line-height: 1.3 !important;
+  margin-bottom: 8px !important;
+  margin: 0 0 8px 0 !important;
+  text-decoration: none !important;
+  display: block !important;
+  letter-spacing: normal !important;
+  word-break: normal !important;
+}
+
+body.blog .post-grid article .entry-title a:hover {
+  color: #C8942E !important;
+}
+
+/* ── Post text — clamp to 3 lines ── */
+body.blog .post-grid article .entry-content,
+body.blog .post-grid article .entry-summary {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 14px !important;
+  color: #A8B8CC !important;
+  line-height: 1.7 !important;
+  margin-bottom: 0 !important;
+  letter-spacing: normal !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  max-height: 4.2em !important;
+}
+
+body.blog .post-grid article .entry-content p,
+body.blog .post-grid article .entry-summary p {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 14px !important;
+  color: #A8B8CC !important;
+  line-height: 1.7 !important;
+  margin-bottom: 0 !important;
+  letter-spacing: normal !important;
+}
+
+body.blog .post-grid article *,
+body.blog .post-grid article p,
+body.blog .post-grid article span,
+body.blog .post-grid article div {
+  color: #FFFFFF !important;
+}
+
+body.blog .post-grid article .entry-summary p,
+body.blog .post-grid article .entry-content p {
+  color: #A8B8CC !important;
+}
+
+/* ── Post meta ── */
+body.blog .post-grid article .entry-meta,
+body.blog .post-grid article .entry-meta a,
+body.blog .post-grid article .post-meta a {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 12px !important;
+  color: #A8B8CC !important;
+  text-transform: uppercase !important;
+  letter-spacing: .06em !important;
+  margin-top: 12px !important;
+}
+
+body.blog .post-grid article .entry-meta a:hover {
+  color: #C8942E !important;
+}
+
+body.blog .post-grid article .entry-meta a,
+body.blog .post-grid article .author a,
+body.blog .post-grid article .posted-on a {
+  color: #C8942E !important;
+}
+
+/* Kill BuddyBoss .first .post-inner-wrap .entry-meta { margin-top: auto } */
+body.blog .post-grid .first .post-inner-wrap .entry-meta {
+  margin-top: 12px !important;
+}
+
+/* ── Read More button ── */
+body.blog a.more-link,
+body.blog .more-link,
+body.blog .entry-more-link,
+body.blog .read-more,
+body.blog a.read-more {
+  display: inline-block !important;
+  background: #C8942E !important;
+  color: #0E1C2F !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  padding: 10px 22px !important;
+  border-radius: 8px !important;
+  text-decoration: none !important;
+  margin: 8px 0 12px 16px !important;
+  letter-spacing: .02em !important;
+  transition: all .25s ease !important;
+}
+
+body.blog a.more-link:hover,
+body.blog a.read-more:hover {
+  background: #E8B84B !important;
+  color: #0E1C2F !important;
+  transform: translateY(-2px) !important;
+}
+
+/* ══════════════════════════════════════════
+   SIDEBAR — tops aligned with cards
+   Kills: body .widget-area { padding-top: 1.875rem }
+   Kills: .widget-area { padding-bottom: 1.25rem }
+   Kills: .bb-grid-cell { padding-left/right: 10px }
+══════════════════════════════════════════ */
+body.blog #secondary,
+body.blog #secondary.widget-area,
+body.blog div#secondary,
+body .widget-area#secondary,
+body body.blog .widget-area:not(.widget-area-secondary) {
+  width: 320px !important;
+  min-width: 320px !important;
+  max-width: 320px !important;
+  flex-shrink: 0 !important;
+  flex: 0 0 320px !important;
+  background: rgba(255,255,255,.03) !important;
+  border: 1px solid rgba(255,255,255,.07) !important;
+  border-radius: 16px !important;
+  padding: 24px !important;
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+  position: sticky !important;
+  top: 80px !important;
+  float: none !important;
+  margin: 0 !important;
+}
+
+body.blog #secondary .widget,
+body.blog #secondary aside.widget {
+  background: transparent !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin-bottom: 32px !important;
+  padding-bottom: 32px !important;
+  border: none !important;
+  border-bottom: 1px solid rgba(255,255,255,.06) !important;
+}
+
+body.blog #secondary .widget:last-child,
+body.blog #secondary aside.widget:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  border-bottom: none !important;
+}
+
+body.blog #secondary .widget:first-child {
+  margin-top: 0 !important;
+}
+
+/* ── Sidebar headings ── */
+body.blog #secondary .widget-title,
+body.blog #secondary .widgettitle,
+body.blog #secondary .wp-block-heading,
+body.blog #secondary h2,
+body.blog #secondary h3 {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: #FFFFFF !important;
+  margin-bottom: 16px !important;
+  padding-bottom: 10px !important;
+  border-bottom: 2px solid #C8942E !important;
+}
+
+/* ── Sidebar links ── */
+body.blog #secondary a {
+  color: #A8B8CC !important;
+  text-decoration: none !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  transition: color .2s !important;
+}
+
+body.blog #secondary a:hover {
+  color: #C8942E !important;
+}
+
+/* ── Sidebar lists ── */
+body.blog #secondary ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+body.blog #secondary li {
+  padding: 8px 0 !important;
+  border-bottom: 1px solid rgba(255,255,255,.04) !important;
+  font-size: 14px !important;
+  color: #A8B8CC !important;
+}
+
+body.blog #secondary li:last-child {
+  border-bottom: none !important;
+}
+
+/* ── Recent posts widget thumbnails ── */
+body.blog #secondary .widget_recent_entries ul li::before {
+  content: '' !important;
+  display: block !important;
+  width: 52px !important;
+  min-width: 52px !important;
+  height: 52px !important;
+  background: #162640 !important;
+  border-radius: 8px !important;
+  border: 1px solid rgba(200,148,46,.25) !important;
+  flex-shrink: 0 !important;
+}
+
+body.blog #secondary .widget_recent_entries ul li {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+body.blog #secondary .widget_recent_entries ul li a {
+  font-size: 13px !important;
+  line-height: 1.4 !important;
+  flex: 1 !important;
+}
+
+/* ── Recent comments — hide avatars ── */
+body.blog #secondary .widget_recent_comments img,
+body.blog #secondary .avatar {
+  display: none !important;
+}
+
+body.blog #secondary .widget_recent_comments ul {
+  list-style: none !important;
+  padding: 0 !important;
+}
+
+/* ── Sidebar search ── */
+body.blog #secondary .wp-block-search,
+body.blog #secondary .search-form {
+  display: flex !important;
+  gap: 8px !important;
+}
+
+body.blog #secondary .wp-block-search__input,
+body.blog #secondary .search-field,
+body.blog #secondary input[type="search"],
+body.blog #secondary input[type="text"] {
+  background: rgba(255,255,255,.05) !important;
+  border: 1px solid rgba(255,255,255,.12) !important;
+  border-radius: 8px !important;
+  padding: 10px 14px !important;
+  color: #FFFFFF !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 14px !important;
+  flex: 1 !important;
+  outline: none !important;
+  width: auto !important;
+}
+
+body.blog #secondary .wp-block-search__input:focus,
+body.blog #secondary input[type="search"]:focus {
+  border-color: #C8942E !important;
+}
+
+body.blog #secondary .wp-block-search__button,
+body.blog #secondary .search-submit,
+body.blog #secondary input[type="submit"],
+body.blog #secondary button[type="submit"] {
+  background: #C8942E !important;
+  color: #0E1C2F !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 10px 18px !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  cursor: pointer !important;
+  transition: background .2s !important;
+  margin-top: 0 !important;
+}
+
+body.blog #secondary .wp-block-search__button:hover,
+body.blog #secondary .search-submit:hover {
+  background: #E8B84B !important;
+}
+
+/* ── Sidebar image widget ── */
+body.blog #secondary .widget_media_image img {
+  border-radius: 8px !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* ══════════════════════════════════════════
+   PAGINATION
+══════════════════════════════════════════ */
+body.blog .navigation,
+body.blog .nav-links,
+body.blog .pagination {
+  grid-column: 1 / -1 !important;
+  display: flex !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 40px 0 !important;
+}
+
+body.blog .page-numbers a,
+body.blog .page-numbers span,
+body.blog .nav-links a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: rgba(255,255,255,.03) !important;
+  border: 1px solid rgba(255,255,255,.15) !important;
+  border-radius: 8px !important;
+  padding: 8px 16px !important;
+  color: #A8B8CC !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  text-decoration: none !important;
+  transition: all .2s !important;
+}
+
+body.blog .page-numbers.current,
+body.blog .page-numbers a:hover,
+body.blog .nav-links a:hover {
+  background: #C8942E !important;
+  color: #0E1C2F !important;
+  border-color: #C8942E !important;
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════ */
+@media (max-width: 480px) {
+  body.blog #content.site-content > .container {
+    padding: 20px !important;
+  }
+  body.blog .bb-grid.site-content-grid {
+    flex-direction: column !important;
+  }
+  body.blog .post-grid.bb-grid {
+    grid-template-columns: 1fr !important;
+  }
+  body.blog #secondary,
+  body.blog #secondary.widget-area,
+  body.blog div#secondary,
+  body .widget-area#secondary,
+  body body.blog .widget-area:not(.widget-area-secondary) {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    position: static !important;
+  }
+}

@@ -61,10 +61,8 @@ body.page .entry-header,
   -webkit-font-smoothing: antialiased;
   background: #0E1C2F;
   display: block;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  margin-left: -50vw;
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -486,13 +484,21 @@ body.page .entry-header,
   .lmt-workforce .about-inner { grid-template-columns: 1fr; }
   .lmt-workforce .contact-grid { grid-template-columns: 1fr 1fr; }
 }
-@media (max-width: 600px) {
-  .lmt-workforce .hero { padding: 72px 20px 60px; }
-  .lmt-workforce .wrap { padding: 0 20px; }
+@media (max-width: 768px) {
+  .lmt-workforce .hero { padding: 48px 16px 40px; }
+  .lmt-workforce .wrap { padding: 0 16px; }
   .lmt-workforce .data-grid { grid-template-columns: 1fr; }
   .lmt-workforce .data-cell { border-right: none; border-bottom: 1px solid rgba(200,148,46,.1); }
   .lmt-workforce .data-cell:last-child { border-bottom: none; }
   .lmt-workforce .contact-grid { grid-template-columns: 1fr; }
+  .lmt-workforce .hero-ctas,
+  .lmt-workforce .cta-buttons { flex-direction: column; }
+  .lmt-workforce .btn-gold,
+  .lmt-workforce .btn-outline,
+  .lmt-workforce .btn-cta-primary,
+  .lmt-workforce .btn-cta-secondary {
+    width: 100%; justify-content: center; text-align: center;
+  }
 }
 </style>
 

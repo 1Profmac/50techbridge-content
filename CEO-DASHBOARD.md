@@ -1,5 +1,5 @@
 # CEO DASHBOARD — Learn More Technologies
-## Professor Brian McKinney | Updated: April 15, 2026
+## Professor Brian McKinney | Updated: April 16, 2026
 
 **RULE: If it's not on this dashboard, it doesn't exist. Every Claude session starts and ends here.**
 **FOCUS: You are not a course creator. You are an MBE-certified WIOA subcontractor with audit-proof results.**
@@ -73,15 +73,18 @@
 - [ ] Target: 1 paid workshop booked by end of April
 
 ### Priority 4: LINKEDIN (runs in tandem — credibility for the pitch)
-- [ ] 5-10 connections/day — workforce board leadership + HR decision makers
+- [ ] **NEW 3-block daily process**: Morning Hunt 25min (15-20 requests + 3-5 DM follow-ups) / Midday Signal 10min (3 insight comments) / Evening Ship 10min (1 post + log metrics)
 - [ ] Connect: Yael Lawson, Juliet Stipeche, Adrian Lopez, Laura Ward, Jason Helmick, David Goldstein
-- [ ] Follow up with Jessica Lemann, Felicia Brown, Carly Roszkowski when they accept
+- [ ] Follow up with Jessica Lemann (Apr 18 per pipeline), Felicia Brown, Carly Roszkowski when they accept
+- [ ] Log yesterday (Apr 15): Jessica Lemann comment+DM / Felicia Brown request / Carly Roszkowski request — ramp to 15-20/day starting today
 - [ ] Post 1 article (10 written, unposted — [Content Calendar](content/CONTENT-CALENDAR.md))
+- [ ] **Premium expires ~May 14** — renew decision depends on pipeline produced
 
 ### Priority 5: Admin (last)
 - [ ] Rotate credentials — OVERDUE ([Credential Checklist](ops/CREDENTIAL-ROTATION-CHECKLIST.md))
 - [ ] Verify YouTube videos set to PUBLIC
 - [ ] Read Chapter 1 — book review ([Book Status](book/BOOK-STATUS.md))
+- [ ] **Return Go Live Tech hardware** — box, ship tracked, this week. No longer using; anchor to burnt bridge.
 
 ---
 
@@ -185,7 +188,7 @@ Full calendar: [Content Calendar](content/CONTENT-CALENDAR.md)
 | TX Workforce Conference | Late 2026 | Texas | Apply to speak | Not started |
 | NAWB Forum 2026 | Mar 2027 | Las Vegas | Apply to speak (opens ~Sep 2026) | Bookmark |
 
-Full calendar: [Events Calendar](marketing/EVENTS-CALENDAR-2026.md)
+Full calendar: [Events Calendar](marketing/events/EVENTS-CALENDAR-2026.md)
 
 ---
 

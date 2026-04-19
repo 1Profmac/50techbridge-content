@@ -1,78 +1,111 @@
-# LMT Marketing Folder — Local Snapshot
+# LMT Marketing Folder — Organized Index
 
-**Last synced from git:** 2026-04-08
-**Source repos:**
+**Last reorganized:** 2026-04-16 (Come Down From the Clouds session — two passes: marketing restructure + video consolidation)
+
+**Video files relocated (2026-04-16):** Bridge video production scripts moved to `../850-Billion-Series/Bridge-Its-About-the-People/scripts/`. Reusable B-Roll production recipe moved to `../video-builder/lmt-broll-production-recipe.md`. Marketing folder no longer holds video assets.
+
+**Canonical source repos (git):**
 - `C:\Users\USER\Documents\lmt-claude-brain\marketing\` → general marketing strategy + outreach
 - `C:\Users\USER\Documents\50techbridge-content\marketing\` → article content + prospect dossiers
 
 ---
 
-## ⚠ This is a SNAPSHOT, not a working copy
+## ⚠ READ THIS FIRST — git sync status
 
-The canonical source of truth for these files lives in **git** (the two repos above). The copy here is a convenience snapshot so Brian can browse and read marketing files without leaving the LMT folder.
+This folder is a **working snapshot** of two git repos. The flat-file structure in the git repos has **not yet been updated** to match the new subfolder organization below.
 
-**Editing rules:**
-- ✅ READ files here freely
-- ✅ COPY content from here to use in LinkedIn / email / Canva / wherever
-- ⚠️ If you want to EDIT a file, edit the version in the git repo (not this copy), so your change persists across sessions and other agents see it
-- 🔄 To refresh this snapshot, ask Claude: "sync the marketing folder"
+**Files NEW as of 2026-04-16 that do NOT exist in git yet (must be committed):**
+- `LINKEDIN-DAILY-PROCESS.md` (root)
+- `LINKEDIN-PROFILE-CHECKLIST.md` (root)
+- `linkedin-correspondence-log.csv` (root)
+
+**Decision required:**
+- **Option A (recommended):** Commit new files + new folder structure to `lmt-claude-brain` repo, then this snapshot stays accurate
+- **Option B:** Stop using git as canonical; make this the working copy
+- **Option C:** Leave as-is and manually reconcile when sync is run
+
+Ask Claude: *"commit today's marketing changes to lmt-claude-brain"* to execute Option A.
 
 ---
 
-## What's here
+## Folder Structure (root → subfolders)
 
-### Strategy + planning
-- `wioa-prospects.md` — pipeline of 28 Texas WDBs as targets
-- `funding-and-channels-intel.md` — where the money is + 8-org network map
-- `prospects-and-funding.csv` — 60+ row master CSV (people, orgs, funding sources)
-- `small-company-entry-and-social-channels.md` — 4 entry paths + LinkedIn/FB/X groups
-- `outreach-templates.md` — T1/T2/T3 connection request + DM templates
-- `EVENTS-CALENDAR-2026.md` — workforce/HR conferences calendar
-- `PROMOTION-BUDGET-2026.md` — marketing budget plan
-- `DECISION-MAKER-ACCESS-PLAYBOOK.md` — how to reach senior buyers
-- `SOCIAL-STRATEGY-REVIEW-2026-04.md` — April 2026 social review
-- `LINKEDIN-SERVICES-CATEGORIES.md` — your LinkedIn Services page categories
+### 📍 Root — Hot files (core, referenced by CEO-DASHBOARD, Claude CLI triggers, LinkedIn process)
+
+| File | Purpose |
+|---|---|
+| `README.md` | This index |
+| `DECISION-MAKER-TARGET-LIST.md` | 4-tier named target list + LinkedIn search strings |
+| `DECISION-MAKER-ACCESS-PLAYBOOK.md` | How to reach senior buyers |
+| `PROSPECTS-INDEX.md` | Master index of researched dossiers (1–5 ratings) |
+| `WEEKLY-RHYTHM.md` | Mon–Fri cadence: what runs daily vs 3–4x/week |
+| `LMT-CAPABILITY-STATEMENT.md` | Sales capability one-pager |
+| `accounts.md` | High-level accounts list |
+
+### 📂 `linkedIn/` — All LinkedIn operations in one place
+- `LINKEDIN-DAILY-PROCESS.md` — FOCUS LOCK + 3-block daily routine
+- `LINKEDIN-PROFILE-CHECKLIST.md` — 12-priority profile maximization
+- `LINKEDIN-SERVICES-CATEGORIES.md` — LinkedIn Services page categories
+- `linkedin-correspondence-log.csv` — 12-col touch tracker
+
+### 📂 `prospects/` (existing — unchanged)
+Individual researched dossier markdown files (e.g., `2026-04-08-carly-roszkowski.md`). See `PROSPECTS-INDEX.md` at root for the full index.
+
+### 📂 `workforce/` — WIOA + funding intelligence
+- `WIOA-BUYER-JOURNEY.md` — buyer journey for workforce board contracts
 - `WIOA-ETPL-APPLICATION-PACKET.md` — Texas ETPL application requirements
-- `TODO-2026-04-08.md` — today's tactical TODO list
+- `funding-and-channels-intel.md` — where the money is + 8-org network map
+- `wioa-prospects.md` — pipeline of 28 Texas WDBs as targets
+- `prospects-and-funding.csv` — 60+ row master CSV (people, orgs, funding)
+- `wioa-etpl-forms/` — ETPL form files
 
-### Article content (the "It's Not About the Data" manifesto)
-- `article-its-not-about-the-data.md` — markdown master
-- `article-its-not-about-the-data-plaintext.txt` — plain text version
-- `linkedin-short-post-show-a-friend.md` — LittleMissMatched short post
+### 📂 `templates/` — Messages, proposals, and reference tools
+- `EMAIL-SEQUENCES.md` — email outreach sequences
+- `linkedin-message-templates.md` — LinkedIn DM templates
+- `outreach-templates.md` — T1/T2/T3 connection + DM templates
+- `RETAINER-PROPOSAL-TEMPLATE.md` — consulting retainer template
+- `WORKSHOP-SELL-SHEET.md` — 90-min workshop sell sheet
+- `Canva-Cheat-Sheet.md` — Canva reference
+- `YOAST-SEO-SKILL.md` — Yoast SEO reference
+- `email-sequences/` — additional email sequence assets
 
-### Bridge video build kit
-- `bridge-video-script.md` — HeyGen narration (paste-ready, ~213 words)
-- `bridge-video-canva-broll-script.md` — 14-segment Canva b-roll spec
-- `bridge-video-canva-broll-plaintext.txt` — plain text version
-- `bridge-video-canva-build-guide.md` — step-by-step Canva build walkthrough
-- `bridge-video-motion-map.md` — pre-decided motion choices per segment
-- `lmt-broll-production-recipe.md` — REUSABLE production recipe for ALL future LMT videos
+### 📂 `events/` — Calendar + tracker
+- `EVENTS-CALENDAR-2026.md` — workforce/HR conferences calendar
+- `events-tracker-2026.xlsx` — event tracking spreadsheet
+- `build_events_xlsx.py` — Python script that builds the xlsx
 
-### Prospect dossiers (in `prospects/` subfolder)
-- `PROSPECTS-INDEX.md` — master index of all dossiers
-- `2026-04-07-david-goldstein.md` — C2GPS Workforce Business Services Supervisor (4/5)
-- `2026-04-07-jason-helmick.md` — C2GPS Deputy Director Business Services (5/5)
-- `2026-04-08-carly-roszkowski.md` — AARP Foundation VP Financial Resilience (5/5 ⭐⭐)
-- `2026-04-08-jessica-lemann.md` — AARP Texas Senior Associate State Director (5/5 ⭐⭐) — Brian KNOWS her, former colleague
-- `2026-04-08-alan-weil.md` — AARP SVP/Director PPI (5/5 ⭐⭐⭐) — most senior, publisher of Valuing the Invaluable 2026
-- `2026-04-08-aarp-pipeline-from-carly-sidebar.md` — 6 names from Carly's profile sidebar
-- `2026-04-07-david-goldstein-austin-wioa.md` — older stub, can be deleted
+### 📂 `strategy/` — High-level plans + reviews
+- `COMMUNITY-LAUNCH-PLAN.md` — community launch plan
+- `PROMOTION-BUDGET-2026.md` — marketing budget plan
+- `SOCIAL-STRATEGY-REVIEW-2026-04.md` — April 2026 social review
+- `small-company-entry-and-social-channels.md` — 4 entry paths + social channels
+- `content-schedule.md` — content publishing schedule
 
----
-
-## How to refresh this snapshot
-
-When you want the latest from git, ask Claude:
-
-> "Sync the marketing folder from git"
-
-I'll pull the freshest versions from both repos and overwrite this snapshot.
+### 📂 `drafts/` — Article drafts + scheduled posts (pre-publishing)
+- `article-its-not-about-the-data-plaintext.txt` — "It's Not About the Data" manifesto draft
+- `linkedin-article-ai-amplifies.md` — "AI amplifies" LinkedIn article draft
+- `SOCIAL-POSTS-WEEK-OF-APRIL-14.txt` — week-of-April-14 social posts
 
 ---
 
-## Where the canonical (git) versions live
+## Editing rules (unchanged from prior README)
 
-- General marketing strategy: `C:\Users\USER\Documents\lmt-claude-brain\marketing\`
-- Article content + prospect dossiers: `C:\Users\USER\Documents\50techbridge-content\marketing\`
+- ✅ READ any file here freely
+- ✅ COPY content from here to LinkedIn / email / Canva / wherever
+- ⚠️ If you want to EDIT a file that exists in git (lmt-claude-brain or 50techbridge-content), edit the version in the git repo so changes persist across sessions
+- ✅ For NEW files created this session (see list at top), they live here only until committed to git — ask Claude to commit them
 
-Both repos are pushed to GitHub at https://github.com/1Profmac/lmt-claude-brain and https://github.com/1Profmac/50techbridge-content (private).
+---
+
+## How to refresh this snapshot from git
+
+Ask Claude: *"sync the marketing folder from git"*
+
+⚠️ Warning: a fresh sync will flatten the subfolder structure back to the git layout unless git has been updated with the new structure first.
+
+---
+
+## GitHub
+
+- https://github.com/1Profmac/lmt-claude-brain (private)
+- https://github.com/1Profmac/50techbridge-content (private)
