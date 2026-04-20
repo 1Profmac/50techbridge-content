@@ -38,18 +38,22 @@ But underneath the hype, there's something real. And the reason it matters at yo
 
 AI matters at your age because you're running out of time to be undervalued.
 
-That's not a motivational poster. That's economics.
+That's not a motivational poster. That's economics. Your economics.
 
-Here's what's happening right now in the American workforce:
+You've heard the numbers: **$850 billion** in innovation revenue lost annually when organizations sideline experienced workers. **$76 trillion** in wealth held by adults 50 and older. Those aren't abstract figures in a McKinsey report. That's your 401(k). Your home equity. Your consulting rate. Your earning years. Your retirement timeline.
+
+When an organization pushes out experienced workers and replaces them with cheaper, less knowledgeable staff — and the AI project fails because nobody left in the room understands the business — that cost doesn't land on a spreadsheet in a boardroom. It lands on you. Lower severance. Fewer contract opportunities. A job market that tells you you're "overqualified" because they can't afford what you're worth.
+
+**Some of that $850 billion is your money.** Some of that $76 trillion is your future. And right now, both are being left on the table because the people making decisions don't understand what you bring — and you haven't picked up the tool that proves it.
+
+Here's what's happening right now:
 
 - **78,557 tech workers** were laid off in Q1 2026. Half of those cuts were AI-related.
 - But workers aged 30 and older in AI-exposed jobs saw employment **grow 6-12%**. It's the youngest workers — 22 to 25 — who are being displaced.
 - **88% of enterprise AI projects fail.** The number one reason isn't the technology. It's that nobody with domain expertise is overseeing the implementation.
 - **93% of IT leaders** plan to deploy AI agents within two years. They need people who understand the work those agents will do.
 
-Read that again. Companies are spending billions on AI. The AI keeps failing. The reason it fails is the absence of experienced professionals who understand the business well enough to direct it.
-
-That's you.
+The companies losing that $850 billion aren't losing it because AI doesn't work. They're losing it because they cut the only people who could make it work — and that's you.
 
 Not because you're good with computers. Because you're good at the work the computers are trying to do.
 

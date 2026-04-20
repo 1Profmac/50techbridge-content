@@ -120,15 +120,21 @@ Every one of these advantages compounds with AI agents. None of them requires a 
 
 ---
 
-## The $850 Billion Wake-Up Call
+## The $850 Billion Wake-Up Call — And Why Some of That Is Your Money
 
-U.S. organizations lose an estimated $850 billion annually in innovation revenue by sidelining experienced workers. That number comes from AARP and Deloitte research, and it represents the largest untapped workforce asset in the American economy.
+U.S. organizations lose an estimated $850 billion annually in innovation revenue by sidelining experienced workers. Adults 50+ hold $76 trillion in wealth — 70% of all U.S. disposable income.
+
+Those aren't abstract numbers in a policy report. That's your 401(k) growing slower because your employer replaced your department with junior hires who can't execute. That's your consulting rate getting undercut because the market says "experienced" when it means "expensive." That's your retirement timeline stretching because the economy discounted the exact expertise it now desperately needs.
+
+**Some of that $850 billion is your money.** Every time an organization pushes out an experienced professional and watches the AI project fail six months later — that cost doesn't stay in a boardroom. It lands on severance packages, on reduced contract budgets, on a job market that tells you you're "overqualified" because they can't afford what you're worth.
 
 Here's what that means in the AI agent era:
 
 The organizations that figure out how to pair experienced professionals with AI agents will outperform. The ones that keep pushing experienced workers out will lose twice — once on the institutional knowledge that walks out the door, and again on the AI deployments that fail because nobody with judgment is overseeing them.
 
 **The data confirms it:** 88% of AI agents fail to reach production (Gartner/IDC). 79% of organizations report serious adoption challenges (Writer). The number one reason isn't technology. It's lack of domain expertise in the implementation.
+
+The money they're losing? Part of it was supposed to be yours — your raise, your contract, your seat at the table. AI agents are how you take it back.
 
 You are the missing piece. Not despite your age. Because of it.
 

@@ -35,6 +35,18 @@ Two introductions. Five myth-busters. One tagline through all of them.
 
 ---
 
+## Core Messaging Principle — Make It Personal
+
+When we cite the $850 billion or $76 trillion, we don't leave it as a market stat. We make it personal:
+
+> **"Some of that $850 billion is your money."**
+
+The $850B in lost innovation revenue isn't an abstract policy number — it's the reader's 401(k), their consulting rate, their severance, their seat at the table that got eliminated. The $76T in wealth is their retirement, their equity, their earning years being discounted by organizations that don't understand what they bring.
+
+Every time we use a big number, we bring it home: this is about YOUR career, YOUR income, YOUR future. Not a McKinsey slide.
+
+---
+
 ## Format
 
 Every article follows the same structure:
