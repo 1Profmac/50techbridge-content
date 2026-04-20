@@ -47,7 +47,8 @@ Each book chapter becomes a standalone LinkedIn article. These are the highest-v
 
 | # | Myth | File | Status |
 |---|------|------|--------|
-| M0 | **CAPSTONE: "The Agentic Advantage"** | `AI-Myths-vs-Applications-Series/00-capstone-why-ai-agents-why-now.md` | **Written — fully sourced, pillar page** |
+| M0a | **"Why AI at My Age?"** | `AI-Myths-vs-Applications-Series/06-why-ai-at-my-age.md` | **Written — emotional entry point, publish FIRST** |
+| M0b | **CAPSTONE: "The Agentic Advantage"** | `AI-Myths-vs-Applications-Series/00-capstone-why-ai-agents-why-now.md` | **Written — fully sourced, publish SECOND** |
 | M1 | "AI is for young tech people" | `AI-Myths-vs-Applications-Series/01-ai-is-for-young-tech-people.md` | Written |
 | M2 | "AI will replace me" | `AI-Myths-vs-Applications-Series/02-ai-will-replace-me.md` | Written |
 | M3 | "I'm too old to learn this" | `AI-Myths-vs-Applications-Series/03-too-old-to-learn.md` | Written |
