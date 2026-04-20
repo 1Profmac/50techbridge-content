@@ -1,5 +1,5 @@
 # LINKEDIN DAILY PROCESS — Focus Lock + Procedure
-## Learn More Technologies | Updated: April 16, 2026
+## Learn More Technologies | Updated: April 20, 2026
 ## Born: "Come Down From the Clouds" session — see [ops/session-briefs/2026-04-16-come-down-from-the-clouds.md](../ops/session-briefs/2026-04-16-come-down-from-the-clouds.md)
 
 > **Read the FOCUS LOCK aloud every morning before Morning Hunt. Record it as a voice memo. Play it in the shower or on your first coffee. Re-record when rules change (expect every 2–4 weeks).**
@@ -50,13 +50,15 @@
 ## THE 3 BLOCKS — 45 min total, every weekday
 
 ### MORNING HUNT (25 min) — the revenue engine
-1. **Notifications (5 min)** — respond ONLY to:
-   - Replies to your outreach
-   - New connection accepts from target accounts → DM same day
-   - Inbound DMs with buying intent
-   - Ignore everything else (likes, reshare notices, "congrats on anniversary")
-2. **Send 15–20 connection requests (15 min)** to Tier 1 buyers from `DECISION-MAKER-TARGET-LIST.md`. One-sentence note:
-   > "Hi [Name] — I run Learn More Technologies, MBE-certified, 347 completions training adults 50+ in AI. Saw your work at [Company]. Worth connecting. — Brian"
+1. **Work the Warm Signal Stack (10 min)** — open Notifications → "My posts" tab first. Run the full 5-step sequence from [Working-the-Warm-Signal-Stack.md](../../Working-the-Warm-Signal-Stack.md):
+   - **Triage** — sort every signal by strength (Hot / Warm / Light / Skip). Work hot first.
+   - **Profile-first** — 60 seconds on each profile before any message. Headline, credentials, follower count, featured work.
+   - **Personalize** — name something specific from their work. NO templates. If you can't name something, go back to their profile.
+   - **Lead with a gift** — comp'd Pioneer access, content amplification, data sharing. Offer before asking.
+   - **Pace by tier** — max 3 T1 peer InMails/day (15/month). T2/T3 in batches. Re-tier "light" signals from high-credential profiles upward.
+   - Then check general notifications: replies to outreach, new accepts → DM same day, inbound DMs with buying intent.
+   - Ignore: "congrats on anniversary", endorsement notifications, non-buyer noise.
+2. **Send 15–20 connection requests (10 min)** to Tier 1 buyers from `DECISION-MAKER-TARGET-LIST.md`. One-sentence personalized note referencing their specific work or company — not a template.
 3. **Send 3–5 follow-up DMs (5 min)** to accepts from prior days. Every DM ends with a **specific ask**: 15-min call, intro, pilot conversation, lunch & learn invite. NO "just wanted to reach out."
 
 ### MIDDAY SIGNAL (10 min) — be visible to buyers
@@ -89,6 +91,7 @@
 - Weekly rhythm (what runs daily vs 3–4x): [../WEEKLY-RHYTHM.md](../WEEKLY-RHYTHM.md)
 - CEO Dashboard (home base): [../../CEO-DASHBOARD.md](../../CEO-DASHBOARD.md)
 - AARP procurement channels: (memory — ask CLI)
+- **Warm Signal Stack (5-step outreach sequence):** [../../Working-the-Warm-Signal-Stack.md](../../Working-the-Warm-Signal-Stack.md)
 - Funding map: [../../ops/FUNDING-TARGETS-AND-DIRECT-PIPELINE.md](../../ops/FUNDING-TARGETS-AND-DIRECT-PIPELINE.md)
 
 ---
