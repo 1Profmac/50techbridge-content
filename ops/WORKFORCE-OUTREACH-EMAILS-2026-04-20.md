@@ -62,7 +62,7 @@ hello@learnmoretechnologies.com
 1. Open Gmail → click the search bar filter icon (right side)
 2. In "From" field, paste:
    ```
-   etp@wsalamo.org OR juliet.stipeche@wrksolutions.net OR dgoldstein@c2gps.org OR workforce.solutions OR twc.texas.gov
+   etp@wsalamo.org OR juliet.stipeche@wrksolutions.net OR david@c2gps.net OR jason@c2gps.net OR yael.lawson@wfscapitalarea.com OR @c2gps.net OR @wfscapitalarea.com OR @wrksolutions.net OR @wsalamo.org
    ```
 3. Click "Create filter"
 4. Check: **Star it**, **Apply the label: "LMT-Workforce-Pipeline"** (create the label here), **Never send to Spam**
@@ -76,10 +76,80 @@ Now every reply from these targets auto-stars and labels. Check "LMT-Workforce-P
 
 ---
 
+---
+
+## EMAIL 3: Yael Lawson — Interim CEO, WSCA (TOP-DOWN)
+**To:** yael.lawson@wfscapitalarea.com
+**Subject:** For Yael Lawson — ETPL Inquiry, Learn More Technologies
+
+---
+
+Ms. Lawson,
+
+My name is Brian McKinney, founder of Learn More Technologies — MBE-certified, based in Austin. I train adults 50+ in AI and digital skills. 347 completions, 3X industry completion rate, audit-ready curriculum.
+
+I'd like to get on the Eligible Training Provider List through Workforce Solutions Capital Area and explore subcontractor opportunities. I was referred by TWC's WIOA certification line to David Goldstein at C2GPS but haven't been able to connect.
+
+Could you point me to the right person and process? I'm ready to submit documentation immediately.
+
+Thank you for your time.
+
+Brian McKinney
+Founder, Learn More Technologies
+MBE Certified — Austin + San Antonio
+learnmoretechnologies.com
+hello@learnmoretechnologies.com
+
+---
+
+## EMAIL 4: David Goldstein — Direct Email Follow-Up
+**To:** david@c2gps.net
+**Subject:** Following Up — ETPL Inquiry, Learn More Technologies
+
+---
+
+David,
+
+I left you a voicemail today — wanted to follow up by email. I was referred to you by the TWC WIOA certification line regarding the ETPL application process through Capital Area.
+
+I'm Brian McKinney, founder of Learn More Technologies. MBE-certified, 347 completions training adults 50+ in AI and digital skills, 3X industry completion rate. Curriculum is built and audit-ready.
+
+I'd like to understand the ETPL process and any subcontractor paths through C2GPS. What's the best way to get that conversation started?
+
+Brian McKinney
+Founder, Learn More Technologies
+learnmoretechnologies.com
+hello@learnmoretechnologies.com
+
+---
+
+## EMAIL 5: Jason Helmick — Backup Contact, Same Department
+**To:** jason@c2gps.net
+**Subject:** ETPL Inquiry — Learn More Technologies
+
+---
+
+Jason,
+
+I'm Brian McKinney, founder of Learn More Technologies — MBE-certified AI and digital skills training for adults 50+. 347 completions, 3X completion rate.
+
+I'm trying to start the ETPL application process through Capital Area and was referred to your Business Services team by TWC. I also reached out to David Goldstein — wanted to connect with you as well.
+
+What's the best way to get on your calendar for a 15-minute conversation?
+
+Brian McKinney
+Founder, Learn More Technologies
+learnmoretechnologies.com
+hello@learnmoretechnologies.com
+
+---
+
 ## TRACKING
 
 | Target | Channel | Sent | Reply | Next Action |
 |--------|---------|------|-------|-------------|
-| David Goldstein (C2GPS) | Phone call | Apr 20 | — | Follow up with one-pager if he asks |
+| David Goldstein (C2GPS) | Phone + Email | Apr 20 | — | Follow up Apr 25 if no reply |
+| Jason Helmick (C2GPS) | Email | Apr 20 | — | Follow up Apr 25 if no reply |
+| Yael Lawson (WSCA CEO) | Email | Apr 20 | — | Follow up Apr 25 if no reply |
 | WS Alamo (etp@) | Email | Apr 20 | — | Follow up Apr 25 if no reply |
 | Juliet Stipeche (Gulf Coast) | Email | Apr 20 | — | Follow up Apr 25 if no reply |

@@ -44,6 +44,39 @@
 | ATTENDING lunch & learns | HOSTING lunch & learns |
 | Posting motivational quotes | Posting case study data: 347 / 3X / $76T |
 | Scrolling the feed | Closing the tab after the 3 blocks |
+| **Calling switchboards / leaving voicemails** | **Email the CEO/Director directly — top-down, not bottom-up** |
+| **Asking assistants to "route you"** | **Name the specific person + their title in your email subject** |
+
+---
+
+## TOP-DOWN CONTACT STRATEGY — How to Reach Decision Makers
+
+**Rule: Never call a switchboard twice. If the first call doesn't connect, switch to direct email to the top.**
+
+Switchboard staff and assistants don't know what ETPL is, who handles it, or why your call matters. Stop explaining yourself to gatekeepers. Go to the person who can say yes and let THEM route you down.
+
+### The 3-step sequence:
+
+**Step 1 — Find the direct email (10 min)**
+- TWC Board Directory PDF (updated quarterly): lists CEO name + email for all 28 boards
+- LinkedIn profile → "Contact info" section
+- Email format tools (RocketReach, Hunter.io) → guess the pattern (firstname@domain.org)
+- Board meeting minutes / agendas (public records) → staff names + emails listed
+
+**Step 2 — Email the top, not the middle**
+- Subject line names them + their org: "For [Name] — ETPL Inquiry, [Your Company]"
+- 4 sentences max: who you are, what you want, why it's relevant to them, what you're asking for
+- If the CEO isn't the right person, they will forward it to the right person — and that forward carries weight
+
+**Step 3 — LinkedIn connection same day**
+- Send a connection request to the same person you emailed
+- Note references the email: "Just sent a note to your office about ETPL — wanted to connect here too."
+- Now you're in their inbox AND their LinkedIn notifications
+
+### Why top-down works:
+- An email forwarded by the CEO gets answered. A voicemail from a stranger doesn't.
+- Decision-makers know their own org chart. Assistants don't.
+- You're MBE-certified with 347 completions — you belong in the CEO's inbox, not on hold.
 
 ---
 

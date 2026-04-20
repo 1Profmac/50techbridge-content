@@ -94,11 +94,11 @@
 
 | Name | Title | Org | Phone/Email | Action | Status |
 |------|-------|-----|-------------|--------|--------|
-| **David Goldstein** | Workforce Business Services Supervisor | **C2GPS Austin** | linkedin.com/in/dgoldst | **TWC REFERRED YOU TO HIM.** Call or connect NOW. | **Warm referral — called WIOA cert line 512-597-7253 last week, got sent to David** |
-| **Jason Helmick** | Deputy Dir Business Services | C2GPS Austin | LinkedIn | Connect — David's colleague, same contractor | Not contacted |
-| Crystal Oliver | Admin | WS Capital Area | 512-597-7191 | Got routed to children's ed — wrong dept | Called Apr 15 — wrong department |
-| WIOA Cert Line | — | TWC | 512-597-7253 | Already called — referred to David Goldstein | Called last week |
-| Yael Lawson | CEO | WS Capital Area (Austin) | LinkedIn + meeting request | Connect + ask for 15 min | Not contacted |
+| **Yael Lawson** | **Interim CEO** | **WS Capital Area (Austin)** | **yael.lawson@wfscapitalarea.com** / 512-597-7124 | **EMAIL DIRECTLY — top-down approach** | Not contacted |
+| **David Goldstein** | Workforce Business Services Supervisor | **C2GPS Austin** | **david@c2gps.net** / (512) 577-3030 | Voicemail left Apr 20. Email directly + follow up. | Voicemail Apr 20 |
+| **Jason Helmick** | Deputy Dir Business Services | C2GPS Austin | **jason@c2gps.net** / linkedin.com/in/jahelmick | Email same day as David — backup contact | Not contacted |
+| Crystal Oliver | Admin | WS Capital Area | 512-597-7191 | ~~Wrong dept~~ — DO NOT CALL AGAIN | Dead end |
+| WIOA Cert Line | — | TWC | 512-597-7253 | Already called — referred to David Goldstein | Dead end |
 | Adrian Lopez | CEO | WS Alamo (San Antonio) | 210-224-4357 / etp@wsalamo.org | CALL — start ETPL process | Not called |
 | Juliet Stipeche | Executive Director | WS Gulf Coast (Houston) | juliet.stipeche@wrksolutions.net | Email + LinkedIn | Not contacted |
 | Laura Ward | President/CEO | WS Greater Dallas | wfsdallas.com/contact | Call main line | Not contacted |
