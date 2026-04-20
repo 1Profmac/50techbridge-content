@@ -51,6 +51,7 @@ Two introductions. Five myth-busters. One tagline through all of them.
 | 3 | "I'm too old to learn this" | How to communicate clearly | If you can write an email, you can prompt AI |
 | 4 | "AI is just ChatGPT for fun" | How to run an operation | The $120/month stack that replaces a team |
 | 5 | "I need a course first" | How to solve real problems | 7 days and a problem, not a certificate |
+| **8** | **"Start a Business After 50 — The 7-Day Plan"** | **How to monetize all of it** | **The action finale — your experience is the product, AI is the team, $120/month is the cost** |
 
 ---
 
@@ -109,6 +110,7 @@ Every article follows the same structure:
 | 5 | Myth 3: "I'm too old to learn this" | LinkedIn + WordPress |
 | 6 | Myth 4: "AI is just ChatGPT for fun" | LinkedIn + WordPress |
 | 7 | Myth 5: "I need a course first" | LinkedIn + WordPress |
+| **8** | **"Start a Business After 50 — The 7-Day Plan"** | **LinkedIn + WordPress + PDF download** |
 
 **Repurpose each article to:** Podcast episode, YouTube video (HeyGen), YouTube Short, LinkedIn feed post, email newsletter, PPT slide for workforce pitches.
 
@@ -146,3 +148,4 @@ Every article follows the same structure:
 | `03-too-old-to-learn.md` | Myth 3 |
 | `04-ai-is-just-chatgpt-for-fun.md` | Myth 4 |
 | `05-i-need-a-course-first.md` | Myth 5 |
+| `08-start-a-business-after-50.md` | Part 8 — The action finale |

@@ -56,6 +56,7 @@ Each book chapter becomes a standalone LinkedIn article. These are the highest-v
 | 5 | "I'm too old to learn this" | `30-Years-That-AI-Never-Will/03-too-old-to-learn.md` | Written |
 | 6 | "AI is just ChatGPT for fun" | `30-Years-That-AI-Never-Will/04-ai-is-just-chatgpt-for-fun.md` | Written |
 | 7 | "I need a course first" | `30-Years-That-AI-Never-Will/05-i-need-a-course-first.md` | Written |
+| **8** | **"Start a Business After 50 — The 7-Day Plan"** | `30-Years-That-AI-Never-Will/08-start-a-business-after-50.md` | **Written — series finale, links to PDF** |
 
 **Cadence:** 1/week Tuesday, LinkedIn long-form. Repurpose each to podcast + video + short + newsletter.
 **Series overview:** `30-Years-That-AI-Never-Will/SERIES-OVERVIEW.md`

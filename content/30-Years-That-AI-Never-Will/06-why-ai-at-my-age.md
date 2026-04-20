@@ -102,7 +102,7 @@ When you use AI, you're not competing on technical ability. You're competing on 
 
 ### 5. It Gives You a Business
 
-This is the one nobody talks about.
+This is the one nobody talks about. And it might be the most important.
 
 Over half of U.S. businesses are owned by people 55 and older. Most of them started those businesses because they had expertise, a network, and a reputation — but not a team.
 
@@ -110,9 +110,28 @@ AI is the team.
 
 For $70-$120 a month, you get a strategist, a writer, a researcher, a designer, a scheduler, and a project manager. Not a person — a stack of tools that does 80% of what those people would do, at 2% of the cost.
 
+Here's what that looks like in practice — the full stack:
+
+| Tool | Cost | What It Replaces |
+|------|------|-----------------|
+| Claude Pro or ChatGPT Plus | $20/mo | Strategist, writer, researcher |
+| Canva Pro | $14/mo | Graphic designer |
+| Google Workspace | $7.20/mo | Office manager |
+| Calendly | $12/mo | Scheduling assistant |
+| Domain + hosting | $15/mo | Web developer |
+| Buffer | $6/mo per channel | Social media manager |
+| Stripe | 2.9% + 30c/txn | Billing department |
+| Notion or Airtable | Free | Project manager |
+
+That's a company. For the price of a gym membership you don't use.
+
 You don't need funding. You don't need investors. You don't need to hire. You need a laptop, a subscription, and the problem you've been solving for someone else's company for the last three decades.
 
 Now you solve it for yourself.
+
+And if that idea just made something light up in the back of your mind — if you thought, even for a second, "I could actually do this" — that's not a fantasy. That's 30 years of expertise recognizing an opportunity. In Part 8 of this series, we lay out the exact 7-day plan: pick the problem, build the stack, launch the offer, take the first call. One week. No permission needed.
+
+Some of that $850 billion is your money. Maybe it's time to stop earning it for someone else.
 
 ---
 
