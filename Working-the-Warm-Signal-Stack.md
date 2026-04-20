@@ -97,6 +97,7 @@ Offer before asking. The gift must be:
 | Content amplification to our network | $0 | Reach |
 | Cross-promotion / podcast guest swap | Time only | Audience expansion |
 | 50+TechBridge data sharing for their research | $0 | Original data they can cite |
+| **The Collab Offer (Phase 2 — deploy after first signed contract)** | 1 hour | Co-created LinkedIn Live or recorded session where Brian demos AI visual storytelling stack using THEIR content as the example. They get a finished asset. Brian gets exposure to their audience. Both post it. **Only for T1 peers with 10K+ followers whose audience = HR leaders, workforce directors, L&D. NOT for peers whose audience is coaches/solopreneurs/job seekers.** |
 
 **Rule:** The gift is not a pitch wrapped in nice language. It must be a thing they can say yes or no to without thinking.
 
