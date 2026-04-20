@@ -43,6 +43,21 @@ Each book chapter becomes a standalone LinkedIn article. These are the highest-v
 
 ---
 
+## NEW SERIES — AI Myths vs. Applications (5 articles, written)
+
+| # | Myth | File | Status |
+|---|------|------|--------|
+| M1 | "AI is for young tech people" | `AI-Myths-vs-Applications-Series/01-ai-is-for-young-tech-people.md` | Written |
+| M2 | "AI will replace me" | `AI-Myths-vs-Applications-Series/02-ai-will-replace-me.md` | Written |
+| M3 | "I'm too old to learn this" | `AI-Myths-vs-Applications-Series/03-too-old-to-learn.md` | Written |
+| M4 | "AI is just ChatGPT for fun" | `AI-Myths-vs-Applications-Series/04-ai-is-just-chatgpt-for-fun.md` | Written |
+| M5 | "I need to take a course first" | `AI-Myths-vs-Applications-Series/05-i-need-a-course-first.md` | Written |
+
+**Cadence:** 1/week Tuesday, LinkedIn long-form. Repurpose each to podcast + video + short + newsletter.
+**Series overview:** `AI-Myths-vs-Applications-Series/SERIES-OVERVIEW.md`
+
+---
+
 ## TO WRITE — New Topics (Not from Book)
 
 | # | Topic | Audience | Why |
