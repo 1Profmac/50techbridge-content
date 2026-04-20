@@ -162,7 +162,7 @@ The answer, across 8 parts:
 
 | Part | What 30 Years Taught You | What You Do With It |
 |------|-------------------------|-------------------|
-| 1 | Why your experience matters now | Understand the urgency |
+| 1 | "I Started at 65" — why your experience matters now | Understand the urgency |
 | 2 | The data proving your advantage | Back it with research |
 | 3 | What to build and why | Reject the "young people's game" myth |
 | 4 | Judgment no algorithm has | Stop fearing replacement |

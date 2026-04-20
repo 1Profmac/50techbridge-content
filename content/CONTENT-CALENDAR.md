@@ -49,7 +49,7 @@ Each book chapter becomes a standalone LinkedIn article. These are the highest-v
 
 | Part | Title | File | Status |
 |------|-------|------|--------|
-| 1 | **"Why AI at My Age?"** | `30-Years-That-AI-Never-Will/06-why-ai-at-my-age.md` | **Written — emotional entry point, publish FIRST** |
+| 1 | **"I Started at 65. Here's What They Don't Tell You."** | `30-Years-That-AI-Never-Will/06-why-ai-at-my-age.md` | **Written — emotional entry point, publish FIRST** |
 | 2 | **"The Agentic Advantage"** | `30-Years-That-AI-Never-Will/00-capstone-why-ai-agents-why-now.md` | **Written — fully sourced, publish SECOND** |
 | 3 | "AI is for young tech people" | `30-Years-That-AI-Never-Will/01-ai-is-for-young-tech-people.md` | Written |
 | 4 | "AI will replace me" | `30-Years-That-AI-Never-Will/02-ai-will-replace-me.md` | Written |

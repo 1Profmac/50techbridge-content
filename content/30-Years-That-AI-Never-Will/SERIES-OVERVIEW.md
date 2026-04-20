@@ -39,7 +39,7 @@ Two introductions. Five myth-busters. One tagline through all of them.
 
 | # | Title | Purpose | Core Line |
 |---|-------|---------|-----------|
-| 0a | **"Why AI at My Age?"** | Emotional hook — the honest answer to the question everyone's asking | "You are not learning AI. You are applying AI to what you already know." |
+| 0a | **"I Started at 65. Here's What They Don't Tell You."** | Emotional hook — Brian's personal story, highest-engagement LinkedIn format | "You are not learning AI. You are applying AI to what you already know." |
 | 0b | **"The Agentic Advantage"** | Data + authority — 20+ sourced stats, fully researched | "Some of that $850 billion is your money." |
 
 ### The Myth-Busters (publish weekly after)
@@ -103,7 +103,7 @@ Every article follows the same structure:
 
 | Week | Article | Platform |
 |------|---------|----------|
-| 1 | "Why AI at My Age?" | LinkedIn long-form + WordPress + email |
+| 1 | "I Started at 65. Here's What They Don't Tell You." | LinkedIn long-form + WordPress + email |
 | 2 | "The Agentic Advantage" (capstone) | LinkedIn long-form + WordPress pillar page |
 | 3 | Myth 1: "AI is for young tech people" | LinkedIn + WordPress |
 | 4 | Myth 2: "AI will replace me" | LinkedIn + WordPress |

@@ -284,7 +284,7 @@ Join 347+ Pioneers who started exactly where you are — curious, skeptical, and
 
 Or read the rest of this series — *What Did 30 Years Teach You That AI Never Will?*
 
-1. [Part 1: "Why AI at My Age?"](06-why-ai-at-my-age.md)
+1. [Part 1: "I Started at 65. Here's What They Don't Tell You."](06-why-ai-at-my-age.md)
 2. [Part 3: "AI Is for Young Tech People"](01-ai-is-for-young-tech-people.md)
 3. [Part 4: "AI Will Replace Me"](02-ai-will-replace-me.md)
 4. [Part 5: "I'm Too Old to Learn This"](03-too-old-to-learn.md)

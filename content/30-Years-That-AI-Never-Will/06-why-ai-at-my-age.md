@@ -1,6 +1,6 @@
-# What Did 30 Years Teach You That AI Never Will?
-## Part 1: Why AI at My Age? — The Answer Nobody's Giving Professionals Over 50
-### Series: *What Did 30 Years Teach You That AI Never Will?* | 50+TechBridge | #AGENTIC50
+# I Started at 65. Here's What They Don't Tell You.
+## Part 1 of the series: *What Did 30 Years Teach You That AI Never Will?*
+### 50+TechBridge | #AGENTIC50
 ### By Brian McKinney · Founder, Learn More Technologies
 
 > **"You are not learning AI. You are applying AI to what you already know."**
@@ -230,8 +230,8 @@ MBE Certified — Austin + San Antonio
 3. Parts 3-7 (myth-busting — weekly cadence)
 
 **Title variants:**
-- LinkedIn: "What Did 30 Years Teach You That AI Never Will? — Part 1: Why AI at My Age?"
-- WordPress/SEO: "Why Learn AI After 50? What 30 Years Taught You That AI Never Will"
-- YouTube: "What Did 30 Years Teach You That AI Never Will? — An Honest Answer"
-- Podcast: "Episode: Why AI at My Age? — What 30 Years Taught You"
-- Email subject: "What did 30 years teach you that AI never will? Here's the real answer."
+- LinkedIn: "I Started at 65. Here's What They Don't Tell You."
+- WordPress/SEO: "I Started Learning AI at 65 — Here's What Nobody Tells You About AI After 50"
+- YouTube: "I Started at 65. Here's What They Don't Tell You About AI."
+- Podcast: "Episode: I Started at 65 — The Honest Truth About AI After 50"
+- Email subject: "I started at 65. Here's what they don't tell you."
