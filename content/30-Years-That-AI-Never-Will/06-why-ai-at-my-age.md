@@ -7,13 +7,29 @@
 
 ---
 
-I hear it every week.
+One of the things I love most about speaking to adults over 50 is that they aren't impressed by me.
 
-Sometimes it's in a DM. Sometimes it's after a presentation. Sometimes it's in the eyes of someone who won't say it out loud because they think it makes them sound old.
+They don't care about my title. They don't care how many followers I have. The first thing they do is call me "kid." The second thing they do is ask me if I know what I'm talking about.
+
+I tell them the truth: I may not know everything about aging or AI or technology. But at this very moment, I know more than them.
+
+Then I smile. Because this reminds me of my Uncle Stanley.
+
+He was 93. I taught him how to use YouTube so he could watch Nina Simone videos. When the first song played — when her voice came through that tiny speaker — he sat there for a moment. Then he looked at me and said, *"Where did this come from? Who did this?"*
+
+I didn't explain the algorithm. I didn't teach him how YouTube works. I just watched him sit there and enjoy the content. A 93-year-old man who'd never touched a computer, grinning like a child, listening to Nina Simone on demand for the first time in his life.
+
+That's what technology is supposed to do. Not intimidate. Not exclude. Just connect a person to something they love — or something they need — in a way they couldn't before.
+
+That's what I do at Learn More Technologies. And that's what this article is about.
+
+---
 
 *"Why would I learn AI at my age?"*
 
-Not hostile. Not dismissive. Honest. Tired. The kind of question that comes from a person who's been through enough technology waves to know that most of them were hype — and who doesn't have the energy to chase another one that doesn't pan out.
+I hear that question every week. In DMs. After presentations. In the eyes of someone who won't say it out loud because they think it makes them sound old.
+
+It's not hostile. It's not dismissive. It's honest. Tired. The kind of question that comes from a person who's been through enough technology waves to know that most of them were hype — and who doesn't have the energy to chase another one that doesn't pan out.
 
 I'm going to answer that question. Not with a sales pitch. With the truth.
 
