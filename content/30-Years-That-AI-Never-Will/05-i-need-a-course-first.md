@@ -1,6 +1,7 @@
-# AI Myths vs. Applications — Part 5
-## "I Need to Take a Course First"
-### By Brian McKinney · Founder, Learn More Technologies · #AGENTIC50
+# What Did 30 Years Teach You That AI Never Will?
+## Part 7: "I Need to Take a Course First"
+### Series: *What Did 30 Years Teach You That AI Never Will?* | 50+TechBridge | #AGENTIC50
+### By Brian McKinney · Founder, Learn More Technologies
 
 ---
 

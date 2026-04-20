@@ -1,6 +1,7 @@
-# AI Myths vs. Applications — Part 3
-## "I'm Too Old to Learn This"
-### By Brian McKinney · Founder, Learn More Technologies · #AGENTIC50
+# What Did 30 Years Teach You That AI Never Will?
+## Part 5: "I'm Too Old to Learn This"
+### Series: *What Did 30 Years Teach You That AI Never Will?* | 50+TechBridge | #AGENTIC50
+### By Brian McKinney · Founder, Learn More Technologies
 
 ---
 

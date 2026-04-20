@@ -1,6 +1,7 @@
-# The Agentic Advantage: Why AI Agents Are the Biggest Career Opportunity for Professionals Over 50
-## The Capstone — AI Myths vs. Applications Series
-### By Brian McKinney · Founder, Learn More Technologies · #AGENTIC50
+# What Did 30 Years Teach You That AI Never Will?
+## Part 2: The Agentic Advantage — Why AI Agents Are the Biggest Career Opportunity for Professionals Over 50
+### Series: *What Did 30 Years Teach You That AI Never Will?* | 50+TechBridge | #AGENTIC50
+### By Brian McKinney · Founder, Learn More Technologies
 
 ---
 

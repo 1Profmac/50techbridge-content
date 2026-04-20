@@ -43,20 +43,22 @@ Each book chapter becomes a standalone LinkedIn article. These are the highest-v
 
 ---
 
-## NEW SERIES — AI Myths vs. Applications (5 articles, written)
+## NEW SERIES — "What Did 30 Years Teach You That AI Never Will?" (7 articles, written)
 
-| # | Myth | File | Status |
-|---|------|------|--------|
-| M0a | **"Why AI at My Age?"** | `AI-Myths-vs-Applications-Series/06-why-ai-at-my-age.md` | **Written — emotional entry point, publish FIRST** |
-| M0b | **CAPSTONE: "The Agentic Advantage"** | `AI-Myths-vs-Applications-Series/00-capstone-why-ai-agents-why-now.md` | **Written — fully sourced, publish SECOND** |
-| M1 | "AI is for young tech people" | `AI-Myths-vs-Applications-Series/01-ai-is-for-young-tech-people.md` | Written |
-| M2 | "AI will replace me" | `AI-Myths-vs-Applications-Series/02-ai-will-replace-me.md` | Written |
-| M3 | "I'm too old to learn this" | `AI-Myths-vs-Applications-Series/03-too-old-to-learn.md` | Written |
-| M4 | "AI is just ChatGPT for fun" | `AI-Myths-vs-Applications-Series/04-ai-is-just-chatgpt-for-fun.md` | Written |
-| M5 | "I need to take a course first" | `AI-Myths-vs-Applications-Series/05-i-need-a-course-first.md` | Written |
+**Tagline:** "You are not learning AI. You are applying AI to what you already know."
+
+| Part | Title | File | Status |
+|------|-------|------|--------|
+| 1 | **"Why AI at My Age?"** | `30-Years-That-AI-Never-Will/06-why-ai-at-my-age.md` | **Written — emotional entry point, publish FIRST** |
+| 2 | **"The Agentic Advantage"** | `30-Years-That-AI-Never-Will/00-capstone-why-ai-agents-why-now.md` | **Written — fully sourced, publish SECOND** |
+| 3 | "AI is for young tech people" | `30-Years-That-AI-Never-Will/01-ai-is-for-young-tech-people.md` | Written |
+| 4 | "AI will replace me" | `30-Years-That-AI-Never-Will/02-ai-will-replace-me.md` | Written |
+| 5 | "I'm too old to learn this" | `30-Years-That-AI-Never-Will/03-too-old-to-learn.md` | Written |
+| 6 | "AI is just ChatGPT for fun" | `30-Years-That-AI-Never-Will/04-ai-is-just-chatgpt-for-fun.md` | Written |
+| 7 | "I need a course first" | `30-Years-That-AI-Never-Will/05-i-need-a-course-first.md` | Written |
 
 **Cadence:** 1/week Tuesday, LinkedIn long-form. Repurpose each to podcast + video + short + newsletter.
-**Series overview:** `AI-Myths-vs-Applications-Series/SERIES-OVERVIEW.md`
+**Series overview:** `30-Years-That-AI-Never-Will/SERIES-OVERVIEW.md`
 
 ---
 

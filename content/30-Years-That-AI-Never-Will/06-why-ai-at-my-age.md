@@ -1,6 +1,7 @@
-# Why AI at My Age?
-## The Question Every Professional Over 50 Is Asking — and the Answer Nobody's Giving Them
-### By Brian McKinney · Founder, Learn More Technologies · #AGENTIC50
+# What Did 30 Years Teach You That AI Never Will?
+## Part 1: Why AI at My Age? — The Answer Nobody's Giving Professionals Over 50
+### Series: *What Did 30 Years Teach You That AI Never Will?* | 50+TechBridge | #AGENTIC50
+### By Brian McKinney · Founder, Learn More Technologies
 
 > **"You are not learning AI. You are applying AI to what you already know."**
 

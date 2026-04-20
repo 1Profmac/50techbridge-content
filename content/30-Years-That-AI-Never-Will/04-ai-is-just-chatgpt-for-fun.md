@@ -1,6 +1,7 @@
-# AI Myths vs. Applications — Part 4
-## "AI Is Just ChatGPT for Fun"
-### By Brian McKinney · Founder, Learn More Technologies · #AGENTIC50
+# What Did 30 Years Teach You That AI Never Will?
+## Part 6: "AI Is Just ChatGPT for Fun"
+### Series: *What Did 30 Years Teach You That AI Never Will?* | 50+TechBridge | #AGENTIC50
+### By Brian McKinney · Founder, Learn More Technologies
 
 ---
 
