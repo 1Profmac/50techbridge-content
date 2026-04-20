@@ -4,24 +4,103 @@
 
 ---
 
-## The Series
+## Series Tagline
 
-**5 LinkedIn articles.** Each one kills a myth and replaces it with a real application that a 50+ professional can use this week. Not theory. Not hype. Tools, steps, outcomes.
+> **"You are not learning AI. You are applying AI to what you already know."**
 
-**Format:** Myth (what people believe) → Reality (what's actually true) → Application (what to do about it today)
-
-**Audience:** Adults 50+ who are curious about AI but frozen by bad information. Secondary: HR/L&D leaders who need to train this population.
-
-**CTA on every post:** learnmoretechnologies.com/join-now — free Pioneer enrollment
+This line anchors every article, every video, every podcast episode, every social post in this series. It reframes the entire conversation — from "can I keep up?" to "I'm already ahead."
 
 ---
 
-## The 5 Articles
+## The Series — 7 Articles
 
-| # | Myth | Application | Hook |
-|---|------|-------------|------|
-| 1 | "AI is for young tech people" | 50+ professionals are the ideal AI users — domain expertise is the input AI needs most | Your 30 years of experience is the one thing AI can't replace. It's also the one thing that makes AI actually useful. |
-| 2 | "AI will replace me" | AI replaces tasks, not judgment — and judgment is what 50+ workers have in surplus | The people being replaced aren't the ones with experience. They're the ones who refused to pick up the tool. |
-| 3 | "I'm too old to learn this" | Claude/ChatGPT has no learning curve if you can write an email — and you've been writing emails for 25 years | If you can describe what you need to a colleague, you can use AI. That's literally all it is. |
-| 4 | "AI is just ChatGPT for fun" | The $82/month business stack that replaces a 3-person team | One person. Eight tools. Under $120/month. That's not a toy — that's a company. |
-| 5 | "I need to take a course first" | You need 7 days and a problem to solve — not a certificate | 347 adults 50+ completed our program. None of them needed a CS degree. All of them started with one question: "What problem do I already know how to solve?" |
+Two introductions. Five myth-busters. One tagline through all of them.
+
+### The Entry Points (publish first)
+
+| # | Title | Purpose | Tagline Use |
+|---|-------|---------|-------------|
+| 0a | **"Why AI at My Age?"** | Emotional hook — the honest answer to the question everyone's asking | The reveal: "You are not learning AI. You are applying AI to what you already know." |
+| 0b | **"The Agentic Advantage"** | Data + authority — 20+ sourced stats proving experienced professionals have the edge | Research proof that the tagline is economically true |
+
+### The Myth-Busters (publish weekly after)
+
+| # | Myth | Application | How Tagline Applies |
+|---|------|-------------|-------------------|
+| 1 | "AI is for young tech people" | Domain expertise is the input AI needs most | You're not learning a new field. You're applying your field through a new tool. |
+| 2 | "AI will replace me" | AI replaces tasks, not judgment | You're not competing with AI. You're applying your judgment through AI. |
+| 3 | "I'm too old to learn this" | If you can write an email, you can prompt AI | You're not learning to code. You're applying the communication skill you've had for 25 years. |
+| 4 | "AI is just ChatGPT for fun" | The $120/month stack that replaces a team | You're not playing with a toy. You're applying your expertise through a business stack. |
+| 5 | "I need a course first" | 7 days and a problem, not a certificate | You're not preparing to learn. You're applying what you know, starting today. |
+
+---
+
+## Format
+
+Every article follows the same structure:
+
+1. **The Myth** — what people believe and why it's understandable
+2. **The Reality** — what's actually true, with data
+3. **The Application** — a specific thing you can do today (prompt included)
+4. **The Tagline** — "You are not learning AI. You are applying AI to what you already know."
+5. **CTA** — learnmoretechnologies.com/join-now
+
+---
+
+## Audience
+
+**Primary:** Adults 50+ who are curious about AI but frozen by bad information, fear, or fatigue from being told this isn't for them.
+
+**Secondary:** HR/L&D leaders, workforce directors, and training buyers who need to understand how to train this population — and why it works.
+
+**Tertiary:** The person who reads this and forwards it to their parent, their colleague, their friend who said "I'm too old."
+
+---
+
+## Publish Order
+
+| Week | Article | Platform |
+|------|---------|----------|
+| 1 | "Why AI at My Age?" | LinkedIn long-form + WordPress + email |
+| 2 | "The Agentic Advantage" (capstone) | LinkedIn long-form + WordPress pillar page |
+| 3 | Myth 1: "AI is for young tech people" | LinkedIn + WordPress |
+| 4 | Myth 2: "AI will replace me" | LinkedIn + WordPress |
+| 5 | Myth 3: "I'm too old to learn this" | LinkedIn + WordPress |
+| 6 | Myth 4: "AI is just ChatGPT for fun" | LinkedIn + WordPress |
+| 7 | Myth 5: "I need a course first" | LinkedIn + WordPress |
+
+**Repurpose each article to:** Podcast episode, YouTube video (HeyGen), YouTube Short, LinkedIn feed post, email newsletter, PPT slide for workforce pitches.
+
+---
+
+## The Tagline in Practice
+
+**LinkedIn banner/header graphic:**
+> "You are not learning AI. You are applying AI to what you already know."
+> — Brian McKinney, Learn More Technologies
+
+**Email signature addition:**
+> New series: AI Myths vs. Applications for Professionals 50+
+> "You are not learning AI. You are applying AI to what you already know."
+
+**Connection request context:**
+> "I just published a series on AI for professionals 50+ — the tagline is 'You are not learning AI. You are applying AI to what you already know.' Worth connecting."
+
+**Workshop opening slide:**
+> [Navy background. Gold text. One line centered.]
+> You are not learning AI.
+> You are applying AI to what you already know.
+
+---
+
+## Files
+
+| File | Content |
+|------|---------|
+| `06-why-ai-at-my-age.md` | Introduction — emotional entry point |
+| `00-capstone-why-ai-agents-why-now.md` | Capstone — research-backed authority piece |
+| `01-ai-is-for-young-tech-people.md` | Myth 1 |
+| `02-ai-will-replace-me.md` | Myth 2 |
+| `03-too-old-to-learn.md` | Myth 3 |
+| `04-ai-is-just-chatgpt-for-fun.md` | Myth 4 |
+| `05-i-need-a-course-first.md` | Myth 5 |
