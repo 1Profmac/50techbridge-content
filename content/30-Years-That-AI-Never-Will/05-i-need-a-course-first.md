@@ -102,15 +102,19 @@ MBE Certified — Austin + San Antonio
 
 ---
 
-## Series Complete — AI Myths vs. Applications
+## Series Complete — What Did 30 Years Teach You That AI Never Will?
 
-| Part | Myth | Core Message |
-|------|------|-------------|
-| 1 | "AI is for young tech people" | Your experience is the input AI needs most |
-| 2 | "AI will replace me" | AI replaces tasks, not judgment |
-| 3 | "I'm too old to learn this" | If you can write an email, you can use AI |
-| 4 | "AI is just ChatGPT for fun" | The $120/month stack that replaces a team |
-| 5 | "I need to take a course first" | You need 7 days and a problem, not a certificate |
+> **"You are not learning AI. You are applying AI to what you already know."**
+
+| Part | Title | What 30 Years Taught You |
+|------|-------|-------------------------|
+| 1 | "Why AI at My Age?" | Why your experience is the advantage, not the obstacle |
+| 2 | "The Agentic Advantage" | The data proving experienced professionals win the AI era |
+| 3 | "AI is for young tech people" | What to build and why it matters |
+| 4 | "AI will replace me" | Judgment that no algorithm has |
+| 5 | "I'm too old to learn this" | How to communicate clearly — the only AI skill you need |
+| 6 | "AI is just ChatGPT for fun" | How to run an operation on $120/month |
+| 7 | "I need a course first" | How to solve real problems — 7 days, not a certificate |
 
 **Publishing cadence:** 1 per week, Tuesday, LinkedIn long-form. Cross-post to blog.
 **Repurpose each:** Podcast episode + YouTube video + LinkedIn short post + email newsletter.

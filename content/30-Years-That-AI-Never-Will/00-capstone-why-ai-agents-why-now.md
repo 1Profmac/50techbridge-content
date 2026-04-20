@@ -282,13 +282,14 @@ Join 347+ Pioneers who started exactly where you are — curious, skeptical, and
 
 **learnmoretechnologies.com/join-now** — free enrollment, no credit card, built specifically for adults 50+.
 
-Or read the rest of this series:
+Or read the rest of this series — *What Did 30 Years Teach You That AI Never Will?*
 
-1. [Myth: "AI Is for Young Tech People"](01-ai-is-for-young-tech-people.md)
-2. [Myth: "AI Will Replace Me"](02-ai-will-replace-me.md)
-3. [Myth: "I'm Too Old to Learn This"](03-too-old-to-learn.md)
-4. [Myth: "AI Is Just ChatGPT for Fun"](04-ai-is-just-chatgpt-for-fun.md)
-5. [Myth: "I Need to Take a Course First"](05-i-need-a-course-first.md)
+1. [Part 1: "Why AI at My Age?"](06-why-ai-at-my-age.md)
+2. [Part 3: "AI Is for Young Tech People"](01-ai-is-for-young-tech-people.md)
+3. [Part 4: "AI Will Replace Me"](02-ai-will-replace-me.md)
+4. [Part 5: "I'm Too Old to Learn This"](03-too-old-to-learn.md)
+5. [Part 6: "AI Is Just ChatGPT for Fun"](04-ai-is-just-chatgpt-for-fun.md)
+6. [Part 7: "I Need to Take a Course First"](05-i-need-a-course-first.md)
 
 ---
 

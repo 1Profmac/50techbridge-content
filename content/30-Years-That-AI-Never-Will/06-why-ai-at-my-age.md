@@ -203,16 +203,16 @@ MBE Certified — Austin + San Antonio
 
 ## Distribution Notes
 
-**This is the emotional entry point.** The capstone ("The Agentic Advantage") is the data play. This article is the human play. Publish this one first — it pulls people in. Then the capstone backs it up with research. Then the 5 myths answer specific objections.
+**This is Part 1 of the series *What Did 30 Years Teach You That AI Never Will?*** The capstone ("The Agentic Advantage") is the data play. This article is the human play. Publish this one first — it pulls people in. Then the capstone backs it up with research. Then Parts 3-7 answer specific objections.
 
 **Recommended publish order:**
 1. "Why AI at My Age?" (this article — emotional hook)
 2. "The Agentic Advantage" (capstone — data + authority)
-3. Parts 1-5 (myth-busting — weekly cadence)
+3. Parts 3-7 (myth-busting — weekly cadence)
 
 **Title variants:**
-- LinkedIn: "Why AI at My Age? The Question Every Professional Over 50 Is Asking"
-- WordPress/SEO: "Why Learn AI After 50? The Answer Nobody's Giving Experienced Professionals"
-- YouTube: "Why AI at My Age? — An Honest Answer for Professionals Over 50"
-- Podcast: "Episode: Why AI at My Age? — The Honest Conversation"
-- Email subject: "You asked 'Why AI at my age?' Here's the real answer."
+- LinkedIn: "What Did 30 Years Teach You That AI Never Will? — Part 1: Why AI at My Age?"
+- WordPress/SEO: "Why Learn AI After 50? What 30 Years Taught You That AI Never Will"
+- YouTube: "What Did 30 Years Teach You That AI Never Will? — An Honest Answer"
+- Podcast: "Episode: Why AI at My Age? — What 30 Years Taught You"
+- Email subject: "What did 30 years teach you that AI never will? Here's the real answer."
