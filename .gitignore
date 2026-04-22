@@ -31,3 +31,4 @@ Thumbs.db
 video-builder/layers/brian/*.mp4
 video-builder/layers/clips/**/*.mp4
 *.mp4.lnk
+tools/.env

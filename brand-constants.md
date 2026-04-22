@@ -13,13 +13,13 @@ THIS FILE WINS. Update the conflicting document immediately.
 
 ## 1. APPROVED STATS — Use These Exactly, Every Time
 
-| Stat | Approved Text |
-|---|---|
-| Pioneers enrolled | **347+ Pioneers & Counting** |
-| Completion rate | **3X Industry Completion Rate** |
-| Confidence rate | **74% Feel More Confident** |
-| Partner orgs | **23 Organizations Invited Us In** |
-| Pioneer goal | **50,000 Pioneer Founding Members** |
+| Stat | Approved Text | Usage |
+|---|---|---|
+| **Lead stat (pitches, emails, voicemails, LinkedIn)** | **3X Industry Completion Rate** | **USE THIS FIRST — always lead with 3X** |
+| Confidence rate | **74% Feel More Confident** | Second stat in pitches |
+| Partner orgs | **23 Organizations Invited Us In** | Third stat when relevant |
+| Pioneers enrolled | **347+ Pioneers & Counting** | Grants & formal docs only — NOT sales pitches |
+| Pioneer goal | **50,000 Pioneer Founding Members** | Internal / community messaging |
 | Market size | **$76T adults 50+ wealth** |
 | Disposable income | **70% of disposable income** |
 | Ad spend gap | **Only 5% of ad spend targets them** |
