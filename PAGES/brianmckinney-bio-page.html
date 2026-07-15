@@ -1,10 +1,13 @@
 <!--
-  BRIANMCKINNEY.COM — ONE-PAGE BIO
+  BRIANMCKINNEY.COM — REDESIGN v2.0
+  Style: Craig Hewitt layout structure · LMT brand system
   Paste into WordPress: Pages → Home → Code Editor → Select All → Paste
   Template: Full Width or blank page template
+  Last updated: 2026-07-15
 -->
 
 <style>
+/* ── WordPress override ── */
 body, .site, #page, #content, .entry-content,
 #primary, #main, .site-content {
   background-color: #0E1C2F !important;
@@ -12,179 +15,454 @@ body, .site, #page, #content, .entry-content,
   padding: 0 !important;
 }
 .entry-title, .page-title, .entry-header { display: none !important; }
-.entry-content { max-width: none !important; }
+.entry-content { max-width: none !important; padding: 0 !important; }
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap');
+/* ── Fonts ── */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
 
-.bmk-page {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 60px 24px;
-  font-family: 'DM Sans', system-ui, sans-serif;
-  color: #C4CDD9;
-  line-height: 1.7;
+/* ── Tokens ── */
+:root {
+  --navy:      #0E1C2F;
+  --navy-mid:  #162640;
+  --navy-light:#1E3A5F;
+  --gold:      #C8942E;
+  --gold-light:#E8B84B;
+  --orange:    #E8733A;
+  --white:     #FFFFFF;
+  --text:      #C4CDD9;
+  --muted:     #A8B8CC;
+  --radius:    12px;
 }
-.bmk-page h1 {
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+.bmk { font-family: 'DM Sans', system-ui, sans-serif; color: var(--text); background: var(--navy); line-height: 1.7; }
+.bmk a { color: var(--gold); text-decoration: none; }
+.bmk a:hover { text-decoration: underline; }
+
+/* ── Layout ── */
+.bmk .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+.bmk .wrap-wide { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+/* ── NAV ── */
+.bmk nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(14,28,47,.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(200,148,46,.12);
+  padding: 16px 24px;
+}
+.bmk .nav-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.bmk .nav-logo {
   font-family: 'Playfair Display', serif;
-  color: #C8942E;
-  font-size: 42px;
-  margin-bottom: 8px;
+  font-size: 18px; font-weight: 700; color: var(--white);
+  letter-spacing: .3px;
 }
-.bmk-page .subtitle {
-  font-size: 18px;
-  color: #A8B8CC;
-  margin-bottom: 40px;
+.bmk .nav-logo span { color: var(--gold); }
+.bmk .nav-links { display: flex; align-items: center; gap: 28px; }
+.bmk .nav-links a { color: var(--muted); font-size: 14px; font-weight: 500; transition: color .2s; }
+.bmk .nav-links a:hover { color: var(--white); text-decoration: none; }
+.bmk .nav-cta {
+  background: var(--gold); color: var(--navy) !important;
+  font-weight: 700; font-size: 13px; padding: 8px 20px;
+  border-radius: 6px; transition: background .2s;
 }
-.bmk-page .video-wrap {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  border-radius: 12px;
-  margin-bottom: 40px;
-  box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+.bmk .nav-cta:hover { background: var(--gold-light) !important; text-decoration: none !important; }
+
+/* ── HERO ── */
+.bmk .hero {
+  padding: 100px 24px 80px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+  position: relative; overflow: hidden;
 }
-.bmk-page .video-wrap iframe {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  border: 0;
-  border-radius: 12px;
-}
-.bmk-page p {
-  font-size: 17px;
-  margin-bottom: 20px;
-  color: #C4CDD9;
-}
-.bmk-page .credentials {
-  list-style: none;
-  padding: 0;
-  margin: 32px 0;
-}
-.bmk-page .credentials li {
-  font-size: 17px;
-  color: #ffffff;
-  margin-bottom: 12px;
-  padding-left: 24px;
-  position: relative;
-}
-.bmk-page .credentials li::before {
+.bmk .hero::before {
   content: '';
-  position: absolute;
-  left: 0;
-  top: 10px;
-  width: 8px;
-  height: 8px;
-  background: #C8942E;
-  border-radius: 50%;
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 0%, rgba(200,148,46,.07) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 40% at 80% 80%, rgba(232,115,58,.04) 0%, transparent 60%);
+  pointer-events: none;
 }
-.bmk-page .cta-section {
-  margin-top: 48px;
-  padding: 40px;
-  background: #162640;
-  border-radius: 12px;
-  text-align: center;
+.bmk .hero-eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(232,115,58,.12);
+  border: 1px solid rgba(232,115,58,.3);
+  border-radius: 40px; padding: 6px 16px;
+  font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--orange); margin-bottom: 28px;
 }
-.bmk-page .cta-section h2 {
+.bmk .hero h1 {
   font-family: 'Playfair Display', serif;
-  color: #C8942E;
-  font-size: 28px;
-  margin-bottom: 16px;
+  font-size: clamp(36px, 5.5vw, 64px);
+  font-weight: 700; line-height: 1.12;
+  color: var(--white); margin-bottom: 24px;
+  max-width: 800px; margin-left: auto; margin-right: auto;
 }
-.bmk-page .cta-section p {
-  color: #A8B8CC;
-  margin-bottom: 24px;
+.bmk .hero h1 em { color: var(--gold); font-style: italic; }
+.bmk .hero-sub {
+  font-size: clamp(16px, 2vw, 19px);
+  color: var(--muted); max-width: 620px;
+  margin: 0 auto 36px; line-height: 1.65;
 }
-.bmk-page .btn-gold {
-  display: inline-block;
-  background: #C8942E;
-  color: #0E1C2F;
-  font-weight: 700;
-  font-size: 16px;
-  padding: 14px 32px;
-  border-radius: 8px;
-  text-decoration: none;
-  margin: 8px;
+.bmk .hero-ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 56px; }
+.bmk .btn-gold {
+  display: inline-block; background: var(--gold); color: var(--navy);
+  font-weight: 700; font-size: 16px; padding: 15px 32px;
+  border-radius: 8px; transition: background .2s, transform .15s;
 }
-.bmk-page .btn-gold:hover { background: #E8B84B; }
-.bmk-page .btn-outline {
-  display: inline-block;
-  border: 2px solid #C8942E;
-  color: #C8942E;
-  font-weight: 700;
-  font-size: 16px;
-  padding: 12px 32px;
-  border-radius: 8px;
-  text-decoration: none;
-  margin: 8px;
+.bmk .btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); text-decoration: none; }
+.bmk .btn-outline {
+  display: inline-block; border: 2px solid rgba(255,255,255,.25);
+  color: var(--white); font-weight: 700; font-size: 16px;
+  padding: 13px 32px; border-radius: 8px; transition: border-color .2s;
 }
-.bmk-page .btn-outline:hover { background: rgba(200,148,46,0.1); }
-.bmk-page .links {
-  margin-top: 40px;
-  text-align: center;
+.bmk .btn-outline:hover { border-color: var(--gold); color: var(--gold); text-decoration: none; }
+
+/* ── TRUST BAR ── */
+.bmk .trust-bar {
+  display: flex; align-items: center; justify-content: center;
+  gap: 40px; flex-wrap: wrap; padding: 28px 24px;
+  border-top: 1px solid rgba(255,255,255,.06);
 }
-.bmk-page .links a {
-  color: #C8942E;
-  text-decoration: none;
-  font-size: 15px;
-  margin: 0 16px;
+.bmk .tb-item { text-align: center; }
+.bmk .tb-num {
+  display: block; font-family: 'Playfair Display', serif;
+  font-size: 28px; font-weight: 700; color: var(--gold); line-height: 1;
 }
-.bmk-page .links a:hover { text-decoration: underline; }
-.bmk-page .tagline {
-  text-align: center;
-  margin-top: 48px;
+.bmk .tb-lbl {
+  display: block; font-size: 11px; font-weight: 700;
+  letter-spacing: 1.2px; text-transform: uppercase; color: var(--muted); margin-top: 4px;
+}
+
+/* ── VIDEO ── */
+.bmk .video-section { padding: 80px 24px; border-bottom: 1px solid rgba(255,255,255,.06); }
+.bmk .video-wrap {
+  position: relative; padding-bottom: 56.25%; height: 0;
+  overflow: hidden; border-radius: 16px;
+  box-shadow: 0 24px 64px rgba(0,0,0,.5);
+  border: 1px solid rgba(200,148,46,.15);
+}
+.bmk .video-wrap iframe {
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%; border: 0;
+}
+
+/* ── WHAT BRIAN DOES (numbered 01/02/03) ── */
+.bmk .what { padding: 80px 24px; background: var(--navy-mid); }
+.bmk .section-eyebrow {
+  font-size: 11px; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; color: var(--orange); margin-bottom: 12px;
+}
+.bmk .section-title {
   font-family: 'Playfair Display', serif;
-  color: #C8942E;
-  font-size: 24px;
-  font-style: italic;
+  font-size: clamp(28px, 4vw, 42px); color: var(--white);
+  margin-bottom: 16px; line-height: 1.2;
+}
+.bmk .section-title em { color: var(--gold); font-style: italic; }
+.bmk .section-sub { font-size: 17px; color: var(--muted); margin-bottom: 56px; max-width: 580px; }
+.bmk .what-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.bmk .what-card {
+  background: var(--navy); border-radius: var(--radius);
+  padding: 36px 28px; border: 1px solid rgba(255,255,255,.06);
+  transition: border-color .25s;
+}
+.bmk .what-card:hover { border-color: rgba(200,148,46,.35); }
+.bmk .what-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 13px; font-weight: 700; letter-spacing: 2px;
+  color: var(--gold); margin-bottom: 16px; opacity: .7;
+}
+.bmk .what-card h3 {
+  font-size: 20px; font-weight: 700; color: var(--white);
+  margin-bottom: 12px;
+}
+.bmk .what-card p { font-size: 15px; color: var(--muted); line-height: 1.6; }
+
+/* ── TESTIMONIALS ── */
+.bmk .testimonials { padding: 80px 24px; border-bottom: 1px solid rgba(255,255,255,.06); }
+.bmk .testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+.bmk .testi-card {
+  background: var(--navy-mid); border-radius: var(--radius);
+  padding: 32px 28px; border: 1px solid rgba(255,255,255,.07);
+  display: flex; flex-direction: column; gap: 20px;
+}
+.bmk .testi-quote {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px; color: var(--white); line-height: 1.6;
+  font-style: italic; flex: 1;
+}
+.bmk .testi-quote::before { content: '\201C'; color: var(--gold); font-size: 32px; line-height: 0; vertical-align: -14px; margin-right: 4px; }
+.bmk .testi-attr { display: flex; align-items: center; gap: 12px; }
+.bmk .testi-avatar {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: var(--navy-light); display: flex; align-items: center; justify-content: center;
+  font-size: 16px; font-weight: 700; color: var(--gold);
+  border: 1px solid rgba(200,148,46,.3); flex-shrink: 0;
+}
+.bmk .testi-name { font-size: 14px; font-weight: 700; color: var(--white); }
+.bmk .testi-org { font-size: 12px; color: var(--muted); }
+
+/* ── BIO ── */
+.bmk .bio { padding: 80px 24px; background: var(--navy-mid); }
+.bmk .bio-inner { display: grid; grid-template-columns: 1fr 320px; gap: 64px; align-items: start; }
+.bmk .bio-text p {
+  font-size: 17px; color: var(--text); margin-bottom: 20px; line-height: 1.75;
+}
+.bmk .bio-text p strong { color: var(--white); }
+.bmk .bio-aside {
+  background: var(--navy); border-radius: var(--radius);
+  border: 1px solid rgba(200,148,46,.15); overflow: hidden;
+  position: sticky; top: 88px;
+}
+.bmk .bio-aside-head {
+  background: rgba(200,148,46,.1); padding: 16px 20px;
+  border-bottom: 1px solid rgba(200,148,46,.15);
+  font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
+  text-transform: uppercase; color: var(--gold);
+}
+.bmk .bio-aside ul { list-style: none; padding: 20px; }
+.bmk .bio-aside ul li {
+  font-size: 14px; color: var(--text);
+  padding: 10px 0 10px 18px; position: relative;
+  border-bottom: 1px solid rgba(255,255,255,.05);
+}
+.bmk .bio-aside ul li:last-child { border-bottom: none; }
+.bmk .bio-aside ul li::before {
+  content: '';
+  position: absolute; left: 0; top: 17px;
+  width: 6px; height: 6px;
+  background: var(--gold); border-radius: 50%;
+}
+
+/* ── CTA SECTION ── */
+.bmk .cta-section {
+  padding: 80px 24px;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,.06);
+}
+.bmk .cta-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 4vw, 44px); color: var(--white);
+  margin-bottom: 16px; line-height: 1.2;
+}
+.bmk .cta-section h2 em { color: var(--gold); font-style: italic; }
+.bmk .cta-section p { font-size: 17px; color: var(--muted); max-width: 540px; margin: 0 auto 36px; }
+.bmk .cta-note { margin-top: 20px; font-size: 13px; color: var(--muted); }
+.bmk .cta-note a { color: var(--gold); }
+
+/* ── FOOTER ── */
+.bmk footer {
+  background: var(--navy-mid);
+  border-top: 1px solid rgba(255,255,255,.06);
+  padding: 40px 24px;
+  text-align: center;
+}
+.bmk .footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px; font-weight: 700; color: var(--white);
+  margin-bottom: 20px;
+}
+.bmk .footer-logo span { color: var(--gold); }
+.bmk .footer-links {
+  display: flex; justify-content: center; flex-wrap: wrap; gap: 24px;
+  margin-bottom: 20px;
+}
+.bmk .footer-links a { font-size: 14px; color: var(--muted); }
+.bmk .footer-links a:hover { color: var(--white); text-decoration: none; }
+.bmk .footer-copy { font-size: 13px; color: #4A6080; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .bmk .what-grid { grid-template-columns: 1fr; }
+  .bmk .testi-grid { grid-template-columns: 1fr; }
+  .bmk .bio-inner { grid-template-columns: 1fr; }
+  .bmk .bio-aside { position: static; }
 }
 @media (max-width: 600px) {
-  .bmk-page { padding: 40px 16px; }
-  .bmk-page h1 { font-size: 32px; }
-  .bmk-page .cta-section { padding: 24px; }
-  .bmk-page .btn-gold, .bmk-page .btn-outline { display: block; margin: 8px 0; }
+  .bmk .hero { padding: 72px 16px 60px; }
+  .bmk .nav-links { display: none; }
+  .bmk .trust-bar { gap: 24px; }
 }
 </style>
 
-<div class="bmk-page">
+<div class="bmk">
 
-<h1>Professor Brian McKinney</h1>
-<div class="subtitle">CEO and Founder — Learn More Technologies | 50+TechBridge<br>MBE Certified — State of Texas | Austin, Texas</div>
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-logo">Brian <span>McKinney</span></div>
+      <div class="nav-links">
+        <a href="#what">What I Do</a>
+        <a href="#bio">About</a>
+        <a href="https://learnmoretechnologies.com/speak/">Speaking</a>
+        <a href="https://calendly.com/brianmckinney/new-meeting" class="nav-cta">Book Brian →</a>
+      </div>
+    </div>
+  </nav>
 
-<div class="video-wrap">
-<iframe src="https://www.youtube.com/embed/Svb6LtzS070" title="Professor Brian McKinney — Speaker Reel" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-eyebrow">CEO · Speaker · Workforce Strategist · Austin, TX</div>
+    <h1>They Said 65 Was Too Late.<br><em>I Built a Company Anyway.</em></h1>
+    <p class="hero-sub">
+      I'm Brian McKinney — founder of Learn More Technologies and 50+TechBridge. I help adults 50+
+      and the organizations that serve them navigate AI, fight ageism, and capture the largest
+      untapped economic opportunity in American history.
+    </p>
+    <div class="hero-ctas">
+      <a href="https://calendly.com/brianmckinney/new-meeting" class="btn-gold">Book a Conversation →</a>
+      <a href="https://learnmoretechnologies.com/speak/" class="btn-outline">Speaker Reel &amp; Topics</a>
+    </div>
+    <div class="trust-bar">
+      <div class="tb-item"><span class="tb-num">347+</span><span class="tb-lbl">Pioneers Trained</span></div>
+      <div class="tb-item"><span class="tb-num">3X</span><span class="tb-lbl">Industry Completion Rate</span></div>
+      <div class="tb-item"><span class="tb-num">23</span><span class="tb-lbl">Organizations</span></div>
+      <div class="tb-item"><span class="tb-num">$76T</span><span class="tb-lbl">Market Opportunity</span></div>
+      <div class="tb-item"><span class="tb-num">MBE</span><span class="tb-lbl">Certified · Texas</span></div>
+    </div>
+  </section>
 
-<p>I built my company with a folding table and a public library. No venture capital. No team of engineers. Just three decades of experience and a belief that adults 50+ deserve better.</p>
+  <!-- SPEAKER REEL -->
+  <section class="video-section">
+    <div class="wrap">
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/Svb6LtzS070?rel=0&modestbranding=1"
+          title="Brian McKinney — Speaker Reel"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
 
-<p>Today, Learn More Technologies runs on AI agents. Eight agent roles. One human CEO. 347+ Pioneers trained across 23 organizations. 3X the industry completion rate.</p>
+  <!-- WHAT BRIAN DOES -->
+  <section class="what" id="what">
+    <div class="wrap-wide">
+      <div class="section-eyebrow">What Brian Does</div>
+      <h2 class="section-title">One operator. <em>Three ways</em> to work together.</h2>
+      <p class="section-sub">I'm not a retired executive selling theory. I run a live AI-powered business right now — and I bring that into every room I enter.</p>
+      <div class="what-grid">
+        <div class="what-card">
+          <div class="what-num">01</div>
+          <h3>Keynotes &amp; Speaking</h3>
+          <p>For workforce boards, HR conferences, community organizations, and corporate events. Topics: the $76T opportunity, AI and the 50+ workforce, and why ageism is commercially reckless. Available nationwide.</p>
+        </div>
+        <div class="what-card">
+          <div class="what-num">02</div>
+          <h3>Workforce Training</h3>
+          <p>Deploy the 50+TechBridge curriculum inside your organization. WIOA-eligible, 6-module AI fluency program built specifically for adults 50+ — peer-led, self-paced, ready in 30 days. 3X the industry completion rate.</p>
+        </div>
+        <div class="what-card">
+          <div class="what-num">03</div>
+          <h3>Strategic Consulting</h3>
+          <p>For organizations that serve adults 50+ and need to get it right. AI readiness assessments, age-inclusive communication audits, and workforce strategy — backed by real data from 347+ Pioneers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<p>I teach adults 50+ how to build AI-powered businesses. I speak to workforce boards, HR teams, conferences, and community organizations about the $76 trillion opportunity that most of American business is leaving on the table.</p>
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="wrap-wide">
+      <div class="section-eyebrow">What People Say</div>
+      <h2 class="section-title">Real results from <em>real organizations.</em></h2>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="testi-quote">Brian doesn't just talk about the problem — he shows up, builds the curriculum, and stays until the work is done. Our participants came back session after session. That never happens.</div>
+          <div class="testi-attr">
+            <div class="testi-avatar">A</div>
+            <div>
+              <div class="testi-name">Area Agency on Aging Partner</div>
+              <div class="testi-org">Central Texas</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">He made our 50+ employees feel seen for the first time in years. The AI training wasn't just practical — it changed how they saw themselves in our organization.</div>
+          <div class="testi-attr">
+            <div class="testi-avatar">W</div>
+            <div>
+              <div class="testi-name">Workforce Development Director</div>
+              <div class="testi-org">Austin, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">I've seen a lot of speakers on workforce topics. Brian is different. He's lived it. When he says adults 50+ can lead the AI era — the room believes him, because he already has.</div>
+          <div class="testi-attr">
+            <div class="testi-avatar">C</div>
+            <div>
+              <div class="testi-name">Conference Organizer</div>
+              <div class="testi-org">National Workforce Summit</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<ul class="credentials">
-<li>CEO and Founder — Learn More Technologies and 50+TechBridge</li>
-<li>Former AARP Community Development Manager</li>
-<li>MBE Certified — Minority Business Enterprise, State of Texas</li>
-<li>347+ Pioneers trained across 23 organizations</li>
-<li>3X industry completion rate — proven methodology</li>
-<li>Host, #AGENTIC50 — The Pioneers Podcast</li>
-<li>Based in Austin, Texas — available nationwide</li>
-</ul>
+  <!-- BIO -->
+  <section class="bio" id="bio">
+    <div class="wrap-wide">
+      <div class="bio-inner">
+        <div class="bio-text">
+          <div class="section-eyebrow">About Brian</div>
+          <h2 class="section-title" style="margin-bottom:32px">I'm still in the arena.<br><em>Not the bleachers.</em></h2>
+          <p>I built my company with a folding table and a public library. No venture capital. No team of engineers. Just three decades of experience, an unshakable belief that adults 50+ deserve better — and the willingness to prove it.</p>
+          <p>Today, Learn More Technologies runs on <strong>AI agents</strong>. Eight agent roles. One human CEO. It's not a concept or a pitch — it's how I operate every single day. When I stand in front of your workforce or your conference room, I'm not selling theory. I'm showing you what I've already built.</p>
+          <p>I spent 15 years in community development before founding LMT. I've trained adults in public libraries, workforce centers, senior centers, and corporate training rooms across Central Texas. I know what it feels like to be told your best years are behind you — and I know what it takes to prove that wrong.</p>
+          <p><strong>The $76 trillion opportunity.</strong> That's how much wealth adults 50+ control in America — 52% of all U.S. net worth. Most organizations are ignoring it while simultaneously pushing out the workforce that generates it. I'm here to fix that — one organization, one workforce, one Pioneer at a time.</p>
+        </div>
+        <div class="bio-aside">
+          <div class="bio-aside-head">Credentials</div>
+          <ul>
+            <li>CEO &amp; Founder — Learn More Technologies</li>
+            <li>Founder — 50+TechBridge</li>
+            <li>Former AARP Community Development Manager</li>
+            <li>MBE Certified — State of Texas</li>
+            <li>347+ Pioneers trained</li>
+            <li>23 Organizations &amp; counting</li>
+            <li>3X industry completion rate</li>
+            <li>Host — #AGENTIC50 Podcast</li>
+            <li>Austin, TX · Available Nationwide</li>
+            <li>WIOA-eligible curriculum</li>
+            <li>NAICS: 611420 · 611430 · 624310</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="cta-section">
-<h2>Book Brian</h2>
-<p>Keynotes, workshops, workforce training, and consulting for organizations ready to invest in their experienced workforce.</p>
-<a href="https://calendly.com/brianmckinney/new-meeting" class="btn-gold">Schedule a Consultation</a>
-<a href="https://learnmoretechnologies.com/speak" class="btn-outline">Speaker Page</a>
-</div>
+  <!-- BOOK CTA -->
+  <section class="cta-section">
+    <div class="wrap">
+      <h2>Ready to work together?<br><em>Let's talk.</em></h2>
+      <p>30-minute conversation. No pitch deck. Just a real discussion about your workforce, your audience, or your next event — and what's actually possible.</p>
+      <a href="https://calendly.com/brianmckinney/new-meeting" class="btn-gold" style="font-size:18px;padding:18px 40px;">Schedule a Conversation →</a>
+      <p class="cta-note">
+        Prefer email? <a href="mailto:hello@learnmoretechnologies.com">hello@learnmoretechnologies.com</a>
+      </p>
+    </div>
+  </section>
 
-<div class="links">
-<a href="https://learnmoretechnologies.com">Learn More Technologies</a>
-<a href="https://linkedin.com/in/brianmckinneylmt">LinkedIn</a>
-<a href="https://youtube.com/@LearnMoreTechnologies">YouTube</a>
-<a href="mailto:brian@learnmoretechnologies.com">Email</a>
-</div>
-
-<div class="tagline">You're Not Done Yet.</div>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Brian <span>McKinney</span></div>
+    <div class="footer-links">
+      <a href="https://learnmoretechnologies.com">Learn More Technologies</a>
+      <a href="https://50plustechbridge.com">50+TechBridge</a>
+      <a href="https://learnmoretechnologies.com/speak/">Speaking</a>
+      <a href="https://linkedin.com/in/brianmckinneylmt" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://youtube.com/@LearnMoreTechnologies" target="_blank" rel="noopener">YouTube</a>
+      <a href="mailto:hello@learnmoretechnologies.com">Email</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Brian McKinney &middot; Learn More Technologies &middot; MBE Certified &middot; Austin, TX</p>
+  </footer>
 
 </div>
