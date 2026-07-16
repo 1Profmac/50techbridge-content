@@ -138,6 +138,28 @@ body.page .entry-header,.buddypress-page .entry-header,
 .lmt-home .cta-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}
 .lmt-home .cta-trust{font-size:13px;color:#A8B8CC!important;opacity:.8}
 
+/* NAV */
+.lmt-nav{position:sticky;top:0;z-index:1000;background:rgba(14,28,47,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,148,46,.15)}
+.lmt-nav .nav-inner{max-width:1180px;margin:0 auto;padding:0 32px;height:64px;display:flex;align-items:center;gap:40px}
+.lmt-nav .nav-logo{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:#fff;text-decoration:none;white-space:nowrap;flex-shrink:0}
+.lmt-nav .nav-logo span{color:#C8942E}
+.lmt-nav .nav-links{display:flex;align-items:center;gap:28px;flex:1}
+.lmt-nav .nav-links a{color:#A8B8CC;font-size:14px;font-weight:500;text-decoration:none;letter-spacing:.3px;transition:color .2s}
+.lmt-nav .nav-links a:hover{color:#fff}
+.lmt-nav .nav-ctas{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.lmt-nav .btn-nav-green{background:#109F35;color:#fff!important;font-size:13px;font-weight:700;padding:8px 18px;border-radius:6px;text-decoration:none;transition:background .2s}
+.lmt-nav .btn-nav-green:hover{background:#0C7A28}
+.lmt-nav .btn-nav-gold{background:transparent;color:#C8942E!important;border:1px solid #C8942E;font-size:13px;font-weight:700;padding:8px 18px;border-radius:6px;text-decoration:none;transition:all .2s}
+.lmt-nav .btn-nav-gold:hover{background:rgba(200,148,46,.1)}
+.lmt-nav .nav-hamburger{display:none;background:none;border:none;color:#fff;font-size:22px;cursor:pointer;margin-left:auto}
+@media(max-width:900px){
+  .lmt-nav .nav-links{display:none}
+  .lmt-nav .nav-ctas{display:none}
+  .lmt-nav .nav-hamburger{display:block}
+  .lmt-nav.open .nav-links{display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:rgba(14,28,47,.98);padding:20px 32px;gap:16px;border-bottom:1px solid rgba(200,148,46,.2)}
+  .lmt-nav.open .nav-ctas{display:flex;flex-direction:column;position:absolute;top:auto;left:0;right:0;background:rgba(14,28,47,.98);padding:0 32px 24px;gap:12px}
+}
+
 /* RESPONSIVE */
 @media(max-width:900px){
   .lmt-home .hero-inner,.lmt-home .blind-spot-inner,.lmt-home .aud-inner{grid-template-columns:1fr;gap:40px}
@@ -158,8 +180,27 @@ body.page .entry-header,.buddypress-page .entry-header,
 
 <div class="lmt-home">
 
+  <!-- NAV -->
+  <nav class="lmt-nav" id="lmt-top-nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Learn<span>More</span> Technologies</a>
+      <div class="nav-links">
+        <a href="/train/">Train</a>
+        <a href="/workforce/">Workforce</a>
+        <a href="/speak/">Speak</a>
+        <a href="/podcast/">Podcast</a>
+        <a href="https://brianmckinney.com">About Brian</a>
+      </div>
+      <div class="nav-ctas">
+        <a href="/join-now/" class="btn-nav-green">Join Free →</a>
+        <a href="/workforce/" class="btn-nav-gold">Work With Us →</a>
+      </div>
+      <button class="nav-hamburger" onclick="document.getElementById('lmt-top-nav').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+    </div>
+  </nav>
+
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero" id="home">
     <div class="hero-inner">
       <div class="hero-copy">
         <div class="eyebrow">🟠 AgeTech Platform · Mission-Driven</div>
@@ -240,7 +281,7 @@ body.page .entry-header,.buddypress-page .entry-header,
   </section>
 
   <!-- THREE PILLARS -->
-  <section class="pillars">
+  <section class="pillars" id="pillars">
     <div class="pillars-head">
       <div class="sec-eyebrow">What We Do</div>
       <h2 class="sec-title">Train. <em>Consult.</em> Speak.</h2>
@@ -272,7 +313,7 @@ body.page .entry-header,.buddypress-page .entry-header,
   </section>
 
   <!-- WHO WE SERVE -->
-  <section class="audiences">
+  <section class="audiences" id="serve">
     <div class="wrap">
       <div class="aud-head">
         <div class="sec-eyebrow">Two Audiences. One Mission.</div>
@@ -310,7 +351,7 @@ body.page .entry-header,.buddypress-page .entry-header,
   </section>
 
   <!-- PROOF -->
-  <section class="proof">
+  <section class="proof" id="proof">
     <div class="proof-grid">
       <div>
         <div class="proof-num">347+</div>
