@@ -1,0 +1,161 @@
+<!--
+=================================================
+  LMT CASE STUDY BLOCK — Workforce Page Insert
+  Drop this ABOVE the <!-- ── WIOA FULL SECTION --> comment
+  Fill in all [BRACKETS] before pasting to WordPress
+  One block per case study — duplicate for additional orgs
+=================================================
+-->
+
+<!-- ── CASE STUDY ── -->
+<section class="case-study-section">
+  <div class="wrap">
+    <div class="section-eyebrow">Proof It Works</div>
+    <h2 class="section-title">From the Field: <em>Real Organizations. Real Results.</em></h2>
+
+    <div class="case-card">
+
+      <!-- LEFT: ORG + STATS -->
+      <div class="case-left">
+        <div class="case-org-type">[ORG TYPE — e.g. Public Library · Austin, TX]</div>
+        <h3 class="case-org-name">[ORGANIZATION NAME]</h3>
+        <p class="case-challenge">"[ONE SENTENCE: the problem they had before us]"</p>
+
+        <div class="case-stats">
+          <div class="case-stat">
+            <div class="case-stat-num">[___]</div>
+            <div class="case-stat-label">Participants Trained</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num">[___%]</div>
+            <div class="case-stat-label">Completion Rate</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num">[___%]</div>
+            <div class="case-stat-label">Feel More Confident</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num">[___]</div>
+            <div class="case-stat-label">[CUSTOM METRIC — e.g. Repeat Cohorts]</div>
+          </div>
+        </div>
+
+        <div class="case-tags">
+          <span class="case-tag">[Service Model — e.g. Hybrid Deployment]</span>
+          <span class="case-tag">[Funding — e.g. WIOA-Funded]</span>
+          <span class="case-tag">[e.g. 6 Weeks]</span>
+        </div>
+      </div>
+
+      <!-- RIGHT: QUOTE + DETAIL -->
+      <div class="case-right">
+        <div class="case-quote-block">
+          <div class="case-quote-mark">&ldquo;</div>
+          <blockquote class="case-quote">
+            [FULL QUOTE — 2-4 sentences. Real person only. Must be approved by them.]
+          </blockquote>
+          <div class="case-attribution">
+            <div class="case-attr-name">— [Full Name]</div>
+            <div class="case-attr-title">[Title], [Organization]</div>
+          </div>
+        </div>
+
+        <div class="case-outcome">
+          <div class="case-outcome-label">What Happened Next</div>
+          <p>[1-2 sentences: expansion, referrals, speaking invite, second cohort, etc.]</p>
+        </div>
+      </div>
+
+    </div><!-- .case-card -->
+  </div>
+</section>
+
+<style>
+/* ── CASE STUDY SECTION ── */
+.lmt-workforce .case-study-section {
+  padding: 80px 32px;
+  background: #0E1C2F;
+}
+.lmt-workforce .case-card {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 48px;
+  background: rgba(22,38,64,.6);
+  border: 1px solid rgba(200,148,46,.15);
+  border-radius: 20px; padding: 48px;
+  margin-top: 40px; position: relative; overflow: hidden;
+}
+.lmt-workforce .case-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+  background: linear-gradient(90deg,#C8942E,#109F35);
+}
+.lmt-workforce .case-org-type {
+  font-size: 11px; font-weight: 700; letter-spacing: .1em;
+  text-transform: uppercase; color: #C8942E !important; margin-bottom: 8px;
+}
+.lmt-workforce .case-org-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px !important; font-weight: 700 !important;
+  color: #fff !important; margin-bottom: 16px; line-height: 1.2;
+}
+.lmt-workforce .case-challenge {
+  font-size: 15px; color: #A8B8CC !important;
+  font-style: italic; line-height: 1.65; margin-bottom: 28px;
+  border-left: 3px solid rgba(200,148,46,.3); padding-left: 16px;
+}
+.lmt-workforce .case-stats {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px;
+}
+.lmt-workforce .case-stat {
+  background: rgba(14,28,47,.6); border: 1px solid rgba(255,255,255,.06);
+  border-radius: 10px; padding: 16px;
+}
+.lmt-workforce .case-stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px; font-weight: 700; color: #C8942E !important; line-height: 1;
+  margin-bottom: 4px;
+}
+.lmt-workforce .case-stat-label {
+  font-size: 12px; color: #A8B8CC !important; font-weight: 500;
+}
+.lmt-workforce .case-tags {
+  display: flex; flex-wrap: wrap; gap: 8px;
+}
+.lmt-workforce .case-tag {
+  font-size: 11px; font-weight: 600; letter-spacing: .04em;
+  background: rgba(200,148,46,.1); border: 1px solid rgba(200,148,46,.2);
+  color: #C8942E !important; border-radius: 20px; padding: 4px 12px;
+}
+.lmt-workforce .case-quote-block {
+  position: relative; margin-bottom: 32px;
+}
+.lmt-workforce .case-quote-mark {
+  font-family: 'Playfair Display', serif;
+  font-size: 80px; color: rgba(200,148,46,.2) !important;
+  line-height: .8; margin-bottom: -16px;
+}
+.lmt-workforce .case-quote {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px !important; font-style: italic; font-weight: 400;
+  color: #fff !important; line-height: 1.7; margin-bottom: 20px;
+}
+.lmt-workforce .case-attr-name {
+  font-size: 15px; font-weight: 700; color: #fff !important;
+}
+.lmt-workforce .case-attr-title {
+  font-size: 13px; color: #A8B8CC !important; margin-top: 2px;
+}
+.lmt-workforce .case-outcome {
+  background: rgba(16,159,53,.08); border: 1px solid rgba(16,159,53,.2);
+  border-radius: 10px; padding: 18px 20px;
+}
+.lmt-workforce .case-outcome-label {
+  font-size: 11px; font-weight: 700; letter-spacing: .1em;
+  text-transform: uppercase; color: #109F35 !important; margin-bottom: 8px;
+}
+.lmt-workforce .case-outcome p {
+  font-size: 14px; color: #A8B8CC !important; line-height: 1.65;
+}
+@media(max-width:860px){
+  .lmt-workforce .case-card { grid-template-columns: 1fr; padding: 32px 24px; }
+  .lmt-workforce .case-stats { grid-template-columns: 1fr 1fr; }
+}
+</style>

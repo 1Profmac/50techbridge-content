@@ -43,7 +43,7 @@ python tools/wp-publish.py publish-id 2290
 2. Extracts title from `# Heading` or frontmatter
 3. Converts markdown to HTML
 4. Pushes to WordPress via REST API
-5. If you use `publish` instead of `draft`, LinkedIn auto-shares via existing WP plugin
+5. If you use `publish` instead of `draft`, a LinkedIn post is auto-generated and copied to your clipboard — just open LinkedIn, paste, and post
 
 ### .env Security
 

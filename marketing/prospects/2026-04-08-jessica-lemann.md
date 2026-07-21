@@ -7,6 +7,13 @@
 
 > **This is the AARP person for Brian's home market.** 17 years at AARP. Central Texas focus. Her literal job is to bring AARP resources and programming to Austin and central Texas through community partners. LMT is — by definition — a community partner candidate. Carly Roszkowski (national VP) controls the $10M Google.org grant; **Jessica Lemann is who would actually deploy it in Texas.**
 
+## Relationship History with Brian
+- **2025:** Brian worked with Jessica directly when she was Community Development Manager at AARP Texas. Established working relationship.
+- **2026-04-08:** Brian commented on her LinkedIn post (warm-up)
+- **2026-04-21:** Reconnected on LinkedIn
+- **2026-04-21+:** Phone meeting scheduled this week
+- **Status:** This is NOT a cold prospect. Brian has a prior working relationship. She already knows LMT and Brian's work.
+
 ---
 
 ## Identity
@@ -18,7 +25,7 @@
 - **LinkedIn:** Confirmed verified ✅ (Brian commented on her recent post 2026-04-08)
 - **Twitter / X:** @jklemann117
 - **Email pattern:** Per ZoomInfo, format is `j***@aarp.org` — most likely `jlemann@aarp.org` (verify via Hunter.io against aarp.org)
-- **Phone (if public):** Not publicly available
+- **Phone:** (512) 480-2498 (AARP Austin office direct — confirmed Apr 23)
 
 ## Background & History
 

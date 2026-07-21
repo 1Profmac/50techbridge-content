@@ -1,0 +1,35 @@
+
+-----------------------------------------------------------------------
+
+What does the fully AI native view of my business look like in 18 months
+
+Revenue: 1.5 Million
+
+Headcount: 4 Leads  50, 000 pioneers, 
+
+Five questions. Be specific.
+
+1. Revenue: What's the annual revenue? 
+  1. 1.5 Million
+2. Headcount: How many humans? (Could be more, could be fewer.)
+  1. 10 Government contracts
+3. What humans do: What's the work that's still a human job?
+  1. MANAGE THE AI AGENTIC SYSTEMS
+4. What agents do: What functions are 80%+ run by agents?
+  1. Yes
+
+What you (CEO) do: What's the day-to-day actually look like for you?
+
+  Support the team managers who manage the Agents.
+-----------------------------------------------------------
+I do AI consulting for developer teams (on this call to see how CEOs are thinking about AI). It’s funny to me how often the solution to various issues is not actually AI, but rather improving some process or just automation in general. AI can help for sure, but good SDLC processes are needed first before adding more AI or doing agentic development, especially on large existing codebases.
+
+ 
+
+Most devs I work with use Claude Code, but Codex is really good too lately. I really like Cursor with Composer 2 for my own stuff (IDE + Agentic).
+
+Collapse All
+Jethro Jones
+11:30 AM
+JJ
+My thoughts exactly. Most of my AI use is actually writing scripts to create deterministic ways of doing things.

@@ -1,0 +1,205 @@
+<!--
+=================================================
+  LMT PODCAST PAGE — AI After 50++
+  Slug: /podcast/
+  CSS class: .lmt-podcast
+  Status: DRAFT — Brian approves before publishing
+  Built: March 21, 2026
+=================================================
+-->
+<style>
+/* ================================================
+   BUDDYBOSS RESET — DO NOT REMOVE
+   ================================================ */
+body,.site,#page,#content,.bb-grid,.container,
+#primary,#main,.site-content,.entry-content,
+.site-footer,.footer-widgets,#colophon,
+.site-inner,.content-sidebar-wrap{background-color:#0E1C2F!important}
+.entry-title,.page-title,.page-template-blank .entry-title,
+body.page .entry-header,.buddypress-page .entry-header,
+#primary .entry-header,.site-content .entry-header{display:none!important}
+.entry-content{padding:0!important;margin:0!important;max-width:none!important}
+.bb-grid,.container,#content,#primary,#main,.site-main{padding:0!important;margin:0!important;max-width:none!important;width:100%!important}
+.site-footer,.footer-widgets,#colophon{margin-top:0!important;padding-top:0!important}
+
+/* ================================================
+   FONTS & BASE
+   ================================================ */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+.lmt-podcast{
+  --navy:#0E1C2F;--navy-mid:#162640;--gold:#C8942E;--gold-light:#E8B84B;
+  --orange:#E8733A;--green:#109F35;
+  --white:#fff;--text-body:#C4CDD9;--text-muted:#A8B8CC;
+  font-family:'DM Sans',sans-serif!important;
+  color:#C4CDD9!important;background:#0E1C2F!important;
+  font-size:18px;line-height:1.75;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden
+}
+.lmt-podcast *{font-family:'DM Sans',sans-serif!important}
+.lmt-podcast h1,.lmt-podcast h2,.lmt-podcast h3{
+  font-family:'Playfair Display',serif!important;
+  color:#FFFFFF!important;line-height:1.2
+}
+
+/* ================================================
+   HERO
+   ================================================ */
+.lmt-podcast .hero{
+  background:linear-gradient(155deg,#080F1A 0%,#0E1C2F 55%,#162640 100%);
+  padding:80px 32px 88px!important;
+  text-align:center;position:relative;overflow:hidden
+}
+@media(max-width:600px){.lmt-podcast .hero{padding-top:40px!important;padding-bottom:56px!important}}
+
+.lmt-podcast .hero::before{
+  content:'';position:absolute;top:-160px;left:50%;transform:translateX(-50%);
+  width:700px;height:500px;
+  background:radial-gradient(circle,rgba(200,148,46,.07) 0%,transparent 70%);
+  pointer-events:none
+}
+
+.lmt-podcast .eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  border-radius:40px;padding:7px 20px;
+  font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  margin-bottom:28px;
+  background:rgba(232,115,58,.12);
+  border:1px solid rgba(232,115,58,.35);
+  color:#E8733A!important;position:relative;z-index:1
+}
+
+.lmt-podcast .eyebrow::before{
+  content:'';display:inline-block;
+  width:7px;height:7px;border-radius:50%;
+  background:#E8733A;
+  animation:pulse 1.8s ease-in-out infinite
+}
+@keyframes pulse{
+  0%,100%{opacity:1;transform:scale(1)}
+  50%{opacity:.4;transform:scale(.8)}
+}
+
+.lmt-podcast .hero h1{
+  font-size:clamp(2.2rem,5vw,3.4rem)!important;
+  color:#FFFFFF!important;margin-bottom:24px;
+  max-width:700px;margin-left:auto;margin-right:auto;
+  position:relative;z-index:1
+}
+.lmt-podcast .hero h1 em{color:#C8942E!important;font-style:italic}
+
+.lmt-podcast .hero p{
+  font-size:1.1rem;color:#C4CDD9!important;
+  max-width:580px;margin:0 auto 36px;
+  line-height:1.85;position:relative;z-index:1
+}
+
+/* ================================================
+   BUTTON
+   ================================================ */
+.lmt-podcast .btn-spotify{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:16px 36px;
+  background:#C8942E!important;color:#FFFFFF!important;
+  font-weight:700;font-size:1rem;border-radius:8px;
+  text-decoration:none;transition:background .2s,transform .15s;
+  position:relative;z-index:1
+}
+.lmt-podcast .btn-spotify:hover{background:#E8B84B!important;transform:translateY(-2px)}
+.lmt-podcast .btn-spotify svg{width:20px;height:20px;fill:#FFFFFF;flex-shrink:0}
+
+/* ================================================
+   STATS BAR
+   ================================================ */
+.lmt-podcast .stats-bar{
+  background:#162640;padding:40px 32px;
+  border-top:1px solid rgba(200,148,46,.15);
+  border-bottom:1px solid rgba(200,148,46,.15)
+}
+.lmt-podcast .stats-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:16px;max-width:1000px;margin:0 auto;text-align:center
+}
+@media(max-width:768px){.lmt-podcast .stats-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.lmt-podcast .stats-grid{grid-template-columns:1fr}}
+
+.lmt-podcast .stat-val{
+  font-size:1.5rem;font-weight:700;
+  color:#C8942E!important;
+  font-family:'Playfair Display',serif!important;
+  margin-bottom:6px
+}
+.lmt-podcast .stat-label{
+  color:#A8B8CC!important;font-size:.85rem;line-height:1.4
+}
+
+/* ================================================
+   MANIFESTO
+   ================================================ */
+.lmt-podcast .manifesto{
+  background:#0E1C2F;
+  padding:72px 32px;text-align:center
+}
+.lmt-podcast .manifesto blockquote{
+  font-family:'Playfair Display',serif!important;
+  font-style:italic;
+  font-size:clamp(1.3rem,2.8vw,2rem);
+  color:#C8942E!important;
+  max-width:640px;margin:0 auto 16px;
+  line-height:1.5
+}
+.lmt-podcast .manifesto cite{
+  color:#A8B8CC!important;font-size:.95rem;font-style:normal
+}
+</style>
+
+<div class="lmt-podcast">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div>
+      <div class="eyebrow">AI After 50++ · Every Tuesday</div>
+
+      <h1>Real Answers. Real Stories.<br><em>No Waiting.</em></h1>
+
+      <p>Prof. McKinney answers the questions adults 50+ are afraid to ask — about AI, business, work, and life. New episodes every Tuesday on Spotify.</p>
+
+      <a href="https://open.spotify.com/show/17s5yk9bZL1RuQy9CtUI97" class="btn-spotify">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+        </svg>
+        Listen on Spotify →
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== STATS BAR ===== -->
+  <section class="stats-bar">
+    <div class="stats-grid">
+      <div>
+        <div class="stat-val">347+</div>
+        <div class="stat-label">Pioneers &amp; Counting</div>
+      </div>
+      <div>
+        <div class="stat-val">3X</div>
+        <div class="stat-label">Industry Completion Rate</div>
+      </div>
+      <div>
+        <div class="stat-val">74%</div>
+        <div class="stat-label">Feel More Confident</div>
+      </div>
+      <div>
+        <div class="stat-val">23</div>
+        <div class="stat-label">Organizations Invited Us In</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MANIFESTO ===== -->
+  <section class="manifesto">
+    <blockquote>"It is never too late to learn.<br>If I can do it, so can you."</blockquote>
+    <cite>— Prof. McKinney</cite>
+  </section>
+
+</div>

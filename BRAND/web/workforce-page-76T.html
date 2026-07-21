@@ -1,0 +1,786 @@
+<!-- wp:html -->
+<!-- wp:html -->
+
+<!--
+=================================================
+  LMT WORKFORCE PAGE — $76 TRILLION OPPORTUNITY
+  v2.0 — April 13, 2026
+  Template: Full Width Content — REQUIRED
+  Slug: /workforce/
+  Owner: Maya, COO
+  Stats Lock: 347+ Pioneers · 3X Completion · 74% Confident · 23 Organizations
+  BANNED STATS: 1,200+ · 85% · 45 sites — DO NOT USE
+  Voice: "adults 50+" NEVER "seniors" · "Pioneers" NEVER "students"
+=================================================
+-->
+
+<style>
+/* ── BUDDYBOSS RESET — DO NOT REMOVE ── */
+body,.site,#page,#content,.bb-grid,.container,
+#primary,#main,.site-content,.entry-content,
+.site-inner,.content-sidebar-wrap{
+  background-color:#0E1C2F!important
+}
+.entry-title,.page-title,
+.page-template-blank .entry-title,
+body.page .entry-header,
+.buddypress-page .entry-header,
+#primary .entry-header,
+.site-content .entry-header{
+  display:none!important
+}
+.entry-content{padding:0!important;margin:0!important;max-width:none!important}
+.bb-grid,.container,#content,#primary,#main,.site-main{
+  padding:0!important;margin:0!important;max-width:none!important;width:100%!important
+}
+.site-footer,.footer-widgets,#colophon{margin-top:0!important;padding-top:0!important}
+
+/* ── RESET & BASE ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── GOOGLE FONTS ── */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
+.lmt-workforce {
+  --navy:        #0E1C2F;
+  --navy-mid:    #162640;
+  --navy-light:  #1E3658;
+  --gold:        #C8942E;
+  --gold-light:  #E8B84B;
+  --gold-dim:    rgba(200,148,46,.18);
+  --orange:      #E8733A;
+  --green:       #109F35;
+  --white:       #FFFFFF;
+  --text-body:   #C4CDD9;
+  --text-muted:  #A8B8CC;
+  --radius:      14px;
+  font-family: 'DM Sans', sans-serif !important;
+  color: #C4CDD9 !important;
+  font-size: 18px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  background: #0E1C2F;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.lmt-workforce .wrap { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+
+/* ────────────────────────────────
+   HERO
+──────────────────────────────── */
+.lmt-workforce .hero {
+  background: linear-gradient(155deg, #080F1A 0%, #0E1C2F 55%, #162640 100%);
+  padding: 108px 32px 90px;
+  position: relative;
+  overflow: hidden;
+}
+.lmt-workforce .hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 75% 50%, rgba(200,148,46,.08) 0%, transparent 70%),
+    radial-gradient(ellipse 30% 40% at 20% 80%, rgba(16,159,53,.05) 0%, transparent 60%);
+  pointer-events: none;
+}
+.lmt-workforce .hero-inner {
+  max-width: 1180px; margin: 0 auto;
+  display: grid; grid-template-columns: 1.15fr .85fr; gap: 64px; align-items: center;
+  position: relative; z-index: 1;
+}
+.lmt-workforce .hero-eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(200,148,46,.15); border: 1px solid rgba(200,148,46,.3);
+  border-radius: 40px; padding: 6px 16px;
+  font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  color: #C8942E !important; margin-bottom: 22px;
+}
+.lmt-workforce .hero h1 {
+  font-family: 'Playfair Display', serif !important;
+  font-size: clamp(34px, 4.5vw, 58px) !important;
+  font-weight: 700 !important; line-height: 1.12 !important;
+  color: #FFFFFF !important; margin-bottom: 24px;
+}
+.lmt-workforce .hero h1 em {
+  font-style: italic; color: #C8942E !important;
+}
+.lmt-workforce .hero-sub {
+  font-size: 19px; color: #A8B8CC !important;
+  line-height: 1.7; max-width: 580px; margin-bottom: 36px;
+}
+.lmt-workforce .hero-ctas {
+  display: flex; gap: 14px; flex-wrap: wrap;
+}
+
+/* ── BUTTONS ── */
+.lmt-workforce .btn-gold {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #C8942E; color: #0E1C2F !important;
+  font-weight: 700; font-size: 15px; padding: 16px 30px;
+  border-radius: 8px; text-decoration: none;
+  transition: all .25s ease;
+}
+.lmt-workforce .btn-gold:hover { background: #E8B84B; transform: translateY(-2px); }
+.lmt-workforce .btn-outline {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: transparent; color: #FFFFFF !important;
+  font-weight: 600; font-size: 15px; padding: 16px 30px;
+  border-radius: 8px; border: 1px solid rgba(255,255,255,.2);
+  text-decoration: none; transition: all .25s ease;
+}
+.lmt-workforce .btn-outline:hover { border-color: #C8942E !important; color: #C8942E !important; }
+
+/* ── TRUST BAR ── */
+.lmt-workforce .trust-bar {
+  background: #162640;
+  border-top: 1px solid rgba(200,148,46,.15);
+  border-bottom: 1px solid rgba(200,148,46,.15);
+  padding: 18px 32px;
+}
+.lmt-workforce .trust-inner {
+  max-width: 1180px; margin: 0 auto;
+  display: flex; flex-wrap: wrap; gap: 10px 40px;
+  align-items: center; justify-content: center;
+}
+.lmt-workforce .trust-item {
+  font-size: 13px; font-weight: 600; color: #A8B8CC !important;
+  display: flex; align-items: center; gap: 7px;
+  text-transform: uppercase; letter-spacing: .06em;
+}
+.lmt-workforce .trust-item span { color: #C8942E !important; }
+.lmt-workforce .trust-dot {
+  width: 4px; height: 4px; border-radius: 50%; background: rgba(200,148,46,.4);
+}
+
+/* ────────────────────────────────
+   SHARED SECTION STYLES
+──────────────────────────────── */
+.lmt-workforce .section-eyebrow {
+  font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
+  color: #E8733A !important; font-weight: 700; margin-bottom: 12px;
+  display: flex; align-items: center; gap: 10px;
+}
+.lmt-workforce .section-eyebrow::before {
+  content: ''; width: 28px; height: 2px; background: #E8733A; display: inline-block;
+}
+.lmt-workforce .section-title {
+  font-family: 'Playfair Display', serif !important;
+  font-size: clamp(28px, 3.5vw, 44px) !important;
+  font-weight: 700 !important; color: #FFFFFF !important;
+  line-height: 1.2; margin-bottom: 16px;
+}
+.lmt-workforce .section-title em { color: #C8942E !important; font-style: italic; }
+.lmt-workforce .section-sub {
+  font-size: 18px; color: #A8B8CC !important;
+  max-width: 700px; margin-bottom: 52px; line-height: 1.7;
+}
+
+/* ────────────────────────────────
+   BRING BRIAN — SPEAKING/WORKSHOP CARDS
+──────────────────────────────── */
+.lmt-workforce .bring {
+  padding: 90px 32px;
+  background: #0A1520;
+}
+.lmt-workforce .bring-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+}
+.lmt-workforce .bring-card {
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 16px; padding: 36px 28px;
+  display: flex; flex-direction: column;
+  transition: all .28s ease;
+  position: relative;
+}
+.lmt-workforce .bring-card:hover {
+  border-color: rgba(200,148,46,.35);
+  background: rgba(200,148,46,.04);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0,0,0,.3);
+}
+.lmt-workforce .bring-card.featured {
+  border-color: rgba(200,148,46,.4);
+  background: rgba(200,148,46,.06);
+  transform: scale(1.03);
+  box-shadow: 0 12px 40px rgba(200,148,46,.12);
+}
+.lmt-workforce .bring-card.featured:hover {
+  transform: scale(1.03) translateY(-4px);
+}
+.lmt-workforce .featured-badge {
+  position: absolute; top: -1px; left: 50%; transform: translateX(-50%);
+  background: #C8942E; color: #0E1C2F !important;
+  font-size: 10px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase;
+  padding: 5px 18px; border-radius: 0 0 8px 8px;
+}
+.lmt-workforce .bring-card h3 {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 22px !important; font-weight: 700 !important;
+  color: #FFFFFF !important; margin-bottom: 12px; line-height: 1.2;
+}
+.lmt-workforce .bring-card .card-format {
+  font-size: 14px; font-weight: 700; color: #C8942E !important;
+  margin-bottom: 12px;
+}
+.lmt-workforce .bring-card p {
+  font-size: 15px; color: #A8B8CC !important; line-height: 1.7; margin-bottom: 16px;
+}
+.lmt-workforce .card-perfect {
+  font-size: 13px; color: #C4CDD9 !important; margin-bottom: 16px;
+  padding: 10px 14px; background: rgba(255,255,255,.03);
+  border-radius: 8px; border: 1px solid rgba(255,255,255,.05);
+}
+.lmt-workforce .card-perfect strong { color: #E8B84B !important; }
+.lmt-workforce .card-list {
+  list-style: none; margin-bottom: 20px; padding: 0;
+}
+.lmt-workforce .card-list li {
+  font-size: 14px; color: #C4CDD9 !important;
+  padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,.05);
+  display: flex; align-items: flex-start; gap: 8px;
+}
+.lmt-workforce .card-list li:last-child { border-bottom: none; }
+.lmt-workforce .card-list li::before {
+  content: '\2713'; color: #C8942E; font-weight: 800; font-size: 13px; flex-shrink: 0; margin-top: 1px;
+}
+.lmt-workforce .card-price {
+  font-size: 28px; font-weight: 900; color: #C8942E !important;
+  margin-bottom: 20px; margin-top: auto;
+  padding-top: 16px; border-top: 1px solid rgba(255,255,255,.06);
+  font-family: 'DM Sans', sans-serif;
+}
+.lmt-workforce .btn-card {
+  display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+  background: #C8942E; color: #0E1C2F !important;
+  font-weight: 700; font-size: 14px; padding: 13px 22px;
+  border-radius: 8px; text-decoration: none; transition: all .25s;
+  text-align: center; width: 100%;
+}
+.lmt-workforce .btn-card:hover { background: #E8B84B; transform: translateY(-2px); }
+
+/* ────────────────────────────────
+   DEPLOY — ORG DEPLOYMENT CARDS
+──────────────────────────────── */
+.lmt-workforce .deploy {
+  padding: 90px 32px;
+  background: #0E1C2F;
+}
+.lmt-workforce .deploy-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+}
+.lmt-workforce .deploy-card {
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 16px; padding: 32px 24px;
+  display: flex; flex-direction: column;
+  transition: all .28s ease;
+}
+.lmt-workforce .deploy-card:hover {
+  border-color: rgba(200,148,46,.35);
+  background: rgba(200,148,46,.04);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0,0,0,.3);
+}
+.lmt-workforce .deploy-tag {
+  display: inline-block;
+  font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  padding: 4px 12px; border-radius: 20px; margin-bottom: 16px; width: fit-content;
+  background: rgba(200,148,46,.15); color: #C8942E !important;
+  border: 1px solid rgba(200,148,46,.25);
+}
+.lmt-workforce .deploy-card h3 {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 19px !important; font-weight: 700 !important;
+  color: #FFFFFF !important; margin-bottom: 10px; line-height: 1.2;
+}
+.lmt-workforce .deploy-card .deploy-price {
+  font-size: 24px; font-weight: 900; color: #C8942E !important;
+  line-height: 1; margin-bottom: 4px;
+  font-family: 'DM Sans', sans-serif;
+}
+.lmt-workforce .deploy-card .deploy-min {
+  font-size: 12px; color: #A8B8CC !important; margin-bottom: 16px;
+}
+.lmt-workforce .deploy-card p {
+  font-size: 14px; color: #A8B8CC !important; line-height: 1.65; flex: 1; margin-bottom: 20px;
+}
+.lmt-workforce .deploy-cta {
+  text-align: center; margin-top: 48px;
+}
+
+/* ────────────────────────────────
+   DATA BEHIND THE OPPORTUNITY
+──────────────────────────────── */
+.lmt-workforce .data-strip {
+  background: linear-gradient(135deg, #162640 0%, #0E1C2F 100%);
+  border-top: 1px solid rgba(200,148,46,.15);
+  border-bottom: 1px solid rgba(200,148,46,.15);
+  padding: 80px 32px;
+}
+.lmt-workforce .data-inner {
+  max-width: 1180px; margin: 0 auto;
+}
+.lmt-workforce .data-grid {
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 2px;
+  border: 1px solid rgba(200,148,46,.2); border-radius: 16px; overflow: hidden;
+  margin-top: 48px;
+}
+.lmt-workforce .data-cell {
+  background: rgba(255,255,255,.02); padding: 36px 20px;
+  text-align: center; border-right: 1px solid rgba(200,148,46,.1);
+  transition: background .2s;
+}
+.lmt-workforce .data-cell:last-child { border-right: none; }
+.lmt-workforce .data-cell:hover { background: rgba(200,148,46,.05); }
+.lmt-workforce .data-big {
+  font-size: clamp(28px, 3vw, 42px); font-weight: 900;
+  color: #C8942E !important; line-height: 1; margin-bottom: 8px;
+  font-family: 'DM Sans', sans-serif;
+}
+.lmt-workforce .data-desc {
+  font-size: 13px; color: #A8B8CC !important; line-height: 1.5;
+}
+.lmt-workforce .data-source {
+  font-size: 11px; color: rgba(168,184,204,.45) !important;
+  margin-top: 6px;
+}
+
+/* ────────────────────────────────
+   ABOUT BRIAN
+──────────────────────────────── */
+.lmt-workforce .about {
+  padding: 90px 32px;
+  background: #0A1520;
+}
+.lmt-workforce .about-inner {
+  max-width: 1180px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+}
+.lmt-workforce .about-creds {
+  list-style: none; padding: 0; margin: 24px 0 0 0;
+}
+.lmt-workforce .about-creds li {
+  font-size: 15px; color: #C4CDD9 !important;
+  padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,.06);
+  display: flex; align-items: flex-start; gap: 10px;
+}
+.lmt-workforce .about-creds li:last-child { border-bottom: none; }
+.lmt-workforce .about-creds li::before {
+  content: '\2713'; color: #C8942E; font-weight: 800; font-size: 14px;
+  flex-shrink: 0; margin-top: 2px;
+}
+
+/* ────────────────────────────────
+   MANIFESTO BREAK
+──────────────────────────────── */
+.lmt-workforce .manifesto-break {
+  background: #C8942E; padding: 40px 32px; text-align: center;
+}
+.lmt-workforce .manifesto-break .manifesto-inner {
+  max-width: 900px; margin: 0 auto;
+}
+.lmt-workforce .manifesto-break p {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(20px, 2.5vw, 30px); font-style: italic; font-weight: 700;
+  color: #0E1C2F !important; line-height: 1.45;
+}
+
+/* ────────────────────────────────
+   BOOK BRIAN / CONTACT CTA
+──────────────────────────────── */
+.lmt-workforce .cta-section {
+  padding: 100px 32px;
+  background: linear-gradient(160deg, #0A1520 0%, #0E1C2F 60%, #162640 100%);
+  text-align: center; position: relative; overflow: hidden;
+}
+.lmt-workforce .cta-section::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 60% 70% at 50% 50%, rgba(200,148,46,.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+.lmt-workforce .cta-inner { max-width: 720px; margin: 0 auto; position: relative; z-index: 1; }
+.lmt-workforce .cta-eyebrow {
+  font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
+  color: #C8942E !important; font-weight: 700; margin-bottom: 16px;
+}
+.lmt-workforce .cta-section h2 {
+  font-family: 'Playfair Display', serif !important;
+  font-size: clamp(28px, 3.5vw, 44px) !important;
+  font-weight: 700 !important; color: #FFFFFF !important;
+  line-height: 1.2; margin-bottom: 16px;
+}
+.lmt-workforce .cta-section h2 em { color: #C8942E !important; font-style: italic; }
+.lmt-workforce .cta-section p {
+  font-size: 18px; color: #A8B8CC !important; margin-bottom: 20px; line-height: 1.7;
+}
+.lmt-workforce .contact-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+  margin-bottom: 36px; text-align: center;
+}
+.lmt-workforce .contact-item {
+  font-size: 14px; color: #C4CDD9 !important;
+}
+.lmt-workforce .contact-item a {
+  color: #E8B84B !important; text-decoration: none; font-weight: 600;
+  transition: color .2s;
+}
+.lmt-workforce .contact-item a:hover { color: #C8942E !important; }
+.lmt-workforce .contact-item .contact-label {
+  font-size: 11px; text-transform: uppercase; letter-spacing: .08em;
+  color: #A8B8CC !important; margin-bottom: 4px; font-weight: 600;
+}
+.lmt-workforce .cta-buttons {
+  display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
+  margin-top: 28px;
+}
+.lmt-workforce .btn-cta-primary {
+  display: inline-flex; align-items: center; gap: 9px;
+  background: #C8942E; color: #0E1C2F !important;
+  font-weight: 700; font-size: 16px; padding: 18px 36px;
+  border-radius: 8px; text-decoration: none; transition: all .25s;
+}
+.lmt-workforce .btn-cta-primary:hover { background: #E8B84B; transform: translateY(-2px); }
+.lmt-workforce .btn-cta-secondary {
+  display: inline-flex; align-items: center; gap: 9px;
+  background: transparent; color: #FFFFFF !important;
+  font-weight: 600; font-size: 16px; padding: 18px 36px;
+  border-radius: 8px; border: 1px solid rgba(255,255,255,.2);
+  text-decoration: none; transition: all .25s;
+}
+.lmt-workforce .btn-cta-secondary:hover { border-color: #C8942E !important; color: #C8942E !important; }
+.lmt-workforce .cta-trust {
+  margin-top: 32px; font-size: 13px; color: rgba(168,184,204,.6) !important;
+}
+
+/* ────────────────────────────────
+   RESPONSIVE
+──────────────────────────────── */
+@media (max-width: 1100px) {
+  .lmt-workforce .deploy-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 900px) {
+  .lmt-workforce .hero-inner {
+    grid-template-columns: 1fr;
+  }
+  .lmt-workforce .hero-video { margin-top: 32px; }
+  .lmt-workforce .bring-grid {
+    grid-template-columns: 1fr;
+  }
+  .lmt-workforce .bring-card.featured {
+    transform: none;
+  }
+  .lmt-workforce .bring-card.featured:hover {
+    transform: translateY(-4px);
+  }
+  .lmt-workforce .deploy-grid { grid-template-columns: 1fr; }
+  .lmt-workforce .data-grid { grid-template-columns: 1fr 1fr; }
+  .lmt-workforce .data-cell:nth-child(5) {
+    grid-column: 1 / -1;
+  }
+  .lmt-workforce .about-inner { grid-template-columns: 1fr; }
+  .lmt-workforce .contact-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px) {
+  .lmt-workforce .hero { padding: 48px 16px 40px; }
+  .lmt-workforce .wrap { padding: 0 16px; }
+  .lmt-workforce .data-grid { grid-template-columns: 1fr; }
+  .lmt-workforce .data-cell { border-right: none; border-bottom: 1px solid rgba(200,148,46,.1); }
+  .lmt-workforce .data-cell:last-child { border-bottom: none; }
+  .lmt-workforce .contact-grid { grid-template-columns: 1fr; }
+  .lmt-workforce .hero-ctas,
+  .lmt-workforce .cta-buttons { flex-direction: column; }
+  .lmt-workforce .btn-gold,
+  .lmt-workforce .btn-outline,
+  .lmt-workforce .btn-cta-primary,
+  .lmt-workforce .btn-cta-secondary {
+    width: 100%; justify-content: center; text-align: center;
+  }
+}
+</style>
+
+<!-- ======================================================
+     PAGE OPEN
+====================================================== -->
+<div class="lmt-workforce">
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <div class="hero-eyebrow">Workforce Development &middot; 50+TechBridge</div>
+      <h1>The <em>$76 Trillion</em> Opportunity</h1>
+      <p class="hero-sub">Your workforce over 50 isn't a liability. It's the most undertapped asset in American business.</p>
+      <div class="hero-ctas">
+        <a href="https://calendly.com/brianmckinney/new-meeting" class="btn-gold">Book Brian for Your Organization &rarr;</a>
+        <a href="https://youtu.be/Svb6LtzS070" class="btn-outline" target="_blank" rel="noopener">Watch the Speaker Reel</a>
+      </div>
+    </div>
+    <div class="hero-video">
+      <div style="position:relative;width:100%;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,0.5);">
+        <iframe
+          src="https://www.youtube.com/embed/Svb6LtzS070?rel=0&modestbranding=1"
+          title="Professor Brian McKinney — Speaker Reel"
+          allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture"
+          allowfullscreen loading="lazy"
+          style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TRUST BAR ── -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item"><span>347+</span> Pioneers &amp; Counting</div>
+    <div class="trust-dot"></div>
+    <div class="trust-item"><span>23</span> Organizations Invited Us In</div>
+    <div class="trust-dot"></div>
+    <div class="trust-item"><span>3X</span> Industry Completion Rate</div>
+    <div class="trust-dot"></div>
+    <div class="trust-item"><span>74%</span> Feel More Confident</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     BRING BRIAN TO YOUR ORGANIZATION
+══════════════════════════════════════════ -->
+<section class="bring">
+  <div class="wrap">
+    <div class="section-eyebrow">Speaking &amp; Workshops</div>
+    <h2 class="section-title">Bring Brian to <em>Your Organization</em></h2>
+    <p class="section-sub">Three formats designed for decision-makers who want their teams to see what's possible when experience meets technology.</p>
+
+    <div class="bring-grid">
+
+      <!-- Card 1: 60-Minute Business Case -->
+      <div class="bring-card">
+        <h3>The 60-Minute Business Case</h3>
+        <div class="card-format">60 minutes + Q&amp;A</div>
+        <p>One focused topic, your team, Brian live. A sharp, data-driven session that reframes how your organization thinks about its most experienced workforce.</p>
+        <ul class="card-list">
+          <li>One focused topic tailored to your team</li>
+          <li>Live data and audience interaction</li>
+          <li>Actionable takeaways your team can use immediately</li>
+        </ul>
+        <div class="card-perfect"><strong>Perfect for:</strong> HR teams, workforce boards, Rotary, faith communities</div>
+        <div class="card-price">$1,500</div>
+        <a href="https://calendly.com/brianmckinney/new-meeting" class="btn-card">Book This Session &rarr;</a>
+      </div>
+
+      <!-- Card 2: The Builder's Workshop (FEATURED) -->
+      <div class="bring-card featured">
+        <div class="featured-badge">Most Popular</div>
+        <h3>The Builder's Workshop</h3>
+        <div class="card-format">Half-day (3 hours) &middot; Hands-on</div>
+        <p>A deep, hands-on experience where participants don't just learn about AI and digital tools — they build with them. Pre-event discovery call ensures every minute is relevant to your team.</p>
+        <ul class="card-list">
+          <li>Pre-event discovery call</li>
+          <li>Participant workbook included</li>
+          <li>Certificates of completion</li>
+          <li>Hands-on exercises with real tools</li>
+        </ul>
+        <div class="card-perfect"><strong>Perfect for:</strong> Conferences, corporate training days, workforce events</div>
+        <div class="card-price">$3,500</div>
+        <a href="https://calendly.com/brianmckinney/new-meeting" class="btn-card">Book This Workshop &rarr;</a>
+      </div>
+
+      <!-- Card 3: The $76 Trillion Opportunity -->
+      <div class="bring-card">
+        <h3>The $76 Trillion Opportunity</h3>
+        <div class="card-format">90 minutes from stage</div>
+        <p>Brian's signature featured workshop. An interactive audience experience with live data, real-time polls, and a blueprint exercise that leaves every attendee with a concrete next step.</p>
+        <ul class="card-list">
+          <li>Interactive audience experience</li>
+          <li>Live data and real-time polls</li>
+          <li>Blueprint exercise for every attendee</li>
+          <li>Conference-ready production quality</li>
+        </ul>
+        <div class="card-perfect"><strong>Perfect for:</strong> Conferences, summits, keynote stages</div>
+        <div class="card-price">$5,000</div>
+        <a href="https://calendly.com/brianmckinney/new-meeting" class="btn-card">Book This Session &rarr;</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     DEPLOY ACROSS YOUR ORGANIZATION
+══════════════════════════════════════════ -->
+<section class="deploy">
+  <div class="wrap">
+    <div class="section-eyebrow">Organizational Deployment</div>
+    <h2 class="section-title">Ready to Deploy Across <em>Your Organization?</em></h2>
+    <p class="section-sub">For organizations that want to run the full 50+TechBridge program internally. Your workforce. Our curriculum. Deployed in 30 days.</p>
+
+    <div class="deploy-grid">
+
+      <!-- Digital -->
+      <div class="deploy-card">
+        <div class="deploy-tag">Self-Paced</div>
+        <h3>50+TechBridge Digital</h3>
+        <div class="deploy-price">$249<span style="font-size:14px;font-weight:400;color:#A8B8CC!important">/user</span></div>
+        <div class="deploy-min">Minimum 20 users</div>
+        <p>Self-paced, online, org-branded. Your team moves through the full curriculum at their own speed with your branding and reporting dashboard.</p>
+      </div>
+
+      <!-- Hybrid -->
+      <div class="deploy-card">
+        <div class="deploy-tag">Blended</div>
+        <h3>50+TechBridge Hybrid</h3>
+        <div class="deploy-price">$750<span style="font-size:14px;font-weight:400;color:#A8B8CC!important">/user</span></div>
+        <div class="deploy-min">Minimum 15 users</div>
+        <p>Online modules plus cohort facilitation. Combines self-paced learning with live group sessions led by a trained facilitator for deeper engagement.</p>
+      </div>
+
+      <!-- Enterprise -->
+      <div class="deploy-card">
+        <div class="deploy-tag">Full Service</div>
+        <h3>50+TechBridge Enterprise</h3>
+        <div class="deploy-price">$1,500<span style="font-size:14px;font-weight:400;color:#A8B8CC!important">/user</span></div>
+        <div class="deploy-min">Minimum 10 users</div>
+        <p>Full facilitation, certification, and custom curriculum. The complete deployment with dedicated support, custom content, and org-specific outcomes reporting.</p>
+      </div>
+
+      <!-- Certified Facilitator -->
+      <div class="deploy-card">
+        <div class="deploy-tag">Train-the-Trainer</div>
+        <h3>Certified Facilitator Program</h3>
+        <div class="deploy-price">$2,500<span style="font-size:14px;font-weight:400;color:#A8B8CC!important">/trainer</span></div>
+        <div class="deploy-min">Minimum 3 trainers</div>
+        <p>Train your internal team to deliver the 50+TechBridge curriculum. 2-day certification, facilitator guide, and ongoing support included.</p>
+      </div>
+
+    </div>
+
+    <div class="deploy-cta">
+      <a href="https://calendly.com/brianmckinney/new-meeting" class="btn-gold">Schedule a Workforce Consult &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     THE DATA BEHIND THE OPPORTUNITY
+══════════════════════════════════════════ -->
+<section class="data-strip">
+  <div class="data-inner">
+    <div class="section-eyebrow" style="justify-content:center;">The Research</div>
+    <h2 class="section-title" style="text-align:center;">The Data Behind <em>the Opportunity</em></h2>
+    <p class="section-sub" style="text-align:center;margin-left:auto;margin-right:auto;">These aren't opinions. They're peer-reviewed findings that change every workforce conversation.</p>
+
+    <div class="data-grid">
+      <div class="data-cell">
+        <div class="data-big">$850B</div>
+        <div class="data-desc">Lost annually to workforce ageism</div>
+        <div class="data-source">AARP / Oxford Economics</div>
+      </div>
+      <div class="data-cell">
+        <div class="data-big">2.8X</div>
+        <div class="data-desc">50-year-old founders are 2.8X more likely to succeed</div>
+        <div class="data-source">MIT</div>
+      </div>
+      <div class="data-cell">
+        <div class="data-big">52.3%</div>
+        <div class="data-desc">of U.S. businesses owned by people 55+</div>
+        <div class="data-source">Census Bureau</div>
+      </div>
+      <div class="data-cell">
+        <div class="data-big">3X</div>
+        <div class="data-desc">Digital literacy training triples employment rates</div>
+        <div class="data-source">RAND</div>
+      </div>
+      <div class="data-cell">
+        <div class="data-big">47%</div>
+        <div class="data-desc">of workers 50+ want AI training</div>
+        <div class="data-source">AARP / Urban Institute</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     MANIFESTO BREAK
+══════════════════════════════════════════ -->
+<div class="manifesto-break">
+  <div class="manifesto-inner">
+    <p>"Ageism is the problem. AgeTech is the solution. We're the bridge."</p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     ABOUT PROFESSOR BRIAN MCKINNEY
+══════════════════════════════════════════ -->
+<section class="about">
+  <div class="about-inner">
+    <div class="about-copy">
+      <div class="section-eyebrow">Your Speaker &amp; Facilitator</div>
+      <h2 class="section-title">About <em>Professor Brian McKinney</em></h2>
+      <p style="font-size:17px;color:#A8B8CC!important;line-height:1.7;margin-bottom:8px;">Brian McKinney has spent 15 years proving that adults 50+ don't just adapt to technology — they thrive with it. His curriculum runs at 3X the industry completion rate because it was designed with intention and compassion, not shortcuts.</p>
+      <ul class="about-creds">
+        <li>CEO &amp; Founder, Learn More Technologies and 50+TechBridge</li>
+        <li>Former AARP Community Development Manager</li>
+        <li>MBE Certified &mdash; Minority Business Enterprise, State of Texas</li>
+        <li>347+ Pioneers trained across 23 organizations</li>
+        <li>Host, #AGENTIC50 &mdash; The Pioneers Podcast</li>
+        <li>Based in Austin, Texas &mdash; available nationwide</li>
+      </ul>
+    </div>
+    <!-- Second video removed — one video per sales page -->
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     BOOK BRIAN TODAY — CTA SECTION
+══════════════════════════════════════════ -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <div class="cta-eyebrow">Let's Work Together</div>
+    <h2>Book <em>Brian</em> Today</h2>
+    <p>Whether it's a keynote, a workshop, or a full organizational deployment — the first step is a conversation.</p>
+
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="contact-label">Email</div>
+        <a href="mailto:hello@learnmoretechnologies.com">hello@learnmoretechnologies.com</a>
+      </div>
+      <div class="contact-item">
+        <div class="contact-label">Phone</div>
+        <a href="tel:+15122004241">(512) 200-4241</a>
+      </div>
+      <div class="contact-item">
+        <div class="contact-label">Calendly</div>
+        <a href="https://calendly.com/brianmckinney/new-meeting" target="_blank" rel="noopener">calendly.com/brianmckinney</a>
+      </div>
+      <div class="contact-item">
+        <div class="contact-label">LinkedIn</div>
+        <a href="https://linkedin.com/in/brianmckinneylmt" target="_blank" rel="noopener">linkedin.com/in/brianmckinneylmt</a>
+      </div>
+      <div class="contact-item">
+        <div class="contact-label">YouTube</div>
+        <a href="https://youtube.com/@LearnMoreTechnologies" target="_blank" rel="noopener">@LearnMoreTechnologies</a>
+      </div>
+      <div class="contact-item">
+        <div class="contact-label">Website</div>
+        <a href="https://learnmoretechnologies.com" target="_blank" rel="noopener">learnmoretechnologies.com</a>
+      </div>
+    </div>
+
+    <div class="cta-buttons">
+      <a href="https://calendly.com/brianmckinney/new-meeting" class="btn-cta-primary">Schedule Your Free Consultation &rarr;</a>
+      <a href="https://learnmoretechnologies.com/train/" class="btn-cta-secondary">Explore the Training &rarr;</a>
+    </div>
+
+    <div class="cta-trust">MBE Certified &middot; WIOA Eligible &middot; Austin, TX &middot; Available Nationwide</div>
+  </div>
+</section>
+
+</div>
+<!-- ── PAGE CLOSE ── -->
+
+<!-- /wp:html -->
+<!-- /wp:html -->

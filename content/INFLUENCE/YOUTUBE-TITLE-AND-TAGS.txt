@@ -1,0 +1,34 @@
+TITLE:
+Influence Is Not Who You Know — It's Who You Help | Professor Brian McKinney
+
+ALT TITLES (pick one):
+- Don't Piss Off the Grandparents | They Hold $76 Trillion
+- You Don't Have Influence. You Have a Contact List.
+- The People Who Built the Structure Deserve Better
+
+TAGS:
+influence, adults 50+, AI training, digital skills, workforce development, ageism, 50+TechBridge, Learn More Technologies, Brian McKinney, MBE certified, older workers, grandparents, digital inclusion, AGENTIC50, each one teach one, AI for everyone, adults over 50, aging workforce, you're not done yet
+
+THUMBNAIL TEXT OPTIONS:
+Line 1: "INFLUENCE IS NOT"
+Line 2: "WHO YOU KNOW"
+Subline: "It's who you help."
+
+ALT THUMBNAIL:
+Line 1: "DON'T PISS OFF"
+Line 2: "THE GRANDPARENTS"
+Subline: "$76 TRILLION"
+
+COLORS:
+Background: Navy #0E1C2F
+Headline: Gold #C8942E
+Subline: White #FFFFFF
+Brian headshot on right side
+
+CATEGORY: Education
+VISIBILITY: Public
+MADE FOR KIDS: No
+LANGUAGE: English
+
+PINNED COMMENT:
+The people who built the structure deserve the tools to keep building. Teaching them AI isn't charity. It's respect. Start your free lesson: learnmoretechnologies.com/join-now

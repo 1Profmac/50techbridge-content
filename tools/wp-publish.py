@@ -29,7 +29,7 @@ SETUP (one time):
 
 NOTES:
   - .env file is gitignored — credentials never go to GitHub
-  - LinkedIn auto-share triggers on WP publish (existing plugin handles this)
+  - After publish, a LinkedIn post is generated and copied to clipboard
   - Articles with frontmatter (title, slug, category, tags) will use those values
   - Articles without frontmatter will extract title from first # heading
 """
@@ -40,6 +40,7 @@ import re
 import base64
 import json
 import glob
+import subprocess
 import markdown
 
 try:
@@ -95,11 +96,14 @@ def load_env():
 
 
 def get_auth_headers(user, password):
-    """Build auth headers for WP REST API."""
+    """Build auth headers for WP REST API.
+    Uses browser-like User-Agent to avoid Bluehost ModSecurity blocking."""
     token = base64.b64encode(f"{user}:{password}".encode()).decode()
     return {
         "Authorization": f"Basic {token}",
         "Content-Type": "application/json",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0",
+        "Accept": "application/json, text/plain, */*",
     }
 
 
@@ -143,6 +147,21 @@ def parse_markdown_file(filepath):
 
     # Remove hashtags at the end (those go in tags)
     html_content = re.sub(r"<p>#\w+(\s+#\w+)*\s*</p>\s*$", "", html_content)
+
+    # Append sponsor CTA block
+    sponsor_cta = (
+        '<hr>\n'
+        '<h3>Bring 50+TechBridge to Your Community</h3>\n'
+        '<p>We train adults 50+ in AI and digital skills at senior centers, libraries, '
+        'churches, and workplaces. Sponsors cover the session so learners never pay.</p>\n'
+        '<p><strong>$500 covers one Lunch &amp; Learn for 20 Pioneers.</strong> '
+        '$25 per person. 90 minutes. Real skills. Real impact.</p>\n'
+        '<p>Organizations get completion tracking and an impact report. '
+        'Every session builds toward our goal of 50,000 Pioneers.</p>\n'
+        '<p><strong><a href="https://calendly.com/brianmckinney/new-meeting">'
+        'Sponsor a session</a></strong></p>\n'
+    )
+    html_content += sponsor_cta
 
     # Extract tags from hashtags
     tags = meta.get("tags", [])
@@ -279,6 +298,7 @@ def push_to_wp(parsed, status, headers):
         if resp3.ok:
             post = resp3.json()
             print(f"  PUBLISHED — {post['link']}")
+            copy_linkedin_post(parsed["title"], post["link"], parsed.get("excerpt", ""))
             return post
         else:
             print(f"  Content uploaded but publish FAILED — {resp3.status_code}")
@@ -305,10 +325,34 @@ def publish_existing(post_id, headers):
         print(f"  PUBLISHED — WP ID: {post['id']}")
         print(f"  Title: {post['title']['rendered']}")
         print(f"  URL: {post['link']}")
+        copy_linkedin_post(post["title"]["rendered"], post["link"])
         return post
     else:
         print(f"  FAILED — {resp.status_code}: {resp.text[:300]}")
         return None
+
+
+def copy_linkedin_post(title, url, excerpt=""):
+    """Generate a LinkedIn post and copy it to clipboard."""
+    post = f"""{title}
+
+{excerpt if excerpt else "New from Learn More Technologies — read the full article:"}
+
+{url}
+
+#50PlusTechBridge #AIForEveryone #YoureNotDoneYet #WorkforceDevelopment"""
+
+    try:
+        subprocess.run(["clip"], input=post.encode("utf-8"), check=True)
+        print()
+        print("  --- LINKEDIN POST COPIED TO CLIPBOARD ---")
+        print("  Open LinkedIn > New Post > Ctrl+V > Post")
+        print("  -----------------------------------------")
+    except Exception:
+        print()
+        print("  --- LINKEDIN POST (copy manually) ---")
+        print(post)
+        print("  -------------------------------------")
 
 
 def list_drafts(headers):

@@ -1,34 +1,61 @@
-# Large media files — stored on Google Drive, not Git
+# Video files
 *.mp4
-*.mp3
-*.wav
-*.m4a
 *.mov
 *.avi
 *.mkv
+*.wmv
+*.webm
+*.m4v
 
-# Large images (keep small ones like thumbnails)
-# *.png  — allowing PNGs for thumbnails and logos
-# *.jpg
+# Audio files
+*.mp3
+*.wav
+*.aac
+*.m4a
+*.flac
+
+# Large images / exports
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.svg
 *.psd
 *.ai
+*.eps
+*.tif
+*.tiff
 
-# Binary files
-*.xlsx
-*.csv
+# PDFs
 *.pdf
-*.zip
-*.tar.gz
 
-# System
-.env
+# Office files
+*.docx
+*.doc
+*.xlsx
+*.xls
+*.pptx
+*.ppt
+*.csv
+*.gsheet
+
+# Python cache
 __pycache__/
 *.pyc
+*.pyo
+.env
+
+# Archives / zips
+*.zip
+*.tar.gz
+*.rar
+
+# OS junk
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Old paths
-video-builder/layers/brian/*.mp4
-video-builder/layers/clips/**/*.mp4
-*.mp4.lnk
-tools/.env
+# Temp / scratch
+*.tmp
+*.log

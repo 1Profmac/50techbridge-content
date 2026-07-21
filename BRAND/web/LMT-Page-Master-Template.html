@@ -1,0 +1,498 @@
+<!-- wp:html -->
+<!-- wp:html -->
+
+<!--
+=================================================
+  LMT [PAGE NAME] PAGE
+  Template: Full Width Content — REQUIRED
+  Slug: /[slug]/
+  Owner: Maya, COO
+  CTO Agent: Set template to FULL WIDTH before pasting HTML
+  Last Updated: March 16, 2026
+
+  Stats Lock: 347+ Pioneers · 3X Completion · 74% Confident · 23 Organizations
+  ⛔ BANNED STATS: 1,200+ · 85% · 45 sites · 62% — DO NOT USE
+
+  HOW TO USE THIS TEMPLATE:
+  1. Copy this entire file
+  2. Rename .lmt-template → .lmt-[pagename] everywhere in CSS and HTML
+  3. Edit content sections — keep structure
+  4. WordPress → Full Width template → Code Editor → Paste
+  5. Never build from a blank page
+=================================================
+-->
+
+<style>
+
+/* ================================================
+   SECTION 1 — BUDDYBOSS RESET (DO NOT REMOVE)
+   These rules override BuddyBoss theme containers
+   and prevent white/dark gaps around the page.
+   Required on every LMT page.
+   ================================================ */
+
+body,.site,#page,#content,.bb-grid,.container,
+#primary,#main,.site-content,.entry-content,
+.site-inner,.content-sidebar-wrap{
+  background-color:#0E1C2F!important
+}
+
+.entry-title,.page-title,
+.page-template-blank .entry-title,
+body.page .entry-header,
+.buddypress-page .entry-header,
+#primary .entry-header,
+.site-content .entry-header{
+  display:none!important
+}
+
+.entry-content{
+  padding:0!important;
+  margin:0!important;
+  max-width:none!important
+}
+
+.bb-grid,.container,#content,#primary,#main,.site-main{
+  padding:0!important;
+  margin:0!important;
+  max-width:none!important;
+  width:100%!important
+}
+
+/* Suppress BuddyBoss footer gap on Full Width template */
+.site-footer,.footer-widgets,#colophon{
+  margin-top:0!important;
+  padding-top:0!important
+}
+
+/* ================================================
+   SECTION 2 — FONTS & BASE RESET
+   ================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+/* ================================================
+   SECTION 3 — PAGE SCOPE
+   Replace .lmt-template with .lmt-[pagename]
+   ================================================ */
+
+.lmt-template{
+  --navy:#0E1C2F;
+  --navy-mid:#162640;
+  --gold:#C8942E;
+  --gold-light:#E8B84B;
+  --orange:#E8733A;
+  --green:#109F35;
+  --green-dark:#0C7A28;
+  --white:#fff;
+  --text-body:#C4CDD9;
+  --text-muted:#A8B8CC;
+  font-family:'DM Sans',sans-serif!important;
+  color:#C4CDD9!important;
+  font-size:18px;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+  background:#0E1C2F;
+  display:block;
+  width:100vw;
+  position:relative;
+  left:50%;
+  margin-left:-50vw;
+  overflow-x:hidden;
+}
+
+.lmt-template .wrap{
+  max-width:1180px;
+  margin:0 auto;
+  padding:0 32px
+}
+
+/* ================================================
+   SECTION 4 — HERO
+   ================================================ */
+
+.lmt-template .hero{
+  background:linear-gradient(155deg,#080F1A 0%,#0E1C2F 55%,#162640 100%);
+  padding:108px 32px 90px;
+  position:relative;
+  overflow:hidden
+}
+
+.lmt-template .hero-inner{
+  max-width:1180px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:64px;
+  align-items:center;
+  position:relative;
+  z-index:1
+}
+
+.lmt-template .eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:rgba(16,159,53,.15);
+  border:1px solid rgba(16,159,53,.3);
+  border-radius:40px;
+  padding:6px 16px;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:#109F35!important;
+  margin-bottom:22px
+}
+
+.lmt-template .hero h1{
+  font-family:'Playfair Display',serif!important;
+  font-size:clamp(34px,4.5vw,58px)!important;
+  font-weight:700!important;
+  line-height:1.1!important;
+  color:#fff!important;
+  margin-bottom:24px
+}
+
+.lmt-template .hero h1 em{
+  color:#C8942E!important;
+  font-style:normal
+}
+
+.lmt-template .hero-sub{
+  font-size:19px;
+  color:#A8B8CC!important;
+  line-height:1.7;
+  max-width:580px;
+  margin-bottom:36px
+}
+
+.lmt-template .hero-btns{
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap
+}
+
+/* ================================================
+   SECTION 5 — TRUST BAR
+   Always use approved stats only
+   ================================================ */
+
+.lmt-template .trust-bar{
+  background:#162640;
+  padding:20px 32px;
+  display:flex;
+  justify-content:center;
+  gap:48px;
+  flex-wrap:wrap
+}
+
+.lmt-template .trust-item{
+  font-size:13px;
+  color:#A8B8CC!important;
+  font-weight:500;
+  letter-spacing:.02em
+}
+
+.lmt-template .trust-item span{
+  color:#C8942E!important;
+  font-weight:700;
+  font-size:15px
+}
+
+/* ================================================
+   SECTION 6 — SECTION DEFAULTS
+   ================================================ */
+
+.lmt-template .s-pad{
+  padding-top:80px;
+  padding-bottom:80px
+}
+
+.lmt-template .sec-eyebrow{
+  font-size:11px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:#E8733A!important;
+  font-weight:700;
+  margin-bottom:12px;
+  display:flex;
+  align-items:center;
+  gap:10px
+}
+
+.lmt-template .sec-eyebrow::before{
+  content:'';
+  display:inline-block;
+  width:24px;
+  height:2px;
+  background:#E8733A
+}
+
+.lmt-template .sec-title{
+  font-family:'Playfair Display',serif!important;
+  font-size:clamp(28px,3.5vw,44px)!important;
+  font-weight:700!important;
+  color:#fff!important;
+  line-height:1.2;
+  margin-bottom:16px
+}
+
+.lmt-template .sec-title em{
+  color:#C8942E!important;
+  font-style:normal
+}
+
+.lmt-template .sec-sub{
+  font-size:18px;
+  color:#A8B8CC!important;
+  max-width:640px;
+  margin-bottom:52px;
+  line-height:1.7
+}
+
+/* ================================================
+   SECTION 7 — BUTTONS
+   Green = individual CTAs → /join-now/
+   Gold = org CTAs → /workforce/
+   ================================================ */
+
+.lmt-template .btn-primary,
+.lmt-template .btn-cta-primary{
+  display:inline-block;
+  background:#109F35;
+  color:#fff!important;
+  font-weight:700;
+  font-size:16px;
+  padding:16px 32px;
+  border-radius:8px;
+  text-decoration:none;
+  transition:background .2s
+}
+
+.lmt-template .btn-primary:hover,
+.lmt-template .btn-cta-primary:hover{
+  background:#0C7A28
+}
+
+.lmt-template .btn-gold,
+.lmt-template .btn-cta-gold{
+  display:inline-block;
+  background:#C8942E;
+  color:#0E1C2F!important;
+  font-weight:700;
+  font-size:16px;
+  padding:16px 32px;
+  border-radius:8px;
+  text-decoration:none;
+  transition:background .2s
+}
+
+.lmt-template .btn-gold:hover,
+.lmt-template .btn-cta-gold:hover{
+  background:#E8B84B
+}
+
+.lmt-template .btn-secondary,
+.lmt-template .btn-outline{
+  display:inline-block;
+  background:transparent;
+  color:#fff!important;
+  font-weight:700;
+  font-size:16px;
+  padding:16px 32px;
+  border-radius:8px;
+  border:2px solid rgba(255,255,255,.3);
+  text-decoration:none;
+  transition:border-color .2s
+}
+
+.lmt-template .btn-secondary:hover,
+.lmt-template .btn-outline:hover{
+  border-color:rgba(255,255,255,.7)
+}
+
+/* ================================================
+   SECTION 8 — MANIFESTO BREAK
+   Always include on every page
+   ================================================ */
+
+.lmt-template .manifesto-break{
+  background:#C8942E;
+  padding:48px 32px;
+  text-align:center
+}
+
+.lmt-template .manifesto-break p{
+  font-family:'Playfair Display',serif!important;
+  font-size:clamp(18px,2.2vw,26px)!important;
+  font-style:italic;
+  color:#0E1C2F!important;
+  max-width:800px;
+  margin:0 auto;
+  line-height:1.6
+}
+
+/* ================================================
+   SECTION 9 — CTA SECTION
+   Every page ends here — no exceptions
+   ================================================ */
+
+.lmt-template .cta-section{
+  background:linear-gradient(155deg,#080F1A 0%,#0E1C2F 60%,#162640 100%);
+  padding:100px 32px;
+  text-align:center
+}
+
+.lmt-template .cta-inner{
+  max-width:700px;
+  margin:0 auto
+}
+
+.lmt-template .cta-eyebrow{
+  font-size:11px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:#C8942E!important;
+  font-weight:700;
+  margin-bottom:16px
+}
+
+.lmt-template .cta-section h2{
+  font-family:'Playfair Display',serif!important;
+  font-size:clamp(28px,3.5vw,44px)!important;
+  font-weight:700!important;
+  color:#fff!important;
+  line-height:1.2;
+  margin-bottom:16px
+}
+
+.lmt-template .cta-section h2 em{
+  color:#C8942E!important;
+  font-style:normal
+}
+
+.lmt-template .cta-section p{
+  font-size:18px;
+  color:#A8B8CC!important;
+  margin-bottom:36px;
+  line-height:1.7
+}
+
+.lmt-template .cta-buttons{
+  display:flex;
+  gap:16px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-bottom:20px
+}
+
+.lmt-template .cta-trust{
+  font-size:13px;
+  color:#A8B8CC!important;
+  opacity:.8
+}
+
+/* ================================================
+   SECTION 10 — RESPONSIVE
+   ================================================ */
+
+@media(max-width:900px){
+  .lmt-template .hero-inner{
+    grid-template-columns:1fr;
+    gap:40px
+  }
+  .lmt-template .trust-bar{
+    gap:24px
+  }
+}
+
+@media(max-width:600px){
+  .lmt-template .hero{
+    padding:72px 20px 60px
+  }
+  .lmt-template .wrap{
+    padding:0 20px
+  }
+  .lmt-template .s-pad{
+    padding-top:56px;
+    padding-bottom:56px
+  }
+  .lmt-template .hero-btns{
+    flex-direction:column
+  }
+  .lmt-template .cta-buttons{
+    flex-direction:column;
+    align-items:center
+  }
+}
+
+</style>
+
+<!-- ================================================
+     PAGE CONTENT — Replace .lmt-template with .lmt-[pagename]
+     ================================================ -->
+
+<div class="lmt-template">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <div class="eyebrow">🟢 [Eyebrow Label]</div>
+        <h1>[Page Headline — <em>Gold Em Word</em> Here]</h1>
+        <p class="hero-sub">[Hero subheading — one to two sentences max. Speak to the audience directly.]</p>
+        <div class="hero-btns">
+          <a href="https://learnmoretechnologies.com/join-now/" class="btn-primary">I'm Not Done Yet →</a>
+          <a href="https://learnmoretechnologies.com/workforce/" class="btn-secondary">Work With Us →</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <!-- YouTube embed or hero card goes here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR — Always use approved stats exactly -->
+  <div class="trust-bar">
+    <div class="trust-item"><span>347+</span> Pioneers & Counting</div>
+    <div class="trust-item"><span>3X</span> Industry Completion Rate</div>
+    <div class="trust-item"><span>74%</span> Feel More Confident</div>
+    <div class="trust-item"><span>23</span> Organizations Invited Us In</div>
+  </div>
+
+  <!-- CONTENT SECTIONS — Add from Section Library as needed -->
+  <section class="s-pad">
+    <div class="wrap">
+      <div class="sec-eyebrow">Section Label</div>
+      <h2 class="sec-title">Section <em>Heading</em> Here</h2>
+      <p class="sec-sub">Section subheading goes here.</p>
+      <!-- Section content goes here -->
+    </div>
+  </section>
+
+  <!-- MANIFESTO BREAK — Always include -->
+  <div class="manifesto-break">
+    <p>"[Brian quote — pull from brand voice. Defiant. Mission-driven. Real.]"</p>
+  </div>
+
+  <!-- CTA SECTION — Every page ends here -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <div class="cta-eyebrow">[CTA Eyebrow Label]</div>
+      <h2>[CTA Headline — <em>Em Word</em> Here]</h2>
+      <p>[CTA supporting copy — one to two sentences. Clear next step.]</p>
+      <div class="cta-buttons">
+        <a href="https://learnmoretechnologies.com/join-now/" class="btn-primary">Start Free Today →</a>
+        <a href="https://learnmoretechnologies.com/workforce/" class="btn-gold">Work With Us →</a>
+      </div>
+      <p class="cta-trust">Free · No credit card · WIOA-eligible · MBE Certified Texas</p>
+    </div>
+  </section>
+
+</div><!-- end .lmt-template -->
+
+<!-- /wp:html -->
+<!-- /wp:html -->

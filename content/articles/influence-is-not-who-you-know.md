@@ -1,4 +1,6 @@
 # Influence Is Not Who You Know
+## You Don't Have Influence. You Have a Contact List.
+### Grandparents hold $76 trillion. The world says they're done. That's a lie.
 
 **By Professor Brian McKinney | Founder, Learn More Technologies**
 
@@ -92,7 +94,7 @@ We don't scale through sales. We scale through service.
 
 ---
 
-## What Funders Want vs. What We Want
+## What Funders Want vs What We Want
 
 Funders are looking for returns. Investors want metrics. Boards want numbers that justify their budgets and impress their stakeholders.
 
@@ -151,6 +153,10 @@ We built a movement instead.
 
 The people who built the structure deserve the tools to keep building.
 
+They funded the down payment. They covered the tuition. They bailed out the family when the bottom fell out. They hold $76 trillion in wealth and they spend $238 billion a year on the next generation.
+
+So don't tell them they're done. And whatever you do — don't piss off the grandparents.
+
 Teaching them AI isn't charity. It's respect.
 
 And if nobody else is going to do it, we will.
@@ -166,4 +172,4 @@ And if nobody else is going to do it, we will.
 
 ---
 
-#AGENTIC50 #50PlusTechBridge #YoureNotDoneYet #AIForEveryone #DigitalInclusion #WorkforceDevelopment #EachOneTeachOne
+#50PlusTechBridge #AIForEveryone #YoureNotDoneYet #DigitalInclusion #WorkforceDevelopment

@@ -1,0 +1,148 @@
+{
+  "_comment": "Influence Is Not Who You Know — exact copy of 850B Part 1 config structure",
+  "_method": "Lesson pipeline: navy bg + clips behind Brian (partial green keyed) + chrome + white text",
+  "format": "landscape",
+  "input_video": "C:/Users/USER/Desktop/LMT/INFLUENCE/Influence.mp4",
+  "output_video": "C:/Users/USER/Desktop/LMT/INFLUENCE/FINISHED/INFLUENCE-FINISHED.mp4",
+  "bg_image": "C:/Users/USER/Desktop/LMT/video-builder/layers/base/navy-1920x1080.png",
+  "chrome_image": "C:/Users/USER/Desktop/LMT/video-builder/layers/chrome/header-footer-1920x1080.png",
+  "show_header": true,
+  "show_lower_third": true,
+  "brian_pip": {
+    "width": 1920,
+    "height": 1080,
+    "margin": 0,
+    "border": 0,
+    "chromakey": true,
+    "show_start": 0,
+    "show_end": 345
+  },
+  "brian_position": {
+    "x": 0,
+    "y": 0
+  },
+  "clips": [],
+  "slides": [
+    {
+      "start": 0, "end": 15,
+      "x": 80, "y": 300, "font_size": 84, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.8,
+      "bullets": ["Influence Is Not", "Who You Know"]
+    },
+    {
+      "start": 15, "end": 30,
+      "x": 80, "y": 300, "font_size": 70, "color": "#C8942E",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": ["You Don't Have Influence.", "You Have a Contact List."]
+    },
+    {
+      "start": 30, "end": 55,
+      "x": 80, "y": 280, "font_size": 56, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": ["Influence is not the number of", "people you connect with.", "", "It's the number of people you help."]
+    },
+    {
+      "start": 55, "end": 70,
+      "x": 80, "y": 300, "font_size": 84, "color": "#C8942E",
+      "no_bullet": true, "center": false, "fade": 0.8,
+      "bullets": ["The People Who Built", "the Structure"]
+    },
+    {
+      "start": 70, "end": 100,
+      "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": ["They built it.", "They paid for it.", "They sacrificed for it."]
+    },
+    {
+      "start": 100, "end": 120,
+      "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": ["Too old to learn.", "Too slow to keep up.", "Too expensive to retrain."]
+    },
+    {
+      "start": 120, "end": 128,
+      "x": 80, "y": 350, "font_size": 96, "color": "#C8942E",
+      "no_bullet": true, "center": false, "fade": 0.0,
+      "bullets": ["THAT'S A LIE."]
+    },
+    {
+      "start": 128, "end": 145,
+      "x": 80, "y": 300, "font_size": 84, "color": "#C8942E",
+      "no_bullet": true, "center": false, "fade": 0.8,
+      "bullets": ["Nobody Was Coming"]
+    },
+    {
+      "start": 145, "end": 170,
+      "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": ["Billions allocated every year.", "", "Most of it stuck in", "bureaucratic traffic jams."]
+    },
+    {
+      "start": 170, "end": 190,
+      "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": ["Nobody came.", "", "We built 50+TechBridge ourselves."]
+    },
+    {
+      "start": 190, "end": 205,
+      "x": 80, "y": 300, "font_size": 84, "color": "#C8942E",
+      "no_bullet": true, "center": false, "fade": 0.8,
+      "bullets": ["Boots on the Ground"]
+    },
+    {
+      "start": 205, "end": 225,
+      "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": ["22 million adults underserved.", "", "That's not a market gap.", "That's an injustice."]
+    },
+    {
+      "start": 225, "end": 245,
+      "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": ["3X industry completion rate.", "", "It's because we show up."]
+    },
+    {
+      "start": 245, "end": 260,
+      "x": 80, "y": 300, "font_size": 84, "color": "#C8942E",
+      "no_bullet": true, "center": false, "fade": 0.8,
+      "bullets": ["Each One Teach One"]
+    },
+    {
+      "start": 260, "end": 280,
+      "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": ["50,000 Pioneers.", "Not customers. Pioneers.", "", "We scale through service."]
+    },
+    {
+      "start": 280, "end": 305,
+      "x": 80, "y": 280, "font_size": 70, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 0.6,
+      "bullets": ["She was afraid to open a laptop.", "Now she runs her business with AI."]
+    },
+    {
+      "start": 305, "end": 320,
+      "x": 80, "y": 300, "font_size": 84, "color": "#C8942E",
+      "no_bullet": true, "center": false, "fade": 0.8,
+      "bullets": ["They Told Us to Wait"]
+    },
+    {
+      "start": 320, "end": 335,
+      "x": 80, "y": 280, "font_size": 70, "color": "#C8942E",
+      "no_bullet": true, "center": false, "fade": 0.0,
+      "bullets": ["$76 Trillion. $238 Billion a Year.", "", "Don't piss off the grandparents."]
+    },
+    {
+      "start": 335, "end": 345,
+      "x": 80, "y": 300, "font_size": 84, "color": "#FFFFFF",
+      "no_bullet": true, "center": false, "fade": 1.0,
+      "bullets": ["You're Not Done Yet.", "", "learnmoretechnologies.com"]
+    }
+  ],
+  "youtube": {
+    "title": "Influence Is Not Who You Know — It's Who You Help | Professor Brian McKinney",
+    "description": "You Don't Have Influence. You Have a Contact List.",
+    "thumbnail_time": 125,
+    "hashtags": "#AGENTIC50 #50PlusTechBridge #YoureNotDoneYet",
+    "tags": "influence, adults 50+, AI training, digital skills, workforce development, ageism, grandparents"
+  }
+}

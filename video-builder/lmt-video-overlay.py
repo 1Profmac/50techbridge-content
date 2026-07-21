@@ -355,7 +355,7 @@ def build_video(config):
 
     clips = config.get("clips", [])
 
-    if clips:
+    if clips or config.get("brian_pip"):
         # --- FILTER_COMPLEX MODE ---
         print(f"B-roll clips: {len(clips)}")
         for c in clips:
@@ -511,7 +511,7 @@ def build_video(config):
             # Brian chromakey + scale
             chromakey_filter = ""
             if pip_chromakey:
-                chromakey_filter = "chromakey=color=0x00FF00:similarity=0.30:blend=0.08,"
+                chromakey_filter = "chromakey=color=0x00FF00:similarity=0.40:blend=0.05,"
             brian_scale_filter = ""
             if pip_w != out_w or pip_h != out_h:
                 brian_scale_filter = f"scale={pip_w}:{pip_h},"
@@ -559,7 +559,10 @@ def build_video(config):
             # Chrome on top
             if has_chrome:
                 fc_parts.append(
-                    f"[{prev}][{chrome_idx}:v]overlay=0:0:eof_action=pass:format=auto[vchrome]"
+                    f"[{chrome_idx}:v]format=rgba,scale={out_w}:{out_h}[chrome_scaled]"
+                )
+                fc_parts.append(
+                    f"[{prev}][chrome_scaled]overlay=0:0:eof_action=pass[vchrome]"
                 )
                 prev = "vchrome"
 
@@ -591,7 +594,7 @@ def build_video(config):
             "-map", audio_map,
             "-c:v", "h264_nvenc",
             "-preset", "p4",
-            "-b:v", "5M",
+            "-b:v", "8M",
             "-c:a", "aac",
             "-b:a", "128k",
             "-t", str(duration),
@@ -659,7 +662,7 @@ def build_video(config):
                 "-map", "0:a",
                 "-c:v", "h264_nvenc",
                 "-preset", "p4",
-                "-b:v", "5M",
+                "-b:v", "8M",
                 "-c:a", "aac",
                 "-b:a", "128k",
                 "-t", "60",
@@ -672,7 +675,7 @@ def build_video(config):
                 "-vf", vf,
                 "-c:v", "h264_nvenc",
                 "-preset", "p4",
-                "-b:v", "5M",
+                "-b:v", "8M",
                 "-c:a", "aac",
                 "-b:a", "128k",
                 output_video,
@@ -942,7 +945,7 @@ def auto_resize(source_video, output_dir):
         cmd = [
             FFMPEG, "-y", "-i", source_video,
             "-vf", "scale=1080:-2,pad=1080:1920:0:(oh-ih)/2:color=0x0E1C2F",
-            "-c:v", "h264_nvenc", "-preset", "fast", "-b:v", "5M",
+            "-c:v", "h264_nvenc", "-preset", "fast", "-b:v", "8M",
             "-c:a", "aac", "-b:a", "128k", vert_path
         ]
         result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
@@ -956,7 +959,7 @@ def auto_resize(source_video, output_dir):
         cmd = [
             FFMPEG, "-y", "-i", source_video,
             "-vf", "scale=1080:-2,pad=1080:1080:0:(oh-ih)/2:color=0x0E1C2F",
-            "-c:v", "h264_nvenc", "-preset", "fast", "-b:v", "5M",
+            "-c:v", "h264_nvenc", "-preset", "fast", "-b:v", "8M",
             "-c:a", "aac", "-b:a", "128k", sq_path
         ]
         result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
@@ -975,7 +978,7 @@ def auto_resize(source_video, output_dir):
         cmd = [
             FFMPEG, "-y", "-i", source_video,
             "-vf", f"scale=-1:1080,pad=1920:1080:(ow-iw)/2:0:color=0x0E1C2F",
-            "-c:v", "h264_nvenc", "-preset", "fast", "-b:v", "5M",
+            "-c:v", "h264_nvenc", "-preset", "fast", "-b:v", "8M",
             "-c:a", "aac", "-b:a", "128k", land_path
         ]
         result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
@@ -989,7 +992,7 @@ def auto_resize(source_video, output_dir):
         cmd = [
             FFMPEG, "-y", "-i", source_video,
             "-vf", "crop=iw:iw:0:ih/2-iw/2,scale=1080:1080",
-            "-c:v", "h264_nvenc", "-preset", "fast", "-b:v", "5M",
+            "-c:v", "h264_nvenc", "-preset", "fast", "-b:v", "8M",
             "-c:a", "aac", "-b:a", "128k", sq_path
         ]
         result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")

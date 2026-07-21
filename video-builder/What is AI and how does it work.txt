@@ -1,0 +1,160 @@
+Love this concept — it's a brilliant way to make AI tangible for adults 50+. The morph metaphor lands the abstract idea ("it's like talking to a person, but it's software") in one image.
+
+Quick reality check on the tools, then the script:
+
+**Canva and Giphy can't do a true morph.** A real morph (face dissolving into device, features melting between forms) requires After Effects, Runway, or similar. What you *can* do in Canva:
+
+- **Cross-dissolve transition** between a device shot and a person shot (looks like a gentle fade, not a true morph)
+- **Cut on action** — device "speaks," cut to person speaking the same line, cut back to device
+- **Canva's AI video features** (Magic Animate, Text-to-Video) can generate short clips but morphing between two specific subjects isn't reliable yet
+
+**Better cheat for this concept:** Use **Runway ML** (free tier available) or **Kling AI** for the actual morph shots — 2-3 short clips, then assemble in Canva. Total cost: free or ~$15.
+
+Now — the script. Designed so the morphs happen at natural conversational beats, and so it works even if your "morph" ends up being a cross-dissolve:
+
+---
+
+# **"What Is AI, Really?" — 2:30**
+
+*A 50+TechBridge explainer*
+
+---
+
+**[0:00–0:08] OPEN — KITCHEN, MORNING**
+
+*Wide shot. GRANDPA, 70s, in a cozy kitchen. Coffee mug in hand. A small smart speaker sits on the counter.*
+
+**GRANDPA:** *(to camera, warm)*
+"My grandkids told me I should try talking to this thing. So… here we go."
+
+---
+
+**[0:08–0:20] FIRST QUESTION**
+
+*Grandpa leans toward the device.*
+
+**GRANDPA:** "Hey — what's the weather today?"
+
+**DEVICE VOICE:** *(friendly)*
+"Good morning, Frank. It's 68 degrees and sunny in Austin. A great day for that walk you mentioned yesterday."
+
+*Grandpa raises an eyebrow, intrigued.*
+
+**GRANDPA:** *(half to himself)*
+"Huh. It remembered."
+
+---
+
+**[0:20–0:35] THE FIRST MORPH — DEVICE → PERSON**
+
+*Grandpa asks a bigger question.*
+
+**GRANDPA:** "Can I ask you something else? My wife passed two years ago. Some mornings are hard. What do people do?"
+
+*[MORPH CUE — device begins to dissolve/cross-fade into a kind-faced PERSON sitting across the counter, wearing an apron, calm presence.]*
+
+**PERSON:** *(gently)*
+"I'm sorry, Frank. A lot of people find it helps to keep a small morning ritual — coffee, a short walk, a phone call to someone who knew her. Would you like me to remind you to call your daughter today?"
+
+**GRANDPA:** *(quiet)*
+"…Yeah. I would."
+
+---
+
+**[0:35–0:50] BRIAN VOICEOVER — THE EXPLANATION**
+
+*[CUT TO BRIAN, or text-on-screen with B-roll of the kitchen]*
+
+**BRIAN (VO):**
+"That's AI. It's not a person. But it's not just a machine either. 
+It's software that listens, remembers, and responds — 
+trained on millions of human conversations 
+so it can sound like one."
+
+---
+
+**[0:50–1:10] THE SECOND MORPH — PERSON → DEVICE**
+
+*[Back in the kitchen. The PERSON across the counter slowly dissolves back into the smart speaker. Grandpa watches.]*
+
+**GRANDPA:** *(to camera)*
+"So it's not really a person."
+
+**BRIAN (VO):**
+"No. But it can do a lot of what a person does — 
+answer questions, set reminders, help you write a letter, 
+even read your email out loud."
+
+---
+
+**[1:10–1:30] WHAT IT IS, IN PLAIN TERMS**
+
+*[Text on screen, simple animations]*
+
+**BRIAN (VO):**
+"AI is a tool. Like a calculator was for math. 
+Or a search engine was for information. 
+The difference? This tool can have a conversation."
+
+*[Show three icons appear: 🗣️ "It listens" → 🧠 "It thinks" → 💬 "It answers"]*
+
+---
+
+**[1:30–1:50] WHY IT MATTERS FOR YOU**
+
+*[Back to GRANDPA, now confidently asking the device]*
+
+**GRANDPA:** "Read me the news. Just the headlines."
+
+**DEVICE VOICE:** "Sure, Frank. Here are today's top three…"
+
+**BRIAN (VO):**
+"You don't need to understand how it works 
+any more than you needed to understand how a phone worked 
+to make a call. 
+You just need to know it's safe to try."
+
+---
+
+**[1:50–2:15] THE INVITATION**
+
+*[Brian to camera, or warm text on screen]*
+
+**BRIAN:**
+"At 50+TechBridge, we sit down with people 
+at kitchen tables, senior centers, and libraries — 
+and we show them this. 
+Not the hype. Not the fear. 
+Just what it is, and how to use it."
+
+---
+
+**[2:15–2:30] CLOSE**
+
+*[Grandpa, smiling at the device]*
+
+**GRANDPA:** "Thanks. Same time tomorrow?"
+
+**DEVICE VOICE:** "Anytime, Frank."
+
+*[End card]*
+**50+TechBridge**
+**Free digital skills lessons**
+**learnmoretechnologies.com/join-now**
+**You're not done yet.**
+
+---
+
+**Production notes for Canva:**
+
+The two morph moments (0:20–0:35 and 0:50–1:10) are the only shots that need fancy work. Everything else is standard footage you can shoot on a phone and edit in Canva.
+
+For the morphs, your easiest path:
+1. Shoot the device shot and the person shot from the **same angle, same distance, same lighting**
+2. In Canva, place them on adjacent timeline clips
+3. Apply the **Dissolve** or **Liquid** transition (3-4 seconds long)
+4. The slow dissolve *reads* as a morph to most viewers — the brain fills in the rest
+
+If you want a true morph for those two moments, generate them in **Runway ML** (free tier) using the device image and person image as start/end frames, then drop the resulting clips into Canva.
+
+Want me to write shot-by-shot directions, or a simpler 60-second cut you could shoot this weekend?
