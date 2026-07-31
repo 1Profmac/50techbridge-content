@@ -5,18 +5,22 @@
 ---
 
 ## QUICK REFERENCE — FULL STACK
+## Last Updated: 2026-07-31
 
 | Step | Tool | Purpose | Cost |
 |---|---|---|---|
 | Script | Claude / ChatGPT | Write story, scenes, voiceover | Free–$20/mo |
 | Voice | ElevenLabs | Narration + character voices | $5–$22/mo |
-| Images | Leonardo AI | Scene generation + character consistency | $10–$24/mo |
-| Animation | Kling v3 Pro | Image-to-video, up to 15 sec clips | $10–$35/mo |
+| **Images + Video** | **Google Vids — Veo 3.1** | **Text prompt → video clip directly. Replaces Nano Banana + Kling** | **$16.80/mo (AI Expanded Access — ACTIVE)** |
+| **AI Avatar** | **Google Vids — AI Avatar** | **Write script → choose avatar → generate presenter video** | **Included in AI Expanded Access** |
+| **Character Images** | **Google Vids — Nano Banana Pro** | **Character consistency across scenes** | **Included in AI Expanded Access** |
+| Images (backup) | Leonardo AI | Scene generation + character consistency | $10–$24/mo |
+| Animation (backup) | Kling v3 Pro | Image-to-video, up to 15 sec clips | $10–$35/mo |
 | Video Alt | Runway Gen-4.5 | Cinematic image-to-video, camera control | $15–$35/mo |
 | Editing | CapCut | Assemble, captions, music sync | Free |
 | Music | Soundraw / Suno AI | Royalty-free background score | Free–$16/mo |
 | Thumbnails | Canva | Cover art, title cards | Free–$13/mo |
-| Avatar | HeyGen | AI presenter/talking head | $29–$89/mo |
+| Avatar (backup) | HeyGen | AI presenter/talking head | $29–$89/mo |
 | Render | lmt-video-overlay.py | LMT branded video assembly | Already built |
 
 ---
@@ -280,19 +284,42 @@ Base file: `video-builder/layers/base/navy-1920x1080.png`
 
 ## SECTION 10 — COSTS SUMMARY
 
+### YOUR ACTIVE STACK (Current — As of 2026-07-31)
+| Tool | What It Does | Cost |
+|---|---|---|
+| Claude API (CLI) | File building, research, scripts | ~$150/mo cap (set) |
+| claude.ai Pro | Desktop app, strategy, drafts | $21.32/mo |
+| **Google AI Expanded Access** | **Veo 3.1 + Nano Banana Pro + AI Avatar + Gemini** | **$16.80/mo (30% off x4 months)** |
+| ElevenLabs | Brian voiceover clone | $5–$22/mo |
+| CapCut | Video editing + captions | Free |
+| Suno AI | Background music | Free |
+| Canva | Thumbnails + title cards | Free |
+| **TOTAL** | | **~$193–$210/mo** |
+
+---
+
+### WHAT GOOGLE AI EXPANDED ACCESS REPLACES
+| Was Paying | Tool | Replaced By | Savings |
+|---|---|---|---|
+| $19.99/mo | Nano Banana Pro | Google Vids — Nano Banana Pro | $19.99 saved |
+| $25.99/mo | Kling Pro | Google Vids — Veo 3.1 | $25.99 saved |
+| $29–$89/mo | HeyGen (avatar) | Google Vids — AI Avatar | $29–$89 saved |
+| **$74–$134/mo** | **3 separate tools** | **$16.80/mo Google plan** | **$57–$117 saved** |
+
+---
+
 ### Starter Stack (Under $30/mo)
 | Tool | Cost |
 |---|---|
 | Claude | Already have it |
 | ElevenLabs Starter | $5/mo |
-| Leonardo AI Basic | $10/mo |
-| Kling Free Tier | $0 |
+| Google AI Expanded Access | $16.80/mo |
 | CapCut | $0 |
 | Suno AI Free | $0 |
 | Canva Free | $0 |
-| **TOTAL** | **~$15/mo** |
+| **TOTAL** | **~$22/mo** |
 
-### Full Production Stack
+### Full Production Stack (Before Google upgrade)
 | Tool | Cost |
 |---|---|
 | Claude | Already have it |
