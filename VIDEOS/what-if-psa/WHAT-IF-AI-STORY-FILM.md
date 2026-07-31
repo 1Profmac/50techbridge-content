@@ -16,6 +16,47 @@ Same message as the PSA. Delivered like a movie.
 
 ---
 
+## WHO IS MARCUS?
+
+Marcus is a **fictional composite character** — he represents every real LMT Pioneer.
+
+| Detail | Value |
+|---|---|
+| **Full name** | Marcus Johnson (fictional) |
+| **Age** | 58 years old |
+| **Race** | Black man |
+| **Look** | Salt-and-pepper short hair, strong dignified face, dark navy suit |
+| **Career** | 28 years at the same company — knows every system, process, and client |
+| **What happened** | Flagged by AI workforce optimization. Position eliminated. |
+| **His journey** | 47 job applications. 3 interviews. No callbacks. Finds LMT. Comes back. |
+| **Why him** | He represents the 347 real Pioneers who walked into LMT thinking technology passed them by |
+| **He is NOT** | A victim. He is resilient, dignified, experienced — the most battle-tested person in the room |
+
+Marcus is the emotional bridge between the viewer and LMT.
+When the audience sees Marcus succeed — they believe they can too.
+
+---
+
+## ACTIVE TOOL STACK (Updated 2026-07-31)
+
+| Step | Tool | Notes |
+|---|---|---|
+| Script | Claude CLI | Already written |
+| Video clips | **Google Vids — Veo 3.1** | Text prompt → 8-sec video clip directly |
+| Character images | **Google Vids — Nano Banana Pro** | Lock Marcus face across all scenes |
+| Brian presenter | **Google Vids — AI Avatar** | Script → avatar video, no camera needed |
+| Voiceover | ElevenLabs | Voice ID: `uAs0vN0GLLpz7FM7JVkz` |
+| Title cards | Canva | Opening data card + end cards |
+| Music | Suno AI | Machine world hum → human world piano |
+| Editing | CapCut | Assemble + captions + color |
+| Render | lmt-video-overlay.py | Final LMT branded output |
+
+**Nano Banana standalone (nanobanana.im) — REPLACED by Google Vids**
+**Kling — REPLACED by Veo 3.1**
+**HeyGen — REPLACED by Google Vids AI Avatar**
+
+---
+
 ## EPISODE STRUCTURE (3-Part Series)
 
 ### EPISODE 1 — "THE REPLACEMENT" (3–4 min)

@@ -1,29 +1,53 @@
-# "WHAT IF" — Nano Banana Character Prompts
+# "WHAT IF" — Character Prompts
 ## Learn More Technologies | 50+TechBridge
-## Tool: Nano Banana (nanobanana.im)
-## Created: 2026-07-29
+## Tool: Google Vids (Veo 3.1 + Nano Banana Pro) — ACTIVE
+## Previously: Nano Banana standalone (nanobanana.im) — REPLACED
+## Updated: 2026-07-31
 
 ---
 
-## HOW TO USE THESE PROMPTS
+## ⚠️ TOOL UPDATE — READ FIRST
 
-### Step 1 — Create Marcus (Do This Once)
-1. Go to nanobanana.im
-2. Find or generate one base photo of a Black man, 58 years old
-   - Salt-and-pepper short hair
-   - Strong dignified face
-   - Dark navy suit
-3. Upload it as your character reference
-4. This is Marcus — every prompt below will keep his face locked
+**Nano Banana standalone is NO LONGER the primary tool.**
+Google AI Expanded Access ($16.80/mo — ACTIVE on your account) includes:
+- **Nano Banana Pro** — character image generation
+- **Veo 3.1** — text prompt → video clip directly (replaces Kling too)
+- **AI Avatar** — Brian presenter videos
 
-### Step 2 — Use Each Prompt
-- Paste the plain English prompt into Nano Banana
-- It will keep Marcus's face identical in every scene
-- Download each image and save to correct folder
-- Then animate in Kling
+**Use Google Vids at vids.google.com for all production.**
 
-### Step 3 — Save Images
-Save all to: `VIDEOS/what-if-psa/B-Roll/nano-banana/`
+---
+
+## WHO IS MARCUS?
+
+Marcus Johnson is a **fictional character** representing every real LMT Pioneer.
+- Black man, 58 years old
+- Salt-and-pepper short hair, dignified bearing
+- Dark navy suit (Episodes 1 + 3) / Casual clothes (Episode 2)
+- 28 years of experience. Replaced by AI. Found LMT. Came back stronger.
+- He is NOT a victim — he is resilient, experienced, battle-tested.
+
+---
+
+## HOW TO USE THESE PROMPTS IN GOOGLE VIDS
+
+### For Video Clips (Veo 3.1)
+1. Go to vids.google.com
+2. Click **Veo 3.1**
+3. Paste the scene prompt below
+4. Generate 8-second clip
+5. Save to `VIDEOS/what-if-psa/B-Roll/animated/`
+
+### For Character Images (Nano Banana Pro)
+1. Go to gemini.google.com
+2. Use image generation with the character prompt
+3. Save reference image to `VIDEOS/what-if-psa/characters/`
+4. Use that image as reference in every scene prompt
+
+### Save Locations
+- Character reference: `VIDEOS/what-if-psa/characters/marcus-reference.png`
+- Scene images: `VIDEOS/what-if-psa/B-Roll/raw/`
+- Animated clips: `VIDEOS/what-if-psa/B-Roll/animated/`
 
 ---
 
