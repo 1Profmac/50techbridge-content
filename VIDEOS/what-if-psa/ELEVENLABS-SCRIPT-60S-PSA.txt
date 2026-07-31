@@ -1,0 +1,39 @@
+ELEVENLABS RENDER — "What If" PSA 60-Second Version
+Learn More Technologies | Brian McKinney Voice Clone
+Voice ID: uAs0vN0GLLpz7FM7JVkz
+Model: eleven_multilingual_v2
+Stability: 0.45 | Similarity: 0.75
+
+Save output to: Desktop/LMT/VIDEOS/what-if-psa/voiceover/psa-60s-voiceover.mp3
+
+---
+
+FULL VOICEOVER TEXT (paste into ElevenLabs):
+
+What if things were different.
+
+What if you weren't judged by the color of your hair, or the wrinkles on your skin. But by the depth of what you know. What you've built. What you've survived.
+
+What if the systems built to serve you were actually built with your eyes in mind. Not as an afterthought. From the start.
+
+What if technology wasn't developed by 25-year-olds, for 25-year-olds.
+
+What if companies used AI to train their 50-plus employees — instead of using it to replace them.
+
+We asked that question. Every version of it.
+
+And then — we stopped waiting for an answer.
+
+Three hundred and forty-seven people walked into our program thinking technology had passed them by. They were wrong.
+
+We are Learn More Technologies. And we are building the world that should have already existed.
+
+You are not done yet.
+
+---
+
+NOTES:
+- Pause 2 full seconds between "50-plus employees —" and "instead of using it"
+- "Three hundred and forty-seven" — say it slowly, with weight
+- Final line "You are not done yet." — barely above a whisper, drop volume slightly
+- Do NOT use "347" in the text — spell it out for correct pronunciation

@@ -1,0 +1,247 @@
+{
+  "_comment": "What If PSA — 60-Second Version | Futuristic Treatment (Apple 1984 aesthetic)",
+  "_status": "READY TO RENDER — fill in REPLACE fields first",
+  "_method": "PSA pipeline: navy bg + futuristic B-Roll clips + Brian on-camera final 15s + voiceover audio",
+  "_visual_ref": "Apple 1984 Ridley Scott — two-world system: cold machine blue → warm LMT navy/gold",
+  "_source_scripts": "marketing/drafts/what-if-psa-and-commercial.md + WHAT-IF-PSA-FUTURISTIC-TREATMENT.md",
+
+  "format": "landscape",
+
+  "_input_note": "Brian records 60s in HeyGen with FULL GREEN SCREEN. He only appears visually at 45s onward (the 'human world'). B-Roll fills 0-44s. Brian's audio NOT used — voiceover MP3 is the audio source.",
+  "input_video": "REPLACE — C:/Users/USER/Desktop/LMT/VIDEOS/what-if-psa/heygen-brian-psa-60s.mp4",
+  "audio_override": "REPLACE — C:/Users/USER/Desktop/LMT/VIDEOS/what-if-psa/voiceover/psa-60s-voiceover.mp3",
+  "output_video": "C:/Users/USER/Desktop/LMT/VIDEOS/what-if-psa/FINISHED/YOUTUBE/WHAT-IF-PSA-60S-FINISHED.mp4",
+
+  "show_header": false,
+  "show_lower_third": false,
+
+  "bg_image": "C:/Users/USER/Desktop/LMT/video-builder/layers/base/navy-1920x1080.png",
+  "chrome_image": null,
+
+  "brian_pip": {
+    "width": 1920,
+    "height": 1080,
+    "margin": 0,
+    "border": 0,
+    "chromakey": true,
+    "show_start": 45,
+    "show_end": 60
+  },
+  "brian_position": {"x": 0, "y": 0},
+
+  "clips": [
+    {
+      "_label": "CLIP 01 — The March | Cold open, corporate dystopia",
+      "file": "C:/Users/USER/Desktop/LMT/VIDEOS/what-if-psa/B-Roll/clip-01-the-march.mp4",
+      "start": 3,
+      "end": 15
+    },
+    {
+      "_label": "CLIP 02 — Algorithm Interview | The bias is procedural",
+      "file": "C:/Users/USER/Desktop/LMT/VIDEOS/what-if-psa/B-Roll/clip-02-algorithm-interview.mp4",
+      "start": 15,
+      "end": 28
+    },
+    {
+      "_label": "CLIP 03 — Kiosk Fail | The system she cannot navigate",
+      "file": "C:/Users/USER/Desktop/LMT/VIDEOS/what-if-psa/B-Roll/clip-03-kiosk-fail.mp4",
+      "start": 28,
+      "end": 38
+    },
+    {
+      "_label": "CLIP 04 — Boardroom Screen | The authority declares 25-40",
+      "file": "C:/Users/USER/Desktop/LMT/VIDEOS/what-if-psa/B-Roll/clip-04-boardroom-screen.mp4",
+      "start": 38,
+      "end": 50
+    },
+    {
+      "_label": "CLIP 05 — Optimization Dashboard | Headcount ticking down",
+      "file": "C:/Users/USER/Desktop/LMT/VIDEOS/what-if-psa/B-Roll/clip-05-headcount-reduction.mp4",
+      "start": 50,
+      "end": 62
+    },
+    {
+      "_label": "CLIP 06 — Three Workers | Tired of not being surprised",
+      "file": "C:/Users/USER/Desktop/LMT/VIDEOS/what-if-psa/B-Roll/clip-06-three-workers.mp4",
+      "start": 62,
+      "end": 72
+    },
+    {
+      "_label": "CLIP 07 — The Break | One warm light. The turn.",
+      "file": "C:/Users/USER/Desktop/LMT/VIDEOS/what-if-psa/B-Roll/clip-07-the-break.mp4",
+      "start": 72,
+      "end": 75
+    },
+    {
+      "_label": "CLIP 08 — The Real Smile | Community center, the human answer",
+      "file": "C:/Users/USER/Desktop/LMT/VIDEOS/what-if-psa/B-Roll/clip-08-real-smile.mp4",
+      "start": 75,
+      "end": 90
+    }
+  ],
+
+  "slides": [
+    {
+      "_label": "OPENING DATA CARD — Machine world text intro",
+      "start": 0,
+      "end": 3,
+      "x": 960,
+      "y": 400,
+      "font_size": 42,
+      "color": "#FFFFFF",
+      "no_bullet": true,
+      "center": true,
+      "fade": 0.3,
+      "bullets": [
+        "PROCESSING...",
+        "",
+        "WORKERS AGE 50+: FLAGGED FOR REVIEW"
+      ]
+    },
+    {
+      "_label": "SLIDE 1 — What if things were different",
+      "start": 3,
+      "end": 13,
+      "x": 80,
+      "y": 280,
+      "font_size": 70,
+      "color": "#FFFFFF",
+      "no_bullet": true,
+      "center": false,
+      "fade": 0.5,
+      "bullets": [
+        "What if things",
+        "were different."
+      ]
+    },
+    {
+      "_label": "SLIDE 2 — Not your hair, your depth",
+      "start": 16,
+      "end": 27,
+      "x": 80,
+      "y": 280,
+      "font_size": 60,
+      "color": "#FFFFFF",
+      "no_bullet": true,
+      "center": false,
+      "fade": 0.5,
+      "bullets": [
+        "What if you weren't",
+        "judged by the color",
+        "of your hair."
+      ]
+    },
+    {
+      "_label": "SLIDE 3 — Built with your eyes in mind",
+      "start": 29,
+      "end": 37,
+      "x": 80,
+      "y": 320,
+      "font_size": 60,
+      "color": "#FFFFFF",
+      "no_bullet": true,
+      "center": false,
+      "fade": 0.5,
+      "bullets": [
+        "What if technology",
+        "was built for you, too."
+      ]
+    },
+    {
+      "_label": "SLIDE 4 — 25 for 25",
+      "start": 39,
+      "end": 49,
+      "x": 80,
+      "y": 280,
+      "font_size": 60,
+      "color": "#FFFFFF",
+      "no_bullet": true,
+      "center": false,
+      "fade": 0.5,
+      "bullets": [
+        "What if technology",
+        "wasn't built by 25-year-olds",
+        "for 25-year-olds."
+      ]
+    },
+    {
+      "_label": "SLIDE 5 — Train them, don't replace them (KEY SLIDE)",
+      "start": 51,
+      "end": 70,
+      "x": 80,
+      "y": 280,
+      "font_size": 70,
+      "color": "#FFFFFF",
+      "no_bullet": true,
+      "center": false,
+      "fade": 0.8,
+      "bullets": [
+        "What if companies",
+        "used AI to train",
+        "their 50+ employees —",
+        "",
+        "instead of using it",
+        "to replace them."
+      ]
+    },
+    {
+      "_label": "SLIDE 6 — The turn: We stopped waiting",
+      "start": 76,
+      "end": 87,
+      "x": 80,
+      "y": 340,
+      "font_size": 60,
+      "color": "#C8942E",
+      "no_bullet": true,
+      "center": false,
+      "fade": 1.0,
+      "bullets": [
+        "We stopped waiting",
+        "for the world to catch up."
+      ]
+    },
+    {
+      "_label": "SLIDE 7 — 347 Pioneers stat (Brian on camera now)",
+      "start": 91,
+      "end": 103,
+      "x": 80,
+      "y": 280,
+      "font_size": 70,
+      "color": "#FFFFFF",
+      "no_bullet": true,
+      "center": false,
+      "fade": 0.5,
+      "bullets": [
+        "347 Digital Pioneers.",
+        "3X the completion rate.",
+        "74percent more confident."
+      ]
+    },
+    {
+      "_label": "FINAL CARD — Logo + CTA (navy bg, gold text)",
+      "start": 107,
+      "end": 120,
+      "x": 960,
+      "y": 380,
+      "font_size": 52,
+      "color": "#C8942E",
+      "no_bullet": true,
+      "center": true,
+      "fade": 1.2,
+      "bullets": [
+        "Learn More Technologies",
+        "",
+        "You are not done yet.",
+        "",
+        "learnmoretechnologies.com"
+      ]
+    }
+  ],
+
+  "youtube": {
+    "title": "What If Things Were Different? | Learn More Technologies PSA",
+    "description": "What if companies used AI to train their 50+ employees — instead of using it to replace them?\n\nThis is the question we ask every day at Learn More Technologies. And instead of waiting for an answer, we built one.\n\n347 Digital Pioneers. 3X the industry completion rate. 74% report measurable confidence gains.\n\nLearn More: learnmoretechnologies.com\nDeploy AI Training at Your Organization: learnmoretechnologies.com/workforce\n\nBrian McKinney | Founder, Learn More Technologies | MBE Certified\n\n#WorkforceDevelopment #Ageism #50PlusTechBridge #DigitalSkills #FutureOfWork #WhatIf #LearnMoreTechnologies",
+    "tags": "ageism, workforce development, adults over 50, AI training, 50 plus tech, older workers, reskilling, upskilling, train them dont replace them, experienced workers, 50+TechBridge, LearnMoreTechnologies, Brian McKinney, PSA, brand film",
+    "thumbnail_time": 75
+  }
+}
