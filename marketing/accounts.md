@@ -80,6 +80,20 @@
 | Buffer | Originally planned for scheduling | **DROPPED — never connected. Metricool replaces it.** |
 | Brand24 | Mention monitoring | Deferred |
 
+### Metricool Free Plan — Status & Max Strategy (Aug 2, 2026)
+| Platform | Connected | Followers | Action Needed |
+|----------|-----------|-----------|---------------|
+| Facebook | ✅ | 855 | Post 3-4x/week — currently 1 post/30 days |
+| YouTube | ✅ | — | Schedule via Metricool |
+| LinkedIn | ⚠️ | — | Reconnect — token expired |
+| Instagram | ❌ | — | Connect now via + icon |
+| TikTok | ❌ | — | Skip — not our audience |
+
+- Track hashtags: `#50PlusTechBridge` and `#WorkforceMath`
+- Add 2-3 competitors under Competitors tab
+- Check best time to post per platform before scheduling
+- **Do NOT upgrade until posting 20+ pieces/month**
+
 ### Platform Posting Rules
 | Platform | Method | Tool |
 |----------|--------|------|

@@ -205,6 +205,32 @@ Full calendar: [Events Calendar](marketing/events/EVENTS-CALENDAR-2026.md)
 
 ---
 
+## METRICOOL — FREE PLAN MAX STRATEGY (August 2026)
+
+**Status as of Aug 2, 2026:** Facebook connected (855 followers), YouTube connected, LinkedIn token needs refresh, Instagram NOT connected.
+
+### Immediate Actions
+- [ ] Connect Instagram to Metricool (`+` icon on left nav)
+- [ ] Reconnect LinkedIn (token expired — yellow warning icon)
+- [ ] Schedule 3-4 FB posts/week minimum — currently 1 post/30 days (flat reach)
+
+### How to Use Free Plan
+| Feature | Action |
+|---|---|
+| **Scheduler** | Calendar icon — batch schedule FB + IG + YouTube weekly |
+| **Best time to post** | Check per platform under analytics before scheduling |
+| **Hashtag Tracker** | Track `#50PlusTechBridge` and `#WorkforceMath` |
+| **Competitors** | Add 2-3 competitor pages under the Competitors tab |
+
+### Free Plan Limits
+- 30-day analytics history only (no upgrade needed yet)
+- 50 scheduled posts/month — won't hit this until posting daily
+- Reports have watermark on free plan
+
+**Do NOT upgrade until posting 20+ pieces/month consistently across all platforms.**
+
+---
+
 ## CONTENT & PUBLISHING STACK — August 2026
 
 | Task | Tool | Notes |
