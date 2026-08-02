@@ -22,6 +22,52 @@
 
 ---
 
+## AGEISM & AI DOWNSIZING — ECONOMIC LOSS STATS
+*Researched August 2026 — Use for PSA, articles, LinkedIn, grants*
+
+### GDP & Macro Loss
+| Stat | Source | Use In |
+|------|--------|--------|
+| **$850 billion** lost annually in U.S. GDP from age discrimination | AARP/Economist Intelligence Unit (2020) | PSA, LinkedIn, every hook |
+| **$3.9 trillion** in additional lost GDP projected by 2050 if age bias continues | AARP/EIU (2020) | Next article, grants |
+| Eliminating age bias could boost GDP by **4.1% immediately**, rising to **6.0% by 2050** | AARP/EIU (2020) | Employer pitch |
+| 50+ adults generated **$12.5 trillion (43% of U.S. GDP)** in 2024 | AARP Longevity Economy Outlook 2026 | LinkedIn, grants |
+| 50+ adults control **60% of global spending power** — **$96 trillion opportunity by 2050** | AARP Longevity Economy | Big picture hook |
+
+### AI/Automation Displacement of 50+ Workers
+| Stat | Source | Use In |
+|------|--------|--------|
+| 50+ workers among **most vulnerable to AI displacement** alongside workers under 30 | Boston College CRR (2025) | PSA, LinkedIn |
+| Programmers 50+: job exits up **25%** since 2014. Accountants 50+: up **22%** | BLS via Boston College CRR | Article |
+| AI projected to displace **1.5 million office support jobs** by 2032 — high 50+ concentration | BLS (2024) | Grants, employer pitch |
+| **300 million full-time jobs globally** at risk from AI automation | IMF (2024) | Big picture hook |
+| **92 million jobs displaced** globally by 2030 | WEF Future of Jobs Report 2025 | Article |
+
+### Lost Wages & Retirement Impact
+| Stat | Source | Use In |
+|------|--------|--------|
+| Only **1 in 10** low-income older households had retirement savings in 2019, down from 1 in 5 in 2007 | GAO-23-105342 | Grants, emotional hook |
+| EEOC age discrimination charges: **18.3% of all discrimination filings** (2024) | EEOC (2024) | Policy pitch |
+
+### Employer Cost of Pushing Experienced Workers Out
+| Stat | Source | Use In |
+|------|--------|--------|
+| Replacing a senior employee costs **150–213% of their annual salary** | SHRM/PeopleKeep | Employer pitch |
+| Fortune 500 companies lose **$31.5 billion/year** from failed knowledge transfer | IDC Research | LinkedIn B2B |
+| Average U.S. business loses **$47 million annually** from inefficient knowledge sharing | IDC/Learn to Win | Employer pitch |
+| **80% of organizational knowledge** is tacit — walks out with the experienced worker | IDC Research | PSA hook |
+| New hires take **up to 2 years** to reach equivalent productivity | SHRM | Employer pitch |
+
+### Sources
+- AARP/EIU: press.aarp.org/2020-1-30-Age-Bias-Costs-800-Billion
+- AARP Longevity Economy: aarp.org/pri/topics/work-finances-retirement/economics-aging/longevity-economy-outlook
+- Boston College CRR: crr.bc.edu/are-the-careers-of-older-workers-being-cut-short-by-ai
+- BLS AI Projections: bls.gov/opub/mlr/2025/article/incorporating-ai-impacts-in-bls-employment-projections.htm
+- GAO Report: gao.gov/products/gao-23-105342
+- IMF (2024) / WEF Future of Jobs 2025
+
+---
+
 ## THE YOUTUBE LANDSCAPE
 
 - **Lou Reyes / Over50TV + Side Hustle Rules** — ~25K subs, 1M+ views — likely the channel Brian referenced
