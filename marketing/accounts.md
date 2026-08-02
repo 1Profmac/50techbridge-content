@@ -80,13 +80,13 @@
 | Buffer | Originally planned for scheduling | **DROPPED — never connected. Metricool replaces it.** |
 | Brand24 | Mention monitoring | Deferred |
 
-### Metricool Free Plan — Status & Max Strategy (Aug 2, 2026)
+### Metricool Free Plan — Status & Max Strategy (Aug 1, 2026)
 | Platform | Connected | Followers | Action Needed |
 |----------|-----------|-----------|---------------|
 | Facebook | ✅ | 855 | Post 3-4x/week — currently 1 post/30 days |
 | YouTube | ✅ | — | Schedule via Metricool |
-| LinkedIn | ⚠️ | — | Reconnect — token expired |
-| Instagram | ❌ | — | Connect now via + icon |
+| Instagram | ✅ | 10 | Connected via Facebook page link — 2026-08-01 |
+| LinkedIn | ❌ | — | Requires $20/mo paid plan — post natively only |
 | TikTok | ❌ | — | Skip — not our audience |
 
 - Track hashtags: `#50PlusTechBridge` and `#WorkforceMath`
