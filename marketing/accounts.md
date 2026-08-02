@@ -65,13 +65,29 @@
 
 ---
 
-## Planned Tools
+## Publishing & Content Stack — Consolidated August 2026
 
 | Tool | Purpose | Status |
 |------|---------|--------|
-| Metricool | Analytics — connect all 5 platforms | Instagram + YouTube + LinkedIn connected |
-| Buffer | Scheduling (SAGE agent) | NOT CONNECTED |
-| Brand24 | Mention monitoring | NOT CONNECTED |
+| **Claude CLI** | Write all content — articles, captions, scripts, emails | Active |
+| **Git (LMT repo)** | Version control for all content and strategy docs | Active |
+| **tools/wp-publish.py** | Push markdown articles to WordPress via REST API | Active — creds in tools/.env |
+| **Metricool** | Schedule FB + IG + YouTube. Analytics all platforms. | Connected. **Activate scheduling — primary tool going forward.** |
+| **LinkedIn (native)** | Post video + articles directly — algorithm favors native uploads | Manual only — do NOT route through Metricool |
+| **Canva** | Slide design, video assembly, graphics | Active |
+| **ElevenLabs** | Voiceover generation (Voice ID: uAs0vN0GLLpz7FM7JVkz) | Active |
+| **ffmpeg** | Video assembly, audio mixing, caption burn-in | Active via Claude CLI |
+| Buffer | Originally planned for scheduling | **DROPPED — never connected. Metricool replaces it.** |
+| Brand24 | Mention monitoring | Deferred |
+
+### Platform Posting Rules
+| Platform | Method | Tool |
+|----------|--------|------|
+| LinkedIn video + articles | Native upload only | Manual |
+| Facebook | Schedule ahead | Metricool |
+| Instagram | Schedule ahead | Metricool |
+| YouTube | Schedule ahead | Metricool |
+| WordPress / Blog | CLI push | tools/wp-publish.py |
 
 ---
 

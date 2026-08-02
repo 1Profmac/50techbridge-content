@@ -205,6 +205,22 @@ Full calendar: [Events Calendar](marketing/events/EVENTS-CALENDAR-2026.md)
 
 ---
 
+## CONTENT & PUBLISHING STACK — August 2026
+
+| Task | Tool | Notes |
+|------|------|-------|
+| Write content | Claude CLI → Git | All articles, scripts, captions, emails |
+| Publish to WordPress | `tools/wp-publish.py` | Creds in tools/.env |
+| Post LinkedIn | Native (manual) | Algorithm favors native — never schedule LinkedIn |
+| Schedule FB + IG + YouTube | Metricool | Already connected — activate scheduling |
+| Video production | Canva + ffmpeg via CLI | Slides in Canva, assembly + audio via ffmpeg |
+| Voiceover | ElevenLabs | Voice ID: uAs0vN0GLLpz7FM7JVkz |
+| Analytics | Metricool | All platforms |
+
+**Buffer: DROPPED.** Never connected. Metricool is the one tool.
+
+---
+
 ## REFERENCE LINKS
 
 | Resource | Location |
