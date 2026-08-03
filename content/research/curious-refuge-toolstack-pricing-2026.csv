@@ -1,0 +1,13 @@
+Order,Tool,Category,Purpose,Monthly Price (Monthly Billing),Monthly Price (Annual Billing),Annual Price,Notes
+1,Midjourney,Image Generation,Character & scene stills / concept art / visual development,$10 (Basic) / $30 (Standard) / $60 (Pro) / $120 (Mega),$8 / $24 / $48 / $96,$96 / $288 / $576 / $1152,No free tier. Standard ($30/mo) is the working filmmaker plan. 15 GPU hrs/mo.
+2,Runway,Video Generation,Image-to-video / cinematic motion / fast editing,$15 (Standard) / $35 (Pro) / $95 (Max),$12 / $28 / $76,$144 / $336 / $912,1 sec of Gen-4.5 = 25 credits. Pro (2250 credits/mo) is minimum for real production.
+3,Luma AI (Dream Machine / Ray),Video Generation,Cinematic motion from stills / Ray 3 video,$30 (Plus) / $90 (Pro) / $300 (Ultra),$25 / $75 / $250,$300 / $900 / $3000,Credits do not roll over. Ray-2 API: $0.08/sec. Plus plan entry point for filmmakers.
+4,Sora 2 (OpenAI),Video Generation,Premium cinematic sequences / narrative flow,Bundled with ChatGPT Pro ($200/mo),Bundled with ChatGPT Pro ($200/mo),$2400,Web app discontinued April 2026. API access only until Sept 24 2026. $0.10/sec (720p) via API.
+5,ElevenLabs,Voice / Audio,Voiceover generation / voice cloning,$0 (Free) / $5 (Starter) / $22 (Creator) / $99 (Pro),$0 / $4.15 / $18.26 / $82.17,$0 / $49.80 / $219 / $986,Creator ($22/mo) covers most production needs. 121K credits/mo. Commercial rights included.
+6,Adobe After Effects,Post Production,Camera movements / upscaling / compositing,$34.49 (month-to-month),$22.99,$263.88,Single app plan. Annual commitment required for $22.99/mo rate.
+7,Adobe Premiere Pro,Post Production,Final edit / assembly / color,$34.49 (month-to-month),$22.99,$263.88,Single app plan. Often bundled with After Effects via Creative Cloud.
+8,Adobe Creative Cloud (All Apps),Post Production,Full Adobe suite (Premiere + After Effects + Photoshop + 20+ apps),$69.99,$54.99,$659.88,Best value if using multiple Adobe tools. Includes 1TB storage.
+9,Canva Pro,Design / Slides,Slide design / graphics / video assembly,$18.00,$12.00,$144.00,Free tier available but limited. Pro needed for brand kit and video features.
+10,Metricool (Free),Scheduling,Schedule FB + IG + YouTube. Analytics.,$0,$0,$0,Free plan: 20 posts/month. FB + IG + YT connected. LinkedIn requires paid plan ($20/mo).
+11,ffmpeg,Assembly,Video assembly / audio mixing / caption burn-in,$0,$0,$0,Free and open source. Command-line only. Used in LMT PSA production.
+12,Claude CLI,Scripting / Writing,Write scripts / captions / ffmpeg commands / voiceover copy,$20 (Pro),$20,$240,Claude Pro includes extended context and Claude Sonnet 4.6 access.
