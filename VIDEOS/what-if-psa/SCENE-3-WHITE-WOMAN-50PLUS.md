@@ -4,20 +4,20 @@
 
 ---
 
-## CHARACTER BRIEF — "DIANE"
+## CHARACTER BRIEF — "CAROL SMITH"
 
 | Field | Detail |
 |-------|--------|
-| Name (internal reference) | Diane |
-| Age | 54–58 |
+| Name | Carol Smith |
+| Age | 54 |
 | Race / Ethnicity | White / Caucasian |
-| Hair | Silver-streaked dark blonde, shoulder length, professional blowout — natural, not salon-stiff |
-| Eyes | Blue-grey |
-| Build | Medium, professional posture — not Hollywood thin. Real. |
-| Wardrobe | Charcoal or deep navy fitted blazer, white button-down underneath, small pearl or gold stud earrings. No bright colors. Professional. The kind of outfit you'd wear to a job you've been doing for 28 years. |
-| Expression anchor | Dignified readiness. She prepared. She knows her material. She is expecting the conversation to begin. It won't. |
-| Skin | Fair, natural skin — slight fine lines at eyes and mouth, not hidden |
-| Distinctive detail | She has a portfolio folio or padfolio on the table in front of her — she came prepared |
+| Hair | Silver-streaked dark chestnut brown, shoulder length, natural wave, side part — professional but not over-styled |
+| Eyes | Hazel-green |
+| Build | Medium build, straight posture — not Hollywood thin. Real. The body of someone who has worked 28 years and carries herself with authority. |
+| Wardrobe | Deep navy fitted blazer, ivory button-down underneath, small pearl stud earrings. Simple gold watch on left wrist. No bright colors. Professional. The outfit you wear to a job interview at 54 when you know you're the most qualified person in the room. |
+| Expression anchor | Composed readiness. She prepared. She knows her 28 years of experience cold. She is waiting for the conversation to begin. It will not begin the way she expects. |
+| Skin | Fair skin with natural fine lines at eyes and mouth — not hidden, not heavy. The face of someone who has earned her experience. |
+| Distinctive detail | Leather portfolio folio open on the table. Three questions written inside it that she never gets to ask. |
 
 ---
 
@@ -26,7 +26,7 @@
 
 ### Prompt 1 — Anchor Sheet (front, 3/4, side)
 ```
-Professional white woman, age 55, silver-streaked dark blonde shoulder-length hair natural blowout, blue-grey eyes, fair skin with natural fine lines, charcoal blazer white button-down, small gold stud earrings, professional posture, dignified expression, character reference sheet front view three-quarter view side view, white background, soft studio lighting, same outfit all angles, photorealistic, 8K --ar 3:2 --cw 100
+Professional white woman named Carol Smith, age 54, silver-streaked dark chestnut brown shoulder-length hair with natural wave side part, hazel-green eyes, fair skin with natural fine lines at eyes and mouth, deep navy fitted blazer ivory button-down, small pearl stud earrings, simple gold watch left wrist, straight professional posture, composed dignified expression, character reference sheet front view three-quarter view side view, white background, soft neutral studio lighting, same outfit all angles, photorealistic, 8K --ar 3:2 --cw 100
 ```
 
 ### Prompt 2 — Expression Pack (same character, varied expressions)
@@ -63,7 +63,7 @@ FLAG: DEMOGRAPHIC RISK — PROJECTED TENURE < 8 YEARS
 RECOMMENDATION: DEPRIORITIZE
 ```
 
-Diane sits across the table.
+Carol Smith sits across the table.
 
 She cannot see the screen behind her interviewer.
 
@@ -103,10 +103,10 @@ system running. Tense. Photorealistic. Near-future aesthetic, not sci-fi.
 *Use after generating Midjourney still. Upload still as start frame in Kling.*
 
 ### Setup
-- **Start frame:** Midjourney Prompt 3 output (Diane seated at table)
+- **Start frame:** Midjourney Prompt 3 output (Carol Smith seated at table)
 - **Duration:** 8–10 seconds
-- **Motion:** Slow camera push toward the wall screen + slight pull focus from Diane to screen
-- **Character ID:** Upload Diane anchor sheet
+- **Motion:** Slow camera push toward the wall screen + slight pull focus from Carol Smith to screen
+- **Character ID:** Upload Carol Smith anchor sheet
 
 ### Kling Prompt
 ```
@@ -120,7 +120,7 @@ Slow motion. No sudden movement. Cinematic.
 ```
 
 ### Camera note
-- Start: Medium shot on Diane — face fully readable, composed, ready
+- Start: Medium shot on Carol Smith — face fully readable, composed, ready
 - End: Focus shifted to screen — "FLAG: DEMOGRAPHIC RISK" sharp in background
 - Her face remains visible but soft — she doesn't know yet
 
@@ -128,7 +128,7 @@ Slow motion. No sudden movement. Cinematic.
 
 ## KLING AI PROMPT — SCENE 3B (Reaction shot — optional cutaway)
 
-*Optional 3-4 second insert: close-up of Diane's hands on the portfolio.*
+*Optional 3-4 second insert: close-up of Carol Smith's hands on the portfolio.*
 
 ```
 Extreme close-up of a professional white woman's hands, age 55, resting on a leather
@@ -142,14 +142,14 @@ waiting. 28 years of waiting has made her good at this. Slow motion. 3 seconds.
 ## HOW TO GENERATE — STEP BY STEP
 
 1. **Open Midjourney**
-   - Run Prompt 1 → pick best anchor sheet → save as `diane-anchor.png`
-   - Run Prompt 3 (scene still) using `--cref diane-anchor.png --cw 100` → save as `diane-scene3-still.png`
+   - Run Prompt 1 → pick best anchor sheet → save as `carol-smith-anchor.png`
+   - Run Prompt 3 (scene still) using `--cref carol-smith-anchor.png --cw 100` → save as `carol-smith-scene3-still.png`
 
 2. **Open Kling AI (Pro)**
    - New generation → Image to Video
-   - Upload `diane-scene3-still.png` as start frame
+   - Upload `carol-smith-scene3-still.png` as start frame
    - Paste Kling Prompt above
-   - Character ID: upload `diane-anchor.png`
+   - Character ID: upload `carol-smith-anchor.png`
    - Duration: 8 seconds
    - Generate 3–4 variations → pick best
 
@@ -169,7 +169,7 @@ waiting. 28 years of waiting has made her good at this. Slow motion. 3 seconds.
 |-------|---------|----------|--------|
 | Scene 1 | Marcus — The March (Black man 63) | 12s | ✅ Shot (existing B-Roll) |
 | Scene 2 | Marcus — Learning He's Gone | 10s | ✅ Shot (existing B-Roll) |
-| **Scene 3** | **Diane — The Algorithm Interview (White woman 54)** | **14s** | **🔲 Build now** |
+| **Scene 3** | **Carol Smith — The Algorithm Interview (White woman 54)** | **14s** | **🔲 Build now** |
 | Scene 4 | Dashboard — Headcount Reduction | 12s | 🔲 Pending |
 | Scene 5 | Three workers reading the room | 10s | 🔲 Pending |
 
