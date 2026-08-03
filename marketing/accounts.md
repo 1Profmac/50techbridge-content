@@ -77,6 +77,9 @@
 | **Canva** | Slide design, video assembly, graphics | Active |
 | **ElevenLabs** | Voiceover generation (Voice ID: uAs0vN0GLLpz7FM7JVkz) | Active |
 | **ffmpeg** | Video assembly, audio mixing, caption burn-in | Active via Claude CLI |
+| **Gemini Pro (Nano Banana Pro)** | AI character image generation — anchor sheets, scene stills, character consistency | Active — included in Google AI Pro plan. gemini.google.com |
+| **OpenArt (Kling 3.0 Omni)** | AI video generation — animate scene stills, character-consistent video clips | Active — Free plan (50 credits). openart.ai. Runs Kling 3.0 Omni model. |
+| **Suno AI** | Original music scoring for film and video content | Pending — add when film production begins |
 | Buffer | Originally planned for scheduling | **DROPPED — never connected. Metricool replaces it.** |
 | Brand24 | Mention monitoring | Deferred |
 
