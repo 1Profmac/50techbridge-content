@@ -1,0 +1,232 @@
+ELEVENLABS VOICE SCRIPTS — OFF-CAMERA CHARACTERS (EXPANDED — 7 SEC EACH)
+What If Brand Film | Learn More Technologies
+Updated: 2026-08-04
+
+These are audio-only lines. No HeyGen needed.
+Camera stays on a screen, environment, or reacting face — NOT the speaker.
+Generate each character as a separate ElevenLabs voice. Do NOT use Brian's voice ID.
+
+Target: ~7 seconds of spoken content per character.
+At natural pace (~2.3 words/sec) that is 15–18 words of actual speech.
+
+Pacing notes: [PAUSE] = 1 second. [LONG PAUSE] = 2 seconds. [BEAT] = half second breath.
+
+===================================================================
+CHARACTER 1 — HR SYSTEM VOICE
+===================================================================
+Voice style: Flat. Robotic. Genderless. No warmth. No hesitation.
+ElevenLabs setting: Use "Narrator" preset or lowest warmth setting available.
+Speed: Slightly faster than natural speech — automated systems don't pause for you.
+
+SCRIPT (7 sec / ~17 spoken words):
+Marcus Johnson.
+
+[PAUSE]
+
+Workforce optimization complete.
+
+[BEAT]
+
+Your position has been eliminated.
+
+[BEAT]
+
+Effective thirty days from today.
+
+[PAUSE]
+
+Please report to Human Resources.
+
+---
+Output filename: hr-system-voice.mp3
+Used in: Episode 1, Scene 3 — plays over close-up of the HR dashboard screen
+Camera: On the screen. The CONFIRM button. Not on Marcus.
+Runtime estimate: 7 seconds spoken + 2 seconds pause = ~9 seconds total
+===================================================================
+
+
+===================================================================
+CHARACTER 2 — TOM BRIGGS
+===================================================================
+Voice style: Corporate presentation. Practiced. Confident. Fast.
+The voice of a man who has given this slide 40 times and never questioned it.
+ElevenLabs setting: White male, 50s-60s, professional. Medium-low pitch. No gravel.
+Speed: Slightly brisk — this is a boardroom presentation, not a conversation.
+
+SCRIPT (7 sec / ~18 spoken words):
+The product roadmap targets 25 to 40.
+
+[BEAT]
+
+That's our primary growth segment.
+
+[BEAT]
+
+The 50-plus demographic shows lower adoption rates.
+
+[BEAT]
+
+We've adjusted projections accordingly.
+
+---
+Output filename: tom-briggs-boardroom.mp3
+Used in: Episode 1, Scene 5 — plays over "TARGET DEMOGRAPHIC: 25–40" slide on the big screen
+Camera: On the slide filling the screen. Then slow pan across nodding executives.
+NOT on Tom's face. His voice fills the room but we never see him say it.
+Runtime estimate: 7 seconds spoken + 1 second beats = ~8 seconds total
+===================================================================
+
+
+===================================================================
+CHARACTER 3 — ROSA GUTIERREZ
+===================================================================
+Voice style: Polite. Soft. Clear. Not angry — the specific tone of someone
+asking for help they know they shouldn't have to ask for.
+ElevenLabs setting: Latina female, early 50s. Warm but restrained. Light accent optional.
+Speed: Normal — she is being careful to be understood.
+
+SCRIPT (7 sec / ~17 spoken words):
+Excuse me —
+
+[PAUSE]
+
+I'm sorry to bother you.
+
+[BEAT]
+
+Could someone help me with this?
+
+[PAUSE]
+
+I can't seem to get it to respond.
+
+---
+Output filename: rosa-kiosk.mp3
+Used in: Episode 1, Scene 4 — plays over shot of the kiosk screen blinking
+Camera: On the kiosk screen, then pulls back to show Rosa's hands lowering.
+No one answers. That silence is the scene. Do not fill it.
+Runtime estimate: 7 seconds spoken + 2 seconds pause = ~9 seconds total
+===================================================================
+
+
+===================================================================
+CHARACTER 4 — JAMES OKAFOR
+===================================================================
+Voice style: Low. Flat. Barely above a murmur.
+The voice of a man who has stopped being surprised by bad news.
+He is not making a scene. He is never making a scene.
+ElevenLabs setting: Black male, late 50s. Deep, quiet, controlled.
+Different from Marcus — Marcus has warmth underneath. James has gone quiet.
+Speed: Slow. Measured. Each phrase lands before the next one starts.
+
+SCRIPT (7+ sec / ~22 spoken words):
+[after Marcus says "That's our department" — 1 second gap before James responds]
+
+I know.
+
+[PAUSE]
+
+I saw the numbers last quarter.
+
+[BEAT]
+
+Three months I've been watching those charts.
+
+[PAUSE]
+
+I've been counting down to this meeting.
+
+---
+Output filename: james-okafor-threeroom.mp3
+Used in: Episode 1, Scene 6 — Three Workers
+Camera: On the optimization screen, the headcount number ticking down.
+Timeline note: Marcus line plays first, then 1 second gap, then James responds.
+Sync Marcus and James as two separate audio tracks in Canva timeline.
+Runtime estimate: 9 seconds spoken + 2 seconds pauses = ~11 seconds total
+===================================================================
+
+
+===================================================================
+CHARACTER 5 — DOROTHY WILLIAMS
+===================================================================
+Voice style: Warm. Surprised. Real. Unfinished sentences are fine.
+This is not a performed line — it is a reaction that becomes words.
+She is not talking to anyone. She doesn't know she said it out loud.
+ElevenLabs setting: Black female, mid-60s. Warm, slightly breathless.
+Speed: Natural — the first "oh" comes out before she decides to speak.
+
+SCRIPT (7 sec / ~17 spoken words):
+Oh —
+
+[PAUSE]
+
+It actually understood that.
+
+[BEAT]
+
+All of it.
+
+[PAUSE]
+
+I didn't think it would get what I was asking.
+
+[soft breath — leave half second of space after the last word]
+
+---
+Output filename: dorothy-realsmile.mp3
+Used in: Episode 2, The Real Smile — plays while camera holds on Dorothy's face
+Camera: Close-up on her face. Laptop glow warm.
+The smile comes AFTER the last line — not during the "oh."
+"Oh" is surprise. The smile is recognition. Do not let them overlap.
+Runtime estimate: 7 seconds spoken + 2 seconds pauses = ~9 seconds total
+===================================================================
+
+
+===================================================================
+PRODUCTION ORDER — GENERATE IN THIS SEQUENCE
+===================================================================
+
+1. HR System Voice     → hr-system-voice.mp3         (Episode 1 — coldest, set the tone first)
+2. Tom Briggs          → tom-briggs-boardroom.mp3     (Episode 1 — boardroom, procedural)
+3. Rosa Gutierrez      → rosa-kiosk.mp3               (Episode 1 — kiosk, polite frustration)
+4. James Okafor        → james-okafor-threeroom.mp3   (Episode 1 — three workers, exhaustion)
+5. Dorothy Williams    → dorothy-realsmile.mp3        (Episode 2 — the turn, warmth enters)
+
+All 5 in one ElevenLabs session.
+Total spoken content: ~35 seconds across all 5 characters.
+Total with pauses: ~45 seconds of audio files.
+
+===================================================================
+SAVE ALL FILES TO:
+Desktop/what-if-psa/PSA/voiceover/characters/
+===================================================================
+
+
+===================================================================
+ELEVENLABS VOICE SELECTION GUIDE
+===================================================================
+
+When picking voices in ElevenLabs for each character, listen for:
+
+HR System:    Flat, even, no inflection. "Narrator" preset or Rachel at
+              0 stability, 0 similarity. Should sound like a phone tree.
+
+Tom Briggs:   "Adam" or "Charlie" — professional male, zero personality.
+              The voice of someone reading a PowerPoint he has never questioned.
+
+Rosa:         "Bella" or any warm female voice at medium stability.
+              The softness matters more than accent. She is not complaining.
+              She is asking. Politely. For the third time.
+
+James:        "Arnold" or deep male voice at HIGH stability setting.
+              Turn expressiveness all the way down. He has used it all up.
+              Generate twice — pick the flatter take.
+
+Dorothy:      "Elli" or "Grace" — warm, natural, slightly older.
+              Medium stability, medium similarity. Let it breathe.
+              The "oh" should sound like it surprised even her.
+
+---
+What If Brand Film — Off-Camera Character Voice Scripts (Expanded 7-Sec Version)
+Learn More Technologies | 50+TechBridge
+2026-08-04

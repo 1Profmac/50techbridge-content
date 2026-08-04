@@ -1,0 +1,139 @@
+ELEVENLABS VOICE SCRIPT — MARCUS JOHNSON (HEYGEN LIP SYNC)
+What If Brand Film | Learn More Technologies
+Created: 2026-08-04
+
+ON-CAMERA CHARACTER. Camera shows Marcus speaking.
+WORKFLOW: ElevenLabs → download MP3 → HeyGen Talking Photo → export MP4
+
+HeyGen image: Desktop/what-if-psa/characters/Marcus/front Facing.png
+Mouth closed. Front-facing. Use this image for BOTH Marcus sessions below.
+
+Pacing notes: [PAUSE] = 1 second. [BEAT] = half second breath. [LONG PAUSE] = 2 seconds.
+
+===================================================================
+VOICE PROFILE — MARCUS JOHNSON
+===================================================================
+Age: 63 | Black man | Salt-and-pepper hair | Dark navy suit
+Voice style: Quiet authority. Dignified. Never broken — tired, not defeated.
+The voice of a man who has spent two episodes being silent.
+When he speaks, it means something.
+
+ElevenLabs settings:
+  Stability:      72
+  Similarity:     80
+  Style:          20
+  Speaker Boost:  ON
+  Speed:          Slightly slower than default — he does not rush
+
+Voice to try: Deep male, American, 60s. "Liam" / "Daniel" / "Marcus" preset.
+NOT Brian's voice ID. Different voice entirely.
+Must sound: measured, grounded, unhurried. No performance. No drama.
+The authority comes from what he knows, not how he sounds.
+
+===================================================================
+MARCUS SESSION 1 — EPISODE 1, SCENE 6 (THREE WORKERS)
+===================================================================
+Context: Marcus stands at the back of a corporate conference room.
+AI optimization presentation is playing at the front. He leans slightly
+toward James Okafor and says three words. That is the entire line.
+
+DO NOT EXPAND THIS LINE. Three words is the choice.
+The silence after is the scene.
+
+SCRIPT — THREE WORKERS (3 words / ~2 seconds spoken):
+That's our department.
+
+---
+Output filename: marcus-three-workers.mp3
+Save to: Desktop/what-if-psa/PSA/voiceover/characters/
+
+HeyGen instructions:
+  Image:    front Facing.png
+  Audio:    marcus-three-workers.mp3
+  Format:   16:9 | 1080p
+  Output:   marcus-heygen-ep1-threeworkers.mp4
+  Save to:  Desktop/what-if-psa/characters/Marcus/heygen-exports/
+
+Canva timeline placement:
+  Place at Scene 6 — Three Workers (Episode 1)
+  Camera is on the headcount screen ticking down
+  Marcus audio plays — then 1 second silence — then James responds
+  Stack as two separate audio tracks, not one combined file
+
+Runtime: ~2 seconds spoken. 6 seconds total clip with silence after.
+
+===================================================================
+MARCUS SESSION 2 — EPISODE 3, COMEBACK INTERVIEW
+===================================================================
+Context: The reversed interview. Everything Marcus couldn't say in Episode 1,
+he says now. The interviewer has leaned forward and asked a real question.
+Marcus has been waiting 2 episodes for a room that fits him. This is it.
+
+This is Marcus's ONLY extended line in the entire 3-episode film.
+It must land. Do not rush it. Generate twice, pick the flatter take.
+Flat is stronger than emotional here — he is not relieved, he is ready.
+
+SCRIPT — COMEBACK INTERVIEW (7+ sec / ~22 spoken words):
+I've seen that system fail three times.
+
+[PAUSE]
+
+I know exactly where it breaks —
+
+[BEAT]
+
+and why it breaks there.
+
+[PAUSE]
+
+Twenty-eight years, I watched it happen and kept the operation running anyway.
+
+[BEAT]
+
+Want me to show you?
+
+---
+Output filename: marcus-comeback-interview.mp3
+Save to: Desktop/what-if-psa/PSA/voiceover/characters/
+
+HeyGen instructions:
+  Image:    front Facing.png
+  Audio:    marcus-comeback-interview.mp3
+  Format:   16:9 | 1080p
+  Output:   marcus-heygen-ep3-comeback.mp4
+  Save to:  Desktop/what-if-psa/characters/Marcus/heygen-exports/
+
+Canva timeline placement:
+  Place at Episode 3 — The Comeback Interview
+  Marcus speaks → 1 second gap → interviewer-warm-ep3.mp3 responds
+  These two clips back to back are the emotional peak of the entire film
+  Edit tight. No extra gap. Let them breathe but not stall.
+
+Runtime: ~9 seconds spoken + 2 seconds pauses = ~11 seconds total clip
+
+===================================================================
+HEYGEN PRODUCTION CHECKLIST — MARCUS
+===================================================================
+
+Step 1 — ElevenLabs (Text to Speech):
+  [ ] Generate marcus-three-workers.mp3 using THREE WORKERS script above
+  [ ] Generate marcus-comeback-interview.mp3 using COMEBACK script above
+  [ ] Save both to: Desktop/what-if-psa/PSA/voiceover/characters/
+
+Step 2 — HeyGen (Talking Photo):
+  [ ] Upload: front Facing.png
+  [ ] Session A: + marcus-three-workers.mp3 → export marcus-heygen-ep1-threeworkers.mp4
+  [ ] Session B: + marcus-comeback-interview.mp3 → export marcus-heygen-ep3-comeback.mp4
+  [ ] Save both to: Desktop/what-if-psa/characters/Marcus/heygen-exports/
+
+Step 3 — Canva:
+  [ ] Drop marcus-heygen-ep1-threeworkers.mp4 into Episode 1 timeline at Scene 6
+  [ ] Drop marcus-heygen-ep3-comeback.mp4 into Episode 3 timeline at interview scene
+  [ ] Stack interviewer audio on separate track immediately after Marcus finishes
+
+===================================================================
+
+---
+What If Brand Film — Marcus Johnson Voice + HeyGen Script
+Learn More Technologies | 50+TechBridge
+2026-08-04

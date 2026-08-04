@@ -1,0 +1,231 @@
+ELEVENLABS VOICE SCRIPTS — ON-CAMERA CHARACTERS (HEYGEN LIP SYNC)
+What If Brand Film | Learn More Technologies
+Created: 2026-08-04
+
+These characters are ON-CAMERA. Camera shows them speaking.
+WORKFLOW: Generate voice in ElevenLabs → download MP3 → upload to HeyGen Talking Photo
+HeyGen will lip-sync the character image to your ElevenLabs audio.
+
+Reference images are in: Desktop/what-if-psa/characters/
+Target: 7+ seconds per character.
+Pacing notes: [PAUSE] = 1 second. [BEAT] = half second breath.
+
+===================================================================
+CHARACTER 1 — DR. LINDA CHEN
+===================================================================
+Age: 59 | Asian woman | Human world — Pioneer Presenting (Episode 3)
+Scene: Linda stands at the front of a conference room presenting her own
+AI-generated analysis. Colleagues younger than her are leaning in to listen.
+
+Voice style: Calm expertise. Unhurried. The confidence of someone who did
+the work and knows it cold. She is not proving herself — she is presenting.
+No apology in her voice. No performance. Just the work.
+
+ElevenLabs setting: Asian-American female, late 50s. Clear, measured, professional.
+Medium pace — she is not rushing. The room is already hers.
+Try: "Serena" or "Nicole" preset. Warm but precise.
+
+HeyGen image: characters/Dr-Linda-Chen/fullFront.png
+
+SCRIPT (7+ sec / ~23 spoken words):
+I ran this through the AI tool last night.
+
+[PAUSE]
+
+Here's what I found.
+
+[BEAT]
+
+The pattern goes back four years.
+
+[PAUSE]
+
+Nobody caught it —
+
+[BEAT]
+
+because nobody looked here.
+
+[LONG PAUSE — she clicks to the next slide. The room leans in.]
+
+This changes our Q3 projection by fourteen percent.
+
+---
+Output filename: dr-linda-chen-presenting.mp3
+Used in: Episode 3 — Pioneer Presenting
+HeyGen: Upload fullFront.png + this MP3 → export talking video
+Camera: Starts on Linda at the front of the room, then cuts to colleagues
+leaning forward — then back to Linda as she says "fourteen percent."
+Runtime estimate: 9 seconds spoken + 3 seconds pauses = ~12 seconds total
+
+===================================================================
+CHARACTER 2 — CAROL SMITH
+===================================================================
+Age: 54 | White woman | Machine world — Algorithm Interview (Episode 1)
+Scene: Carol sits across from the cold interviewer. Portfolio open on the table.
+She speaks first — because she came prepared and professionals begin.
+
+Voice style: Composed. Professional. The voice of someone who has done this
+before and is not afraid of the room. Confident — not aggressive.
+The tragedy is that her confidence is completely earned and completely ignored.
+
+ElevenLabs setting: White female, mid-50s. Clear, warm but restrained.
+Try: "Sarah" or "Laura" preset. Polished. Not soft — precise.
+
+HeyGen image: characters/Carol/Carol professional white woman.png
+
+SCRIPT (7+ sec / ~20 spoken words):
+I've built three teams from the ground up.
+
+[PAUSE]
+
+Took the last one from four people to twenty-two in eighteen months.
+
+[BEAT]
+
+I know exactly what this role requires.
+
+[PAUSE]
+
+And I know what you're looking for.
+
+---
+Output filename: carol-smith-interview.mp3
+Used in: Episode 1 — Algorithm Interview
+HeyGen: Upload Carol professional white woman.png + this MP3 → export talking video
+Camera: On Carol's face as she speaks. Interviewer visible in soft background.
+Then camera slowly pushes to the screen behind Carol — "FLAG: DEMOGRAPHIC RISK."
+She doesn't know the screen is there. The audience does.
+Runtime estimate: 8 seconds spoken + 2 seconds pauses = ~10 seconds total
+
+===================================================================
+CHARACTER 3 — MARCUS JOHNSON (EPISODE 1 — THREE WORKERS)
+===================================================================
+Age: 63 | Black man | Machine world — Three Workers (Episode 1)
+Scene: Marcus stands at the back of a corporate conference room watching
+the AI optimization presentation. He leans slightly toward James Okafor.
+
+Voice style: Quiet. Flat. Not dramatic — the understatement of a man
+who has learned to keep his face still in rooms like this.
+Three words. That's the whole line. The weight is in what he doesn't say.
+
+ElevenLabs setting: Black male, early 60s. Deep, measured, restrained.
+Do NOT use Brian's voice ID. Different voice — deeper, quieter.
+Try: "Liam" or "Marcus" preset at HIGH stability, LOW expressiveness.
+
+HeyGen image: characters/Marcus/front Facing.png
+
+SCRIPT (3 words — intentionally short, do not expand):
+That's our department.
+
+[SILENCE — hold 4 seconds after the last word before James responds]
+
+---
+Output filename: marcus-three-workers.mp3
+Note on length: This line is intentionally 3 words. Do not expand it.
+The power is the brevity. James's response ("I know") is the other half.
+Silence carries the rest.
+Used in: Episode 1, Scene 6 — Three Workers
+HeyGen: Upload front Facing.png + this MP3 → 3-second talking video
+Runtime estimate: 2 seconds spoken + 4 seconds silence = 6 seconds total clip
+
+===================================================================
+CHARACTER 4 — MARCUS JOHNSON (EPISODE 3 — COMEBACK INTERVIEW)
+===================================================================
+Age: 63 | Black man | Human world — The Comeback Interview (Episode 3)
+Scene: The reversed interview. The interviewer has leaned forward and
+asked a real question. Marcus answers without hesitation.
+This is the only extended line Marcus speaks in the entire 3-episode film.
+
+Voice style: Calm authority. No performance. The voice of someone who
+has spent two episodes being silent and now, finally, has the floor.
+He does not rush. He does not over-explain. He just knows.
+
+ElevenLabs setting: Same voice as marcus-three-workers.mp3.
+Keep the voice consistent — this is the same man, one year later.
+Slightly warmer now. Not because he changed — because the room finally fits him.
+
+HeyGen image: characters/Marcus/front Facing.png
+
+SCRIPT (7+ sec / ~22 spoken words):
+I've seen that system fail three times.
+
+[PAUSE]
+
+I know exactly where it breaks —
+
+[BEAT]
+
+and why it breaks there.
+
+[PAUSE]
+
+Twenty-eight years, I watched it happen and kept the operation running anyway.
+
+[BEAT]
+
+Want me to show you?
+
+---
+Output filename: marcus-comeback-interview.mp3
+Used in: Episode 3 — The Comeback Interview
+HeyGen: Upload front Facing.png + this MP3 → export talking video
+Camera: Holds on Marcus's face. Then cuts to the interviewer leaning forward.
+The interviewer's response (interviewer-warm-ep3.mp3) plays immediately after.
+These two clips — Marcus speaking, interviewer responding — are the emotional peak
+of the entire film. Edit them tightly. No gap between.
+Runtime estimate: 9 seconds spoken + 2 seconds pauses = ~11 seconds total
+
+===================================================================
+HEYGEN PRODUCTION ORDER
+===================================================================
+
+Generate ElevenLabs audio first, then HeyGen in this sequence:
+
+Step 1 — ElevenLabs (generate all 4 MP3s in one session):
+  1. dr-linda-chen-presenting.mp3
+  2. carol-smith-interview.mp3
+  3. marcus-three-workers.mp3
+  4. marcus-comeback-interview.mp3
+
+Step 2 — HeyGen Talking Photo (one character at a time):
+  1. Dr. Linda Chen  → fullFront.png + dr-linda-chen-presenting.mp3
+  2. Carol Smith     → Carol professional white woman.png + carol-smith-interview.mp3
+  3. Marcus (Ep1)    → front Facing.png + marcus-three-workers.mp3
+  4. Marcus (Ep3)    → front Facing.png + marcus-comeback-interview.mp3
+
+Step 3 — Save HeyGen exports to:
+  Desktop/what-if-psa/characters/[Character]/heygen-exports/
+
+===================================================================
+ELEVENLABS → HEYGEN WORKFLOW (STEP BY STEP)
+===================================================================
+
+In ElevenLabs:
+  1. Select voice preset for character
+  2. Paste script text
+  3. Set stability: 65–75 | Similarity: 75–85 | Style: 20–30
+  4. Generate → download MP3
+
+In HeyGen:
+  1. Go to Avatars → Talking Photo
+  2. Upload character PNG (front-facing)
+  3. Upload MP3 from ElevenLabs
+  4. Select: 16:9 | 1080p | No background change
+  5. Generate → download MP4
+
+The MP4 output from HeyGen is your final on-camera character clip.
+Drop it directly into the Canva timeline at the correct scene position.
+
+===================================================================
+SAVE ALL AUDIO FILES TO:
+Desktop/what-if-psa/PSA/voiceover/characters/
+
+SAVE ALL HEYGEN VIDEO EXPORTS TO:
+Desktop/what-if-psa/characters/[CharacterName]/heygen-exports/
+===================================================================
+
+---
+What If Brand Film — On-Camera Character Scripts (ElevenLabs + HeyGen)
+Learn More Technologies | 50+TechBridge
+2026-08-04

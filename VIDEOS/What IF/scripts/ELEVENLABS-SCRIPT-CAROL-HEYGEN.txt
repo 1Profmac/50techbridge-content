@@ -1,0 +1,144 @@
+ELEVENLABS VOICE SCRIPT — CAROL SMITH (HEYGEN LIP SYNC)
+What If Brand Film | Learn More Technologies
+Created: 2026-08-04
+
+ON-CAMERA CHARACTER. Camera shows Carol speaking.
+WORKFLOW: ElevenLabs → download MP3 → HeyGen Talking Photo → export MP4
+
+HeyGen image: Desktop/what-if-psa/characters/Carol/Carol professional white woman.png
+Mouth closed. Front-facing. Composed expression. Use this image.
+
+Pacing notes: [PAUSE] = 1 second. [BEAT] = half second breath.
+
+===================================================================
+VOICE PROFILE — CAROL SMITH
+===================================================================
+Age: 54 | White woman | Silver-streaked dark chestnut hair | Navy blazer
+Voice style: Composed. Professional. Confident without aggression.
+The voice of someone who has done this before and is not afraid of the room.
+
+She is the most qualified person in this interview.
+She sounds like it. That is exactly what makes what happens next so devastating.
+
+ElevenLabs settings:
+  Stability:      70
+  Similarity:     80
+  Style:          25
+  Speaker Boost:  ON
+  Speed:          Normal — she is measured, not slow
+
+Voice to try: White female, mid-50s, American. "Sarah" / "Laura" / "Charlotte" preset.
+Clear consonants. No breathiness. No upward inflection at the end of sentences.
+She is not asking if you're impressed. She is telling you what she's done.
+
+Reject any voice that sounds:
+  — Young (under 45 feel)
+  — Warm or soft
+  — Nervous or tentative
+  — Like she is asking permission
+
+Keep the voice that sounds like:
+  Someone who built three teams and still had to fight for this interview.
+
+===================================================================
+CAROL SESSION — EPISODE 1, ALGORITHM INTERVIEW
+===================================================================
+Context: Carol sits across from the cold interviewer. Portfolio open on the table.
+Three questions written inside it that she never gets to ask.
+The interviewer has not looked up from the screen.
+Carol speaks first — because that is what prepared professionals do.
+
+She does not know there is a screen behind her showing "FLAG: DEMOGRAPHIC RISK."
+The audience does. That gap is the entire scene.
+
+After Carol speaks, the camera slowly pushes past her toward the screen.
+She remains in foreground, slightly soft. Waiting for a conversation that will not begin.
+
+SCRIPT — ALGORITHM INTERVIEW (7+ sec / ~20 spoken words):
+I've built three teams from the ground up.
+
+[PAUSE]
+
+Took the last one from four people to twenty-two in eighteen months.
+
+[BEAT]
+
+I know exactly what this role requires.
+
+[PAUSE]
+
+And I know what you're looking for.
+
+---
+Output filename: carol-smith-interview.mp3
+Save to: Desktop/what-if-psa/PSA/voiceover/characters/
+
+HeyGen instructions:
+  Image:    Carol professional white woman.png
+  Audio:    carol-smith-interview.mp3
+  Format:   16:9 | 1080p
+  Output:   carol-heygen-ep1-interview.mp4
+  Save to:  Desktop/what-if-psa/characters/Carol/heygen-exports/
+
+Canva timeline placement:
+  Place at Episode 1 — Algorithm Interview scene
+  Carol speaks (this clip) → camera pushes to DEMOGRAPHIC FLAG screen → interviewer responds cold
+  Stack interviewer-cold-ep1.mp3 on separate audio track after Carol finishes
+  1 second gap between Carol's last word and the interviewer's first
+
+Editing note:
+  Carol's clip shows her speaking. Then cut to the screen text behind her.
+  Then cut to the interviewer — who is looking at that screen, not at Carol.
+  The audience sees what Carol cannot. That sequence is the storytelling.
+
+Runtime: ~8 seconds spoken + 2 seconds pauses = ~10 seconds total clip
+
+===================================================================
+HEYGEN PRODUCTION CHECKLIST — CAROL
+===================================================================
+
+Step 1 — ElevenLabs (Text to Speech):
+  [ ] Select voice: Sarah / Laura / Charlotte (audition with "I know exactly what this role requires")
+  [ ] Paste ALGORITHM INTERVIEW script above
+  [ ] Settings: Stability 70 | Similarity 80 | Style 25 | Speaker Boost ON
+  [ ] Generate → download
+  [ ] Save as: carol-smith-interview.mp3
+  [ ] Save to: Desktop/what-if-psa/PSA/voiceover/characters/
+
+Step 2 — HeyGen (Talking Photo):
+  [ ] Upload: Carol professional white woman.png
+  [ ] Upload audio: carol-smith-interview.mp3
+  [ ] Format: 16:9 | 1080p
+  [ ] Generate → download
+  [ ] Save as: carol-heygen-ep1-interview.mp4
+  [ ] Save to: Desktop/what-if-psa/characters/Carol/heygen-exports/
+
+Step 3 — Canva:
+  [ ] Drop carol-heygen-ep1-interview.mp4 into Episode 1 timeline at interview scene
+  [ ] Add interviewer-cold-ep1.mp3 on separate audio track immediately after
+  [ ] Camera cuts: Carol speaking → FLAG screen → interviewer (not looking at her)
+  [ ] Carol's HeyGen clip + cold interviewer audio = the full interview exchange
+
+===================================================================
+THE FULL INTERVIEW SEQUENCE — TIMELINE BUILD
+===================================================================
+
+This is how the Carol interview scene assembles in Canva:
+
+[0:00–0:10]  carol-heygen-ep1-interview.mp4     Carol speaks — composed, ready
+[0:10–0:11]  [1 second silence]
+[0:11–0:21]  clip-02-algorithm-interview-carol.mp4   Camera pushes to FLAG screen
+[0:11–0:21]  interviewer-cold-ep1.mp3 (audio)    "We appreciate your interest Carol..."
+[0:21–0:24]  [Hold on Carol's face — she heard it. She understands.]
+[0:24]       CUT to next scene
+
+Total interview sequence: ~24 seconds
+Carol speaks. The screen damns her. The interviewer dismisses her.
+She never changes her expression. That stillness is the film.
+
+===================================================================
+
+---
+What If Brand Film — Carol Smith Voice + HeyGen Script
+Learn More Technologies | 50+TechBridge
+2026-08-04

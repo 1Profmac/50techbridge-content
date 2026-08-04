@@ -1,0 +1,60 @@
+ELEVENLABS VOICEOVER SCRIPT — EPISODE 1: "THE REPLACEMENT"
+What If Brand Film | Learn More Technologies
+Voice ID: uAs0vN0GLLpz7FM7JVkz (Brian)
+Tone: Quiet. Deliberate. No performance. Like someone telling you something true.
+Pacing notes: [PAUSE] = 1 second silence. [LONG PAUSE] = 2 full seconds.
+
+---
+
+Marcus had worked at the same company for 28 years.
+
+[PAUSE]
+
+He knew every system. Every process. Every client.
+
+[PAUSE]
+
+He thought that meant something.
+
+[LONG PAUSE]
+
+Until the day the algorithm decided he didn't.
+
+[LONG PAUSE]
+
+No warning. No conversation.
+
+[PAUSE]
+
+Just a screen.
+
+[LONG PAUSE]
+
+He applied to 47 positions in 90 days.
+
+[PAUSE]
+
+He got 3 interviews.
+
+[PAUSE]
+
+None of them called back.
+
+[LONG PAUSE]
+
+Twenty-eight years.
+
+[PAUSE]
+
+And he was starting over.
+
+[PAUSE]
+
+Alone.
+
+---
+
+END OF EPISODE 1 VOICEOVER
+Total runtime estimate: 55–65 seconds
+Save output as: brand-film-ep1-voiceover.mp3
+Save to: Desktop/what-if-psa/PSA/voiceover/
