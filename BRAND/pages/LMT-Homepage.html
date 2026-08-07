@@ -123,7 +123,7 @@ header.site-header,[id*="site-header"],[class*="site-header"]{display:none!impor
 .lmt-home .aud-card.gold .aud-list li::before{color:#C8942E}
 
 /* PROOF */
-.lmt-home .proof{padding:80px 32px;background:#162640}
+.lmt-home .proof{padding:0;background:#162640}
 .lmt-home .proof-grid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:32px;text-align:center}
 .lmt-home .proof-num{font-family:'Playfair Display',serif;font-size:52px;font-weight:700;color:#C8942E!important;line-height:1;margin-bottom:8px}
 .lmt-home .proof-label{font-size:14px;color:#A8B8CC!important;line-height:1.5}
@@ -153,6 +153,8 @@ header.site-header,[id*="site-header"],[class*="site-header"]{display:none!impor
 .lmt-nav .nav-pill:hover{border-color:rgba(255,255,255,.45);color:#fff!important;background:rgba(255,255,255,.06)}
 .lmt-nav .nav-pill-orange{background:#E8733A;border-color:#E8733A;color:#fff!important;font-weight:700}
 .lmt-nav .nav-pill-orange:hover{background:#d4622a;border-color:#d4622a}
+.lmt-nav .nav-pill-gold{background:#C8942E;border-color:#C8942E;color:#0E1C2F!important;font-weight:700}
+.lmt-nav .nav-pill-gold:hover{background:#E8B84B;border-color:#E8B84B}
 .lmt-nav .nav-pill-green{background:#109F35;border-color:#109F35;color:#fff!important;font-weight:700}
 .lmt-nav .nav-pill-green:hover{background:#0C7A28;border-color:#0C7A28}
 .lmt-nav .nav-hamburger{display:none;background:none;border:none;color:#fff;font-size:22px;cursor:pointer}
@@ -189,6 +191,7 @@ header.site-header,[id*="site-header"],[class*="site-header"]{display:none!impor
         <a href="https://learnmoretechnologies.com/workforce/" class="nav-pill">Workforce Solutions</a>
         <a href="https://learnmoretechnologies.com/speak/" class="nav-pill">Book Brian to Speak</a>
         <a href="https://50plustechbridge.com/" class="nav-pill nav-pill-orange">50+TechBridge</a>
+        <a href="https://digitalpioneer.ai/" class="nav-pill nav-pill-gold">Digital Pioneer Gallery</a>
         <a href="https://learnmoretechnologies.com/join-now/" class="nav-pill nav-pill-green">Start Free Lesson</a>
       </div>
       <button class="nav-hamburger" id="lmt-ham" aria-label="Menu">&#9776;</button>
@@ -205,21 +208,6 @@ header.site-header,[id*="site-header"],[class*="site-header"]{display:none!impor
         <div class="hero-btns">
           <a href="https://learnmoretechnologies.com/join-now/" class="btn-green">I'm Not Done Yet →</a>
           <a href="https://learnmoretechnologies.com/workforce/" class="btn-gold">Work With Us →</a>
-          <a href="https://learnmoretechnologies.com/speak/" class="btn-outline">Book Brian to Speak →</a>
-        </div>
-        <div class="hero-proof">
-          <div class="hp-stat">
-            <div class="hp-num">347+</div>
-            <div class="hp-label">Pioneers & Counting</div>
-          </div>
-          <div class="hp-stat">
-            <div class="hp-num">3X</div>
-            <div class="hp-label">Industry Completion Rate</div>
-          </div>
-          <div class="hp-stat">
-            <div class="hp-num">23</div>
-            <div class="hp-label">Organizations Served</div>
-          </div>
         </div>
       </div>
       <div class="hero-card">
@@ -289,7 +277,7 @@ header.site-header,[id*="site-header"],[class*="site-header"]{display:none!impor
         <div class="pillar-icon">🎓</div>
         <div class="pillar-tag">For Individuals 50+</div>
         <h3>Train</h3>
-        <p>The 50+TechBridge curriculum — free, self-paced, WIOA-eligible. Three free lessons covering AI, career, and digital confidence. Built by someone who understands what it feels like to start from behind.</p>
+        <p>The 50+TechBridge curriculum — free, self-paced, WIOA-eligible. Six modules covering AI, career, and digital confidence. Built by someone who understands what it feels like to start from behind.</p>
         <a href="https://learnmoretechnologies.com/train/" class="pillar-cta-green">Start Free Today →</a>
       </div>
       <div class="pillar-card">
@@ -349,7 +337,12 @@ header.site-header,[id*="site-header"],[class*="site-header"]{display:none!impor
 
   <!-- TESTIMONIALS -->
   <section class="proof" id="proof">
-    <div style="max-width:1180px;margin:0 auto;padding:100px 32px;display:grid;grid-template-columns:1fr 1fr;gap:48px">
+    <div style="max-width:1180px;margin:0 auto;padding:80px 32px">
+      <div style="text-align:center;margin-bottom:48px">
+        <div class="sec-eyebrow" style="justify-content:center">What Our Pioneers Say</div>
+        <h2 class="sec-title">Real People. <em>Real Results.</em></h2>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px">
       <div style="background:#162640;border-radius:16px;padding:40px;border:1px solid rgba(200,148,46,.2)">
         <p style="font-family:'Playfair Display',serif;font-size:clamp(17px,1.8vw,22px);font-style:italic;color:#fff;line-height:1.7;margin-bottom:24px">"I learned how AI is changing healthcare and how I can use it to manage my health care network, doctor appointments, scheduling, and medication history. It is a helpful assistant that I will now use every day. I am eighty years old, and I have found a new resource in using AI."</p>
         <p style="font-size:14px;color:#C8942E;font-weight:700;letter-spacing:.08em;text-transform:uppercase">— Margaret, Age 80 · Pioneer</p>
@@ -358,6 +351,7 @@ header.site-header,[id*="site-header"],[class*="site-header"]{display:none!impor
         <p style="font-family:'Playfair Display',serif;font-size:clamp(17px,1.8vw,22px);font-style:italic;color:#fff;line-height:1.7;margin-bottom:24px">"Before this program, I didn't know what malware was. After the session on AI and Independent Living, I understood technology in a way I never had. Our entire church community — everyone over fifty — walks differently now. We're not afraid anymore."</p>
         <p style="font-size:14px;color:#C8942E;font-weight:700;letter-spacing:.08em;text-transform:uppercase">— Cristine, Age 75 · Pioneer</p>
       </div>
+    </div>
     </div>
   </section>
 
