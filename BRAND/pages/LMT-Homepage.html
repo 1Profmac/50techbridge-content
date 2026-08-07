@@ -142,25 +142,35 @@ header.site-header,[id*="site-header"],[class*="site-header"]{display:none!impor
 .lmt-home .cta-trust{font-size:13px;color:#A8B8CC!important;opacity:.8}
 
 /* NAV */
-.lmt-nav{position:sticky;top:0;z-index:1000;background:rgba(14,28,47,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,148,46,.15)}
-.lmt-nav .nav-inner{max-width:1180px;margin:0 auto;padding:0 32px;height:64px;display:flex;align-items:center;gap:40px}
-.lmt-nav .nav-logo{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:#fff;text-decoration:none;white-space:nowrap;flex-shrink:0}
-.lmt-nav .nav-logo span{color:#C8942E}
-.lmt-nav .nav-links{display:flex;align-items:center;gap:28px;flex:1}
-.lmt-nav .nav-links a{color:#A8B8CC;font-size:14px;font-weight:500;text-decoration:none;letter-spacing:.3px;transition:color .2s}
-.lmt-nav .nav-links a:hover{color:#fff}
-.lmt-nav .nav-ctas{display:flex;align-items:center;gap:12px;flex-shrink:0}
-.lmt-nav .btn-nav-green{background:#109F35;color:#fff!important;font-size:13px;font-weight:700;padding:8px 18px;border-radius:6px;text-decoration:none;transition:background .2s}
-.lmt-nav .btn-nav-green:hover{background:#0C7A28}
-.lmt-nav .btn-nav-gold{background:transparent;color:#C8942E!important;border:1px solid #C8942E;font-size:13px;font-weight:700;padding:8px 18px;border-radius:6px;text-decoration:none;transition:all .2s}
-.lmt-nav .btn-nav-gold:hover{background:rgba(200,148,46,.1)}
-.lmt-nav .nav-hamburger{display:none;background:none;border:none;color:#fff;font-size:22px;cursor:pointer;margin-left:auto}
+.lmt-nav{position:sticky;top:0;z-index:1000;background:rgba(14,28,47,.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+.lmt-nav .nav-inner{max-width:1280px;margin:0 auto;padding:0 32px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+/* Logo */
+.lmt-nav .nav-logo{font-family:'DM Sans',sans-serif;font-size:17px;font-weight:800;color:#fff!important;text-decoration:none;white-space:nowrap;flex-shrink:0;letter-spacing:-.3px}
+.lmt-nav .nav-logo strong{color:#C8942E}
+/* Center pill links */
+.lmt-nav .nav-center{display:flex;align-items:center;gap:8px;flex:1;justify-content:center}
+.lmt-nav .nav-pill{font-size:13px;font-weight:600;text-decoration:none;padding:7px 16px;border-radius:40px;border:1px solid rgba(255,255,255,.18);color:#D0DBE8!important;background:transparent;transition:all .18s;white-space:nowrap}
+.lmt-nav .nav-pill:hover{border-color:rgba(255,255,255,.45);color:#fff!important;background:rgba(255,255,255,.06)}
+.lmt-nav .nav-pill-gold{border-color:rgba(200,148,46,.55);color:#E8B84B!important}
+.lmt-nav .nav-pill-gold:hover{border-color:#C8942E;background:rgba(200,148,46,.1);color:#E8B84B!important}
+.lmt-nav .nav-pill-green{background:#109F35;border-color:#109F35;color:#fff!important;font-weight:700}
+.lmt-nav .nav-pill-green:hover{background:#0C7A28;border-color:#0C7A28}
+/* Right auth */
+.lmt-nav .nav-right{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.lmt-nav .nav-search{background:none;border:none;color:#A8B8CC;cursor:pointer;font-size:17px;padding:4px 6px;line-height:1;display:flex;align-items:center}
+.lmt-nav .nav-search:hover{color:#fff}
+.lmt-nav .nav-signin{font-size:13px;font-weight:600;color:#D0DBE8!important;text-decoration:none;padding:6px 4px;white-space:nowrap}
+.lmt-nav .nav-signin:hover{color:#fff!important}
+.lmt-nav .nav-signup{font-size:13px;font-weight:700;color:#fff!important;text-decoration:none;padding:7px 18px;border-radius:40px;background:#1A56DB;border:1px solid #1A56DB;transition:background .18s;white-space:nowrap}
+.lmt-nav .nav-signup:hover{background:#1447C0;border-color:#1447C0}
+/* Hamburger */
+.lmt-nav .nav-hamburger{display:none;background:none;border:none;color:#fff;font-size:22px;cursor:pointer}
 @media(max-width:900px){
-  .lmt-nav .nav-links{display:none}
-  .lmt-nav .nav-ctas{display:none}
+  .lmt-nav .nav-center{display:none}
+  .lmt-nav .nav-right{display:none}
   .lmt-nav .nav-hamburger{display:block}
-  .lmt-nav.open .nav-links{display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:rgba(14,28,47,.98);padding:20px 32px;gap:16px;border-bottom:1px solid rgba(200,148,46,.2)}
-  .lmt-nav.open .nav-ctas{display:flex;flex-direction:column;position:absolute;top:auto;left:0;right:0;background:rgba(14,28,47,.98);padding:0 32px 24px;gap:12px}
+  .lmt-nav.open .nav-center{display:flex;flex-direction:column;align-items:flex-start;position:absolute;top:64px;left:0;right:0;background:rgba(14,28,47,.99);padding:20px 32px;gap:10px;border-bottom:1px solid rgba(200,148,46,.2);z-index:999}
+  .lmt-nav.open .nav-right{display:flex;position:absolute;top:auto;left:0;right:0;background:rgba(14,28,47,.99);padding:0 32px 24px;gap:12px;z-index:999;border-bottom:1px solid rgba(200,148,46,.1)}
 }
 
 /* RESPONSIVE */
@@ -186,17 +196,17 @@ header.site-header,[id*="site-header"],[class*="site-header"]{display:none!impor
   <!-- NAV -->
   <nav class="lmt-nav" id="lmt-top-nav">
     <div class="nav-inner">
-      <a href="/" class="nav-logo">Learn<span>More</span> Technologies</a>
-      <div class="nav-links">
-        <a href="/train/">Train</a>
-        <a href="/workforce/">Workforce</a>
-        <a href="/speak/">Speak</a>
-        <a href="/podcast/">Podcast</a>
-        <a href="https://brianmckinney.com">About Brian</a>
+      <a href="/" class="nav-logo">50+<strong>TechBridge</strong></a>
+      <div class="nav-center">
+        <a href="https://50plustechbridge.com/pioneers/" class="nav-pill nav-pill-gold">Digital Pioneer Gallery</a>
+        <a href="https://learnmoretechnologies.com/workforce/" class="nav-pill">Workforce Solutions</a>
+        <a href="https://learnmoretechnologies.com/speak/" class="nav-pill">Book Brian to Speak</a>
+        <a href="https://learnmoretechnologies.com/join-now/" class="nav-pill nav-pill-green">Start Free Lesson</a>
       </div>
-      <div class="nav-ctas">
-        <a href="/join-now/" class="btn-nav-green">Join Free →</a>
-        <a href="/workforce/" class="btn-nav-gold">Work With Us →</a>
+      <div class="nav-right">
+        <button class="nav-search" aria-label="Search">&#x2315;</button>
+        <a href="https://learnmoretechnologies.com/login/" class="nav-signin">Sign in</a>
+        <a href="https://learnmoretechnologies.com/join-now/" class="nav-signup">Sign up</a>
       </div>
       <button class="nav-hamburger" onclick="document.getElementById('lmt-top-nav').classList.toggle('open')" aria-label="Menu">&#9776;</button>
     </div>
