@@ -148,30 +148,17 @@ header.site-header,[id*="site-header"],[class*="site-header"]{display:none!impor
 /* Logo */
 .lmt-nav .nav-logo{font-family:'DM Sans',sans-serif;font-size:17px;font-weight:800;color:#fff!important;text-decoration:none;white-space:nowrap;flex-shrink:0;letter-spacing:-.3px}
 .lmt-nav .nav-logo strong{color:#C8942E}
-/* Center pill links */
 .lmt-nav .nav-center{display:flex;align-items:center;gap:8px;flex:1;justify-content:center}
 .lmt-nav .nav-pill{font-size:13px;font-weight:600;text-decoration:none;padding:7px 16px;border-radius:40px;border:1px solid rgba(255,255,255,.18);color:#D0DBE8!important;background:transparent;transition:all .18s;white-space:nowrap}
 .lmt-nav .nav-pill:hover{border-color:rgba(255,255,255,.45);color:#fff!important;background:rgba(255,255,255,.06)}
-.lmt-nav .nav-pill-gold{border-color:rgba(200,148,46,.55);color:#E8B84B!important}
-.lmt-nav .nav-pill-gold:hover{border-color:#C8942E;background:rgba(200,148,46,.1);color:#E8B84B!important}
+.lmt-nav .nav-pill-orange{background:#E8733A;border-color:#E8733A;color:#fff!important;font-weight:700}
+.lmt-nav .nav-pill-orange:hover{background:#d4622a;border-color:#d4622a}
 .lmt-nav .nav-pill-green{background:#109F35;border-color:#109F35;color:#fff!important;font-weight:700}
 .lmt-nav .nav-pill-green:hover{background:#0C7A28;border-color:#0C7A28}
-/* Right auth */
-.lmt-nav .nav-right{display:flex;align-items:center;gap:10px;flex-shrink:0}
-.lmt-nav .nav-search{background:none;border:none;color:#A8B8CC;cursor:pointer;font-size:17px;padding:4px 6px;line-height:1;display:flex;align-items:center}
-.lmt-nav .nav-search:hover{color:#fff}
-.lmt-nav .nav-signin{font-size:13px;font-weight:600;color:#D0DBE8!important;text-decoration:none;padding:6px 4px;white-space:nowrap}
-.lmt-nav .nav-signin:hover{color:#fff!important}
-.lmt-nav .nav-signup{font-size:13px;font-weight:700;color:#fff!important;text-decoration:none;padding:7px 18px;border-radius:40px;background:#1A56DB;border:1px solid #1A56DB;transition:background .18s;white-space:nowrap}
-.lmt-nav .nav-signup:hover{background:#1447C0;border-color:#1447C0}
-/* Hamburger */
 .lmt-nav .nav-hamburger{display:none;background:none;border:none;color:#fff;font-size:22px;cursor:pointer}
 @media(max-width:900px){
   .lmt-nav .nav-center{display:none}
-  .lmt-nav .nav-right{display:none}
   .lmt-nav .nav-hamburger{display:block}
-  .lmt-nav.open .nav-center{display:flex;flex-direction:column;align-items:flex-start;position:absolute;top:64px;left:0;right:0;background:rgba(14,28,47,.99);padding:20px 32px;gap:10px;border-bottom:1px solid rgba(200,148,46,.2);z-index:999}
-  .lmt-nav.open .nav-right{display:flex;position:absolute;top:auto;left:0;right:0;background:rgba(14,28,47,.99);padding:0 32px 24px;gap:12px;z-index:999;border-bottom:1px solid rgba(200,148,46,.1)}
 }
 
 /* RESPONSIVE */
@@ -197,19 +184,14 @@ header.site-header,[id*="site-header"],[class*="site-header"]{display:none!impor
   <!-- NAV -->
   <nav class="lmt-nav" id="lmt-top-nav">
     <div class="nav-inner">
-      <a href="/" class="nav-logo">50+<strong>TechBridge</strong></a>
+      <a href="/" class="nav-logo">Learn<strong>More</strong> Technologies</a>
       <div class="nav-center">
-        <a href="https://50plustechbridge.com/pioneers/" class="nav-pill nav-pill-gold">Digital Pioneer Gallery</a>
         <a href="https://learnmoretechnologies.com/workforce/" class="nav-pill">Workforce Solutions</a>
         <a href="https://learnmoretechnologies.com/speak/" class="nav-pill">Book Brian to Speak</a>
+        <a href="https://50plustechbridge.com/" class="nav-pill nav-pill-orange">50+TechBridge</a>
         <a href="https://learnmoretechnologies.com/join-now/" class="nav-pill nav-pill-green">Start Free Lesson</a>
       </div>
-      <div class="nav-right">
-        <button class="nav-search" aria-label="Search">&#x2315;</button>
-        <a href="https://learnmoretechnologies.com/login/" class="nav-signin">Sign in</a>
-        <a href="https://learnmoretechnologies.com/join-now/" class="nav-signup">Sign up</a>
-      </div>
-      <button class="nav-hamburger" onclick="document.getElementById('lmt-top-nav').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+      <button class="nav-hamburger" id="lmt-ham" aria-label="Menu">&#9776;</button>
     </div>
   </nav>
 
