@@ -1,5 +1,22 @@
 # LMT Tools
 
+## Homepage Page Revisions — learnmoretechnologies.com
+
+**File:** `BRAND/pages/LMT-Homepage.html` (always the live version)
+**WP Page ID:** 1454
+
+### Process (the only method that works — REST API is blocked by ModSecurity)
+
+1. Tell Claude what to change — Claude edits the file and drops it on the Desktop
+2. Open the file → Ctrl+A → Ctrl+C
+3. WP Admin → Pages → Home → Edit → ⋮ menu → Code editor
+4. Ctrl+A → Ctrl+V → Save
+5. Claude commits the updated file to git
+
+**Note:** Do NOT attempt WP REST API, XML-RPC, or Python scripts to update this page. All blocked by Bluehost ModSecurity. Paste-into-WP-editor is the only method confirmed working.
+
+---
+
 ## wp-publish.py — WordPress Publisher
 
 Push markdown articles to WordPress from the command line.
