@@ -34,16 +34,6 @@
 
 
 
-### #3 — FIX-009: start-free-lesson Hero Image Slow (4MB cross-domain)
-- **Impact:** Page loads slowly — hero background image is 3.97MB from wrong domain
-- **Cause:** CSS points to `50plustechbridge.com` image, not compressed LMT copy
-- **Optimized image:** Already uploaded to `learnmoretechnologies.com/wp-content/uploads/2026/08/brianSpeaking-optimized.webp` (49KB)
-- **Fix:** WP Admin → Pages → Start Free Lesson → edit HTML/CSS block → find and replace:
-  - **Find:** `background-image:url('https://50plustechbridge.com/wp-content/uploads/2026/06/brianSpeaking20260615-V2.webp')`
-  - **Replace:** `background-image:url('https://learnmoretechnologies.com/wp-content/uploads/2026/08/brianSpeaking-optimized.webp')`
-- **Priority:** MEDIUM — 80x speed improvement once swapped
-
----
 
 ### #6 — Buzzsprout Podcast Trial Expiring
 - **Impact:** Podcast episodes disappear if not paid
@@ -62,6 +52,7 @@
 | FIX-007: Course pages 404 | 2026-08-10 | Added 301 redirects in Yoast: /courses/tech-essentials-for-50-plus/ and /50-plus-tech-bridge/ both → /start-free-lesson/. Verified live. |
 | FIX-005: Dead Mailchimp form on join-now page | 2026-08-10 | Replaced with MailerLite embed. Account: 2466946 · Form ID: sK7Nea · Group: Agentic50+. File: BRAND/pages/join-now-page-FIXED.html. Deploy to WP when ready. |
 | FIX-006: wp-publish.py 401 Unauthorized | 2026-08-10 | New WP App Password generated (name: "Claude Tools"). Updated tools/.env. User: brian. Verified 200 OK. |
+| FIX-009: start-free-lesson image slow (4MB cross-domain) | 2026-08-10 | Compressed 3.97MB → 49KB. Uploaded to LMT domain. Swapped image + replaced Mailchimp form with MailerLite. Verified live. |
 | FIX-008: SEOMachine analytics dead | 2026-08-10 | GCP project: gen-lang-client-0793609136. Service account: seomachine@gen-lang-client-0793609136.iam.gserviceaccount.com. GA4 property: 249114191. Credentials saved to seomachine/credentials/. GA4 + GSC access granted. |
 
 ---
