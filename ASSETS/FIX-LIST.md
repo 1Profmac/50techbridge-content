@@ -31,7 +31,48 @@
 
 ---
 
-### #3 — Buzzsprout Podcast Trial Expiring
+### #3 — FIX-006: wp-publish.py Returns 401 Unauthorized
+- **Impact:** Blog publishing tool broken — can't push articles to WordPress from CLI
+- **Cause:** WP credentials in `tools/.env` are wrong (username `brian` not resolving, password may be revoked)
+- **Fix:**
+  1. Log into learnmoretechnologies.com/wp-admin
+  2. Users → Profile → note exact username at top of page
+  3. Scroll to Application Passwords → Add New → name it "Claude Tools"
+  4. Copy the generated password immediately
+  5. Tell Claude — will update `Desktop/LMT/tools/.env` with new credentials
+- **Priority:** MEDIUM — blog publishing tool dead
+
+---
+
+### #4 — FIX-007: Course/Class Signup Pages Return 404
+- **Impact:** LearnDash enrollment path broken — visitors can't sign up for courses
+- **Cause:** Course pages deleted, unpublished, or slugs changed in WordPress
+- **Broken URLs:** `/courses/tech-essentials-for-50-plus/` · `/50-plus-tech-bridge/`
+- **Working URLs:** `/courses/` (index) · `/start-free-lesson/` · `50plustechbridge.com/register/`
+- **Fix:**
+  1. WP Admin → LearnDash → Courses — check published status and actual slugs
+  2. WP Admin → Pages — search "50 Plus Tech Bridge", check if draft/trashed
+  3. Add 301 redirects from broken slugs to working pages (Yoast → Redirects)
+  4. Tell Claude — will update HTML templates with correct URLs
+- **Priority:** HIGH — enrollment path broken
+
+---
+
+### #5 — FIX-008: SEOMachine Missing Config Files (Analytics Dead)
+- **Impact:** All research, GA4, and Google Search Console scripts fail silently
+- **Missing files:** `seomachine/config/competitors.json` ✅ (created 2026-08-10) · `credentials/ga4-credentials.json` · `credentials/gsc-credentials.json`
+- **Blank .env fields:** `GA4_PROPERTY_ID` · `DATAFORSEO_LOGIN` · `DATAFORSEO_PASSWORD`
+- **Fix:**
+  1. Google Cloud Console → IAM → Service Accounts → create account for seomachine
+  2. Download JSON key → save as `seomachine/credentials/ga4-credentials.json`
+  3. In GA4 Admin → Property Access Management → add service account as Viewer
+  4. Enable Search Console API → save key as `seomachine/credentials/gsc-credentials.json`
+  5. Fill in `GA4_PROPERTY_ID` in `seomachine/data_sources/config/.env`
+- **Priority:** MEDIUM — /write and /publish still work; only analytics/research blocked
+
+---
+
+### #6 — Buzzsprout Podcast Trial Expiring
 - **Impact:** Podcast episodes disappear if not paid
 - **Fix:** Pay $19/mo at buzzsprout.com
 - **Priority:** MEDIUM — pay before trial ends
