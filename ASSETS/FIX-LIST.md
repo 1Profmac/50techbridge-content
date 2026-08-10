@@ -32,19 +32,6 @@
 ---
 
 
-### #4 — FIX-007: Course/Class Signup Pages Return 404
-- **Impact:** LearnDash enrollment path broken — visitors can't sign up for courses
-- **Cause:** Course pages deleted, unpublished, or slugs changed in WordPress
-- **Broken URLs:** `/courses/tech-essentials-for-50-plus/` · `/50-plus-tech-bridge/`
-- **Working URLs:** `/courses/` (index) · `/start-free-lesson/` · `50plustechbridge.com/register/`
-- **Fix:**
-  1. WP Admin → LearnDash → Courses — check published status and actual slugs
-  2. WP Admin → Pages — search "50 Plus Tech Bridge", check if draft/trashed
-  3. Add 301 redirects from broken slugs to working pages (Yoast → Redirects)
-  4. Tell Claude — will update HTML templates with correct URLs
-- **Priority:** HIGH — enrollment path broken
-
----
 
 ### #5 — FIX-008: SEOMachine Missing Config Files (Analytics Dead)
 - **Impact:** All research, GA4, and Google Search Console scripts fail silently
@@ -73,7 +60,8 @@
 |---|---|---|
 | Homepage video showing "unavailable" | 2026-08-08 | Updated embed to new WHAT IF video ID |
 | Deleted duplicate WHAT IF video | 2026-08-08 | Kept revised version |
-| FIX-004: /join-now/ 404 — 17 broken CTAs | 2026-08-10 | Replaced with /start-free-lesson/ in LMT-Homepage.html, contact-us-page-FIXED.html, LMT_Train_Page_FIXED.html, lmt-pages/train/index.html. WP redirect still needed for published articles. |
+| FIX-004: /join-now/ 404 — 17 broken CTAs | 2026-08-10 | Replaced with /start-free-lesson/ in 4 HTML files. WP 301 redirect confirmed live. |
+| FIX-007: Course pages 404 | 2026-08-10 | Added 301 redirects in Yoast: /courses/tech-essentials-for-50-plus/ and /50-plus-tech-bridge/ both → /start-free-lesson/. Verified live. |
 | FIX-005: Dead Mailchimp form on join-now page | 2026-08-10 | Replaced with MailerLite embed. Account: 2466946 · Form ID: sK7Nea · Group: Agentic50+. File: BRAND/pages/join-now-page-FIXED.html. Deploy to WP when ready. |
 | FIX-006: wp-publish.py 401 Unauthorized | 2026-08-10 | New WP App Password generated (name: "Claude Tools"). Updated tools/.env. User: brian. Verified 200 OK. |
 
