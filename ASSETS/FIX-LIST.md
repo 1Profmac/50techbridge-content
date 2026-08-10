@@ -33,19 +33,6 @@
 
 
 
-### #5 — FIX-008: SEOMachine Missing Config Files (Analytics Dead)
-- **Impact:** All research, GA4, and Google Search Console scripts fail silently
-- **Missing files:** `seomachine/config/competitors.json` ✅ (created 2026-08-10) · `credentials/ga4-credentials.json` · `credentials/gsc-credentials.json`
-- **Blank .env fields:** `GA4_PROPERTY_ID` · `DATAFORSEO_LOGIN` · `DATAFORSEO_PASSWORD`
-- **Fix:**
-  1. Google Cloud Console → IAM → Service Accounts → create account for seomachine
-  2. Download JSON key → save as `seomachine/credentials/ga4-credentials.json`
-  3. In GA4 Admin → Property Access Management → add service account as Viewer
-  4. Enable Search Console API → save key as `seomachine/credentials/gsc-credentials.json`
-  5. Fill in `GA4_PROPERTY_ID` in `seomachine/data_sources/config/.env`
-- **Priority:** MEDIUM — /write and /publish still work; only analytics/research blocked
-
----
 
 ### #6 — Buzzsprout Podcast Trial Expiring
 - **Impact:** Podcast episodes disappear if not paid
@@ -64,6 +51,7 @@
 | FIX-007: Course pages 404 | 2026-08-10 | Added 301 redirects in Yoast: /courses/tech-essentials-for-50-plus/ and /50-plus-tech-bridge/ both → /start-free-lesson/. Verified live. |
 | FIX-005: Dead Mailchimp form on join-now page | 2026-08-10 | Replaced with MailerLite embed. Account: 2466946 · Form ID: sK7Nea · Group: Agentic50+. File: BRAND/pages/join-now-page-FIXED.html. Deploy to WP when ready. |
 | FIX-006: wp-publish.py 401 Unauthorized | 2026-08-10 | New WP App Password generated (name: "Claude Tools"). Updated tools/.env. User: brian. Verified 200 OK. |
+| FIX-008: SEOMachine analytics dead | 2026-08-10 | GCP project: gen-lang-client-0793609136. Service account: seomachine@gen-lang-client-0793609136.iam.gserviceaccount.com. GA4 property: 249114191. Credentials saved to seomachine/credentials/. GA4 + GSC access granted. |
 
 ---
 
