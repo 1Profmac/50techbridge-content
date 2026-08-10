@@ -3,13 +3,16 @@
   Subject line: They said AI would replace you. They were wrong.
   Preview text: Here's what's actually happening — and what to do about it.
 
-  TO SEND:
-  1. Open Mailchimp → Campaigns → Create → Email → Regular
-  2. Audience: 50+TechBridge list (all subscribers)
-  3. From: Prof. McKinney <hello@learnmoretechnologies.com>
+  TO SEND (MailerLite):
+  1. Go to dashboard.mailerlite.com → Campaigns → Create campaign → Regular
+  2. Group: 50+TechBridge
+  3. From name: Prof. McKinney · From email: hello@learnmoretechnologies.com
   4. Subject: They said AI would replace you. They were wrong.
-  5. Switch to Code tab → paste this entire file
+  5. Design step → switch to HTML editor → paste this entire file
   6. Preview, test send to brian@learnmo.com, then Schedule/Send
+
+  NOTE: MailerLite auto-inserts unsubscribe footer — remove the manual footer
+  unsubscribe links below if MailerLite flags a conflict.
 -->
 
 <!DOCTYPE html>
@@ -176,7 +179,7 @@
   </p>
   <p style="color:#666666; font-size:11px; margin:0; font-family:Arial, sans-serif;">
     You're receiving this because you joined the Pioneers at 50+TechBridge.<br>
-    <a href="*|UNSUB|*" style="color:#666666;">Unsubscribe</a> &nbsp;|&nbsp; <a href="*|UPDATE_PROFILE|*" style="color:#666666;">Update Preferences</a>
+    <a href="{$unsubscribe}" style="color:#666666;">Unsubscribe</a> &nbsp;|&nbsp; <a href="{$preferences}" style="color:#666666;">Update Preferences</a>
   </p>
 </td>
 </tr>

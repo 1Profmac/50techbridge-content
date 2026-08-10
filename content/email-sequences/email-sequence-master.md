@@ -1,9 +1,9 @@
 # 50+TechBridge Welcome Series — Email Sequence Master
 
-**Platform:** Mailchimp Customer Journey Builder
-**Journey ID:** 13275
-**Status:** ✅ LIVE
-**Plan:** Standard $20/mo
+**Platform:** MailerLite
+**Account:** brian@learnmo.com · Group: 50+TechBridge
+**Status:** ✅ LIVE (migrated from Mailchimp June 2026 — Mailchimp locked account)
+**Plan:** Free
 
 ---
 
@@ -68,9 +68,9 @@ Contact exits
 
 **Owner:** Alex — EA Agent
 **Supervised by:** Maya — COO Agent
-**Skill file:** SKILL-lmt-mailchimp-email-sequence.md
+**Skill file:** SKILL-lmt-mailerlite-email-sequence.md
 
 ---
 
 *Built: March 22, 2026*
-*Last updated: March 22, 2026*
+*Last updated: July 21, 2026 — platform migrated to MailerLite*
