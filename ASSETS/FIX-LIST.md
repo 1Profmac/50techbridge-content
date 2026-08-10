@@ -34,6 +34,17 @@
 
 
 
+### #3 — FIX-009: start-free-lesson Hero Image Slow (4MB cross-domain)
+- **Impact:** Page loads slowly — hero background image is 3.97MB from wrong domain
+- **Cause:** CSS points to `50plustechbridge.com` image, not compressed LMT copy
+- **Optimized image:** Already uploaded to `learnmoretechnologies.com/wp-content/uploads/2026/08/brianSpeaking-optimized.webp` (49KB)
+- **Fix:** WP Admin → Pages → Start Free Lesson → edit HTML/CSS block → find and replace:
+  - **Find:** `background-image:url('https://50plustechbridge.com/wp-content/uploads/2026/06/brianSpeaking20260615-V2.webp')`
+  - **Replace:** `background-image:url('https://learnmoretechnologies.com/wp-content/uploads/2026/08/brianSpeaking-optimized.webp')`
+- **Priority:** MEDIUM — 80x speed improvement once swapped
+
+---
+
 ### #6 — Buzzsprout Podcast Trial Expiring
 - **Impact:** Podcast episodes disappear if not paid
 - **Fix:** Pay $19/mo at buzzsprout.com
