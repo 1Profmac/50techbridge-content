@@ -31,18 +31,6 @@
 
 ---
 
-### #3 — FIX-006: wp-publish.py Returns 401 Unauthorized
-- **Impact:** Blog publishing tool broken — can't push articles to WordPress from CLI
-- **Cause:** WP credentials in `tools/.env` are wrong (username `brian` not resolving, password may be revoked)
-- **Fix:**
-  1. Log into learnmoretechnologies.com/wp-admin
-  2. Users → Profile → note exact username at top of page
-  3. Scroll to Application Passwords → Add New → name it "Claude Tools"
-  4. Copy the generated password immediately
-  5. Tell Claude — will update `Desktop/LMT/tools/.env` with new credentials
-- **Priority:** MEDIUM — blog publishing tool dead
-
----
 
 ### #4 — FIX-007: Course/Class Signup Pages Return 404
 - **Impact:** LearnDash enrollment path broken — visitors can't sign up for courses
@@ -87,6 +75,7 @@
 | Deleted duplicate WHAT IF video | 2026-08-08 | Kept revised version |
 | FIX-004: /join-now/ 404 — 17 broken CTAs | 2026-08-10 | Replaced with /start-free-lesson/ in LMT-Homepage.html, contact-us-page-FIXED.html, LMT_Train_Page_FIXED.html, lmt-pages/train/index.html. WP redirect still needed for published articles. |
 | FIX-005: Dead Mailchimp form on join-now page | 2026-08-10 | Replaced with MailerLite embed. Account: 2466946 · Form ID: sK7Nea · Group: Agentic50+. File: BRAND/pages/join-now-page-FIXED.html. Deploy to WP when ready. |
+| FIX-006: wp-publish.py 401 Unauthorized | 2026-08-10 | New WP App Password generated (name: "Claude Tools"). Updated tools/.env. User: brian. Verified 200 OK. |
 
 ---
 
