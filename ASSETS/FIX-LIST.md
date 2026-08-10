@@ -44,6 +44,8 @@
 |---|---|---|
 | Homepage video showing "unavailable" | 2026-08-08 | Updated embed to new WHAT IF video ID |
 | Deleted duplicate WHAT IF video | 2026-08-08 | Kept revised version |
+| FIX-004: /join-now/ 404 — 17 broken CTAs | 2026-08-10 | Replaced with /start-free-lesson/ in LMT-Homepage.html, contact-us-page-FIXED.html, LMT_Train_Page_FIXED.html, lmt-pages/train/index.html. WP redirect still needed for published articles. |
+| FIX-005: Dead Mailchimp form on join-now page | 2026-08-10 | Replaced with MailerLite embed. Account: 2466946 · Form ID: sK7Nea · Group: Agentic50+. File: BRAND/pages/join-now-page-FIXED.html. Deploy to WP when ready. |
 
 ---
 
