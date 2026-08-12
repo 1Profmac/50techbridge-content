@@ -1288,7 +1288,7 @@ footer p{font-size:13px;color:var(--text-muted)}
       <h2>Apply for the<br><em>Next Cohort</em></h2>
       <p class="modal-intro">Applications are free and open to adults 50+ in the Austin area. No tech experience required — just your creative spirit. We review every application personally and respond within 5 business days.</p>
 
-      <form id="applyForm" action="/submit.php" method="POST">
+      <form id="applyForm">
         <!-- Honeypot — hidden from humans, bots fill it -->
         <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
 
@@ -1455,23 +1455,47 @@ document.getElementById('applyModal').addEventListener('click',function(e){
 document.getElementById('applyForm').addEventListener('submit',async function(e){
   e.preventDefault();
   const btn=document.getElementById('submitBtn');
+  // Honeypot check
+  if(this._gotcha && this._gotcha.value) return;
   btn.disabled=true;
   btn.textContent='Submitting…';
+  const fd=new FormData(this);
+  const email=fd.get('email');
+  const name=fd.get('full_name');
+  const fields={
+    age_range: fd.get('age_range'),
+    years_experience: fd.get('years_experience'),
+    art_discipline: fd.get('art_discipline'),
+    tech_level: fd.get('tech_level'),
+    biggest_challenge: fd.get('biggest_challenge'),
+    referral_source: fd.get('referral_source')
+  };
   try{
-    const res=await fetch(this.action,{method:'POST',body:new FormData(this),headers:{Accept:'application/json'}});
-    const data=await res.json().catch(()=>({}));
-    if(res.ok && data.ok){
+    const res=await fetch('https://connect.mailerlite.com/api/subscribers',{
+      method:'POST',
+      headers:{
+        'Content-Type':'application/json',
+        'Accept':'application/json',
+        'Authorization':'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiMGE2ZjM0ZmZkZTkwZGI1ZGEzMDRhZmZlMDFkMjUwNjQyY2E0MGE3ODQwZTZlOTNlNGMyY2ViYTdlZWI0MGYwY2NhZmViNzQ5ZTY4ZDExN2MiLCJpYXQiOjE3ODY0OTgxNzIuMTYxNjc5LCJuYmYiOjE3ODY0OTgxNzIuMTYxNjgsImV4cCI6NDk0MjE3MTc3Mi4xNTY4MzUsInN1YiI6IjI0ODM3NjYiLCJzY29wZXMiOltdfQ.BFtwK4MaMSlogdkhGvxt3DHw-W923uxkFrEZhrcfLcuviG9mCp-tcTLn7HDrCY35cHZOcUcpapIuk-cTkuK0wsNObtMbK8LvKlgtlQJYUH3LWHyVK9taH9nlUXpR_yVnfW0KqqxGDedK0d0-EhmxOxMeV8vTDirVlSgMUvPoRzg9EAAEoiS_KCJURvrBvgV2qQ9RicUhhWu5bf_L9-d-GfvF14bIhMWtQLtKrLI2IAYz76xGgfLqnItwTKVxuX1D6ROZ21HTiUtG5Lawv0LkIOMn6fKU6m4EVnCPzolag46C-k99dly6rY1_vVS4dE-RewDk-3lknP2uE0dJSsUCvv59-lsDjaNDX3I3I5E5AZ0ZfYu6AE7CuRSi6r-jKs6BA8dgFCO0ZPmIoO3R7BwiGOqOKh-mcq1QqfUmaGbyk6efozHsSwrlxBz2WtaAF4F67NxGAHXCK8Xw86DRrjkpT0mY2AAK8_lDRwTRdxkocEKqjDlLOyykNFjXLUIKt4Y1WIQToSbjyvhethVsvFzxoGeynr7QTA9P_7Yy766-tUeHGzZHE_xTcYUPyL_RVhfSpBn3PQfojFoGqMZKWPhW8CQ4pa2HqyXSGz-XQLVT5FsDkkmnVGFQVhRbOPvKUamETLKS0y_8HzehdWlu96Bsh2CRBuYkANqJ4b2CKsONISI'
+      },
+      body:JSON.stringify({
+        email: email,
+        fields: {name: name, ...fields},
+        groups: ['191122765174015605']
+      })
+    });
+    if(res.ok || res.status===201 || res.status===200){
       document.getElementById('formWrap').style.display='none';
       document.getElementById('formSuccess').style.display='block';
     } else {
       btn.disabled=false;
       btn.textContent='Submit My Application →';
-      alert('Something went wrong. Please email us directly at hello@learnmoretechnologies.com');
+      alert('Something went wrong. Please email us directly at brian@learnmoretechnologies.com');
     }
   } catch(err){
     btn.disabled=false;
     btn.textContent='Submit My Application →';
-    alert('Something went wrong. Please email us directly at hello@learnmoretechnologies.com');
+    alert('Something went wrong. Please email us directly at brian@learnmoretechnologies.com');
   }
 });
 </script>
