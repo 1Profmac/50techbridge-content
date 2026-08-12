@@ -1,0 +1,57 @@
+ELEVENLABS RENDER — "What If" PSA Final Version (~80 seconds)
+Learn More Technologies | Brian McKinney Voice Clone
+Voice ID: uAs0vN0GLLpz7FM7JVkz
+Model: eleven_multilingual_v2
+Stability: 0.45 | Similarity: 0.75
+
+Save output to: C:\Users\USER\Desktop\what-if-psa\voiceover\psa-final-voiceover.mp3
+
+---
+
+FULL VOICEOVER TEXT (paste into ElevenLabs):
+
+Marcus had worked at the same company for twenty-eight years.
+
+He knew every system. Every process. Every client.
+
+He thought that meant something.
+
+Until the day an algorithm reviewed his file and recommended:
+
+His position — eliminated.
+
+No warning. No conversation.
+
+Just an algorithm screen, deciding his professional future.
+
+He applied for forty-seven positions in ninety days. He got three interviews. None of them called back.
+
+Twenty-eight years. And he was starting over. Alone.
+
+His company had twenty-eight years' warning. They chose the algorithm instead.
+
+What if companies used AI to train their fifty-plus employees — instead of using it to replace them?
+
+We stopped waiting for that answer.
+
+Adults who walked into our program thinking technology had passed them by — were wrong.
+
+You may be semi-retired. You may be planning your next chapter. But don't let an algorithm — or anyone else — write your ending.
+
+YOU ARE NOT DONE YET.
+
+Learn More Technologies dot com, fifty-plus-tech-bridge dot com, and digital pioneer dot ai.
+
+---
+
+NOTES:
+- "twenty-eight years" first mention — slow, weighted
+- "Until the day an algorithm decided..." — pause 1.5 seconds before this line
+- "No warning. No conversation." — each phrase separate, deliberate
+- "forty-seven positions in ninety days" — say it slowly, let it land
+- "Twenty-eight years. And he was starting over. Alone." — long pause after each period
+- "His company had twenty-eight years' warning. They chose the algorithm instead." — cold, flat, no emotion
+- Pause 2 full seconds before "What if companies used AI..."
+- "But don't let an algorithm — or anyone else — write your ending." — defiant, personal, direct
+- Do NOT use numerals — spell everything out for correct pronunciation
+- URLs: say "fifty-plus-tech-bridge dot com" and "digital pioneer dot ai" slowly and clearly

@@ -1,0 +1,100 @@
+1
+00:00:07,000 --> 00:00:09,939
+Marcus had worked at the same company for 28 years.
+
+2
+00:00:10,278 --> 00:00:13,519
+He knew every system, every process, every client.
+
+3
+00:00:13,919 --> 00:00:15,179
+He thought that meant something.
+
+4
+00:00:15,439 --> 00:00:17,599
+Until the day an algorithm reviewed his file
+
+5
+00:00:17,599 --> 00:00:20,500
+and recommended his position eliminated.
+
+6
+00:00:20,899 --> 00:00:22,399
+No warning, no conversation,
+
+7
+00:00:22,859 --> 00:00:26,660
+just an algorithm screen deciding his professional future.
+
+8
+00:00:26,920 --> 00:00:30,199
+He applied for 47 positions in 90 days.
+
+9
+00:00:30,199 --> 00:00:31,500
+He got three interviews.
+
+10
+00:00:31,678 --> 00:00:34,399
+None of them called back 28 years
+
+11
+00:00:34,399 --> 00:00:36,679
+and he was starting over alone.
+
+12
+00:00:37,100 --> 00:00:39,560
+His company had 28 years warning.
+
+13
+00:00:40,000 --> 00:00:42,140
+They chose the algorithm instead.
+
+14
+00:00:42,679 --> 00:00:46,399
+What if companies used AI to train their 50 plus employees
+
+15
+00:00:46,399 --> 00:00:48,719
+instead of using it to replace them?
+
+16
+00:00:49,039 --> 00:00:50,920
+We stopped waiting for that answer.
+
+17
+00:00:51,320 --> 00:00:53,478
+Adults who have walked into our program
+
+18
+00:00:53,478 --> 00:00:57,179
+thinking technology had passed them by were wrong.
+
+19
+00:00:57,600 --> 00:00:59,000
+You may be semi-retired.
+
+20
+00:00:59,298 --> 00:01:01,020
+You may be planning your next chapter,
+
+21
+00:01:01,298 --> 00:01:04,060
+but don't let an algorithm or anyone else
+
+22
+00:01:04,060 --> 00:01:05,218
+write your ending.
+
+23
+00:01:05,500 --> 00:01:06,899
+You are not done yet.
+
+24
+00:01:07,299 --> 00:01:09,240
+Learn more technologies.com,
+
+25
+00:01:10,418 --> 00:01:14,260
+50plustechbridge.com, and digitalpioneer.ai.
+

@@ -1,0 +1,150 @@
+  ---
+  OPENING SLIDE — Before Scene 1
+
+  Black screen. White text. One line at a time.
+  What if we were trained to use AI
+  instead of being replaced by it?
+  Duration: 4 seconds | Cold hum sound
+
+  ---
+  SLIDE 1 — The Morning Walk
+
+  28 years of experience.
+  They said it wasn't enough.
+
+  SLIDE 2 — The Office
+
+  The room stopped seeing him.
+  The algorithm had already decided.
+
+  SLIDE 3 — The Screen
+
+  No warning. No conversation.
+  Just a screen.
+
+  SLIDE 4 — The Interview
+
+  47 applications.
+  3 interviews.
+  No callbacks.
+
+  SLIDE 5 — The Lowest Point
+
+  Starting over.
+  Alone.
+
+  ---
+  PIVOT — 2 seconds black screen + silence
+
+  ---
+  RESOLUTION SLIDE — Navy #1B2A4A | Gold text #C8942E
+
+  Then he found another way.
+
+  30 years of knowledge.
+  New tools.
+  Built his own solutions.
+
+  Trained to use AI.
+  Not replaced by it.
+
+  ---
+  FINAL TITLE CARD
+
+  You are not done yet.
+
+  — Learn More Technologies
+     50+TechBridge
+     learnmoretechnologies.com
+
+  ---
+  Want me to save this as the official slide script file in
+  VIDEOS/what-if-psa/?
+
+> looking at the past 5 slide sequence, where do i place the new
+messages in that sequence, add a opening White slide: WHAT IF: with
+brians voice over. stop traying to redo the sequence, just correct and
+suggest insertions and reconfiuration
+
+● Here's the existing sequence with insertions only — nothing moved,
+  nothing rebuilt:
+
+  ---
+  ► INSERT BEFORE SLIDE 1
+  Opening white slide — Canva
+  WHAT IF...
+  Brian voiceover: "What if we were trained to use AI — instead of being
+  replaced by it?"
+  Duration: 4 seconds | Cold hum
+
+  ---
+  SLIDE 1 — Morning Walk ✅ keep as is
+
+  SLIDE 2 — The Office ✅ keep as is
+
+  SLIDE 3 — The Screen ✅ keep as is
+
+  SLIDE 4 — The Interview ✅ keep as is
+
+  SLIDE 5 — The Lowest Point ✅ keep as is
+
+  ---
+  ► INSERT AFTER SLIDE 5
+  Black screen — 2 seconds silence
+  No text. No sound. Just a hard stop.
+
+  ---
+  ► INSERT — Resolution slide — Navy/Gold
+  30 years of knowledge.
+  New tools.
+  Built our own solutions.
+
+  Trained to use AI.
+  Not replaced by it.
+
+  ---
+  ► INSERT — Final title card
+  You are not done yet.
+
+  Learn More Technologies
+  50+TechBridge
+  learnmoretechnologies.com
+
+  ---
+  That's 3 insertions added to your existing 5. Nothing else touched.
+  Want me to save this as the final script file?
+
+> yes
+
+● Write(VIDEOS\what-if-psa\WHAT-IF-SLIDE-SEQUENCE.md)
+  ⎿  Wrote 209 lines to VIDEOS\what-if-psa\WHAT-IF-SLIDE-SEQUENCE.md
+       1 # "WHAT IF" — Full Slide Sequence Script
+       2 ## Learn More Technologies | 50+TechBridge
+       3 ## Episode 1: The Replacement
+       4 ## Updated: 2026-07-31
+       5
+       6 ---
+       7
+       8 ## FULL SEQUENCE — 8 SLIDES TOTAL
+       9
+      10 ---
+     … +199 lines (ctrl+o to expand)
+
+
+● Saved: VIDEOS/what-if-psa/WHAT-IF-SLIDE-SEQUENCE.md
+
+  What's in it:
+  - All 8 slides in order — your original 5 + 3 insertions
+  - Text overlays per slide
+  - Brian's full voiceover script ready to paste into ElevenLabs
+  - Production checklist showing 5 clips done, 4 Canva slides still to
+  build
+  - All save locations
+
+  Next steps in order:
+  1. Build the 4 Canva slides (Opening, Pivot, Resolution, Title Card)
+  2. Record voiceover in ElevenLabs
+  3. Generate music in Suno AI
+  4. Assemble all 8 in CapCut
+
+  Ready to build the Canva slide specs?

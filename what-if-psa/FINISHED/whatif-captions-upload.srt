@@ -1,0 +1,40 @@
+1
+00:00:07,859 --> 00:00:10,980
+Marcus had worked at the same company for 28 years.
+
+2
+00:00:11,240 --> 00:00:14,460
+He knew every system, every process, every client.
+
+3
+00:00:14,859 --> 00:00:16,120
+He thought that meant something.
+
+4
+00:00:16,359 --> 00:00:21,440
+Until the day an algorithm reviewed his file and recommended his position eliminated.
+
+5
+00:00:21,820 --> 00:00:27,620
+No warning, no conversation, just an algorithm screen deciding his professional future.
+
+6
+00:00:27,620 --> 00:00:31,120
+He applied for 47 positions in 90 days.
+
+7
+00:00:31,120 --> 00:00:37,539
+He got three interviews, none of them called back 28 years and he was starting over alone.
+
+8
+00:00:37,939 --> 00:00:40,479
+His company had 28 years warning.
+
+9
+00:00:40,920 --> 00:00:43,039
+They chose the algorithm instead.
+
+10
+00:00:43,560 --> 00:00:49,659
+What if companies used AI to train their 50 plus employees instead of using it to replace them?
+

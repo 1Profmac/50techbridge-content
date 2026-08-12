@@ -1,0 +1,246 @@
+ELEVENLABS VOICE SCRIPTS — INTERVIEWER & BOARDROOM CONVERSATION
+What If Brand Film | Learn More Technologies
+Created: 2026-08-04
+
+Target: 7+ seconds per character/exchange.
+Pacing notes: [PAUSE] = 1 second. [LONG PAUSE] = 2 seconds. [BEAT] = half second breath.
+
+===================================================================
+SECTION 1 — THE INTERVIEWER (TWO VERSIONS)
+===================================================================
+The interviewer appears TWICE in the film — once cold (Episode 1) and once warm (Episode 3).
+These are two different emotional registers. Generate as two separate audio files.
+Both are OFF-CAMERA. Camera stays on Carol (Ep1) and Marcus (Ep3).
+
+-------------------------------------------------------------------
+INTERVIEWER VERSION A — EPISODE 1 (COLD)
+-------------------------------------------------------------------
+Scene: Carol's algorithm interview. Carol has just said:
+"I've built three teams from the ground up. I know what you're looking for."
+The interviewer responds — but is still looking at the screen, not at her.
+
+Voice style: Corporate. Practiced. Pleasant on the surface.
+Not rude — worse than rude. Polite in a way that has already decided.
+ElevenLabs: White male, early 30s. Clear, professional, slightly fast.
+Medium-high pitch. The voice of someone who thinks he is being helpful.
+
+SCRIPT — INTERVIEWER EP1 (7+ sec / ~22 spoken words):
+We appreciate your interest, Carol.
+
+[BEAT]
+
+We're really looking for someone who can grow with us long-term.
+
+[PAUSE]
+
+This role requires a lot of digital fluency —
+
+[BEAT]
+
+day one, from the ground up.
+
+[PAUSE]
+
+We'll be in touch.
+
+---
+Output filename: interviewer-cold-ep1.mp3
+Camera: Stays on Carol's face the entire time.
+She hears "grow with us long-term" and "day one from the ground up."
+She knows what those words mean. Her expression does not change.
+That stillness is the performance. The interviewer's voice is just the evidence.
+Runtime estimate: 8 seconds spoken + 2 seconds pauses = ~10 seconds total
+
+-------------------------------------------------------------------
+INTERVIEWER VERSION B — EPISODE 3 (WARM)
+-------------------------------------------------------------------
+Scene: Marcus's comeback interview. Everything is reversed.
+Marcus has just said: "I've seen that system fail three times.
+I know exactly where it breaks and why. Want me to show you?"
+The interviewer responds — this time leaning forward, genuinely engaged.
+
+Voice style: Still professional — but present. Listening. Surprised in a good way.
+ElevenLabs: Same voice preset as Version A if possible — same person, different energy.
+Or a different voice — either works. What matters is the contrast with Version A.
+
+SCRIPT — INTERVIEWER EP3 (7+ sec / ~20 spoken words):
+Walk me through that.
+
+[PAUSE]
+
+The 2019 failure — what specifically did you see that others missed?
+
+[LONG PAUSE — interviewer is actually listening now]
+
+And you documented this at the time?
+
+[BEAT]
+
+I want to hear all of it.
+
+---
+Output filename: interviewer-warm-ep3.mp3
+Camera: On Marcus's face as he answers — calm, no hesitation.
+Then cut to the interviewer leaning forward, nodding.
+This 10-second exchange carries the entire arc of the film.
+The contrast with Version A is everything — same room, different world.
+Runtime estimate: 8 seconds spoken + 3 seconds pauses = ~11 seconds total
+
+===================================================================
+SECTION 2 — THE BOARDROOM CONVERSATION
+===================================================================
+This is a three-person exchange. Tom Briggs presents. Two other executives respond.
+It sounds like a real meeting — not a monologue, a decision being made.
+
+Three voices needed. All OFF-CAMERA or shown from behind/side — no lip sync.
+Camera cuts between: the slide, executive faces from behind, Tom at the front.
+
+Characters in this scene:
+  — TOM BRIGGS (already scripted — use tom-briggs-boardroom.mp3 as the opener)
+  — EXECUTIVE A (younger male, 30s — asks the ROI question)
+  — EXECUTIVE B (female, 40s — closes the decision)
+
+-------------------------------------------------------------------
+EXECUTIVE A — THE ROI QUESTION
+-------------------------------------------------------------------
+Voice style: Sharp. Data-focused. Not skeptical of the decision — skeptical of
+whether the numbers are big enough. He wants more, not less.
+ElevenLabs: White male, early 30s. Fast, confident, analytical.
+
+SCRIPT — EXECUTIVE A (7+ sec / ~19 spoken words):
+What's the ROI differential between the segments?
+
+[PAUSE]
+
+If we're pulling budget from 50-plus outreach —
+
+[BEAT]
+
+I want to see the acquisition cost comparison before we lock this.
+
+[PAUSE]
+
+How far apart are we talking?
+
+---
+Output filename: boardroom-exec-a.mp3
+Camera: On the TARGET DEMOGRAPHIC slide as Executive A speaks.
+His question sounds reasonable. It is reasonable. That is the point.
+Nobody in this room is asking the wrong question by their own logic.
+Runtime estimate: 8 seconds spoken + 2 seconds pauses = ~10 seconds total
+
+-------------------------------------------------------------------
+TOM BRIGGS — THE ANSWER (EXPANDED VERSION)
+-------------------------------------------------------------------
+This follows Executive A's question. Tom answers — still no doubt, just data.
+Generate as a SECOND Tom Briggs file. Combine with tom-briggs-boardroom.mp3 in editing.
+
+Voice style: Same as tom-briggs-boardroom.mp3 — confident, practiced, boardroom fast.
+
+SCRIPT — TOM BRIGGS ANSWER (7+ sec / ~21 spoken words):
+Roughly three to one on customer acquisition cost.
+
+[BEAT]
+
+The 25-to-40 segment converts faster, spends more per transaction,
+
+[BEAT]
+
+and has significantly higher digital adoption out of the gate.
+
+[PAUSE]
+
+The numbers are clear.
+
+---
+Output filename: tom-briggs-answer.mp3
+Camera: On the slide updating — new charts appearing showing the cost comparison.
+Numbers fill the screen. Clean, designed, completely rational.
+Runtime estimate: 8 seconds spoken + 1 second beats = ~9 seconds total
+
+-------------------------------------------------------------------
+EXECUTIVE B — THE DECISION
+-------------------------------------------------------------------
+Voice style: Final. Clean. The voice of someone who closes meetings.
+Not excited — just efficient. This is the most dangerous line in the film
+because it sounds completely normal.
+ElevenLabs: Female, early 40s. Crisp, neutral, authoritative.
+No emotion in either direction. She is not cruel. She is just done.
+
+SCRIPT — EXECUTIVE B (7+ sec / ~18 spoken words):
+The data supports it.
+
+[PAUSE]
+
+Let's move forward with the 25-to-40 roadmap.
+
+[BEAT]
+
+Pull the 50-plus line items from next quarter's budget.
+
+[PAUSE]
+
+We'll revisit if the segment shows traction.
+
+---
+Output filename: boardroom-exec-b-decision.mp3
+Camera: Slow pan across the executives at the table — all nodding, some typing.
+Nobody objects. Nobody raises a hand.
+"We'll revisit if the segment shows traction" is the last line before the film cuts
+to Marcus at the kiosk. The audience makes the connection without being told.
+Runtime estimate: 8 seconds spoken + 2 seconds pauses = ~10 seconds total
+
+===================================================================
+BOARDROOM SEQUENCE — FULL TIMELINE ORDER
+===================================================================
+
+Build this scene in Canva timeline as one continuous 45-second sequence:
+
+[0:00–0:08]  tom-briggs-boardroom.mp3       "The product roadmap targets 25 to 40..."
+[0:08–0:18]  boardroom-exec-a.mp3           "What's the ROI differential..."
+[0:18–0:27]  tom-briggs-answer.mp3          "Roughly three to one on acquisition cost..."
+[0:27–0:37]  boardroom-exec-b-decision.mp3  "The data supports it. Let's move forward..."
+[0:37–0:45]  [SILENCE — camera holds on the slide]
+
+Then CUT to Rosa at the kiosk. No narration. No transition card.
+The audience feels the connection.
+
+===================================================================
+PRODUCTION ORDER — GENERATE IN THIS SEQUENCE
+===================================================================
+
+1. interviewer-cold-ep1.mp3         (Episode 1 — Carol interview, cold dismissal)
+2. interviewer-warm-ep3.mp3         (Episode 3 — Marcus comeback, warm engagement)
+3. boardroom-exec-a.mp3             (Boardroom — ROI question)
+4. tom-briggs-answer.mp3            (Boardroom — Tom answers)
+5. boardroom-exec-b-decision.mp3    (Boardroom — the close)
+
+===================================================================
+VOICE SELECTION GUIDE — NEW CHARACTERS
+===================================================================
+
+Interviewer (both versions):
+  Use the SAME voice preset for both Ep1 and Ep3 if possible.
+  Same person — different energy. The contrast hits harder.
+  Try: "Daniel" or "Josh" — professional male, clear, believable.
+  Version A: Set expressiveness LOW, stability HIGH. Polite autopilot.
+  Version B: Set expressiveness MEDIUM, stability MEDIUM. Actually present.
+
+Executive A:
+  Young, fast, data-brain. Try "Charlie" or "Callum."
+  He should sound like he just ran the numbers on his laptop 10 minutes ago.
+
+Executive B:
+  Clear, decisive, no warmth but no cruelty. Try "Rachel" or "Emily."
+  The goal is: completely normal corporate voice making a catastrophic decision.
+  She should not sound like a villain. That's what makes her terrifying.
+
+===================================================================
+SAVE ALL FILES TO:
+Desktop/what-if-psa/PSA/voiceover/characters/
+===================================================================
+
+---
+What If Brand Film — Interviewer + Boardroom Voice Scripts
+Learn More Technologies | 50+TechBridge
+2026-08-04

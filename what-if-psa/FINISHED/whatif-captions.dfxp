@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <body>
+    <div>
+      <p begin="00:00:07.859" end="00:00:10.980">Marcus had worked at the same company for 28 years.</p>
+      <p begin="00:00:11.240" end="00:00:14.460">He knew every system, every process, every client.</p>
+      <p begin="00:00:14.859" end="00:00:16.120">He thought that meant something.</p>
+      <p begin="00:00:16.359" end="00:00:21.440">Until the day an algorithm reviewed his file and recommended his position eliminated.</p>
+      <p begin="00:00:21.820" end="00:00:27.620">No warning, no conversation, just an algorithm screen deciding his professional future.</p>
+      <p begin="00:00:27.620" end="00:00:31.120">He applied for 47 positions in 90 days.</p>
+      <p begin="00:00:31.120" end="00:00:37.539">He got three interviews, none of them called back 28 years and he was starting over alone.</p>
+      <p begin="00:00:37.939" end="00:00:40.479">His company had 28 years warning.</p>
+      <p begin="00:00:40.920" end="00:00:43.039">They chose the algorithm instead.</p>
+      <p begin="00:00:43.560" end="00:00:49.659">What if companies used AI to train their 50 plus employees instead of using it to replace them?</p>
+    </div>
+  </body>
+</tt>

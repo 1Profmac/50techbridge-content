@@ -1,0 +1,29 @@
+ElevenLabs — that's your voiceover tool.
+
+  Go to: elevenlabs.io
+
+  1. Log in to your account
+  2. Click Speech Synthesis
+  3. Select voice: Brian (Voice ID: uAs0vN0GLLpz7FM7JVkz)
+  4. Paste the Episode 1 narration:
+
+  Marcus had worked at the same company for 28 years.
+  He knew every system. Every process. Every client.
+  He thought that meant something.
+
+  Until the day the algorithm decided he didn't.
+
+  No warning. No conversation.
+  Just a screen.
+
+  He applied to 47 positions in 90 days.
+  He got 3 interviews.
+  None of them called back.
+
+  Twenty-eight years.
+  And he was starting over.
+  Alone.
+
+  5. Click Generate
+  6. Download the MP3
+  7. Save as: ep1-voiceover.mp3 → VIDEOS/what-if-psa/voiceover/
