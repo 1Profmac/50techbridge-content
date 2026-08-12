@@ -18,16 +18,25 @@
 
 ---
 
-### #2 — digitalpioneer.ai Application Form Broken
-- **Impact:** Every application submitted disappears — nobody gets it
-- **Cause:** Form action points to /submit.php which doesn't exist on static host
-- **Fix:**
-  1. Sign up at formspree.io with brian@learnmo.com
-  2. Create form called "Digital Pioneer Applications"
-  3. Copy endpoint (https://formspree.io/f/xxxxxxxx)
-  4. Tell Claude — will swap into digitalpioneer-index.html in 30 seconds
-  5. Upload updated file to Bluehost File Manager → public_html/digitalpioneer.ai/index.html
-- **Priority:** HIGH — program applications going nowhere
+### #2 — digitalpioneer.ai Application Form ✅ FIXED 2026-08-11
+- **Fix applied:** MailerLite API wired directly into form JavaScript
+- **API key stored:** `Desktop/LMT/tools/.env` → MAILERLITE_API_KEY
+- **Group:** Agentic50+ (ID: 191122765174015605)
+- **Repo:** github.com/1Profmac/digitalpioneer-pages (local: Documents/digitalpioneer-pages)
+
+---
+
+## DEPLOY PROCESS — digitalpioneer.ai
+**Use this every time a fix is made to the site:**
+1. Edit `Desktop/LMT/BRAND/web/digitalpioneer-index.html` locally
+2. Copy to `Documents/digitalpioneer-pages/index.html`
+3. `cd /c/Users/USER/Documents/digitalpioneer-pages`
+4. `git add index.html && git commit -m "description" && git push origin master`
+5. Go to Bluehost cPanel → Git Version Control → digitalpioneer-pages → Manage → Pull or Deploy tab
+6. Click **Update from Remote** → then **Deploy HEAD Commit**
+7. Verify live at digitalpioneer.ai
+
+**Never upload manually via File Manager again.**
 
 ---
 
@@ -54,6 +63,7 @@
 | FIX-006: wp-publish.py 401 Unauthorized | 2026-08-10 | New WP App Password generated (name: "Claude Tools"). Updated tools/.env. User: brian. Verified 200 OK. |
 | FIX-009: start-free-lesson image slow (4MB cross-domain) | 2026-08-10 | Compressed 3.97MB → 49KB. Uploaded to LMT domain. Swapped image + replaced Mailchimp form with MailerLite. Verified live. |
 | FIX-008: SEOMachine analytics dead | 2026-08-10 | GCP project: gen-lang-client-0793609136. Service account: seomachine@gen-lang-client-0793609136.iam.gserviceaccount.com. GA4 property: 249114191. Credentials saved to seomachine/credentials/. GA4 + GSC access granted. |
+| FIX-002: digitalpioneer.ai form broken | 2026-08-11 | Wired to MailerLite API. Key in tools/.env. Group: Agentic50+ (191122765174015605). Nav button fixed to open modal. Deployed via digitalpioneer-pages git repo. |
 
 ---
 
